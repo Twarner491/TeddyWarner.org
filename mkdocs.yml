@@ -5,8 +5,8 @@ copyright: Copyright 2021 Teddy Warner - Creative Commons Attribution Non Commer
 
 site_url: http://
 
-repo_url: https://gitlab.fabcloud.org/academany/fabacademy/2021
-repo_name: Academany/Fabacademy
+repo_url: https://github.com/Twarner491/project-site
+repo_name: Twarner491/project-site
 
 extra:
   social:
@@ -26,16 +26,9 @@ theme:
   custom_dir: overrides
 
   palette:
-    primary: deep purple
+    scheme: slate
+    primary: black
     accent: deep purple
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
 
 
   language: en
@@ -44,12 +37,12 @@ theme:
     text: Fira Sans
     code: Ubuntu Mono
 
-  logo: 'images/TW.png'
+  logo: images/TW.png
 
   icon:
-    repo: fontawesome/brands/gitlab
+    repo: fontawesome/brands/github
 
-  favicon: 'images/TW.png'
+  favicon: images/TW.png
                                                                                     
   features:
     - navigation.tabs
