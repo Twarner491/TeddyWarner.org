@@ -1,0 +1,80 @@
+site_name: Teddy Warner - Project Site
+site_description: Project documentation site for Teddy Warner
+site_author: Teddy Warner
+copyright: Copyright 2021 Teddy Warner - Creative Commons Attribution Non Commercial
+
+site_url: http://
+
+repo_url: https://gitlab.fabcloud.org/academany/fabacademy/2021
+repo_name: Academany/Fabacademy
+
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/teddywarner
+    - icon: fontawesome/brands/github
+      link: https://github.com/Twarner491
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/WarnerTeddy
+    - icon: fontawesome/brands/linkedin
+      link: "https://www.linkedin.com/in/teddy-warner-880974200/"
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<Twarner491@gmail.com>
+
+theme:
+  name: material
+  custom_dir: overrides
+
+  palette:
+    primary: deep purple
+    accent: deep purple
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+
+  language: en
+
+  font:
+    text: Fira Sans
+    code: Ubuntu Mono
+
+  logo: 'images/TW.png'
+
+  icon:
+    repo: fontawesome/brands/gitlab
+
+  favicon: 'images/TW.png'
+                                                                                    
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - extra
+  - smarty
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - attr_list
+  - meta
+
+extra_css:
+  - stylesheets/extra.css
