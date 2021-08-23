@@ -84,7 +84,7 @@ nav:
   - Home : index.md
   - About Me: About-Me/about.md
   - Projects: 
-    - Highlights : Projects/highlights.md
+    - Highlights : highlights.md
     - Assistive Aquaponics Tank : 
       - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
     - Corner Desk : 
