@@ -5,8 +5,8 @@ copyright: Copyright 2021 Teddy Warner - Creative Commons Attribution Non Commer
 
 site_url: https://twarner491.github.io/
 
-repo_url: https://github.com/Twarner491/project-files
-repo_name: Twarner491/project-files
+repo_url: https://github.com/Twarner491/Twarner491.github.io
+repo_name: Twarner491/project-site
 
 extra:
   social:
@@ -51,12 +51,11 @@ theme:
   favicon: images/TW.svg
 
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/git-alt
                                                                             
   features:
    - navigation.top
    - navigation.tabs
-   - navigation.expand
    - toc.integrate
 
 plugins:
@@ -82,10 +81,16 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home: index.md
+  - Home : index.md
   - About Me: About-Me/about.md
-  - Projects:
-    - Assistive Aquaponics Fish Tank : Projects/AssistiveAquaponics.md
-    - Corner Desk : Projects/CornerDesk.md
-    - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
-    - Lithophane Experiments: Projects/LithophaneExperiments.md
+  - Projects: 
+    - Highlights : Projects/highlights.md
+    - Assistive Aquaponics Tank : 
+      - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
+    - Corner Desk : 
+      - Corner Desk : Projects/CornerDesk.md
+    - Klipper Enabled Ender 3:
+      - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
+    - Lithophane Experiments:
+      - Lithophane Experiments: Projects/LithophaneExperiments.md
+  - Fab Academy: "http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/"

@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # About me
 
 ![](../images/About/avatar-photo.jpg){: align=right }
