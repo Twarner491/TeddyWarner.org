@@ -1,23 +1,23 @@
-site_name: Teddy Warner - Project Site
-site_description: Project documentation site for Teddy Warner
+site_name: Teddy Warner - Project Documentation Site
+site_description: Project Documentation Site for Teddy Warner
 site_author: Teddy Warner
 copyright: Copyright 2021 Teddy Warner - Creative Commons Attribution Non Commercial
 
-site_url: http://
+site_url: https://twarner491.github.io/
 
 repo_url: https://github.com/Twarner491/project-files
 repo_name: Twarner491/project-files
 
 extra:
   social:
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/teddywarner
-    - icon: fontawesome/brands/github
-      link: https://github.com/Twarner491
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/WarnerTeddy
     - icon: fontawesome/brands/linkedin
       link: "https://www.linkedin.com/in/teddy-warner-880974200/"
+    - icon: fontawesome/brands/github
+      link: https://github.com/Twarner491
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/teddywarner
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/WarnerTeddy
     - icon: fontawesome/solid/paper-plane
       link: mailto:<Twarner491@gmail.com>
 
@@ -26,9 +26,18 @@ theme:
   custom_dir: overrides
 
   palette:
-    scheme: slate
-    primary: black
-    accent: deep purple
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 
 
   language: en
@@ -37,18 +46,18 @@ theme:
     text: Fira Sans
     code: Ubuntu Mono
 
-  logo: images/TW.png
+  logo: images/OpenSourseHardwarePride.svg
+
+  favicon: images/TW.svg
 
   icon:
     repo: fontawesome/brands/github
-
-  favicon: images/TW.png
-                                                                                    
+                                                                            
   features:
-    - navigation.tabs
-    - navigation.expand
-    - navigation.top
-    - toc.integrate
+   - navigation.top
+   - navigation.tabs
+   - navigation.expand
+   - toc.integrate
 
 plugins:
   - search
@@ -71,3 +80,12 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - About Me: About-Me/about.md
+  - Projects:
+    - Assistive Aquaponics Fish Tank : Projects/AssistiveAquaponics.md
+    - Corner Desk : Projects/CornerDesk.md
+    - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
+    - Lithophane Experiments: Projects/LithophaneExperiments.md
