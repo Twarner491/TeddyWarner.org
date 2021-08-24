@@ -1,4 +1,4 @@
-name: Updated Site
+name: Updated Site 
 on:
   push:
     branches: 
