@@ -1,6 +1,6 @@
 # Cable Managed Corner Desk 
 
-Honestly this project was by far my favorite for the year, as I was able to use almost every tool that we've covered in the past two engineering courses all in one great project. At the start of 8th grade I had an issue, I was a couple months into learning Fusion360 and I decided to upgrade my setup from a old janky pc to a brand new laptop and some 20 inch monitors to go along with it, witch was great and all but gave me a whole tone of issues to sort out. I had this great desk in the corner of my room, that my great grandfather built and that had been passed down to me, however there was one huge flaw using that desk with my brand new setup and that was cable management. Below are some plans draw out for the desk.
+Honestly this project was by far my favorite of the year, as I was able to use almost every tool that we've covered in the past two engineering courses all in one great project. At the start of 8th grade I had an issue, I was a couple months into learning Fusion360 and I decided to upgrade my setup from a old janky pc to a brand new laptop and some 20 inch monitors to go along with it, witch was great and all but gave me a whole tone of issues to sort out. I had this great desk in the corner of my room, that my great grandfather built and that had been passed down to me, however there was one huge flaw using that desk with my brand new setup and that was cable management. Below are some plans draw out for the desk.
 
 <center>
 
