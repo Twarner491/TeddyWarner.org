@@ -56,6 +56,7 @@ theme:
   features:
    - navigation.top
    - navigation.tabs
+   - navigation.expand
    - toc.integrate
 
 plugins:
@@ -85,13 +86,10 @@ nav:
   - About Me: About-Me/about.md
   - Projects: 
     - Highlights : highlights.md
-    - Assistive Aquaponics Tank : 
+    - Projects : 
       - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
-    - Cable Managed Corner Desk : 
       - Cable Managed Corner Desk : Projects/CornerDesk.md
-    - Klipper Enabled Ender 3:
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
-    - Lithophane Experiments:
       - Lithophane Experiments: Projects/LithophaneExperiments.md
   - Machine Profiles: 
     - Prusa I3 MK3S+ : 

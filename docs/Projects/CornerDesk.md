@@ -15,6 +15,8 @@ So I set off in Fusion to design a desk that fit all of my needs. My goals were 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd9688b189f2a177d3618?mode=embed" width="100%" height="500" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968f6f9f92e8cbe6137?mode=embed" width="100%" height="500" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
 ## Lowes Trip and New Tool
 
 However shortly after finishing up the CAD aspect of this project, Covid-19 caused our school to resorte to online learning, cutting me of from our schools lab equipment, however I happen to have a lot of the tools we have in our lab in my own little workshop at my house, and I was pretty determined to finish the desk, so just before everything closed down I took a trip to lowes to pick up some lumber and supplies. I settled on a frame and cabinet of 2x4s and some plywood that were painted white pretty quickly, but the top too some more thought. Eventually I decided to make the top out of cedar planks that were stained with Provincial to match the stain of the floor in my room. Also at lowes i picked up a Kreg-Jig to drill pocket holes for the desk, as I didn't like the idea of screws being visible. It was my first time ever using a Kreg-Jig but it went super well as its a relatively simple jig to use.
