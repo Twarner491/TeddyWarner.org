@@ -1,11 +1,11 @@
-site_name: Teddy Warner - Project Documentation Site
-site_description: Project Documentation Site for Teddy Warner
+site_name: Teddy Warner - Portfolio
+site_description: Portfolio and Documentation Site for Teddy Warner
 site_author: Teddy Warner
 copyright: Copyright 2021 Teddy Warner - Creative Commons Attribution Non Commercial
 
-site_url: https://twarner491.github.io/Project-Documentation-Site/
+site_url: https://teddywarner.org/
 
-repo_url: https://github.com/Twarner491/Twarner491.github.io
+repo_url: https://github.com/Twarner491/Project-Documentation-Site
 repo_name: Twarner491/project-site
 
 extra:
@@ -92,6 +92,9 @@ nav:
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
       - Lithophane Experiments: Projects/LithophaneExperiments.md
   - Machine Profiles: 
-    - Prusa I3 MK3S+ : 
+    - 3D Printers : 
       - Prusa I3 MK3S+ : Machine-Profiles/MK3S+.md
+      - Klipper Enabled Ender 3 : Projects/KlipperEnder3.md
+    - Laser Cutters :
+      - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md
   - Fab Academy: "http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/"
