@@ -1,6 +1,6 @@
-# Cable Managed Corner Desk 
+# Cable Managed Corner Desk (Freshman Year - 2020)
 
-Honestly this project was by far my favorite of the year, as I was able to use almost every tool that we've covered in the past two engineering courses all in one great project. At the start of 8th grade I had an issue, I was a couple months into learning Fusion360 and I decided to upgrade my setup from a old janky pc to a brand new laptop and some 20 inch monitors to go along with it, witch was great and all but gave me a whole tone of issues to sort out. I had this great desk in the corner of my room, that my great grandfather built and that had been passed down to me, however there was one huge flaw using that desk with my brand new setup and that was cable management. Below are some plans draw out for the desk.
+This start of Covid project stemmed from my freshman year engineering capstone project. At the start of 8th grade I had an issue, I was a couple months into learning Fusion360 and I decided to upgrade my setup from a old janky pc to a brand new laptop and some 20 inch monitors to go along with it, witch was great and all but gave me a whole tone of issues to sort out. I had this great desk in the corner of my room, that my great grandfather built and that had been passed down to me, however there was one huge flaw using that desk with my brand new setup and that was cable management. Below are some plans draw out for the desk.
 
 <center>
 
@@ -19,7 +19,7 @@ So I set off in Fusion to design a desk that fit all of my needs. My goals were 
 
 ## Lowes Trip and New Tool
 
-However shortly after finishing up the CAD aspect of this project, Covid-19 caused our school to resorte to online learning, cutting me of from our schools lab equipment, however I happen to have a lot of the tools we have in our lab in my own little workshop at my house, and I was pretty determined to finish the desk, so just before everything closed down I took a trip to lowes to pick up some lumber and supplies. I settled on a frame and cabinet of 2x4s and some plywood that were painted white pretty quickly, but the top too some more thought. Eventually I decided to make the top out of cedar planks that were stained with Provincial to match the stain of the floor in my room. Also at lowes i picked up a Kreg-Jig to drill pocket holes for the desk, as I didn't like the idea of screws being visible. It was my first time ever using a Kreg-Jig but it went super well as its a relatively simple jig to use.
+However shortly after finishing up the CAD aspect of this project, Covid-19 caused our school to resorte to online learning, cutting me of from our schools lab equipment, however I happen to have a lot of the tools we have in our lab in my own little workshop at my house, and I was pretty determined to finish the desk, so just before everything closed down I took a trip to lowes to pick up some lumber and supplies. I settled on a frame and cabinet of 2x4s and some plywood that were painted white pretty quickly, but the top too some more thought. Eventually I decided to make the top out of cedar planks that were stained with Provincial to match the stain of the floor in my room. Also at lowes I picked up a Kreg-Jig to drill pocket holes for the desk, as I didn't like the idea of screws being visible. It was my first time ever using a Kreg-Jig but it went super well as its a relatively simple jig to use.
 
 <center>
 

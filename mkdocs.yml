@@ -86,12 +86,12 @@ nav:
   - About Me: About-Me/about.md
   - Projects: 
     - Highlights : highlights.md
-    - Projects : 
+    - Project Feed : 
       - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
       - Cable Managed Corner Desk : Projects/CornerDesk.md
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
       - Lithophane Experiments: Projects/LithophaneExperiments.md
   - Machine Profiles: 
     - Prusa I3 MK3S+ : 
-      - Prusa I3 MK3S+ : Machine-Profiles\MK3S+.md
+      - Prusa I3 MK3S+ : Machine-Profiles/MK3S+.md
   - Fab Academy: "http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/"
