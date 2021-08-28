@@ -87,14 +87,15 @@ nav:
   - Projects: 
     - Highlights : highlights.md
     - Project Feed : 
+      - Project Portfolio Site : Projects/ProjectPortfolioSite.md
       - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
       - Cable Managed Corner Desk : Projects/CornerDesk.md
-      - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
       - Lithophane Experiments: Projects/LithophaneExperiments.md
+      - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
   - Machine Profiles: 
     - 3D Printers : 
       - Prusa I3 MK3S+ : Machine-Profiles/MK3S+.md
-      - Klipper Enabled Ender 3 : Projects/KlipperEnder3.md
+      - Klipper Enabled Ender 3 : Machine-Profiles/KlipperEnder3Profile.md
     - Laser Cutters :
       - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md
   - Fab Academy: "http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/"
