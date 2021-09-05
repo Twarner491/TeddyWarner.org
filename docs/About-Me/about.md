@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+title: About Me
 ---
 
 # About me

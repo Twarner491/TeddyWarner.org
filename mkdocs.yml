@@ -1,4 +1,4 @@
-site_name: Teddy Warner - Portfolio
+site_name: Project Portfolio
 site_description: Portfolio and Documentation Site for Teddy Warner
 site_author: Teddy Warner
 copyright: Copyright 2021 Teddy Warner - Creative Commons Attribution Non Commercial
@@ -46,7 +46,7 @@ theme:
     text: Fira Sans
     code: Ubuntu Mono
 
-  logo: images/OpenSourseHardwarePride.svg
+  logo: images/TeddyWarner.svg
 
   favicon: images/TW.svg
 
@@ -88,14 +88,14 @@ nav:
     - Highlights : highlights.md
     - Project Feed : 
       - Project Portfolio Site : Projects/ProjectPortfolioSite.md
+      - Lithophane Experiments: Projects/LithophaneExperiments.md
       - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
       - Cable Managed Corner Desk : Projects/CornerDesk.md
-      - Lithophane Experiments: Projects/LithophaneExperiments.md
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
   - Machine Profiles: 
+    - Laser Cutters :
+      - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md
     - 3D Printers : 
       - Prusa I3 MK3S+ : Machine-Profiles/MK3S+.md
       - Klipper Enabled Ender 3 : Machine-Profiles/KlipperEnder3Profile.md
-    - Laser Cutters :
-      - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md
   - Fab Academy: "http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/"

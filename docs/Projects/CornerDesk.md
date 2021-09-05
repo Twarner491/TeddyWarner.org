@@ -1,4 +1,10 @@
+---
+title: Cable Managed Corner Desk
+---
+
 # Cable Managed Corner Desk (Freshman Year - 2020)
+
+**6-8 minutes :octicons-book-16:**
 
 This start of the Pandemic project stemmed from my freshman year engineering capstone project. At the start of 8th grade I had an issue, I was a couple of months into learning Fusion360 and I decided to upgrade my setup from an old janky pc to a brand new laptop and some 20-inch monitors to go along with it, which was great and all but gave me a whole tone of issues to sort out. I had this great desk in the corner of my room, that my great grandfather built and that had been passed down to me, however, there was one huge flaw using that desk with my brand new setup and that was cable management. Below are some plans draw out for the desk.
 

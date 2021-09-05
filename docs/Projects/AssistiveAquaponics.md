@@ -1,20 +1,28 @@
+---
+title: Assistive Aquaponics Fish Tank
+---
+
 # Assistive Aquaponics Fish Tank 
+
+**1-2 minutes :octicons-book-16:**
+
+The Assistive Aquaponics Fish Tank was my final project masterpiece during my cycle in [Fab Academy](https://fabacademy.org/). The tank is made with a combination of digital fabrication tools and modern fabrication mediums including
+
+ - 3D Printing
+ - CNC Milling
+ - Laser Cutting/Engraving
+ - PCB Milling
+ - SMD Soldering
+ - And Lots and Lots of CAD Design
+
+ In an attempt to save some repo space, only a presentation slide and video of my Assistive Aquaponics Fish Tank are displayed on this page, however, a complete documentation of this project can be read on my Fab Academy site linked in the button below, as well as in the header of this site. 
 
 <center>
 
 [Fab Academy 2021 - Assistive Aquaponics Fish Tank](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/){ .md-button .md-button--primary }
 
-</center>
+![](../images/AssistiveAquaponics/presentation.png)
 
-<center>
-
-![](../presentation.png)
-
-<video width="900" height="600" class="video_container" controls loop>
-  <source src="../../presentation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </center>
-
-

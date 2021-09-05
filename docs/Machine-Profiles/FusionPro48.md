@@ -1,4 +1,14 @@
+---
+title: Epliog Fusion Pro 48
+---
+
 # Epliog Fusion Pro 48
+
+## Machine Manual
+<iframe src="https://drive.google.com/file/d/1Uh_irO-Hn7QCUaXMZCdzbgddoy2A34wz/preview" width="100%" height="480" allow="autoplay"></iframe>
+
+## Machine Workflow
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vRv0R8clRXQiDcU1YUReBdS3oltwa2FsR66z4xU1nFz05Oghz5xIchRQraOFN5Hjg/pub?embedded=true"width="100%" height="480"></iframe>
 
 |Term |  Definition         |  |
 |---|-----------------------|---------|
@@ -9,7 +19,7 @@
 | Kerf  |The width of the cutting area or the laser. Its properties are dependent on the laser properties, the thickness of the workpiece, and the type of material being used, and the width ranges from around .08mm to 1mm. In other words, this is the amount of material that the laser burns away. |[Source](http://www.cutlasercut.com/resources/tips-and-advice/what-is-laser-kerf)|
 
 
-|Opperation |  1/8" Plywood  | 1/8" Cardboard |
+|Operation |  1/8" Plywood  | 1/8" Cardboard |
 |---|-----------------------|---------|
 | Focus | 0.456 mm | 0.396 mm |
 | Power | 100% | 70% | 

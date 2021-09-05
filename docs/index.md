@@ -1,6 +1,3 @@
----
-title: Teddy Warner - Project Documentation Site
----
 <style>
         /* Application header should be static for the landing page */
     .md-header {

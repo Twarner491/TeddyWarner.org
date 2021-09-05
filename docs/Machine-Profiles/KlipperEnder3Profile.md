@@ -1,3 +1,7 @@
+---
+title: Klipper Enabled Ender 3 Profile
+---
+
 # Klipper Enabled Ender 3 Profile
 
 ![](../images/CHANGEME.png)

@@ -1,4 +1,10 @@
+---
+title: Klipper Enabled Ender 3
+---
+
 # Klipper Enabled Ender 3
+
+**X-X minutes :octicons-book-16:**
 
 PROJECT INTRODUCTION
 
