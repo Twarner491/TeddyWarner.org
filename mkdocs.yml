@@ -1,4 +1,4 @@
-site_name: Project Portfolio
+site_name: Teddy Warner
 site_description: Portfolio and Documentation Site for Teddy Warner
 site_author: Teddy Warner
 copyright: Copyright 2021 Teddy Warner - Creative Commons Attribution Non Commercial
@@ -61,8 +61,6 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      fallback_to_build_date: true
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -81,6 +79,9 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - js/index.js 
+
 nav:
   - Home : index.md
   - About Me: About-Me/about.md
@@ -92,6 +93,7 @@ nav:
       - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
       - Cable Managed Corner Desk : Projects/CornerDesk.md
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
+      - UPDI Serial Programmer: Projects/SerialUPDI.md
   - Machine Profiles: 
     - Laser Cutters :
       - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md

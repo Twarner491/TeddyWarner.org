@@ -22,40 +22,38 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 <center>
 
-![](../images/LithophaneExperiments/friends.jpg){: align=left width="49.5%"}
-![](../images/LithophaneExperiments/friendslithophane.jpg){: align=right width="46.6%"}
+![](../images/LithophaneExperiments/friends.jpg){width="49.5%"}
+![](../images/LithophaneExperiments/friendslithophane.jpg){width="46.6%"}
 
-![](../images/LithophaneExperiments/nina.jpg){: align=left width="50%"}
-![](../images/LithophaneExperiments/ninalithophane.jpg){: align=right width="46.4%"}
+![](../images/LithophaneExperiments/nina.jpg){width="50%"}
+![](../images/LithophaneExperiments/ninalithophane.jpg){width="46.4%"}
 
-![](../images/LithophaneExperiments/zach.jpg){width="80%"}
-![](../images/LithophaneExperiments/zachlithophane.jpg){width="80%"}
+![](../images/LithophaneExperiments/zach.jpg){width="75%"}
+![](../images/LithophaneExperiments/zachlithophane.jpg){width="75%"}
 
-![](../images/LithophaneExperiments/maeko.jpg){: align=left width="47.2%"}
-![](../images/LithophaneExperiments/lithophanemakeo.jpg){: align=right width="49.1%"}
+![](../images/LithophaneExperiments/maeko.jpg){width="47.2%"}
+![](../images/LithophaneExperiments/lithophanemakeo.jpg){width="49.1%"}
 
-![](../images/LithophaneExperiments/alex.jpg){: align=left width="51%"}
-![](../images/LithophaneExperiments/alexlithophane.jpg){: align=right width="45%"}
+![](../images/LithophaneExperiments/alex.jpg){width="51.5%"}
+![](../images/LithophaneExperiments/alexlithophane.jpg){width="44.5%"}
 
-![](../images/LithophaneExperiments/alexben.jpg){: align=left width="51%"}
-![](../images/LithophaneExperiments/alexbenlithophane.jpg){: align=right width="45%"}
+![](../images/LithophaneExperiments/alexben.jpg){width="51%"}
+![](../images/LithophaneExperiments/alexbenlithophane.jpg){width="45%"}
 
 </center>
-
-****
 
 ## Art
 
 <center>
 
-![](../images/LithophaneExperiments/keithharring.jpg){: align=left width="51%"}
-![](../images/LithophaneExperiments/keithharringlithophane.jpg){: align=right width="45%"}
+![](../images/LithophaneExperiments/keithharring.jpg){width="51%"}
+![](../images/LithophaneExperiments/keithharringlithophane.jpg){width="45%"}
 
 ![](../images/LithophaneExperiments/painting.jpg){width="80%"}
 ![](../images/LithophaneExperiments/paintinglithophane.jpg){width="80%"}
 
-![](../images/LithophaneExperiments/gerogiaokeef.jpg){: align=left width="51.5%"}
-![](../images/LithophaneExperiments/gerogiaokeeflithophane.jpg){: align=right width="44.6%"}
+![](../images/LithophaneExperiments/gerogiaokeef.jpg){width="51.5%"}
+![](../images/LithophaneExperiments/gerogiaokeeflithophane.jpg){width="44.6%"}
 
 </center>
 
