@@ -109,16 +109,103 @@ body {
   margin-top: 0.85rem;
 }
 
+.container {
+  position: relative;
+}
+
+.container img {
+  width: auto;
+  height: auto;
+}
+
+.container .info {
+  position: absolute;
+  top: 6.5%;
+  left: 6.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: white;
+  font-size: 19px;
+  padding: 0px 4px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.container .info:hover {
+  background-color: #5466ce;
+}
+
+.container .tooltip{
+      position: absolute;
+      display: inline;
+      top: 6.5%;
+      left: 6.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+.container .tooltip:after{
+      display: block;
+      visibility: hidden;
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      opacity: 0;
+      content: attr(tool-tips); /* might also use attr(title) */
+      height: auto;
+      min-width: 250px;
+      padding: 5px 8px;
+      z-index: 999;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      background: rgba(0,0,0,0.85);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+.container .tooltip:before {
+      position: absolute;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      left: 50%;
+      bottom: 0px;
+      opacity: 0;
+      content: "";
+      border-style: solid;
+      border-width: 6px 6px 0 6px;
+      border-color: rgba(0,0,0,0.85) transparent transparent transparent;
+    }
+.container .tooltip:hover:after{ visibility: visible; opacity: 1; bottom: 20px; }
+.container .tooltip:hover:before{ visibility: visible; opacity: 1; bottom: 14px; }
+
+a.tooltip.left:after { left: auto; right: 100%; bottom: -45%; }
+a.tooltip.left:hover:after { right: 110%; bottom: -45%; }
+a.tooltip.left:before {
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent rgba(0,0,0,0.85);
+  left: auto;
+  right: 90%;
+  bottom: 2%;
+}
+a.tooltip.left:hover:before { right: 100%; bottom: 2%; }
+
 </style>
 
 <h1></h1>
 
 <div class="modal">
   <p class="message" style="color:black;">Welcome to My Site!</p>
+  <div class="container">
    <img src="../images/About/profile.jpg" alt="Profile" > 
+       <a href="https://teddywarner.org/Projects/LithophaneExperiments/" class="tooltip left animationTips"  tool-tips="This Picture is a 3D-Printed Lithophane - Click to See More!">
+         <button class="info" style="color:black;">🛈</button>
+       </a>
+  </div> 
   <div class="options">
     <a href="https://teddywarner.org/About-Me/about/">
-     <button class="btn"  style="color:black;">About Me</button>
-     </a>
+      <button class="btn"  style="color:black;">About Me</button>
+    </a>
   </div>
 </div>
