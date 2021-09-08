@@ -21,6 +21,10 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:<Twarner491@gmail.com>
 
+  analytics:
+    provider: google
+    property: G-DRNQ5C2ZP2
+
 theme:
   name: material
   custom_dir: overrides
