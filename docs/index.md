@@ -200,7 +200,7 @@ a.tooltip.left:hover:before { right: 100%; bottom: 2%; }
   <div class="container">
    <img src="../images/About/profile.jpg" alt="Profile" > 
        <a href="https://teddywarner.org/Projects/LithophaneExperiments/" class="tooltip left animationTips"  tool-tips="This Picture is a 3D-Printed Lithophane - Click to See More!">
-         <button class="info" style="color:black;">🛈</button>
+         <button class="info" style="color:black;"><span>&#9432;</span></button>
        </a>
   </div> 
   <div class="options">
