@@ -21,7 +21,7 @@ hide:
   width:31.5%;
   height:315px;
   margin:8px;
-  background-color:#4051b5;
+  background-color:#3a52e0;
   display:inline-block;
   background-size:cover;
   position:relative;
@@ -95,13 +95,14 @@ hide:
   transform:translateY(0px);
 }
 
+
+
 </style>
 
-<center>
+   <center>
+    <h1>Highlights</h1>
+  </center>
 
-# Highlights
-
-</center>
 
 <div class="wrap">
 

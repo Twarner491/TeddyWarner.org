@@ -62,11 +62,11 @@ body {
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
-  width: auto;
+  width: 370px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.4rem 2.2rem;
+  padding: 1.4rem 2rem;
   border: 3px solid black;
   border-radius: 5px;
   background: white;
