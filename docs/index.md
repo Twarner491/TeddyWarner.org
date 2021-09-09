@@ -66,7 +66,7 @@ body {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.4rem 2rem;
+  padding: 1.4rem 1rem;
   border: 3px solid black;
   border-radius: 5px;
   background: white;
