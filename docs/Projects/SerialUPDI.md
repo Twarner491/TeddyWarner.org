@@ -15,3 +15,5 @@ Unified Program and Debug Interface (UPDI)
 [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer)
 
 [Ft232rl](https://ftdichip.com/products/ft232rl/)
+
+Choose a Serial-UPDI option from the Tools -> Programmer menu of [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore)
