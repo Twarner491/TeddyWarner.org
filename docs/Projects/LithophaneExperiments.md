@@ -2,7 +2,7 @@
 title: Lithophane Experiments
 ---
 
-# Lithophane Experiments
+# Lithophane Experiments (Junior Year - 2021)
 
 **1-2 minutes :octicons-book-16:**
 

@@ -2,7 +2,7 @@
 title: Klipper Enabled Ender 3
 ---
 
-# Klipper Enabled Ender 3
+# Klipper Enabled Ender 3 (Sophmore Year - 2021)
 
 **10-12 minutes :octicons-book-16:**
 
