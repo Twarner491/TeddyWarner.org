@@ -4,6 +4,8 @@ title: Project Portfolio Site
 
 # Project Portfolio Site
 
+![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
+
 **6-7 minutes :octicons-book-16:**
 
 ****
