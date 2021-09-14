@@ -4,6 +4,19 @@ title: Epliog Fusion Pro 48
 
 # Epliog Fusion Pro 48
 
+<!-- Compleation Badge
+
+![progress]()
+
+Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
+Pending - https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square
+Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
+Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
+-->
+
+![Progress](https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square)
+![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
+
 ## Machine Manual
 <iframe src="https://drive.google.com/file/d/1Uh_irO-Hn7QCUaXMZCdzbgddoy2A34wz/preview" width="100%" height="480" allow="autoplay"></iframe>
 
