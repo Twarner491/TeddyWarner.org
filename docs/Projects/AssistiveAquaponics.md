@@ -11,7 +11,7 @@ The Assistive Aquaponics Fish Tank was my final project masterpiece during my cy
  - 3D Printing
  - CNC Milling
  - Laser Cutting/Engraving
- - PCB Milling
+ - PCB Design & Milling
  - SMD Soldering
  - And Lots and Lots of CAD Design
 
