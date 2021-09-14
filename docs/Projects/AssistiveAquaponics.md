@@ -15,7 +15,7 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 -->
 
 ![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
-![GitHub](https://img.shields.io/badge/license-Creative%20Commons%20Attribution--NonCommercial%204.0%20International%20License-blue?color=%234051b5&style=flat-square)
+![GitHub](https://img.shields.io/badge/license-Creative%20Commons%20Attribution--NonCommercial-blue?color=%234051b5&style=flat-square)
 
 **1-2 minutes :octicons-book-16:**
 
