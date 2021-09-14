@@ -65,10 +65,6 @@ theme:
 
 plugins:
   - search
-  - git-committers:
-      repository: Twarner491/Project-Documentation-Site
-      branch: main
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
 
 markdown_extensions:
   - pymdownx.emoji:

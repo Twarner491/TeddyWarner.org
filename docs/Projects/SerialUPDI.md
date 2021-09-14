@@ -1,9 +1,10 @@
 ---
 title: UPDI Serial Programmer
-contributors: Twarner491
 ---
 
 # USB-C UPDI Serial Programmer (Junior Year - 2021)
+
+![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%23EF9421&logo=Creative%20Commons&logoColor=%23EF9421&style=for-the-badge)
 
 **X-X minutes :octicons-book-16:**
 
