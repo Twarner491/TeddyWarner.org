@@ -4,6 +4,19 @@ title: Assistive Aquaponics Fish Tank
 
 # Assistive Aquaponics Fish Tank (Sophmore Year - 2021)
 
+<!-- Compleation Badge
+
+![progress]()
+
+Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
+Pending - https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square
+Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
+Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
+-->
+
+![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
+![GitHub](https://img.shields.io/badge/license-Creative%20Commons%20Attribution--NonCommercial%204.0%20International%20License-blue?color=%234051b5&style=flat-square)
+
 **1-2 minutes :octicons-book-16:**
 
 The Assistive Aquaponics Fish Tank was my final project masterpiece during my cycle in [Fab Academy](https://fabacademy.org/). The tank is made with a combination of digital fabrication tools and modern fabrication mediums including

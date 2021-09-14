@@ -4,11 +4,20 @@ title: UPDI Serial Programmer
 
 # USB-C UPDI Serial Programmer (Junior Year - 2021)
 
+<!-- Compleation Badge
+
+![progress]()
+
+Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
+Pending - https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square
+Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
+Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
+-->
+
+![Progress](https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
 **X-X minutes :octicons-book-16:**
-
-**NOTE - This project is still in the works, and this page is not yet complete**
 
 Many modern small chipsets rely on the Unified Program and Debug Interface (UPDI), a one-wire interface allowing for the changing of fuzes, burning of bootloaders, or uploading of sketches to any AVR Dx-series parts or any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus). Due to their reliance on the Unified Program and Debug Interface, these parts cannot be programmed with classic ISP style programmers, and thus a UPDI enabled programmer is required. Although UPDI is the only programming option in the case of these parts, the one-wire interface is superior to the four-wire of a classic ISP programmer and allows for quicker programming setup and less cluttered boards due to fewer programming pins. This USB-C UPDI programmer is built with a [Ft232rl](https://ftdichip.com/products/ft232rl/) chip allowing for serial interfacing, and runs alongside the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library witch equips your IDE for serial UPDI programming via a portable python implementation.
 
