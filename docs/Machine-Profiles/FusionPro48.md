@@ -21,7 +21,89 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 <iframe src="https://drive.google.com/file/d/1Uh_irO-Hn7QCUaXMZCdzbgddoy2A34wz/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ## Machine Workflow
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vRv0R8clRXQiDcU1YUReBdS3oltwa2FsR66z4xU1nFz05Oghz5xIchRQraOFN5Hjg/pub?embedded=true"width="100%" height="480"></iframe>
+
+**Written by [Kai Vincent](https://fabacademy.org/2019/labs/charlotte/students/kai-vincent/) (a colleague of mine) and I in 2020**
+
+### Importing Files from corelDRAW to Epilog Dashboard, and preparing for the printer-
+
+- Open your .CDR file in corelDRAW on the pc connected to the Fusion Pro
+- Print your file using Ctrl + P
+- Select Epilog Engraver under the Printer options 
+- Select “Use printer default (Custom, Landscape)” under the Page options
+
+- Check your Preferences by going on to     
+Preferences < Advanced < Paper Size has to pe “PostScript Custom Page Size”
+
+Then Click ok until your back to the Print page
+
+- Click on the Color tab at the top of the Print page
+- Set the Color to RGB
+
+- Click on the PostScript tab at the top of the Print page
+- Make sure that “Convert True Type to Type 1” is NOT checked
+
+- Click Apply on the bottom of the Print page
+- Click Print on the bottom of the Print page, this will pull up the Epilog Dashboard with your file 
+- Before doing anything else, properly align the Two integrated FusionPro cameras by selecting on the machines Touch Interface (see Icons on the FusionPro Touch Interface) NOTE: The camera video feed will not appear accurately if the machine is not focused for the material on the bed. This is a critical step for EVERY single print job.
+
+- Jog < Then Jog the machines lens to somewhere on your material
+        
+- Click the Auto Focus button and wait until the FusionPro is done
+- Then Click the Park Axis Button 
+- If your design isn't centered/positioned how you want it to be, Click on your design and drag and drop in into the correct position (you will have video feed coming in from the FusionPro to help with design placement)
+
+Alternatively, while you have your design selected, you can use the blue bar on the left of the window to position your design using X & Y values in correspondence to a point on the workplane
+Here you can also rotate and scale your design to fit your needs
+- Go to the Right side of the window
+- As long as you have jogged and focused using the machine’s touchscreen, you can turn off Auto Focus in the Epilog Dashboard menu.
+
+### Setting up your Material settings -
+
+Select your Material and Put in into the FusionPro
+On the Right side of the window under the Auto Focus tab, you have your Processes
+Make sure your Processes view is set to combined, unless planning on just Vectoring or just Engraving
+Click on the Process you intend on cutting
+Under Process Type, Select Engrave or Vector depending on which you intend that process to be (the Off Process Type can be used in that specific process does not need to be sent to the printer, this is just like clicking “don’t print” in corel)
+Next, Click the file folder with the down arrow next to the Process name, to Import the Material Settings
+
+Find the Right Material and Resolution, Click it, and It will be used on that Process
+
+Alternatively, you can Color Map your design by clicking on the process you want to Color Map, and then selecting Color under the Split By setting
+
+Then Repeat all steps under the “Setting up your Material settings” for any remaining Processes
+
+### Sending Prints to Job Manager and the FusionPro-
+
+At the very top of the Epilog Dashboard, you can select how the FusionPro is connected
+If the FusionPro is plugged into the PC via a USB cord, you can select USB Connection
+If Not, or if having problems with wired connection, select Web Connection under the same drop down
+Under that bar you have the ability to change the file name before you send it to the laser, if wanted
+When your File is Prepared, and your Material settings are correct, click “Send to JM” and then “Print” in the bottom left hand corner, this will send the File from Dashboard to Job Manager, save your settings in Job Manager, and then to the FusionPro
+
+### Icons on the FusionPro Touch Interface-
+
+
+
+### Starting your Cut on the FusionPro-
+
+If you are ever in doubt of where the FusionPro is going to cut your design, click the Trace icon on the Touch Interface and the laser will trace an outline of the area of the work surface
+Check to Make sure that all Blower switches are on before proceeding
+Check to make sure that your material is aligned correctly
+On the Touch Interface, click on the job menu, and then select your Print (the most recent file is always at the top) the file chosen will be highlighted in blue
+Then click the Play button to the left of the joystick to start your print
+The FusionPro will show all of your settings set on the Touch Interface, as well as a ETA while printing
+
+### FusionPro Safety Precautions-
+
+Check to Make sure that all Blower switches are on before proceeding with your print
+Stay with the laser, Never operate the laser system while unattended
+Use Air Assist, Always use the system’s Air Assist feature when vector cutting. Ensure that the sweep air assist (the air assist that comes out of the metal nozzle next to the laser) is always on for all vector cuts. The small switch over the nozzle should be facing the front of the machine for the air assist to be on
+
+If you are ever in doubt of where the FusionPro is going to cut your design, click the Trace icon on the Touch Interface and the laser will trace an outline of the area of the work surface
+Clean the laser. A buildup of cutting and engraving residue and debris is dangerous and can create a fire hazard in its own right
+DO NOT Run the Laser Unvented Never operate the machine without a properly operating vent to the outside or to a filtration unit, Most material will only produce an irritating smoke when engraved Some materials, including but not limited to paint, varnish, composition board and plastics, produce compounds that can be harmful if concentrated
+Never engrave or cut any material containing PVC or Vinyl
+There is a Red button above the FusionPro Touch Interface labeled Emergency Stop that should be pressed if any Hazards or Errors occur during the operation of the laser
 
 |Term |  Definition         |  |
 |---|-----------------------|---------|

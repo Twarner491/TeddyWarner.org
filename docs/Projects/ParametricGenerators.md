@@ -1,8 +1,8 @@
 ---
-title: Klipper Enabled Ender 3 Profile
+title: Parametric Generators
 ---
 
-# Klipper Enabled Ender 3 Profile
+# Parametric Generators with Fusion 360 (Junior Year - 2021)
 
 <!-- Compleation Badge
 
@@ -17,8 +17,18 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![Progress](https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
+## Bottle Cap Generator
+
 <center>
 
-[:fontawesome-brands-github: Klipper Ender 3 PrusaSlicer Profile](https://github.com/Twarner491/project-files/blob/main/PrusaSlicer%20Profiles/Klipper-Ender3-PrusaSlicer-Config.ini){ .md-button .md-button--primary }
+[Check Out the Project on PrusaPrinters](URL){ .md-button .md-button--primary }
+
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c539495c089187ac95b8?mode=embed" width="95%" height="500" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 </center>
+
+[Hyperlink](URl)
+
+![](../images/IMAGEHERE){: align=RIGHT/LEFT width="100%"}
+  <figcaption>Caption</figcaption>
+

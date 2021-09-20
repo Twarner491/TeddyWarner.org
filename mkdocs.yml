@@ -98,6 +98,7 @@ nav:
       - Cable Managed Corner Desk : Projects/CornerDesk.md
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
       - UPDI Serial Programmer: Projects/SerialUPDI.md
+      - Parametric Generators: Projects/ParametricGenerators.md
   - Machine Profiles: 
     - Laser Cutters :
       - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md

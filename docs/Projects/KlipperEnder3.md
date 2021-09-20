@@ -468,3 +468,13 @@ gcode:
 #*# [bltouch]
 #*# z_offset = 2.900
 ```
+
+## Slicer Configuration
+
+Check out my Klipper Enabled Ender 3 machine profile page, linked below, for information regarding the slicer setup & config, as well as my profile download.
+
+<center>
+
+[Klipper Enabled Ender 3 Profile](https://teddywarner.org/Machine-Profiles/KlipperEnder3Profile/){ .md-button .md-button--primary }
+
+</center>
