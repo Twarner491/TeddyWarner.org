@@ -17,6 +17,8 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
+**6-7 minutes :octicons-book-16:**
+
 Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!
 
 <center>

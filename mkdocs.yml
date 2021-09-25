@@ -93,9 +93,10 @@ nav:
     - Highlights : highlights.md
     - Project Feed : 
       - Project Portfolio Site : Projects/ProjectPortfolioSite.md
+      - Octoprint Setup : Projects/Octoprint.md
       - Lithophane Experiments: Projects/LithophaneExperiments.md
-      - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
       - Cable Managed Corner Desk : Projects/CornerDesk.md
+      - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
       - UPDI Serial Programmer: Projects/SerialUPDI.md
       - Bottle Cap Generator: Projects/ParametricGenerator.md
