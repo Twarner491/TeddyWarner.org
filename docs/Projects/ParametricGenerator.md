@@ -1,8 +1,8 @@
 ---
-title: Parametric Generators
+title: Parametric Bottle Cap Generator
 ---
 
-# Parametric Generators with Fusion 360 (Junior Year - 2021)
+# Parametric Bottle Cap Generator (Junior Year - 2021)
 
 <!-- Compleation Badge
 
@@ -14,12 +14,10 @@ Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
 Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
 -->
 
-![Progress](https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square)
+![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
-## Bottle Cap Generator
-
-**A Parametric Bottle Cap Generator -** Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!
+Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!
 
 <center>
 
@@ -28,7 +26,7 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 </center>
 
-### CAD & Testing
+## CAD & Testing
 
 This model was designed in Fusion 360 and uses 3 required input parameters and [standard Metric thread profile](https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx) equations to generate a cap that will perfectly fit any of your threaded containers. Input Parameters can be found from an existing threaded connector following the documentation below and their values can be written in their corresponding Expression boxes in the Parameters spreadsheet of the attached Parametric Bottle Cap Fusion 360 file (shown below)
 
@@ -38,7 +36,63 @@ This model was designed in Fusion 360 and uses 3 required input parameters and [
 
 </center>
 
-The three required input parameters provide the data for the thread component equations, all fed into Fusion 360's coil tool, thus creating entirely parametrically generated threads. Following these required inputs, there are a number of customization included in the generator, discussed later in the documentation.
+I originally set out to make this generator due to a need for a lower profile cap for the isopropyl alcohol bottle I keep next to my printer. The thread profile of this bottle is rather abnormal, and thus I found myself finding thread component values with [standard Metric thread profile](https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx) equations, the same used by the generator. 
+
+Following the standard Metric thread profile (displayed in the diagram below)...
+
+<center>
+
+![](../images/ParametricGenerator/ISOThreadForm1.jpg){width="75%"}
+
+</center>
+
+The model derives all necessary values from three required input parameters, all of which are fed into Fusion 360's coil tool, creating entirely parametrically generated threads. The calculations for user parameters derived from the three required input parameters are as followed ...
+
+ - Thread Height - 0.8660254037844386 * ThreadPitch
+ - Hole Size - ConnectDiamater + ThreadHight
+ - ThreadDmax - ConnectDiamater
+ - ThreadDmin - ThreadDmax - 2 * 5 / 8 * ThreadHight
+ - Cap Diamater - *HoleSize + ThreadHight*
+ - Cap Height - *ConnectLegnth + ThreadPitch / 2 + 1.5 mm*
+
+The implementation of these [standard Metric thread profile](https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx) equations in a Fusion model parametrically was the real kicker of this design. Unfortunately, Fusion's native thread tool is incompatible with user parameters and thus was unusable in the case of this generator. In its place, I utilized Fusion's coil tool, manipulating the values found in the generator's user parameters to create the caps inner threads. The final working coil tool calculations are as followed ...
+
+ - Diameter - *ThreadDmax + ThreadHight / 4 * 2*
+ - Height - *ConnectLegnth + ThreadPitch / 2*
+ - Pitch - *ThreadPitch*
+ - Angle - *0.0 deg*
+ - Selection Size - *ThreadHeight*
+
+all of which are included, shown below, to generate the cap's threads.
+
+<center>
+
+![](../images/ParametricGenerator/ThreadCap.png){width="95%"}
+
+</center>
+
+Following the Generation of the caps thread, an inner contour is added defined by the ISO 965-1 standard - shw=owin in the diagram below.
+
+<center>
+
+![](../images/ParametricGenerator/ISOExternalThreadRootContour.jpg){width="50%"}
+
+</center>
+
+This standard calls for radius value *ThreadPitch / 4*, and thus the following values are used in the inner contour ...
+
+ - Radius - *ThreadPitch / 4*
+ - Radius Type - *Constant*
+
+The contour is created with Fusion's Fillet tool and the prior mentioned values, shown below.
+
+<center>
+
+![](../images/ParametricGenerator/threadfillet.png){width="95%"}
+
+</center>
+
+All this yields the successful basic generator, embedded below ...
 
 <center>
 
@@ -46,15 +100,22 @@ The three required input parameters provide the data for the thread component eq
 
 </center>
 
-I originally set out to make this generator due to a need for a lower profile cap for the isopropyl alcohol bottle I keep next to my printer. The thread profile of this bottle is rather abnormal, and thus I found myself finding thread component values with [standard Metric thread profile](https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx) equations, the same used by the generator. 
+... however, what fun would a custom cap generator be without a little customization. The generator includes four different body styles,
 
-### Cap Generation -
+ 1. Plain
+ 2. Single-Hole
+ 3. Salt-Shaker
+ 4. Lanyard
+
+... allowing for total cap customization. These styles can be changed, along with two other customization factors, discussed in the *Cap Generation* section below.
+
+## Cap Generation -
 
 For documentation purposes, I created a new cap for my Nalgene water bottle …
 
-#### Required Measurements 
+### Required Measurements 
 
-There are three measurements required to generate your own cap, all of which can be taken from the existing threaded connector … 
+There are three measurements required to generate your cap, all of which can be taken from the existing threaded connector … 
 
 1. **Connector Diameter -**
 Measure the diameter (in MM) of your existing connector, from the very farthest point (i.e. the point of the thread) on either side. 
@@ -86,7 +147,7 @@ Then, update the Expression value in the ThreadPitch row (the box highlighted ye
 ![](../images/ParametricGenerator/threadpitch.png){width="95%"}
 </center>
 
-#### Optional Customization
+### Optional Customization
 
 To offer a bit more customization to each generated cap, there are a couple of different preferences allowing for different functions.
 
@@ -142,3 +203,5 @@ in the Fusion browser. The lid styles can be toggled between via the eye icon to
 ![](../images/ParametricGenerator/lanyard.png){width="95%"}
 
 </center>
+
+**Congrats!** You've successfully generated your own bottle cap!
