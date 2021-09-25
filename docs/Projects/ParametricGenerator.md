@@ -23,7 +23,7 @@ Lost a lid or just want a more functional cap? Generate and print your own, comp
 
 <center>
 
-[Check Out the Project on PrusaPrinters](URL){ .md-button .md-button--primary }
+[Check Out the Project on PrusaPrinters](https://www.prusaprinters.org/prints/76271-parametric-bottle-cap-generator){ .md-button .md-button--primary }
 [:fontawesome-brands-github: Parametric Bottle Cap Generator Files](https://github.com/Twarner491/project-files/blob/main/Parametric%20Generators/Parametric%20Bottle%20Cap%20Generator.f3d){ .md-button .md-button--primary }
 
 </center>

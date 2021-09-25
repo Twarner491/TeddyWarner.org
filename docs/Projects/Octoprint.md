@@ -19,7 +19,18 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 **X-X minutes :octicons-book-16:**
 
+![](../images/Octoprint/Octoprint.png){width="100%"}
+
+[Octoprint](https://octoprint.org/)
+
+[Octoprint Repo](https://github.com/OctoPrint/OctoPrint)
+
 ## Hardware
+
+![](../images/Octoprint/mountedelectronics.jpg){width="100%"}
+
+![](../images/Octoprint/cameramount.png){width="100%"}
+![](../images/Octoprint/CameraWindow.png){width="100%"}
 
 ## Octoprint Instalation
 
@@ -31,10 +42,29 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 ## Octoprint Configuration
 
+![](../images/Octoprint/AppearanceSettings.png){width="100%"}
+
 ### Plugins
 
-[Hyperlink](URl)
+![](../images/Octoprint/pluginsettings.png){width="100%"}
 
-![](../images/IMAGEHERE){: align=RIGHT/LEFT width="100%"}
-  <figcaption>Caption</figcaption>
-
+ - Acess Anywhere - The Spaghetti Detective
+ - Bed Visualizer
+  ![](../images/Octoprint/bedlevlevisualizer.png){width="100%"}
+ - Custom Background
+  ![](../images/Octoprint/custombackground.png){width="100%"}
+ - Exclude Region
+  ![](../images/Octoprint/excluderegions.png){width="100%"}
+ - Firmware Check
+ - Floating Navbar
+ - GcodeEditor
+ - Heater Timeout
+ - Navbar Tempature Plugin
+ - Octoprint Display ETA
+ - PrettyGCode
+ - Printer Dialogs
+ - Printer Notifications
+ - Themeify
+ - Virtual Printer
+ - ipOnConnect
+  ![](../images/Octoprint/ipdisplay.jpg){width="100%"}
