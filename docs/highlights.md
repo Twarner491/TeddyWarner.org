@@ -19,7 +19,7 @@ hide:
 .tile
 {
   width:31.5%;
-  height:315px;
+  height:300px;
   margin:8px;
   background-color:#3a52e0;
   display:inline-block;
@@ -118,18 +118,6 @@ hide:
   </a>
  </div>
 
- <div class="tile">
-  <a href="https://teddywarner.org/Projects/ProjectPortfolioSite/"> 
-  <img src='../images/PortfolioSite/highlightcode.jpg'/>
-  <div class="text">
-  <center>
-  <h1>Project Portfolio Site</h1>
-  </center>
-  <p class="animate-text" style="color:white;"> Static Site creation with MKdocs - The behind the scenes of the site you are on right now :) </p>
-  </div>
-  </a>
- </div>
-
 <div class="tile"> 
   <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">
   <img src='../images/AssistiveAquaponics/highlightstank.jpg'/>
@@ -138,6 +126,18 @@ hide:
   <h1>Assistive Aquaponics Fish Tank</h1>
   </center>
   <p class="animate-text" style="color:white;">A Monitored Aquaponics Ecosystem, Expanding the Accessibility of Successful & Thriving Aquaponics Ecosystems.</p>
+  </div>
+  </a>
+ </div>
+
+<div class="tile">
+  <a href="https://teddywarner.org/Projects/ParametricGenerator/"> 
+  <img src='../images/ParametricGenerator/beautyshot.jpg'/>
+  <div class="text">
+  <center>
+  <h1>Parametric Bottle Cap Generator</h1>
+  </center>
+  <p class="animate-text" style="color:white;"> A Parametric Cap Generator - Using metric Thread standards to generate a cap for any existing threaded connector </p>
   </div>
   </a>
  </div>

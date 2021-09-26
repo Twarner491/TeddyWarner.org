@@ -27,6 +27,8 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 [Octoprint Repo](https://github.com/OctoPrint/OctoPrint)
 
+[Support Octoprint](https://octoprint.org/support-octoprint/) Gina Häußge
+
 ## Octoprint Instalation
 
 To begin the Octoprint instalation youll need a Raspberry Pi *(Recommended hardware: Raspberry Pi 3B, 3B+ or 4B)*, a sufficent power source for the Pi, as well as a micro SD card *(4GB or larger)* to flash the Octorpint image to.
