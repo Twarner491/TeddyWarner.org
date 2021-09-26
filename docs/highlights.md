@@ -19,7 +19,7 @@ hide:
 .tile
 {
   width:31.5%;
-  height:300px;
+  height:315px;
   margin:8px;
   background-color:#3a52e0;
   display:inline-block;
