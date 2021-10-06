@@ -100,6 +100,7 @@ nav:
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
       - UPDI Serial Programmer: Projects/SerialUPDI.md
       - Bottle Cap Generator: Projects/ParametricGenerator.md
+      - Photogrammetry Experiments: Projects/PhotogrammatryExpirements.md
   - Machine Profiles: 
     - Laser Cutters :
       - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md
