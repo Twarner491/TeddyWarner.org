@@ -29,7 +29,7 @@ In short, the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) librar
 
 **Arduino 1.8.13 is recommended** for use with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library
 
-The library relies of a board package witch can be isntalled via the board manager witch can be installed with 3 simple stemps included below (provided from this instalation [page](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md)).
+Recent updates to the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library have simplified the isntalation process significantly. The library relies of a board package witch can be isntalled via the board manager witch can be installed with 3 simple steps included below (provided from this instalation [page](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md)).
 
 ```
 http://drazzy.com/package_drazzy.com_index.json
@@ -37,6 +37,7 @@ http://drazzy.com/package_drazzy.com_index.json
 1. File -> Preferences, enter the above URL in "Additional Boards Manager URLs"
 2. Tools -> Boards -> Boards Manager...
 3. Select *megaTinyCore by Spence Konde* and click "Install". For best results, choose the most recent version.
+
 
 
 ### Serial Programming
