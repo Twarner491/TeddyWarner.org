@@ -9,7 +9,7 @@ title: Octoprint Setup
 ![progress]()
 
 Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
-Pending - https://img.shields.io/badge/progress-pending%20compleation-yellow?style=flat-square
+Pending - https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square
 Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
 Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
 -->
