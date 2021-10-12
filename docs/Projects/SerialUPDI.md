@@ -116,7 +116,52 @@ Following these steps on my simple ATtiny 412 board yielded the 1/2 second blink
 
 ### Serial Programming
 
+Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This instalation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this preformance increase in addation to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optomial form of programming i've used on my boards to date.
+
 #### Serial Programmer Usage
+
+```
+USB Serial Adapter
+With internal 1-2k resistor on TX
+This is the case in 90% of USB serial adapters.
+
+
+Ideal:
+internal resistor in adapter: not more than 1k
+
+--------------------                                 To Target device
+                DTR|                                  __________________
+    internal    Rx |--------------,------------------| UPDI---\/\/---------->
+  Tx---/\/\/\---Tx |-------|<|---'          .--------| Gnd    470 ohm (100 ~ 1k)
+    resistor    Vcc|---------------------------------| Vcc
+  typ. 1k       CTS|                     .`          |__________________
+                Gnd|--------------------'             If you make a 3-pin connector, use this pinout
+--------------------
+
+or
+
+--------------------                                 To Target device
+                DTR|                                  __________________
+    internal    Rx |--------------,------------------| UPDI----------------->
+  Tx---/\/\/\---Tx |-------|<|---'          .--------| Gnd
+    resistor    Vcc|---------------------------------| Vcc
+  typ 1k        CTS|                     .`          |__________________
+                Gnd|--------------------'
+--------------------
+
+
+
+Or with no internal resistor on adapter - as long as target has one
+
+--------------------                                 To Target device
+                DTR|                                  __________________
+      no        Rx |--------------,------------------| UPDI---\/\/---------->
+    internal    Tx |-------|<|---'          .--------| Gnd    470 ohm (100 ~ 1k)
+    resistor    Vcc|---------------------------------| Vcc
+                CTS|                     .`          |__________________
+                Gnd|--------------------'
+--------------------
+```
 
 ## USB-C UPDI Programmer Manufacturing
 
