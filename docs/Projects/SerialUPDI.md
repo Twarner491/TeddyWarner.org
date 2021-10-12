@@ -141,6 +141,3 @@ I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.or
 [PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/)
 
 ## Programmer Usage
-
-Choose a Serial-UPDI option from the Tools -> Programmer menu of [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore)
-
