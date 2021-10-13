@@ -116,37 +116,37 @@ Following these steps on my simple ATtiny 412 board yielded the 1/2 second blink
 
 ### Serial Programming
 
-Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This instalation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this preformance increase in addation to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optomial form of programming I've used on my boards to date.
+Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This installation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this performance increase in addition to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optimal form of programming I've used on my boards to date.
 
-The serial programming style relies on this prior meantioned portabel python instalation alonside a USB-Serial adapter acting as the programmer in this case. Though this section of the page will documente this programming style via a pre-made USB-Serial adapter (in this case an FTDI chip) and some other hardware bits, please note the [USB-C UPDI Serial Progrmmaer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) board documented later on this page - this board is a set hardware peice for this Serial UPDI programming style, and provides a perminate hardware programming board. To engage the Serial UPDI programming method without a board like this you'll need the required hardware...
+The serial programming style relies on this prior mentioned portable python installation alongside a USB-Serial adapter acting as the programmer in this case. Though this section of the page will document this programming style via a pre-made USB-Serial adapter (in this case an FTDI chip) and some other hardware bits, please note the [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) board documented later on this page - this board is a set hardware piece for this Serial UPDI programming style, and provides a permanent hardware programming board. To engage the Serial UPDI programming method without a board like this you'll need the required hardware...
 
- 1. A USB-Serial Adapter - I'll be using an FTDI FT232 for this documentation, but boards based on the CH340G or the CP210 chips work great aswell
+ 1. A USB-Serial Adapter - I'll be using an FTDI FT232 for this documentation, but boards based on the CH340G or the CP210 chips work great as well
  2. Some Jumper Wires
  3. A Schottky Diode
- 4. A *470 ohm* Resistor - If creating a UPDI progtrammable board, incoperate this resistor into your schematic using the pinout below, running the 470 resistor inline to the UPDI pin. 
+ 4. A *470 ohms* Resistor - If creating a UPDI programmable board, incorporate this resistor into your schematic using the pinout below, running the 470 resistor inline to the UPDI pin. 
 
 ```
       __________________
 -----| UPDI---\/\/------>
------| Gnd    470 ohm (100 ~ 1k)
+-----| Gnd    470 ohms (100 ~ 1k)
 -----| Vcc
      |__________________
 ```
 
-If not creating your own board, and theres no inline UPDI resistor (470 ohm isnt mandatory - anything between 100 ~ 1k ohm will do fine) you'll need to include this resistor extarnly. With that said, wireing between your serial adapter and the target device is diagrammed in the schematicxs below.
+If not creating your own board, and there's no inline UPDI resistor (470 ohms isn't mandatory - anything between 100 ~ 1k ohm will do fine) you'll need to include this resistor externally. With that said, wiring between your serial adapter and the target device is diagrammed in the schematics below.
 
  - VCC of Adapter to VCC of Target
  - GND of Adapter to GND of Target
  - Schottky Diode between the Rx & Tx of Serial Adapter (Cathode to Tx)
- - Rx of Adapter to UPDI of Target - Here include the *470 ohm* resistor as needed 
+ - Rx of Adapter to UPDI of Target - Here include the *470 ohms* resistor as needed 
 
-**Ideal - internal resistor in adapter - not more than 1k**
+**Ideal - internal resistor in the adapter - not more than 1k**
 
 ```
 --------------------                                 To Target device
                 DTR|                                  __________________
     internal    Rx |--------------,------------------| UPDI---\/\/------>
-  Tx---/\/\/\---Tx |-------|<|---'          .--------| Gnd    470 ohm (100 ~ 1k)
+  Tx---/\/\/\---Tx |-------|<|---'          .--------| Gnd    470 ohms (100 ~ 1k)
     resistor    Vcc|---------------------------------| Vcc
   typ. 1k       CTS|                     .`          |__________________
                 Gnd|--------------------'             If you make a 3-pin connector, use this pinout
@@ -155,7 +155,7 @@ If not creating your own board, and theres no inline UPDI resistor (470 ohm isnt
 or
 
 --------------------                                 To Target device
-                DTR|      External 470 ohm (100 ~ 1k) __________________
+                DTR|     External 470 ohms (100 ~ 1k) __________________
     internal    Rx |--------------,--\/\/------------| UPDI------------->
   Tx---/\/\/\---Tx |-------|<|---'          .--------| Gnd
     resistor    Vcc|---------------------------------| Vcc
@@ -164,13 +164,13 @@ or
 --------------------
 ```
 
-**Or with no internal resistor on adapter - as long as target has one**
+**Or with no internal resistor on the adapter - as long as the target has one**
 
 ```
 --------------------                                 To Target device
                 DTR|                                  __________________
        no       Rx |--------------,------------------| UPDI---\/\/------>
-    internal    Tx |-------|<|---'          .--------| Gnd    470 ohm (100 ~ 1k)
+    internal    Tx |-------|<|---'          .--------| Gnd    470 ohms (100 ~ 1k)
     resistor    Vcc|---------------------------------| Vcc
                 CTS|                     .`          |__________________
                 Gnd|--------------------'
@@ -181,9 +181,15 @@ or
 
 #### Serial Programmer Usage
 
+To program via your USB-Serial setup ...
 
+ 1. Navigate to the *Tools -> Programmer* menu and select an iteration of the *Serial-UPDI* options (Based on upload speeds, the tinyAVR core offers 57600 baud, 230400 baud, and 460800 baud options - thus the different speed settings)
+ 2. Then, under *Tools -> Port* select the port connected to your USB-Serial adapter, if not already selected
+ 3. Finally, upload your sketch via the *Upload* button and watch as your board is programmed at lightning speeds!
 
-**Note that this does not give you serial monitor - you need to connect a serial adapter the normal way for that**
+**Note - the serial programmer setup does not give you a serial monitor** - you'll need to connect a serial adapter the normal way for that. The later documented [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) board provides a switching feature between a serial programming and serial monitoring mode, allowing for all programming and monitoring work to be done without rework of connections. Be sure to check out the specific [USB-C UPDI Serial Programmer usage](https://teddywarner.org/Projects/SerialUPDI/#programmer-usage) section for use of this feature.
+
+**Congrats!** you can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI with a simple USB-Serial adapter with a speed increase by a factor of twenty when compared with the prior *jtag2updi* method.
 
 ## USB-C UPDI Programmer Manufacturing
 
