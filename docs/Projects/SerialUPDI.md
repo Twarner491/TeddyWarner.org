@@ -116,22 +116,36 @@ Following these steps on my simple ATtiny 412 board yielded the 1/2 second blink
 
 ### Serial Programming
 
-Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This instalation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this preformance increase in addation to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optomial form of programming i've used on my boards to date.
+Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This instalation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this preformance increase in addation to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optomial form of programming I've used on my boards to date.
 
-#### Serial Programmer Usage
+The serial programming style relies on this prior meantioned portabel python instalation alonside a USB-Serial adapter acting as the programmer in this case. Though this section of the page will documente this programming style via a pre-made USB-Serial adapter (in this case an FTDI chip) and some other hardware bits, please note the [USB-C UPDI Serial Progrmmaer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) board documented later on this page - this board is a set hardware peice for this Serial UPDI programming style, and provides a perminate hardware programming board. To engage the Serial UPDI programming method without a board like this you'll need the required hardware...
+
+ 1. A USB-Serial Adapter - I'll be using an FTDI FT232 for this documentation, but boards based on the CH340G or the CP210 chips work great aswell
+ 2. Some Jumper Wires
+ 3. A Schottky Diode
+ 4. A *470 ohm* Resistor - If creating a UPDI progtrammable board, incoperate this resistor into your schematic using the pinout below, running the 470 resistor inline to the UPDI pin. 
 
 ```
-USB Serial Adapter
-With internal 1-2k resistor on TX
-This is the case in 90% of USB serial adapters.
+      __________________
+-----| UPDI---\/\/------>
+-----| Gnd    470 ohm (100 ~ 1k)
+-----| Vcc
+     |__________________
+```
 
+If not creating your own board, and theres no inline UPDI resistor (470 ohm isnt mandatory - anything between 100 ~ 1k ohm will do fine) you'll need to include this resistor extarnly. With that said, wireing between your serial adapter and the target device is diagrammed in the schematicxs below.
 
-Ideal:
-internal resistor in adapter: not more than 1k
+ - VCC of Adapter to VCC of Target
+ - GND of Adapter to GND of Target
+ - Schottky Diode between the Rx & Tx of Serial Adapter (Cathode to Tx)
+ - Rx of Adapter to UPDI of Target - Here include the *470 ohm* resistor as needed 
 
+**Ideal - internal resistor in adapter - not more than 1k**
+
+```
 --------------------                                 To Target device
                 DTR|                                  __________________
-    internal    Rx |--------------,------------------| UPDI---\/\/---------->
+    internal    Rx |--------------,------------------| UPDI---\/\/------>
   Tx---/\/\/\---Tx |-------|<|---'          .--------| Gnd    470 ohm (100 ~ 1k)
     resistor    Vcc|---------------------------------| Vcc
   typ. 1k       CTS|                     .`          |__________________
@@ -141,27 +155,35 @@ internal resistor in adapter: not more than 1k
 or
 
 --------------------                                 To Target device
-                DTR|                                  __________________
-    internal    Rx |--------------,------------------| UPDI----------------->
+                DTR|      External 470 ohm (100 ~ 1k) __________________
+    internal    Rx |--------------,--\/\/------------| UPDI------------->
   Tx---/\/\/\---Tx |-------|<|---'          .--------| Gnd
     resistor    Vcc|---------------------------------| Vcc
   typ 1k        CTS|                     .`          |__________________
                 Gnd|--------------------'
 --------------------
+```
 
+**Or with no internal resistor on adapter - as long as target has one**
 
-
-Or with no internal resistor on adapter - as long as target has one
-
+```
 --------------------                                 To Target device
                 DTR|                                  __________________
-      no        Rx |--------------,------------------| UPDI---\/\/---------->
+       no       Rx |--------------,------------------| UPDI---\/\/------>
     internal    Tx |-------|<|---'          .--------| Gnd    470 ohm (100 ~ 1k)
     resistor    Vcc|---------------------------------| Vcc
                 CTS|                     .`          |__________________
                 Gnd|--------------------'
 --------------------
 ```
+
+
+
+#### Serial Programmer Usage
+
+
+
+**Note that this does not give you serial monitor - you need to connect a serial adapter the normal way for that**
 
 ## USB-C UPDI Programmer Manufacturing
 
@@ -186,3 +208,9 @@ I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.or
 [PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/)
 
 ## Programmer Usage
+
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
