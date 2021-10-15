@@ -122,8 +122,11 @@ The serial programming style relies on this prior mentioned portable python inst
 
  1. A USB-Serial Adapter - I'll be using an FTDI FT232 for this documentation, but boards based on the CH340G or the CP210 chips work great as well
  2. Some Jumper Wires
- 3. A Schottky Diode
- 4. A *470 ohms* Resistor - If creating a UPDI programmable board, incorporate this resistor into your schematic using the pinout below, running the 470 resistor inline to the UPDI pin. 
+ 3. A Schottky Diode - I tacked some leads to an SMD package (as shown below), but if you can get your hands on a through-hole package, that works great as well.
+ <center>
+![](../images/SerialUPDI/diodeleads.jpg){width="95%"}
+</center>
+ 4. A 470 ohms Resistor - If creating a UPDI programmable board, incorporate this resistor into your schematic using the pinout below, running the 470 resistor inline to the UPDI pin. Any value between 100 and 1k ohms will do here, but 470 is the optimal value.
 
 ```
       __________________
@@ -133,12 +136,12 @@ The serial programming style relies on this prior mentioned portable python inst
      |__________________
 ```
 
-If not creating your own board, and there's no inline UPDI resistor (470 ohms isn't mandatory - anything between 100 ~ 1k ohm will do fine) you'll need to include this resistor externally. With that said, wiring between your serial adapter and the target device is diagrammed in the schematics below.
+If not creating your own board, and there's no inline UPDI resistor, you'll need to include this resistor externally. With that said, wiring between your serial adapter and the target device is diagrammed in the schematics below.
 
  - VCC of Adapter to VCC of Target
  - GND of Adapter to GND of Target
  - Schottky Diode between the Rx & Tx of Serial Adapter (Cathode to Tx)
- - Rx of Adapter to UPDI of Target - Here include the *470 ohms* resistor as needed 
+ - Rx of Adapter to UPDI of Target - Here include the 470 ohms resistor as needed 
 
 **Ideal - internal resistor in the adapter - not more than 1k**
 
@@ -177,7 +180,14 @@ or
 --------------------
 ```
 
+I rigged up the second included schematic on a breadboard as unfortunately the blinky board I'm programming doesn't have a valid inline resistor I can use. 
 
+<center>
+
+![](../images/SerialUPDI/SerialBreadboardWired.jpg){width="95%"}
+  <figcaption>Serial Programmer Setup on a Breadboard</figcaption>
+
+</center>
 
 #### Serial Programmer Usage
 
@@ -188,6 +198,25 @@ To program via your USB-Serial setup ...
  3. Finally, upload your sketch via the *Upload* button and watch as your board is programmed at lightning speeds!
 
 **Note - the serial programmer setup does not give you a serial monitor** - you'll need to connect a serial adapter the normal way for that. The later documented [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) board provides a switching feature between a serial programming and serial monitoring mode, allowing for all programming and monitoring work to be done without rework of connections. Be sure to check out the specific [USB-C UPDI Serial Programmer usage](https://teddywarner.org/Projects/SerialUPDI/#programmer-usage) section for use of this feature.
+
+For this example, I modified my prior used blink sketch to run a 5-second delay as opposed to the prior 0.5 second...
+
+```
+void setup() {
+  pinMode(0, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(0, HIGH); 
+  delay(5000);
+  digitalWrite(0, LOW); 
+  delay(5000); 
+}
+```
+
+I uploaded this via the three-step process listed above, yielding the successful results below.
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/kzWAhotTQuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Congrats!** you can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI with a simple USB-Serial adapter with a speed increase by a factor of twenty when compared with the prior *jtag2updi* method.
 
