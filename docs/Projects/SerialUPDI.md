@@ -42,7 +42,7 @@ http://drazzy.com/package_drazzy.com_index.json
 
 <center>
 
-[Download the Latest jtag2udpi Sketch](https://github.com/SpenceKonde/jtag2updi){ .md-button .md-button--primary }
+[Download the Latest jtag2udpi Sketch :fontawesome-solid-download:](https://github.com/SpenceKonde/jtag2updi){ .md-button .md-button--primary }
 
 </center>
 
@@ -199,7 +199,7 @@ To program via your USB-Serial setup ...
 
 **Note - the serial programmer setup does not give you a serial monitor** - you'll need to connect a serial adapter the normal way for that. The later documented [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) board provides a switching feature between a serial programming and serial monitoring mode, allowing for all programming and monitoring work to be done without rework of connections. Be sure to check out the specific [USB-C UPDI Serial Programmer usage](https://teddywarner.org/Projects/SerialUPDI/#programmer-usage) section for use of this feature.
 
-For this example, I modified my prior used blink sketch to run a 5-second delay as opposed to the prior 0.5 second...
+For this example, I modified my prior used blink sketch to run a 5-second delay as opposed to the prior 0.5 seconds...
 
 ```
 void setup() {
@@ -224,41 +224,62 @@ I uploaded this via the three-step process listed above, yielding the successful
 
 I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.org/), one of the first being a tool to program the rest, an [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer). Being one of the first boards I fabricated myself, from the PCB milling to soldering & stuffing, I hadn't yet taken up the practice of designing my boards, and for this assignment, fabricated the [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) design of one of my mentors, [Dr. Adam Harris](http://sheekgeek.org/). This board is a specialized Arduino-like board, running on an ATMega 328p with a programmer sketch provided by the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library. The [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) I fabricated in Fab Academy's operation is great, but due to new updates in the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, the process can be optimized for faster speeds, and the board size and component requirements can be reduced. This board marks my first steps into the world of multi-layered PCB design and fabrication, a process I'm super pumped to pick up and apply to future projects.
 
+The USB-C UPDI Programmer is a specialized piece of hardware for use with the prior discussed [serial programming](https://teddywarner.org/Projects/SerialUPDI/#serial-programming) method and has a couple of advantages over rigging a programmer up on a breadboard. A permanent piece of the hardware enables the serial programming method to require a bit less setup, once the board has been made. Following that, this board includes "modes", allowing switching between serial programming and monitoring functions. When rigging a serial programmer up via a USB-serial adapter as documented prior, you cannot monitor serial from the board at the same time, but instead are required to require the board to the USB-serial adapter. The switching of "modes" on this programmer eliminates this extra hassle, handling all the required connections at the flip of a switch located on the board's underside.
+
 ### PCB Design
 
+It was this elimination of hassle that pushed me to create this piece of hardware, yielding a simple workflow when serial programming. The USB-C UPDI Serial Programmer is based on the *FT232RL* IC, handling the USB protocol and USB to serial data transfer on the programmer. 
+
 <iframe src="https://drive.google.com/file/d/1sXxm9A5GLxVPGFNDkNBzLakp-TWlVKT2/preview" width="100%" height="500" allow="autoplay"></iframe>
+
+The *FT232RL* is broken out following the same wiring principals diagrammed in the prior [serial programming](https://teddywarner.org/Projects/SerialUPDI/#serial-programming) documentation, converting the IC's *Rx* and *Tx* lines to a UPDI line, routed to a programming pin. Just before this *Rx* and *Tx* junction, a Double-Pole Double-Through switch allows for the switching of this conversion to UPDI to straightforward *Rx* and *Tx* lines, routed each to their corresponding pin. Thus, the programmer board includes a UPDI, *Rx*, and *Tx* output pin, in addition to a VCC and GND line. This 5 pin programming pinout can be mimicked on any board containing a [AVR Microcontroller](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus), allowing for programming and monitoring functions to be switched without reworking connections between the programmer and board.
 
 <center>
 
 ![](../images/SerialUPDI/ICPSchem1.png){width="100%"}
-  <figcaption>First USB-C UPDI Programmer Schematic</figcaption>
+  <figcaption>USB-C UPDI Programmer Eagle Schematic</figcaption>
+
+</center>
+
+Then came the nesting process. Being my first double-sided board in Eagle, it took some work to get used to the use of vias between sides, but eventually, I worked out the process of changing Vias class through Eagle's *Change -> Vias* tool. I ended up using 0.6mm rivets for this board's vias, using 8 on the board in total. I nested bards on the board, including both the *FT232RL* and the USB-C female adapter on the top side, along with some smoothing capacitors, and on the bottom, the UPDI programming component array, as well as the DPDT switch.
+
+<center>
 
 ![](../images/SerialUPDI/ICPTop1.png){width="100%"}
 ![](../images/SerialUPDI/ICPBottom1.png){width="100%"}
 ![](../images/SerialUPDI/ICPLayered1.png){width="100%"}
-  <figcaption>First USB-C UPDI Programmer Board File</figcaption>
+  <figcaption>USB-C UPDI Programmer Eagle Board</figcaption>
 
 </center>
 
-[Solder Paste Stencil](https://www.sparkfun.com/tutorials/383)
+The nesting of the two highest pinout parts on the boards topside inspiring my next experiment with this board, [Solder Paste Stencil](https://www.sparkfun.com/tutorials/383) making. Although I feel pretty confident in my SMD soldering skills, soldering pads this small wouldn't only be a hassle, it would also be tedious time waste, and thus I settled on a solder paste stencil approach for the boards topside, while hand soldering the bottom half. I exported the *Tcream* layer of my programmer board from Eagle as a *.pdf* for cutting of the stencil from cardstock on a [Epliog Fusion Pro 48](https://teddywarner.org/Machine-Profiles/FusionPro48/) laser.
 
 <center>
 
 ![](../images/SerialUPDI/topstencil.png){width="100%"}
+  <figcaption>Tcream board layer in Eagle</figcaption>
 
 </center>
 
 ### Fabrication & Testing
 
+
+
 [PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/)
 
 <center>
 
-[Download the USB-C UPDI Serial Programmer Project Files](https://github.com/Twarner491/project-files/tree/main/USB-C%20UPDI){ .md-button .md-button--primary }
+[Download the USB-C UPDI Serial Programmer Project Files :fontawesome-solid-download:](https://github.com/Twarner491/project-files/tree/main/USB-C%20UPDI){ .md-button .md-button--primary }
 
 </center>
 
 ## Programmer Usage
+
+<center>
+
+[Download the FT232RL drivers :fontawesome-solid-download:](https://ftdichip.com/drivers/vcp-drivers/){ .md-button .md-button--primary }
+
+</center>
 
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>

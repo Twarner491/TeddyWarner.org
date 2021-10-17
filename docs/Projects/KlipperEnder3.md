@@ -56,7 +56,7 @@ As mentioned in the introduction paragraph of this page, I settled on using [Flu
 
 <center>
 
-[Download the Latest FluiddPi Image](https://github.com/cadriel/FluiddPI/releases/tag/v1.16.2){ .md-button .md-button--primary }
+[Download the Latest FluiddPi Image :fontawesome-solid-download:](https://github.com/cadriel/FluiddPI/releases/tag/v1.16.2){ .md-button .md-button--primary }
 
 </center>
 

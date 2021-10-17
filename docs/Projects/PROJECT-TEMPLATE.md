@@ -24,7 +24,7 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![](../images/IMAGEHERE){: align=RIGHT/LEFT width="100%"}
   <figcaption>Caption</figcaption>
 
-[Solid Button](URL){ .md-button .md-button--primary }
+[Solid Button :fontawesome-solid-download:](URL){ .md-button .md-button--primary }
 [Outline Button](URL){ .md-button}
 
 <!-- begin wwww.htmlcommentbox.com -->

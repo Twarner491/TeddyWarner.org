@@ -33,7 +33,7 @@ To begin the [Octoprint](https://octoprint.org/) installation you'll need a Rasp
 
 <center>
 
-[Download the Latest Octopi Image](https://github.com/guysoft/OctoPi){ .md-button .md-button--primary }
+[Download the Latest Octopi Image :fontawesome-solid-download:](https://github.com/guysoft/OctoPi){ .md-button .md-button--primary }
 
 </center>
 
