@@ -254,7 +254,7 @@ I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.or
 
 <center>
 
-[Download the USB-C UPDI Serial Prgorammer Project Files](https://github.com/Twarner491/project-files/tree/main/USB-C%20UPDI){ .md-button .md-button--primary }
+[Download the USB-C UPDI Serial Programmer Project Files](https://github.com/Twarner491/project-files/tree/main/USB-C%20UPDI){ .md-button .md-button--primary }
 
 </center>
 
