@@ -261,6 +261,26 @@ The nesting of the two highest pinout parts on the boards topside inspiring my n
 
 </center>
 
+### ftdi2updi
+
+<center>
+
+![](../images/SerialUPDI/ftdi2updischem.png){width="100%"}
+  <figcaption>ftdi2updi Programmer Eagle Schematic</figcaption>
+
+</center>
+
+
+
+<center>
+
+![](../images/SerialUPDI/ftdi2upditop.png){width="100%"}
+![](../images/SerialUPDI/ftdi2updibottom.png){width="100%"}
+![](../images/SerialUPDI/ftdi2updiboard.png){width="100%"}
+  <figcaption>ftdi2updi Programmer Eagle Board</figcaption>
+
+</center>
+
 ### Fabrication & Testing
 
 
