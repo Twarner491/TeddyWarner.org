@@ -95,8 +95,6 @@ hide:
   transform:translateY(0px);
 }
 
-
-
 </style>
 
    <center>

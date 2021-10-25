@@ -287,7 +287,12 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
 
 ### Fabrication & Testing
 
+<center>
 
+![](../images/SerialUPDI/ftdi2updiirltop.jpg){width="47.4%"}
+![](../images/SerialUPDI/ftdi2updiirlbottom.jpg){width="46%"}
+
+</center>
 
 [PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/)
 
