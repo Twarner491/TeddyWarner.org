@@ -19,9 +19,15 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 **X-X minutes :octicons-book-16:**
 
+<center>
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/videoseries?list=PLowKtXNTBypGqImE405J2565dvjafglHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 [8-bit Breadboard Computer](https://eater.net/8bit)
+
+<center>
+<iframe width="100%" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVxIR5ghw9VY7MbgtRnjQO2AxHPF-69OgxBI2QbuQ8tX-gyORepdxhZFWp6qwiHnvjcczT8cA5ACIs/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+</center>
 
 ![](../images/8-bitComputer/){ width="100%"}
 
