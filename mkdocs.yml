@@ -101,6 +101,7 @@ nav:
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
       - UPDI Serial Programming: Projects/SerialUPDI.md
       - Bottle Cap Generator: Projects/ParametricGenerator.md
+      - 8-bit Breadboard Computer: Projects/8-bit.md
   - Machine Profiles: 
     - Laser Cutters :
       - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md
