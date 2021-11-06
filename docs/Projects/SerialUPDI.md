@@ -1,8 +1,8 @@
 ---
-title: UPDI Serial Programmer
+title: UPDI Serial Programming
 ---
 
-# USB-C UPDI Serial Programmer (Junior Year - 2021)
+# UPDI Serial Programming (Junior Year - 2021)
 
 <!-- Compleation Badge
 
@@ -40,13 +40,15 @@ http://drazzy.com/package_drazzy.com_index.json
 
 ### jtag2UPDI Programming
 
+![Promotion](https://img.shields.io/badge/-No%20Longer%20Recommended-critical?style=flat-square)
+
+As mentioned prior, *jtag2updi* is a sketch from the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, allowing for the use of a 328p-based board (i.e. Arduino or a clone) as an In-Circuit programmer. To begin with, this programming approach, download the latest version of the *jtag2udpi* sketch via the button below (Code -> *Download Zip*).
+
 <center>
 
 [Download the Latest jtag2udpi Sketch :fontawesome-solid-download:](https://github.com/SpenceKonde/jtag2updi){ .md-button .md-button--primary }
 
 </center>
-
-As mentioned prior, *jtag2updi* is a sketch from the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, allowing for the use of a 328p-based board (i.e. Arduino or a clone) as an In-Circuit programmer. To begin with, this programming approach, download the latest version of the *jtag2udpi* sketch via the button above (Code -> *Download Zip*).
 
 Extract the contents of this downloaded sketch folder by first unzipping the downloaded folder and next moving the contained sketch folder in the unzipped folder to a separate location. Finally, **Rename this sketch folder to *jtag2updi***, leaving you with a folder similar to the one circled in red in the image below.
 
@@ -115,6 +117,8 @@ Following these steps on my simple ATtiny 412 board yielded the 1/2 second blink
 **Congrats!** you can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI and a *jtag2updi* enabled 328p-based board.
 
 ### Serial Programming
+
+![Promotion](https://img.shields.io/badge/-Recommended-success?style=flat-square)
 
 Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This installation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this performance increase in addition to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optimal form of programming I've used on my boards to date.
 
@@ -220,13 +224,13 @@ I uploaded this via the three-step process listed above, yielding the successful
 
 **Congrats!** you can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI with a simple USB-Serial adapter with a speed increase by a factor of twenty when compared with the prior *jtag2updi* method.
 
-## USB-C UPDI Serial Programmer Manufacturing
+## UPDI Serial Programmer Manufacturing
 
 I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.org/), one of the first being a tool to program the rest, an [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer). Being one of the first boards I fabricated myself, from the PCB milling to soldering & stuffing, I hadn't yet taken up the practice of designing my boards, and for this assignment, fabricated the [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) design of one of my mentors, [Dr. Adam Harris](http://sheekgeek.org/). This board is a specialized Arduino-like board, running on an ATMega 328p with a programmer sketch provided by the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library. The [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) I fabricated in Fab Academy's operation is great, but due to new updates in the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, the process can be optimized for faster speeds, and the board size and component requirements can be reduced. This board marks my first steps into the world of multi-layered PCB design and fabrication, a process I'm super pumped to pick up and apply to future projects.
 
 The USB-C UPDI Programmer is a specialized piece of hardware for use with the prior discussed [serial programming](https://teddywarner.org/Projects/SerialUPDI/#serial-programming) method and has a couple of advantages over rigging a programmer up on a breadboard. A permanent piece of the hardware enables the serial programming method to require a bit less setup, once the board has been made. Following that, this board includes "modes", allowing switching between serial programming and monitoring functions. When rigging a serial programmer up via a USB-serial adapter as documented prior, you cannot monitor serial from the board at the same time, but instead are required to require the board to the USB-serial adapter. The switching of "modes" on this programmer eliminates this extra hassle, handling all the required connections at the flip of a switch located on the board's underside.
 
-### PCB Design
+### USB-C UPDI 
 
 It was this elimination of hassle that pushed me to create this piece of hardware, yielding a simple workflow when serial programming. The USB-C UPDI Serial Programmer is based on the *FT232RL* IC, handling the USB protocol and USB to serial data transfer on the programmer. 
 
@@ -270,7 +274,7 @@ The board's schematic is a cloned iteration of the prior programmer, but with th
 <center>
 
 ![](../images/SerialUPDI/ftdi2updischem.png){width="100%"}
-  <figcaption>ftdi2updi Programmer Eagle Schematic</figcaption>
+  <figcaption>First Iteration ftdi2updi Programmer Eagle Schematic</figcaption>
 
 </center>
 
@@ -281,11 +285,13 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
 ![](../images/SerialUPDI/ftdi2upditop.png){width="100%"}
 ![](../images/SerialUPDI/ftdi2updibottom.png){width="100%"}
 ![](../images/SerialUPDI/ftdi2updiboard.png){width="100%"}
-  <figcaption>ftdi2updi Programmer Eagle Board</figcaption>
+  <figcaption>First Iteration ftdi2updi Programmer Eagle Board</figcaption>
 
 </center>
 
 ### Fabrication & Testing
+
+As meantioned prior, due to 2021's supply chain limitations, I cannot currently get my hands on an FT232RL, and thus for now, this *fabrication & testing* section will only include my *ftdi2upid* board. This section will be updated by future me once I can get a FT232RL with the USB-C UPDI Programmer fabrication & testing.
 
 <center>
 
@@ -298,11 +304,89 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
 
 <center>
 
-[Download the USB-C UPDI Serial Programmer Project Files :fontawesome-solid-download:](https://github.com/Twarner491/project-files/tree/main/USB-C%20UPDI){ .md-button .md-button--primary }
+![](../images/SerialUPDI/viasstep1.jpg){width="31.5%"}
+![](../images/SerialUPDI/viasstep2.jpg){width="31.5%"}
+![](../images/SerialUPDI/viasstep3.jpg){width="31.5%"}
 
 </center>
 
+<center>
+
+![](../images/SerialUPDI/solderedviasbottom.jpg){width="49.3%"}
+![](../images/SerialUPDI/solderedviastop.jpg){width="47%"}
+
+</center>
+
+<center>
+
+![](../images/SerialUPDI/ftdi2updisolderedtop.jpg){width="47%"}
+![](../images/SerialUPDI/ftdi2updisolderedbottom.jpg){width="50%"}
+
+</center>
+
+
+```
+void setup() {
+  pinMode(0, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(0, HIGH); 
+  Serial.println('ON')
+  delay(5000);
+  digitalWrite(0, LOW); 
+  Serial.println('OFF')
+  delay(5000); 
+}
+```
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/eTtsF79EW4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<center>
+
+![](../images/SerialUPDI/serialtestwireing.jpg){width="95%"}
+
+</center>
+
+
+```
+void setup(){
+  Serial.begin(9600);
+}
+
+void loop(){
+  Serial.println("Hello World");
+  delay(5000);
+}
+```
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/MHLoW-Os5n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Although this first iteration of the ftdi2updi worked, there were a couple of design flaws I've flatted out in later versions including - a reversed FTDI header, oversized vias, an uneaccary 1k resistor, and imporper meshing with an existing FTDI serial adapter. The final version of this programmer (and its CAM files) can be accessed in the repo linked by the download button below.
+
+<center>
+
+[Download the UPDI Serial Programmers Project Files :fontawesome-solid-download:](https://github.com/Twarner491/project-files/tree/main/USB-C%20UPDI){ .md-button .md-button--primary }
+
+</center>
+
+I ordered a couple of these final iteration boards from a PCB fab ...
+
+INSERT FABBED BOARDS HERE
+
 ## Programmer Usage
+
+<center>
+
+![](../images/SerialUPDI/serialswitched.jpg){width="80%"}
+
+</center>
+
+<center>
+
+![](../images/SerialUPDI/updiswitched.jpg){width="80%"}
+
+</center>
 
 <center>
 

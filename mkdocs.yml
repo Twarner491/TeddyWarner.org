@@ -99,7 +99,7 @@ nav:
       - Cable Managed Corner Desk : Projects/CornerDesk.md
       - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
       - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
-      - UPDI Serial Programmer: Projects/SerialUPDI.md
+      - UPDI Serial Programming: Projects/SerialUPDI.md
       - Bottle Cap Generator: Projects/ParametricGenerator.md
   - Machine Profiles: 
     - Laser Cutters :
