@@ -13,11 +13,11 @@ title: About Me
 
 Hey! I’m Teddy Warner, a junior in highschool enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. 
 
-[LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/in/teddy-warner-880974200/){ .md-button}
-[GitHub :fontawesome-brands-github:](https://github.com/Twarner491){ .md-button}
-[Instagram :fontawesome-brands-instagram:](https://www.instagram.com/teddywarner){ .md-button}
-[Twitter :fontawesome-brands-twitter:](https://twitter.com/WarnerTeddy){ .md-button}
-[Email :fontawesome-solid-paper-plane:](mailto:<Twarner491@gmail.com>){ .md-button}
+[LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/in/teddy-warner-880974200/){ .md-button .md-button--primary }
+[GitHub :fontawesome-brands-github:](https://github.com/Twarner491){ .md-button .md-button--primary }
+[Instagram :fontawesome-brands-instagram:](https://www.instagram.com/teddywarner){ .md-button .md-button--primary }
+[Twitter :fontawesome-brands-twitter:](https://twitter.com/WarnerTeddy){ .md-button .md-button--primary }
+[Email :fontawesome-solid-paper-plane:](mailto:<Twarner491@gmail.com>){ .md-button .md-button--primary }
 
 </center>
 
