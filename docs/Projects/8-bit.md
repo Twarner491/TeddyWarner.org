@@ -29,23 +29,128 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 <iframe width="100%" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVxIR5ghw9VY7MbgtRnjQO2AxHPF-69OgxBI2QbuQ8tX-gyORepdxhZFWp6qwiHnvjcczT8cA5ACIs/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </center>
 
-![](../images/8-bitComputer/){ width="100%"}
-
 ## Clock Module
+
+<center>
+<iframe src="https://drive.google.com/file/d/1-FyllkfmhpjOUVsky30Y7QNn7lpM8d4w/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1Oac8LGzgeLtf9SuPbXrGJICCNPeRC6Yi/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1v-PXHRJIt_JFhhysesvn4DHJBXGagMT8/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1-R9MkHobL7_UnY4A5ClBVB-B3Wk5GqkO/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+## Registers
+
+<center>
+<iframe src="https://drive.google.com/file/d/1uJpgZQP0e2EXK5hfRB6coKhc2ShjMrcj/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
 
 ## Arithmetic Logic Unit (ALU)
 
+<center>
+<iframe src="https://drive.google.com/file/d/1fDhpvg5gEuUKsYtYsU6lxuNsiWBIBEjm/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1Oe01zt6FAccC8DMF8wXAVJUvqXoZCyE6/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1n3osGqqPa9fuIrJvKPaofTcG2bQKnvha/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1KcwJAkapqJXq_c77yfLfU5jG_NE3ln8Y/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
 ## Random Access Memory Module (RAM)
+
+<center>
+<iframe src="https://drive.google.com/file/d/1Zz5f_ewaGAkknyZdfxSy3q6TZO5UZlBy/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/15Va5pgG0nNBNrbOHh1z8KNSZW08ksQ_h/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1sCDVjSXc1LlmeylG8YtIt1QfR0yr3EoV/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
 
 ## Program Counter
 
+<center>
+<iframe src="https://drive.google.com/file/d/1rPiMCjodmKJnFNQy5eRH-btih6BPmHsX/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
 ## Output Register
+
+<center>
+<iframe src="https://drive.google.com/file/d/1A3FqvTOU6llJ6SaJntDV3CHkvV7lSEYa/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1taC9UxK-zJkyK4z_zXrvudsRHVezncjc/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/17Ukjvyc5lZlTp-99clvhrcItOpABu2YB/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1MbF2w-6krd2oQ-XTgWfJeP68hqdEirVI/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
 
 ## Module Meshing
 
 ## CPU Control Logic
 
 ### Fibonacci Sequence
+
+<center>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/1Jj-sJ78O6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<center>
+
+![](../images/8-bitComputer/Fibonaccisequencespiral.png){ width="60%"}
+
+</center>
+
+<center>
+
+![](../images/8-bitComputer/FibonacciEquasion.png){ width="80%"}
+
+</center>
+
+<center>
+
+**First 12 Numberes in the Fibonacci Sequence**
+
+| n  | Fibonacci Number |
+|----|------------------|
+| 0  | 0                |
+| 1  | 1                |
+| 2  | 1                |
+| 3  | 2                |
+| 4  | 3                |
+| 5  | 5                |
+| 6  | 8                |
+| 7  | 13               |
+| 8  | 21               |
+| 9  | 34               |
+| 10 | 55               |
+| 11 | 89               |
+
+</center>
 
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
