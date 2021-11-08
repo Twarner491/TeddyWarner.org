@@ -147,7 +147,7 @@ hide:
 }
 
 .t{
-      font-size: 81px; 
+      font-size: calc(75px + 16 * ((100vw - 600px) / 600));
       height:12vh;
       line-height:15.5vh;
       position: relative;
