@@ -147,14 +147,14 @@ hide:
 }
 
 .t{
-      font-size: calc(70px + 16 * ((100vw - 600px) / 600));
+      font-size: calc(72px + 16 * ((100vw - 600px) / 600));
       height:10vh;
       line-height:13vh;
       position: relative;
       top: -40px;
 	    color: #fcedd8;
 	   	font-family: 'Niconne', cursive;
-	    font-weight: 700;
+	    font-weight: 900;
       text-shadow: 5px 4px 0px #eb452b, 
                   10px 7.5px 0px #efa032, 
                   15px 11px 0px #46b59b, 
