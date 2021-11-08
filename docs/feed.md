@@ -147,9 +147,9 @@ hide:
 }
 
 .t{
-		  font-size: 4.6rem;
+		  font-size: 4.2rem;
 	    text-align: center;
-      height:10vh;
+      height:9vh;
       line-height:0.5vh;
 	    color: #fcedd8;
 	   	font-family: 'Niconne', cursive;
