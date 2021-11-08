@@ -147,9 +147,9 @@ hide:
 }
 
 .t{
-      font-size: calc(75px + 16 * ((100vw - 600px) / 600));
-      height:12vh;
-      line-height:15.5vh;
+      font-size: calc(70px + 16 * ((100vw - 600px) / 600));
+      height:10vh;
+      line-height:13vh;
       position: relative;
       top: -40px;
 	    color: #fcedd8;
