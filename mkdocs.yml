@@ -91,8 +91,8 @@ nav:
   - Home : index.md
   - About Me: About-Me/about.md
   - Projects: 
-    - Highlights : highlights.md
-    - Project Feed : 
+    - Project Feed : feed.md
+    - Projects : 
       - Project Portfolio Site : Projects/ProjectPortfolioSite.md
       - Octoprint Setup : Projects/Octoprint.md
       - Lithophane Experiments: Projects/LithophaneExperiments.md

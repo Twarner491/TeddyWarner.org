@@ -83,6 +83,7 @@ body {
   background-image: linear-gradient(80deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
   padding: 0.3rem 3.4rem;
   border: 3px solid black;
+  border-radius: 3px;
   margin-right: 2.6rem;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
