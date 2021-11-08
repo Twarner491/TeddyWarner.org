@@ -147,10 +147,11 @@ hide:
 }
 
 .t{
-		  font-size: 4.2rem;
-	    text-align: center;
-      height:9vh;
-      line-height:0.5vh;
+      font-size: 81px; 
+      height:12vh;
+      line-height:15.5vh;
+      position: relative;
+      top: -40px;
 	    color: #fcedd8;
 	   	font-family: 'Niconne', cursive;
 	    font-weight: 700;
@@ -164,7 +165,9 @@ hide:
 
 </style>
 
+<center>
 <div class="t">Project Feed</div>
+</center>
 
   <div class="blog-card alt">
     <div class="meta">
