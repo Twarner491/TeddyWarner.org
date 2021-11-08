@@ -1,5 +1,7 @@
 ---
 title: 8-bit Breadboard Computer
+hide:
+  - navigation
 ---
 
 # 8-bit Breadboard Computer - Build Log (Junior Year - 2021)

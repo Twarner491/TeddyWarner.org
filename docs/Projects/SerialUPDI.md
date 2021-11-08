@@ -1,5 +1,7 @@
 ---
 title: UPDI Serial Programming
+hide:
+  - navigation
 ---
 
 # UPDI Serial Programming (Junior Year - 2021)

@@ -1,5 +1,7 @@
 ---
 title: Klipper Enabled Ender 3
+hide:
+  - navigation
 ---
 
 # Klipper Enabled Ender 3 (Sophmore Year - 2021)

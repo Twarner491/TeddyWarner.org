@@ -1,5 +1,7 @@
 ---
 title: Assistive Aquaponics Fish Tank
+hide:
+  - navigation
 ---
 
 # Assistive Aquaponics Fish Tank (Sophmore Year - 2021)

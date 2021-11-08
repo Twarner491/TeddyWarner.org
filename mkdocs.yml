@@ -62,7 +62,6 @@ theme:
    - navigation.top
    - navigation.tabs
    - navigation.expand
-   - toc.integrate
 
 plugins:
   - search
@@ -89,7 +88,7 @@ extra_javascript:
 
 nav:
   - Home : index.md
-  - About Me: About-Me/about.md
+  - About : About-Me/about.md
   - Projects: 
     - Project Feed : feed.md
     - Projects : 

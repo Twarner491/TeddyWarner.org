@@ -1,5 +1,7 @@
 ---
 title: Parametric Bottle Cap Generator
+hide:
+  - navigation
 ---
 
 # Parametric Bottle Cap Generator (Junior Year - 2021)

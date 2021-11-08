@@ -1,5 +1,7 @@
 ---
 title: Lithophane Experiments
+hide:
+  - navigation
 ---
 
 # Lithophane Experiments (Junior Year - 2021)

@@ -1,5 +1,7 @@
 ---
 title: PROJECT-TITLE
+hide:
+  - navigation
 ---
 
 # PROJECT-TITLE (SCHOOL YEAR - YEAR)

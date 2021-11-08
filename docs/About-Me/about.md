@@ -5,6 +5,10 @@ hide:
 title: About Me
 ---
 
+<style>
+
+</style>
+
 # About me
 
 <center>

@@ -74,13 +74,15 @@ body {
 }
 .message {
   font-size:2em;
-  margin: 0px 0px 4px;
+  margin: 0px 0px 0px;
+  position: relative;
+  top: -8px;
 }
 .btn {
   color:inherit;
     font-family:inherit;
   font-size: inherit;
-  background-image: linear-gradient(80deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+  background-image: linear-gradient(130deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
   padding: 0.3rem 3.4rem;
   border: 3px solid black;
   border-radius: 3px;
@@ -94,7 +96,7 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 0.4rem 0.4rem 0 black;
+  box-shadow: 0.4rem 0.4rem 0 #141414;
   transform: translate(-0.4rem, -0.4rem);
 }
 
@@ -117,6 +119,8 @@ body {
 .container img {
   width: auto;
   height: auto;
+  border-radius: 3px;
+  box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container .info {

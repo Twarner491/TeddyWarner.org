@@ -1,5 +1,7 @@
 ---
 title: Cable Managed Corner Desk
+hide:
+  - navigation
 ---
 
 # Cable Managed Corner Desk (Freshman Year - 2020)

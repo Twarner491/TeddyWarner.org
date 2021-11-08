@@ -1,5 +1,7 @@
 ---
 title: Project Portfolio Site
+hide:
+  - navigation
 ---
 
 # Project Portfolio Site

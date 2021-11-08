@@ -1,5 +1,7 @@
 ---
 title: Octoprint Setup
+hide:
+  - navigation
 ---
 
 # Octoprint Setup Documentation 
