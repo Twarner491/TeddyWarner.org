@@ -80,7 +80,7 @@ hide:
 }
 .blog-card .description .read-more a:after {
   font-weight: 1000;
-  content:  "\1F826";
+  content:  "-->";
   margin-left: -10px;
   opacity: 0;
   vertical-align: middle;
