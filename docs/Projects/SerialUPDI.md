@@ -284,7 +284,7 @@ The board's schematic is a cloned iteration of the prior programmer, but with th
 
 </center>
 
-I was compelled to expand on the original shape of an FTDI serial adapter for this board, as it expands on the functionality of the adapter itself. I used Inkscape to create the board shape, allowing for meshing with an FTDI serial adapter, with the board aligning two of the sides of the adapter and then imported this board shape into Eagle via a *ulp* as documented on my [Fab Academy Final Project](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/#main-board-eagle-prototyping-and-design) page. I then nested the components on both sides of the board, aligning the FTDI connection pins allowing for proper seating of the FTDI serial adapter with the board.
+I was compelled to expand on the original shape of an FTDI serial adapter for this board, as it expands on the functionality of the adapter itself. I used Inkscape to create the board shape, allowing for meshing with an FTDI serial adapter, with the board aligning two of the sides of the adapter and then imported this board shape into Eagle via an *ulp* as documented on my [Fab Academy Final Project](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/#main-board-eagle-prototyping-and-design) page. I then nested the components on both sides of the board, aligning the FTDI connection pins allowing for proper seating of the FTDI serial adapter with the board.
 
 <center>
 
@@ -297,7 +297,11 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
 
 ### Fabrication & Testing
 
-As meantioned prior, due to 2021's supply chain limitations, I cannot currently get my hands on an FT232RL, and thus for now, this *fabrication & testing* section will only include my *ftdi2upid* board. This section will be updated by future me once I can get a FT232RL with the USB-C UPDI Programmer fabrication & testing.
+As mentioned prior, due to 2021's supply chain limitations, I cannot currently get my hands on an FT232RL, and thus, for now, this *fabrication & testing* section will only include my *ftdi2upid* board. This section will be updated by future me once I can get an FT232RL with the USB-C UPDI Programmer fabrication & testing.
+
+I milled my boards with a Bantam PCB mill and its [Bantam Tools Desktop Milling Machine Software](https://www.bantamtools.com/software-download). The software handles all toolpath generation from my Eagle board file, and conveniently, when paired with Bantam's PCB placement bracket, also handles the double-sided board milling process via a toggle switch in the interface. I followed the same milling process I have documented on my [week 4](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week04/#blinky-test-board) Fab Academy page, however after the top-side traces and holes were milled, I flipped the copper stock, aligning to the right-hand corner of the PCB alignment bracket as opposed to the left, and toggled the board to its bottom side in the [Bantam Tools Desktop Milling Machine Software](https://www.bantamtools.com/software-download). With the stock realigned, I repeated the same milling process for the bottom side of the board. This whole process is showcased in [this view](https://www.youtube.com/watch?v=DCGLEa2UUaY) from Bantam.
+
+I used a 0.005" PCB engraving bit for the ftdi2updi's traces, and a 1/32" for its holes and outlines, yielding the milled results below.
 
 <center>
 
@@ -306,7 +310,9 @@ As meantioned prior, due to 2021's supply chain limitations, I cannot currently 
 
 </center>
 
-[PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/)
+After the milling, I washed off my board with some soap and water. The [Bantam Tools Desktop Milling Machine Software](https://www.bantamtools.com/software-download) makes the milling of double-sided boards super straightforward, not much harder than a single-sided PCB, however, the boards require the extra step of riveting vias between both sides of the board before soldering. This article on [PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/) from the Fab Docs walks through the process down into a couple of steps.
+
+First the via has to be inserted into its corresponding hole, I used 0.6mm vias here. Then I used a V-Shaped nail to chamfer the top of the via and finally pressed it flush with a flat press, each step shown in the three images below.
 
 <center>
 
@@ -316,12 +322,17 @@ As meantioned prior, due to 2021's supply chain limitations, I cannot currently 
 
 </center>
 
+Finally, to ensure a proper connection, I soldered over each side of the via and repeated this process for all four of the board's vias.
+
 <center>
 
 ![](../images/SerialUPDI/solderedviasbottom.jpg){width="49.3%"}
 ![](../images/SerialUPDI/solderedviastop.jpg){width="47%"}
+  <figcaption>Boards with Vias</figcaption>
 
 </center>
+
+I finished the stuffing and soldering of this board, a simple enough process due to the small component size. **Note** - the board that is being documented here is an early iteration of the ftdi2updi and contains an extra resistor, and thus your final board may not look exactly like the ones on this page until the *Programmer Usage* section.
 
 <center>
 
@@ -330,6 +341,7 @@ As meantioned prior, due to 2021's supply chain limitations, I cannot currently 
 
 </center>
 
+I ran two tests on the ftdi2updi, one proving each of the board's functions. Beginning with its programming function, I uploaded a modified version of the same blink test sketch used above to my simple LED board ...
 
 ```
 void setup() {
@@ -346,9 +358,13 @@ void loop() {
 }
 ```
 
+I uploaded this via the *Programmer Usage* process documented in the corresponding section below. The first upload was successful at a medium (230400) baudrate. Then I uploaded the test, and repeated it at the highest (TURBO 4.5v + 460800) baudrate, yielding the successful results below. **Note** - the ftdi2updi serial adapter meshing headers were reversed in this iteration, and thus I attached the serial adapter upsidedown for this test, the proper orientation as outlined in the following *Programmer Usage* section.
+
 <center>
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/eTtsF79EW4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+
+Next, I switched the programmer to its monitoring mode and hooked it up to Arduino *RX* & *TX* pins, shown below. Unfortunately, my simple LED board doesn't have serial communication pins, and thus this Arduino was my next best testing option.
 
 <center>
 
@@ -356,6 +372,7 @@ void loop() {
 
 </center>
 
+I uploaded this super simple serial print sketch to the Arduino ...
 
 ```
 void setup(){
@@ -368,11 +385,13 @@ void loop(){
 }
 ```
 
+and then opened the Arduino IDE's serial monitor on my ftdi2updi port, which successfully read the serial output printed, shown below - and also was able to transmit via serial, shown by the Arduinos receiving LED. 
+
 <center>
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/MHLoW-Os5n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-Although this first iteration of the ftdi2updi worked, there were a couple of design flaws I've flatted out in later versions including - a reversed FTDI header, oversized vias, an uneaccary 1k resistor, and imporper meshing with an existing FTDI serial adapter. The final version of this programmer (and its CAM files) can be accessed in the repo linked by the download button below.
+Although this first iteration of the ftdi2updi worked, there were a couple of design flaws (Noted above) I've flatted out in later versions including - a reversed FTDI header, oversized vias, an unnecessary 1k resistor, and improper meshing with an existing FTDI serial adapter. The final version of this programmer (and its CAM files) can be accessed in the repo linked by the download button below.
 
 <center>
 
@@ -386,23 +405,7 @@ INSERT FABBED BOARDS HERE
 
 ## Programmer Usage
 
-<center>
 
-![](../images/SerialUPDI/serialswitched.jpg){width="80%"}
-
-</center>
-
-<center>
-
-![](../images/SerialUPDI/updiswitched.jpg){width="80%"}
-
-</center>
-
-<center>
-
-[Download the FT232RL drivers :fontawesome-solid-download:](https://ftdichip.com/drivers/vcp-drivers/){ .md-button .md-button--primary }
-
-</center>
 
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
