@@ -38,6 +38,36 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 </center>
 
 <center>
+
+![](../images/8-bitComputer/setastable.jpg){ width="80%"}
+
+</center>
+
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/HKCb6LxuJ04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<center>
+
+![](../images/8-bitComputer/555wave.jpg){ width="100%"}
+
+</center>
+
+<center>
+
+![](../images/8-bitComputer/variableastable.jpg){ width="80%"}
+
+</center>
+
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/gXsm1pPk73Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<center>
+
+![](../images/8-bitComputer/monostable.jpg){ width="80%"}
+
+</center>
+
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/oZreQbS1mkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<center>
 <iframe src="https://drive.google.com/file/d/1Oac8LGzgeLtf9SuPbXrGJICCNPeRC6Yi/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
 
@@ -48,6 +78,14 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 <center>
 <iframe src="https://drive.google.com/file/d/1-R9MkHobL7_UnY4A5ClBVB-B3Wk5GqkO/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
+
+<center>
+
+![](../images/8-bitComputer/clockmodule.jpg){ width="100%"}
+
+</center>
+
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/QxKCNCJNMlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Registers
 
