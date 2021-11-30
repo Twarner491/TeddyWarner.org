@@ -418,6 +418,8 @@ Which turned out incredible. The Gerber files for these boards are included in t
 
 As mentioned prior, due to 2021's supply chain limitations, I cannot currently get my hands on an FT232RL, and thus, for now, the *fabrication & testing* sections will only include my *ftdi2upid* board. **This section will be updated by future me once I can get an FT232RL.**
 
+**This USB-C UPDI Programmer Board is not yet complete**, and although you can download its files, the board is still in development and may not function properly. Again, this section will be updated upon its completion.
+
 <center>
 
 ![](../images/SerialUPDI/2ndgenmileldtop.jpg){width="48%"}
