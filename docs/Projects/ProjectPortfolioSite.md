@@ -137,6 +137,9 @@ git push  //pushes changes to your GitHub - when prompted, enter your SSH passwo
 
 **Congrats!** You now have built your very own static site with [MKdocs](https://www.mkdocs.org/) and its [Material Theme](https://squidfunk.github.io/mkdocs-material/).
 
+**Wooo :partying_face: :partying_face:** as of 12/1/2021, *teddywarner.org* is now **100 Commits** old!!
+![](../images/PortfolioSite/100commit.jpg){width="100%"}
+
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
