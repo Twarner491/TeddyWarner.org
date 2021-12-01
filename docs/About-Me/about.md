@@ -36,7 +36,6 @@ title: About Me
   left: 0;
   height: 100%;
   width: 100%;
-  align-content: center;
 }
 
 .sidebar h1 {
@@ -129,11 +128,11 @@ title: About Me
 }
 .stuff > *:first-child {
   position: relative;
-  height: 14em;
+  height: 26em;
 }
 @media (min-width: 30em) {
   .stuff > *:first-child {
-    height: 350px;
+    height: 26em;
   }
 }
 @media (min-width: 55em) {
