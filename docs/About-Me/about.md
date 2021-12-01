@@ -97,6 +97,15 @@ title: About Me
     color: #00acee;
 }
 
+.discord {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.fa-discord:hover {
+    color: #5865F2;
+}
+
 .spotify {
   padding-left: 0.3em;
   padding-right: 0.3em;
@@ -170,6 +179,7 @@ title: About Me
        <a href="https://github.com/Twarner491" class="git" style=" color: inherit;" title="Github - Twarner491"><i class="fab fa-github"></i></a>
        <a href="https://www.instagram.com/teddywarner" class="insta" style=" color: inherit;" title="Instagram - @teddywarner"><i class="fa fa-instagram"></i></a>
        <a href="https://twitter.com/WarnerTeddy" class="twitter" style=" color: inherit;" title="Twitter - @WarnerTeddy"><i class="fa fa-twitter"></i></a>
+       <a href="https://discordapp.com/users/534164566649733120/" class="ln" style=" color: inherit;" title="Discord - Twarner#2592"><i class="fab fa-discord"></i></a>
        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
        <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
       </div>
@@ -180,7 +190,7 @@ title: About Me
     <div class="stuff__content">
      <h1>About Me</h1> 
       <p><strong>Hey! I’m Teddy Warner,</strong> a junior in highschool enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
-     <h2><i class="fas fa-briefcase"></i> Professional Experience -</h2>
+     <h2><i class="fas fa-briefcase"></i> Experience -</h2>
      <h3>EVENTYS PARTNERS</h3>
       <p>
         <strong>Engineering Intern</strong>

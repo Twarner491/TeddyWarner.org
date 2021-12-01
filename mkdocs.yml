@@ -1,5 +1,5 @@
 site_name: Teddy Warner
-site_description: Portfolio and Documentation Site for Teddy Warner
+site_description: Project Portfolio and Documentation Site for Teddy Warner
 site_author: Teddy Warner
 copyright: Copyright 2021 Teddy Warner - MIT License
 
@@ -18,6 +18,8 @@ extra:
       link: https://www.instagram.com/teddywarner
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/WarnerTeddy
+    - icon: fontawesome/brands/discord
+      link: https://discordapp.com/users/534164566649733120/
     - icon: fontawesome/brands/spotify
       link: https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb
     - icon: fontawesome/solid/paper-plane
