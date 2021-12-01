@@ -133,7 +133,7 @@ title: About Me
 }
 @media (min-width: 30em) {
   .stuff > *:first-child {
-    height: 26em;
+    height: 350px;
   }
 }
 @media (min-width: 55em) {
