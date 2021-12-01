@@ -67,7 +67,7 @@ title: About Me
 }
 
 .fa-linkedin:hover {
-    color: #5466ce;
+    color: #0e76a8;
 }
 
 .git {
@@ -76,7 +76,7 @@ title: About Me
 }
 
 .fa-github:hover {
-    color: #5466ce;
+    color: #404040;
 }
 
 .insta {
@@ -85,7 +85,7 @@ title: About Me
 }
 
 .fa-instagram:hover {
-    color: #5466ce;
+    color: #e95cff;
 }
 
 .twitter {
@@ -94,7 +94,7 @@ title: About Me
 }
 
 .fa-twitter:hover {
-    color: #5466ce;
+    color: #00acee;
 }
 
 .spotify {
@@ -103,7 +103,7 @@ title: About Me
 }
 
 .fa-spotify:hover {
-    color: #5466ce;
+    color: #1DB954;
 }
 
 .email {
