@@ -156,12 +156,6 @@ title: About Me
   }
 }
 
-.fabicon {
-    height: 30px;
-    width: 30px;
-    display: block;
-}
-
 </style>
 
 <div class="stuff">
@@ -201,7 +195,7 @@ title: About Me
         <li>Facilitating STEAM summer classes for children ages 4 to 16.
         </li>
       </ul>
-     <h3><span class='fabicon'></span>CHARLOTTE LATIN FAB LAB</h3>
+     <h3>CHARLOTTE LATIN FAB LAB</h3>
       <p>
        <strong>Freelance Research and Development</strong>
       </p>
@@ -216,7 +210,7 @@ title: About Me
      <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
      <h3>CHARLOTTE LATIN SCHOOL</h3>
       <p>
-        <strong>    High School Diploma</strong>, Class of 2023
+        <strong>High School Diploma</strong>, Class of 2023
       </p>
      <h3>FAB ACADEMY</h3>  
       <p>
@@ -224,7 +218,7 @@ title: About Me
       </p>
      <h3>OUTWARD BOUND SCHOOL</h3>
       <p>
-        <strong>   4 Day Course in the North Carolina Mountains</strong>
+        <strong>4 Day Course in the North Carolina Mountains</strong>
       </p>
      <h3>ARMY EDUCATION OUTREACH PROGRAM</h3>
       <p>
