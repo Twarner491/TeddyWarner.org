@@ -11,13 +11,15 @@ repo_name: Twarner491/project-site
 extra:
   social:
     - icon: fontawesome/brands/linkedin
-      link: "https://www.linkedin.com/in/teddy-warner-880974200/"
+      link: https://www.linkedin.com/in/teddy-warner-880974200/
     - icon: fontawesome/brands/github
       link: https://github.com/Twarner491
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/teddywarner
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/WarnerTeddy
+    - icon: fontawesome/brands/spotify
+      link: https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb
     - icon: fontawesome/solid/paper-plane
       link: mailto:<Twarner491@gmail.com>
 
