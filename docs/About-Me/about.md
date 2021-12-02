@@ -38,8 +38,11 @@ title: About Me
   width: 100%;
 }
 
+.sidebar h1 {
+  margin-bottom: -40px;
+}
+
 .sidebar h2 {
-  margin-top: -36px;
   margin-bottom: -14px;
 }
 
