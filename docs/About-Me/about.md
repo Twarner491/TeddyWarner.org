@@ -154,6 +154,10 @@ title: About Me
   border-radius: 5px;
 }
 
+.music {
+   margin-bottom: -50px;
+}
+
 @media (min-width: 55em) {
   .stuff {
     display: flex;
@@ -264,7 +268,7 @@ title: About Me
       </center>
       <p>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
-      <p>
+      <p class="music">
        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=5eba25ddc4f74313">
         <img src="https://novatorem-oqoqm52ci-twarner491.vercel.app/api/spotify" alt="Spotify">
        </a>
