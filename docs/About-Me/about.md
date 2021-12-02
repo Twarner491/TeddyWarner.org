@@ -140,7 +140,7 @@ title: About Me
 .underline{
   height: 4.5px;
   width: 55px;
-  background: black;
+  background-color: #5466ce;
   margin-top: -35px;
   border-radius: 5px;
 }
@@ -206,7 +206,7 @@ title: About Me
   <div class="stuff__container">
     <div class="stuff__content">
      <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
-     <div class="underline"></div>
+      <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a junior in highschool enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
       <p><a href="https://enventyspartners.com/"><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;margin-top: 4px;"></a><strong>EVENTYS PARTNERS</strong><br>Engineering Intern</p>
