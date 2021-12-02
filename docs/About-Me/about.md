@@ -123,18 +123,27 @@ title: About Me
 .logo {
   float:left;
   height: 42px;
-  margin-right: 9px;
+  margin-right: 7px;
 }
 
 .resume {
   float:right;
   height: 50px;
-  width: 132px;
+  width: 125px;
   margin-top: 9px;
 }
 
 .resume a {
   color: inherit;
+}
+
+.date{
+  float:right;
+  height: 50px;
+  width: 100px;
+  margin-top: 0px;
+  margin-bottom: -45px;
+  text-align: right;
 }
 
 .underline{
@@ -209,14 +218,14 @@ title: About Me
       <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a junior in highschool enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
-      <p><a href="https://enventyspartners.com/"><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;margin-top: 4px;"></a><strong>EVENTYS PARTNERS</strong><br>Engineering Intern</p>
-      <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:80px;margin-top: 7px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><br>Teaching Assistant</p>
+      <p><a href="https://enventyspartners.com/"><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;margin-top: -2px;"></a><strong>EVENTYS PARTNERS</strong><span class="date" style=" color: inherit;">2021-Present</span><br>Engineering Intern</p>
+      <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:70px;margin-top: 7px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Teaching Assistant</p>
       <ul>
         <li>Co-Instructing a fabrication course for middle & high school students.
         <li>Facilitating STEAM summer classes for children ages 4 to 16.
         </li>
       </ul>
-      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: 4px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><br>Freelance Research and Development</p>
+      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: -2px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Freelance Research and Development</p>
       <ul>
       <li>General Lab Maintenance and Development
       <li><a href="https://teddywarner.org/images/Octoprint/laboctoprint.jpg">Print farm</a> setup and maintenance
@@ -226,10 +235,10 @@ title: About Me
       </li>
       </ul>
      <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
-      <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><br>High School Diploma, Class of 2023</p>
-      <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: 4px;"></a><strong>Fab Academy</strong><br>Principles and Applications of Digital Fabrication Diploma</p>
-      <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:42px;margin-top: 5px;"></a><strong>OUTWARD BOUND SCHOOL</strong><br>4 Day Course in the North Carolina Mountains</p>
-      <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 7px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
+      <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 1px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><span class="date" style=" color: inherit;">2018-Present</span><br>High School Diploma, Class of 2023</p>
+      <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: -2px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
+      <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:42px;margin-top: 0px;"></a><strong>OUTWARD BOUND SCHOOL</strong><span class="date" style=" color: inherit;">Fall 2019</span><br>4 Day Course in the North Carolina Mountains</p>
+      <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 0px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
         <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgRo4_MQfVIgRZNFDv-ZQRog&key=AIzaSyAvEiiuu4x7x8z9fQz31hkuRNY1yCJzRq0"></iframe> 

@@ -101,11 +101,11 @@ hide:
 .post p:first-of-type:before {
   content: "";
   position: absolute;
-  height: 5px;
-  background: linear-gradient(140deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+  height: 4.5px;
+  background-color: #5466ce;
   width: 55px;
   top: -0.75rem;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .post:hover .details {
   left: 0%;
