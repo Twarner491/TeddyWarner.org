@@ -262,7 +262,7 @@ title: About Me
         <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">Toe Hawks</a></strong>, Custom shoe insole aiming towards helping out youth affected by idiopathic toe walking. (Oct 2018 - Feb 2019)
       </p>
       <p>
-        <strong>YEOT Summer Camp Counselor</strong>, Volunteer summer camp counslier for Young Engineers of Today's Racing Drones & Starwars Camps. (July 2020 / 57 Volunteer Hours) 
+        <strong>YEOT Summer Camp Counselor</strong>, Volunteer summer camp counselor for Young Engineers of Today's Racing Drones & Starwars Camps. (July 2020 / 57 Volunteer Hours) 
       </p>
       <p>
         <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>, Designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020 – Aug 2020 / 64 Volunteer Hours)
