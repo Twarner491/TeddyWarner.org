@@ -248,7 +248,7 @@ title: About Me
         <strong><a href="http://www.appstate.edu/~marlandes/sumo/sumosumo.html">Appalachian SumoBot Competition,</a></strong> 1st Place. (Oct 2018 - Dec 2018)
       </p>
       <p>
-        <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">eCYBERMISSION</a></strong>, regional finalist. (Oct 2018 - Feb 2019)
+        <strong><a href="https://www.ecybermission.com/">eCYBERMISSION</a></strong>, regional finalist. (Oct 2018 - Feb 2019)
       </p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
