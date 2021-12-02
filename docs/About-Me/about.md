@@ -81,7 +81,7 @@ title: About Me
 }
 
 .fa-instagram:hover {
-    color: #e95cff;
+    color: #ca2dfa;
 }
 
 .twitter {
