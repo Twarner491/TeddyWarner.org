@@ -243,6 +243,13 @@ title: About Me
       <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: -2px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
       <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:42px;margin-top: 0px;"></a><strong>OUTWARD BOUND SCHOOL</strong><span class="date" style=" color: inherit;">Fall 2019</span><br>4 Day Course in the North Carolina Mountains</p>
       <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 0px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
+     <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
+      <p>
+        <strong><a href="http://www.appstate.edu/~marlandes/sumo/sumosumo.html">Appalachian SumoBot Competition,</a></strong> 1st Place. (Oct 2018 - Dec 2018)
+      </p>
+      <p>
+        <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">eCYBERMISSION</a></strong>, regional finalist. (Oct 2018 - Feb 2019)
+      </p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
         <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgRo4_MQfVIgRZNFDv-ZQRog&key=AIzaSyAvEiiuu4x7x8z9fQz31hkuRNY1yCJzRq0"></iframe> 
