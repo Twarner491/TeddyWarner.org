@@ -128,6 +128,13 @@ title: About Me
 
 }
 
+.logo {
+  float:left;
+  height:42px;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
 @media (min-width: 55em) {
   .stuff {
     display: flex;
@@ -191,23 +198,14 @@ title: About Me
      <h1>About Me</h1> 
       <p><strong>Hey! I’m Teddy Warner,</strong> a junior in highschool enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
-     <h3>EVENTYS PARTNERS</h3>
-      <p>
-        <strong>Engineering Intern</strong>
-      </p> 
-     <h3>YOUNG ENGINEERS OF TODAY</h3>   
-      <p>
-       <strong>Teaching Assistant</strong>
-      </p>
+      <p><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;"><strong>EVENTYS PARTNERS</strong><br>Engineering Intern</p>
+      <p><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo"><strong>YOUNG ENGINEERS OF TODAY</strong><br>Teaching Assistant</p>
       <ul>
         <li>Co-Instructing a fabrication course for middle & high school students.
         <li>Facilitating STEAM summer classes for children ages 4 to 16.
         </li>
       </ul>
-     <h3>CHARLOTTE LATIN FAB LAB</h3>
-      <p>
-       <strong>Freelance Research and Development</strong>
-      </p>
+      <p><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;"><strong>CHARLOTTE LATIN FAB LAB</strong><br>Freelance Research and Development</p>
       <ul>
       <li>General Lab Maintenance and Development
       <li><a href="https://teddywarner.org/images/Octoprint/laboctoprint.jpg">Print farm</a> setup and maintenance
@@ -217,22 +215,10 @@ title: About Me
       </li>
       </ul>
      <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
-     <h3>CHARLOTTE LATIN SCHOOL</h3>
-      <p>
-        <strong>High School Diploma</strong>, Class of 2023
-      </p>
-     <h3>FAB ACADEMY</h3>  
-      <p>
-        <strong>Principles and Applications of Digital Fabrication Diploma</strong>
-      </p>
-     <h3>OUTWARD BOUND SCHOOL</h3>
-      <p>
-        <strong>4 Day Course in the North Carolina Mountains</strong>
-      </p>
-     <h3>ARMY EDUCATION OUTREACH PROGRAM</h3>
-      <p>
-        <strong>2nd Place,</strong>eCYBERMISSION STEM competition for 6th through 9th grade students
-      </p>
+      <p><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo"><strong>CHARLOTTE LATIN SCHOOL</strong><br>High School Diploma, Class of 2023</p>
+      <p><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;"><strong>Fab Academy</strong><br>Principles and Applications of Digital Fabrication Diploma</p>
+      <p><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:42px;"><strong>OUTWARD BOUND SCHOOL</strong><br>4 Day Course in the North Carolina Mountains</p>
+      <p><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo"><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
         <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgRo4_MQfVIgRZNFDv-ZQRog&key=AIzaSyAvEiiuu4x7x8z9fQz31hkuRNY1yCJzRq0"></iframe> 
