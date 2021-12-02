@@ -38,16 +38,9 @@ title: About Me
   width: 100%;
 }
 
-.sidebar h1 {
-}
-
 .sidebar h2 {
-  margin-top: -38px;
+  margin-top: -36px;
   margin-bottom: -14px;
-}
-
-.sidebar h3 {
-
 }
 
 .profilepic {
@@ -124,14 +117,29 @@ title: About Me
     color: #5466ce;
 }
 
-.resumeprint {
-
-}
-
 .logo {
   float:left;
-  height:42px;
-  margin-right: 8px;
+  height: 42px;
+  margin-right: 9px;
+}
+
+.resume {
+  float:right;
+  height: 50px;
+  width: 132px;
+  margin-top: 9px;
+}
+
+.resume a {
+  color: inherit;
+}
+
+.underline{
+  height: 4.5px;
+  width: 55px;
+  background: black;
+  margin-top: -35px;
+  border-radius: 5px;
 }
 
 @media (min-width: 55em) {
@@ -194,17 +202,18 @@ title: About Me
   </div>
   <div class="stuff__container">
     <div class="stuff__content">
-     <h1>About Me</h1> 
+     <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
+     <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a junior in highschool enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
-      <p><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;margin-top: 4px;"><strong>EVENTYS PARTNERS</strong><br>Engineering Intern</p>
-      <p><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:80px;margin-top: 7px;"><strong>YOUNG ENGINEERS OF TODAY</strong><br>Teaching Assistant</p>
+      <p><a href="https://enventyspartners.com/"><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;margin-top: 4px;"></a><strong>EVENTYS PARTNERS</strong><br>Engineering Intern</p>
+      <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:80px;margin-top: 7px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><br>Teaching Assistant</p>
       <ul>
         <li>Co-Instructing a fabrication course for middle & high school students.
         <li>Facilitating STEAM summer classes for children ages 4 to 16.
         </li>
       </ul>
-      <p><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: 4px;"><strong>CHARLOTTE LATIN FAB LAB</strong><br>Freelance Research and Development</p>
+      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: 4px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><br>Freelance Research and Development</p>
       <ul>
       <li>General Lab Maintenance and Development
       <li><a href="https://teddywarner.org/images/Octoprint/laboctoprint.jpg">Print farm</a> setup and maintenance
@@ -214,30 +223,33 @@ title: About Me
       </li>
       </ul>
      <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
-      <p><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;"><strong>CHARLOTTE LATIN SCHOOL</strong><br>High School Diploma, Class of 2023</p>
-      <p><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: 4px;"><strong>Fab Academy</strong><br>Principles and Applications of Digital Fabrication Diploma</p>
-      <p><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:42px;margin-top: 5px;"><strong>OUTWARD BOUND SCHOOL</strong><br>4 Day Course in the North Carolina Mountains</p>
-      <p><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 7px;"><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
+      <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><br>High School Diploma, Class of 2023</p>
+      <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: 4px;"></a><strong>Fab Academy</strong><br>Principles and Applications of Digital Fabrication Diploma</p>
+      <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:42px;margin-top: 5px;"></a><strong>OUTWARD BOUND SCHOOL</strong><br>4 Day Course in the North Carolina Mountains</p>
+      <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 7px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
         <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgRo4_MQfVIgRZNFDv-ZQRog&key=AIzaSyAvEiiuu4x7x8z9fQz31hkuRNY1yCJzRq0"></iframe> 
       </center>
      <h2><i class="fas fa-city"></i> Community Involvement -</h2>
       <p>
-        <strong><a href="https://teddywarner.org/Projects/ProjectPortfolioSite/">Project Portfolio Site</a></strong>, The site your on right now :) my personal project portfolio, a static HTML/Markdown site build with Mkdocs
-      </p>
-      <p>
         <strong>Charlotte Latin School Engineering Club Leader</strong>, Planning and facilitating club meetings (Aug 2020 - Present)
-      </p>
-      <p>
-        <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>,  Designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020 – Aug 2020)
       </p>
       <p>
         <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">Toe Hawks</a></strong>, Custom shoe insole aiming towards helping out youth affected by idiopathic toe walking. (Oct 2018 - Feb 2019)
       </p>
       <p>
-        <strong><a href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/">Assistive Aquaponics Fish Tank</a></strong>,  A monitored aquaponics ecosystem, expanding the accessibility of successful & thriving aquaponics ecosystems. - my Fab Academy final project. (Jan 2021 - June 2021)
+        <strong>YEOT Summer Camp Counselor</strong>, Volunteer summer camp counslier for Young Engineers of Today's Racing Drones & Starwars Camps. (July 2020 / 57 Volunteer Hours) 
       </p>
+      <p>
+        <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>, Designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020 – Aug 2020 / 64 Volunteer Hours)
+      </p>
+      <p>
+        <strong><a href="https://photos.app.goo.gl/kWnrCmx1bZPvqDK29">D is for Desk</a></strong>, A friend of mine's Eagle Scout Project, we built Toe Hawks for the D is for Desk charity. (Nov 2020 / 17 Volunteer Hours) 
+      </p>
+      <center>
+       <p>--- Total Service - <strong>152 Hours</strong> ---</p>
+      </center>
       <p>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
       <p>

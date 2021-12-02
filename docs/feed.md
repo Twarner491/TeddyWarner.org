@@ -8,7 +8,7 @@ hide:
 
 <style>
 
-.blog-card {
+.post {
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
@@ -21,15 +21,15 @@ hide:
   z-index: 0;
 }
 
-.blog-card:hover .photo {
+.post:hover .photo {
   transform: scale(1.08) rotate(1deg);
 }
-.blog-card .meta {
+.post .meta {
   position: relative;
   z-index: 0;
   height: 200px;
 }
-.blog-card .photo {
+.post .photo {
   position: absolute;
   top: 0;
   right: 0;
@@ -40,45 +40,45 @@ hide:
   transition: transform 0.2s;
 }
 
-.blog-card .details a {
+.post .details a {
   -webkit-text-decoration: dotted underline;
           text-decoration: dotted underline;
 }
 
-.blog-card .details .tags li {
+.post .details .tags li {
   margin-right: 2px;
 }
-.blog-card .details .tags li:first-child {
+.post .details .tags li:first-child {
   margin-left: -4px;
 }
-.blog-card .description {
+.post .description {
   padding: 1rem;
   background: #fff;
   position: relative;
   z-index: 1;
 }
 
-.blog-card .description h1 {
+.post .description h1 {
   line-height: 1;
   margin: 0;
   color: #525252;
   font-size: 1.7rem;
 }
-.blog-card .description h2 {
+.post .description h2 {
   font-size: 1rem;
   font-weight: 300;
   color: #a2a2a2;
   margin-top: 5px;
 }
-.blog-card .description .read-more {
+.post .description .read-more {
   text-align: right;
 }
-.blog-card .description .read-more a {
+.post .description .read-more a {
   color: #5466ce;
   display: inline-block;
   position: relative;
 }
-.blog-card .description .read-more a:after {
+.post .description .read-more a:after {
   font-weight: 1000;
   content:  "-->";
   margin-left: -10px;
@@ -86,19 +86,19 @@ hide:
   vertical-align: middle;
   transition: margin 0.3s, opacity 0.3s;
 }
-.blog-card .description .read-more a:hover:after {
+.post .description .read-more a:hover:after {
   margin-left: 5px;
   opacity: 1;
 }
-.blog-card p {
+.post p {
   position: relative;
   color: #4f4f4f;
   margin: 1rem 0 0;
 }
-.blog-card p:first-of-type {
+.post p:first-of-type {
   margin-top: 1.25rem;
 }
-.blog-card p:first-of-type:before {
+.post p:first-of-type:before {
   content: "";
   position: absolute;
   height: 5px;
@@ -107,22 +107,22 @@ hide:
   top: -0.75rem;
   border-radius: 3px;
 }
-.blog-card:hover .details {
+.post:hover .details {
   left: 0%;
 }
 @media (min-width: 640px) {
-  .blog-card {
+  .post {
     flex-direction: row;
     max-width: 700px;
   }
-  .blog-card .meta {
+  .post .meta {
     flex-basis: 40%;
     height: auto;
   }
-  .blog-card .description {
+  .post .description {
     flex-basis: 60%;
   }
-  .blog-card .description:before {
+  .post .description:before {
     transform: skewX(-3deg);
     content: "";
     background: #fff;
@@ -133,15 +133,15 @@ hide:
     bottom: 0;
     z-index: -1;
   }
-  .blog-card.alt {
+  .post.alt {
     flex-direction: row-reverse;
   }
-  .blog-card.alt .description:before {
+  .post.alt .description:before {
     left: inherit;
     right: -10px;
     transform: skew(3deg);
   }
-  .blog-card.alt .details {
+  .post.alt .details {
     padding-left: 25px;
   }
 }
@@ -169,7 +169,7 @@ hide:
 <div class="t">Project Feed</div>
 </center>
 
-  <div class="blog-card">
+  <div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/SerialUPDI/ftdi2updisolderedtop.jpg')"></div>
     </div>
@@ -183,7 +183,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card alt">
+  <div class="post alt">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/8-bitComputer/clockmodule.jpg')"></div>
     </div>
@@ -197,7 +197,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card">
+  <div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/ParametricGenerator/beautyshot1.jpg')"></div>
     </div>
@@ -211,7 +211,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card alt">
+  <div class="post alt">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/LithophaneExperiments/friendslithophane.jpg')"></div>
     </div>
@@ -225,7 +225,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card">
+  <div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/AssistiveAquaponics/tankhighlight.jpg')"></div>
     </div>
@@ -239,7 +239,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card alt">
+  <div class="post alt">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/KlipperEnder3/directdrive.jpg')"></div>
     </div>
@@ -253,7 +253,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card">
+  <div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/Octoprint/personaloctoprint.jpg')"></div>
     </div>
@@ -267,7 +267,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card alt">
+  <div class="post alt">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/CornerDesk/finishedwoodassembly.jpg')"></div>
     </div>
@@ -281,7 +281,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card">
+  <div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/PortfolioSite/highlightcode.jpg')"></div>
     </div>
@@ -297,7 +297,7 @@ hide:
 
 <!--- Post Template
 
-  <div class="blog-card">
+  <div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/')"></div>
     </div>
@@ -311,7 +311,7 @@ hide:
     </div>
   </div>
 
-  <div class="blog-card alt">
+  <div class="post alt">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/')"></div>
     </div>
