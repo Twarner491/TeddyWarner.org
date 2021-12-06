@@ -171,20 +171,6 @@ hide:
 
   <div class="post">
     <div class="meta">
-      <div class="photo" style="background-image: url('../images/SerialUPDI/ftdi2updisolderedtop.jpg')"></div>
-    </div>
-    <div class="description">
-      <h1>UPDI Serial Programming</h1>
-      <h2>- Junior Year, 2021 -</h2>
-      <p>Programming via the megaTinyCore library, enabling your IDE for serial UPDI programming via a portable python implementation and temporary hardware, or one of two designated serial programmer options. Each UPDI serial programmer enables switching between serial programming and monitoring without any rewiring.</p>
-      <p class="read-more">
-        <a href="../Projects/SerialUPDI">Read More</a>
-      </p>
-    </div>
-  </div>
-
-  <div class="post alt">
-    <div class="meta">
       <div class="photo" style="background-image: url('../images/8-bitComputer/clockmodule.jpg')"></div>
     </div>
     <div class="description">
@@ -193,6 +179,21 @@ hide:
       <p> Build Log and Documentation of my take on <a href="https://eater.net/">Ben Eater's</a> 8-Bit Computer, a 'simple-as-possible' microcontroller built upon breaboards with only simple logic gates. A dive into computer logic, and processor workings.</p>
       <p class="read-more">
         <a href="../Projects/8-bit">Read More</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="post alt">
+    <div class="meta">
+      <div class="photo" style="background-image: url('../images/SerialUPDI/ftdi2updisolderedtop.jpg')"></div>
+    </div>
+    <div class="description">
+      <h1>UPDI Serial Programming</h1>
+      <h2>- Junior Year, 2021 -</h2>
+      <p>Programming via the megaTinyCore library, enabling your IDE for serial UPDI programming via a portable python implementation and temporary hardware, or one of two designated serial programmer options. Each UPDI serial programmer enables switching between serial programming and monitoring without any rewiring.</p>
+      <p class="read-more">
+        <a href="../Projects/SerialUPDI">Read More</a>
       </p>
     </div>
   </div>
