@@ -21,11 +21,15 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 **X-X minutes :octicons-book-16:**
 
+I've used microcontrollers in most of my past projects. IC data sheets are super helpful in board design with their pinouts, but I've noticed much of the contents have been pretty foreign to me. Every once in a while, the youtube algorithm recommended one of [Ben Eater's](https://eater.net) computer concept videos to me, which provide a great explanation of the simplistic logic and proofs in computers. I ended up watching his entire [8-bit Breadboard Computer](https://eater.net/8bit) series (embedded below) over the fall of 2021, to try to get a bit of a better idea of the workings of a microcontroller. The computer is an "as simple as possible" take on an 8-bit computer, using only simple logic to create an 8-bit computer on breadboards. The computer is built-in sectioned modules and then interfaced together, making each section a bit easier to swallow.
+
+This page is a bit different than my other project pages, as it is a build log for my take on this [8-bit Breadboard Computer](https://eater.net/8bit). Instead of outlining project development (as Mr. Eaters' videos do an amazing job with that), this page will be a collection of media behind each of my computer modules, as well as some final programs ran on the computer.
+
 <center>
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/videoseries?list=PLowKtXNTBypGqImE405J2565dvjafglHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-[8-bit Breadboard Computer](https://eater.net/8bit)
+## Bill of Materials
 
 <center>
 <iframe width="100%" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVxIR5ghw9VY7MbgtRnjQO2AxHPF-69OgxBI2QbuQ8tX-gyORepdxhZFWp6qwiHnvjcczT8cA5ACIs/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
@@ -48,6 +52,7 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 <center>
 
 ![](../images/8-bitComputer/555wave.jpg){ width="100%"}
+  <figcaption>Clock vs Capacitor</figcaption>
 
 </center>
 
@@ -93,6 +98,10 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 <iframe src="https://drive.google.com/file/d/1uJpgZQP0e2EXK5hfRB6coKhc2ShjMrcj/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
 
+<center>
+<iframe src="https://drive.google.com/file/d/1n3osGqqPa9fuIrJvKPaofTcG2bQKnvha/preview" width="100%" height="480" allow="autoplay"></iframe>
+</center>
+
 ## Arithmetic Logic Unit (ALU)
 
 <center>
@@ -101,10 +110,6 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 <center>
 <iframe src="https://drive.google.com/file/d/1Oe01zt6FAccC8DMF8wXAVJUvqXoZCyE6/preview" width="100%" height="480" allow="autoplay"></iframe>
-</center>
-
-<center>
-<iframe src="https://drive.google.com/file/d/1n3osGqqPa9fuIrJvKPaofTcG2bQKnvha/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
 
 <center>
