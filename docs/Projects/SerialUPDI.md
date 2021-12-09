@@ -273,7 +273,7 @@ The nesting of the two highest pinout parts on the board's topside inspired my n
 
 **Bill of Matierals**
 
-<iframe width="100%" height="320" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRP0TkYq9n4MA5lM970nWzi2DH6pm-aGEhfW6-NvF-zqs3NmNC7XX2r-9XGF3LbW7RqbTVcIaX5WmlB/pubhtml?gid=1169852294&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe width="100%" height="330" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRP0TkYq9n4MA5lM970nWzi2DH6pm-aGEhfW6-NvF-zqs3NmNC7XX2r-9XGF3LbW7RqbTVcIaX5WmlB/pubhtml?gid=1169852294&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ### ftdi2updi Design
 
