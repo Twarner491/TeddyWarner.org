@@ -271,6 +271,10 @@ The nesting of the two highest pinout parts on the board's topside inspired my n
 
 </center>
 
+**Bill of Matierals**
+
+<iframe width="100%" height="320" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRP0TkYq9n4MA5lM970nWzi2DH6pm-aGEhfW6-NvF-zqs3NmNC7XX2r-9XGF3LbW7RqbTVcIaX5WmlB/pubhtml?gid=1169852294&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
 ### ftdi2updi Design
 
 In addition to the prior USB-C UPDI Serial Programmer board, I created an alternative hardware programmer that makes use of a pre-existing FTDI chip, enabling it with the same switching functions feature as the prior board. This provided a workaround to 2021's silicone shortage, as due to backed-up supply chains, I wasn't able to get my hands on the FT232RL right away.
@@ -294,6 +298,10 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
   <figcaption>First Iteration ftdi2updi Programmer Eagle Board</figcaption>
 
 </center>
+
+**Bill of Matierals**
+
+<iframe width="100%" height="280" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRP0TkYq9n4MA5lM970nWzi2DH6pm-aGEhfW6-NvF-zqs3NmNC7XX2r-9XGF3LbW7RqbTVcIaX5WmlB/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ### Fabrication & Testing
 
