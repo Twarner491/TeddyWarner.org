@@ -128,7 +128,6 @@ title: About Me
 
 .resume {
   float:right;
-  height: 50px;
   margin-top: 9px;
 }
 
