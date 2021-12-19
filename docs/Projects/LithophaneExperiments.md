@@ -40,6 +40,9 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 ![](../images/LithophaneExperiments/friends.jpg){width="49.5%"}
 ![](../images/LithophaneExperiments/friendslithophane.jpg){width="46.6%"}
 
+![](../images/LithophaneExperiments/fam.jpg){width="51.5%"}
+![](../images/LithophaneExperiments/famlithophane.jpg){width="45.7%"}
+
 ![](../images/LithophaneExperiments/nina.jpg){width="50%"}
 ![](../images/LithophaneExperiments/ninalithophane.jpg){width="46.4%"}
 
