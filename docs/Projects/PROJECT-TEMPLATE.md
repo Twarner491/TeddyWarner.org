@@ -23,8 +23,8 @@ hide:
   padding-right: 0.2em;
 }
 
-.fa-twitter:hover {
-    color: #00acee;
+.share a.twitter:hover {
+  color: #00acee;
 }
 
 .fb {
@@ -32,8 +32,8 @@ hide:
   padding-right: 0.2em;
 }
 
-.fa-facebook-square:hover {
-    color: #3b5998;
+.share a.fb:hover {
+  color: #3b5998;
 }
 
 .pin {
@@ -41,8 +41,8 @@ hide:
   padding-right: 0.2em;
 }
 
-.fa-pinterest:hover {
-    color: 	#E60023;
+.share a.pin:hover {
+  color: 	#E60023;
 }
 
 .ln {
@@ -50,8 +50,8 @@ hide:
   padding-right: 0.2em;
 }
 
-.fa-linkedin:hover {
-    color: #0e76a8;
+.share a.ln:hover {
+  color: #0e76a8;
 }
 
 .email {
