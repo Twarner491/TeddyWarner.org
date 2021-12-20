@@ -10,7 +10,7 @@ title: About Me
 <style>
 
 .stuff {
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -34,12 +34,17 @@ title: About Me
   margin-top: 0px;
 }
 
-.sidebar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.sidebarparent {
+  height: 100vh;
   width: 100%;
+}
+
+.sidebar {
+  width: 100%;
+  position: sticky;
+  top: 112px;
+  left: -22em;
+  height: auto;
 }
 
 .sidebar h1 {
@@ -160,7 +165,7 @@ title: About Me
    margin-bottom: -50px;
 }
 
-.coffee {
+.coffeelarge {
     width: 175px;
     height: 35px;
     font-size: 16px;
@@ -179,7 +184,26 @@ title: About Me
     transition: all .4s ease-in-out;
 }
 
-.coffee:hover {
+.coffeesmall {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 12px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(315deg, #7183f0, #5466ce, #000000, #000000);
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.coffeelarge:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -187,7 +211,15 @@ title: About Me
     transition: all .4s ease-in-out;
 }
 
-@media (min-width: 55em) {
+.coffeesmall:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+@media (min-width: 68em) {
   .stuff {
     display: flex;
     height: 100%;
@@ -196,14 +228,14 @@ title: About Me
 }
 .stuff > *:first-child {
   position: relative;
-  height: 26em;
+  height: 23.5em;
 }
 @media (min-width: 30em) {
   .stuff > *:first-child {
-    height: 26em;
+    height: 23.5em;
   }
 }
-@media (min-width: 55em) {
+@media (min-width: 68em) {
   .stuff > *:first-child {
     flex-basis: 50%;
     max-width: 50%;
@@ -223,15 +255,42 @@ title: About Me
   }
 }
 
-@media (max-width: 55em) {
-  .coffee {
+@media (min-width: 68em) {
+  .coffeesmall {
     display: none;
   }
+}
+
+@media (max-height: 50em) {
+  .sidebar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  }
+}
+
+@media (max-width: 68em) {
+  .sidebar {
+    position: absolute;
+    top: -25px;
+    left: 0;
+  }
+  .coffeesmall {
+    position: absolute;
+    top: -16px;
+    right: 0;
+  }
+  .coffeelarge {
+    display: none;
+  }
+}
 
 </style>
 
 <div class="stuff">
-  <div>
+  <div class="sidebarparent">
     <div class="sidebar">
      <center>
      <p><img src="https://teddywarner.org/images/About/avatar-photo.jpg" alt="Profile Picture" class="profilepic"></p>
@@ -247,8 +306,9 @@ title: About Me
        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
        <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
       </div>
-      <a href="https://venmo.com/code?user_id=3111963315929088513&created=1639965251.6239061&printed=1" style=" color: inherit;" title="Venmo - @Teddy-Warner">
-        <button class="coffee"><i class="fas fa-coffee"></i> Buy Me a Coffee</button>
+      <a href="https://venmo.com/code?user_id=3111963315929088513&created=1639965251.6239061&printed=1" style=" color: inherit;">
+        <button class="coffeelarge" title="Venmo - @Teddy-Warner"><i class="fas fa-coffee"></i> Buy Me a Coffee</button>
+        <button class="coffeesmall" title="Buy Me a Coffee :) Venmo - @Teddy-Warner"><i class="fas fa-coffee"></i></button>
       </a>
      </center>
     </div>
