@@ -160,6 +160,33 @@ title: About Me
    margin-bottom: -50px;
 }
 
+.coffee {
+    width: 175px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 12px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(315deg, #7183f0, #5466ce, #000000, #000000);
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.coffee:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
 @media (min-width: 55em) {
   .stuff {
     display: flex;
@@ -196,6 +223,11 @@ title: About Me
   }
 }
 
+@media (max-width: 55em) {
+  .coffee {
+    display: none;
+  }
+
 </style>
 
 <div class="stuff">
@@ -215,6 +247,9 @@ title: About Me
        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
        <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
       </div>
+      <a href="https://venmo.com/code?user_id=3111963315929088513&created=1639965251.6239061&printed=1" style=" color: inherit;" title="Venmo - @Teddy-Warner">
+        <button class="coffee"><i class="fas fa-coffee"></i> Buy Me a Coffee</button>
+      </a>
      </center>
     </div>
   </div>
@@ -222,7 +257,7 @@ title: About Me
     <div class="stuff__content">
      <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
       <div class="underline"></div>
-      <p><strong>Hey! I’m Teddy Warner,</strong> a junior in highschool enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
+      <p><strong>Hey! I’m Teddy Warner,</strong> a junior in high school enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
       <p><a href="https://enventyspartners.com/"><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;margin-top: -2px;"></a><strong>ENVENTYS PARTNERS</strong><span class="date" style=" color: inherit;">2021-Present</span><br>Engineering Intern</p>
       <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:70px;margin-top: 7px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Teaching Assistant</p>

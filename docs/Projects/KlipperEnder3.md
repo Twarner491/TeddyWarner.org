@@ -4,6 +4,63 @@ hide:
   - navigation
 ---
 
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
+<style>
+
+.share {
+  float:right;
+  margin-top: 0em;
+  font-size: 1.1em;
+}
+
+.share a {
+  color: inherit;
+}
+
+.twitter {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fb {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.pin {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-pinterest:hover {
+    color: 	#E60023;
+}
+
+.ln {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.email {
+  padding-left: 0.2em;
+  padding-right: 1.5em;
+}
+
+</style>
+
 # Klipper Enabled Ender 3 (Sophmore Year - 2021)
 
 <!-- Compleation Badge
@@ -19,7 +76,28 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
-**10-12 minutes :octicons-book-16:**
+<!--- Social Links
+
+HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
+
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+</span>
+
+-->
+
+**10-12 minutes :material-book-open-page-variant:**
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/KlipperEnder3/&text=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/KlipperEnder3/&media=&description=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/%20!"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/"><i class="fas fa-paper-plane"></i></a>
+</span>
 
 Due to uncertainty surrounding lab access during the Covid-19 pandemic, I received an Ender 3 3D-printer at the start of my cycle in [Fab Academy](https://fabacademy.org/). During my [second week](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week02/) in the course, I built and began to mod this machine as a little side project to the course work. However as the cycle progressed, I quickly ran out of time to keep working on this machine's mods and moved the machine to my closet, where it sat up until the [Klipper](https://www.klipper3d.org/) firmware piqued my interest. After modding the printer during Fab Academy, I was running the machine on Marlin linked to Octoprint, a setup I use on my other machines. This setup worked great with my machine mods, allowing me to print over a network through Octoprint as I would on any of my other Octoprint enabled machines. In this configuration, a Raspberry Pi running Octorpint hosts a local server that *.gcode* flies can be uploaded to and ran from. The Pi sends this uploaded *.gcode* to the machine's mainboard, where the code is processed, and movements/operations are determined. [Klipper](https://www.klipper3d.org/) on the other hand operates on a different principle. The firmware runs across both the mainboard and the Raspberry Pi, allowing for the same type of hosted server to exist (I used [FluiddPi](https://github.com/cadriel/FluiddPI) as my servers GUI), but instead of relying on the machines mainboard to compute *.gcode*, the code parsing is done by the Raspberry Pi - the more powerful computer- leaving the machine mainboard to only worry about stepper movements and operations. This setup uses the given hardware of a setup more optimally, allowing for faster calculations and more precise movements. After learning about the benefits of [Klipper](https://www.klipper3d.org/) I knew I had to try it out and thus, the Ender 3 modding project was revied and pulled from the closet.
 

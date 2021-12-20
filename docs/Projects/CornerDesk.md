@@ -4,6 +4,63 @@ hide:
   - navigation
 ---
 
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
+<style>
+
+.share {
+  float:right;
+  margin-top: 0em;
+  font-size: 1.1em;
+}
+
+.share a {
+  color: inherit;
+}
+
+.twitter {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fb {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.pin {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-pinterest:hover {
+    color: 	#E60023;
+}
+
+.ln {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.email {
+  padding-left: 0.2em;
+  padding-right: 1.5em;
+}
+
+</style>
+
 # Cable Managed Corner Desk (Freshman Year - 2020)
 
 <!-- Compleation Badge
@@ -19,7 +76,28 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
-**6-8 minutes :octicons-book-16:**
+<!--- Social Links
+
+HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
+
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+</span>
+
+-->
+
+**6-8 minutes :material-book-open-page-variant:**
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/CornerDesk/"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/CornerDesk/&text=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/CornerDesk/&media=&description=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on%20https://teddywarner.org/Projects/CornerDesk/%20!"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/CornerDesk/"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on%20https://teddywarner.org/Projects/CornerDesk/"><i class="fas fa-paper-plane"></i></a>
+</span>
 
 This start of the Pandemic project stemmed from my freshman year engineering capstone project. At the start of 8th grade I had an issue, I was a couple of months into learning Fusion360 and I decided to upgrade my setup from an old janky pc to a brand new laptop and some 20-inch monitors to go along with it, which was great and all but gave me a whole tone of issues to sort out. I had this great desk in the corner of my room, that my great grandfather built and that had been passed down to me, however, there was one huge flaw using that desk with my brand new setup and that was cable management. Below are some plans draw out for the desk.
 

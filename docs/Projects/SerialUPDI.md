@@ -4,6 +4,63 @@ hide:
   - navigation
 ---
 
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
+<style>
+
+.share {
+  float:right;
+  margin-top: 0em;
+  font-size: 1.1em;
+}
+
+.share a {
+  color: inherit;
+}
+
+.twitter {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fb {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.pin {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-pinterest:hover {
+    color: 	#E60023;
+}
+
+.ln {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.email {
+  padding-left: 0.2em;
+  padding-right: 1.5em;
+}
+
+</style>
+
 # UPDI Serial Programming (Junior Year - 2021)
 
 <!-- Compleation Badge
@@ -19,7 +76,28 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
-**24-31 minutes :octicons-book-16:**
+<!--- Social Links
+
+HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
+
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+</span>
+
+-->
+
+**24-31 minutes :material-book-open-page-variant:**
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/SerialUPDI/&media=&description=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fas fa-paper-plane"></i></a>
+</span>
 
 Many modern small chipsets rely on the Unified Program and Debug Interface (UPDI), a one-wire interface allowing for the changing of fuzes, burning of bootloaders, or uploading of sketches to any AVR Dx-series parts or any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus). Due to their reliance on the Unified Program and Debug Interface, these parts cannot be programmed with classic ISP style programmers, and thus a UPDI enabled programmer is required. Although UPDI is the only programming option in the case of these parts, the one-wire interface is superior to the four-wire of a classic ISP programmer and allows for quicker programming setup and less cluttered boards due to fewer programming pins. This USB-C UPDI programmer is built with a [Ft232rl](https://ftdichip.com/products/ft232rl/) chip allowing for serial interfacing, and runs alongside the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library witch equips your IDE for serial UPDI programming via a portable python implementation.
 

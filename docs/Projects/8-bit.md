@@ -4,6 +4,63 @@ hide:
   - navigation
 ---
 
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
+<style>
+
+.share {
+  float:right;
+  margin-top: 0em;
+  font-size: 1.1em;
+}
+
+.share a {
+  color: inherit;
+}
+
+.twitter {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fb {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.pin {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-pinterest:hover {
+    color: 	#E60023;
+}
+
+.ln {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.email {
+  padding-left: 0.2em;
+  padding-right: 1.5em;
+}
+
+</style>
+
 # 8-bit Breadboard Computer - Build Log (Junior Year - 2021)
 
 <!-- Compleation Badge
@@ -19,7 +76,29 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
-**X-X minutes :octicons-book-16:**
+<!--- Social Links
+
+HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
+
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+</span>
+
+-->
+
+**X-X minutes :material-book-open-page-variant:**
+<span class="share" style=" color: inherit;">
+<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/8-bit/"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/8-bit/&text=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/8-bit/&media=&description=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on%20https://teddywarner.org/Projects/8-bit/%20!"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/8-bit/"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on%20https://teddywarner.org/Projects/8-bit/%20!"><i class="fas fa-paper-plane"></i></a>
+</span>
+
 
 I've used microcontrollers in most of my past projects. IC data sheets are super helpful in board design with their pinouts, but I've noticed much of the contents have been pretty foreign to me. Every once in a while, the youtube algorithm recommended one of [Ben Eater's](https://eater.net) computer concept videos to me, which provide a great explanation of the simplistic logic and proofs in computers. I ended up watching his entire [8-bit Breadboard Computer](https://eater.net/8bit) series (embedded below) over the fall of 2021, to try to get a bit of a better idea of the workings of a microcontroller. The computer is an "as simple as possible" take on an 8-bit computer, using only simple logic to create an 8-bit computer on breadboards. The computer is built-in sectioned modules and then interfaced together, making each section a bit easier to swallow.
 
