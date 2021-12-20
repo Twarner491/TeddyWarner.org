@@ -30,6 +30,10 @@ title: About Me
   overflow: hidden;
 }
 
+.stuff__content h2 {
+  margin-top: 0px;
+}
+
 .sidebar {
   position: absolute;
   top: 0;
@@ -39,7 +43,7 @@ title: About Me
 }
 
 .sidebar h1 {
-  margin-bottom: -40px;
+  margin-bottom: -39px;
 }
 
 .sidebar h2 {
@@ -47,7 +51,7 @@ title: About Me
 }
 
 .profilepic {
-  margin-bottom: -8px;
+  margin-bottom: -12px;
   width: 255px;
   height: 255px;
   border-radius: 50%;
@@ -250,7 +254,7 @@ title: About Me
       </p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
-        <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgRo4_MQfVIgRZNFDv-ZQRog&key=AIzaSyAvEiiuu4x7x8z9fQz31hkuRNY1yCJzRq0"></iframe> 
+        <iframe width="100%" height="350" style="margin-bottom: 12px; border:0 " loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgRo4_MQfVIgRZNFDv-ZQRog&key=AIzaSyAvEiiuu4x7x8z9fQz31hkuRNY1yCJzRq0"></iframe> 
       </center>
      <h2><i class="fas fa-city"></i> Community Involvement -</h2>
       <p>
