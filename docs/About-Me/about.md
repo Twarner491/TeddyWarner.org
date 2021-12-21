@@ -261,7 +261,7 @@ title: About Me
   }
 }
 
-@media (max-height: 50em) {
+@media (max-height: 40em) {
   .sidebar {
   width: 100%;
   position: absolute;
