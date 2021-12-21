@@ -105,8 +105,8 @@ Lost a lid or just want a more functional cap? Generate and print your own, comp
 
 ![](../images/ParametricGenerator/beautyshot1.jpg){width="100%"}
 
-[Check Out the Project on PrusaPrinters](https://www.prusaprinters.org/prints/76271-parametric-bottle-cap-generator){ .md-button .md-button--primary }
-[Parametric Bottle Cap Generator Files :fontawesome-brands-github:](https://github.com/Twarner491/project-files/blob/main/Parametric%20Generators/Parametric%20Bottle%20Cap%20Generator.f3d){ .md-button .md-button--primary }
+[Check Out the Project on PrusaPrinters :fontawesome-solid-globe-americas:](https://www.prusaprinters.org/prints/76271-parametric-bottle-cap-generator){: align=left .md-button .md-button--primary }
+[Parametric Bottle Cap Generator Files :fontawesome-brands-github:](https://github.com/Twarner491/project-files/blob/main/Parametric%20Generators/Parametric%20Bottle%20Cap%20Generator.f3d){: align=right .md-button .md-button--primary }
 
 </center>
 
@@ -120,9 +120,11 @@ This model was designed in Fusion 360 and uses 3 required input parameters and [
 
 </center>
 
-I originally set out to make this generator due to a need for a lower profile cap for the isopropyl alcohol bottle I keep next to my printer. The thread profile of this bottle is rather abnormal, and thus I found myself finding thread component values with [standard Metric thread profile](https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx) equations, the same used by the generator. 
+!!! abstract "Project Origins"
 
-Following the standard Metric thread profile (displayed in the diagram below)...
+    I originally set out to make this generator due to a need for a lower profile cap for the isopropyl alcohol bottle I keep next to my printer. The thread profile of this bottle is rather abnormal, and thus I found myself finding thread component values with [standard Metric thread profile](https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx) equations, the same used by the generator. 
+
+Following the standard Metric thread profile[^1] (displayed in the diagram below)...
 
 <center>
 
@@ -155,7 +157,7 @@ all of which are included, shown below, to generate the cap's threads.
 
 </center>
 
-Following the Generation of the caps thread, an inner contour is added defined by the ISO 965-1 standard - shw=owin in the diagram below.
+Following the Generation of the caps thread, an inner contour is added defined by the ISO 965-1 standard[^2] - shown in the diagram below.
 
 <center>
 
@@ -201,7 +203,7 @@ For documentation purposes, I created a new cap for my Nalgene water bottle …
 
 There are three measurements required to generate your cap, all of which can be taken from the existing threaded connector … 
 
-1. **Connector Diameter -**
+1. [x] **Connector Diameter -**
 Measure the diameter (in MM) of your existing connector, from the very farthest point (i.e. the point of the thread) on either side. 
 <center>
 ![](../images/ParametricGenerator/diametermeasurment.jpg){width="95%"}
@@ -211,7 +213,7 @@ Then, update the Expression value in the ConnectDiameter row (the box highlighte
 ![](../images/ParametricGenerator/connectdiameter.png){width="95%"}
 </center>
 
-2. **Connector Length -**
+2. [x] **Connector Length -**
 Measure the height (in MM) of your existing connector, from the top lip to underneath the threads.
 <center>
 ![](../images/ParametricGenerator/legnthmeasurement.jpg){width="95%"}
@@ -221,7 +223,7 @@ Then, update the Expression value in the ConnectLegnth row (the box highlighted 
 ![](../images/ParametricGenerator/connectlegnth.png){width="95%"}
 </center>
  
-3. **Thread Pitch -**
+3. [x] **Thread Pitch -**
 Measure the thread pitch of your existing connector, the distance in MM between the points of two sequential threads. 
 <center>
 ![](../images/ParametricGenerator/pitchmeasurment.jpg){width="95%"}
@@ -235,19 +237,19 @@ Then, update the Expression value in the ThreadPitch row (the box highlighted ye
 
 To offer a bit more customization to each generated cap, there are a couple of different preferences allowing for different functions.
 
-1. **Number of Grips -**
+1. [ ] **Number of Grips -**
 The number of grips lining the edge of the cap can be changed in the Expression value of the NumofGrips row. I find values between 40 through 55 work best, but if your experimenting, going below 11 will stop the generation of grip chamfered.
 <center>
 ![](../images/ParametricGenerator/numofgrips.png){width="95%"}
 </center>
 
-2. **Grip Depth -**
+2. [ ] **Grip Depth -**
 The depths of these grips can be altered, determining how grippy your grips are. I've found a value around 0.3 or 0.4 offers a good texture around the edge.
 <center>
 ![](../images/ParametricGenerator/gripdepth.png){width="95%"}
 </center>
 
-3. **Lid Style -**
+3. [ ] **Lid Style -**
 The lid style of your cap can be toggled between 4 presets in the Fusion Parametric Bottle Cap file by navigating to
 
 ```
@@ -256,7 +258,7 @@ Parametric-Bottle_Cap > Bodies > Styles
 
 in the Fusion browser. The lid styles can be toggled between via the eye icon to the left of each style. The four styles are included below, with each of the toggles highlighted.
 
-* Plain -
+1. Plain -
 
 <center>
 
@@ -264,7 +266,7 @@ in the Fusion browser. The lid styles can be toggled between via the eye icon to
 
 </center>
 
-* Single Hole -
+2. Single Hole -
 
 <center>
 
@@ -272,7 +274,7 @@ in the Fusion browser. The lid styles can be toggled between via the eye icon to
 
 </center>
 
-* Salt Shaker -
+3. Salt Shaker -
 
 <center>
 
@@ -280,7 +282,7 @@ in the Fusion browser. The lid styles can be toggled between via the eye icon to
 
 </center>
 
-* Lanyard -
+4. Lanyard -
 
 <center>
 
@@ -288,10 +290,40 @@ in the Fusion browser. The lid styles can be toggled between via the eye icon to
 
 </center>
 
-**Congrats!** You've successfully generated your own bottle cap!
+!!! success "Congrats!"
+
+    You've successfully generated your own bottle cap!
 
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+
+[^1]: https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx
+[^2]: https://www.iso.org/standard/57778.html
+
+*[FDM]: Fused Deposition Modeling
+*[CNC]: Computerized Numerical Control
+*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[SSH]: Secure Shell
+*[GPIO]: General-Purpose Input/Output
+*[USB]: Universal Serial Bus
+*[Baudrate]: Measurement of Symbol Rate
+*[ETA]: Estimated Time of Arrival
+*[GCode]: A software programming language used to control a CNC machine
+*[Git]: Software for tracking changes in any set of files
+*[GUI]: Graphical User Interface
+*[Parametric]: Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.
+*[ISO]: International Organization for Standardization
+*[Kreg-Jig]: A Pocket-Hole Jig
+*[UPDI]: Unified Program and Debug Interface
+*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
+*[jtag]: Joint Test Action Group
+*[IDE]: Integrated Development Environment
+*[Rx]: Receiving Signal
+*[Tx]: Transmitting Signal
+*[VCC]: Voltage Common Collector (+)
+*[GND]: Ground / Common Drain (-)
+*[IC]: Integrated Circuit

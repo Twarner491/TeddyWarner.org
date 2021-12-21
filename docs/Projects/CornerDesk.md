@@ -103,8 +103,8 @@ This start of the Pandemic project stemmed from my freshman year engineering cap
 
 <center>
 
-![](../images/CornerDesk/desknotes2.jpg)
-![](../images/CornerDesk/desknotes1.jpg)
+![](../images/CornerDesk/desknotes1.jpg){width="95%"}
+![](../images/CornerDesk/desknotes2.jpg){width="60%"}
 
 </center>
 
@@ -122,7 +122,7 @@ However shortly after finishing up the CAD aspect of this project, Covid-19 caus
 
 <center>
 
-![](../images/CornerDesk/kregjig.jpg)
+![](../images/CornerDesk/kregjig.jpg){width="100%"}
 
 </center>
 
@@ -132,11 +132,9 @@ A couple of days after getting the wood, I finally started assembling the desk, 
 
 <center>
 
-![](../images/CornerDesk/framelayout.jpg)
-
-![](../images/CornerDesk/baseframe.jpg)
-
-![](../images/CornerDesk/finishedwoodassembly.jpg)
+![](../images/CornerDesk/framelayout.jpg){width="100%"}
+![](../images/CornerDesk/baseframe.jpg){width="100%"}
+![](../images/CornerDesk/finishedwoodassembly.jpg){width="100%"}
 
 </center>
 
@@ -150,7 +148,7 @@ I spent the next two days painting the frame with three coats of white paint and
 
 <center>
 
-![](../images/CornerDesk/stainedtop.jpg)
+![](../images/CornerDesk/stainedtop.jpg){width="100%"}
   <figcaption>Stained Desktop</figcaption>
 
 </center>
@@ -161,7 +159,7 @@ As I said earlier the choice of wood for the surface of the desk took some thoug
 
 <center>
 
-![](../images/CornerDesk/laptoparm.jpg)
+![](../images/CornerDesk/laptoparm.jpg){width="100%"}
 
 </center>
 
@@ -171,7 +169,7 @@ This is a huge part of the project as it's one of the reasons I decided to even 
 
 <center>
 
-![](../images/CornerDesk/cableclips.jpg)
+![](../images/CornerDesk/cableclips.jpg){width="100%"}
 
 </center>
 
@@ -181,7 +179,7 @@ I love how my desk came out, It solves all of my annoying cable issues and fits 
 
 <center>
 
-![](../images/CornerDesk/deskbeautyshot.jpg)
+![](../images/CornerDesk/deskbeautyshot.jpg){width="100%"}
   <figcaption>Final Desk Beauty Shot</figcaption>
 
 </center>
@@ -191,3 +189,28 @@ I love how my desk came out, It solves all of my annoying cable issues and fits 
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+
+*[FDM]: Fused Deposition Modeling
+*[CNC]: Computerized Numerical Control
+*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[SSH]: Secure Shell
+*[GPIO]: General-Purpose Input/Output
+*[USB]: Universal Serial Bus
+*[Baudrate]: Measurement of Symbol Rate
+*[ETA]: Estimated Time of Arrival
+*[GCode]: A software programming language used to control a CNC machine
+*[Git]: Software for tracking changes in any set of files
+*[GUI]: Graphical User Interface
+*[Parametric]: Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.
+*[ISO]: International Organization for Standardization
+*[Kreg-Jig]: A Pocket-Hole Jig
+*[UPDI]: Unified Program and Debug Interface
+*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
+*[jtag]: Joint Test Action Group
+*[IDE]: Integrated Development Environment
+*[Rx]: Receiving Signal
+*[Tx]: Transmitting Signal
+*[VCC]: Voltage Common Collector (+)
+*[GND]: Ground / Common Drain (-)
+*[IC]: Integrated Circuit

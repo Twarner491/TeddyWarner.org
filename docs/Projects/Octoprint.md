@@ -109,7 +109,9 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 ## Octoprint Installation
 
-To begin the [Octoprint](https://octoprint.org/) installation you'll need a Raspberry Pi *(Recommended hardware: Raspberry Pi 3B, 3B+ or 4B)*, a sufficient power source for the Pi, as well as a micro SD card *(4GB or larger)* to flash the Octorpint image to.
+!!! abstract "[Octoprint](https://octoprint.org/) Installation Requirements"
+
+    You'll need a Raspberry Pi *(Recommended hardware: Raspberry Pi 3B, 3B+ or 4B)*, a sufficient power source for the Pi, as well as a micro SD card *(4GB or larger)* to flash the Octorpint image to.
 
 <center>
 
@@ -117,9 +119,15 @@ To begin the [Octoprint](https://octoprint.org/) installation you'll need a Rasp
 
 </center>
 
-First, download and flash the latest [Octoprint](https://octoprint.org/) image (linked above). This Pi image can be flashed as you would with any other Raspberry Pi project - I use [balenaEtcher](https://www.balena.io/etcher/) for flashing, its simple 3-step interface makes the process super straightforward. After a successful flash of this image on your Pi's SD card configure your WiFi information in the *octopi-wpa-supplicant.txt* located on the flashed SD card *(If you're using wired internet, you can skip this setup)*. To update the *octopi-wpa-supplicant.txt* file with your network, open the file in a code editor of your choice **- Do not use WordPad (Windows) or TextEdit (MacOS X) -** for this, as these editors will mess with the file layout, and cause problems with your setup. Next, locate the type of network you'll be connecting to - for this example, I'll be using the *WPA/WPA2 Secured* standard, 
+First, download and flash the latest [Octoprint](https://octoprint.org/) image (linked above). This Pi image can be flashed as you would with any other Raspberry Pi project - I use [balenaEtcher](https://www.balena.io/etcher/) for flashing, its simple 3-step interface makes the process super straightforward. After a successful flash of this image on your Pi's SD card configure your WiFi information in the *octopi-wpa-supplicant.txt* located on the flashed SD card *(If you're using wired internet, you can skip this setup)*. To update the *octopi-wpa-supplicant.txt* file with your network, open the file in a code editor of your choice.
 
-```
+!!! warning "Do not use WordPad (Windows) or TextEdit (MacOS X)"
+
+    These editors will mess with the file layout, and cause problems with your setup.
+
+ Next, locate the type of network you'll be connecting to - for this example, I'll be using the *WPA/WPA2 Secured* standard, 
+
+``` c++
 ## WPA/WPA2 secured
 #network={
 #  ssid="put SSID here"
@@ -129,29 +137,32 @@ First, download and flash the latest [Octoprint](https://octoprint.org/) image (
 
 for any type of connection you choose, you can enable it by uncommenting the sections lines with a single hashtag, leaving you with a block like below.
 
-```
+``` c++
 ## WPA/WPA2 secured
 network={
-  ssid="put SSID here"
-  psk="put password here"
+  ssid="put SSID here" // (1)
+  psk="put password here" // (2)
 }
 ```
 
-Next, replace the test *"put SSID here"* with your network's SSID, and repeat with the password line & your network's password.
+1.  Replace *"put SSID here"* with your network's SSID.
+2.  Replace *"put password here"* with your network's password.
 
-Finally, scroll down to the bottom of the document to the section starting *"# Uncomment the country your Pi is in..."*. Here, remove the hashtag in front of your network's country, and add a hashtag in front of all other (non-selected) countries.
+Next, scroll down to the bottom of the document to the section starting *"# Uncomment the country your Pi is in..."*. Here, remove the hashtag in front of your network's country, and add a hashtag in front of all other (non-selected) countries.
 
 Then, after saving your file and ejecting your SD, you can install your flashed SD in your Pi and boot.
 
 Next, some basic Pi config. Make sure you are on the same WiFi network you set up your Pi on, and then SSH into your booted Pi at the IP *octopi.local* with the Pi's default credentials (Username - *pi* / Password - *raspberry*). I use [Putty](https://www.putty.org/) as my SSH client as again, it's pretty straightforward to use. Once connected to your Pi, run the command ...
 
-```
+``` py linenums="1"
 sudo raspi-config
 ```
 
 to open the configuration GUI. Here you can change your Pi's credentials (highly recommended), set up your local timezone (to allow for accurate machine ETAs), and change your machine's hostname (thus changing the URL from the default *octopi.local* to *YOURHOSTNAME.local*). After all, changes, be sure to reboot your Pi.
 
-Congrats! you have now installed [Octoprint](https://octoprint.org/) on your Raspberry Pi, and can now connect to its web server with the URL *http://octopi.local* ( or if you changed your hostname, with the URL *http://YOURHOSTNAME.local*).
+!!! success "Congrats!"
+
+    You have now installed [Octoprint](https://octoprint.org/) on your Raspberry Pi, and can now connect to its web server with the URL *http://octopi.local* ( or if you changed your hostname, with the URL *http://YOURHOSTNAME.local*).
 
 ## Octoprint Configuration
 
@@ -169,13 +180,15 @@ Beginning with the configuration of the interface itself, basic settings can be 
 
 ### Printer Setup
 
-To enable Octoprint's main purpose, a machine must be connected to the hardware running Octoprint via serial. This connection can come in the form of a USB cable in the simplest setup, or GPIO pins can be used for communication as well. In the case of my personal Prusa I3 MK3S+, I took advantage of this GPIO communication setup, to allow for the mounting of my Raspberry Pi directly under my printer's mainboard (via [this](https://www.prusaprinters.org/prints/24475-remix-of-raspberry-pi-4-case-3030-hanging-mount-fo) Raspberry Pi 4 Case) without a bulky USB cable connecting them ...
+To enable Octoprint's main purpose, a machine must be connected to the hardware running Octoprint via serial. This connection can come in the form of a USB cable in the simplest setup, or GPIO pins can be used for communication as well. 
 
-<center>
+!!! example "Personal Setup"
 
-![](../images/Octoprint/mountedelectronics.jpg){width="95%"}
+    In the case of my Prusa I3 MK3S+, I took advantage of this GPIO communication setup, to allow for the mounting of my Raspberry Pi directly under my printer's mainboard (via [this](https://www.prusaprinters.org/prints/24475-remix-of-raspberry-pi-4-case-3030-hanging-mount-fo) Raspberry Pi 4 Case) without a bulky USB cable connecting them ...
+    <center>
+    ![](../images/Octoprint/mountedelectronics.jpg){width="95%"}
+    </center>
 
-</center>
 
 Your serial connection must be set up software side in the *Serial Connection* menu found under the *Printer* section of the interface settings. Octoprint can automatically detect your *Serial Port* and *Baudrate* when *AUTO* is selected in these dropdowns, however, you may also specify specifics for each field. 
 
@@ -193,16 +206,17 @@ Next, a machine profile must be created for your connected machine to ensure saf
 
 </center>
 
-One key feature of Octoprint is its webcam machine stream, allowing for remote supervision of your machine. Anything from USB webcams to Raspberry Pi ribbon cable cameras can be used for this stream & Octoprint will automatically find this attached webcam and will use it to stream your machine (some more exotic cameras or mounting styles may require an additional configuration - discussed below). On my printer, I've mounted a Raspberry Pi camera to the X-Axis stepper of my machine (via [this](https://www.thingiverse.com/thing:3121052) Raspberry Pi camera mount), yielding a pretty nice side view of prints, shown below.
+One key feature of Octoprint is its webcam machine stream, allowing for remote supervision of your machine. Anything from USB webcams to Raspberry Pi ribbon cable cameras can be used for this stream & Octoprint will automatically find this attached webcam and will use it to stream your machine (some more exotic cameras or mounting styles may require an additional configuration - discussed below). 
 
-<center>
+!!! example "Personal Setup"
 
-![](../images/Octoprint/cameramount.png){width="95%"}
-![](../images/Octoprint/CameraWindow.png){width="95%"}
+    On my printer, I've mounted a Raspberry Pi camera to the X-Axis stepper of my machine (via [this](https://www.thingiverse.com/thing:3121052) Raspberry Pi camera mount), yielding a pretty nice side view of prints, shown below.
+    <center>
+    ![](../images/Octoprint/cameramount.png){width="95%"}
+    ![](../images/Octoprint/CameraWindow.png){width="95%"}
+    </center>
 
-</center>
-
-Due to this mount, my Raspberry Pi camera is heald in an upsidedown orientation and thus needs to be compensated for on the software side. Luckily, in the *Webcam & Timelapse* menu under the *Features* section of the Octorpitn interface settings, webcam orientation can be changed. In addition, more advanced webcam options can be found, allowing for the use of almost all cameras connected to the hardware running Octorpint.
+Due to my printers camera mount, my Raspberry Pi camera is heald in an upsidedown orientation and thus needs to be compensated for on the software side. Luckily, in the *Webcam & Timelapse* menu under the *Features* section of the Octorprint interface settings, webcam orientation can be changed. In addition, more advanced webcam options can be found, allowing for the use of almost all cameras connected to the hardware running Octorpint.
 
 <center>
 
@@ -212,7 +226,11 @@ Due to this mount, my Raspberry Pi camera is heald in an upsidedown orientation 
 
 ### Plugins
 
-One of the greatest features of Octorpint stems from its open-source nature ... its community plugins. Under the *Plugin Manager* menu in the *Octoprint* section of the interface's settings, plugins can be added to the octoprint instance, allowing for entire customization of the instance from the interface to machine interaction. There are tons upon tons of plugins that exist in the Octorpitn community, and you may even develop your own, however below is a list of plugins I find to be amazing additions to an instance (Note - some are machine specific to my Prusa I3 MK3S+) - 
+One of the greatest features of Octorpint stems from its open-source nature ... its community plugins. Under the *Plugin Manager* menu in the *Octoprint* section of the interface's settings, plugins can be added to the octoprint instance, allowing for entire customization of the instance from the interface to machine interaction. There are tons upon tons of plugins that exist in the Octorprint community, and you may even develop your own, however below is a list of plugins I find to be amazing additions to an instance 
+
+!!! note "Note" 
+
+    Some of these shown plugins are machine specific to my Prusa I3 MK3S+
 
 <center>
 
@@ -220,7 +238,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
 </center>
 
- - Access Anywhere - The Spaghetti Detective - AI-powered failure detection & Remote Octoprint Access
+ - Access Anywhere - The Spaghetti Detective[^1] - AI-powered failure detection & Remote Octoprint Access 
 
  <center>
 
@@ -231,7 +249,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
   </center>
 
- - Bed Visualizer - Uses Plotly js library to render a 3D surface of the bed’s reported mesh
+ - Bed Visualizer[^2] - Uses Plotly js library to render a 3D surface of the bed’s reported mesh 
  
  <center>
 
@@ -239,7 +257,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
   </center>
 
- - Custom Background - Change the background image on the temperature graph
+ - Custom Background[^3] - Change the background image on the temperature graph 
  <center>
 
 
@@ -247,7 +265,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
   </center>
 
- - Exclude Region - Adds the ability to prevent printing within rectangular or circular regions of the currently active gcode file 
+ - Exclude Region[^4] - Adds the ability to prevent printing within rectangular or circular regions of the currently active gcode file 
 
  <center>
 
@@ -255,8 +273,8 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
   </center>
 
- - Floating Navbar - Make the navbar stick to the top of the page while scrolling
- - GcodeEditor - Edit gcode that's been uploaded to OctoPrint
+ - Floating Navbar[^5] - Make the navbar stick to the top of the page while scrolling
+ - GcodeEditor[^6] - Edit gcode that's been uploaded to OctoPrint
 
  <center>
 
@@ -265,8 +283,8 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
   </center>
 
- - Heater Timeout - Automatically shut off heaters if no print has been started
- - Navbar Temp - Display temperatures on the navbar
+ - Heater Timeout[^7] - Automatically shut off heaters if no print has been started
+ - Navbar Temp[^8] - Display temperatures on the navbar
 
  <center>
 
@@ -274,7 +292,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
   </center>
 
- - Octoprint Display ETA - Show finish time (ETA) for current print
+ - Octoprint Display ETA[^9] - Show finish time (ETA) for current print
 
  <center>
 
@@ -282,7 +300,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
   
   </center>
 
- - PrettyGCode - adds a 3D GCode visualizer tab in Octoprint
+ - PrettyGCode[^10] - adds a 3D GCode visualizer tab in Octoprint
 
  <center>
 
@@ -290,8 +308,8 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
   </center>
 
- - Themeify - Beautiful themes for octoprint
- - ipOnConnect - Display the ip address of the connected OctoPrint instance on the control panel (MK3S+ specific)
+ - Themeify[^11] - Beautiful themes for octoprint
+ - ipOnConnect[^12] - Display the ip address of the connected OctoPrint instance on the control panel *:warning: MK3S+ specific*
 
  <center>
 
@@ -322,3 +340,41 @@ Although the Octoprint web interface is rather intuitive, the number of stock fe
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+
+[^1]: https://plugins.octoprint.org/plugins/thespaghettidetective/
+[^2]: https://plugins.octoprint.org/plugins/bedlevelvisualizer/
+[^3]: https://plugins.octoprint.org/plugins/custombackground/
+[^4]: https://plugins.octoprint.org/plugins/excluderegion/
+[^5]: https://plugins.octoprint.org/plugins/floatingnavbar/
+[^6]: https://plugins.octoprint.org/plugins/GcodeEditor/
+[^7]: https://plugins.octoprint.org/plugins/HeaterTimeout/
+[^8]: https://plugins.octoprint.org/plugins/navbartemp/
+[^9]: https://plugins.octoprint.org/plugins/display_eta/
+[^10]: https://plugins.octoprint.org/plugins/prettygcode/
+[^11]: https://plugins.octoprint.org/plugins/themeify/
+[^12]: https://plugins.octoprint.org/plugins/ipOnConnect/
+
+*[FDM]: Fused Deposition Modeling
+*[CNC]: Computerized Numerical Control
+*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[SSH]: Secure Shell
+*[GPIO]: General-Purpose Input/Output
+*[USB]: Universal Serial Bus
+*[Baudrate]: Measurement of Symbol Rate
+*[ETA]: Estimated Time of Arrival
+*[GCode]: A software programming language used to control a CNC machine
+*[Git]: Software for tracking changes in any set of files
+*[GUI]: Graphical User Interface
+*[Parametric]: Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.
+*[ISO]: International Organization for Standardization
+*[Kreg-Jig]: A Pocket-Hole Jig
+*[UPDI]: Unified Program and Debug Interface
+*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
+*[jtag]: Joint Test Action Group
+*[IDE]: Integrated Development Environment
+*[Rx]: Receiving Signal
+*[Tx]: Transmitting Signal
+*[VCC]: Voltage Common Collector (+)
+*[GND]: Ground / Common Drain (-)
+*[IC]: Integrated Circuit

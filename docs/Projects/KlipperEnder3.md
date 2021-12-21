@@ -99,7 +99,13 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/"><i class="fas fa-paper-plane"></i></a>
 </span>
 
-Due to uncertainty surrounding lab access during the Covid-19 pandemic, I received an Ender 3 3D-printer at the start of my cycle in [Fab Academy](https://fabacademy.org/). During my [second week](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week02/) in the course, I built and began to mod this machine as a little side project to the course work. However as the cycle progressed, I quickly ran out of time to keep working on this machine's mods and moved the machine to my closet, where it sat up until the [Klipper](https://www.klipper3d.org/) firmware piqued my interest. After modding the printer during Fab Academy, I was running the machine on Marlin linked to Octoprint, a setup I use on my other machines. This setup worked great with my machine mods, allowing me to print over a network through Octoprint as I would on any of my other Octoprint enabled machines. In this configuration, a Raspberry Pi running Octorpint hosts a local server that *.gcode* flies can be uploaded to and ran from. The Pi sends this uploaded *.gcode* to the machine's mainboard, where the code is processed, and movements/operations are determined. [Klipper](https://www.klipper3d.org/) on the other hand operates on a different principle. The firmware runs across both the mainboard and the Raspberry Pi, allowing for the same type of hosted server to exist (I used [FluiddPi](https://github.com/cadriel/FluiddPI) as my servers GUI), but instead of relying on the machines mainboard to compute *.gcode*, the code parsing is done by the Raspberry Pi - the more powerful computer- leaving the machine mainboard to only worry about stepper movements and operations. This setup uses the given hardware of a setup more optimally, allowing for faster calculations and more precise movements. After learning about the benefits of [Klipper](https://www.klipper3d.org/) I knew I had to try it out and thus, the Ender 3 modding project was revied and pulled from the closet.
+Due to uncertainty surrounding lab access during the Covid-19 pandemic, I received an Ender 3 3D-printer at the start of my cycle in [Fab Academy](https://fabacademy.org/). During my [second week](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week02/) in the course, I built and began to mod this machine as a little side project to the course work. However as the cycle progressed, I quickly ran out of time to keep working on this machine's mods and moved the machine to my closet, where it sat up until the [Klipper](https://www.klipper3d.org/) firmware piqued my interest. After modding the printer during Fab Academy[^1], I was running the machine on Marlin linked to Octoprint[^2], a setup I use on my other machines. This setup worked great with my machine mods, allowing me to print over a network through Octoprint as I would on any of my other Octoprint enabled machines. In this configuration, a Raspberry Pi running Octorpint hosts a local server that *.gcode* flies can be uploaded to and ran from. The Pi sends this uploaded *.gcode* to the machine's mainboard, where the code is processed, and movements/operations are determined.
+
+!!! abstract "Klipper Opperation Principal"
+
+    [Klipper](https://www.klipper3d.org/) on the other hand operates on a different principle. The firmware runs across both the mainboard and the Raspberry Pi, allowing for the same type of hosted server to exist (I used [FluiddPi](https://github.com/cadriel/FluiddPI) as my servers GUI), but instead of relying on the machines mainboard to compute *.gcode*, the code parsing is done by the Raspberry Pi - the more powerful computer- leaving the machine mainboard to only worry about stepper movements and operations. This setup uses the given hardware of a setup more optimally, allowing for faster calculations and more precise movements.
+
+  After learning about the benefits of [Klipper](https://www.klipper3d.org/) I knew I had to try it out and thus, the Ender 3 modding project was revied and pulled from the closet.
 
 ## Ender 3 Modding
 
@@ -144,18 +150,20 @@ Beginning the installation of Klipper, the first step is to download and flash t
 
 Next, some basic Pi config. Make sure you are on the same WiFi network you set up your Pi on, and then SSH into your booted Pi at the IP *fluiddpi.local* with the Pi's default credentials (Username - *pi* / Password - *raspberry*). I use [Putty](https://www.putty.org/) as my SSH client as again, it's pretty straightforward to use. Once connected to your Pi, run the command ...
 
-```
+``` py linenums="1"
 sudo raspi-config
 ```
 
 to open the configuration GUI. Here you can change your Pi's credentials (highly recommended), set up your local timezone (to allow for accurate machine ETAs), and change your machine's hostname (thus changing the URL from the default *fluiddpi.local* to *YOURHOSTNAME.local*). After all, changes, reboot your Pi and then confirm all software is up to date with the lines
 
-```
+``` py linenums="1"
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-Congrats! you have now successfully set up [FluiddPi](https://github.com/cadriel/FluiddPI) on your Raspberry Pi, and can now connect to its web server with the URL *http://fluiddpi.local* ( or if you changed your hostname, with the URL *http://YOURHOSTNAME.local*).
+!!! success "Congrats!"
+
+    You have now successfully set up [FluiddPi](https://github.com/cadriel/FluiddPI) on your Raspberry Pi, and can now connect to its web server with the URL *http://fluiddpi.local* ( or if you changed your hostname, with the URL *http://YOURHOSTNAME.local*).
 
 <center>
 
@@ -169,20 +177,20 @@ Upon connection, the webserver will throw an error with a lack of a *printer.cfg
 
 Next up, building Klipper to for machines mainboard. SSH back into your Raspberry Pi (making sure to change your IP to match your altered hostname if you changed it) and run the commands ...
 
-```
+``` py linenums="1"
 cd ~/klipper/
 make menuconfig
 ```
 
 to open the mainboard configuration GUI. Work through this interface with your mainboards information before running the command ...
 
-```
+``` py linenums="1"
 make
 ```
 
 to build your set configurations. Now, connect your Pi and machine mainboard via USB and determine the connected serial port with the line
 
-```
+``` py linenums="1"
 ls /dev/serial/by-id/*
 ```
 
@@ -190,13 +198,17 @@ the report this line will yield provides the serial port that connects your main
 
 Now, to begin the flashing, run the lines...
 
-```
+``` py linenums="1"
 sudo service klipper stop
 make flash FLASH_DEVICE=YOUR-SERIAL-PORT-INFORMATION-HERE
 sudo service klipper start
 ```
 
-making sure to paste in the reported serial port where it says *YOUR-SERIAL-PORT-INFORMATION-HERE*. This will flash the built Klipper instance to your machine's mainboard, and then begin communication between the two parallel boards. **Good Job! Klipper is now installed.**
+making sure to paste in the reported serial port where it says *YOUR-SERIAL-PORT-INFORMATION-HERE*. This will flash the built Klipper instance to your machine's mainboard, and then begin communication between the two parallel boards. 
+
+!!! success "Good Work!"
+
+     Klipper is now installed.
 
 ## Klipper Configuration
 
@@ -217,7 +229,7 @@ As shown above, your *printer.cfg* file can be accessed in FluiddPi's configurat
 
 </center>
 
-```
+```yaml linenums="1" title="printer.cfg"
 # See docs/Config_Reference.md for a description of parameters.
 
 [virtual_sdcard]
@@ -564,3 +576,31 @@ Check out my Klipper Enabled Ender 3 machine profile page, linked below, for inf
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+
+[^1]: http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week02/
+[^2]: https://teddywarner.org/Projects/Octoprint/
+
+*[FDM]: Fused Deposition Modeling
+*[CNC]: Computerized Numerical Control
+*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[SSH]: Secure Shell
+*[GPIO]: General-Purpose Input/Output
+*[USB]: Universal Serial Bus
+*[Baudrate]: Measurement of Symbol Rate
+*[ETA]: Estimated Time of Arrival
+*[GCode]: A software programming language used to control a CNC machine
+*[Git]: Software for tracking changes in any set of files
+*[GUI]: Graphical User Interface
+*[Parametric]: Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.
+*[ISO]: International Organization for Standardization
+*[Kreg-Jig]: A Pocket-Hole Jig
+*[UPDI]: Unified Program and Debug Interface
+*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
+*[jtag]: Joint Test Action Group
+*[IDE]: Integrated Development Environment
+*[Rx]: Receiving Signal
+*[Tx]: Transmitting Signal
+*[VCC]: Voltage Common Collector (+)
+*[GND]: Ground / Common Drain (-)
+*[IC]: Integrated Circuit

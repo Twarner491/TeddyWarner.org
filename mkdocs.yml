@@ -60,12 +60,13 @@ theme:
 
   icon:
     repo: fontawesome/brands/git-alt
-                                                                            
+                          
   features:
    - navigation.instant
    - navigation.top
    - navigation.tabs
    - navigation.expand
+   - content.code.annotate
 
 plugins:
   - search
@@ -74,16 +75,28 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details
   - extra
   - smarty
   - admonition
+  - attr_list
   - codehilite:
       guess_lang: false
   - toc:
       permalink: true
-  - attr_list
   - meta
   - footnotes
+  - abbr
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra_css:
   - stylesheets/extra.css

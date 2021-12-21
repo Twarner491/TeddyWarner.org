@@ -101,18 +101,20 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 The Assistive Aquaponics Fish Tank was my final project masterpiece during my cycle in [Fab Academy](https://fabacademy.org/). The tank is made with a combination of digital fabrication tools and modern fabrication mediums including
 
- - 3D Printing
- - CNC Milling
- - Laser Cutting/Engraving
- - PCB Design & Milling
- - SMD Soldering
- - And Lots and Lots of CAD Design
+ - [x] 3D Printing
+ - [x] CNC Milling
+ - [x] Laser Cutting/Engraving
+ - [x] PCB Design & Milling
+ - [x] SMD Soldering
+ - [x] And Lots and Lots of CAD Design
 
- In an attempt to save some repo space, only a presentation slide and video of my Assistive Aquaponics Fish Tank are displayed on this page, however, a complete documentation of this project can be read on my Fab Academy site linked in the button below, as well as in the header of this site. 
+!!! note "Compleate Project Documentation" 
+
+    In an attempt to save some repo space, only a presentation slide and video of my Assistive Aquaponics Fish Tank are displayed on this page, however, a complete documentation of this project can be read on my Fab Academy site linked in the button below, as well as in the header of this site. 
 
 <center>
 
-[Fab Academy 2021 - Assistive Aquaponics Fish Tank](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/){ .md-button .md-button--primary }
+[Fab Academy 2021 - Assistive Aquaponics Fish Tank :fontawesome-solid-globe-americas:](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/){ .md-button .md-button--primary }
 
 ![](../images/AssistiveAquaponics/presentation.png)
 
@@ -125,3 +127,28 @@ The Assistive Aquaponics Fish Tank was my final project masterpiece during my cy
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+
+*[FDM]: Fused Deposition Modeling
+*[CNC]: Computerized Numerical Control
+*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[SSH]: Secure Shell
+*[GPIO]: General-Purpose Input/Output
+*[USB]: Universal Serial Bus
+*[Baudrate]: Measurement of Symbol Rate
+*[ETA]: Estimated Time of Arrival
+*[GCode]: A software programming language used to control a CNC machine
+*[Git]: Software for tracking changes in any set of files
+*[GUI]: Graphical User Interface
+*[Parametric]: Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.
+*[ISO]: International Organization for Standardization
+*[Kreg-Jig]: A Pocket-Hole Jig
+*[UPDI]: Unified Program and Debug Interface
+*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
+*[jtag]: Joint Test Action Group
+*[IDE]: Integrated Development Environment
+*[Rx]: Receiving Signal
+*[Tx]: Transmitting Signal
+*[VCC]: Voltage Common Collector (+)
+*[GND]: Ground / Common Drain (-)
+*[IC]: Integrated Circuit

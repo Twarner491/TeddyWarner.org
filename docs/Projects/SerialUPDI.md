@@ -103,20 +103,25 @@ Many modern small chipsets rely on the Unified Program and Debug Interface (UPDI
 
 ## [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) Documentation
 
-In short, the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is "An Arduino core for the tinyAVR 0-series, 1-series, and now the 2-series"([mTC Gtihub](https://github.com/SpenceKonde/megaTinyCore)). The [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) project was created and maintained by [SpenceKonde](https://github.com/SpenceKonde). As mentioned above, the library equips your IDE for UPDI programming via a portable python installation and can be used alongside a handful of different programmer types. The USB-C UPDI Serial programmer documented alter on this page is currently the optimal choice out of these options due to its low component requirement and faster speeds than other programmers. In addition to serial programmers, One can use a 328p based board as a programmer (i.e. an Arduino or any of its clones) via [megaTinyCore's](https://github.com/SpenceKonde/megaTinyCore) *jtag2updi* sketch, or a designated microchip programming board or and UPDI programming tool that mimicks any listed above. [Dr. Adam Harris](http://sheekgeek.org/), a mentor of mine during my cycle of [Fab Academy](https://fabacademy.org/) has a [Simple Fab-jtag2UPDI Board](http://sheekgeek.org/2020/adamsheekgeek/simple-fab-jtag2updi-board) project where a 328p based board is used alongside the jtag2UPDI sketch and is a great option when creating an In-Circuit programmer though the library. I manufactured this board during my [Electronics Production](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/) and continued to use it for the next 16 weeks of the course.
+In short, the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is "An Arduino core for the tinyAVR 0-series, 1-series, and now the 2-series"[^1]. The [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) project was created and maintained by [SpenceKonde](https://github.com/SpenceKonde). As mentioned above, the library equips your IDE for UPDI programming via a portable python installation and can be used alongside a handful of different programmer types. The USB-C UPDI Serial programmer documented alter on this page is currently the optimal choice out of these options due to its low component requirement and faster speeds than other programmers. In addition to serial programmers, One can use a 328p based board as a programmer (i.e. an Arduino or any of its clones) via [megaTinyCore's](https://github.com/SpenceKonde/megaTinyCore) *jtag2updi* sketch, or a designated microchip programming board or and UPDI programming tool that mimicks any listed above. [Dr. Adam Harris](http://sheekgeek.org/), a mentor of mine during my cycle of [Fab Academy](https://fabacademy.org/) has a [Simple Fab-jtag2UPDI Board](http://sheekgeek.org/2020/adamsheekgeek/simple-fab-jtag2updi-board) project where a 328p based board is used alongside the jtag2UPDI sketch and is a great option when creating an In-Circuit programmer though the library. I manufactured this board during my [Electronics Production](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/) and continued to use it for the next 16 weeks of the course.
 
 ### Package Installation
 
-**Arduino 1.8.13 is recommended** for use with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library
+!!! abstract "Software Requirement"
 
-Recent updates to the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library have simplified the installation process significantly. The library relies upon a board package that can be installed via the board manager witch can be installed with 3 simple steps included below (provided from this installation [page](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md)).
+    **Arduino 1.8.13 is recommended** for use with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library
+
+Recent updates to the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library have simplified the installation process significantly. The library relies upon a board package that can be installed via the board manager witch can be installed with 3 simple steps included below[^2].
 
 ```
+
 http://drazzy.com/package_drazzy.com_index.json
+
 ```
-1. File -> Preferences, enter the above URL in "Additional Boards Manager URLs"
-2. Tools -> Boards -> Boards Manager...
-3. Select *megaTinyCore by Spence Konde* and click "Install". For best results, choose the most recent version.
+
+ 1. File -> Preferences, enter the above URL in *Additional Boards Manager URLs*
+ 2. Tools -> Boards -> Boards Manager...
+ 3. Select *megaTinyCore by Spence Konde* and click "Install". For best results, choose the most recent version.
 
 ### jtag2UPDI Programming
 
@@ -154,13 +159,14 @@ This will open the *jtag2updi* project file system, leaving you with a blank *jt
 
 </center>
 
-You can next upload this sketch to your 328p-based board of choice as you would any other sketch. As a first test to confirm the successful upload of this sketch to your board, hook up an LED to pin 6 of the board. If the board is successfully programmed, the LED will be dimly lit as shown below. **This simple test eliminates a potential error while troubleshooting a project, and confirms the programmer's working condition.**
+You can next upload this sketch to your 328p-based board of choice as you would any other sketch. 
 
-<center>
+!!! tip "Tip"
 
-![](../images/SerialUPDI/jtagtest.jpg){width="95%"}
-
-</center>
+    As a first test to confirm the successful upload of this sketch to your board, hook up an LED to pin 6 of the board. If the board is successfully programmed, the LED will be dimly lit as shown below. **This simple test eliminates a potential error while troubleshooting a project, and confirms the programmer's working condition.**
+    <center>
+    ![](../images/SerialUPDI/jtagtest.jpg){width="95%"}
+    </center>
 
 Once a board is programmed with the *jtag2updi* project, it will act as a programmer until the next sketch is uploaded, unless the board's reset line is cut.
 
@@ -168,7 +174,7 @@ Once a board is programmed with the *jtag2updi* project, it will act as a progra
 
 To make use of a *jtag2updi* enabled In-Circuit programmer board, prepare a sketch in your IDE to upload to your desired board. For documentation purposes, I'll be uploading the simple blink sketch included below to a super simple ATtiny 412 based LED board I made in [week 4](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#blinky-test-board) of my Fab Academy cycle and documenting it for use with the Arduino IDE.
 
-```
+``` c++ linenums="1"
 void setup() {
   pinMode(0, OUTPUT);
 }
@@ -190,19 +196,24 @@ To upload code to your board via your *jtag2updi* enabled In-Circuit programmer 
  5. Change your COM port to connect via serial to your In-Circuit Programmer board if not already connected
  6. Finally, upload your sketch via the ***Upload Using Programmer*** button found under the IDE's *Sketch* menu - Not with the normal upload button (this will override your programmers *jtag2updi* sketch if done).
 
-Following these steps on my simple ATtiny 412 board yielded the 1/2 second blink example below. 
+!!! example "Example"
+    Following these steps on my simple ATtiny 412 board yielded the 1/2 second blink example below. 
+    <center>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/vvL9G3BIThU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
 
-<center>
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/vvL9G3BIThU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+!!! success "Congrats!"
 
-**Congrats!** you can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI and a *jtag2updi* enabled 328p-based board.
+    You can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI and a *jtag2updi* enabled 328p-based board. 
 
 ### Serial Programming
 
 ![Promotion](https://img.shields.io/badge/-Recommended-success?style=flat-square)
 
-Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This installation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this performance increase in addition to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optimal form of programming I've used on my boards to date.
+!!! info "Serial UPDI Programming with megaTinyCore"
+
+    Version 2.2.0 of the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library brings the implementation of a portable python implementation. This installation, based on [pymcuprog](https://pypi.org/project/pymcuprog/), **allows for a programming speed increase by a factor of 20** when compared to the prior *jtag2udpi* programming style. With this performance increase in addition to a smaller & cheaper hardware list, Serial UDPI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library is the most optimal form of programming I've used on my boards to date.
+
 
 The serial programming style relies on this prior mentioned portable python installation alongside a USB-Serial adapter acting as the programmer in this case. Though this section of the page will document this programming style via a pre-made USB-Serial adapter (in this case an FTDI chip) and some other hardware bits, please note the [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) board documented later on this page - this board is a set hardware piece for this Serial UPDI programming style, and provides a permanent hardware programming board. To engage the Serial UPDI programming method without a board like this you'll need the required hardware...
 
@@ -214,7 +225,7 @@ The serial programming style relies on this prior mentioned portable python inst
 </center>
  4. A 470-ohm Resistor - If creating a UPDI programmable board, incorporate this resistor into your schematic using the pinout below, running the 470-ohm resistor inline to the UPDI pin. Any value between 100 and 1k ohms will do here, but 470 is the optimal value.
 
-```
+``` title="Target Board Programming Headers"
       __________________
 -----| UPDI---\/\/------>
 -----| Gnd    470 ohms (100 ~ 1k)
@@ -229,9 +240,7 @@ If not creating your own board, and there's no inline UPDI resistor, you'll need
  - Schottky Diode between the Rx & Tx of Serial Adapter (Cathode to Tx)
  - Rx of Adapter to UPDI of Target - Here include the 470 ohms resistor as needed 
 
-**Ideal - internal resistor in the adapter - not more than 1k**
-
-```
+``` title="Ideal - internal resistor in the adapter - not more than 1k"
 --------------------                                 To Target device
                 DTR|                                  __________________
     internal    Rx |--------------,------------------| UPDI---\/\/------>
@@ -253,9 +262,7 @@ or
 --------------------
 ```
 
-**Or with no internal resistor on the adapter - as long as the target has one**
-
-```
+``` title="Or with no internal resistor on the adapter - as long as the target has one"
 --------------------                                 To Target device
                 DTR|                                  __________________
        no       Rx |--------------,------------------| UPDI---\/\/------>
@@ -283,40 +290,51 @@ To program via your USB-Serial setup ...
  2. Then, under *Tools -> Port* select the port connected to your USB-Serial adapter, if not already selected
  3. Finally, upload your sketch via the *Upload* button and watch as your board is programmed at lightning speeds!
 
-**Note - the serial programmer setup does not give you a serial monitor** - you'll need to connect a serial adapter the normal way for that. The later documented [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) & [ftdi2updi](https://teddywarner.org/Projects/SerialUPDI/#ftdi2updi) boards provide a switching feature between a serial programming and serial monitoring mode, allowing for all programming and monitoring work to be done without rework of connections. Be sure to check out the specific [USB-C UPDI Serial Programmer usage](https://teddywarner.org/Projects/SerialUPDI/#programmer-usage) section for use of this feature.
+!!! warning "Note - this serial programmer setup does not give you a serial monitor"
 
-For this example, I modified my prior used blink sketch to run a 5-second delay as opposed to the prior 0.5 seconds...
+    You'll need to connect a serial adapter the normal way for that. **The later documented [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) & [ftdi2updi](https://teddywarner.org/Projects/SerialUPDI/#ftdi2updi) boards provide a switching feature between a serial programming and serial monitoring mode, allowing for all programming and monitoring work to be done without rework of connections.** Be sure to check out the specific [USB-C UPDI Serial Programmer usage](https://teddywarner.org/Projects/SerialUPDI/#programmer-usage) section for use of this feature.
 
-```
-void setup() {
-  pinMode(0, OUTPUT);
-}
 
-void loop() {
-  digitalWrite(0, HIGH); 
-  delay(5000);
-  digitalWrite(0, LOW); 
-  delay(5000); 
-}
-```
+!!! example "Example"
 
-I uploaded this via the three-step process listed above, yielding the successful results below.
+    For this example, I modified my prior used blink sketch to run a 5-second delay as opposed to the prior 0.5 seconds...
 
-<center>
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/kzWAhotTQuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+    ```c++ linenums="1"
+    void setup() {
+      pinMode(0, OUTPUT);
+    }
 
-**Congrats!** you can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI with a simple USB-Serial adapter with a speed increase by a factor of twenty when compared with the prior *jtag2updi* method.
+    void loop() {
+      digitalWrite(0, HIGH); 
+      delay(5000);
+      digitalWrite(0, LOW); 
+      delay(5000); 
+    }
+    ```
+
+    I uploaded this via the three-step process listed above, yielding the successful results below.
+
+    <center>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/kzWAhotTQuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+
+!!! success "Congrats!"
+
+    You can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI with a simple USB-Serial adapter with a speed increase by a factor of twenty when compared with the prior *jtag2updi* method.
 
 ## UPDI Serial Programmer Manufacturing
 
-I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.org/), one of the first being a tool to program the rest, an [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer). Being one of the first boards I fabricated myself, from the PCB milling to soldering & stuffing, I hadn't yet taken up the practice of designing my boards, and for this assignment, fabricated the [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) design of one of my mentors, [Dr. Adam Harris](http://sheekgeek.org/). This board is a specialized Arduino-like board, running on an ATMega 328p with a programmer sketch provided by the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library. The [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) I fabricated in Fab Academy's operation is great, but due to new updates in the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, the process can be optimized for faster speeds, and the board size and component requirements can be reduced. This board marks my first steps into the world of multi-layered PCB design and fabrication, a process I'm super pumped to pick up and apply to future projects.
+I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.org/), one of the first being a tool to program the rest, an [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer). Being one of the first boards I fabricated myself, from the PCB milling to soldering & stuffing, I hadn't yet taken up the practice of designing my boards, and for this assignment, fabricated the [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) design of one of my mentors, [Dr. Adam Harris](http://sheekgeek.org/). This board is a specialized Arduino-like board, running on an ATMega 328p with a programmer sketch provided by the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library. 
+
+!!! abstract "Project Origins"
+
+    The [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) I fabricated in Fab Academy's operation is great, but due to new updates in the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, the process can be optimized for faster speeds, and the board size and component requirements can be reduced. This board marks my first steps into the world of multi-layered PCB design and fabrication, a process I'm super pumped to pick up and apply to future projects.
 
 The USB-C UPDI Programmer is a specialized piece of hardware for use with the prior discussed [serial programming](https://teddywarner.org/Projects/SerialUPDI/#serial-programming) method and has a couple of advantages over rigging a programmer up on a breadboard. A permanent piece of the hardware enables the serial programming method to require a bit less setup, once the board has been made. Following that, this board includes "modes", allowing switching between serial programming and monitoring functions. When rigging a serial programmer up via a USB-serial adapter as documented prior, you cannot monitor serial from the board at the same time, but instead are required to require the board to the USB-serial adapter. The switching of "modes" on this programmer eliminates this extra hassle, handling all the required connections at the flip of a switch located on the board's underside.
 
 ### USB-C UPDI Design
 
-It was this elimination of hassle that pushed me to create this piece of hardware, yielding a simple workflow when serial programming. The USB-C UPDI Serial Programmer is based on the *FT232RL* IC, handling the USB protocol and USB to serial data transfer on the programmer. 
+It was this elimination of hassle that pushed me to create this piece of hardware, yielding a simple workflow when serial programming. The USB-C UPDI Serial Programmer is based on the *FT232RL*[^3] IC, handling the USB protocol and USB to serial data transfer on the programmer. 
 
 <iframe src="https://drive.google.com/file/d/1sXxm9A5GLxVPGFNDkNBzLakp-TWlVKT2/preview" width="100%" height="500" allow="autoplay"></iframe>
 
@@ -347,11 +365,24 @@ The nesting of the two highest pinout parts on the board's topside inspired my n
 ![](../images/SerialUPDI/topstencil.png){width="100%"}
   <figcaption>Tcream board layer in Eagle</figcaption>
 
+**Bill of Matierals - USB-C UPDI**
+
+|Qty.| Part | Cost | URL |
+|--|----|---|---|
+|x1|SMD DPDT Switch|$1.50|[link](https://www.sparkfun.com/products/597)|
+|x1|CDBM1100-G|$0.39|[link](https://www.digikey.com/en/products/detail/CDBM1100-G/641-1331-1-ND/2021252?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x1|470 ohm SMD Resistor|$0.10|[link](https://www.digikey.com/en/products/detail/CRCW1206470RFKEA/541-470FCT-ND/1181722?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x1|1.5k ohm SMD Resistor|$0.10|[link](https://www.digikey.com/en/products/detail/RC1206JR-071K5L/311-1.5KERCT-ND/732145?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x1|100nf SMD Cap|$0.18|[link](https://www.digikey.com/en/products/detail/12061C104KAT2A/478-1529-1-ND/564561?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x1|1uf SMD Cap|$0.10	|[link](https://www.digikey.com/en/products/detail/12063C105KAT2A/478-1567-1-ND/564599?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x1|DX07S016JA1R1500|$1.59|[link](https://www.digikey.com/en/products/detail/DX07S016JA1R1500/670-DX07S016JA1R1500CT-ND/11586676?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x1|FT232RL|$4.19|[link](https://uk.rs-online.com/web/p/multiprotocol-transceivers/0406580?cm_mmc=aff2-_-uk-_-octopart-_-Instock406580)|
+|x11|Header Pins|$0.14|[link](https://www.amazon.com/MCIGICM-Header-2-45mm-Arduino-Connector/dp/B07PKKY8BX/ref=sr_1_5?keywords=male+headers&qid=1639060454&sr=8-5)|
+|x1|Copper PCB Blank|$0.70|[link](https://www.amazon.com/MCIGICM-Copper-Laminate-Circuit-Single/dp/B01MCVLDDZ/ref=sr_1_1?keywords=copper+pcb+blank&qid=1639060805&sr=8-1)|
+
+Total Cost- **$8.99**
+
 </center>
-
-**Bill of Matierals**
-
-<iframe width="100%" height="330" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRP0TkYq9n4MA5lM970nWzi2DH6pm-aGEhfW6-NvF-zqs3NmNC7XX2r-9XGF3LbW7RqbTVcIaX5WmlB/pubhtml?gid=1169852294&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ### ftdi2updi Design
 
@@ -375,11 +406,22 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
 ![](../images/SerialUPDI/ftdi2updiboard.png){width="100%"}
   <figcaption>First Iteration ftdi2updi Programmer Eagle Board</figcaption>
 
+**Bill of Matierals - ftdi2updi**
+
+|Qty.| Part | Cost | URL |
+|--|----|---|---|
+|x1|SMD DPDT Switch|$1.50|[link](https://www.sparkfun.com/products/597)|
+|x1|CDBM1100-G|$0.39|[link](https://www.digikey.com/en/products/detail/CDBM1100-G/641-1331-1-ND/2021252?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x1|470 ohm SMD Resistor|$0.10|[link](https://www.digikey.com/en/products/detail/CRCW1206470RFKEA/541-470FCT-ND/1181722?utm_campaign=buynow&utm_medium=aggregator&curr=usd&utm_source=octopart)|
+|x11|Header Pins|$0.14|[link](https://www.amazon.com/MCIGICM-Header-2-45mm-Arduino-Connector/dp/B07PKKY8BX/ref=sr_1_5?keywords=male+headers&qid=1639060454&sr=8-5)|
+|x1|Copper PCB Blank|$0.70|[link](https://www.amazon.com/MCIGICM-Copper-Laminate-Circuit-Single/dp/B01MCVLDDZ/ref=sr_1_1?keywords=copper+pcb+blank&qid=1639060805&sr=8-1)|
+|x1|FTDI Serial Adapter|$14.95|[link](https://www.sparkfun.com/products/9716)|
+
+Total Cost (W/out FTDI)- **$2.83** 
+</br>
+Final Cost- **$17.78**
+
 </center>
-
-**Bill of Matierals**
-
-<iframe width="100%" height="280" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRP0TkYq9n4MA5lM970nWzi2DH6pm-aGEhfW6-NvF-zqs3NmNC7XX2r-9XGF3LbW7RqbTVcIaX5WmlB/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ### Fabrication & Testing
 
@@ -418,7 +460,11 @@ Finally, to ensure a proper connection, I soldered over each side of the via and
 
 </center>
 
-I finished the stuffing and soldering of this board, a simple enough process due to the small component size. **Note** - the board that is being documented here is an early iteration of the ftdi2updi and contains an extra resistor, and thus your final board may not look exactly like the ones on this page until the *Programmer Usage* section.
+I finished the stuffing and soldering of this board, a simple enough process due to the small component size. 
+
+!!! warning "Note"
+
+    The board that is being documented here is an early iteration of the ftdi2updi and contains an extra resistor, and thus your final board may not look exactly like the ones on this page until the *Programmer Usage* section.
 
 <center>
 
@@ -427,57 +473,67 @@ I finished the stuffing and soldering of this board, a simple enough process due
 
 </center>
 
-I ran two tests on the ftdi2updi, one proving each of the board's functions. Beginning with its programming function, I uploaded a modified version of the same blink test sketch used above to my simple LED board ...
+I ran two tests on the ftdi2updi, one proving each of the board's functions. 
 
-```
-void setup() {
-  pinMode(0, OUTPUT);
-}
+!!! example "Programming Test"
 
-void loop() {
-  digitalWrite(0, HIGH); 
-  Serial.println('ON')
-  delay(5000);
-  digitalWrite(0, LOW); 
-  Serial.println('OFF')
-  delay(5000); 
-}
-```
+    Beginning with its programming function, I uploaded a modified version of the same blink test sketch used above to my simple LED board ...
 
-I uploaded this via the *Programmer Usage* process documented in the corresponding section below. The first upload was successful at a medium (230400) baudrate. Then I uploaded the test, and repeated it at the highest (TURBO 4.5v + 460800) baudrate, yielding the successful results below. **Note** - the ftdi2updi serial adapter meshing headers were reversed in this iteration, and thus I attached the serial adapter upsidedown for this test, the proper orientation as outlined in the following *Programmer Usage* section.
+    ``` c++ linenums="1"
+    void setup() {
+      pinMode(0, OUTPUT);
+    }
 
-<center>
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/eTtsF79EW4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+    void loop() {
+      digitalWrite(0, HIGH); 
+      Serial.println('ON')
+      delay(5000);
+      digitalWrite(0, LOW); 
+      Serial.println('OFF')
+      delay(5000); 
+    }
+    ```
 
-Next, I switched the programmer to its monitoring mode and hooked it up to Arduino *RX* & *TX* pins, shown below. Unfortunately, my simple LED board doesn't have serial communication pins, and thus this Arduino was my next best testing option.
+    I uploaded this via the *Programmer Usage* process documented in the corresponding section below. The first upload was successful at a medium (230400) baudrate. Then I uploaded the test, and repeated it at the highest (TURBO 4.5v + 460800) baudrate, yielding the successful results below. 
 
-<center>
+    <center>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/eTtsF79EW4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
 
-![](../images/SerialUPDI/serialtestwireing.jpg){width="95%"}
+!!! warning "Note"
 
-</center>
+    The ftdi2updi serial adapter meshing headers were reversed in this iteration, and thus I attached the serial adapter upsidedown for this test, the proper orientation as outlined in the following *Programmer Usage* section.
 
-I uploaded this super simple serial print sketch to the Arduino ...
+!!! example "Serial Monitoring Test"
 
-```
-void setup(){
-  Serial.begin(9600);
-}
+    Next, I switched the programmer to its monitoring mode and hooked it up to Arduino *RX* & *TX* pins, shown below. Unfortunately, my simple LED board doesn't have serial communication pins, and thus this Arduino was my next best testing option.
 
-void loop(){
-  Serial.println("Hello World");
-  delay(5000);
-}
-```
+    <center>
 
-and then opened the Arduino IDE's serial monitor on my ftdi2updi port, which successfully read the serial output printed, shown below - and also was able to transmit via serial, shown by the Arduinos receiving LED. 
+    ![](../images/SerialUPDI/serialtestwireing.jpg){width="95%"}
 
-<center>
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/MHLoW-Os5n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+    </center>
 
-Although this first iteration of the ftdi2updi worked, there were a couple of design flaws (Noted above) I've flatted out in later versions including - a reversed FTDI header, oversized vias, an unnecessary 1k resistor, and improper meshing with an existing FTDI serial adapter. The final version of this programmer (and its CAM files) can be accessed in the repo linked by the download button at the bottom of the *Fabrication & Testing* section.
+    I uploaded this super simple serial print sketch to the Arduino ...
+
+    ``` c++ linenums="1"
+    void setup(){
+      Serial.begin(9600);
+    }
+
+    void loop(){
+      Serial.println("Hello World");
+      delay(5000);
+    }
+    ```
+
+    and then opened the Arduino IDE's serial monitor on my ftdi2updi port, which successfully read the serial output printed, shown below - and also was able to transmit via serial, shown by the Arduinos receiving LED. 
+
+    <center>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/MHLoW-Os5n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+
+Although this first iteration of the ftdi2updi worked, there were a couple of design flaws (Noted above) I've flatted out in later versions including - a reversed FTDI header, oversized vias, an unnecessary 1k resistor, and improper meshing with an existing FTDI serial adapter. **The final version of this programmer (and its CAM files) can be accessed in the repo linked by the download button at the bottom of the *Fabrication & Testing* section.** Use this version as refrence whilst fabricating your own board.
 
 I ordered a couple of these final iteration boards from a PCB fab ...
 
@@ -500,11 +556,13 @@ Which turned out incredible. The Gerber files for these boards are included in t
 
 #### USB-C UPDI
 
-![Progress](https://img.shields.io/badge/progress-section%20pending%20completion-yellow?style=flat-square)
+!!! warning "Pending Compleation"
 
-As mentioned prior, due to 2021's supply chain limitations, I cannot currently get my hands on an FT232RL, and thus, for now, the *fabrication & testing* sections will only include my *ftdi2upid* board. **This section will be updated by future me once I can get an FT232RL.**
+    As mentioned prior, due to 2021's supply chain limitations, I cannot currently get my hands on an FT232RL, and thus, for now, the *fabrication & testing* sections will only include my *ftdi2upid* board. **This section will be updated by future me once I can get an FT232RL.**
 
-**This USB-C UPDI Programmer Board is not yet complete**, and although you can download its files, the board is still in development and may not function properly. Again, this section will be updated upon its completion.
+!!! danger "This USB-C UPDI Programmer Board is not yet complete"
+
+    Although you can download its files, the board is still in development and may not function properly. Again, this section will be updated upon its completion.
 
 <center>
 
@@ -567,7 +625,11 @@ Both Serial UPDI programmers rely on the prior documented [megaTinyCore](https:/
 
 ### Programming
 
-To use the UPDI programming function, toggle the programmers switch to *UPDI* as shown below, and then connect UPDI and GND lines to their corresponding pins. Here you can also run a VCC line to your target board, which provides 5v, shown in the wiring below. **NOTE** - connecting serial data lines here is totally ok, as the switch disconnects them from communication when in programming mode. The wiring shown here is just the required connections for UPDI programming.
+To use the UPDI programming function, toggle the programmers switch to *UPDI* as shown below, and then connect UPDI and GND lines to their corresponding pins. Here you can also run a VCC line to your target board, which provides 5v, shown in the wiring below. 
+
+!!! note "Note" 
+
+    Connecting serial data lines here is totally ok, as the switch disconnects them from communication when in programming mode. The wiring shown here is just the required connections for UPDI programming.
 
 <center>
 
@@ -622,7 +684,11 @@ Finally, select your programming style. For all programmers documented on this p
 
 ### Monitoring
 
-To use the serial monitoring function, toggle the programmers switch to *Serial* as shown below, and then connect Transmitting and Receiving Data lines as well as GND to their corresponding pins. ***Keep in Mind RX and TX lines must be switched between the programmer board and the target,*** with Transmitting of one going to Receiving of the other and vise versa. Here, as prior, you can also run a VCC line to your target board, which provides 5v. **NOTE** - connecting the UPDI line here is totally ok, as the switch disconnects it from communication when in monitoring mode. The wiring shown here is just the required connections for Serial monitoring.
+To use the serial monitoring function, toggle the programmers switch to *Serial* as shown below, and then connect Transmitting and Receiving Data lines as well as GND to their corresponding pins. ***Keep in Mind RX and TX lines must be switched between the programmer board and the target,*** with Transmitting of one going to Receiving of the other and vise versa. Here, as prior, you can also run a VCC line to your target board, which provides 5v. 
+
+!!! note "Note"
+
+    Connecting the UPDI line here is totally ok, as the switch disconnects it from communication when in monitoring mode. The wiring shown here is just the required connections for Serial monitoring.
 
 <center>
 
@@ -655,10 +721,41 @@ This will open the IDE's serial terminal, where incoming serial data is printed,
 
 </center>
 
-**Congrats!** you now know the methods to UPDI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, and may have a cool hardware programmer to show for it :grin:.
+!!! success "Congrats!"
+
+    You now know the methods to UPDI programming with the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, and may have a cool hardware programmer to show for it :grin:.
 
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+
+[^1]: https://github.com/SpenceKonde/megaTinyCore
+[^2]: https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md
+[^3]: https://drive.google.com/file/d/1sXxm9A5GLxVPGFNDkNBzLakp-TWlVKT2/view
+
+*[FDM]: Fused Deposition Modeling
+*[CNC]: Computerized Numerical Control
+*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[SSH]: Secure Shell
+*[GPIO]: General-Purpose Input/Output
+*[USB]: Universal Serial Bus
+*[Baudrate]: Measurement of Symbol Rate
+*[ETA]: Estimated Time of Arrival
+*[GCode]: A software programming language used to control a CNC machine
+*[Git]: Software for tracking changes in any set of files
+*[GUI]: Graphical User Interface
+*[Parametric]: Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.
+*[ISO]: International Organization for Standardization
+*[Kreg-Jig]: A Pocket-Hole Jig
+*[UPDI]: Unified Program and Debug Interface
+*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
+*[jtag]: Joint Test Action Group
+*[IDE]: Integrated Development Environment
+*[Rx]: Receiving Signal
+*[Tx]: Transmitting Signal
+*[VCC]: Voltage Common Collector (+)
+*[GND]: Ground / Common Drain (-)
+*[IC]: Integrated Circuit

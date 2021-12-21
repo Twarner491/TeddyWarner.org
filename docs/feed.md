@@ -242,20 +242,6 @@ hide:
 
   <div class="post alt">
     <div class="meta">
-      <div class="photo" style="background-image: url('../images/KlipperEnder3/directdrive.jpg')"></div>
-    </div>
-    <div class="description">
-      <h1>Klipper Enabled Ender 3</h1>
-      <h2>- Sophmore Year, 2021 -</h2>
-      <p>A modified Ender 3 with printer electronics rehoused, carriage reworked to direct drive, motherboard & screen swapped, and Klipper firmware installed.</p>
-      <p class="read-more">
-        <a href="../Projects/KlipperEnder3">Read More</a>
-      </p>
-    </div>
-  </div>
-
-  <div class="post">
-    <div class="meta">
       <div class="photo" style="background-image: url('../images/Octoprint/personaloctoprint.jpg')"></div>
     </div>
     <div class="description">
@@ -264,6 +250,20 @@ hide:
       <p>Complete Octoprint Setup Documentation, including hardware setup, software installation, machine mounting, and a list of great plugins to expand Octoprint's capabilities.</p>
       <p class="read-more">
         <a href="../Projects/Octoprint">Read More</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="meta">
+      <div class="photo" style="background-image: url('../images/KlipperEnder3/directdrive.jpg')"></div>
+    </div>
+    <div class="description">
+      <h1>Klipper Enabled Ender 3</h1>
+      <h2>- Sophmore Year, 2021 -</h2>
+      <p>A modified Ender 3 with printer electronics rehoused, carriage reworked to direct drive, motherboard & screen swapped, and Klipper firmware installed.</p>
+      <p class="read-more">
+        <a href="../Projects/KlipperEnder3">Read More</a>
       </p>
     </div>
   </div>
