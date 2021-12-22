@@ -293,7 +293,7 @@ title: About Me
   <div class="sidebarparent">
     <div class="sidebar">
      <center>
-     <p><img src="https://teddywarner.org/images/About/avatar-photo.jpg" alt="Profile Picture" class="profilepic"></p>
+     <p><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"></p>
       <h1>Teddy Warner</h1>
       <h2>Charlotte,NC</h2>
       <h3>Student/Maker<h3>
