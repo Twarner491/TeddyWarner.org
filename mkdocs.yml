@@ -1,12 +1,14 @@
 site_name: Teddy Warner
-site_description: Project Portfolio and Documentation Site for Teddy Warner
 site_author: Teddy Warner
-copyright: Copyright 2021 Teddy Warner - MIT License
+site_description: >-
+    Project Portfolio and Documentation Site for Teddy Warner
 
 site_url: https://teddywarner.org/
 
 repo_url: https://github.com/Twarner491/Project-Documentation-Site
 repo_name: Twarner491/project-site
+
+copyright: Copyright 2021 Teddy Warner - MIT License
 
 extra:
   social:

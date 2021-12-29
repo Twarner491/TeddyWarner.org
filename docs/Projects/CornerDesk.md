@@ -214,3 +214,10 @@ I love how my desk came out, It solves all of my annoying cable issues and fits 
 *[VCC]: Voltage Common Collector (+)
 *[GND]: Ground / Common Drain (-)
 *[IC]: Integrated Circuit
+*[LED]: Light-Emitting Diode
+*[Cap]: Capacitor
+*[SPST]: Single Pole Single Throw Switch
+*[SPDT]: Single Pole Double Throw Switch
+*[DPST]: Double Pole Single Throw Switch
+*[DPDT]: Double Pole Double Throw Switch
+*[EEPROM]: Electrically Erasable Programmable Read-Only Memory

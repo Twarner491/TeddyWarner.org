@@ -213,7 +213,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 </center>
 
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/QxKCNCJNMlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/Hz7vxBx9ODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Registers
 
@@ -224,6 +224,16 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 <center>
 <iframe loading=lazy src="https://drive.google.com/file/d/1n3osGqqPa9fuIrJvKPaofTcG2bQKnvha/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
+
+<center>
+
+![](../images/8-bitComputer/8-BitRegister.jpg){ width="100%"}
+
+</center>
+
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/2IVVtewC8cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/qDIzbADgvDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Arithmetic Logic Unit (ALU)
 
@@ -352,3 +362,10 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 *[VCC]: Voltage Common Collector (+)
 *[GND]: Ground / Common Drain (-)
 *[IC]: Integrated Circuit
+*[LED]: Light-Emitting Diode
+*[Cap]: Capacitor
+*[SPST]: Single Pole Single Throw Switch
+*[SPDT]: Single Pole Double Throw Switch
+*[DPST]: Double Pole Single Throw Switch
+*[DPDT]: Double Pole Double Throw Switch
+*[EEPROM]: Electrically Erasable Programmable Read-Only Memory
