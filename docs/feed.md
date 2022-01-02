@@ -267,7 +267,7 @@ hide:
     <div class="description">
       <h1>8-Bit Computer</h1> 
       <h2>- Winter, 2021 -</h2> <span class="time"><i class="far fa-clock"></i> X-X min</span>
-      <p> Build Log and Documentation of my take on <a href="https://eater.net/">Ben Eater's</a> 8-Bit Computer, a 'simple-as-possible' microcontroller built upon breaboards with only simple logic gates. A dive into computer logic, and processor workings.</p>
+      <p> Build Log and Documentation of my take on <a href="https://eater.net/">Ben Eater's</a> 8-Bit Computer, a 'simple-as-possible' microcontroller built upon breadboards with only simple logic gates. A dive into computer logic, and processor workings.</p>
       <div class="con">
        <span class="share" style=" color: inherit;">
         <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/8-bit/"><i class="fab fa-facebook-square"></i></a>
