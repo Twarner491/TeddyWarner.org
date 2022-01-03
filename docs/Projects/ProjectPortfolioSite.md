@@ -121,8 +121,8 @@ git clone git@github.com:<username>/<your-repository>.git
 
 To clone a Git repository locally, an SSH key must be generated on your computer and then attached to your GitHub account. GitHub has really good documentation on [creating a new SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and attaching it to your GitLab account. 
 
-```  linenums="1"
-Get-Content ~/.ssh/id_filename.pub | Set-Clipboard
+``` yaml linenums="1"
+cat ~/.ssh/id_ed25519.pub | clip
 ```
 
 The process for generating and attaching a new SSH key to your GitLab is relatively pain-free when following this documentation and using the command written above. My process involved running these commands ...
@@ -136,7 +136,7 @@ Enter file in which to save the key (/home/user/.ssh/id_ed25519): # (2)
 Enter passphrase (empty for no passphrase): # (3)
 Enter the same passphrase again:
 
-Get-Content ~/.ssh/id_filename.pub | Set-Clipboard # (4)
+cat ~/.ssh/id_ed25519.pub | clip # (4)
 ```
 
 1.  This generates a new SSH key on your computer.
@@ -145,7 +145,7 @@ Get-Content ~/.ssh/id_filename.pub | Set-Clipboard # (4)
 
 3.  Enter a passphrase for your SSH key, you will need this password whenever you attempt to push your site.
 
-4.  This copies your new SSH key to clipboard.
+4.  This copies your new SSH key to clipboard. Replace `id_ed25519.pub` with your filename. For example, use `id_rsa.pub` for RSA.
 
 Once copied to the clipboard, you can paste the newly generated SSH key in your SSH key settings on GitHub, to link your computer and your GitHub. Now you can finally clone your GitHub repository locally as discussed above.
 
