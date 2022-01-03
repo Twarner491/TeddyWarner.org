@@ -192,7 +192,7 @@ I love how my desk came out, It solves all of my annoying cable issues and fits 
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control
-*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[MPCNC]: Mostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
 *[SSH]: Secure Shell
 *[GPIO]: General-Purpose Input/Output
 *[USB]: Universal Serial Bus
@@ -205,7 +205,7 @@ I love how my desk came out, It solves all of my annoying cable issues and fits 
 *[ISO]: International Organization for Standardization
 *[Kreg-Jig]: A Pocket-Hole Jig
 *[UPDI]: Unified Program and Debug Interface
-*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[AVR]: A Family of microcontrollers developed since 1996 by Atmel
 *[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
 *[jtag]: Joint Test Action Group
 *[IDE]: Integrated Development Environment

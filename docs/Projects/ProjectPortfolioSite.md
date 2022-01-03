@@ -42,7 +42,7 @@ hide:
 }
 
 .share a.pin:hover {
-  color: 	#E60023;
+  color:  #E60023;
 }
 
 .ln {
@@ -109,9 +109,11 @@ This site relies on [MKdocs](https://www.mkdocs.org/), a static site generator i
 
 To start the site I created a new [GitHub Pages](https://pages.github.com/) repo on my [GitHub](https://github.com/Twarner491) and cloned in some of my site files from my prior [Fab Academy Documentation Site](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/) (the cloned files were just so site setup files, as well as a bit of content on my Fab Academy final project to be displayed on this site). I then pulled this repo to my local system folder with the command
 
-``` linenums="1"
-git clone git@github.com:<username>/<your-repository>.git
+``` yaml linenums="1"
+git clone REPO-HERE # (1)
 ```
+
+1.  Replace the text `REPO-HERE` with your site repo's *Clone with SSH* link. This can be found under the *Clone* button in most Git web interfaces (i.e. Gitlab, Github, etc.).
 
 ??? question "Do I Need to Clone my Repo Locally?"
 
@@ -119,13 +121,9 @@ git clone git@github.com:<username>/<your-repository>.git
 
 ### SSH setup
 
-To clone a Git repository locally, an SSH key must be generated on your computer and then attached to your GitHub account. GitHub has really good documentation on [creating a new SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and attaching it to your GitLab account. 
+To clone a Git repository locally, an SSH key must be generated on your computer and then attached to your GitHub account. GitHub has really good documentation on [creating a new SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and attaching it to your Git Web Interface (Github, Gitlab, etc.). 
 
-``` yaml linenums="1"
-cat ~/.ssh/id_ed25519.pub | clip
-```
-
-The process for generating and attaching a new SSH key to your GitLab is relatively pain-free when following this documentation and using the command written above. My process involved running these commands ...
+The process for generating and attaching a new SSH key to your Git Web Interface is relatively pain-free when following this documentation and using the command written above. My process involved running these commands ...
 
 ``` yaml
 ssh-keygen -t ed25519 -C "<Your-SSH-Name-Here>" # (1)
@@ -147,13 +145,13 @@ cat ~/.ssh/id_ed25519.pub | clip # (4)
 
 4.  This copies your new SSH key to clipboard. Replace `id_ed25519.pub` with your filename. For example, use `id_rsa.pub` for RSA.
 
-Once copied to the clipboard, you can paste the newly generated SSH key in your SSH key settings on GitHub, to link your computer and your GitHub. Now you can finally clone your GitHub repository locally as discussed above.
+Once copied to the clipboard, you can paste the newly generated SSH key in your SSH key settings in your Git Web Interface, to link your computer and your Git Web Interface. Now you can finally clone your site Repository locally as discussed above.
 
 ## Mkdocs Material Install & Site Building
 
 !!! abstract "Requirements"
 
-     - Latest Version of [Python](https://www.python.org/downloads/)
+     - Latest Version of [Python](https://www.python.org/downloads/) :warning: **Be Sure Your Python Installation is Installed to PATH in the setup wizard**
      - Latest Version of [Git](https://git-scm.com/downloads)
 
 Open your cloned GitHub Pages repo in your code editor of choice, my personal favorite source-code editor is [Visual Studio Code](https://code.visualstudio.com/), so naturally, I used it. In a new terminal in the clone site folder, run the command
@@ -162,6 +160,22 @@ Open your cloned GitHub Pages repo in your code editor of choice, my personal fa
 pip install mkdocs-material
 ```
 This will install all dependencies needed to run a static site with [MKdocs](https://www.mkdocs.org/), as well as the [MKdocs Material Theme](https://squidfunk.github.io/mkdocs-material/).
+
+???+ warning "Note for Fab Academy Students"
+
+    The *MKdocs Material* theme is paired with the *mkdocs-git-revision-date-localized-plugin* by default in your Fab Academy student repo. This plugin enables displaying the date of the last git modification of a page at the bottom of each page. To build your static site, this plugin must be installed in your local site folder with the line below ...
+
+    ``` yaml linenums="1"
+    pip3 install mkdocs-git-revision-date-localized-plugin
+    ```
+
+    However, one may opt to not use it via the removal of the line 
+
+    ``` yaml
+    - git-revision-date-localized
+    ```
+
+    found under the `plugins` section of your sites *mkdocs.yml* file.
 
 Following this setup, I build my static site locally with the command in my site folders terminal
 
@@ -224,6 +238,16 @@ For my site setup, I added the line ...
 
 The basic setup and customization of your static site are covered wonderfully on the [Mkdocs Material Theme Setup Documentation](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/). However, following this basic theme setup, your site can be altered farther by extending the [Material Theme](https://squidfunk.github.io/mkdocs-material/) -  Witch can be read about [here](https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme). All of my overrides can be found in [this site's GitHub repo](https://github.com/Twarner491/Project-Documentation-Site/).
 
+???+ abstract "Git Pull"
+
+    When working with other developers in a Git Repo, the Git Pull command is necessary to keep your local branch up to date with others' work. Running the line ...
+
+    ``` yaml linenums="1"
+    git pull
+    ```
+
+    will pull in any pushed changes to your repository, allowing you to merge work/changes with work from other branches.
+
 ## Site Publishing
 
 Finally, after any changes are made to your site, you can merge your local changes back to your [GitHub Pages](https://pages.github.com/) repo to be built and published with the commands ...
@@ -255,7 +279,7 @@ git push # (3)
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control
-*[MPCNC]: Mpostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
+*[MPCNC]: Mostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
 *[SSH]: Secure Shell
 *[GPIO]: General-Purpose Input/Output
 *[USB]: Universal Serial Bus
@@ -268,7 +292,7 @@ git push # (3)
 *[ISO]: International Organization for Standardization
 *[Kreg-Jig]: A Pocket-Hole Jig
 *[UPDI]: Unified Program and Debug Interface
-*[AVR]:A Family of microcontrollers developed since 1996 by Atmel
+*[AVR]: A Family of microcontrollers developed since 1996 by Atmel
 *[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
 *[jtag]: Joint Test Action Group
 *[IDE]: Integrated Development Environment
