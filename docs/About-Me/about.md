@@ -356,19 +356,22 @@ title: About Me
         <strong>Charlotte Latin School Engineering Club Leader</strong>, Planning and facilitating club meetings (Aug 2020 - Present)
       </p>
       <p>
+        <strong><a href="https://fabacademy.org/2021/labs/charlotte/">Charlotte Latin Fab Lab</a></strong> Communtiy member, student & volunteer. (Aug 2018 - Present / 70.5 Volunteer Hours)
+      </p>
+      <p>
         <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">Toe Hawks</a></strong>, Custom shoe insole aiming towards helping out youth affected by idiopathic toe walking. (Oct 2018 - Feb 2019)
       </p>
       <p>
         <strong>YEOT Summer Camp Counselor</strong>, Volunteer summer camp counselor for Young Engineers of Today's Racing Drones & Starwars Camps. (July 2020 / 57 Volunteer Hours) 
       </p>
       <p>
-        <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>, Designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020 – Aug 2020 / 64 Volunteer Hours)
+        <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>, Designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020 – Aug 2020 / 72 Volunteer Hours)
       </p>
       <p>
         <strong><a href="https://photos.app.goo.gl/kWnrCmx1bZPvqDK29">D is for Desk</a></strong>, A friend of mine's Eagle Scout Project, we built Toe Hawks for the D is for Desk charity. (Nov 2020 / 17 Volunteer Hours) 
       </p>
       <center>
-       <p>--- Total Service - <strong>152 Hours</strong> ---</p>
+       <p>--- Total Service - <strong>216.5 Hours</strong> ---</p>
       </center>
       <p>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
