@@ -356,7 +356,7 @@ title: About Me
         <strong>Charlotte Latin School Engineering Club Leader</strong>, Planning and facilitating club meetings (Aug 2020 - Present)
       </p>
       <p>
-        <strong><a href="https://fabacademy.org/2021/labs/charlotte/">Charlotte Latin Fab Lab</a></strong> Communtiy member, student & volunteer. (Aug 2018 - Present / 70.5 Volunteer Hours)
+        <strong><a href="https://fabacademy.org/2021/labs/charlotte/">Charlotte Latin Fab Lab</a></strong> Community member, student & volunteer. (Aug 2018 - Present / 70.5 Volunteer Hours)
       </p>
       <p>
         <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">Toe Hawks</a></strong>, Custom shoe insole aiming towards helping out youth affected by idiopathic toe walking. (Oct 2018 - Feb 2019)
