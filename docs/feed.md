@@ -13,7 +13,7 @@ hide:
 }
 
 [data-md-color-scheme="slate"] {
---cover-color: #2e303d;
+--cover-color: #212226;
 }
 
 .post {

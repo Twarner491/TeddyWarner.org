@@ -48,7 +48,7 @@ title: About Me
 }
 
 .sidebar h1 {
-  margin-bottom: -39px;
+  margin-bottom: -37px;
 }
 
 .sidebar h2 {
@@ -342,10 +342,13 @@ title: About Me
       <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 0px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
       <p>
-        <strong><a href="http://www.appstate.edu/~marlandes/sumo/sumosumo.html">Appalachian SumoBot Competition,</a></strong> 1st Place. (Oct 2018 - Dec 2018)
+        <strong><a href="https://www.instagram.com/p/CYboI6zrTs8/?utm_medium=copy_link">CLS Fab Lab Student Spotlight</a></strong> (Jan 2022)
       </p>
       <p>
         <strong><a href="https://www.ecybermission.com/">eCYBERMISSION</a></strong>, regional finalist. (Oct 2018 - Feb 2019)
+      </p>
+      <p>
+        <strong><a href="http://www.appstate.edu/~marlandes/sumo/sumosumo.html">Appalachian SumoBot Competition,</a></strong> 1st Place. (Oct 2018 - Dec 2018)
       </p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
