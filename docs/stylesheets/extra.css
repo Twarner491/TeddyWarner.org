@@ -1,8 +1,5 @@
 [data-md-color-scheme="slate"] {
     --md-default-bg-color: hsla(228, 7%, 14%, 1);
-    --md-default-bg-color--light: hsla(228, 7%, 14%, 0.7);
-    --md-default-bg-color--lighter:hsla(228, 7%, 14%, 0.3);
-    --md-default-bg-color--lightest:hsla(228, 7%, 14%, 0.12);
     --md-footer-bg-color--dark: hsla(228, 8%, 7%, 0.58);
-    --md-footer-bg-color: hsla(228, 8%, 7%, 0.9);
+    --md-footer-bg-color: hsla(220, 7%, 7%, 1);
  }

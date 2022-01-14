@@ -319,7 +319,6 @@ title: About Me
       <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a junior in high school enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
-      <p><a href="https://enventyspartners.com/"><img src="https://teddywarner.org/images/About/enventys.gif" alt="Enventys Logo" class="logo" style="width:42px;margin-top: -2px;"></a><strong>ENVENTYS PARTNERS</strong><span class="date" style=" color: inherit;">2021-Present</span><br>Engineering Intern</p>
       <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:70px;margin-top: 7px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Teaching Assistant</p>
       <ul>
         <li>Co-Instructing a fabrication course for middle & high school students.

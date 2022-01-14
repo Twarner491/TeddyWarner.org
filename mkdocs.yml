@@ -69,6 +69,7 @@ theme:
    - navigation.tabs
    - navigation.expand
    - content.code.annotate
+   - search.share
 
 plugins:
   - search
@@ -95,10 +96,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - md_in_html
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - md_in_html
 
 extra_css:
   - stylesheets/extra.css
