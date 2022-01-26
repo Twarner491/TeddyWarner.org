@@ -24,6 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
   
 </script>
 
+<script>
+  var palette = __md_get("__palette")
+  if (palette && typeof palette.color === "object")
+    if (palette.color.scheme === "slate") {
+      var giscus = document.querySelector("script[src*=giscus]")
+      giscus.setAttribute("data-theme", "dark")
+    }
+
+  /* Register event handlers after documented loaded */
+  document.addEventListener("DOMContentLoaded", function() {
+    var ref = document.querySelector("[data-md-component=palette]")
+    ref.addEventListener("change", function() {
+      location.reload()
+    })
+  })
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
@@ -253,7 +270,9 @@ body {
 }
 
 .fa-instagram:hover {
-    color: #ca2dfa;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .twitter {
@@ -443,7 +462,7 @@ body {
 <div class="socials">
   <a href="https://www.linkedin.com/in/teddy-warner-880974200/" class="ln" title="Linked In - Teddy Warner"><i class="fab fa-linkedin"></i></a>
   <a href="https://github.com/Twarner491" class="git" title="Github - Twarner491"><i class="fab fa-github"></i></a>
-  <a href="https://www.instagram.com/teddywarner" class="insta" title="Instagram - @teddywarner"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.instagram.com/teddymakesstuff/" class="insta" title="Instagram - @teddymakesstuff"><i class="fa fa-instagram"></i></a>
   <a href="https://twitter.com/WarnerTeddy" class="twitter" title="Twitter - @WarnerTeddy"><i class="fa fa-twitter"></i></a>
   <a href="https://discordapp.com/users/534164566649733120/" class="ln" title="Discord - Twarner#2592"><i class="fab fa-discord"></i></a>
   <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>

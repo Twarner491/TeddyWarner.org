@@ -2,6 +2,8 @@
 title: Epilog Fusion Pro 48
 ---
 
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
 # Epliog Fusion Pro 48
 
 <!-- Compleation Badge

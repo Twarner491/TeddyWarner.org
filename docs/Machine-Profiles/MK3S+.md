@@ -2,6 +2,8 @@
 title: Prusa I3 MK3S+ Profile
 ---
 
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
 # Prusa I3 MK3S+ Profile
 
 <!-- Compleation Badge
