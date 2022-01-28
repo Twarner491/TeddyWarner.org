@@ -2,6 +2,7 @@
 title: Project Portfolio Site
 hide:
   - navigation
+template: comments.html
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -202,22 +203,22 @@ workflow, e.g. `.github/workflows/ci.yml`, and copy and paste the following
 contents:
 
 ``` yaml linenums="1"
-    name: ci # (1)
-    on:
-      push:
-        branches: # (2)
-          - master
-          - main
-    jobs:
-      deploy:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v2
-          - uses: actions/setup-python@v2
-            with:
-              python-version: 3.x
-          - run: pip install mkdocs-material # (3)
-          - run: mkdocs gh-deploy --force
+name: ci # (1)
+on:
+  push:
+     branches: # (2)
+      - master
+       - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+       - uses: actions/checkout@v2
+       - uses: actions/setup-python@v2
+         with:
+          python-version: 3.x
+       - run: pip install mkdocs-material # (3)
+       - run: mkdocs gh-deploy --force
 ```
 
 1.  You can change the name to your liking.
@@ -229,7 +230,7 @@ contents:
 For my site setup, I added the line ...
 
 ``` yaml linenums="16"
-      - run: pip install mkdocs-git-revision-date-localized-plugin
+- run: pip install mkdocs-git-revision-date-localized-plugin
 ```
 
 ... to install the Git Revision date plugin to my site, allowing for the date each page was updated to be displayed under all of the contents of the page.
@@ -248,6 +249,467 @@ The basic setup and customization of your static site are covered wonderfully on
 
     will pull in any pushed changes to your repository, allowing you to merge work/changes with work from other branches.
 
+After working on *teddywarner.org* for a couple of months, I began to develop a project template page that accumulates different front-end HTML, CSS & Markdown aspects I use on my pages, which can be found via the button below. 
+
+<center>
+
+[:fontawesome-brands-github: Project Page Template](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/PROJECT-TEMPLATE.md?plain=1){ .md-button .md-button--primary}
+
+</center>
+
+Here I've also compiled a bit of a mkdocs markdown cheat sheet with 10 sections for customization, formatting, or additional flair. Again, the [Mkdocs Material Theme Setup Documentation](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/) covers the theme-specific markdown at length and is a nice resource while setting up specific theme-specific bits. This section compiles theme-specific markdown with overall markdown features & all of the markdowns behind it can be found in the following sections, or on this page source - linked below.
+
+<center>
+
+[:fontawesome-brands-github: Project Portfolio Site Source Code](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/ProjectPortfolioSite.md?plain=1){ .md-button .md-button--primary}
+
+</center>
+
+### 1. Markdown Meta Data 
+
+``` yaml
+markdown_extensions:
+  - meta
+```
+
+```yaml linenums="1"
+---
+title: PROJECT-TITLE
+description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
+template: custom.html
+hide:
+  - navigation
+  - toc
+---
+```
+
+---
+### 2. Basic Syntax 
+
+=== "Image & Caption"
+
+      ``` markdown
+      ![alt text](imageURL.jpg){: align=right/left width="100%"}
+        <figcaption>Caption</figcaption>
+      ```
+      <center>
+        ![alt text](https://picsum.photos/600/300){width="95%"}
+          <figcaption>Caption Example</figcaption>
+      </center>
+
+=== "Headings"
+
+    ``` markdown
+    # Heading 1
+    ## Heading 2
+    ### Heading 3
+    #### Heading 4
+    ##### Heading 5
+    ###### Heading 6
+    ```
+
+    <center>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    </center>
+
+=== "Hyperlink"
+
+      ``` markdown
+      [Hyperlink Example](URl)
+      ```
+      <center>
+      [Hyperlink Example](URl)
+      </center>
+
+=== "Blockquote"
+
+      ``` markdown
+      > blockquote
+      ```
+      >Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis nulla. Vivamus a pharetra leo.
+
+---
+### 3. Text Formatting
+
+``` yaml
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+```
+
+ - **Bold Text** - `**bold text**`
+
+ - *Italicized Text* - `*italicized text*`
+
+ - ~~Strikethrough~~ - `~~Strikethrough~~`
+
+ - Subscript - H~2~O - `H~2~O`
+
+ - Superscript - X^2^ - `X^2^`
+
+---
+### 4. Buttons 
+
+``` yaml
+markdown_extensions:
+  - attr_list
+```
+
+  ``` markdown linenums="1"
+  [Solid Button :fontawesome-solid-download:](URL){ .md-button .md-button--primary}
+  [Outline Button](URL){ .md-button}
+  ```
+
+<center>
+
+  [Solid Button :fontawesome-solid-download:](URL){ .md-button .md-button--primary}
+  [Outline Button](URL){ .md-button}
+
+</center>
+
+---
+### 5. Different List Styles
+
+``` yaml
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+```
+
+=== "Unordered List"
+
+    "Unordered lists can be written by prefixing a line with a `-`, `*` or `+` list marker, all of which can be used interchangeably. Furthermore, all flavors of lists can be nested inside each other:" [^1]
+
+    ``` markdown linenums="1"
+    - Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+        * Nullam dignissim ultrices urna non auctor.
+    - Nam vulputate tincidunt fringilla.
+        * Nam vulputate tincidunt fringilla.
+        * Nullam dignissim ultrices urna non auctor.
+    - Nullam dignissim ultrices urna non auctor.
+        * Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+    ```
+
+    **Result -**
+
+    - Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+        * Nullam dignissim ultrices urna non auctor.
+    - Nam vulputate tincidunt fringilla.
+        * Nam vulputate tincidunt fringilla.
+        * Nullam dignissim ultrices urna non auctor.
+    - Nullam dignissim ultrices urna non auctor.
+        * Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+
+=== "Ordered List"
+
+    "Ordered lists must start with a number immediately followed by a dot. The numbers do not need to be consecutive and can be all set to `1.`, as they will be re-numbered when rendered:" [^2]
+
+    ``` markdown linenums="1"
+      1.  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
+          sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
+          nulla. Vivamus a pharetra leo.
+
+          1.  Vivamus venenatis porttitor tortor sit amet rutrum. Pellentesque aliquet
+              quam enim, eu volutpat urna rutrum a. Nam vehicula nunc mauris, a
+              ultricies libero efficitur sed.
+
+          2.  Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+              rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a.
+
+              1.  Mauris dictum mi lacus
+              2.  Ut sit amet placerat ante
+              3.  Suspendisse ac eros arcu
+    ```
+
+    **Result -**
+
+      1.  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
+          sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
+          nulla. Vivamus a pharetra leo.
+
+          1.  Vivamus venenatis porttitor tortor sit amet rutrum. Pellentesque aliquet
+              quam enim, eu volutpat urna rutrum a. Nam vehicula nunc mauris, a
+              ultricies libero efficitur sed.
+
+          2.  Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+              rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a.
+
+              1.  Mauris dictum mi lacus
+              2.  Ut sit amet placerat ante
+              3.  Suspendisse ac eros arcu
+
+=== "Task List"
+
+    ``` markdown linenums="1"
+    - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - [ ] Vestibulum convallis sit amet nisi a tincidunt
+        * [x] In hac habitasse platea dictumst
+        * [x] In scelerisque nibh non dolor mollis congue sed et metus
+        * [ ] Praesent sed risus massa
+    - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+    ```
+
+    **Result -**
+
+    - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - [ ] Vestibulum convallis sit amet nisi a tincidunt
+        * [x] In hac habitasse platea dictumst
+        * [x] In scelerisque nibh non dolor mollis congue sed et metus
+        * [ ] Praesent sed risus massa
+    - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+=== "Definition List"
+
+    ``` markdown linenums="1"
+    `Lorem ipsum dolor sit amet`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+    `Cras arcu libero`
+
+    :   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+        ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+
+        Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+        Nam vulputate tincidunt fringilla.
+        Nullam dignissim ultrices urna non auctor.
+    ```
+
+    **Result -**
+
+    `Lorem ipsum dolor sit amet`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+    `Cras arcu libero`
+
+    :   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+        ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+
+        Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+        Nam vulputate tincidunt fringilla.
+        Nullam dignissim ultrices urna non auctor.
+
+---
+### 6. Content Tabs, Code Styling & Annotations 
+
+``` yaml
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+```
+
+``` yaml
+theme:
+  features:
+    - content.code.annotate 
+```
+ 
+=== "YAML"
+
+    ``` yaml linenums="1" title="YAML EXAMPLE"
+    theme:
+      features:
+        - content.code.annotate # (1)
+    ```
+
+    1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+        text__, images, ... basically anything that can be expressed in Markdown.
+
+=== "C++"
+
+    ``` c++ linenums="1" title="C++ EXAMPLE"
+    void setup() {
+      pinMode(0, OUTPUT);
+    }
+
+    void loop() {
+      digitalWrite(0, HIGH); 
+      delay(500);
+      digitalWrite(0, LOW); 
+      delay(500); 
+    }
+    ```
+
+=== "Python"
+
+    ``` py linenums="1" title="PYTHON EXAMPLE"
+    import tensorflow as tf
+    ```
+
+---
+### 7. Footnotes
+
+``` yaml
+markdown_extensions:
+  - footnotes
+```
+
+``` markdown linenums="1"
+Here's a sentence with a footnote. [^3]
+
+[^3]: This is the footnote. 
+```
+
+Here's a sentence with a footnote. [^3]
+
+---
+### 8. Formatted Tables
+
+``` yaml
+markdown_extensions:
+  - tables
+
+```
+
+``` markdown linenums="1"
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+```
+
+<center>
+
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+</center>
+
+---
+### 9. Admonitions 
+
+``` yaml
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+```
+
+!!! note inline "NOTE EXAMPLE" 
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+!!! info inline end "INFO EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+!!! abstract "ABSTRACT EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+
+??? tip "TIP EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? success "SUCCESS EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? question "QUESTION EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? warning "WARNING EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? failure "FAILURE EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? danger "DANGER EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? bug "BUG EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? example "EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? quote "QUOTE EXAMPLE"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+---
+### 10. Icons & Emojis 
+
+``` yaml
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+```
+
+<center>
+
+[Icon & Emoji Search Engine :fontawesome-solid-globe-americas:](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search){ .md-button .md-button--primary}
+
+</center>
+
+``` markdown
+:fontawesome-regular-laugh-wink:
+```
+
+:fontawesome-regular-laugh-wink:
+
+``` markdown
+:smile: 
+```
+:smile: 
+
+---
 ## Site Publishing
 
 Finally, after any changes are made to your site, you can merge your local changes back to your [GitHub Pages](https://pages.github.com/) repo to be built and published with the commands ...
@@ -270,12 +732,6 @@ git push # (3)
 
 **Wooo :partying_face: :partying_face:** as of 12/1/2021, *teddywarner.org* is now **100 Commits** old!!
 ![](../images/PortfolioSite/100commit.jpg){width="100%"}
-
-<!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
- <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rC8CBT1V7ZoWek7B.CC5x."+"&opts=16798&num=10&ts=1634155475586");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-<!-- end www.htmlcommentbox.com -->
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control
@@ -308,3 +764,7 @@ git push # (3)
 *[DPST]: Double Pole Single Throw Switch
 *[DPDT]: Double Pole Double Throw Switch
 *[EEPROM]: Electrically Erasable Programmable Read-Only Memory
+
+[^1]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
+[^2]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
+[^3]: This is the footnote. 

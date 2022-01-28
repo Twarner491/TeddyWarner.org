@@ -1,4 +1,4 @@
-site_name: Teddy Warner
+site_name: TeddyWarner.org
 site_author: Teddy Warner
 site_description: >-
     Project Portfolio and Documentation Site for Teddy Warner
@@ -48,7 +48,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-
 
   language: en
 
