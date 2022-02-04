@@ -23,16 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
   
 </script>
 
-
 <style>
 
     .md-footer-meta {
     display: none;
-    }
+    } 
 
     .md-source {
       color: var(--md-default-fg-color);  
 
+    }
+
+    .close {
+      display: none;
+    }
+
+    .toggle .close {
+      display: flex;
+    }
+
+    .toggle .menu {
+      display: none;
     }
 
     header{
@@ -81,6 +92,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     .hero {
       z-index: 0;
+    }
+
+    .about:hover {
+      color: #5466CE;
+    }
+
+    .proj:hover {
+      color: #5466CE;
+    }
+
+    .mach:hover {
+      color: #5466CE;
+    }
+
+    .fab:hover {
+      color: #5466CE;
     }
 
     .main-content {

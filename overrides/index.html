@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
 {% block announce %}
   <a href="https://www.instagram.com/teddymakesstuff/" style="color:white;">
     Follow me <strong>@TeddyMakesStuff</strong> on
@@ -122,11 +124,25 @@
       {% include "partials/search.html" %}
     {% endif %}
 
-    <label class="md-header__button md-icon">
+    <label class="md-header__button md-icon" onclick="togglemenu()">
+     <span class="menu">
       {% include ".icons/material/menu" ~ ".svg" %}
+     </span>
+     <span class="close">
+      {% include ".icons/material/close" ~ ".svg" %}
+     </span>
     </label>
 
   </nav>
 </header>
-{% endblock %}
 
+<script>
+  
+  function togglemenu() {
+      var element = document.body;
+      element.classList.toggle("toggle");
+  } 
+  
+</script>
+
+{% endblock %}
