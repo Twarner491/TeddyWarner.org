@@ -85,15 +85,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     .main-content {
       max-width: 70ch;
-      height: 100%;
       transform: translateX(0);
       transition: transform calc(var(--nav-duration) * 2) var(--ease);
     }
 
     .socialsparent {
-      height: 15em;
+      overflow-y: hidden;  
+      margin-top: -14.27em;
+      height: 100vh;
       position: relative;
-      border: 3px solid green; 
     }
     
     .socials {
@@ -169,11 +169,25 @@ document.addEventListener("DOMContentLoaded", () => {
     .fa-paper-plane:hover {
         color: #5466ce;
     }
+
+    @media (max-height: 48.75em) {
+      .logo {
+          padding-left: 7.5em;
+      }
+      .ppp {
+          position: absolute;
+          top: -2.7em;
+          left: -14.8rem;
+          transform: rotate(270deg);
+          font-size: 2.8em;
+          height: 10em;
+      }
+    }
     
     @media (max-width: 76em) {
-    .logo {
-        padding-left: 7.5em;
-    }
+      .logo {
+          padding-left: 7.5em;
+      }
       .ppp {
         position: absolute;
         top: -2.7em;
@@ -185,9 +199,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     @media (max-width: 45em) {
-    .logo {
+      .logo {
         padding-left: 1em;
-    }
+      }
       .ppp {
         display: none;
       }
@@ -195,6 +209,29 @@ document.addEventListener("DOMContentLoaded", () => {
         padding-top: 0;
       }
     }
+
+    @media (max-height: 31.5em) {
+      .socialsparent {
+        overflow-y: hidden;  
+        margin-top: -14.27em;
+        height: 100vh;
+        position: relative;
+      }
+      
+      .socials {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+        right: 0.15em;
+        margin: 0;
+        position: absolute;
+        top: 16em;
+      }
+    }
+
+
 
 </style>
 
