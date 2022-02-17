@@ -313,7 +313,7 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
       </div>
       <a href="https://www.buymeacoffee.com/teddywarner" style=" color: inherit;">
         <button class="coffeelarge" title="Venmo - @Teddy-Warner"><i class="fas fa-coffee"></i> Buy Me a Coffee</button>
-        <button class="coffeesmall" title="Buy Me a Coffee :) Venmo - @Teddy-Warner"><i class="fas fa-coffee"></i></button>
+        <button class="coffeesmall" title="Buy Me a Coffee :)"><i class="fas fa-coffee"></i></button>
       </a>
      </center>
     </div>
