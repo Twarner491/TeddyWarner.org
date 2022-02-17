@@ -106,7 +106,8 @@ Lost a lid or just want a more functional cap? Generate and print your own, comp
 
 ![](../images/ParametricGenerator/beautyshot1.jpg){width="100%"}
 
-[Check Out the Project on PrusaPrinters :fontawesome-solid-globe-americas:](https://www.prusaprinters.org/prints/76271-parametric-bottle-cap-generator){: align=left .md-button .md-button--primary }
+*Be Sure to check out this projects page on [PrusaPrinters](https://www.prusaprinters.org/prints/76271-parametric-bottle-cap-generator), and its [Instructable](https://www.instructables.com/Parametric-Bottle-Cap-Generator/)!*
+
 [Parametric Bottle Cap Generator Files :fontawesome-brands-github:](https://github.com/Twarner491/project-files/blob/main/Parametric%20Generators/Parametric%20Bottle%20Cap%20Generator.f3d){: align=right .md-button .md-button--primary }
 
 </center>
@@ -260,35 +261,20 @@ Parametric-Bottle_Cap > Bodies > Styles
 in the Fusion browser. The lid styles can be toggled between via the eye icon to the left of each style. The four styles are included below, with each of the toggles highlighted.
 
 1. Plain -
-
 <center>
-
 ![](../images/ParametricGenerator/plain.png){width="95%"}
-
 </center>
-
 2. Single Hole -
-
 <center>
-
 ![](../images/ParametricGenerator/singlehole.png){width="95%"}
-
 </center>
-
 3. Salt Shaker -
-
 <center>
-
 ![](../images/ParametricGenerator/saltshaker.png){width="95%"}
-
 </center>
-
 4. Lanyard -
-
 <center>
-
 ![](../images/ParametricGenerator/lanyard.png){width="95%"}
-
 </center>
 
 !!! success "Congrats!"
