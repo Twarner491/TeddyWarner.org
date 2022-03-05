@@ -117,18 +117,7 @@ extra_javascript:
 nav:
   - Home : index.md
   - About : About-Me/about.md
-  - Projects: 
-    - Project Feed : feed.md
-    - Projects : 
-      - Project Portfolio Site : Projects/ProjectPortfolioSite.md
-      - Octoprint Setup : Projects/Octoprint.md
-      - Lithophane Experiments: Projects/LithophaneExperiments.md
-      - Cable Managed Corner Desk : Projects/CornerDesk.md
-      - Assistive Aquaponics Tank : Projects/AssistiveAquaponics.md
-      - Klipper Enabled Ender 3: Projects/KlipperEnder3.md
-      - UPDI Serial Programming: Projects/SerialUPDI.md
-      - Bottle Cap Generator: Projects/ParametricGenerator.md
-      - 8-bit Breadboard Computer: Projects/8-bit.md
+  - Projects:  feed.md
   - Machine Profiles: 
     - Laser Cutters :
       - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md

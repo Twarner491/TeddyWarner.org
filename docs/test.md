@@ -31,11 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     .md-source {
       color: var(--md-default-fg-color);  
-
-    }
-
-    .toggle .instaa {
-      
     }
 
     .toggle .logo {
@@ -62,12 +57,36 @@ document.addEventListener("DOMContentLoaded", () => {
       display: none;
     }
 
+    .toggle .md-search__icon.md-icon {
+      color: var(--md-default-bg-color);
+    }
+
+    .md-search__input {
+      background-color: ;
+    }
+
+   .md-search__input:hover {
+      background-color: ;
+    }
+
     header{
       padding-top: 1.5em;
     }
 
-    svg {
-    color: var(--md-default-fg-color);
+    .menu {
+      color: var(--md-default-fg-color);
+    }
+
+    .close {
+      color: var(--md-default-bg-color);
+    }
+  
+    .md-header__option {
+      color: var(--md-default-fg-color);
+    }
+
+    .toggle .md-header__option {
+      color: var(--md-default-bg-color);
     }
 
     .md-header[data-md-state=shadow]{
@@ -80,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     .md-tabs {
-    display: none;
+     display: none;
     }
  
     :root {
@@ -120,8 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
       height: 100%;
       transform: translateX(-100%);
       transition: transform var(--nav-duration);
-      z-index: 1;
+      background-color: var(--md-default-fg-color);
     }
+
     .main-navigation:after {
       content: "";
       position: absolute;
@@ -129,21 +149,19 @@ document.addEventListener("DOMContentLoaded", () => {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: var(--color-primary);
+      background-color: inherit;
       transform-origin: 0 50%;
-      z-index: -1;
     }
     .main-navigation ul {
-      font-size: 12vmin;
-      font-family: var(--font-heading);
+      font-size: 9vmin;
       width: 100%;
     }
     .main-navigation li {
-      --border-size: 1vmin;
       display: flex;
       align-items: center;
       position: relative;
       overflow: hidden;
+      z-index: 1;
     }
     .main-navigation li:after {
       content: "";
@@ -151,22 +169,24 @@ document.addEventListener("DOMContentLoaded", () => {
       bottom: 0;
       left: 0;
       width: 100%;
-      height: var(--border-size);
-      background-color: var(--color-secondary);
+      height: 1vmin;
+      background-color: inherit;
       transform-origin: 0 50%;
       transform: translateX(-100%) skew(15deg);
+      z-index: 1;
     }
     .main-navigation a {
       display: inline-block;
       width: 100%;
       max-width: 800px;
       margin: 0 auto;
-      color: var(--color-secondary);
-      line-height: 1;
+      color: var(--md-default-bg-color);
+      line-height: 1.08;
       text-decoration: none;
       user-select: none;
-      padding: var(--space) calc(var(--space) * 2) calc(var(--space) + var(--border-size) / 2);
+      padding: auto;
       transform: translateY(100%);
+      z-index: 1;
     }
 
     .about:hover {
@@ -191,10 +211,9 @@ document.addEventListener("DOMContentLoaded", () => {
       transition: transform calc(var(--nav-duration) * 2) var(--ease);
     }
 
-    .socialsparent {
-      overflow-y: hidden;  
+    .socialsparent {  
       margin-top: -14.27em;
-      height: 100vh;
+      height: 95vh;
       position: relative;
     }
     
@@ -226,8 +245,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     .fa-github:hover {
       background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     
     .insta {
@@ -273,64 +292,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     .toggle .main-navigation {
-      transition-duration: 0s;
+      transition-duration: 0.35;
       transform: translateX(0);
-    }
-
-    .toggle .main-navigation:after {
-      animation: nav-bg var(--nav-duration) var(--ease) forwards;
-    }
-
-    .toggle .main-navigation li:after {
-      animation: nav-line var(--duration) var(--ease) forwards;
     }
 
     .toggle .main-navigation a {
       animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
-    }
-
-    .toggle .main-navigation li:nth-child(1):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(1) a {
-      animation-delay: calc((var(--duration) / 2) * 1 * 0.125);
-    }
-
-    .toggle.main-navigation li:nth-child(2):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(2) a {
-      animation-delay: calc((var(--duration) / 2) * 2 * 0.125);
-    }
-
-    .toggle .main-navigation li:nth-child(3):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(3) a {
-      animation-delay: calc((var(--duration) / 2) * 3 * 0.125);
-    }
-
-    .toggle .main-navigation li:nth-child(4):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(4) a {
-      animation-delay: calc((var(--duration) / 2) * 4 * 0.125);
-    }
-
-    @keyframes nav-bg {
-      from {
-        transform: translateX(-100%) skewX(-15deg);
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes nav-line {
-      0% {
-        transform: scaleX(0);
-        transform-origin: 0 50%;
-      }
-      35% {
-        transform: scaleX(1.001);
-        transform-origin: 0 50%;
-      }
-      65% {
-        transform: scaleX(1.001);
-        transform-origin: 100% 50%;
-      }
-      100% {
-        transform: scaleX(0);
-        transform-origin: 100% 50%;
-      }
     }
 
     @keyframes link-appear {
@@ -403,17 +370,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-
-
 </style>
 
 <nav class="main-navigation">
-  <ul>
-    <li><a class="about" href="../About-Me/about/">About Me</a></li>
-    <li><a class="proj" href="../feed/">Projects</a></li>
-    <li><a class="mach" href="../Machine-Profiles/FusionPro48/">Machine Profiles</a></li>
-    <li><a style="  font-family: 'Fira Sans';" class="fab" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy</a></li>
-  </ul>
+    <ul>
+      <li><a class="about" href="../">Home</a></li>
+      <li><a class="about" href="../About-Me/about/">About Me</a></li>
+      <li><a class="proj" href="../feed/">Projects</a></li>
+      <li><a class="mach" href="../Machine-Profiles/FusionPro48/">Machine Profiles</a></li>
+      <li><a style="  font-family: 'Fira Sans';" class="fab" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy</a></li>
+    </ul>
 </nav>
 
 <body>
