@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   target.src = `${array[random]}`;
   log(target);
 });
-  
+
 </script>
 
 <style>
@@ -57,16 +57,58 @@ document.addEventListener("DOMContentLoaded", () => {
       display: none;
     }
 
-    .toggle .md-search__icon.md-icon {
-      color: var(--md-default-bg-color);
+    .md-header__button.md-icon[for="__search"] {
+      color: var(--md-default-fg-color); 
     }
 
-    .md-search__input {
-      background-color: ;
+    .toggle .md-header__button.md-icon[for="__search"] {
+      color: var(--md-default-bg-color); 
     }
 
-   .md-search__input:hover {
-      background-color: ;
+    :root {
+      --duration: 1s;
+      --nav-duration: calc(var(--duration) / 4);
+      --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+      --space: 1rem;
+      --font-size: 1.125rem;
+      --line-height: 1.5;
+      --inputicon: hsla(0, 0%, 0%, 0.87);
+      --toggledinputicon: white;
+      --formhover: hsla(0, 0%, 0%, 0.32);
+      --toggledform: hsla(0, 0%, 100%, 0.12);
+      --toggledformhover: hsla(0, 0%, 100%, 0.3);
+    }
+
+    [data-md-color-scheme="slate"] {
+        --inputicon: white;
+        --toggledinputicon: hsla(0, 0%, 0%, 0.87);
+        --formhover: hsla(0, 0%, 100%, 0.3);
+        --toggledform: hsla(0, 0%, 0%, 0.2);
+        --toggledformhover: hsla(0, 0%, 0%, 0.32);
+    }
+
+    .md-search__input + .md-search__icon {
+      color: var(--inputicon);
+    }
+
+    .toggle .md-search__input + .md-search__icon {
+      color: var(--toggledinputicon);
+    }
+
+    .md-search__form:hover {
+      background-color: var(--formhover);
+    }
+
+    .toggle .md-search__form {
+      background-color: var(--toggledform);
+    }
+
+    .toggle .md-search__form:hover {
+      background-color: var(--toggledformhover);
+    }
+
+    .color svg {
+      color: blue;
     }
 
     header{
@@ -100,15 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     .md-tabs {
      display: none;
-    }
- 
-    :root {
-      --duration: 1s;
-      --nav-duration: calc(var(--duration) / 4);
-      --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-      --space: 1rem;
-      --font-size: 1.125rem;
-      --line-height: 1.5;
     }
     
     .ppp {
