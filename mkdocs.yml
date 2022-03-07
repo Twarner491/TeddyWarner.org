@@ -63,6 +63,7 @@ theme:
     repo: fontawesome/brands/git-alt
                           
   features:
+   - navigation.instant
    - navigation.top
    - navigation.tabs
    - navigation.expand

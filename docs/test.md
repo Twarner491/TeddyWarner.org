@@ -447,9 +447,9 @@ window.addEventListener( "pageshow", function ( event ) {
 <nav class="main-navigation">
     <ul>
       <li><a class="about" href="../">Home</a></li>
-      <li><a class="about" href="../About-Me/about/">About Me</a></li>
-      <li><a class="proj" href="../feed/">Projects</a></li>
-      <li><a class="mach" href="../Machine-Profiles/FusionPro48/">Machine Profiles</a></li>
+      <li><a class="about" href="https://teddywarner.org/About-Me/about/">About Me</a></li>
+      <li><a class="proj" href="https://teddywarner.org/feed/">Projects</a></li>
+      <li><a class="mach" href="https://teddywarner.org/Machine-Profiles/FusionPro48/">Machine Profiles</a></li>
       <li><a style="  font-family: 'Fira Sans';" class="fab" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy</a></li>
     </ul>
 </nav>
