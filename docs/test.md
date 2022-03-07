@@ -41,6 +41,29 @@ window.addEventListener( "pageshow", function ( event ) {
 
 <style>
 
+    :root {
+      --duration: 1s;
+      --nav-duration: calc(var(--duration) / 4);
+      --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+      --space: 1rem;
+      --font-size: 1.125rem;
+      --line-height: 1.5;
+      --inputicon: hsla(0, 0%, 0%, 0.87);
+      --toggledinputicon: white;
+      --formbg: hsla(0, 0%, 0%, 0.25);
+      --formhover: hsla(0, 0%, 0%, 0.32);
+      --toggledform: hsla(0, 0%, 100%, 0.12);
+      --toggledformhover: hsla(0, 0%, 100%, 0.3);
+    }
+
+    [data-md-color-scheme="slate"] {
+        --inputicon: white;
+        --toggledinputicon: hsla(0, 0%, 0%, 0.87);
+        --formhover: hsla(0, 0%, 100%, 0.3);
+        --toggledform: hsla(0, 0%, 0%, 0.2);
+        --toggledformhover: hsla(0, 0%, 0%, 0.32);
+    }
+
     @media screen and (min-width: 60em) {
       .md-sidebar--secondary {
         display: none;
@@ -91,29 +114,6 @@ window.addEventListener( "pageshow", function ( event ) {
 
     .toggle .md-header__button.md-icon[for="__search"] {
       color: var(--md-default-bg-color);
-    }
-
-    :root {
-      --duration: 1s;
-      --nav-duration: calc(var(--duration) / 4);
-      --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-      --space: 1rem;
-      --font-size: 1.125rem;
-      --line-height: 1.5;
-      --inputicon: hsla(0, 0%, 0%, 0.87);
-      --toggledinputicon: white;
-      --formbg: hsla(0, 0%, 0%, 0.25);
-      --formhover: hsla(0, 0%, 0%, 0.32);
-      --toggledform: hsla(0, 0%, 100%, 0.12);
-      --toggledformhover: hsla(0, 0%, 100%, 0.3);
-    }
-
-    [data-md-color-scheme="slate"] {
-        --inputicon: white;
-        --toggledinputicon: hsla(0, 0%, 0%, 0.87);
-        --formhover: hsla(0, 0%, 100%, 0.3);
-        --toggledform: hsla(0, 0%, 0%, 0.2);
-        --toggledformhover: hsla(0, 0%, 0%, 0.32);
     }
 
     .md-search__input + .md-search__icon {
