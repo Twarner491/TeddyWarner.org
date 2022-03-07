@@ -385,7 +385,7 @@ window.addEventListener( "pageshow", function ( event ) {
 
     .abtparent a:after {
       font-weight: 400;
-      content: " 🠆";
+      content: "-->";
       margin-left: -10px;
       opacity: 0;
       vertical-align: middle;
@@ -393,7 +393,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
 
     .abtparent a:hover:after {
-      margin-left: 0px;
+      margin-left: 5px;
       opacity: 1;
       color: #5466ce;
     }
