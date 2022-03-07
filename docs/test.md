@@ -90,7 +90,11 @@ window.addEventListener( "pageshow", function ( event ) {
     }
 
     .toggle .md-header__button.md-icon[for="__search"] {
-      color: var(--md-default-bg-color); 
+      color: var(--md-default-bg-color);
+    }
+
+    .toggle .md-search__icon.md-icon[for="__search"] {
+      color: var(--md-default-fg-color);
     }
 
     :root {
