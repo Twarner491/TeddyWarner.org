@@ -93,10 +93,6 @@ window.addEventListener( "pageshow", function ( event ) {
       color: var(--md-default-bg-color);
     }
 
-    .toggle .md-search__icon.md-icon[for="__search"] {
-      color: var(--md-default-fg-color);
-    }
-
     :root {
       --duration: 1s;
       --nav-duration: calc(var(--duration) / 4);
@@ -106,6 +102,7 @@ window.addEventListener( "pageshow", function ( event ) {
       --line-height: 1.5;
       --inputicon: hsla(0, 0%, 0%, 0.87);
       --toggledinputicon: white;
+      --formbg: hsla(0, 0%, 0%, 0.25);
       --formhover: hsla(0, 0%, 0%, 0.32);
       --toggledform: hsla(0, 0%, 100%, 0.12);
       --toggledformhover: hsla(0, 0%, 100%, 0.3);
@@ -125,6 +122,10 @@ window.addEventListener( "pageshow", function ( event ) {
 
     .toggle .md-search__input + .md-search__icon {
       color: var(--toggledinputicon);
+    }
+
+    .md-search__form {
+      background-color: var(--formbg);
     }
 
     .md-search__form:hover {
