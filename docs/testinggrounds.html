@@ -1,0 +1,488 @@
+
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
+<script>
+
+var img1 = "https://lukeroberts.tv/blog/wp-content/uploads/2019/05/gif1.gif";
+var img2 = "https://teddywarner.org/images/ParametricGenerator/beautyshot1.jpg";
+var img3 = "https://teddywarner.org/images/LithophaneExperiments/friendslithophane.jpg";
+var img4 = "https://teddywarner.org/images/ParametricGenerator/beautyshot1.jpg";
+var img5 = "https://teddywarner.org/images/LithophaneExperiments/friendslithophane.jpg";
+
+  function colortheme() {
+      var element = document.body;
+      element.classList.toggle("slate");
+  } 
+    
+document.addEventListener("DOMContentLoaded", () => {
+  const log = console.log,
+    array = [img1, img2, img3, img4, img5],
+    random = Math.floor(Math.random() * array.length),
+    target = document.getElementById("target");
+  target.src = `${array[random]}`;
+  log(target);
+});
+  
+</script>
+
+<script>
+  var palette = __md_get("__palette")
+  if (palette && typeof palette.color === "object")
+    if (palette.color.scheme === "slate") {
+      var giscus = document.querySelector("script[src*=giscus]")
+      giscus.setAttribute("data-theme", "dark")
+    }
+
+  /* Register event handlers after documented loaded */
+  document.addEventListener("DOMContentLoaded", function() {
+    var ref = document.querySelector("[data-md-component=palette]")
+    ref.addEventListener("change", function() {
+      location.reload()
+    })
+  })
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+<style>
+
+:root {
+  --color-primary: hsla(228, 7%, 14%, 1);
+  --color-secondary: hsla(0, 0%, 100%, 1);
+  --duration: 1s;
+  --nav-duration: calc(var(--duration) / 4);
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --space: 1rem;
+  --font-size: 1.125rem;
+  --line-height: 1.5;
+}
+
+.slate {
+  --color-primary: hsla(0, 0%, 100%, 1);
+  --color-secondary: hsla(228, 7%, 14%, 1);
+  --themeicon: "../images/TeddyWarner.svg";
+  background-color: hsla(228, 7%, 14%, 1);
+}
+
+body {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-family: 'Fira Sans';
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.ppp {
+  color: var(--color-primary);
+  position: absolute;
+  top: calc(var(--space) * 2.6);
+  left: -2.5rem;
+  transform: rotate(270deg);
+  font-size: 3.4em;
+  height: 10em;
+}
+
+.logo {
+  color: var(--color-primary);
+}
+
+.logolink {
+  color: var(--color-primary);
+  position: fixed;
+  top: -9.5px;
+  left: calc(var(--space) * 8);
+  cursor: pointer;
+}
+
+.hero {
+
+}
+
+.main-navigation h1 {
+  margin-bottom: calc(var(--space) * 3);
+  font-family: var(--font-heading);
+  font-size: calc(var(--font-size) + 6vmin);
+  line-height: calc(var(--line-height) / 1.25);
+}
+
+.main-navigation-toggle {
+  position: fixed;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.main-navigation-toggle + label {
+  position: fixed;
+  top: calc(var(--space) * 1.5);
+  right: calc(var(--space) * 2);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.icon--menu-toggle {
+  --size: calc(2.5em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  stroke-width: 6;
+}
+
+.icon-group {
+  transform: translateX(0);
+  transition: transform var(--nav-duration) var(--ease);
+}
+
+.icon--menu {
+  stroke: var(--color-primary);
+}
+
+.icon--close {
+  stroke: var(--color-secondary);
+  transform: translateX(-100%);
+}
+
+.themebtn {
+  position: fixed;
+  top: calc(var(--space) * 2.1);
+  right: calc(var(--space) * 5.1);
+  cursor: pointer;
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform var(--nav-duration);
+  z-index: 1;
+}
+.main-navigation:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  transform-origin: 0 50%;
+  z-index: -1;
+}
+.main-navigation ul {
+  font-size: 12vmin;
+  font-family: var(--font-heading);
+  width: 100%;
+}
+.main-navigation li {
+  --border-size: 1vmin;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.main-navigation li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--border-size);
+  background-color: var(--color-secondary);
+  transform-origin: 0 50%;
+  transform: translateX(-100%) skew(15deg);
+}
+.main-navigation a {
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--color-secondary);
+  line-height: 1;
+  text-decoration: none;
+  user-select: none;
+  padding: var(--space) calc(var(--space) * 2) calc(var(--space) + var(--border-size) / 2);
+  transform: translateY(100%);
+}
+
+.about:hover {
+  color: #5466CE;
+}
+
+.proj:hover {
+  color: #5466CE;
+}
+
+.mach:hover {
+  color: #5466CE;
+}
+
+.fab:hover {
+  color: #5466CE;
+}
+
+.main-content {
+  max-width: 70ch;
+  transform: translateX(0);
+  transition: transform calc(var(--nav-duration) * 2) var(--ease);
+}
+.main-content > * + * {
+  margin-top: calc(var(--space) * var(--line-height));
+}
+
+.socials {
+  display: inline-grid;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: calc(var(--space) * 2.5);
+}
+
+.ln {
+  color: var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.git {
+  color: var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.fa-github:hover {
+  background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.insta {
+  color: var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.fa-instagram:hover {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.twitter {
+  color: var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.discord {
+  color: var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.fa-discord:hover {
+    color: #5865F2;
+}
+
+.spotify {
+  color: var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.fa-spotify:hover {
+    color: #1DB954;
+}
+
+.email {
+  color: var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.fa-paper-plane:hover {
+    color: #5466ce;
+}
+
+.main-navigation-toggle:checked ~ label .icon--menu-toggle .icon-group {
+  transform: translateX(100%);
+}
+
+.main-navigation-toggle:checked ~ .main-content {
+  transform: translateX(10%);
+}
+
+.main-navigation-toggle:checked ~ .main-navigation {
+  transition-duration: 0s;
+  transform: translateX(0);
+}
+
+.main-navigation-toggle:checked ~ .main-navigation:after {
+  animation: nav-bg var(--nav-duration) var(--ease) forwards;
+}
+
+.main-navigation-toggle:checked ~ .main-navigation li:after {
+  animation: nav-line var(--duration) var(--ease) forwards;
+}
+
+.main-navigation-toggle:checked ~ .main-navigation a {
+  animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
+}
+
+.main-navigation-toggle:checked ~ .main-navigation li:nth-child(1):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(1) a {
+  animation-delay: calc((var(--duration) / 2) * 1 * 0.125);
+}
+
+.main-navigation-toggle:checked ~ .main-navigation li:nth-child(2):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(2) a {
+  animation-delay: calc((var(--duration) / 2) * 2 * 0.125);
+}
+
+.main-navigation-toggle:checked ~ .main-navigation li:nth-child(3):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(3) a {
+  animation-delay: calc((var(--duration) / 2) * 3 * 0.125);
+}
+
+.main-navigation-toggle:checked ~ .main-navigation li:nth-child(4):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(4) a {
+  animation-delay: calc((var(--duration) / 2) * 4 * 0.125);
+}
+
+.icon--menu-toggle:hover {
+  opacity: 0.7;
+}
+
+@keyframes nav-bg {
+  from {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes nav-line {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+  }
+  35% {
+    transform: scaleX(1.001);
+    transform-origin: 0 50%;
+  }
+  65% {
+    transform: scaleX(1.001);
+    transform-origin: 100% 50%;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+  }
+}
+
+@keyframes link-appear {
+  0%, 25% {
+    transform: translateY(100%);
+  }
+  50%, 100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 68em) {
+  .logolink {
+    position: fixed;
+    top: -9.5px;
+    left: calc(var(--space) * 5.9);
+  }
+  .ppp {
+    color: var(--color-primary);
+    position: absolute;
+    top: calc(var(--space) * 2.6);
+    left: -2.5rem;
+    transform: rotate(270deg);
+    font-size: 2.8em;
+    height: 10em;
+  }
+}
+
+@media (max-height: 48.5em) {
+  .logolink {
+    position: fixed;
+    top: -9.5px;
+    left: calc(var(--space) * 5.9);
+  }
+  .ppp {
+    color: var(--color-primary);
+    position: absolute;
+    top: calc(var(--space) * 2.6);
+    left: -2.5rem;
+    transform: rotate(270deg);
+    font-size: 2.8em;
+    height: 10em;
+  }
+}
+
+@media (max-width: 45em) {
+  .logolink {
+    position: fixed;
+    top: -9.5px;
+    left: calc(var(--space) * 2);
+  }
+  .ppp {
+    display: none;
+  }
+}
+
+</style>
+
+<input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+<label for="page-nav-toggle">
+  <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+    <g class="icon-group">
+      <g class="icon--menu">
+        <path d="M 6 0 L 54 0" />
+        <path d="M 6 15 L 54 15" />
+        <path d="M 6 30 L 54 30" />
+      </g>
+      <g class="icon--close">
+        <path d="M 15 0 L 45 30" />
+        <path d="M 15 30 L 45 0" />
+      </g>
+    </g>
+  </svg>
+</label>
+
+<a class="themebtn" onclick="colortheme()"><img src= "var(--themeicon)" title="Change Theme"/></a>
+
+<div class="socials">
+  <a href="https://www.linkedin.com/in/teddy-warner-880974200/" class="ln" title="Linked In - Teddy Warner"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/Twarner491" class="git" title="Github - Twarner491"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/teddymakesstuff/" class="insta" title="Instagram - @teddymakesstuff"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/WarnerTeddy" class="twitter" title="Twitter - @WarnerTeddy"><i class="fa fa-twitter"></i></a>
+  <a href="https://discordapp.com/users/534164566649733120/" class="ln" title="Discord - Twarner#2592"><i class="fab fa-discord"></i></a>
+  <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
+  <a href="mailto:<Twarner491@gmail.com>" class="email" style="var(--color-primary)" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
+ </div>
+
+<nav class="main-navigation">
+  <ul>
+    <li><a class="about" href="../About-Me/about/">About Me</a></li>
+    <li><a class="proj" href="../feed/">Projects</a></li>
+    <li><a class="mach" href="../Machine-Profiles/FusionPro48/">Machine Profiles</a></li>
+    <li><a style="  font-family: 'Fira Sans';" class="fab" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy</a></li>
+  </ul>
+</nav>
+
+<main class="main-content">
+<h1 class="ppp">Personal Project Portfolio</h1>
+<a href="https://teddywarner.org/" class="logolink" title="Home"><img class="logo" src="../images/outlinedTeddyWarner.svg" alt="Teddy Warner"/></a>
+<!--<img class="hero" id="target" src="a.jpg">-->
+</main>

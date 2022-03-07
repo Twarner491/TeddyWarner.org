@@ -289,7 +289,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
     
     .ln {
-      padding-bottom: 0.65em;
+      padding-bottom: 0.6em;
     }
     
     .fa-linkedin:hover {
@@ -297,7 +297,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
     
     .git {
-      padding-bottom: 0.65em;
+      padding-bottom: 0.6em;
     }
     
     .fa-github:hover {
@@ -307,7 +307,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
     
     .insta {
-      padding-bottom: 0.65em;
+      padding-bottom: 0.6em;
     }
     
     .fa-instagram:hover {
@@ -317,7 +317,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
     
     .twitter {
-      padding-bottom: 0.65em;
+      padding-bottom: 0.6em;
     }
     
     .fa-twitter:hover {
@@ -325,7 +325,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
     
     .discord {
-      padding-bottom: 0.65em;
+      padding-bottom: 0.6em;
     }
     
     .fa-discord:hover {
@@ -333,15 +333,23 @@ window.addEventListener( "pageshow", function ( event ) {
     }
     
     .spotify {
-      padding-bottom: 0.75em;
+      padding-bottom: 0.6em;
     }
     
     .fa-spotify:hover {
         color: #1DB954;
     }
+
+    .coffee {
+      padding-bottom: 0.6em;
+    }
+    
+    .fa-coffee:hover {
+        color: #ffdd00;
+    }
     
     .email {
-      padding-bottom: 0.65em;
+      padding-bottom: 0.6em;
     }
     
     .fa-paper-plane:hover {
@@ -473,6 +481,7 @@ window.addEventListener( "pageshow", function ( event ) {
       <a href="https://twitter.com/WarnerTeddy" class="twitter" style=" color: inherit;" title="Twitter - @WarnerTeddy"><i class="fa fa-twitter"></i></a>
       <a href="https://discordapp.com/users/534164566649733120/" class="ln" style=" color: inherit;" title="Discord - Twarner#2592"><i class="fab fa-discord"></i></a>
       <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
+      <a href="https://www.buymeacoffee.com/teddywarner" class="coffee" style=" color: inherit;" title="Buy Me A Coffee! :)"><i class="fas fa-coffee"></i></a>
       <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
     </div>
   </div>
