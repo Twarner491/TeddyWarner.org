@@ -21,11 +21,39 @@ document.addEventListener("DOMContentLoaded", () => {
   log(target);
 });
 
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#welcome!';
+        window.location.reload();
+    }
+}
+
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    window.location.reload();
+  }
+});
+
 </script>
 
 <style>
 
-    .md-footer-meta {
+    @media screen and (min-width: 60em) {
+      .md-sidebar--secondary {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    }
+
+    .md-footer {
     display: none;
     } 
 
@@ -107,10 +135,6 @@ document.addEventListener("DOMContentLoaded", () => {
       background-color: var(--toggledformhover);
     }
 
-    .color svg {
-      color: blue;
-    }
-
     header{
       padding-top: 1.5em;
     }
@@ -148,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
         margin-top: calc(var(--space) * var(--line-height));
         position: absolute;
         top: -2em;
-        left: -5.8em;
+        left: -1.2em;
         transform: rotate(270deg);
         font-size: 3.4em;
         height: 10em;
@@ -260,8 +284,8 @@ document.addEventListener("DOMContentLoaded", () => {
       margin: 0;
       position: absolute;
       top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-35%);
+      transform: translateY(-35%);
     }
     
     .ln {
@@ -349,12 +373,27 @@ document.addEventListener("DOMContentLoaded", () => {
       .ppp {
           position: absolute;
           top: -2.7em;
-          left: -14.8rem;
+          left: -1.2em;
           transform: rotate(270deg);
           font-size: 2.8em;
           height: 10em;
       }
     }
+
+    @media (max-height: 54em) and (min-width: 108.3125em) {
+      .logo {
+          padding-left: 7.5em;
+      }
+      .ppp {
+          position: absolute;
+          top: -2.7em;
+          left: -1.2em;
+          transform: rotate(270deg);
+          font-size: 2.8em;
+          height: 10em;
+      }
+    }
+
     
     @media (max-width: 76em) {
       .logo {
