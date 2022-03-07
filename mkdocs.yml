@@ -14,20 +14,28 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/teddy-warner-880974200/
+      name: Linked In - Teddy Warner
     - icon: fontawesome/brands/github
       link: https://github.com/Twarner491
+      name: Github - Twarner491
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/teddymakesstuff/
+      name: Instagram - @teddymakesstuff
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/WarnerTeddy
+      name: Twitter - @WarnerTeddy
     - icon: fontawesome/brands/discord
       link: https://discordapp.com/users/534164566649733120/
+      name: Discord - Twarner#2592
     - icon: fontawesome/brands/spotify
       link: https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb
-    - icon: fontawesome/solid/coffee
+      name: Spotify - Teddy Warner
+    - icon: mug-saucer-solid
       link: https://www.buymeacoffee.com/teddywarner
+      name: Buy Me A Coffee! :)
     - icon: fontawesome/solid/paper-plane
       link: mailto:<Twarner491@gmail.com>
+      name: Email - Twarner491@gmail.com
 
   analytics:
     provider: google
@@ -80,6 +88,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   - pymdownx.details
   - extra
   - smarty

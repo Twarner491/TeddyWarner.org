@@ -345,7 +345,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
     
     .fa-coffee:hover {
-        color: #ffdd00; 
+        color: #ffdd00;
     }
     
     .email {
