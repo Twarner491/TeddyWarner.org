@@ -19,7 +19,7 @@
         />
   
         <!-- Button to open search -->
-        <label class="md-search__icon md-icon" for="__search" onclick="sopen()">
+        <label class="md-search__icon md-icon" for="__search">
           {% include ".icons/material/magnify.svg" %}
           {% include ".icons/material/arrow-left.svg" %}
         </label>
@@ -78,12 +78,3 @@
       </div>
     </div>
   </div>
-  
-  <script>
-  
-    function sopen() {
-        var element = document.body;
-        element.classList.toggle("searchopen");
-    } 
-  
-  </script>

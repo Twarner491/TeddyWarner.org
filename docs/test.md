@@ -455,6 +455,12 @@ window.addEventListener( "pageshow", function ( event ) {
       }
     }
 
+    @media (max-width: 59.892857142857146em) {
+      .toggle .md-search__icon.md-icon:first-of-type {
+        color: var(--md-default-fg-color);
+      }
+    }
+
 </style>
 
 <nav class="main-navigation">
