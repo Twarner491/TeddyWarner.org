@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.onload = function() {
     if(!window.location.hash) {
-        window.location = window.location + '#welcome!';
+        window.location = window.location + '#home';
         window.location.reload();
     }
 }
@@ -361,6 +361,43 @@ window.addEventListener( "pageshow", function ( event ) {
         color: #5466ce;
     }
 
+    .abtparent {
+      position: absolute;
+      top: 90%;
+      -ms-transform: translateY(-35%);
+      transform: translateY(-35%);
+      right: 5em;
+      height: 1.3em;
+      color: inherit;
+    }
+
+    .abtparent a {
+      font-weight: 400;
+      font-size: 1.3em;
+      color: inherit;
+      display: inline-block;
+      position: relative;
+    }
+
+    .abtparent a:hover {
+      color: #5466ce;
+    }
+
+    .abtparent a:after {
+      font-weight: 400;
+      content: " 🠆";
+      margin-left: -10px;
+      opacity: 0;
+      vertical-align: middle;
+      transition: margin 0.3s, opacity 0.3s;
+    }
+
+    .abtparent a:hover:after {
+      margin-left: 0px;
+      opacity: 1;
+      color: #5466ce;
+    }
+
     .toggle .main-navigation {
       transition-duration: 0.35;
       transform: translateX(0);
@@ -494,6 +531,10 @@ window.addEventListener( "pageshow", function ( event ) {
       <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
       <a href="https://www.buymeacoffee.com/teddywarner" class="coffee" style=" color: inherit;" title="Buy Me A Coffee! :)"><i class="fas fa-coffee"></i></a>
       <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
+    </div>
+    <div class="abtparent">
+      <a href="http://teddywarner.com/About-Me/about/"><span style="text-decoration-line: underline;
+      text-decoration-thickness: 12%;">About Me</span></a>
     </div>
   </div>
 
