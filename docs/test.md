@@ -188,7 +188,23 @@ window.addEventListener( "pageshow", function ( event ) {
     }
 
     .hero {
-      z-index: 0;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-49%, -47%);
+      width: 58em;
+      height: 34em;
+      z-index: -10;
+      background-color: hsla(0, 0%, 0%, 0.03);
+      border-radius: 5px;
+      box-shadow: 0 5px 9px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero img {
+      object-fit: cover;
+      width: 58em;
+      height: 34em;
+      z-index: -10;
     }
 
     .main-navigation {
@@ -363,10 +379,10 @@ window.addEventListener( "pageshow", function ( event ) {
 
     .abtparent {
       position: absolute;
-      top: 90%;
+      top: 97.25%;
       -ms-transform: translateY(-35%);
       transform: translateY(-35%);
-      right: 5em;
+      right: 7.5em;
       height: 1.3em;
       color: inherit;
     }
@@ -380,7 +396,7 @@ window.addEventListener( "pageshow", function ( event ) {
     }
 
     .abtparent a:hover {
-      color: #5466ce;
+      color: var(--md-default-fg-color); 
     }
 
     .abtparent a:after {
@@ -395,7 +411,6 @@ window.addEventListener( "pageshow", function ( event ) {
     .abtparent a:hover:after {
       margin-left: 5px;
       opacity: 1;
-      color: #5466ce;
     }
 
     .toggle .main-navigation {
@@ -518,7 +533,9 @@ window.addEventListener( "pageshow", function ( event ) {
   </main>
 
   <center>
-    <img class="hero" id="target" src="a.jpg">
+   <div class="hero">
+    <img id="target" src="a.jpg">
+   </div>
   </center>
 
   <div class="socialsparent">
