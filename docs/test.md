@@ -6,15 +6,25 @@ template: index.html
 
 <script>
 
-var img1 = "";
-var img2 = "";
-var img3 = "";
-var img4 = "";
-var img5 = "";
+var img1 = "https://teddywarner.org/images/index/aquaduinos.jpg";
+var img2 = "https://teddywarner.org/images/index/aquaponic.jpg";
+var img3 = "https://teddywarner.org/images/index/aquaponicelectronic.jpg";
+var img4 = "https://teddywarner.org/images/index/bitscope.jpg";
+var img5 = "https://teddywarner.org/images/index/cookie!.jpg";
+var img6 = "https://teddywarner.org/images/index/customprint.jpg";
+var img7 = "https://teddywarner.org/images/index/desk.jpg";
+var img8 = "https://teddywarner.org/images/index/desksanding.jpg";
+var img9 = "https://teddywarner.org/images/index/firstcrown.jpg";
+var img10 = "https://teddywarner.org/images/index/icp.jpg";
+var img11 = "https://teddywarner.org/images/index/installedmpcnc.jpg";
+var img12 = "https://teddywarner.org/images/index/lion.jpg";
+var img13 = "https://teddywarner.org/images/index/newmpcnc.jpg";
+var img14 = "https://teddywarner.org/images/index/printersetup.jpg";
+var img15 = "https://teddywarner.org/images/index/tank.jpg";
     
 document.addEventListener("DOMContentLoaded", () => {
   const log = console.log,
-    array = [img1, img2, img3, img4, img5],
+    array = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15],
     random = Math.floor(Math.random() * array.length),
     target = document.getElementById("target");
   target.src = `${array[random]}`;
@@ -187,26 +197,6 @@ window.addEventListener( "pageshow", function ( event ) {
     padding-left: 8.7em;
     }
 
-    .hero {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-49%, -47%);
-      width: 58em;
-      height: 34em;
-      z-index: -10;
-      background-color: hsla(0, 0%, 0%, 0.03);
-      border-radius: 5px;
-      box-shadow: 0 5px 9px 2px rgba(0, 0, 0, 0.4);
-    }
-
-    .hero img {
-      object-fit: cover;
-      width: 58em;
-      height: 34em;
-      z-index: -10;
-    }
-
     .main-navigation {
       position: fixed;
       top: 0;
@@ -294,6 +284,25 @@ window.addEventListener( "pageshow", function ( event ) {
       height: 95vh;
       position: relative;
     }
+
+    .hero {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-49%, -47%);
+      width: 25em;
+      height: 25em;
+      z-index: -10;
+      background-color: hsla(0, 0%, 0%, 0.03);
+      border-radius: 5px;
+    }
+
+    .hero img {
+      object-fit: cover;
+      width: 25em;
+      height: 25em;
+      z-index: -10;
+    }
     
     .socials {
       align-self: center;
@@ -379,7 +388,7 @@ window.addEventListener( "pageshow", function ( event ) {
 
     .abtparent {
       position: absolute;
-      top: 97.25%;
+      top: 98%;
       -ms-transform: translateY(-35%);
       transform: translateY(-35%);
       right: 7.5em;
@@ -550,8 +559,7 @@ window.addEventListener( "pageshow", function ( event ) {
       <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
     </div>
     <div class="abtparent">
-      <a href="http://teddywarner.com/About-Me/about/"><span style="text-decoration-line: underline;
-      text-decoration-thickness: 12%;">About Me</span></a>
+      <a href="http://teddywarner.com/About-Me/about/">About Me</a>
     </div>
   </div>
 
