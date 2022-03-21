@@ -6,46 +6,21 @@ template: index.html
 
 <script>
 
-var img1 = "https://teddywarner.org/images/index/aquaduinos.jpg";
-var img2 = "https://teddywarner.org/images/index/aquaponic.jpg";
-var img3 = "https://teddywarner.org/images/index/aquaponicelectronic.jpg";
-var img4 = "https://teddywarner.org/images/index/bitscope.jpg";
-var img5 = "https://teddywarner.org/images/index/cookie!.jpg";
-var img6 = "https://teddywarner.org/images/index/customprint.jpg";
-var img7 = "https://teddywarner.org/images/index/desk.jpg";
-var img8 = "https://teddywarner.org/images/index/desksanding.jpg";
-var img9 = "https://teddywarner.org/images/index/firstcrown.jpg";
-var img10 = "https://teddywarner.org/images/index/icp.jpg";
-var img11 = "https://teddywarner.org/images/index/installedmpcnc.jpg";
-var img12 = "https://teddywarner.org/images/index/lion.jpg";
-var img13 = "https://teddywarner.org/images/index/newmpcnc.jpg";
-var img14 = "https://teddywarner.org/images/index/printersetup.jpg";
-var img15 = "https://teddywarner.org/images/index/tank.jpg";
-    
-document.addEventListener("DOMContentLoaded", () => {
-  const log = console.log,
-    array = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15],
-    random = Math.floor(Math.random() * array.length),
-    target = document.getElementById("target");
-  target.src = `${array[random]}`;
-  log(target);
-});
-
-window.onload = function() {
-    if(!window.location.hash) {
-        window.location = window.location + '#home';
-        window.location.reload();
-    }
-}
-
-window.addEventListener( "pageshow", function ( event ) {
-  var historyTraversal = event.persisted || 
-                         ( typeof window.performance != "undefined" && 
-                              window.performance.navigation.type === 2 );
-  if ( historyTraversal ) {
-    window.location.reload();
+  window.onload = function() {
+      if(!window.location.hash) {
+          window.location = window.location + '#home';
+          window.location.reload();
+      }
   }
-});
+
+  window.addEventListener( "pageshow", function ( event ) {
+    var historyTraversal = event.persisted || 
+                          ( typeof window.performance != "undefined" && 
+                                window.performance.navigation.type === 2 );
+    if ( historyTraversal ) {
+      window.location.reload();
+    }
+  });
 
 </script>
 
@@ -86,8 +61,12 @@ window.addEventListener( "pageshow", function ( event ) {
       }
     }
 
+    .md-main__inner {
+      margin: 0;
+    }
+
     .md-footer {
-    display: none;
+      display: none;
     } 
 
     .md-source {
@@ -182,19 +161,9 @@ window.addEventListener( "pageshow", function ( event ) {
     .md-tabs {
      display: none;
     }
-    
-    .ppp {
-        margin-top: calc(var(--space) * var(--line-height));
-        position: absolute;
-        top: -2em;
-        left: -1.2em;
-        transform: rotate(270deg);
-        font-size: 3.4em;
-        height: 10em;
-    }
 
     .logo {
-    padding-left: 8.7em;
+      padding-left: 0;
     }
 
     .main-navigation {
@@ -246,7 +215,7 @@ window.addEventListener( "pageshow", function ( event ) {
     .main-navigation a {
       display: inline-block;
       width: 100%;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       color: var(--md-default-bg-color);
       line-height: 1.08;
@@ -257,24 +226,39 @@ window.addEventListener( "pageshow", function ( event ) {
       z-index: 1;
     }
 
+    .home:hover {
+      color: #5466CE;
+      font-style: italic;
+    }
+
     .about:hover {
       color: #5466CE;
+      font-style: italic;
     }
 
     .proj:hover {
       color: #5466CE;
+      font-style: italic;
     }
 
     .mach:hover {
       color: #5466CE;
+      font-style: italic;
     }
 
     .fab:hover {
       color: #5466CE;
+      font-style: italic;
+    }
+
+    .navnum {
+      font-size:0.35em;
+      font-weight: lighter;
+      font-style: italic;
     }
 
     .main-content {
-      max-width: 70ch;
+      max-width: 90ch;
       transform: translateX(0);
       transition: transform calc(var(--nav-duration) * 2) var(--ease);
     }
@@ -285,33 +269,14 @@ window.addEventListener( "pageshow", function ( event ) {
       position: relative;
     }
 
-    .hero {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-49%, -47%);
-      width: 25em;
-      height: 25em;
-      z-index: -10;
-      background-color: hsla(0, 0%, 0%, 0.03);
-      border-radius: 5px;
-    }
-
-    .hero img {
-      object-fit: cover;
-      width: 25em;
-      height: 25em;
-      z-index: -10;
-    }
-    
     .socials {
       align-self: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       float: right;
-      right: 0.15em;
-      margin: 0;
+      padding-left: 95vw;
+      margin-right: 0;
       position: absolute;
       top: 50%;
       -ms-transform: translateY(-35%);
@@ -320,70 +285,86 @@ window.addEventListener( "pageshow", function ( event ) {
     
     .ln {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-linkedin:hover {
         color: #0e76a8;
+        font-style: normal;
     }
     
     .git {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-github:hover {
       background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      font-style: normal;
     }
     
     .insta {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-instagram:hover {
       background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+      font-style: normal;
     }
     
     .twitter {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-twitter:hover {
         color: #00acee;
+        font-style: normal;
     }
     
     .discord {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-discord:hover {
         color: #5865F2;
+        font-style: normal;
     }
     
     .spotify {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-spotify:hover {
         color: #1DB954;
+        font-style: normal;
     }
 
     .coffee {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-coffee:hover {
         color: #ffdd00;
+        font-style: normal;
     }
     
     .email {
       padding-bottom: 0.6em;
+      font-style: normal;
     }
     
     .fa-paper-plane:hover {
         color: #5466ce;
+        font-style: normal;
     }
 
     .abtparent {
@@ -440,46 +421,10 @@ window.addEventListener( "pageshow", function ( event ) {
       }
     }
 
-    @media (max-height: 48.75em) {
-      .logo {
-          padding-left: 7.5em;
-      }
-      .ppp {
-          position: absolute;
-          top: -2.7em;
-          left: -1.2em;
-          transform: rotate(270deg);
-          font-size: 2.8em;
-          height: 10em;
-      }
-    }
-
-    @media (max-height: 54em) and (min-width: 108.3125em) {
-      .logo {
-          padding-left: 7.5em;
-      }
-      .ppp {
-          position: absolute;
-          top: -2.7em;
-          left: -1.2em;
-          transform: rotate(270deg);
-          font-size: 2.8em;
-          height: 10em;
-      }
-    }
-
     
     @media (max-width: 76em) {
       .logo {
-          padding-left: 7.5em;
-      }
-      .ppp {
-        position: absolute;
-        top: -2.7em;
-        left: -2.4rem;
-        transform: rotate(270deg);
-        font-size: 2.8em;
-        height: 10em;
+          padding-left: 1em;
       }
     }
     
@@ -495,7 +440,26 @@ window.addEventListener( "pageshow", function ( event ) {
       }
     }
 
-    @media (max-height: 31.5em) {
+    @media (max-width: 59.892857142857146em) {
+      .toggle .md-search__icon.md-icon:first-of-type {
+        color: var(--md-default-fg-color);
+      }
+      .socials {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+        right: 0.15em;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-35%);
+        transform: translateY(-35%);
+      }
+    }
+
+    @media (max-height: 41.2em) {
       .socialsparent {
         overflow-y: hidden;  
         margin-top: -14.27em;
@@ -509,28 +473,34 @@ window.addEventListener( "pageshow", function ( event ) {
         flex-direction: column;
         align-items: center;
         float: right;
-        right: 0.15em;
+        padding-left: 95vw;
         margin: 0;
         position: absolute;
-        top: 16em;
+        top: 18em;
       }
     }
 
-    @media (max-width: 59.892857142857146em) {
-      .toggle .md-search__icon.md-icon:first-of-type {
-        color: var(--md-default-fg-color);
+     @media (min-width: 59.892857142857146em) {
+      .md-grid {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100vw;
+      }
+      .md-header__inner {
+        margin-left: 5vw;
+        margin-right: 5vw;
       }
     }
-
+    
 </style>
 
 <nav class="main-navigation">
     <ul>
-      <li><a class="about" href="../">Home</a></li>
-      <li><a class="about" href="http://teddywarner.com/About-Me/about/">About Me</a></li>
-      <li><a class="proj" href="http://teddywarner.com/feed/">Projects</a></li>
-      <li><a class="mach" href="http://teddywarner.com/Machine-Profiles/FusionPro48/">Machine Profiles</a></li>
-      <li><a style="  font-family: 'Fira Sans';" class="fab" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy</a></li>
+      <li><a class="home" href="../"><span class="navnum">01</span> Home</a></li>
+      <li><a class="about" href="http://teddywarner.com/About-Me/about/"><span class="navnum">02</span> About Me</a></li>
+      <li><a class="proj" href="http://teddywarner.com/feed/"><span class="navnum">03</span> Projects</a></li>
+      <li><a class="mach" href="http://teddywarner.com/Machine-Profiles/FusionPro48/"><span class="navnum">04</span> Machine Profiles</a></li>
+      <li><a style="font-family: 'Fira Sans';" class="fab" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/"><span class="navnum">05</span> Fab Academy</a></li>
     </ul>
 </nav>
 
@@ -538,14 +508,7 @@ window.addEventListener( "pageshow", function ( event ) {
 
   <main class="main-content">
     <h1></h1>
-    <span class="ppp">Personal Project Portfolio</span>
   </main>
-
-  <center>
-   <div class="hero">
-    <img id="target" src="a.jpg">
-   </div>
-  </center>
 
   <div class="socialsparent">
     <div class="socials">
@@ -558,9 +521,9 @@ window.addEventListener( "pageshow", function ( event ) {
       <a href="https://www.buymeacoffee.com/teddywarner" class="coffee" style=" color: inherit;" title="Buy Me A Coffee! :)"><i class="fas fa-coffee"></i></a>
       <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
     </div>
-    <div class="abtparent">
+    <!--<div class="abtparent">
       <a href="http://teddywarner.com/About-Me/about/">About Me</a>
-    </div>
+    </div>-->
   </div>
 
 </body>
