@@ -279,8 +279,8 @@ template: index.html
       margin-right: 0;
       position: absolute;
       top: 50%;
-      -ms-transform: translateY(-35%);
-      transform: translateY(-35%);
+      -ms-transform: translateY(-15%);
+      transform: translateY(-15%);
     }
     
     .ln {
@@ -454,12 +454,12 @@ template: index.html
         margin: 0;
         position: absolute;
         top: 50%;
-        -ms-transform: translateY(-35%);
-        transform: translateY(-35%);
+        -ms-transform: translateY(-15%);
+        transform: translateY(-15%);
       }
     }
 
-    @media (max-height: 41.2em) {
+    @media (max-height: 33em) {
       .socialsparent {
         overflow-y: hidden;  
         margin-top: -14.27em;
@@ -476,7 +476,7 @@ template: index.html
         padding-left: 95vw;
         margin: 0;
         position: absolute;
-        top: 18em;
+        top: 14em;
       }
     }
 
