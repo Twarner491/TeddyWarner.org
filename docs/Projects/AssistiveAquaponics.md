@@ -2,7 +2,19 @@
 title: Assistive Aquaponics Fish Tank
 hide:
   - navigation
+  - tags
 template: comments.html
+tags:
+  - Software
+  - CAD
+  - Fusion 360
+  - Inkscape
+  - Autodesk Eagle
+  - CNC
+  - 3D Printing
+  - PCB
+  - Laser Cutting
+  - Microcontroller
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -91,7 +103,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**1-2 minutes :material-book-open-page-variant:**
+**:fontawesome-regular-clock: 1-2 minutes**
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/"><i class="fab fa-facebook-square"></i></a>
 <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/&text=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on"><i class="fab fa-twitter"></i></a>

@@ -2,7 +2,14 @@
 title: Octoprint Setup
 hide:
   - navigation
+  - tags
 template: comments.html
+tags:
+  - Software
+  - Electronics
+  - 3D Printing
+  - Print Farm
+  - Raspberry Pi
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -91,7 +98,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**9-11 minutes :material-book-open-page-variant:**
+**:fontawesome-regular-clock: 9-11 minutes**
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Octoprint/"><i class="fab fa-facebook-square"></i></a>
 <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Octoprint/&text=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With"><i class="fab fa-twitter"></i></a>

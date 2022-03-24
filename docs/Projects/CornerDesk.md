@@ -2,7 +2,12 @@
 title: Cable Managed Corner Desk
 hide:
   - navigation
+  - tags
 template: comments.html
+tags:
+  - CAD
+  - Fusion 360
+  - Hand Tools
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -91,7 +96,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**6-8 minutes :material-book-open-page-variant:**
+**:fontawesome-regular-clock: 6-8 minutes**
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/CornerDesk/"><i class="fab fa-facebook-square"></i></a>
 <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/CornerDesk/&text=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on"><i class="fab fa-twitter"></i></a>

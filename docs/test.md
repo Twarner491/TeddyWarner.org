@@ -6,6 +6,31 @@ template: index.html
 
 <script>
 
+    var img1 = "https://teddywarner.org/images/index/aquaduinos.jpg";
+    var img2 = "https://teddywarner.org/images/index/aquaponic.jpg";
+    var img3 = "https://teddywarner.org/images/index/aquaponicelectronic.jpg";
+    var img4 = "https://teddywarner.org/images/index/bitscope.jpg";
+    var img5 = "https://teddywarner.org/images/index/cookie!.jpg";
+    var img6 = "https://teddywarner.org/images/index/customprint.jpg";
+    var img7 = "https://teddywarner.org/images/index/desk.jpg";
+    var img8 = "https://teddywarner.org/images/index/desksanding.jpg";
+    var img9 = "https://teddywarner.org/images/index/firstcrown.jpg";
+    var img10 = "https://teddywarner.org/images/index/icp.jpg";
+    var img11 = "https://teddywarner.org/images/index/installedmpcnc.jpg";
+    var img12 = "https://teddywarner.org/images/index/lion.jpg";
+    var img13 = "https://teddywarner.org/images/index/newmpcnc.jpg";
+    var img14 = "https://teddywarner.org/images/index/printersetup.jpg";
+    var img15 = "https://teddywarner.org/images/index/tank.jpg";
+        
+    document.addEventListener("DOMContentLoaded", () => {
+      const log = console.log,
+        array = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15],
+        random = Math.floor(Math.random() * array.length),
+        target = document.getElementById("target");
+      target.src = `${array[random]}`;
+      log(target);
+    });
+
   window.onload = function() {
       if(!window.location.hash) {
           window.location = window.location + '#home';
@@ -275,7 +300,7 @@ template: index.html
       flex-direction: column;
       align-items: center;
       float: right;
-      padding-left: 95vw;
+      padding-left: 91vw;
       margin-right: 0;
       position: absolute;
       top: 50%;
@@ -491,7 +516,35 @@ template: index.html
         margin-right: 5vw;
       }
     }
-    
+
+    .heroparentbot { 
+        position:absolute;
+        height: 100%;
+        width: 100%; 
+        background: white; 
+        z-index: -2;
+    }
+
+    .hero img { 
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-45%);
+        transform: translateY(-45%);
+        left: 68.5vw;     
+        width: 20.2vw;
+        height: 26vw;
+        z-index: 0;
+        object-fit: cover;
+    }
+
+    .herotextbase {
+        position:absolute; 
+        font-size: 6em; 
+        mix-blend-mode: difference;
+        color: white;
+        z-index: 0;
+    }
+
 </style>
 
 <nav class="main-navigation">
@@ -509,6 +562,13 @@ template: index.html
   <main class="main-content">
     <h1></h1>
   </main>
+
+  <div class="heroparentbot"></div>
+  <div class="hero">
+    <img id="target" src="a.jpg">
+  </div>
+
+  <span class="herotextbase">Fabrication</span>
 
   <div class="socialsparent">
     <div class="socials">

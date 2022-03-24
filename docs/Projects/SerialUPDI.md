@@ -2,7 +2,15 @@
 title: UPDI Serial Programming
 hide:
   - navigation
+  - tags
 template: comments.html
+tags:
+  - Software
+  - CAD
+  - Autodesk Eagle
+  - PCB
+  - AVR
+  - Microcontroller
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -91,7 +99,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**24-31 minutes :material-book-open-page-variant:**
+**:fontawesome-regular-clock: 24-31 minutes**
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-facebook-square"></i></a>
 <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fab fa-twitter"></i></a>

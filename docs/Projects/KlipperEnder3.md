@@ -2,7 +2,13 @@
 title: Klipper Enabled Ender 3
 hide:
   - navigation
+  - tags
 template: comments.html
+tags:
+  - Software
+  - Electronics
+  - 3D Printing
+  - Raspberry Pi
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -91,7 +97,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**10-12 minutes :material-book-open-page-variant:**
+**:fontawesome-regular-clock: 10-12 minutes**
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-facebook-square"></i></a>
 <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/KlipperEnder3/&text=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on"><i class="fab fa-twitter"></i></a>

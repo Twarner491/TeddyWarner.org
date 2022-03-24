@@ -83,6 +83,7 @@ theme:
 
 plugins:
   - search
+  - tags
 
 markdown_extensions:
   - pymdownx.emoji:

@@ -2,7 +2,10 @@
 title: PROJECT-TITLE
 hide:
   - navigation
+  - tags
 template: comments.html
+tags:
+  - 
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -91,7 +94,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**X-X minutes :material-book-open-page-variant:**
+**:fontawesome-regular-clock: X-X minutes**
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
 <a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
