@@ -1,5 +1,5 @@
 ---
-title: CNC Milling with Fusion 360 & Vectric Aspire
+title: Bantam Milling Workflows
 hide:
   - navigation
   - tags
@@ -71,7 +71,7 @@ tags:
 
 </style>
 
-# CNC Milling with Fusion 360 & Vetric Aspire (Junior Year - 2022)
+# Bantam Milling Workflows (Junior Year - 2022)
 
 <!-- Compleation Badge
 
@@ -102,18 +102,92 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 **:fontawesome-regular-clock: X-X minutes**
 <span class="share" style=" color: inherit;">
-<a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
-<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
-<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
-<a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
-<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Milling/"><i class="fab fa-facebook-square"></i></a>
+<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Milling/&text=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Milling/&media=&description=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Milling/"><i class="fab fa-linkedin"></i></a>
+<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/Milling/%0ACheck%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
 </span>
+
+<center>
+
+![](../images/MillingWorkflow/BantamBanner.png){width="100%"}
+
+</center>
 
 ## Fusion 360 CAM
 
+<center>
+
+![](../images/MillingWorkflow/FusionBanner.jpg){width="100%"}
+
+</center>
+
+[Fusion 360 Manufacturing Overview](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-BEC5DEA9-AC3E-4FA8-998E-4AE8CD0D0B1E)
+
+[Fusion 360 & Bantam Milling](https://support.bantamtools.com/hc/en-us/articles/115001671574-Fusion-360)
+
+[Fusion 360 Bantam Tool Library](https://support.bantamtools.com/hc/article_attachments/115002419813/Bantam%20Tools%20Tool%20Library%200.3.zip)
+
+### Wax Seal Stamp
+
+### Chocolate Molding
+
+
+
 ## Vectric Aspire
 
+<center>
 
+![](../images/MillingWorkflow/AspireBanner.png){width="55%"}
+
+</center>
+
+[VCarve & Bantam Milling](https://support.bantamtools.com/hc/en-us/articles/115001668333-VCarve)
+
+[Bantam Post-processer for Vectric Aspire](https://support.bantamtools.com/hc/en-us/article_attachments/115002242053/Othermill_tinyG_mm.pp.zip )
+
+### Topography Paper Weight
+
+<center>
+
+[Terrain2STL :fontawesome-solid-earth-americas:](https://jthatch.com/Terrain2STL/){ .md-button .md-button--primary}
+
+</center>
+
+<center>
+
+![](../images/MillingWorkflow/topographylocation.jpg){width="55%"}
+  <figcaption>Caption</figcaption>
+
+</center>
+
+<center>
+
+![](../images/MillingWorkflow/Topographyselection.jpg){width="100%"}
+  <figcaption>Caption</figcaption>
+
+</center>
+
+<center>
+
+![](../images/MillingWorkflow/topographywaterbase.jpg){width="55%"}
+  <figcaption>Caption</figcaption>
+
+</center>
+
+
+## Autodesk Eagle
+
+<center>
+
+![](../images/MillingWorkflow/EagleBanner.png){width="100%"}
+
+</center>
+
+### PCB Badge
+
+Inkscape to Eagle
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control

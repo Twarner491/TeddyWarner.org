@@ -113,7 +113,7 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 <center>
 
-[3dp.rocks's Lithophane Generator :fontawesome-solid-globe-americas:](https://3dp.rocks/lithophane/){ .md-button .md-button--primary }
+[3dp.rocks's Lithophane Generator :fontawesome-solid-earth-americas:](https://3dp.rocks/lithophane/){ .md-button .md-button--primary }
 
 <iframe width="90%" height="495" src="https://www.youtube.com/embed/ZNlbl6uhqbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
