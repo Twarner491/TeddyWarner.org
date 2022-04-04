@@ -1,5 +1,5 @@
 ---
-title: Bantam Milling Workflows
+title: CNC Milling Workflows
 hide:
   - navigation
   - tags
@@ -71,7 +71,7 @@ tags:
 
 </style>
 
-# Bantam Milling Workflows (Junior Year - 2022)
+# CNC Milling Workflows (Junior Year - 2022)
 
 <!-- Compleation Badge
 
@@ -112,6 +112,12 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 <center>
 
 ![](../images/MillingWorkflow/BantamBanner.png){width="100%"}
+
+</center>
+
+<center>
+
+![](../images/MillingWorkflow/ShopbotBanner.png){width="100%"}
 
 </center>
 

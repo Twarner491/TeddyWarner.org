@@ -266,7 +266,7 @@ hide:
       <div class="photo" style="background-image: url('../images/')"></div>
     </div>
     <div class="description">
-      <h1>Bantam Milling Workflows</h1>
+      <h1>CNC Milling Workflows</h1>
       <h2>- Spring, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> X-X min</span>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
       <div class="con">
