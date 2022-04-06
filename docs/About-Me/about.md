@@ -292,6 +292,26 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
   }
 }
 
+.css-s9tt3p {
+    display: none;
+} 
+
+.css-s9tt3p a {
+    display: none;
+} 
+
+.css-6kluu6 {
+    display: none;
+} 
+
+.wx-footer .css-s9tt3p {
+    display: none;
+}
+
+.css-lgbo0i {
+    display: none;
+}
+
 </style>
 
 <div class="stuff">
