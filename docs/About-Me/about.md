@@ -9,6 +9,16 @@ title: About Me
 
 <style>
 
+:root {
+    --lightdisplaystyle: inline;
+    --darkdisplaystyle: none;
+  }
+
+[data-md-color-scheme="slate"] {
+    --lightdisplaystyle: none;
+    --darkdisplaystyle: inline;
+}
+
 .stuff {
   height: 100%;
   width: 100%;
@@ -167,9 +177,18 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
 }
 
 .instafeed {
+  margin-top: -1em;
   height: 31.3em;
   overflow-y: hidden;
 } 
+
+.instalight {
+  display: var(--lightdisplaystyle);
+}
+
+.instadark {
+  display: var(--darkdisplaystyle);
+}
 
 .music {
    margin-bottom: -50px;
@@ -437,11 +456,16 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
        <p>--- Total Service - <strong>216.5 Hours</strong> ---</p>
       </center>
       <p>
-     <h2>@Teddymakesstuff On <i class="fa fa-instagram"></i> <span class="instatext">Instagram</span> -</h2>
+     <h2><a href="https://www.instagram.com/teddymakesstuff/">@Teddymakesstuff</a> On <i class="fa fa-instagram"></i> <span class="instatext">Instagram</span> -</h2>
       <center class="instafeed">
-        <div data-mc-src="d8c73608-fcc8-4290-8302-9ada8c38e0f5#instagram"></div>
-        <script src="https://cdn2.woxo.tech/a.js#624e1b157fd2b900217e7b0d" async data-usrc>
-        </script>
+        <span class="instalight">
+          <div data-mc-src="d8c73608-fcc8-4290-8302-9ada8c38e0f5#instagram"></div>
+          <script src="https://cdn2.woxo.tech/a.js#624e1b157fd2b900217e7b0d" async data-usrc></script>
+        </span>
+        <span class="instadark">
+          <div data-mc-src="5e60f977-523e-4cdd-82b3-56e287242388#instagram"></div>   
+          <script src="https://cdn2.woxo.tech/a.js#624e1b157fd2b900217e7b0d" async data-usrc></script>
+        </span>
       </center>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
       <p class="music">
