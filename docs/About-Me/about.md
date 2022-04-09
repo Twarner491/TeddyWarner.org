@@ -166,6 +166,11 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
   border-radius: 5px;
 }
 
+.instafeed {
+  height: 31.3em;
+  overflow-y: hidden;
+} 
+
 .music {
    margin-bottom: -50px;
 }
@@ -268,12 +273,30 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
 
 @media (max-height: 40em) {
   .sidebar {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
   }
+}
+
+@media (max-width: 100em) {
+  .instafeed {
+    height: 34em;
+  } 
+}
+
+@media (max-width: 76em) {
+  .instafeed {
+    height: 34em;
+  } 
+}
+
+@media (max-width: 72.3em) {
+  .instafeed {
+    height: 24em;
+  } 
 }
 
 @media (max-width: 68em) {
@@ -290,26 +313,36 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
   .coffeelarge {
     display: none;
   }
+  .instafeed {
+    height: 61vw;
+  } 
 }
 
-.css-s9tt3p {
-    display: none;
-} 
-
-.css-s9tt3p a {
-    display: none;
-} 
-
-.css-6kluu6 {
-    display: none;
-} 
-
-.wx-footer .css-s9tt3p {
-    display: none;
+@media (max-width: 59.892857142857146em) {
+  .instafeed {
+    height: 64vw;
+  } 
 }
 
-.css-lgbo0i {
+@media (max-width: 52em) {
+  .instafeed {
+    height: 67vw;
+  } 
+}
+
+@media (max-width: 49.69em) {
+  .instafeed {
+    height: 50vw;
+  } 
+}
+
+@media (max-width: 41.1em) {
+  .instafeed {
+    height: 42vw;
+  } 
+  .instatext {
     display: none;
+  }
 }
 
 </style>
@@ -404,6 +437,12 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
        <p>--- Total Service - <strong>216.5 Hours</strong> ---</p>
       </center>
       <p>
+     <h2>@Teddymakesstuff On <i class="fa fa-instagram"></i> <span class="instatext">Instagram</span> -</h2>
+      <center class="instafeed">
+        <div data-mc-src="d8c73608-fcc8-4290-8302-9ada8c38e0f5#instagram"></div>
+        <script src="https://cdn2.woxo.tech/a.js#624e1b157fd2b900217e7b0d" async data-usrc>
+        </script>
+      </center>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
       <p class="music">
        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=5eba25ddc4f74313">
