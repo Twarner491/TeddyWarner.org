@@ -300,6 +300,12 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
   }
 }
 
+@media (max-width: 125.1em) {
+  .instafeed {
+    height: 32.5em;
+  } 
+}
+
 @media (max-width: 100em) {
   .instafeed {
     height: 34em;
