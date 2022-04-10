@@ -145,6 +145,10 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 | `DELETE`    | :material-close:     Delete resource |
 
 
+$$
+\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+$$
+
 
 ``` py linenums="1" title="PYTHON EXAMPLE"
 import tensorflow as tf

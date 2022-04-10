@@ -16,6 +16,82 @@ tags:
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 
+<script>
+
+  var element = document.body;
+    element.classList.toggle("metric");
+
+
+function calculate() {
+
+  var unit = document.getElementById('units');
+
+  if (unit.checked) {
+    var pi = Math.PI
+    var d = document.getElementById('diameter').value;
+    var f = document.getElementById('flutes').value;
+    var s = document.getElementById('surface').value;
+    var c = document.getElementById('chips').value;
+    var dimp = d / 25.4;
+    var simp = s / 0.3048;
+    var cimp = c / 25.4;
+    var SpindalSpeed = simp / (pi * (1/12) * dimp);
+    document.getElementById('speed').value = parseFloat(SpindalSpeed.toFixed(2));
+
+    var FeedRateimp = SpindalSpeed * f * cimp;
+    var FeedRatemet = FeedRateimp * 25.4;
+    document.getElementById('feed').value = parseFloat(FeedRatemet.toFixed(2));
+
+    var PlungeRateimp = FeedRateimp * (1/2);
+    var PlungeRatemet = PlungeRateimp * 25.4;
+    document.getElementById('plunge').value = parseFloat(PlungeRatemet.toFixed(2));
+
+    var Stepdownimp = (1/2) * dimp;
+    var Stepdownmet = Stepdownimp * 25.4;
+    document.getElementById('down').value = parseFloat(Stepdownmet.toFixed(3));
+
+    var Stepoverimp = (9.2/20) * dimp;
+    var Stepovermet = Stepoverimp * 25.4;
+    document.getElementById('over').value = parseFloat(Stepovermet.toFixed(3));
+  } 
+  else {
+      var pi = Math.PI
+      var d = document.getElementById('diameter').value;
+      var f = document.getElementById('flutes').value;
+      var s = document.getElementById('surface').value;
+      var c = document.getElementById('chips').value;
+      var SpindalSpeed = s / (pi * (1/12) * d);
+      document.getElementById('speed').value = parseFloat(SpindalSpeed.toFixed(2));
+
+      var FeedRate = SpindalSpeed * f * c;
+      document.getElementById('feed').value = parseFloat(FeedRate.toFixed(2));
+
+      var PlungeRate = FeedRate * (1/2);
+      document.getElementById('plunge').value = parseFloat(PlungeRate.toFixed(2));
+
+      var Stepdown = (1/2) * d;
+      document.getElementById('down').value = parseFloat(Stepdown.toFixed(3));
+
+      var Stepover = (9.2/20) * d;
+      document.getElementById('over').value = parseFloat(Stepover.toFixed(3));
+  }
+} 
+
+function myFunction() {
+  
+    document.getElementById('diameter').value = "";
+    document.getElementById('flutes').value = "";
+    document.getElementById('surface').value = "";
+    document.getElementById('chips').value = "";
+    document.getElementById('speed').value = "";
+    document.getElementById('feed').value = "";
+    document.getElementById('plunge').value = "";
+    document.getElementById('down').value = "";
+    document.getElementById('over').value = "";
+}
+
+</script>
+
 <style>
 
 .share {
@@ -67,6 +143,67 @@ tags:
 .email {
   padding-left: 0.2em;
   padding-right: 1.5em;
+}
+ 
+.calcinput {
+  border:1px solid black;
+  border-radius:3px;
+  color:black;
+}
+ 
+.calcbutton {
+  background-color:transparent;
+  color:black;
+  border:1px solid black;
+  border-radius:3px;
+}
+
+.mm {
+    display: none;
+}
+
+.mmmin {
+    display: none;
+}
+
+.mmin {
+    display: none;
+}
+
+.in {
+    display: inline;
+}
+
+.inmin {
+    display: inline;
+}
+
+.ftmin {
+    display: inline;
+}
+
+.metric .mm {
+    display: inline;
+}
+
+.metric .mmmin {
+    display: inline;
+}
+
+.metric .mmin {
+    display: inline;
+}
+
+.metric .in {
+    display: none;
+}
+
+.metric .inmin {
+    display: none;
+}
+
+.metric .ftmin {
+    display: none;
 }
 
 </style>
@@ -133,6 +270,44 @@ Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com
 
 This machine was the needed spark for this CNC milling documentation article and will be the machine most of this page's projects are completed on. Thus, I'll be primarily focusing on a CAM to Bantam workflow in this article, highlighting powerful CAM workflows in [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview), along with our lab's [Vectric Aspire](https://www.vectric.com/products/aspire) workflow. This article will be based upon a collection of micro-projects to display these workflows, giving me plenty of the subtractive manufacturing projects I've been looking for :smile:.
 
+## Feeds & Speeds
+
+### Surface Speed Reference
+
+### Chip Load Reference
+
+### Feeds & Speeds Calcuator
+
+!!! abstract ""
+
+    Metric? <input type="checkbox" id="units" onclick="unit()">
+
+    Tool Diameter (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="diameter" type="text">
+        <br><br>
+    Flute Count: <input class="calcinput" id="flutes" type="text">
+        <br><br>
+    Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>): <input class="calcinput" id="surface" type="text">
+        <br><br>
+    Chip Load (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="chips" type="text">
+      
+    <hr></hr>
+
+    Spindle Speed (RPM): <input class="calcinput" id="speed" type="text" disabled>
+        <br><br>
+    Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>): <input class="calcinput" id="feed" type="text" disabled>
+        <br><br>
+    Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>): <input class="calcinput" id="plunge" type="text" disabled>
+        <br><br>
+    Stepdown (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="down" type="text" disabled>
+        <br><br>
+    Stepover (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="over" type="text" disabled>
+        <br><br>
+        
+    <button class="calcbutton" onclick="calculate()">Calculate</button>
+    <button class="calcbutton" onclick="myFunction()">Clear</button>
+
+[Fablab Feeds and Speeds Calcuator](https://pub.pages.cba.mit.edu/feed_speeds/)
+
 ## Fusion 360 CAM
 
 <center>
@@ -150,7 +325,6 @@ This machine was the needed spark for this CNC milling documentation article and
 ### Wax Seal Stamp
 
 ### Chocolate Molding
-
 
 
 ## Vectric Aspire
