@@ -18,9 +18,18 @@ tags:
 
 <script>
 
+function unit() {
   var element = document.body;
-    element.classList.toggle("metric");
+  element.classList.toggle("metric");
+}
 
+window.onload = function() {
+  var unit = document.getElementById('units');
+    if (unit.checked) {
+      var element = document.body;
+      element.classList.toggle("metric");
+    }
+}
 
 function calculate() {
 
@@ -159,51 +168,51 @@ function myFunction() {
 }
 
 .mm {
-    display: none;
+  display: none;
 }
 
 .mmmin {
-    display: none;
+  display: none;
 }
 
 .mmin {
-    display: none;
+  display: none;
 }
 
 .in {
-    display: inline;
+  display: inline;
 }
 
 .inmin {
-    display: inline;
+  display: inline;
 }
 
 .ftmin {
-    display: inline;
+  display: inline;
 }
 
 .metric .mm {
-    display: inline;
+  display: inline;
 }
 
 .metric .mmmin {
-    display: inline;
+  display: inline;
 }
 
 .metric .mmin {
-    display: inline;
+  display: inline;
 }
 
 .metric .in {
-    display: none;
+  display: none;
 }
 
 .metric .inmin {
-    display: none;
+  display: none;
 }
 
 .metric .ftmin {
-    display: none;
+  display: none;
 }
 
 </style>
@@ -272,13 +281,93 @@ This machine was the needed spark for this CNC milling documentation article and
 
 ## Feeds & Speeds
 
-### Surface Speed Reference
+???+ abstract "Feeds & Speeds Terminology"
 
-### Chip Load Reference
+    `Tool Diameter`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+    `Flute Count`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+    `Surface Speed`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.    
+
+    `Chip Load`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.   
+
+    `Spindle Speed`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+
+    `Feed Rate`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+
+    `Plunge Rate`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+
+    `Stepdown`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+
+    `Stepover`
+
+    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+
+### Material Reference
+
+<center>
+
+| Material                             | Description                          |
+| ------------------------------------ | ------------------------------------ |
+| Wax                                  |                                      |
+| Solid Wood                           |                                      |
+| Medium Density Fiberboard (MDF)      |                                      |
+| Oriented Strand Board (OBS)          |                                      |
+| High-density Polyethylene (HDPE)     |                                      |
+| Polyetheretherketone (PEEK)          |                                      |
+| Polyetherimide (PEI)                 |                                      |
+| Polyvinyl Chloride (PVC)             |                                      |
+| Polyoxymethylene (POM)               |                                      |
+| Acrylonitrile Butadiene Styrene (ABS)|                                      |
+| Polycarbonate (PC)                   |                                      |
+| Nylon                                |                                      |
+| Acrylic                              |                                      |
+| Aluminium                            |                                      |
+| Brass                                |                                      |
+| Copper                               |                                      |
+| Steel                                |                                      |
+| Stainless Steel                      |                                      |
+| Insulation Foam                      |                                      |
+
+</center>
+
+
+[Fablab Feeds and Speeds Calcuator](https://pub.pages.cba.mit.edu/feed_speeds/)
+
+[Narrowing Material Options for CNC Machining](https://www.protolabs.com/resources/design-tips/cnc-machining-materials/)
+
+[CNC Milling Materials: What Are They & Which Should You Choose for Your Application?](https://www.3erp.com/blog/cnc-milling-materials-choose-application/)
+
+[Selecting the Right CNC Material](https://www.hubs.com/knowledge-base/selecting-right-cnc-material/)
 
 ### Feeds & Speeds Calcuator
 
-!!! abstract ""
+!!! example ""
 
     Metric? <input type="checkbox" id="units" onclick="unit()">
 
@@ -303,10 +392,8 @@ This machine was the needed spark for this CNC milling documentation article and
     Stepover (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="over" type="text" disabled>
         <br><br>
         
-    <button class="calcbutton" onclick="calculate()">Calculate</button>
-    <button class="calcbutton" onclick="myFunction()">Clear</button>
-
-[Fablab Feeds and Speeds Calcuator](https://pub.pages.cba.mit.edu/feed_speeds/)
+    <button class="calcbutton" onclick="calculate()"> Calculate </button>
+    <button class="calcbutton" onclick="myFunction()"> Clear </button>
 
 ## Fusion 360 CAM
 
