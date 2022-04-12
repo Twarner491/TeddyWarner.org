@@ -16,6 +16,8 @@ tags:
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
 
 function unit() {
@@ -97,6 +99,12 @@ function myFunction() {
     document.getElementById('plunge').value = "";
     document.getElementById('down').value = "";
     document.getElementById('over').value = "";
+}
+
+function showHideRow(row) {
+  var element = document.body;
+    element.classList.toggle("toggle");
+	$("#" + row).toggle();
 }
 
 </script>
@@ -215,6 +223,172 @@ function myFunction() {
   display: none;
 }
 
+.hidden_row {
+	display: none;
+  border-top: none;
+}
+
+#right1 {
+  display: inline;
+}
+
+#down1 {
+  display: none; 
+}
+
+#right2 {
+  display: inline;
+}
+
+#down2 {
+  display: none; 
+}
+
+#right3 {
+  display: inline;
+}
+
+#down3 {
+  display: none; 
+}
+
+#right4 {
+  display: inline;
+}
+
+#down4 {
+  display: none; 
+}
+
+#right5 {
+  display: inline;
+}
+
+#down5 {
+  display: none; 
+}
+
+#right6 {
+  display: inline;
+}
+
+#down6 {
+  display: none; 
+}
+
+#right7 {
+  display: inline;
+}
+
+#down7 {
+  display: none; 
+}
+
+#right8 {
+  display: inline;
+}
+
+#down8 {
+  display: none; 
+}
+
+#right9 {
+  display: inline;
+}
+
+#down9 {
+  display: none; 
+}
+
+#right10 {
+  display: inline;
+}
+
+#down10 {
+  display: none; 
+}
+
+#right11 {
+  display: inline;
+}
+
+#down11 {
+  display: none; 
+}
+
+#right12 {
+  display: inline;
+}
+
+#down12 {
+  display: none; 
+}
+
+#right13 {
+  display: inline;
+}
+
+#down13 {
+  display: none; 
+}
+
+#right14 {
+  display: inline;
+}
+
+#down14 {
+  display: none; 
+}
+
+#right15 {
+  display: inline;
+}
+
+#down15 {
+  display: none; 
+}
+
+#right16 {
+  display: inline;
+}
+
+#down16 {
+  display: none; 
+}
+
+#right17 {
+  display: inline;
+}
+
+#down17 {
+  display: none; 
+}
+
+#right18 {
+  display: inline;
+}
+
+#down18 {
+  display: none; 
+}
+
+#right19 {
+  display: inline;
+}
+
+#down19 {
+  display: none; 
+}
+
+.toggle #right1 {
+  display: none;
+}
+
+.toggle #down1 {
+  display: inline; 
+}
+
+
 </style>
 
 # CNC Milling Workflows (Junior Year - 2022)
@@ -288,71 +462,256 @@ This machine was the needed spark for this CNC milling documentation article and
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.
 
+        <center>
+
+          ![](../images/MillingWorkflow/darkdiameter.png#only-light){width="50%"}
+          ![](../images/MillingWorkflow/lightdiameter.png#only-dark){width="50%"}
+
+        </center>
+
     `Flute Count`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+        <center>
+
+          ![](../images/MillingWorkflow/darkflute.png#only-light){width="50%"}
+          ![](../images/MillingWorkflow/lightflute.png#only-dark){width="50%"}
+
+        </center>
 
     `Surface Speed`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.    
 
+        <center>
+
+          ![](../images/MillingWorkflow/darksurface.png#only-light){width="40%"}
+          ![](../images/MillingWorkflow/lightsurface.png#only-dark){width="40%"}
+
+        </center>
+
     `Chip Load`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.   
+
+        <center>
+
+          ![](../images/MillingWorkflow/darkchip.png#only-light){width="32%"}
+          ![](../images/MillingWorkflow/lightchip.png#only-dark){width="32%"}
+
+        </center>
 
     `Spindle Speed`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
 
+        $$
+        Spindle Speed (RPM) = {Surface Speed (ft/min) \over π ∗ {1 \over 12} ∗ Tool Diameter (in)}
+        $$
+
     `Feed Rate`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
+
+        $$
+        Feed Rate (in/min) = Spindle Speed (RPM) ∗ Flute Count ∗ Chip Load (in)
+        $$
 
     `Plunge Rate`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
 
+        $$
+        Plunge Rate(in/min) = Feed Rate (in/min) * {1 \over 2}
+        $$
+
     `Stepdown`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
+
+        $$
+        Stepover(in) = Tool Diameter (in) * {3 \over 5}
+        $$
 
     `Stepover`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
 
+        $$
+        Stepover(in) = Tool Diameter (in) * {9 \over 20}
+        $$
+
 ### Material Reference
 
 <center>
 
-| Material                             | Description                          |
-| ------------------------------------ | ------------------------------------ |
-| Wax                                  |                                      |
-| Solid Wood                           |                                      |
-| Medium Density Fiberboard (MDF)      |                                      |
-| Oriented Strand Board (OBS)          |                                      |
-| High-density Polyethylene (HDPE)     |                                      |
-| Polyetheretherketone (PEEK)          |                                      |
-| Polyetherimide (PEI)                 |                                      |
-| Polyvinyl Chloride (PVC)             |                                      |
-| Polyoxymethylene (POM)               |                                      |
-| Acrylonitrile Butadiene Styrene (ABS)|                                      |
-| Polycarbonate (PC)                   |                                      |
-| Nylon                                |                                      |
-| Acrylic                              |                                      |
-| Aluminium                            |                                      |
-| Brass                                |                                      |
-| Copper                               |                                      |
-| Steel                                |                                      |
-| Stainless Steel                      |                                      |
-| Insulation Foam                      |                                      |
+<table>
+    <tr>
+        <td><b>Material</b></td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr onclick="showHideRow('hidden_row1');">
+        <td><i id="right1" class="fas fa-angle-right"></i><i id="down1" class="fas fa-angle-down"></i> Wax</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row1" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row2');">
+        <td><i id="right2" class="fas fa-angle-right"></i><i id="down2" class="fas fa-angle-down"></i> Solid Wood</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row2" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row3');">
+        <td><i id="right3" class="fas fa-angle-right"></i><i id="down3" class="fas fa-angle-down"></i> Medium Density Fiberboard (MDF)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row3" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row4');">
+        <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board (OBS)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row4" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row5');">
+        <td><i id="right5" class="fas fa-angle-right"></i><i id="down5" class="fas fa-angle-down"></i> High-density Polyethylene (HDPE)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row5" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row6');">
+        <td><i id="right6" class="fas fa-angle-right"></i><i id="down6" class="fas fa-angle-down"></i> Polyetheretherketone (PEEK)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row6" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row7');">
+        <td><i id="right7" class="fas fa-angle-right"></i><i id="down7" class="fas fa-angle-down"></i> Polyetherimide (PEI)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row7" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row8');">
+        <td><i id="right8" class="fas fa-angle-right"></i><i id="down8" class="fas fa-angle-down"></i> Polyvinyl Chloride (PVC)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row8" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row9');">
+        <td><i id="right9" class="fas fa-angle-right"></i><i id="down9" class="fas fa-angle-down"></i> Polyoxymethylene (POM)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row9" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row10');">
+        <td><i id="right10" class="fas fa-angle-right"></i><i id="down10" class="fas fa-angle-down"></i> Acrylonitrile Butadiene Styrene (ABS)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row10" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row11');">
+        <td><i id="right11" class="fas fa-angle-right"></i><i id="down11" class="fas fa-angle-down"></i> Polycarbonate (PC)</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row11" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row12');">
+        <td><i id="right12" class="fas fa-angle-right"></i><i id="down12" class="fas fa-angle-down"></i> Nylon</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row12" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row13');">
+        <td><i id="right13" class="fas fa-angle-right"></i><i id="down13" class="fas fa-angle-down"></i> Acrylic</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row13" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row14');">
+        <td><i id="right14" class="fas fa-angle-right"></i><i id="down14" class="fas fa-angle-down"></i> Aluminium</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row14" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row15');">
+        <td><i id="right15" class="fas fa-angle-right"></i><i id="down15" class="fas fa-angle-down"></i> Brass</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row15" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row16');">
+        <td><i id="right16" class="fas fa-angle-right"></i><i id="down16" class="fas fa-angle-down"></i> Copper</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row16" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row17');">
+        <td><i id="right17" class="fas fa-angle-right"></i><i id="down17" class="fas fa-angle-down"></i> Steel</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row17" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row18');">
+        <td><i id="right18" class="fas fa-angle-right"></i><i id="down18" class="fas fa-angle-down"></i> Stainless Steel</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row18" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row19');">
+        <td><i id="right19" class="fas fa-angle-right"></i><i id="down19" class="fas fa-angle-down"></i> Insulation Foam</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row19" class="hidden_row">
+			<td>
+			</td>
+		</tr>
+</table>
 
 </center>
 
