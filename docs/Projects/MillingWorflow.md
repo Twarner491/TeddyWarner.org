@@ -103,7 +103,7 @@ function myFunction() {
 
 function showHideRow(row) {
   var element = document.body;
-    element.classList.toggle("toggle");
+    element.classList.toggle(row);
 	$("#" + row).toggle();
 }
 
@@ -380,14 +380,149 @@ function showHideRow(row) {
   display: none; 
 }
 
-.toggle #right1 {
+.hidden_row1 #right1 {
   display: none;
 }
 
-.toggle #down1 {
+.hidden_row1 #down1 {
   display: inline; 
 }
 
+.hidden_row2 #right2 {
+  display: none;
+}
+
+.hidden_row2 #down2 {
+  display: inline; 
+}
+
+.hidden_row3 #right3 {
+  display: none;
+}
+
+.hidden_row3 #down3 {
+  display: inline; 
+}
+
+.hidden_row4 #right4 {
+  display: none;
+}
+
+.hidden_row4 #down4 {
+  display: inline; 
+}
+
+.hidden_row5 #right5 {
+  display: none;
+}
+
+.hidden_row5 #down5 {
+  display: inline; 
+}
+
+.hidden_row6 #right6 {
+  display: none;
+}
+
+.hidden_row6 #down6 {
+  display: inline; 
+}
+
+.hidden_row7 #right7 {
+  display: none;
+}
+
+.hidden_row7 #down7 {
+  display: inline; 
+}
+
+.hidden_row8 #right8 {
+  display: none;
+}
+
+.hidden_row8 #down8 {
+  display: inline; 
+}
+
+.hidden_row9 #right9 {
+  display: none;
+}
+
+.hidden_row9 #down9 {
+  display: inline; 
+}
+
+.hidden_row10 #right10 {
+  display: none;
+}
+
+.hidden_row10 #down10 {
+  display: inline; 
+}
+
+.hidden_row11 #right11 {
+  display: none;
+}
+
+.hidden_row11 #down11 {
+  display: inline; 
+}
+
+.hidden_row12 #right12 {
+  display: none;
+}
+
+.hidden_row12 #down12 {
+  display: inline; 
+}
+
+.hidden_row13 #right13 {
+  display: none;
+}
+
+.hidden_row13 #down13 {
+  display: inline; 
+}
+
+.hidden_row14 #right14 {
+  display: none;
+}
+
+.hidden_row14 #down14 {
+  display: inline; 
+}
+
+.hidden_row15 #right15 {
+  display: none;
+}
+
+.hidden_row15 #down15 {
+  display: inline; 
+}
+
+.hidden_row16 #right16 {
+  display: none;
+}
+
+.hidden_row16 #down16 {
+  display: inline; 
+}
+
+.hidden_row17 #right17 {
+  display: none;
+}
+
+.hidden_row17 #down17 {
+  display: inline; 
+}
+
+.hidden_row18 #right18 {
+  display: none;
+}
+
+.hidden_row18 #down18 {
+  display: inline; 
+}
 
 </style>
 
@@ -561,7 +696,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr onclick="showHideRow('hidden_row1');">
         <td><i id="right1" class="fas fa-angle-right"></i><i id="down1" class="fas fa-angle-down"></i> Wax</td>
-        <td></td>
+        <td>A easily milled medium, commonly used for casting cores, molds, and CNC program proofs.</td>
     </tr>
     <tr id="hidden_row1" class="hidden_row">
 			<td>
@@ -576,7 +711,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row3');">
-        <td><i id="right3" class="fas fa-angle-right"></i><i id="down3" class="fas fa-angle-down"></i> Medium Density Fiberboard (MDF)</td>
+        <td><i id="right3" class="fas fa-angle-right"></i><i id="down3" class="fas fa-angle-down"></i> Medium Density Fiberboard <code>MDF</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row3" class="hidden_row">
@@ -584,7 +719,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row4');">
-        <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board (OBS)</td>
+        <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board <code>OBS</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row4" class="hidden_row">
@@ -592,7 +727,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row5');">
-        <td><i id="right5" class="fas fa-angle-right"></i><i id="down5" class="fas fa-angle-down"></i> High-density Polyethylene (HDPE)</td>
+        <td><i id="right5" class="fas fa-angle-right"></i><i id="down5" class="fas fa-angle-down"></i> High-density Polyethylene <code>HDPE</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row5" class="hidden_row">
@@ -600,7 +735,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row6');">
-        <td><i id="right6" class="fas fa-angle-right"></i><i id="down6" class="fas fa-angle-down"></i> Polyetheretherketone (PEEK)</td>
+        <td><i id="right6" class="fas fa-angle-right"></i><i id="down6" class="fas fa-angle-down"></i> Polyetheretherketone <code>PEEK</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row6" class="hidden_row">
@@ -608,7 +743,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row7');">
-        <td><i id="right7" class="fas fa-angle-right"></i><i id="down7" class="fas fa-angle-down"></i> Polyetherimide (PEI)</td>
+        <td><i id="right7" class="fas fa-angle-right"></i><i id="down7" class="fas fa-angle-down"></i> Polyetherimide <code>PEI</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row7" class="hidden_row">
@@ -616,7 +751,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row8');">
-        <td><i id="right8" class="fas fa-angle-right"></i><i id="down8" class="fas fa-angle-down"></i> Polyvinyl Chloride (PVC)</td>
+        <td><i id="right8" class="fas fa-angle-right"></i><i id="down8" class="fas fa-angle-down"></i> Polyvinyl Chloride <code>PVC</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row8" class="hidden_row">
@@ -624,7 +759,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row9');">
-        <td><i id="right9" class="fas fa-angle-right"></i><i id="down9" class="fas fa-angle-down"></i> Polyoxymethylene (POM)</td>
+        <td><i id="right9" class="fas fa-angle-right"></i><i id="down9" class="fas fa-angle-down"></i> Polyoxymethylene <code>POM</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row9" class="hidden_row">
@@ -632,7 +767,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row10');">
-        <td><i id="right10" class="fas fa-angle-right"></i><i id="down10" class="fas fa-angle-down"></i> Acrylonitrile Butadiene Styrene (ABS)</td>
+        <td><i id="right10" class="fas fa-angle-right"></i><i id="down10" class="fas fa-angle-down"></i> Acrylonitrile Butadiene Styrene <code>ABS</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row10" class="hidden_row">
@@ -640,7 +775,7 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row11');">
-        <td><i id="right11" class="fas fa-angle-right"></i><i id="down11" class="fas fa-angle-down"></i> Polycarbonate (PC)</td>
+        <td><i id="right11" class="fas fa-angle-right"></i><i id="down11" class="fas fa-angle-down"></i> Polycarbonate <code>PC</code></td>
         <td></td>
     </tr>
     <tr id="hidden_row11" class="hidden_row">
@@ -696,18 +831,10 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row18');">
-        <td><i id="right18" class="fas fa-angle-right"></i><i id="down18" class="fas fa-angle-down"></i> Stainless Steel</td>
-        <td></td>
-    </tr>
-    <tr id="hidden_row18" class="hidden_row">
-			<td>
-			</td>
-		</tr>
-    <tr onclick="showHideRow('hidden_row19');">
         <td><i id="right19" class="fas fa-angle-right"></i><i id="down19" class="fas fa-angle-down"></i> Insulation Foam</td>
         <td></td>
     </tr>
-    <tr id="hidden_row19" class="hidden_row">
+    <tr id="hidden_row18" class="hidden_row">
 			<td>
 			</td>
 		</tr>
