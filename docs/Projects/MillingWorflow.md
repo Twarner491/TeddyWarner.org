@@ -700,6 +700,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row1" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/wax.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row2');">
@@ -708,6 +709,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row2" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/wood.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row3');">
@@ -716,6 +718,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row3" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/mdf.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row4');">
@@ -724,6 +727,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row4" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/obs.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row5');">
@@ -732,6 +736,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row5" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/hdpe.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row6');">
@@ -740,6 +745,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row6" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/peek.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row7');">
@@ -748,6 +754,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row7" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pei.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row8');">
@@ -756,6 +763,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row8" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pvc.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row9');">
@@ -764,6 +772,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row9" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pom.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row10');">
@@ -772,6 +781,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row10" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/abs.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row11');">
@@ -780,6 +790,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row11" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pc.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row12');">
@@ -788,6 +799,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row12" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/nylon.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row13');">
@@ -796,6 +808,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row13" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/acrylic.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row14');">
@@ -804,6 +817,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row14" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/aluminum.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row15');">
@@ -812,6 +826,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row15" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/brass.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row16');">
@@ -820,6 +835,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row16" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/copper.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row17');">
@@ -828,6 +844,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row17" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/steel.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row18');">
@@ -836,6 +853,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row18" class="hidden_row">
 			<td>
+        <img src="https://teddywarner.org/images/MillingWorkflow/materials/foam.png">
 			</td>
 		</tr>
 </table>
