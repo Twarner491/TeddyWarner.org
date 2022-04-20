@@ -111,6 +111,19 @@ function showHideRow(row) {
 
 <style>
 
+.profilepic {
+  display: inline;
+  float: left; 
+  margin-top: -7px;
+  width: 35px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.abtlinks a {
+  color: var(--md-default-fg-color);
+}
+
 .share {
   float:right;
   margin-top: 0px;
@@ -160,6 +173,20 @@ function showHideRow(row) {
 .email {
   padding-left: 0.2em;
   padding-right: 1.5em;
+}
+
+@media (max-width: 40.55384615384616em) {
+  .share {
+    margin-top: -3.5em;
+    margin-right: -1.3em;
+  } 
+}
+
+@media (max-width: 37.4em) {
+  .share {
+    margin-top: -4.8em;
+    margin-right: -1.3em;
+  } 
 }
  
 .calcinput {
@@ -221,11 +248,6 @@ function showHideRow(row) {
 
 .metric .ftmin {
   display: none;
-}
-
-.hidden_row {
-	display: none;
-  border-top: none;
 }
 
 #right1 {
@@ -526,43 +548,20 @@ function showHideRow(row) {
 
 </style>
 
-# CNC Milling Workflows (Junior Year - 2022)
+# CNC Milling Workflows
 
-<!-- Compleation Badge
+<div style="margin-top: -0.8em;">
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner </a><span class="abt" style="font-weight: 300; padding-left: 6px;">| Junior Year - 2022 | <i class="far fa-clock"></i> X-X minutes</span></span></span>
+  <span class="share" style=" color: inherit;">
+  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Milling/"><i class="fab fa-facebook-square"></i></a>
+  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Milling/&text=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
+  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Milling/&media=&description=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Milling/"><i class="fab fa-linkedin"></i></a>
+  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/Milling/%0ACheck%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+  </span>
+</div>
 
-![progress]()
-
-Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
-Pending - https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square
-Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
-Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
--->
-
-![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
-![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
-
-<!--- Social Links
-
-HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
-
-<span class="share" style=" color: inherit;">
-<a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
-<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
-<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
-<a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
-<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
-</span>
-
--->
-
-**:fontawesome-regular-clock: X-X minutes**
-<span class="share" style=" color: inherit;">
-<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Milling/"><i class="fab fa-facebook-square"></i></a>
-<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Milling/&text=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
-<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Milling/&media=&description=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
-<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Milling/"><i class="fab fa-linkedin"></i></a>
-<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/Milling/%0ACheck%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
-</span>
+---
 
 Subtractive manufacturing is a process I've always found mesmerizing. Although additive processes such as 3D printing allow for the creation of something from seemingly nothing, I believe it's even cooler to watch the morphing of existing stock into a different object. Despite this interest, I feel as though I've barely scratched the surface of CNC - primarily focusing on PCB milling in my subtractive manufacturing projects. I made a first attempt to dive into more subtractive manufacturing work a couple of years ago now when I built [V1 Engineering's](https://www.v1engineering.com/) original [MPCNC](https://docs.v1engineering.com/mpcnc/burly/).
 
@@ -698,162 +697,324 @@ This machine was the needed spark for this CNC milling documentation article and
         <td><i id="right1" class="fas fa-angle-right"></i><i id="down1" class="fas fa-angle-down"></i> Wax</td>
         <td>A easily milled medium, commonly used for casting cores, molds, and CNC program proofs.</td>
     </tr>
-    <tr id="hidden_row1" class="hidden_row">
+    <tr id="hidden_row1" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/wax.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/wax.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row2');">
         <td><i id="right2" class="fas fa-angle-right"></i><i id="down2" class="fas fa-angle-down"></i> Solid Wood</td>
         <td></td>
     </tr>
-    <tr id="hidden_row2" class="hidden_row">
+    <tr id="hidden_row2" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/wood.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/wood.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row3');">
         <td><i id="right3" class="fas fa-angle-right"></i><i id="down3" class="fas fa-angle-down"></i> Medium Density Fiberboard <code>MDF</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row3" class="hidden_row">
+    <tr id="hidden_row3" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/mdf.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/mdf.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row4');">
         <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board <code>OBS</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row4" class="hidden_row">
+    <tr id="hidden_row4" style="display: none;">
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+			</td>
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/obs.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/obs.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row5');">
         <td><i id="right5" class="fas fa-angle-right"></i><i id="down5" class="fas fa-angle-down"></i> High-density Polyethylene <code>HDPE</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row5" class="hidden_row">
+    <tr id="hidden_row5" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/hdpe.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/hdpe.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row6');">
         <td><i id="right6" class="fas fa-angle-right"></i><i id="down6" class="fas fa-angle-down"></i> Polyetheretherketone <code>PEEK</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row6" class="hidden_row">
+    <tr id="hidden_row6" style="display: none;">
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+			</td>
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/peek.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/peek.png" align="left">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row7');">
         <td><i id="right7" class="fas fa-angle-right"></i><i id="down7" class="fas fa-angle-down"></i> Polyetherimide <code>PEI</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row7" class="hidden_row">
+    <tr id="hidden_row7" style="display: none;">
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+			</td>
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pei.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pei.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row8');">
         <td><i id="right8" class="fas fa-angle-right"></i><i id="down8" class="fas fa-angle-down"></i> Polyvinyl Chloride <code>PVC</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row8" class="hidden_row">
+    <tr id="hidden_row8" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pvc.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pvc.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row9');">
         <td><i id="right9" class="fas fa-angle-right"></i><i id="down9" class="fas fa-angle-down"></i> Polyoxymethylene <code>POM</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row9" class="hidden_row">
+    <tr id="hidden_row9" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pom.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pom.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row10');">
         <td><i id="right10" class="fas fa-angle-right"></i><i id="down10" class="fas fa-angle-down"></i> Acrylonitrile Butadiene Styrene <code>ABS</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row10" class="hidden_row">
+    <tr id="hidden_row10" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/abs.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/abs.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row11');">
         <td><i id="right11" class="fas fa-angle-right"></i><i id="down11" class="fas fa-angle-down"></i> Polycarbonate <code>PC</code></td>
         <td></td>
     </tr>
-    <tr id="hidden_row11" class="hidden_row">
+    <tr id="hidden_row11" style="display: none;">
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+			</td>
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/pc.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pc.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row12');">
         <td><i id="right12" class="fas fa-angle-right"></i><i id="down12" class="fas fa-angle-down"></i> Nylon</td>
         <td></td>
     </tr>
-    <tr id="hidden_row12" class="hidden_row">
+    <tr id="hidden_row12" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/nylon.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/nylon.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row13');">
         <td><i id="right13" class="fas fa-angle-right"></i><i id="down13" class="fas fa-angle-down"></i> Acrylic</td>
         <td></td>
     </tr>
-    <tr id="hidden_row13" class="hidden_row">
+    <tr id="hidden_row13" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/acrylic.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/acrylic.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row14');">
         <td><i id="right14" class="fas fa-angle-right"></i><i id="down14" class="fas fa-angle-down"></i> Aluminium</td>
         <td></td>
     </tr>
-    <tr id="hidden_row14" class="hidden_row">
+    <tr id="hidden_row14" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/aluminum.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/aluminum.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row15');">
         <td><i id="right15" class="fas fa-angle-right"></i><i id="down15" class="fas fa-angle-down"></i> Brass</td>
         <td></td>
     </tr>
-    <tr id="hidden_row15" class="hidden_row">
+    <tr id="hidden_row15" style="display: none;">
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+			</td>
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/brass.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/brass.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row16');">
         <td><i id="right16" class="fas fa-angle-right"></i><i id="down16" class="fas fa-angle-down"></i> Copper</td>
         <td></td>
     </tr>
-    <tr id="hidden_row16" class="hidden_row">
+    <tr id="hidden_row16" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/copper.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/copper.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row17');">
         <td><i id="right17" class="fas fa-angle-right"></i><i id="down17" class="fas fa-angle-down"></i> Steel</td>
         <td></td>
     </tr>
-    <tr id="hidden_row17" class="hidden_row">
+    <tr id="hidden_row17" style="display: none;">
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+			</td>
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/steel.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/steel.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row18');">
         <td><i id="right19" class="fas fa-angle-right"></i><i id="down19" class="fas fa-angle-down"></i> Insulation Foam</td>
         <td></td>
     </tr>
-    <tr id="hidden_row18" class="hidden_row">
+    <tr id="hidden_row18" style="display: none;">
 			<td>
-        <img src="https://teddywarner.org/images/MillingWorkflow/materials/foam.png">
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/foam.png">
+			</td>
+      <td>
+        <ul>
+        <li>One item</li>
+        <li>Another item</li>
+        <li>And back at the main level</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
 			</td>
 		</tr>
 </table>

@@ -65,7 +65,7 @@ tags:
 
 </style>
 
-# PROJECT-TITLE (SCHOOL YEAR - YEAR)
+# PROJECT-TITLE
 
 <!-- Compleation Badge
 
@@ -94,7 +94,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**:fontawesome-regular-clock: X-X minutes**
+Teddy Warner | SCHOOL YEAR - YEAR | :fontawesome-regular-clock: X-X minutes
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
 <a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
@@ -103,7 +103,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
 </span>
 
-
+---
 
 [Hyperlink](URl)
 
