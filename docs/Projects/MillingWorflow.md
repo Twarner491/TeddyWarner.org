@@ -178,19 +178,30 @@ function showHideRow(row) {
 @media (max-width: 40.55384615384616em) {
   .share {
     margin-top: -3.5em;
-    margin-right: -1.3em;
+    margin-right: -1.4em;
   } 
 }
 
 @media (max-width: 37.4em) {
   .share {
     margin-top: -4.8em;
-    margin-right: -1.3em;
+    margin-right: -1.4em;
+  } 
+}
+ 
+ @media (max-width: 35em) {
+  .year {
+    display: none;
+  }
+  .share {
+    font-size: 1em;
+    margin-top: 0.05em;
+    margin-right: -1.5em;
   } 
 }
  
 .calcinput {
-  border:1px solid black;
+  border: 1px solid black;
   border-radius:3px;
   color:black;
 }
@@ -551,7 +562,7 @@ function showHideRow(row) {
 # CNC Milling Workflows
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner </a><span class="abt" style="font-weight: 300; padding-left: 6px;">| Junior Year - 2022 | <i class="far fa-clock"></i> X-X minutes</span></span></span>
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Junior Year - 2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Milling/"><i class="fab fa-facebook-square"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Milling/&text=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
