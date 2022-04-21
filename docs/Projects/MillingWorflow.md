@@ -188,13 +188,32 @@ function showHideRow(row) {
     margin-right: -1.4em;
   } 
 }
- 
+
  @media (max-width: 35em) {
   .year {
     display: none;
   }
   .share {
     font-size: 1em;
+    margin-top: 0.05em;
+    margin-right: -1.5em;
+  } 
+}
+ 
+ @media (max-width: 28em) {
+   .profilepic {
+    margin-top: -4.5px;
+    width: 30px;
+    height: 30px;
+  }
+  .abtlinks {
+    font-size: 0.9em;
+   }
+  .year {
+    display: none;
+  }
+  .share {
+    font-size: 0.9em;
     margin-top: 0.05em;
     margin-right: -1.5em;
   } 
