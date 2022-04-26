@@ -17,6 +17,19 @@ tags:
 
 <style>
 
+.profilepic {
+  display: inline;
+  float: left; 
+  margin-top: -7px;
+  width: 35px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.abtlinks a {
+  color: var(--md-default-fg-color);
+}
+
 .share {
   float:right;
   margin-top: 0px;
@@ -68,22 +81,53 @@ tags:
   padding-right: 1.5em;
 }
 
+@media (max-width: 40.55384615384616em) {
+  .share {
+    margin-top: -3.5em;
+    margin-right: -1.4em;
+  } 
+}
+
+@media (max-width: 37.4em) {
+  .share {
+    margin-top: -4.8em;
+    margin-right: -1.4em;
+  } 
+}
+
+ @media (max-width: 35em) {
+  .year {
+    display: none;
+  }
+  .share {
+    font-size: 1em;
+    margin-top: 0.05em;
+    margin-right: -1.5em;
+  } 
+}
+ 
+ @media (max-width: 28em) {
+   .profilepic {
+    margin-top: -4.5px;
+    width: 30px;
+    height: 30px;
+  }
+  .abtlinks {
+    font-size: 0.9em;
+   }
+  .year {
+    display: none;
+  }
+  .share {
+    font-size: 0.9em;
+    margin-top: 0.05em;
+    margin-right: -1.5em;
+  } 
+}
+
 </style>
 
-# UPDI Serial Programming (Junior Year - 2021)
-
-<!-- Compleation Badge
-
-![progress]()
-
-Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
-Pending - https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square
-Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
-Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
--->
-
-![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
-![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
+# UPDI Serial Programming
 
 <!--- Social Links
 
@@ -99,14 +143,18 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**:fontawesome-regular-clock: 24-31 minutes**
-<span class="share" style=" color: inherit;">
-<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-facebook-square"></i></a>
-<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fab fa-twitter"></i></a>
-<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/SerialUPDI/&media=&description=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fab fa-pinterest"></i></a>
-<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-linkedin"></i></a>
-<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fas fa-paper-plane"></i></a>
-</span>
+<div style="margin-top: -0.8em;">
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Junior Year - 2021 </span>| <i class="far fa-clock"></i> 24-31 minutes</span></span></span>
+  <span class="share" style=" color: inherit;">
+  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-facebook-square"></i></a>
+  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fab fa-twitter"></i></a>
+  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/SerialUPDI/&media=&description=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fab fa-pinterest"></i></a>
+  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-linkedin"></i></a>
+  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fas fa-paper-plane"></i></a>
+  </span>
+</div>
+
+---
 
 Many modern small chipsets rely on the Unified Program and Debug Interface (UPDI), a one-wire interface allowing for the changing of fuzes, burning of bootloaders, or uploading of sketches to any AVR Dx-series parts or any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus). Due to their reliance on the Unified Program and Debug Interface, these parts cannot be programmed with classic ISP style programmers, and thus a UPDI enabled programmer is required. Although UPDI is the only programming option in the case of these parts, the one-wire interface is superior to the four-wire of a classic ISP programmer and allows for quicker programming setup and less cluttered boards due to fewer programming pins. This USB-C UPDI programmer is built with a [Ft232rl](https://ftdichip.com/products/ft232rl/) chip allowing for serial interfacing, and runs alongside the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library witch equips your IDE for serial UPDI programming via a portable python implementation.
 

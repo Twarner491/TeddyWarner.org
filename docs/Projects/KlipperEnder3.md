@@ -15,6 +15,19 @@ tags:
 
 <style>
 
+.profilepic {
+  display: inline;
+  float: left; 
+  margin-top: -7px;
+  width: 35px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.abtlinks a {
+  color: var(--md-default-fg-color);
+}
+
 .share {
   float:right;
   margin-top: 0px;
@@ -66,22 +79,53 @@ tags:
   padding-right: 1.5em;
 }
 
+@media (max-width: 40.55384615384616em) {
+  .share {
+    margin-top: -3.5em;
+    margin-right: -1.4em;
+  } 
+}
+
+@media (max-width: 37.4em) {
+  .share {
+    margin-top: -4.8em;
+    margin-right: -1.4em;
+  } 
+}
+
+ @media (max-width: 35em) {
+  .year {
+    display: none;
+  }
+  .share {
+    font-size: 1em;
+    margin-top: 0.05em;
+    margin-right: -1.5em;
+  } 
+}
+ 
+ @media (max-width: 28em) {
+   .profilepic {
+    margin-top: -4.5px;
+    width: 30px;
+    height: 30px;
+  }
+  .abtlinks {
+    font-size: 0.9em;
+   }
+  .year {
+    display: none;
+  }
+  .share {
+    font-size: 0.9em;
+    margin-top: 0.05em;
+    margin-right: -1.5em;
+  } 
+}
+
 </style>
 
-# Klipper Enabled Ender 3 (Sophmore Year - 2021)
-
-<!-- Compleation Badge
-
-![progress]()
-
-Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
-Pending - https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square
-Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
-Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
--->
-
-![Progress](https://img.shields.io/badge/progress-done!-success?style=flat-square)
-![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
+# Klipper Enabled Ender 3
 
 <!--- Social Links
 
@@ -97,14 +141,18 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 -->
 
-**:fontawesome-regular-clock: 10-12 minutes**
-<span class="share" style=" color: inherit;">
-<a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-facebook-square"></i></a>
-<a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/KlipperEnder3/&text=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on"><i class="fab fa-twitter"></i></a>
-<a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/KlipperEnder3/&media=&description=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/%20!"><i class="fab fa-pinterest"></i></a>
-<a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-linkedin"></i></a>
-<a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/"><i class="fas fa-paper-plane"></i></a>
-</span>
+<div style="margin-top: -0.8em;">
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Sophmore Year - 2021 </span>| <i class="far fa-clock"></i> 10-12 minutes</span></span></span>
+  <span class="share" style=" color: inherit;">
+  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-facebook-square"></i></a>
+  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/KlipperEnder3/&text=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on"><i class="fab fa-twitter"></i></a>
+  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/KlipperEnder3/&media=&description=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/%20!"><i class="fab fa-pinterest"></i></a>
+  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-linkedin"></i></a>
+  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/"><i class="fas fa-paper-plane"></i></a>
+  </span>
+</div>
+
+---
 
 Due to uncertainty surrounding lab access during the Covid-19 pandemic, I received an Ender 3 3D-printer at the start of my cycle in [Fab Academy](https://fabacademy.org/). During my [second week](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week02/) in the course, I built and began to mod this machine as a little side project to the course work. However as the cycle progressed, I quickly ran out of time to keep working on this machine's mods and moved the machine to my closet, where it sat up until the [Klipper](https://www.klipper3d.org/) firmware piqued my interest. After modding the printer during Fab Academy[^1], I was running the machine on Marlin linked to Octoprint[^2], a setup I use on my other machines. This setup worked great with my machine mods, allowing me to print over a network through Octoprint as I would on any of my other Octoprint enabled machines. In this configuration, a Raspberry Pi running Octorpint hosts a local server that *.gcode* flies can be uploaded to and ran from. The Pi sends this uploaded *.gcode* to the machine's mainboard, where the code is processed, and movements/operations are determined.
 
