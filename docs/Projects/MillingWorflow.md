@@ -674,6 +674,13 @@ This machine was the needed spark for this CNC milling documentation article and
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
 
+        <center>
+
+          ![](../images/MillingWorkflow/darkspindal.png#only-light){width="30%"}
+          ![](../images/MillingWorkflow/lightspindal.png#only-dark){width="30%"}
+
+        </center>
+
         $$
         Spindle Speed (RPM) = {Surface Speed (ft/min) \over π ∗ {1 \over 12} ∗ Tool Diameter (in)}
         $$
@@ -683,6 +690,13 @@ This machine was the needed spark for this CNC milling documentation article and
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
 
+        <center>
+
+          ![](../images/MillingWorkflow/darkfeed.png#only-light){width="30%"}
+          ![](../images/MillingWorkflow/lightfeed.png#only-dark){width="30%"}
+
+        </center>
+
         $$
         Feed Rate (in/min) = Spindle Speed (RPM) ∗ Flute Count ∗ Chip Load (in)
         $$
@@ -691,6 +705,13 @@ This machine was the needed spark for this CNC milling documentation article and
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
+        
+        <center>
+
+          ![](../images/MillingWorkflow/darkplunge.png#only-light){width="45%"}
+          ![](../images/MillingWorkflow/lightplunge.png#only-dark){width="45%"}
+
+        </center>
 
         $$
         Plunge Rate(in/min) = Feed Rate (in/min) * {1 \over 2}
@@ -701,6 +722,13 @@ This machine was the needed spark for this CNC milling documentation article and
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
         tellus non sem sollicitudin, quis rutrum leo facilisis.  
 
+        <center>
+
+          ![](../images/MillingWorkflow/darkstepdown.png#only-light){width="30%"}
+          ![](../images/MillingWorkflow/lightstepdown.png#only-dark){width="30%"}
+
+        </center>
+
         $$
         Stepover(in) = Tool Diameter (in) * {3 \over 5}
         $$
@@ -708,7 +736,14 @@ This machine was the needed spark for this CNC milling documentation article and
     `Stepover`
 
     :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+        tellus non sem sollicitudin, quis rutrum leo facilisis. 
+
+        <center>
+
+          ![](../images/MillingWorkflow/darkstepover.png#only-light){width="30%"}
+          ![](../images/MillingWorkflow/lightstepover.png#only-dark){width="30%"}
+
+        </center> 
 
         $$
         Stepover(in) = Tool Diameter (in) * {9 \over 20}
