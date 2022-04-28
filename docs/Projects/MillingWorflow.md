@@ -619,12 +619,11 @@ This machine was the needed spark for this CNC milling documentation article and
 
 ## Feeds & Speeds
 
-???+ abstract "Feeds & Speeds Terminology"
+!!! abstract "Feeds & Speeds Terminology"
 
     `Tool Diameter`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.
+    :   The diameter of the endmill. When Profile milling or Through Cutting stock, it is best to keep the ***Tool Diameter ≥ 1/6 Stock Thickness***, preserving the integrity of the endmill while allowing for full passes. Larger tool diameters yield shorter cut times when removing a lot of material, while smaller diameters allow for higher detail to be reached. It is typically best to utilize both larger and smaller diameter endmills, using the larger to clear the bulk of stock material, while finishing the mill with a smaller diameter tool to achieve the best detail. 
 
         <center>
 
@@ -635,8 +634,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Flute Count`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.
+    :   The number of individual flutes an endmill has. Flutes are the upward running cutting edges on an endmill. Lower flute counts allow for better chip & heat clearance from the cutting edge, while higher flute counts provided a smoother finish to a part. Stock materials that require a high surface speed also require higher flute bits, and vice versa with lower surface speed requirements. One to Two flute bits will suffice for prototyping with soft plastics & waxes. Two or more flutes will typically be needed for harder plastics (such as HDPE), woods, and metals.
 
         <center>
 
@@ -647,8 +645,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Surface Speed`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.    
+    :   The speed at which the tool's cutting edge travels through the stock. Surface Speed is dependent on both the stock & endmill materials. Maximum surface speeds are typically published by your endmill's manufacturer and do not need to be derived experimentally. ***Staring jobs at ≤ 50% of the maximum provided value is the best practice to allow for ample time to ensure the successful operation of your machine***.
 
         <center>
 
@@ -659,8 +656,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Chip Load`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.   
+    :  The thickness of offcut 'chips' removed with each flute per revolution of the endmill. Maximum chip load is typically provided by the endmill's manufacturer, based upon the tool's characteristics. Finding a balance between chip load extremes is crucial for the safety of you and your machine. While larger chip loads yield shorter machine time, they also put greater forces on your endmill, potentially pushing the bit towards its point of rupture. On the other hand, smaller chip loads increase machine time, while expelling waste and heat from the tool at a slower pace, thus risking overheating and potential fire. Safe chip load values usually fall between *0.001"* & *0.010"*.
 
         <center>
 
@@ -671,8 +667,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Spindle Speed`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+    :   The number of revolutions made by the endmill in a unit of time (RPM is standard). A Lower RPM yields a higher quality surface finish & more cutting power, while a higher RPM decreases machine time. For optimal milling operations, use a higher RPM for roughing passes & a lower for finishing.
 
         <center>
 
@@ -687,8 +682,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Feed Rate`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+    :   The speed at which the machine moves the tool through the stock. Finding the right feed rate is crucial for the safety of you and your machine. Excessively high feed rates cause excessive load on the cutter, leading to cataclysmic failure of the endmill, spindle, and machine. Feed rates that are too low produce unnecessary vibration on the machine, leading to poor surface finishes & potential cutter failure.
 
         <center>
 
@@ -703,8 +697,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Plunge Rate`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+    :   The speed at which the endmill is driven down into the stock. The vertically running flutes on an endmill allow the tool to cut horizontally, while vertical plunges are more demanding on the tool. Lower plunge rates prevent tool damage & maintain lower temperatures while boring holes. ***All plunging cuts should be ramped***, as gradual plunging while traveling across the stock will reduce tool stress.
         
         <center>
 
@@ -719,8 +712,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Stepdown`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis.  
+    :   The vertical depth of each pass of the tool into the stock. ***Best practice is to maintain a step down of ≤ 50% of the tool diameter***, however, may be increased while milling softer materials. The step down should **always** remain less than the tool diameter.
 
         <center>
 
@@ -735,8 +727,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
     `Stepover`
 
-    :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-        tellus non sem sollicitudin, quis rutrum leo facilisis. 
+    :   The space between passes of the tool into the stock. While pocketing, a maximum stepover of 50% can be used, however lower stepover values will leave a better surface finish.
 
         <center>
 
