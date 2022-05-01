@@ -432,6 +432,23 @@ function showHideRow(row) {
   display: none; 
 }
 
+#right20 {
+  display: inline;
+}
+
+#down20 {
+  display: none; 
+}
+
+#right21 {
+  display: inline;
+}
+
+#down21 {
+  display: none; 
+}
+
+
 .hidden_row1 #right1 {
   display: none;
 }
@@ -575,6 +592,31 @@ function showHideRow(row) {
 .hidden_row18 #down18 {
   display: inline; 
 }
+
+.hidden_row19 #right19 {
+  display: none;
+}
+
+.hidden_row19 #down19 {
+  display: inline; 
+}
+
+.hidden_row20 #right20 {
+  display: none;
+}
+
+.hidden_row20 #down20 {
+  display: inline; 
+}
+
+.hidden_row20 #right21 {
+  display: none;
+}
+
+.hidden_row20 #down21 {
+  display: inline; 
+}
+
 
 </style>
 
@@ -759,17 +801,52 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Cost Efficent, offcut may be saved, melted & reused</li>
+        <li>Environmentally Friendly</li>
+        <li>Safe, no hazerdous waste or fumes</li>
+        <li>High Dimensional Accuracy</li>
+        <li>Self-lubricating</li>
+        <li>Easy on Tooling</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> 200 </code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.0089</code> - <code>0.005</code>
+          </br>1/4" Tool Diameter - <code>0.010</code> - <code>0.015</code>
+          </br>3/8" Tool Diameter - <code>0.015</code> - <code>0.020</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.025</code> - <code>0.033</code>
+          </p>
+        </div>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row20');">
+        <td><i id="right20" class="fas fa-angle-right"></i><i id="down20" class="fas fa-angle-down"></i> Soft Wood</td>
+        <td>A accessable & stylish medium, not to tricky to mill, often used for large scale parts - Pine, Spruce, Cedar, etc.</td>
+    </tr>
+    <tr id="hidden_row20" style="display: none;">
+			<td>
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/softwood.png">
+			</td>
+      <td>
+        <ul>
+        <li>Light weight, low density</li>
+        <li>Sustenable resource, softwoods grow at a rapid rate</li>
+        <li>Cheap & readily available</li>
+        <li>Easily milled</li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.006</code>
+          </br>1/4" Tool Diameter - <code>0.011</code> - <code>0.013</code>
+          </br>3/8" Tool Diameter - <code>0.017</code> - <code>0.020</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.021</code> - <code>0.023</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row2');">
-        <td><i id="right2" class="fas fa-angle-right"></i><i id="down2" class="fas fa-angle-down"></i> Solid Wood</td>
-        <td></td>
+        <td><i id="right2" class="fas fa-angle-right"></i><i id="down2" class="fas fa-angle-down"></i> Hard Wood</td>
+        <td>Simmilar benifits to soft wood, can be a bit more costly - Maple, Walnut, Cherry, Ash, etc.</td>
     </tr>
     <tr id="hidden_row2" style="display: none;">
 			<td>
@@ -777,45 +854,67 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Extremly Durable</li>
+        <li>Enhanced streghth when compared to softwoods, higher desity</li>
+        <li>Natrually more rire resistance than softwoods</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.005</code>
+          </br>1/4" Tool Diameter - <code>0.009</code> - <code>0.011</code>
+          </br>3/8" Tool Diameter - <code>0.016</code> - <code>0.018</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.019</code> - <code>0.021</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row3');">
         <td><i id="right3" class="fas fa-angle-right"></i><i id="down3" class="fas fa-angle-down"></i> Medium Density Fiberboard <code>MDF</code></td>
-        <td></td>
+        <td>An easily machined & finished material, realitivly cheap, commonly used for jigs, ficutres, vaccum molds & engraving.</td>
     </tr>
     <tr id="hidden_row3" style="display: none;">
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/mdf.png">
 			</td>
       <td>
+        <p>⚠️ <b>Strong Dust Colletion Required</b>, as the fused nature of the material creates exrtremly fine dust.</p>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Affordable & readily avaliable</li>
+        <li>Consitistant, dense, heavy, flat & stiff</li>
+        <li>Flex & crack resistant</li>
+        <li>Easily machined</li>
+        <li>Easy to post-process, paint & seal</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.007</code>
+          </br>1/4" Tool Diameter - <code>0.013</code> - <code>0.016</code>
+          </br>3/8" Tool Diameter - <code>0.020</code> - <code>0.023</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.025</code> - <code>0.027</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row4');">
         <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board <code>OBS</code></td>
-        <td></td>
+        <td>A strong, light weight, cost-efficent material, a great choice for large scale stiff parts.</td>
     </tr>
     <tr id="hidden_row4" style="display: none;">
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Simmilar to plywood but contains no natrual defects, knot free and consistant density</li>
+        <li>Enviornmentally friendly, often produced from sustaniable rapid growing trees</li>
+        <li>Recyclable into new OBS</li>
+        <li>Stiff & lightweight</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.006</code>
+          </br>1/4" Tool Diameter - <code>0.011</code> - <code>0.013</code>
+          </br>3/8" Tool Diameter - <code>0.017</code> - <code>0.020</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.021</code> - <code>0.023</code>
+          </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/obs.png">
@@ -823,7 +922,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row5');">
         <td><i id="right5" class="fas fa-angle-right"></i><i id="down5" class="fas fa-angle-down"></i> High-density Polyethylene <code>HDPE</code></td>
-        <td></td>
+        <td>A softish plastic, great for prototyping but a tricky material to mill.</td>
     </tr>
     <tr id="hidden_row5" style="display: none;">
 			<td>
@@ -831,27 +930,46 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Impact resistant at low tempatures</li>
+        <li>Great Chemical resistance</li>
+        <li>UV Resistant</li>
+        <li>Moisture Resistant</li>
+        <li>Stiff & strong</li>
+        <li>Emmits not hazerdous odors or waste</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>450</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.006</code>
+          </br>1/4" Tool Diameter - <code>0.007</code> - <code>0.010</code>
+          </br>3/8" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.012</code> - <code>0.016</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row6');">
         <td><i id="right6" class="fas fa-angle-right"></i><i id="down6" class="fas fa-angle-down"></i> Polyetheretherketone <code>PEEK</code></td>
-        <td></td>
+        <td>A high-performance thermoplastic, great for structural applications with resistance to fatigue and stress-cracking.</td>
     </tr>
     <tr id="hidden_row6" style="display: none;">
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Comparatablr preformace to Human bone tissue</li>
+        <li>Resistnt to chemicals and radation</li>
+        <li>Great streght to weight ratio</li>
+        <li>Creep-resistant & long-wearing</li>
+        <li>Great streght to weight ratio</li>
+        <li>Tempature resistant, can opperate up to 480° F</li>
+        <li>Easy to machine</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>500</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
+          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/peek.png" align="left">
@@ -859,17 +977,24 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row7');">
         <td><i id="right7" class="fas fa-angle-right"></i><i id="down7" class="fas fa-angle-down"></i> Polyetherimide <code>PEI</code></td>
-        <td></td>
+        <td>A high-performance thermoplastic, with great heat, solvent & flame resistant. Often used in applications with long term steam exposure.</td>
     </tr>
     <tr id="hidden_row7" style="display: none;">
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>High delection tempature at 400° F</li>
+        <li>Resistnt to chemicals and radation</li>
+        <li>Creep-resistant, strong & rigid</li>
+        <li>Heat & flame resistant</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>360</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
+          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pei.png">
@@ -877,7 +1002,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row8');">
         <td><i id="right8" class="fas fa-angle-right"></i><i id="down8" class="fas fa-angle-down"></i> Polyvinyl Chloride <code>PVC</code></td>
-        <td></td>
+        <td>An cost efficent & accessable plastic, tiplically used across industry but offeres a cheap & lighweight medium.</td>
     </tr>
     <tr id="hidden_row8" style="display: none;">
 			<td>
@@ -885,17 +1010,25 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Lightweight & durable</li>
+        <li>Easy to process</li>
+        <li>Low cost & accessable</li>
+        <li>Waterproof</li>
+        <li>Easy to machine</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>250</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
+          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row9');">
         <td><i id="right9" class="fas fa-angle-right"></i><i id="down9" class="fas fa-angle-down"></i> Polyoxymethylene <code>POM</code></td>
-        <td></td>
+        <td>A general puropuse, good all around thermoplastic - also know as <i>Acetal</i> or <i>Delrin</i>.</td>
     </tr>
     <tr id="hidden_row9" style="display: none;">
 			<td>
@@ -903,17 +1036,25 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Strong, tough & ridged</li>
+        <li>Great impact stregnth</li>
+        <li>Easy to machine</li>
+        <li>High dimentional accuracy</li>
+        <li>Wear resistant</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>375</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
+          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row10');">
         <td><i id="right10" class="fas fa-angle-right"></i><i id="down10" class="fas fa-angle-down"></i> Acrylonitrile Butadiene Styrene <code>ABS</code></td>
-        <td></td>
+        <td>Eassily accesed & low cost thermoplastic, commonlny used for molding applications.</td>
     </tr>
     <tr id="hidden_row10" style="display: none;">
 			<td>
@@ -921,27 +1062,43 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Ridged, good abrasion and strain resistance</li>
+        <li>High dimentional accuracy</li>
+        <li>Good imapact resistance</li>
+        <li>Can be chemically welded</li>
+        <li>Good insulating properties</li>
+        <li>Easy to machine</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>300</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
+          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row11');">
         <td><i id="right11" class="fas fa-angle-right"></i><i id="down11" class="fas fa-angle-down"></i> Polycarbonate <code>PC</code></td>
-        <td></td>
+        <td>An increabibly strong and possibly transperant thermoplastic, known for maintained tempature resistance.</td>
     </tr>
     <tr id="hidden_row11" style="display: none;">
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Outstanding stregnth, stifness & impact resistance</li>
+        <li>Resists cracking, chips, dents & scratches</li>
+        <li>Easy to paint</li>
+        <li>Chemically weldable</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>360</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
+          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pc.png">
@@ -949,7 +1106,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row12');">
         <td><i id="right12" class="fas fa-angle-right"></i><i id="down12" class="fas fa-angle-down"></i> Nylon</td>
-        <td></td>
+        <td>A cost-effective & long-lasting thermoplastic, used in cases of required mechanical dampining or electircal insultaion.</td>
     </tr>
     <tr id="hidden_row12" style="display: none;">
 			<td>
@@ -957,17 +1114,25 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Strong & durable</li>
+        <li>Lightweight & elastic</li>
+        <li>Low friction</li>
+        <li>Crosion & abrasion resistant</li>
+        <li>Highly inslative</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>400</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
+          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row13');">
         <td><i id="right13" class="fas fa-angle-right"></i><i id="down13" class="fas fa-angle-down"></i> Acrylic</td>
-        <td></td>
+        <td>A lightweight inslutaing thermoplastic, serves as an effective replacement for glass.</td>
     </tr>
     <tr id="hidden_row13" style="display: none;">
 			<td>
@@ -975,12 +1140,42 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Transparent & UV resistant</li>
+        <li>Good impact resistance</li>
+        <li>Great thermal insulastion</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>130</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.005</code>
+          </br>1/4" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br>3/8" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.012</code> - <code>0.015</code>
+          </p>
+			</td>
+		</tr>
+    <tr onclick="showHideRow('hidden_row21');">
+        <td><i id="right21" class="fas fa-angle-right"></i><i id="down21" class="fas fa-angle-down"></i> Carbon Fiber</td>
+        <td></td>
+    </tr>
+    <tr id="hidden_row21" style="display: none;">
+			<td>
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/cf.png">
+			</td>
+      <td>
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code></code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code></code> - <code></code>
+          </br>1/4" Tool Diameter - <code></code> - <code></code>
+          </br>3/8" Tool Diameter - <code></code> - <code></code>
+          </br>≥ 1/2" Tool Diameter - <code></code> - <code></code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row14');">
@@ -997,8 +1192,14 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Another item</li>
         <li>And back at the main level</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.004</code>
+          </br>1/4" Tool Diameter - <code>0.005</code> - <code>0.007</code>
+          </br>3/8" Tool Diameter - <code>0.006</code> - <code>0.008</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row15');">
@@ -1012,8 +1213,14 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Another item</li>
         <li>And back at the main level</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>700</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0010</code>
+          </br>1/4" Tool Diameter - <code>0.0005</code> - <code>0.0020</code>
+          </br>3/8" Tool Diameter - <code>0.0005</code> - <code>0.0030</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.0010</code> - <code>0.0060</code>
+          </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/brass.png">
@@ -1033,8 +1240,14 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Another item</li>
         <li>And back at the main level</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0010</code>
+          </br>1/4" Tool Diameter - <code>0.0005</code> - <code>0.0020</code>
+          </br>3/8" Tool Diameter - <code>0.0005</code> - <code>0.0030</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.0010</code> - <code>0.0060</code>
+          </p>
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row17');">
@@ -1048,8 +1261,14 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Another item</li>
         <li>And back at the main level</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>200</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0008</code>
+          </br>1/4" Tool Diameter - <code>0.0008</code> - <code>0.0010</code>
+          </br>3/8" Tool Diameter - <code>0.0012</code> - <code>0.0015</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.0015</code> - <code>0.0025</code>
+          </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/steel.png">
@@ -1069,14 +1288,25 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Another item</li>
         <li>And back at the main level</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> XX </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> = <code> XX </code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>1000</code></p>
+        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <div style="margin-left: 0.75em; margin-top:-2.5em;">
+          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.006</code>
+          </br>1/4" Tool Diameter - <code>0.011</code> - <code>0.013</code>
+          </br>3/8" Tool Diameter - <code>0.017</code> - <code>0.020</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.021</code> - <code>0.023</code>
+          </p>
 			</td>
 		</tr>
 </table>
 
 </center>
 
+https://www.gutenberg.org/files/12299/12299-h/12299-h.htm
+
+https://www.practicalmachinist.com/vb/general-archive/face-milling-pvc-152424/
+
+[Selecting the Appropriate Spindle Speed (RPM)](https://www.precisebits.com/tutorials/spindle-rpm)
 
 [Fablab Feeds and Speeds Calcuator](https://pub.pages.cba.mit.edu/feed_speeds/)
 
