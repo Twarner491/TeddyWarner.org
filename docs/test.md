@@ -63,26 +63,6 @@ template: index.html
 
 <style>
 
-  .preloader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    z-index: 99999999;
-    }
-
-.preloaderbg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 99999998;
-    background-color: white;
-    background-position: center;
-    }
-
     :root {
       --duration: 1s;
       --nav-duration: calc(var(--duration) / 4);
@@ -96,7 +76,6 @@ template: index.html
       --formhover: hsla(0, 0%, 0%, 0.32);
       --toggledform: hsla(0, 0%, 100%, 0.12);
       --toggledformhover: hsla(0, 0%, 100%, 0.3);
-      --footbg: var(--md-default-fg-color--lightest);
     }
 
     [data-md-color-scheme="slate"] {
@@ -105,7 +84,6 @@ template: index.html
         --formhover: hsla(0, 0%, 100%, 0.3);
         --toggledform: hsla(0, 0%, 0%, 0.2);
         --toggledformhover: hsla(0, 0%, 0%, 0.32);
-        --footbg: var(--md-default-fg-color--lighter);
     }
 
     @media screen and (min-width: 60em) {
@@ -120,12 +98,32 @@ template: index.html
       }
     }
 
+  .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    z-index: 99999999;
+    }
+
+ .preloaderbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999998;
+    background-color: white;
+    background-position: center;
+    }
+
     .md-main__inner {
       margin: 0;
     }
 
     .md-footer {
-      background: var(--footbg);
+      display: none;
     } 
 
     .md-source {
@@ -133,10 +131,6 @@ template: index.html
     }
 
     .toggle .logo {
-      display: none;
-    }
-
-    .toggle .ppp {
       display: none;
     }
 
@@ -348,7 +342,8 @@ template: index.html
     }
     
     .fa-linkedin:hover {
-        color: #0e76a8;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
         font-style: normal;
     }
     
@@ -358,10 +353,9 @@ template: index.html
     }
     
     .fa-github:hover {
-      background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-style: normal;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
+        font-style: normal;
     }
     
     .insta {
@@ -370,10 +364,9 @@ template: index.html
     }
     
     .fa-instagram:hover {
-      background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      font-style: normal;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
+        font-style: normal;
     }
     
     .twitter {
@@ -382,7 +375,8 @@ template: index.html
     }
     
     .fa-twitter:hover {
-        color: #00acee;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
         font-style: normal;
     }
     
@@ -392,7 +386,8 @@ template: index.html
     }
     
     .fa-discord:hover {
-        color: #5865F2;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
         font-style: normal;
     }
     
@@ -402,7 +397,8 @@ template: index.html
     }
     
     .fa-spotify:hover {
-        color: #1DB954;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
         font-style: normal;
     }
 
@@ -412,7 +408,8 @@ template: index.html
     }
     
     .fa-coffee:hover {
-        color: #ffdd00;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
         font-style: normal;
     }
     
@@ -422,7 +419,8 @@ template: index.html
     }
     
     .fa-paper-plane:hover {
-        color: #5466ce;
+        color: var(--md-default-fg-color);
+        opacity: 0.65;
         font-style: normal;
     }
 
@@ -491,11 +489,8 @@ template: index.html
       .logo {
         padding-left: 1em;
       }
-      .ppp {
-        display: none;
-      }
       header{
-        padding-top: 0;
+        padding-top: 1.25em;
       }
       .preloader {
         width: 320px;
