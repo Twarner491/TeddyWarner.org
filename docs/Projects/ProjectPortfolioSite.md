@@ -785,8 +785,11 @@ git push # (3)
 
     You now have built your very own static site with [MKdocs](https://www.mkdocs.org/) and its [Material Theme](https://squidfunk.github.io/mkdocs-material/).
 
-**Wooo :partying_face: :partying_face:** as of 12/1/2021, *teddywarner.org* is now **100 Commits** old!!
+**Wooo :partying_face: :partying_face:** as of 12/01/2021, *teddywarner.org* is now **100 Commits** old!!
 ![](../images/PortfolioSite/100commit.jpg){width="100%"}
+
+**200 Commits :raised_hands:** - 5/02/2022!
+![](../images/PortfolioSite/200commit.jpg){width="100%"}
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control
