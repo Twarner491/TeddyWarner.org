@@ -3,6 +3,7 @@ template: index.html
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
 
@@ -33,7 +34,7 @@ template: index.html
 
   window.onload = function() {
       if(!window.location.hash) {
-          window.location = window.location + '#home';
+          window.location = window.location + '#/';
           window.location.reload();
       }
   }
@@ -47,9 +48,40 @@ template: index.html
     }
   });
 
+  function preloaderFadeOutInit(){
+    $('.preloader').delay(2000).fadeOut(500);
+    $('.preloaderbg').delay(3000).fadeOut(160);
+    $('body').attr('id','');
+    }
+    jQuery(window).on('load', function () {
+    (function ($) {
+    preloaderFadeOutInit();
+    })(jQuery);
+    });
+
 </script>
 
 <style>
+
+  .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    z-index: 99999999;
+    }
+
+.preloaderbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999998;
+    background-color: white;
+    background-position: center;
+    }
 
     :root {
       --duration: 1s;
@@ -64,6 +96,7 @@ template: index.html
       --formhover: hsla(0, 0%, 0%, 0.32);
       --toggledform: hsla(0, 0%, 100%, 0.12);
       --toggledformhover: hsla(0, 0%, 100%, 0.3);
+      --footbg: var(--md-default-fg-color--lightest);
     }
 
     [data-md-color-scheme="slate"] {
@@ -72,6 +105,7 @@ template: index.html
         --formhover: hsla(0, 0%, 100%, 0.3);
         --toggledform: hsla(0, 0%, 0%, 0.2);
         --toggledformhover: hsla(0, 0%, 0%, 0.32);
+        --footbg: var(--md-default-fg-color--lighter);
     }
 
     @media screen and (min-width: 60em) {
@@ -91,7 +125,7 @@ template: index.html
     }
 
     .md-footer {
-      display: none;
+      background: var(--footbg);
     } 
 
     .md-source {
@@ -482,6 +516,9 @@ template: index.html
         -ms-transform: translateY(-15%);
         transform: translateY(-15%);
       }
+      .preloader {
+        width: 400px;
+      }
     }
 
     @media (max-height: 33em) {
@@ -517,35 +554,10 @@ template: index.html
       }
     }
 
-    .heroparentbot { 
-        position:absolute;
-        height: 100%;
-        width: 100%; 
-        background: white; 
-        z-index: -2;
-    }
-
-    .hero img { 
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-45%);
-        transform: translateY(-45%);
-        left: 68.5vw;     
-        width: 20.2vw;
-        height: 26vw;
-        z-index: 0;
-        object-fit: cover;
-    }
-
-    .herotextbase {
-        position:absolute; 
-        font-size: 6em; 
-        mix-blend-mode: difference;
-        color: white;
-        z-index: 0;
-    }
-
 </style>
+
+<img class="preloader" src="https://static.tildacdn.com/tild6237-3231-4565-a438-326263613939/Ilustracin_sin_ttulo.gif">
+<div class="preloaderbg"></div>
 
 <nav class="main-navigation">
     <ul>
@@ -562,13 +574,6 @@ template: index.html
   <main class="main-content">
     <h1></h1>
   </main>
-
-  <div class="heroparentbot"></div>
-  <div class="hero">
-    <img id="target" src="a.jpg">
-  </div>
-
-  <span class="herotextbase">Fabrication</span>
 
   <div class="socialsparent">
     <div class="socials">

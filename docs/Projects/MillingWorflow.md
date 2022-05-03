@@ -1156,31 +1156,33 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row21');">
         <td><i id="right21" class="fas fa-angle-right"></i><i id="down21" class="fas fa-angle-down"></i> Carbon Fiber</td>
-        <td></td>
+        <td>A strong & lighweight composit of carbon based fibers, desirable for various industrial applications due to its heat & chemical resistance.</td>
     </tr>
     <tr id="hidden_row21" style="display: none;">
-			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/cf.png">
-			</td>
       <td>
+        <p>⚠️ Carbon fiber is increadibly abrasave and will wear down tooling & dull bits will pull fibers from the composit instead of cutting through them. <b>The use of Carbide and Polycrystalline Diamond (PCD) bits are optomial while milling carbon fiber</b>, as they offer a superior wear resistance.</p>
         <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Lightweight</li>
+        <li>Stiff & Strong</li>
+        <li>High tempature tolarance with low thermal expansion</li>
+        <li>Resistnt to chemical abrasion</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code></code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>5.45</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code></code> - <code></code>
-          </br>1/4" Tool Diameter - <code></code> - <code></code>
-          </br>3/8" Tool Diameter - <code></code> - <code></code>
-          </br>≥ 1/2" Tool Diameter - <code></code> - <code></code>
+          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.006</code>
+          </br>1/4" Tool Diameter - <code>0.009</code> - <code>0.012</code>
+          </br>3/8" Tool Diameter - <code>0.016</code> - <code>0.018</code>
+          </br>≥ 1/2" Tool Diameter - <code>0.023</code> - <code>0.025</code>
           </p>
+			</td>
+			<td>
+        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/cf.png">
 			</td>
 		</tr>
     <tr onclick="showHideRow('hidden_row14');">
         <td><i id="right14" class="fas fa-angle-right"></i><i id="down14" class="fas fa-angle-down"></i> Aluminium</td>
-        <td></td>
+        <td>An accessable, easy to mill metal, seen across thermal & electrical conducting components.</td>
     </tr>
     <tr id="hidden_row14" style="display: none;">
 			<td>
@@ -1188,9 +1190,10 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Easy to machine</li>
+        <li>Non-magnetic</li>
+        <li>Lighweight & durable metal</li>
+        <li>Good electrical & heat conductor</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1204,14 +1207,17 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row15');">
         <td><i id="right15" class="fas fa-angle-right"></i><i id="down15" class="fas fa-angle-down"></i> Brass</td>
-        <td></td>
+        <td>A easy to machine & highly conductive metal, ideal for low friction & intricate parts.</td>
     </tr>
     <tr id="hidden_row15" style="display: none;">
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Easy to machine</li>
+        <li>Non-magnetic</li>
+        <li>Highly electrical & thermal conductive</li>
+        <li>Wear & corrousion resistant</li>
+        <li>High malleability</li>
+        <li>Antibacterial</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>700</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1228,7 +1234,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row16');">
         <td><i id="right16" class="fas fa-angle-right"></i><i id="down16" class="fas fa-angle-down"></i> Copper</td>
-        <td></td>
+        <td>A malleble metal, tipuically used for its high electrical & thermal conductivity.</td>
     </tr>
     <tr id="hidden_row16" style="display: none;">
 			<td>
@@ -1236,9 +1242,11 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Non-magnetic</li>
+        <li>High electrical & thermal conductivty</li>
+        <li>Wear & corrousion resistant</li>
+        <li>High malleability</li>
+        <li>Antibacterial</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1252,16 +1260,16 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row17');">
         <td><i id="right17" class="fas fa-angle-right"></i><i id="down17" class="fas fa-angle-down"></i> Steel</td>
-        <td></td>
+        <td>An iron alloy with high stregnth & frature resistantce, tipicaly used in situations requireing its high tensile stregnth, such as tools & machines.</td>
     </tr>
     <tr id="hidden_row17" style="display: none;">
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>High stregnth & duriable</li>
+        <li>High fracture reisstance</li>
+        <li>Wear & corrousion resistant</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>200</code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>200</code>, <code>50</code> without coolant</p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
           </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0008</code>
@@ -1276,7 +1284,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row18');">
         <td><i id="right19" class="fas fa-angle-right"></i><i id="down19" class="fas fa-angle-down"></i> Insulation Foam</td>
-        <td></td>
+        <td>A low cost, accessable & easy to mill material, commonly used for large molds & as cores for lighweight parts. </td>
     </tr>
     <tr id="hidden_row18" style="display: none;">
 			<td>
@@ -1284,9 +1292,11 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>One item</li>
-        <li>Another item</li>
-        <li>And back at the main level</li>
+        <li>Easy to machine</li>
+        <li>High mechanical stregnth with very low density</li>
+        <li>Thermoinsulating proeritys</li>
+        <li>Cheap & accessable</li>
+        <li>Resistance to water absorption</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>1000</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1301,20 +1311,6 @@ This machine was the needed spark for this CNC milling documentation article and
 </table>
 
 </center>
-
-https://www.gutenberg.org/files/12299/12299-h/12299-h.htm
-
-https://www.practicalmachinist.com/vb/general-archive/face-milling-pvc-152424/
-
-[Selecting the Appropriate Spindle Speed (RPM)](https://www.precisebits.com/tutorials/spindle-rpm)
-
-[Fablab Feeds and Speeds Calcuator](https://pub.pages.cba.mit.edu/feed_speeds/)
-
-[Narrowing Material Options for CNC Machining](https://www.protolabs.com/resources/design-tips/cnc-machining-materials/)
-
-[CNC Milling Materials: What Are They & Which Should You Choose for Your Application?](https://www.3erp.com/blog/cnc-milling-materials-choose-application/)
-
-[Selecting the Right CNC Material](https://www.hubs.com/knowledge-base/selecting-right-cnc-material/)
 
 ### Feeds & Speeds Calcuator
 
@@ -1418,6 +1414,26 @@ https://www.practicalmachinist.com/vb/general-archive/face-milling-pvc-152424/
 ### PCB Badge
 
 Inkscape to Eagle
+
+
+
+[^1]: https://www.cnccookbook.com/machining-carbon-fiber-composites-drilling-cnc-tools/
+
+[^2]: https://dragonplate.com/how-to-cut-carbon-fiber
+
+[^3]: https://www.gutenberg.org/files/12299/12299-h/12299-h.htm
+
+[^4]: https://www.practicalmachinist.com/vb/general-archive/face-milling-pvc-152424/
+
+[^5]: https://www.precisebits.com/tutorials/spindle-rpm
+
+[^6]: https://pub.pages.cba.mit.edu/feed_speeds/
+
+[^7]: https://www.protolabs.com/resources/design-tips/cnc-machining-materials/
+
+[^8]: https://www.3erp.com/blog/cnc-milling-materials-choose-application/
+
+[^9]: https://www.hubs.com/knowledge-base/selecting-right-cnc-material/
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control
