@@ -49,8 +49,8 @@ template: index.html
   });
 
   function preloaderFadeOutInit(){
-    $('.preloader').delay(2000).fadeOut(500);
-    $('.preloaderbg').delay(3000).fadeOut(160);
+    $('.preloader').delay(1800).fadeOut(525);
+    $('.preloaderbg').delay(2500).fadeOut(160);
     $('body').attr('id','');
     }
     jQuery(window).on('load', function () {
@@ -497,6 +497,9 @@ template: index.html
       header{
         padding-top: 0;
       }
+      .preloader {
+        width: 320px;
+      }
     }
 
     @media (max-width: 59.892857142857146em) {
@@ -517,7 +520,7 @@ template: index.html
         transform: translateY(-15%);
       }
       .preloader {
-        width: 400px;
+        width: 500px;
       }
     }
 
@@ -556,7 +559,7 @@ template: index.html
 
 </style>
 
-<img class="preloader" src="https://static.tildacdn.com/tild6237-3231-4565-a438-326263613939/Ilustracin_sin_ttulo.gif">
+<img class="preloader" src="../images/index/loader.gif">
 <div class="preloaderbg"></div>
 
 <nav class="main-navigation">
