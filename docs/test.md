@@ -493,7 +493,7 @@ template: index.html
         padding-top: 1.25em;
       }
       .preloader {
-        width: 320px;
+        width: 300px;
       }
     }
 
