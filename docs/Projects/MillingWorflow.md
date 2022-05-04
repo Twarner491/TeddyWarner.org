@@ -15,7 +15,6 @@ tags:
 ---
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
@@ -953,6 +952,7 @@ This machine was the needed spark for this CNC milling documentation article and
     </tr>
     <tr id="hidden_row6" style="display: none;">
       <td>
+        <p>⚠️ PEEK is rather abrasive on tooling, <b>Carbide or Polycrystalline (PCD) tooling should be used</b>.</p>
         <ul>
         <li>Comparatablr preformace to Human bone tissue</li>
         <li>Resistnt to chemicals and radation</li>
@@ -1139,12 +1139,13 @@ This machine was the needed spark for this CNC milling documentation article and
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/acrylic.png">
 			</td>
       <td>
+      <p>⚠️ Acrylic is prone to stress cracks & fractures during milling & post-processing.</p>
         <ul>
         <li>Transparent & UV resistant</li>
         <li>Good impact resistance</li>
         <li>Great thermal insulastion</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>130</code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>500</code>, <code>130</code> without coolant</p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
           </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.005</code>
@@ -1195,7 +1196,7 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Lighweight & durable metal</li>
         <li>Good electrical & heat conductor</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code>, <code>200</code> without coolant</p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
           </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.004</code>
@@ -1219,7 +1220,7 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>High malleability</li>
         <li>Antibacterial</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>700</code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
           </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0010</code>
@@ -1248,7 +1249,7 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>High malleability</li>
         <li>Antibacterial</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
+        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>550</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
           </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0010</code>
