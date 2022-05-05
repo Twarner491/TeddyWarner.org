@@ -647,7 +647,7 @@ Subtractive manufacturing is a process I've always found mesmerizing. Although a
 
 I absolutely loved building this machine and recommend it to all interested in understanding the workings of CNC, yet I don't mill on mine all that often, I find more use in using the machine as a GCode dev platform for some of my other projects. 
 
-Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com/mpcnc/burly/), I've become more versed with CNC milling due to exposure during my Fab Academy [Week 7: Computer Controlled Machineing](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week07/) assignment. For this assignment, I used the [CLS Fab Lab's](https://www.charlottelatin.org/academics/steam) [ShopBot PRSalpha](https://www.shopbottools.com/products/alpha) to mill the plywood fish tank housing for my Fab Academy [Final Project](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/). I continued my milling work over the summer, running the ShopBot almost daily over July for [Young Engineers of Today's](https://www.youngengineersoftoday.com/) Summer Camps. Last fall, our lab picked up a [Bantam Tools Desktop CNC Milling Machine](https://store.bantamtools.com/collections/machines), Bantam's flagship machine, capable of super-rapid prototyping when partnered with their [Milling Machine Software](https://www.bantamtools.com/software-download). 
+Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com/mpcnc/burly/), I've become more versed with CNC milling due to exposure during my Fab Academy [Week 7: Computer Controlled Machining](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week07/) assignment. For this assignment, I used the [CLS Fab Lab's](https://www.charlottelatin.org/academics/steam) [ShopBot PRSalpha](https://www.shopbottools.com/products/alpha) to mill the plywood fish tank housing for my Fab Academy [Final Project](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/). I continued my milling work over the summer, running the ShopBot almost daily over July for [Young Engineers of Today's](https://www.youngengineersoftoday.com/) Summer Camps. Last fall, our lab picked up a [Bantam Tools Desktop CNC Milling Machine](https://store.bantamtools.com/collections/machines), Bantam's flagship machine, capable of super-rapid prototyping when partnered with their [Milling Machine Software](https://www.bantamtools.com/software-download). 
 
 <center>
 
@@ -800,9 +800,9 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>Cost Efficent, offcut may be saved, melted & reused</li>
+        <li>Cost Efficient, offcut may be saved, melted & reused</li>
         <li>Environmentally Friendly</li>
-        <li>Safe, no hazerdous waste or fumes</li>
+        <li>Safe, no hazardous waste or fumes</li>
         <li>High Dimensional Accuracy</li>
         <li>Self-lubricating</li>
         <li>Easy on Tooling</li>
@@ -820,7 +820,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row20');">
         <td><i id="right20" class="fas fa-angle-right"></i><i id="down20" class="fas fa-angle-down"></i> Soft Wood</td>
-        <td>A accessable & stylish medium, not to tricky to mill, often used for large scale parts - Pine, Spruce, Cedar, etc.</td>
+        <td>A accessible & stylish medium, not to tricky to mill, often used for large scale parts - Pine, Spruce, Cedar, etc.</td>
     </tr>
     <tr id="hidden_row20" style="display: none;">
 			<td>
@@ -829,7 +829,7 @@ This machine was the needed spark for this CNC milling documentation article and
       <td>
         <ul>
         <li>Light weight, low density</li>
-        <li>Sustenable resource, softwoods grow at a rapid rate</li>
+        <li>Sustainable resource, softwoods grow at a rapid rate</li>
         <li>Cheap & readily available</li>
         <li>Easily milled</li>
         </ul>
@@ -845,7 +845,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row2');">
         <td><i id="right2" class="fas fa-angle-right"></i><i id="down2" class="fas fa-angle-down"></i> Hard Wood</td>
-        <td>Simmilar benifits to soft wood, can be a bit more costly - Maple, Walnut, Cherry, Ash, etc.</td>
+        <td>Similar benefits to soft wood, can be a bit more costly - Maple, Walnut, Cherry, Ash, etc.</td>
     </tr>
     <tr id="hidden_row2" style="display: none;">
 			<td>
@@ -853,9 +853,9 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>Extremly Durable</li>
-        <li>Enhanced streghth when compared to softwoods, higher desity</li>
-        <li>Natrually more rire resistance than softwoods</li>
+        <li>Extremely Durable</li>
+        <li>Enhanced strength when compared to softwoods, higher density</li>
+        <li>Naturally more fire resistance than softwoods</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -869,17 +869,17 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row3');">
         <td><i id="right3" class="fas fa-angle-right"></i><i id="down3" class="fas fa-angle-down"></i> Medium Density Fiberboard <code>MDF</code></td>
-        <td>An easily machined & finished material, realitivly cheap, commonly used for jigs, ficutres, vaccum molds & engraving.</td>
+        <td>An easily machined & finished material, relatively cheap, commonly used for jigs, fixtures, vacuum molds & engraving.</td>
     </tr>
     <tr id="hidden_row3" style="display: none;">
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/mdf.png">
 			</td>
       <td>
-        <p>⚠️ <b>Strong Dust Colletion Required</b>, as the fused nature of the material creates exrtremly fine dust.</p>
+        <p>⚠️ <b>Strong Dust Collection Required</b>, as the fused nature of the material creates extremely fine dust.</p>
         <ul>
-        <li>Affordable & readily avaliable</li>
-        <li>Consitistant, dense, heavy, flat & stiff</li>
+        <li>Affordable & readily available</li>
+        <li>Consistent, dense, heavy, flat & stiff</li>
         <li>Flex & crack resistant</li>
         <li>Easily machined</li>
         <li>Easy to post-process, paint & seal</li>
@@ -896,13 +896,13 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row4');">
         <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board <code>OBS</code></td>
-        <td>A strong, light weight, cost-efficent material, a great choice for large scale stiff parts.</td>
+        <td>A strong, light weight, cost-efficient material, a great choice for large scale stiff parts.</td>
     </tr>
     <tr id="hidden_row4" style="display: none;">
       <td>
         <ul>
-        <li>Simmilar to plywood but contains no natrual defects, knot free and consistant density</li>
-        <li>Enviornmentally friendly, often produced from sustaniable rapid growing trees</li>
+        <li>Similar to plywood but contains no natural defects, knot free and consistent density</li>
+        <li>Environmentally friendly, often produced from sustainable rapid growing trees</li>
         <li>Recyclable into new OBS</li>
         <li>Stiff & lightweight</li>
         </ul>
@@ -921,7 +921,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row5');">
         <td><i id="right5" class="fas fa-angle-right"></i><i id="down5" class="fas fa-angle-down"></i> High-density Polyethylene <code>HDPE</code></td>
-        <td>A softish plastic, great for prototyping but a tricky material to mill.</td>
+        <td>A soft-ish plastic, great for prototyping but a tricky material to mill.</td>
     </tr>
     <tr id="hidden_row5" style="display: none;">
 			<td>
@@ -929,12 +929,12 @@ This machine was the needed spark for this CNC milling documentation article and
 			</td>
       <td>
         <ul>
-        <li>Impact resistant at low tempatures</li>
+        <li>Impact resistant at low temperatures</li>
         <li>Great Chemical resistance</li>
         <li>UV Resistant</li>
         <li>Moisture Resistant</li>
         <li>Stiff & strong</li>
-        <li>Emmits not hazerdous odors or waste</li>
+        <li>Emits not hazardous odors or waste</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>450</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -954,12 +954,12 @@ This machine was the needed spark for this CNC milling documentation article and
       <td>
         <p>⚠️ PEEK is rather abrasive on tooling, <b>Carbide or Polycrystalline (PCD) tooling should be used</b>.</p>
         <ul>
-        <li>Comparatablr preformace to Human bone tissue</li>
-        <li>Resistnt to chemicals and radation</li>
-        <li>Great streght to weight ratio</li>
+        <li>Comparable performance to Human bone tissue</li>
+        <li>Resistant to chemicals and radiation</li>
+        <li>Great strength to weight ratio</li>
         <li>Creep-resistant & long-wearing</li>
-        <li>Great streght to weight ratio</li>
-        <li>Tempature resistant, can opperate up to 480° F</li>
+        <li>Great strength to weight ratio</li>
+        <li>Temperature resistant, can operate up to 480° F</li>
         <li>Easy to machine</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>500</code></p>
@@ -982,8 +982,8 @@ This machine was the needed spark for this CNC milling documentation article and
     <tr id="hidden_row7" style="display: none;">
       <td>
         <ul>
-        <li>High delection tempature at 400° F</li>
-        <li>Resistnt to chemicals and radation</li>
+        <li>High deflection temperature at 400° F</li>
+        <li>Resistant to chemicals and radiation</li>
         <li>Creep-resistant, strong & rigid</li>
         <li>Heat & flame resistant</li>
         </ul>
@@ -1002,7 +1002,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row8');">
         <td><i id="right8" class="fas fa-angle-right"></i><i id="down8" class="fas fa-angle-down"></i> Polyvinyl Chloride <code>PVC</code></td>
-        <td>An cost efficent & accessable plastic, tiplically used across industry but offeres a cheap & lighweight medium.</td>
+        <td>An cost efficient & accessible plastic, typically used across industry but offers a cheap & lightweight medium.</td>
     </tr>
     <tr id="hidden_row8" style="display: none;">
 			<td>
@@ -1012,7 +1012,7 @@ This machine was the needed spark for this CNC milling documentation article and
         <ul>
         <li>Lightweight & durable</li>
         <li>Easy to process</li>
-        <li>Low cost & accessable</li>
+        <li>Low cost & accessible</li>
         <li>Waterproof</li>
         <li>Easy to machine</li>
         </ul>
@@ -1028,7 +1028,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row9');">
         <td><i id="right9" class="fas fa-angle-right"></i><i id="down9" class="fas fa-angle-down"></i> Polyoxymethylene <code>POM</code></td>
-        <td>A general puropuse, good all around thermoplastic - also know as <i>Acetal</i> or <i>Delrin</i>.</td>
+        <td>A general purpose, good all around thermoplastic - also know as <i>Acetal</i> or <i>Delrin</i>.</td>
     </tr>
     <tr id="hidden_row9" style="display: none;">
 			<td>
@@ -1037,9 +1037,9 @@ This machine was the needed spark for this CNC milling documentation article and
       <td>
         <ul>
         <li>Strong, tough & ridged</li>
-        <li>Great impact stregnth</li>
+        <li>Great impact strength</li>
         <li>Easy to machine</li>
-        <li>High dimentional accuracy</li>
+        <li>High dimensional accuracy</li>
         <li>Wear resistant</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>375</code></p>
@@ -1054,7 +1054,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row10');">
         <td><i id="right10" class="fas fa-angle-right"></i><i id="down10" class="fas fa-angle-down"></i> Acrylonitrile Butadiene Styrene <code>ABS</code></td>
-        <td>Eassily accesed & low cost thermoplastic, commonlny used for molding applications.</td>
+        <td>Easily accessed & low cost thermoplastic, commonly used for molding applications.</td>
     </tr>
     <tr id="hidden_row10" style="display: none;">
 			<td>
@@ -1063,8 +1063,8 @@ This machine was the needed spark for this CNC milling documentation article and
       <td>
         <ul>
         <li>Ridged, good abrasion and strain resistance</li>
-        <li>High dimentional accuracy</li>
-        <li>Good imapact resistance</li>
+        <li>High dimensional accuracy</li>
+        <li>Good impact resistance</li>
         <li>Can be chemically welded</li>
         <li>Good insulating properties</li>
         <li>Easy to machine</li>
@@ -1081,12 +1081,12 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row11');">
         <td><i id="right11" class="fas fa-angle-right"></i><i id="down11" class="fas fa-angle-down"></i> Polycarbonate <code>PC</code></td>
-        <td>An increabibly strong and possibly transperant thermoplastic, known for maintained tempature resistance.</td>
+        <td>An incredibly strong and possibly transparent thermoplastic, known for maintained temperature resistance.</td>
     </tr>
     <tr id="hidden_row11" style="display: none;">
       <td>
         <ul>
-        <li>Outstanding stregnth, stifness & impact resistance</li>
+        <li>Outstanding strength, stiffness & impact resistance</li>
         <li>Resists cracking, chips, dents & scratches</li>
         <li>Easy to paint</li>
         <li>Chemically weldable</li>
@@ -1106,7 +1106,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row12');">
         <td><i id="right12" class="fas fa-angle-right"></i><i id="down12" class="fas fa-angle-down"></i> Nylon</td>
-        <td>A cost-effective & long-lasting thermoplastic, used in cases of required mechanical dampining or electircal insultaion.</td>
+        <td>A cost-effective & long-lasting thermoplastic, used in cases of required mechanical dampening or electrical insulation.</td>
     </tr>
     <tr id="hidden_row12" style="display: none;">
 			<td>
@@ -1117,8 +1117,8 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Strong & durable</li>
         <li>Lightweight & elastic</li>
         <li>Low friction</li>
-        <li>Crosion & abrasion resistant</li>
-        <li>Highly inslative</li>
+        <li>Corrosion & abrasion resistant</li>
+        <li>Great insulating prosperities</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>400</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1132,7 +1132,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row13');">
         <td><i id="right13" class="fas fa-angle-right"></i><i id="down13" class="fas fa-angle-down"></i> Acrylic</td>
-        <td>A lightweight inslutaing thermoplastic, serves as an effective replacement for glass.</td>
+        <td>A lightweight insulating  thermoplastic, serves as an effective replacement for glass.</td>
     </tr>
     <tr id="hidden_row13" style="display: none;">
 			<td>
@@ -1143,7 +1143,7 @@ This machine was the needed spark for this CNC milling documentation article and
         <ul>
         <li>Transparent & UV resistant</li>
         <li>Good impact resistance</li>
-        <li>Great thermal insulastion</li>
+        <li>Great thermal insulation</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>500</code>, <code>130</code> without coolant</p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1157,16 +1157,16 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row21');">
         <td><i id="right21" class="fas fa-angle-right"></i><i id="down21" class="fas fa-angle-down"></i> Carbon Fiber</td>
-        <td>A strong & lighweight composit of carbon based fibers, desirable for various industrial applications due to its heat & chemical resistance.</td>
+        <td>A strong & lightweight composite of carbon based fibers, desirable for various industrial applications due to its heat & chemical resistance.</td>
     </tr>
     <tr id="hidden_row21" style="display: none;">
       <td>
-        <p>⚠️ Carbon fiber is increadibly abrasave and will wear down tooling & dull bits will pull fibers from the composit instead of cutting through them. <b>The use of Carbide and Polycrystalline Diamond (PCD) bits are optomial while milling carbon fiber</b>, as they offer a superior wear resistance.</p>
+        <p>⚠️ Carbon fiber is incredibly abrasive and will wear down tooling & dull bits will pull fibers from the composite  instead of cutting through them. <b>The use of Carbide and Polycrystalline Diamond (PCD) bits are optimal while milling carbon fiber</b>, as they offer a superior wear resistance.</p>
         <ul>
         <li>Lightweight</li>
         <li>Stiff & Strong</li>
-        <li>High tempature tolarance with low thermal expansion</li>
-        <li>Resistnt to chemical abrasion</li>
+        <li>High temperature tolerance with low thermal expansion</li>
+        <li>Resistant to chemical abrasion</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>5.45</code></p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1183,7 +1183,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row14');">
         <td><i id="right14" class="fas fa-angle-right"></i><i id="down14" class="fas fa-angle-down"></i> Aluminium</td>
-        <td>An accessable, easy to mill metal, seen across thermal & electrical conducting components.</td>
+        <td>An accessible, easy to mill metal, seen across thermal & electrical conducting components.</td>
     </tr>
     <tr id="hidden_row14" style="display: none;">
 			<td>
@@ -1193,7 +1193,7 @@ This machine was the needed spark for this CNC milling documentation article and
         <ul>
         <li>Easy to machine</li>
         <li>Non-magnetic</li>
-        <li>Lighweight & durable metal</li>
+        <li>Lightweight & durable metal</li>
         <li>Good electrical & heat conductor</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code>, <code>200</code> without coolant</p>
@@ -1216,7 +1216,7 @@ This machine was the needed spark for this CNC milling documentation article and
         <li>Easy to machine</li>
         <li>Non-magnetic</li>
         <li>Highly electrical & thermal conductive</li>
-        <li>Wear & corrousion resistant</li>
+        <li>Wear & corrosion resistant</li>
         <li>High malleability</li>
         <li>Antibacterial</li>
         </ul>
@@ -1235,7 +1235,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row16');">
         <td><i id="right16" class="fas fa-angle-right"></i><i id="down16" class="fas fa-angle-down"></i> Copper</td>
-        <td>A malleble metal, tipuically used for its high electrical & thermal conductivity.</td>
+        <td>A malleable metal, typically used for its high electrical & thermal conductivity.</td>
     </tr>
     <tr id="hidden_row16" style="display: none;">
 			<td>
@@ -1244,8 +1244,8 @@ This machine was the needed spark for this CNC milling documentation article and
       <td>
         <ul>
         <li>Non-magnetic</li>
-        <li>High electrical & thermal conductivty</li>
-        <li>Wear & corrousion resistant</li>
+        <li>High electrical & thermal conductivity</li>
+        <li>Wear & corrosion resistant</li>
         <li>High malleability</li>
         <li>Antibacterial</li>
         </ul>
@@ -1261,14 +1261,14 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row17');">
         <td><i id="right17" class="fas fa-angle-right"></i><i id="down17" class="fas fa-angle-down"></i> Steel</td>
-        <td>An iron alloy with high stregnth & frature resistantce, tipicaly used in situations requireing its high tensile stregnth, such as tools & machines.</td>
+        <td>An iron alloy with high strength & fracture resistance, typically used in situations requiring its high tensile strength, such as tools & machines.</td>
     </tr>
     <tr id="hidden_row17" style="display: none;">
       <td>
         <ul>
-        <li>High stregnth & duriable</li>
-        <li>High fracture reisstance</li>
-        <li>Wear & corrousion resistant</li>
+        <li>High strength & durable</li>
+        <li>High fracture resistance</li>
+        <li>Wear & corrosion resistant</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>200</code>, <code>50</code> without coolant</p>
         <p><strong>Chip Load</strong> <em>(in)</em> -
@@ -1285,7 +1285,7 @@ This machine was the needed spark for this CNC milling documentation article and
 		</tr>
     <tr onclick="showHideRow('hidden_row18');">
         <td><i id="right19" class="fas fa-angle-right"></i><i id="down19" class="fas fa-angle-down"></i> Insulation Foam</td>
-        <td>A low cost, accessable & easy to mill material, commonly used for large molds & as cores for lighweight parts. </td>
+        <td>A low cost, accessible & easy to mill material, commonly used for large molds & as cores for lightweight parts. </td>
     </tr>
     <tr id="hidden_row18" style="display: none;">
 			<td>
@@ -1294,9 +1294,9 @@ This machine was the needed spark for this CNC milling documentation article and
       <td>
         <ul>
         <li>Easy to machine</li>
-        <li>High mechanical stregnth with very low density</li>
-        <li>Thermoinsulating proeritys</li>
-        <li>Cheap & accessable</li>
+        <li>High mechanical strength with very low density</li>
+        <li>Thermal insulating properties</li>
+        <li>Cheap & accessible</li>
         <li>Resistance to water absorption</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>1000</code></p>
@@ -1313,7 +1313,7 @@ This machine was the needed spark for this CNC milling documentation article and
 
 </center>
 
-### Feeds & Speeds Calcuator
+### Feeds & Speeds Calculator
 
 !!! example ""
 
