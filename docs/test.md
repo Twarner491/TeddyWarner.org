@@ -46,6 +46,9 @@ template: index.html
                                 window.performance.navigation.type === 2 );
     if ( historyTraversal ) {
       window.location.reload();
+      (function ($) {
+         preloaderFadeOutInit();
+      })(jQuery);
     }
   });
 
