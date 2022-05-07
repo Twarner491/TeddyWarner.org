@@ -25,6 +25,7 @@ function unit() {
 }
 
 window.onload = function() {
+  document.getElementById("outputval").style.display = "none"; 
   var unit = document.getElementById('units');
     if (unit.checked) {
       var element = document.body;
@@ -33,6 +34,9 @@ window.onload = function() {
 }
 
 function calculate() {
+
+  var element = document.body;
+  document.getElementById("outputval").style.display = "inline"; 
 
   var unit = document.getElementById('units');
 
@@ -63,6 +67,7 @@ function calculate() {
     var Stepoverimp = (9.2/20) * dimp;
     var Stepovermet = Stepoverimp * 25.4;
     document.getElementById('over').value = parseFloat(Stepovermet.toFixed(3));
+
   } 
   else {
       var pi = Math.PI
@@ -85,10 +90,13 @@ function calculate() {
       var Stepover = (9.2/20) * d;
       document.getElementById('over').value = parseFloat(Stepover.toFixed(3));
   }
+
 } 
 
 function myFunction() {
-  
+
+    document.getElementById("outputval").style.display = "none"; 
+
     document.getElementById('diameter').value = "";
     document.getElementById('flutes').value = "";
     document.getElementById('surface').value = "";
@@ -615,7 +623,6 @@ function showHideRow(row) {
 .hidden_row20 #down21 {
   display: inline; 
 }
-
 
 </style>
 
@@ -1329,6 +1336,8 @@ This machine was the needed spark for this CNC milling documentation article and
       
     <hr></hr>
 
+    <div id="outputval">
+
     Spindle Speed (RPM): <input class="calcinput" id="speed" type="text" disabled>
         <br><br>
     Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>): <input class="calcinput" id="feed" type="text" disabled>
@@ -1339,6 +1348,8 @@ This machine was the needed spark for this CNC milling documentation article and
         <br><br>
     Stepover (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="over" type="text" disabled>
         <br><br>
+
+    </div>
         
     <button class="calcbutton" onclick="calculate()"> Calculate </button>
     <button class="calcbutton" onclick="myFunction()"> Clear </button>

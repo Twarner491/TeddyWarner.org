@@ -114,7 +114,7 @@
       {% include "partials/search.html" %}
     {% endif %}
 
-    <label class="md-header__button md-icon" onclick="togglemenu()">
+    <label class="md-header__button md-icon" id="parent" onclick="togglemenu()">
      <span class="menu">
       {% include ".icons/material/menu" ~ ".svg" %}
      </span>
@@ -125,14 +125,5 @@
 
   </nav>
 </header>
-
-<script>
-  
-  function togglemenu() {
-      var element = document.body;
-      element.classList.toggle("toggle");
-  } 
-
-</script>
 
 {% endblock %}
