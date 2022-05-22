@@ -424,6 +424,9 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
       <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 0px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
       <p>
+        <strong><a href="https://engagement.virginia.edu/clubs/signature-initiatives/jefferson-book-awards">The University of Virginia’s Jefferson Book Award</a></strong> (May 2022)
+      </p>
+      <p>
         <strong><a href="https://www.instructables.com/contest/SDnewyear/">Instructables New Year, New Skill Student Design Challenge</a></strong>, 2nd Place. (Feb 2022)
       </p>
       <p>
@@ -434,6 +437,19 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
       </p>
       <p>
         <strong><a href="http://www.appstate.edu/~marlandes/sumo/sumosumo.html">Appalachian SumoBot Competition,</a></strong> 1st Place. (Oct 2018 - Dec 2018)
+      </p>
+     <h2><i class="fas fa-address-card"></i> Featured -</h2>
+      <p>
+        <strong><a href="https://vimeo.com/563923609#t=4233s">Fab Academy - Final Project Presentation</a></strong>, 1:10:33 through 1:13:45. (June 2021)
+      </p>
+      <p>
+        <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Charlotte Latin School -  Fab Lab Covid Response</a></strong> (May 2021)
+      </p>
+      <p>
+        <strong><a href="https://vimeo.com/510901917">Fab Academy - Introduction & Idea</a></strong>, 00:00 through 17:52. (Jan 2021)
+      </p>
+      <p>
+        <strong><a href="https://www.chicagotribune.com/suburbs/wilmette/ct-wml-st-francis-underwater-robotics-tl-0107-20160104-story.html">Chicago Tribune - St. Francis students gain skills...</a></strong> (Jan 2016)
       </p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
@@ -459,7 +475,7 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
         <strong><a href="https://photos.app.goo.gl/kWnrCmx1bZPvqDK29">D is for Desk</a></strong>, A friend of mine's Eagle Scout Project, we built Toe Hawks for the D is for Desk charity. (Nov 2020 / 17 Volunteer Hours) 
       </p>
       <center>
-       <p>--- Total Service - <strong>216.5 Hours</strong> ---</p>
+       <p>--- Total Service - <strong>218.0 Hours</strong> ---</p>
       </center>
       <p>
      <h2><a href="https://www.instagram.com/teddymakesstuff/">@Teddymakesstuff</a> On <i class="fa fa-instagram"></i> <span class="instatext">Instagram</span> -</h2>

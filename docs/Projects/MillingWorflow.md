@@ -667,6 +667,8 @@ This machine was the needed spark for this CNC milling documentation article and
 
 ## Feeds & Speeds
 
+Creating a successfuly subtractive manufcaturing toolpath can be a bit more intimidating than sliceing for an additive manufactuing. Not only can you jepordize your stock material, incrorect feeds and speeds can yeild a hazeround enviornment & portential machine damage. **There is no streamlined answer to find the right feeds and speeds**, ideal values depend on numerous variables & feeds and speeds may not remain constant from job to job. This secontion provides a starting place for feeds and speeds, with general values provided as well as a calcuator for the required inputs in your toolpath. **This is by no means a universal key** and necisary precaution & alterations should be made to provided values to mesh with your manufactuing workflow. Often times the manufacture of your tool & your machine will provide generic feeds and speeds for your specfic equipment. Opperator input is required to achieve successful & safe cuts, often times you'll be able to hear machine starin - a telltail sign of poor cutting. Trial and error adjusting is neccicary to achieve the sweet spot for your feeds and speeds.
+
 !!! abstract "Feeds & Speeds Terminology"
 
     `Tool Diameter`
@@ -789,6 +791,8 @@ This machine was the needed spark for this CNC milling documentation article and
         $$
 
 ### Material Reference
+
+Feeds and speeds are equally dependent on material proterities and the specfic of your machoine & tool. 
 
 <center>
 
