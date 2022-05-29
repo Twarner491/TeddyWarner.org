@@ -566,15 +566,109 @@ template: index.html
 <body>
  <span class="main-content">
   <h1></h1>
-  <div data-aos="fade-in">
-    <img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic">
-  </div>
   <div id="typed-strings">
     <p>Typed.js is a <strong>JavaScript</strong> library.</p>
     <p>It <em>types</em> out sentences.</p>
     <p>Your Mom.</p>
   </div>
   <span id="typed"></span>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+    </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  <div data-aos="fade-in">
+    <img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic">
+  </div>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+    </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+    </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
     <!-- <div class="socialsparent">
       <div class="socials">
         <a href="https://www.linkedin.com/in/teddy-warner-880974200/" class="ln" style=" color: inherit;" title="Linked In - Teddy Warner"><i class="fab fa-linkedin"></i></a>
