@@ -4,6 +4,10 @@ template: index.html
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <script>
 
@@ -34,8 +38,8 @@ template: index.html
 
   function preloaderFadeOutInit(){  
     $('.preloader').delay(1800).fadeOut(525);
+    $('.main-content').hide().delay(2500).fadeIn(160);
     $('.preloaderbg').delay(2500).fadeOut(160);
-    $('.content').hide().delay(2500).fadeIn(160);
     $('body').attr('id','');
   }
 
@@ -45,312 +49,8 @@ template: index.html
     })(jQuery);
   });
 
-  ! function(t, e) {
-      "function" == typeof define && define.amd ? define("ev-emitter/ev-emitter", e) : "object" == typeof module && module.exports ? module.exports = e() : t.EvEmitter = e()
-  }("undefined" != typeof window ? window : this, function() {
-      function t() {}
-      var e = t.prototype;
-      return e.on = function(t, e) {
-          if (t && e) {
-              var i = this._events = this._events || {},
-                  n = i[t] = i[t] || [];
-              return -1 == n.indexOf(e) && n.push(e), this
-          }
-      }, e.once = function(t, e) {
-          if (t && e) {
-              this.on(t, e);
-              var i = this._onceEvents = this._onceEvents || {},
-                  n = i[t] = i[t] || {};
-              return n[e] = !0, this
-          }
-      }, e.off = function(t, e) {
-          var i = this._events && this._events[t];
-          if (i && i.length) {
-              var n = i.indexOf(e);
-              return -1 != n && i.splice(n, 1), this
-          }
-      }, e.emitEvent = function(t, e) {
-          var i = this._events && this._events[t];
-          if (i && i.length) {
-              var n = 0,
-                  o = i[n];
-              e = e || [];
-              for (var r = this._onceEvents && this._onceEvents[t]; o;) {
-                  var s = r && r[o];
-                  s && (this.off(t, o), delete r[o]), o.apply(this, e), n += s ? 0 : 1, o = i[n]
-              }
-              return this
-          }
-      }, t
-  }),
-  function(t, e) {
-      "use strict";
-      "function" == typeof define && define.amd ? define(["ev-emitter/ev-emitter"], function(i) {
-          return e(t, i)
-      }) : "object" == typeof module && module.exports ? module.exports = e(t, require("ev-emitter")) : t.imagesLoaded = e(t, t.EvEmitter)
-  }(window, function(t, e) {
-      function i(t, e) {
-          for (var i in e) t[i] = e[i];
-          return t
-      }
-
-      function n(t) {
-          var e = [];
-          if (Array.isArray(t)) e = t;
-          else if ("number" == typeof t.length)
-              for (var i = 0; i < t.length; i++) e.push(t[i]);
-          else e.push(t);
-          return e
-      }
-
-      function o(t, e, r) {
-          return this instanceof o ? ("string" == typeof t && (t = document.querySelectorAll(t)), this.elements = n(t), this.options = i({}, this.options), "function" == typeof e ? r = e : i(this.options, e), r && this.on("always", r), this.getImages(), h && (this.jqDeferred = new h.Deferred), void setTimeout(function() {
-              this.check()
-          }.bind(this))) : new o(t, e, r)
-      }
-
-      function r(t) {
-          this.img = t
-      }
-
-      function s(t, e) {
-          this.url = t, this.element = e, this.img = new Image
-      }
-      var h = t.jQuery,
-          a = t.console;
-      o.prototype = Object.create(e.prototype), o.prototype.options = {}, o.prototype.getImages = function() {
-          this.images = [], this.elements.forEach(this.addElementImages, this)
-      }, o.prototype.addElementImages = function(t) {
-          "IMG" == t.nodeName && this.addImage(t), this.options.background === !0 && this.addElementBackgroundImages(t);
-          var e = t.nodeType;
-          if (e && d[e]) {
-              for (var i = t.querySelectorAll("img"), n = 0; n < i.length; n++) {
-                  var o = i[n];
-                  this.addImage(o)
-              }
-              if ("string" == typeof this.options.background) {
-                  var r = t.querySelectorAll(this.options.background);
-                  for (n = 0; n < r.length; n++) {
-                      var s = r[n];
-                      this.addElementBackgroundImages(s)
-                  }
-              }
-          }
-      };
-      var d = {
-          1: !0,
-          9: !0,
-          11: !0
-      };
-      return o.prototype.addElementBackgroundImages = function(t) {
-          var e = getComputedStyle(t);
-          if (e)
-              for (var i = /url\((['"])?(.*?)\1\)/gi, n = i.exec(e.backgroundImage); null !== n;) {
-                  var o = n && n[2];
-                  o && this.addBackground(o, t), n = i.exec(e.backgroundImage)
-              }
-      }, o.prototype.addImage = function(t) {
-          var e = new r(t);
-          this.images.push(e)
-      }, o.prototype.addBackground = function(t, e) {
-          var i = new s(t, e);
-          this.images.push(i)
-      }, o.prototype.check = function() {
-          function t(t, i, n) {
-              setTimeout(function() {
-                  e.progress(t, i, n)
-              })
-          }
-          var e = this;
-          return this.progressedCount = 0, this.hasAnyBroken = !1, this.images.length ? void this.images.forEach(function(e) {
-              e.once("progress", t), e.check()
-          }) : void this.complete()
-      }, o.prototype.progress = function(t, e, i) {
-          this.progressedCount++, this.hasAnyBroken = this.hasAnyBroken || !t.isLoaded, this.emitEvent("progress", [this, t, e]), this.jqDeferred && this.jqDeferred.notify && this.jqDeferred.notify(this, t), this.progressedCount == this.images.length && this.complete(), this.options.debug && a && a.log("progress: " + i, t, e)
-      }, o.prototype.complete = function() {
-          var t = this.hasAnyBroken ? "fail" : "done";
-          if (this.isComplete = !0, this.emitEvent(t, [this]), this.emitEvent("always", [this]), this.jqDeferred) {
-              var e = this.hasAnyBroken ? "reject" : "resolve";
-              this.jqDeferred[e](this)
-          }
-      }, r.prototype = Object.create(e.prototype), r.prototype.check = function() {
-          var t = this.getIsImageComplete();
-          return t ? void this.confirm(0 !== this.img.naturalWidth, "naturalWidth") : (this.proxyImage = new Image, this.proxyImage.addEventListener("load", this), this.proxyImage.addEventListener("error", this), this.img.addEventListener("load", this), this.img.addEventListener("error", this), void(this.proxyImage.src = this.img.src))
-      }, r.prototype.getIsImageComplete = function() {
-          return this.img.complete && void 0 !== this.img.naturalWidth
-      }, r.prototype.confirm = function(t, e) {
-          this.isLoaded = t, this.emitEvent("progress", [this, this.img, e])
-      }, r.prototype.handleEvent = function(t) {
-          var e = "on" + t.type;
-          this[e] && this[e](t)
-      }, r.prototype.onload = function() {
-          this.confirm(!0, "onload"), this.unbindEvents()
-      }, r.prototype.onerror = function() {
-          this.confirm(!1, "onerror"), this.unbindEvents()
-      }, r.prototype.unbindEvents = function() {
-          this.proxyImage.removeEventListener("load", this), this.proxyImage.removeEventListener("error", this), this.img.removeEventListener("load", this), this.img.removeEventListener("error", this)
-      }, s.prototype = Object.create(r.prototype), s.prototype.check = function() {
-          this.img.addEventListener("load", this), this.img.addEventListener("error", this), this.img.src = this.url;
-          var t = this.getIsImageComplete();
-          t && (this.confirm(0 !== this.img.naturalWidth, "naturalWidth"), this.unbindEvents())
-      }, s.prototype.unbindEvents = function() {
-          this.img.removeEventListener("load", this), this.img.removeEventListener("error", this)
-      }, s.prototype.confirm = function(t, e) {
-          this.isLoaded = t, this.emitEvent("progress", [this, this.element, e])
-      }, o.makeJQueryPlugin = function(e) {
-          e = e || t.jQuery, e && (h = e, h.fn.imagesLoaded = function(t, e) {
-              var i = new o(this, t, e);
-              return i.jqDeferred.promise(h(this))
-          })
-      }, o.makeJQueryPlugin(), o
-  });
-  
-  {
-      const MathUtils = {
-          map: (x, a, b, c, d) => (x - a) * (d - c) / (b - a) + c,
-          lerp: (a, b, n) => (1 - n) * a + n * b
-      };
-
-      const body = document.body;
-      
-      let winsize;
-      const calcWinsize = () => winsize = {width: window.innerWidth, height: window.innerHeight};
-      calcWinsize();
-      window.addEventListener('resize', calcWinsize);
-
-      let docScroll;
-      const getPageYScroll = () => docScroll = window.pageYOffset || document.documentElement.scrollTop;
-      window.addEventListener('scroll', getPageYScroll);
-
-      class Item {
-          constructor(el) {
-              this.DOM = {el: el};
-              this.DOM.image = this.DOM.el.querySelector('.item__img');
-              this.renderedStyles = {
-                  innerTranslationY: {
-                      previous: 0, 
-                      current: 0, 
-                      ease: 0.1,
-                      maxValue: parseInt(getComputedStyle(this.DOM.image).getPropertyValue('--overflow'), 10),
-                      setValue: () => {
-                          const maxValue = this.renderedStyles.innerTranslationY.maxValue;
-                          const minValue = -1 * maxValue;
-                          return Math.max(Math.min(MathUtils.map(this.props.top - docScroll, winsize.height, -1 * this.props.height, minValue, maxValue), maxValue), minValue)
-                      }
-                  }
-              };
-              this.update();
-              this.observer = new IntersectionObserver((entries) => {
-                  entries.forEach(entry => this.isVisible = entry.intersectionRatio > 0);
-              });
-              this.observer.observe(this.DOM.el);
-              this.initEvents();
-          }
-          update() {
-              this.getSize();
-              for (const key in this.renderedStyles ) {
-                  this.renderedStyles[key].current = this.renderedStyles[key].previous = this.renderedStyles[key].setValue();
-              }
-              this.layout();
-          }
-          getSize() {
-              const rect = this.DOM.el.getBoundingClientRect();
-              this.props = {
-                  height: rect.height,
-                  top: docScroll + rect.top 
-              }
-          }
-          initEvents() {
-              window.addEventListener('resize', () => this.resize());
-          }
-          resize() {
-              this.update();
-          }
-          render() {
-              for (const key in this.renderedStyles ) {
-                  this.renderedStyles[key].current = this.renderedStyles[key].setValue();
-                  this.renderedStyles[key].previous = MathUtils.lerp(this.renderedStyles[key].previous, this.renderedStyles[key].current, this.renderedStyles[key].ease);
-              }
-              this.layout();
-          }
-          layout() {
-              this.DOM.image.style.transform = `translate3d(0,${this.renderedStyles.innerTranslationY.previous}px,0)`;
-          }
-      }
-
-      class SmoothScroll {
-          constructor() {
-              this.DOM = {main: document.querySelector('main')};
-              this.DOM.scrollable = this.DOM.main.querySelector('div[data-scroll]');
-              this.items = [];
-              [...this.DOM.main.querySelectorAll('.content > .item')].forEach(item => this.items.push(new Item(item)));
-              this.renderedStyles = {
-                  translationY: {
-                      previous: 0, 
-                      current: 0, 
-                      ease: 0.1,
-                      setValue: () => docScroll
-                  }
-              };
-              this.setSize();
-              this.update();
-              this.style();
-              this.initEvents();
-              requestAnimationFrame(() => this.render());
-          }
-          update() {
-              for (const key in this.renderedStyles ) {
-                  this.renderedStyles[key].current = this.renderedStyles[key].previous = this.renderedStyles[key].setValue();
-              }   
-              this.layout();
-          }
-          layout() {
-              this.DOM.scrollable.style.transform = `translate3d(0,${-1*this.renderedStyles.translationY.previous}px,0)`;
-          }
-          setSize() {
-              body.style.height = `${this.DOM.scrollable.scrollHeight}px`;
-          }
-          style() {
-              this.DOM.main.style.position = 'afixedbsolute';
-              this.DOM.main.style.width = this.DOM.main.style.height = '100%';
-              this.DOM.main.style.top = this.DOM.main.style.left = 0;
-              this.DOM.main.style.overflow = 'hidden';
-          }
-          initEvents() {
-              window.addEventListener('resize', () => this.setSize());
-          }
-          render() {
-              for (const key in this.renderedStyles ) {
-                  this.renderedStyles[key].current = this.renderedStyles[key].setValue();
-                  this.renderedStyles[key].previous = MathUtils.lerp(this.renderedStyles[key].previous, this.renderedStyles[key].current, this.renderedStyles[key].ease);
-              }
-              this.layout();
-              
-              for (const item of this.items) {
-                  if ( item.isVisible ) {
-                      item.render();
-                  }
-              }
-              
-              requestAnimationFrame(() => this.render());
-          }
-      }
-
-      const preloadImages = () => {
-          return new Promise((resolve, reject) => {
-              imagesLoaded(document.querySelectorAll('.item__img'), {background: true}, resolve);
-          });
-      };
-      
-      preloadImages().then(() => {
-          getPageYScroll();
-          new SmoothScroll();
-      });
-  }
-
   function togglemenu() {
     var element = document.body;
-      $('.content').fadeToggle(120);
       element.classList.toggle("toggle");
   } 
 
@@ -525,6 +225,7 @@ template: index.html
       transform: translateX(-100%);
       transition: transform var(--nav-duration);
       background-color: var(--md-default-fg-color);
+      z-index: 2;
     }
 
     .main-navigation:after {
@@ -536,17 +237,19 @@ template: index.html
       height: 100%;
       background-color: inherit;
       transform-origin: 0 50%;
+      z-index: 2;
     }
     .main-navigation ul {
       font-size: 9vmin;
       width: 100%;
+      z-index: 3;
     }
     .main-navigation li {
       display: flex;
       align-items: center;
       position: relative;
       overflow: hidden;
-      z-index: 1;
+      z-index: 3;
     }
     .main-navigation li:after {
       content: "";
@@ -558,7 +261,7 @@ template: index.html
       background-color: inherit;
       transform-origin: 0 50%;
       transform: translateX(-100%) skew(15deg);
-      z-index: 1;
+      z-index: 3;
     }
     .main-navigation a {
       display: inline-block;
@@ -571,6 +274,10 @@ template: index.html
       user-select: none;
       padding: auto;
       transform: translateY(100%);
+      z-index: 3;
+    }
+
+    .main-content {
       z-index: 1;
     }
 
@@ -603,89 +310,6 @@ template: index.html
       font-size:0.35em;
       font-weight: lighter;
       font-style: italic;
-    }
-
-    [data-scroll] {
-      will-change: transform;
-    }
-
-     .toggle .content {
-      visibility: hidden;
-      opacity: 0;
-    }
-
-    .content {
-      transition: visibility 0s, opacity 0.30s linear;
-      opacity: 1;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      align-items: center;
-      padding: 12rem 0;
-      counter-reset: figure; 
-    }
-
-    .item {
-      margin: 10vh auto;
-      max-width: 100%;
-      position: relative;
-      will-change: transform;
-    }
-
-    .item__img-wrap {
-      --aspect-ratio: 1/1.5;
-      overflow: hidden;
-      width: 500px;
-      margin: 0 auto;
-      padding-bottom: calc(100% / (var(--aspect-ratio)));
-      max-width: calc(100% - 2rem);
-      will-change: transform;
-    }
-
-    .item:first-child .item__img-wrap {
-      width: 1000px;
-      --aspect-ratio: 120/76;
-      --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/2.jpg);
-     }
-
-    .item:nth-child(2) .item__img-wrap {
-      --aspect-ratio: 120/76;
-      --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/1.jpg);
-    }
-
-    .item:nth-child(3) .item__img-wrap {
-       --aspect-ratio: 60/75;
-       --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/3.jpg);
-      }
-
-    .item__img {
-      --overflow: 40px;
-      height: calc(100% + (2 * var(--overflow)));
-      top: calc( -1 * var(--overflow));
-      width: 100%;
-      position: absolute;
-      background-image: var(--image);
-      background-size: cover;
-      background-position: 50% 0%;
-      will-change: transform;
-    }
-
-    .item__img--t1 {
-      --overflow: 60px;
-    }
-
-    .item__img--t2 {
-      --overflow: 80px;
-    }
-
-    .item__img--t3 {
-      --overflow: 120px;
-    }
-
-    .main-content {
-      max-width: 90ch;
-      transform: translateX(0);
-      transition: transform calc(var(--nav-duration) * 2) var(--ease);
     }
 
     .socialsparent {  
@@ -940,35 +564,48 @@ template: index.html
 </nav>
 
 <body>
-<center>
-	<main>
-    <h1></h1>
-    <div data-scroll>
-      <div class="content">
-        <div class="item">
-          <div class="item__img-wrap"><div class="item__img item__img--t2"></div></div>
-        </div>
-        <div class="item">
-          <div class="item__img-wrap"><div class="item__img item__img--t3"></div></div>
-        </div>
-        <div class="item">
-          <div class="item__img-wrap"><div class="item__img item__img--t1"></div></div>
-        </div>
+ <span class="main-content">
+  <h1></h1>
+  <div data-aos="fade-in">
+    <img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic">
+  </div>
+  <div id="typed-strings">
+    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+    <p>It <em>types</em> out sentences.</p>
+    <p>Your Mom.</p>
+  </div>
+  <span id="typed"></span>
+    <!-- <div class="socialsparent">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/teddy-warner-880974200/" class="ln" style=" color: inherit;" title="Linked In - Teddy Warner"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Twarner491" class="git" style=" color: inherit;" title="Github - Twarner491"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/teddymakesstuff/" class="insta" style=" color: inherit;" title="Instagram - @teddymakesstuff"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/WarnerTeddy" class="twitter" style=" color: inherit;" title="Twitter - @WarnerTeddy"><i class="fa fa-twitter"></i></a>
+        <a href="https://discordapp.com/users/534164566649733120/" class="ln" style=" color: inherit;" title="Discord - Twarner#2592"><i class="fab fa-discord"></i></a>
+        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.buymeacoffee.com/teddywarner" class="coffee" style=" color: inherit;" title="Buy Me A Coffee! :)"><i class="fas fa-coffee"></i></a>
+        <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
       </div>
     </div>
-  </main>
-</center>
-
-  <div class="socialsparent">
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/teddy-warner-880974200/" class="ln" style=" color: inherit;" title="Linked In - Teddy Warner"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Twarner491" class="git" style=" color: inherit;" title="Github - Twarner491"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/teddymakesstuff/" class="insta" style=" color: inherit;" title="Instagram - @teddymakesstuff"><i class="fa fa-instagram"></i></a>
-      <a href="https://twitter.com/WarnerTeddy" class="twitter" style=" color: inherit;" title="Twitter - @WarnerTeddy"><i class="fa fa-twitter"></i></a>
-      <a href="https://discordapp.com/users/534164566649733120/" class="ln" style=" color: inherit;" title="Discord - Twarner#2592"><i class="fab fa-discord"></i></a>
-      <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
-      <a href="https://www.buymeacoffee.com/teddywarner" class="coffee" style=" color: inherit;" title="Buy Me A Coffee! :)"><i class="fas fa-coffee"></i></a>
-      <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
-    </div>
-  </div>
+  </div> -->
+ </span> 
 </body>
+
+<script>
+	AOS.init();
+	var image = document.getElementsByClassName('profilepic');
+	new simpleParallax(image, {
+		scale: 1.5,
+		delay: 0.6,
+		transition: 'cubic-bezier(0,0,0,1)'
+	});
+	var typed = new Typed('#typed', {
+	  stringsElement: '#typed-strings',
+	  startDelay: 1000,
+	  loop: true
+	});
+	var typed = new Typed('#typed2', {
+	  stringsElement: '#typed-strings2',
+	  startDelay: 1000,
+	});
+</script>
