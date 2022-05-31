@@ -4,10 +4,10 @@ template: index.html
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+<script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
 <script>
 
@@ -52,11 +52,43 @@ template: index.html
   function togglemenu() {
     var element = document.body;
       element.classList.toggle("toggle");
+      element.classList.add("scrollUp");
   } 
+
+  const element = document.body;
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= 0) {
+      element.classList.remove("scrollUp");
+      return;
+    }
+
+    if (currentScroll > lastScroll && !element.classList.contains("scrollDown")) {
+      element.classList.remove("scrollUp");
+      element.classList.add("scrollDown");
+    } else if (
+      currentScroll < lastScroll &&
+      element.classList.contains("scrollDown")
+    ) {
+      element.classList.remove("scrollDown");
+      element.classList.add("scrollUp");
+    }
+    lastScroll = currentScroll;
+  });
 
 </script>
 
 <style>
+
+    .scrollDown .md-header {
+      transform: translate3d(0, -100%, 0);
+    }
+
+    .scrollUp .md-header {
+      transform: none;
+    }
 
     :root {
       --duration: 1s;
@@ -214,6 +246,295 @@ template: index.html
       padding-left: 0;
     }
 
+    section {
+      height: 100vh;
+      z-index: 2;
+    }
+
+    .o-layout {
+      font-size: 0;
+      height: 100vh;
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    .o-layout_item {
+      display: inline-block;
+      font-size: 1rem;
+      padding-left: 0;
+      vertical-align: top;
+      width: 100%
+    }
+
+    .o-image_wrapper {
+      background-color: var(--md-default-bg-color);
+      overflow: hidden;
+      position: relative
+    }
+
+    .o-image_wrapper.-full {
+      align-content: center;
+      display: flex;
+      height: 100%;
+      margin: 0 6.25rem
+    }
+
+    @media (max-width:699px) {
+      .o-image_wrapper.-full {
+        margin: 1.875rem 0
+      }
+    }
+
+    .o-image {
+      opacity: .8
+    }
+
+    .o-image img {
+      opacity: 0;
+      transform: scale(1.4);
+      transition: opacity 1.2s cubic-bezier(.215, .61, .355, 1), transform 1.2s cubic-bezier(.215, .61, .355, 1);
+      width: 100%
+    }
+
+    .o-image.is-inview img {
+      opacity: 1;
+      transform: scale(1);
+      transition-delay: .6s
+    }
+
+    html.has-scroll-smooth {
+      overflow: hidden; }
+    
+    html.has-scroll-dragging {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    
+    .has-scroll-smooth body {
+      overflow: hidden; }
+    
+    .has-scroll-smooth [data-scroll-container] {
+      min-height: 100vh; }
+    
+    [data-scroll-direction="horizontal"] [data-scroll-container] {
+      height: 100vh;
+      display: inline-block;
+      white-space: nowrap; }
+    
+    [data-scroll-direction="horizontal"] [data-scroll-section] {
+      display: inline-block;
+      vertical-align: top;
+      white-space: nowrap;
+      height: 100%; }
+    
+    .c-scrollbar {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 7px;
+      height: 100%;
+      transform-origin: center right;
+      transition: transform 0.3s, opacity 0.3s;
+      opacity: 0; }
+      .c-scrollbar:hover {
+        transform: scaleX(1.25); }
+      .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+        opacity: 1; }
+      [data-scroll-direction="horizontal"] .c-scrollbar {
+        width: 100%;
+        height: 7px;
+        top: auto;
+        bottom: 0;
+        transform: scaleY(1); }
+        [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+          transform: scaleY(1.3); }
+    
+    .c-scrollbar_thumb {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: black;
+      opacity: 0.5;
+      width: 5px;
+      border-radius: 3px;
+      margin: 2px;
+      cursor: -webkit-grab;
+      cursor: grab; }
+      .has-scroll-dragging .c-scrollbar_thumb {
+        cursor: -webkit-grabbing;
+        cursor: grabbing; }
+      [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+        right: auto;
+        bottom: 0; }
+
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: -webkit-grabbing;
+      cursor: grabbing
+    }
+
+    [data-scroll-direction=horizontal] .c-scrollbar_thumb {
+      bottom: 0;
+      right: auto
+    }
+
+    .c-fixed_wrapper {
+      background-color: var(--md-default-bg-color);
+      overflow: hidden;
+      position: relative
+    }
+
+    @media (min-width:1000px) {
+      .c-fixed_wrapper {
+        height: 100vh
+      }
+    }
+
+    @media (max-width:999px) {
+      .c-fixed_wrapper {
+        height: 50vh
+      }
+    }
+
+    .c-fixed_target {
+      bottom: -100vh
+    }
+
+    .c-fixed,
+    .c-fixed_target {
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: -100vh
+    }
+
+    .c-fixed {
+      background-position: 50%;
+      background-size: cover;
+      height: 100%;
+      opacity: .8
+    }
+
+    html:not(.has-scroll-smooth) .c-fixed {
+      top: 0
+    }
+
+    .c-section {
+      height: 100vh;
+      position: relative;
+      z-index: 2;
+    }
+
+    .c-direction-block {
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    .c-direction-block_item span {
+      background-color: var(--md-default-bg-color);
+      display: block;
+      padding: 0 20px;
+      white-space: nowrap
+    }
+
+    .u-2\:1:before {
+      padding-bottom: 50%
+    }
+
+    .u-4\:3:before {
+      padding-bottom: 75%
+    }
+
+    .u-16\:9:before {
+      padding-bottom: 56.25%
+    }
+
+    .u-1\/1 {
+      width: 100% !important
+    }
+
+    .u-1\/2 {
+      width: 50% !important
+    }
+
+    .u-2\/2 {
+      width: 100% !important
+    }
+
+    .u-1\/3 {
+      width: 33.33333% !important
+    }
+
+    .u-2\/3 {
+      width: 66.66667% !important
+    }
+
+    .u-3\/3 {
+      width: 100% !important
+    }
+
+    .u-1\/4 {
+      width: 25% !important
+    }
+
+    .u-2\/4 {
+      width: 50% !important
+    }
+
+    .u-3\/4 {
+      width: 75% !important
+    }
+
+    .u-4\/4 {
+      width: 100% !important
+    }
+
+    .u-1\/5 {
+      width: 20% !important
+    }
+
+    .u-2\/5 {
+      width: 40% !important
+    }
+
+    .u-3\/5 {
+      width: 60% !important
+    }
+
+    .u-4\/5 {
+      width: 80% !important
+    }
+
+    .u-5\/5 {
+      width: 100% !important
+    }
+
+    @media (min-width:700px) {
+      .u-1\/2\@from-small {
+        width: 50%
+      }
+    }
+
+    @media (min-width:1000px) {
+      .u-1\/3\@from-medium {
+        width: 33.33333%
+      }
+
+      .u-1\/2\@from-medium {
+        width: 50%
+      }
+
+      .u-2\/5\@from-medium {
+        width: 40%
+      }
+
+      .u-3\/5\@from-medium {
+        width: 60%
+      }
+    }
+
     .main-navigation {
       position: fixed;
       top: 0;
@@ -225,7 +546,7 @@ template: index.html
       transform: translateX(-100%);
       transition: transform var(--nav-duration);
       background-color: var(--md-default-fg-color);
-      z-index: 2;
+      z-index: 3;
     }
 
     .main-navigation:after {
@@ -237,19 +558,19 @@ template: index.html
       height: 100%;
       background-color: inherit;
       transform-origin: 0 50%;
-      z-index: 2;
+      z-index: 3;
     }
     .main-navigation ul {
       font-size: 9vmin;
       width: 100%;
-      z-index: 3;
+      z-index: 4;
     }
     .main-navigation li {
       display: flex;
       align-items: center;
       position: relative;
       overflow: hidden;
-      z-index: 3;
+      z-index: 4;
     }
     .main-navigation li:after {
       content: "";
@@ -261,7 +582,7 @@ template: index.html
       background-color: inherit;
       transform-origin: 0 50%;
       transform: translateX(-100%) skew(15deg);
-      z-index: 3;
+      z-index: 4;
     }
     .main-navigation a {
       display: inline-block;
@@ -274,7 +595,7 @@ template: index.html
       user-select: none;
       padding: auto;
       transform: translateY(100%);
-      z-index: 3;
+      z-index: 4;
     }
 
     .main-content {
@@ -311,115 +632,7 @@ template: index.html
       font-weight: lighter;
       font-style: italic;
     }
-
-    .socialsparent {  
-      margin-top: -14.27em;
-      height: 95vh;
-      position: relative;
-    }
-
-    .socials {
-      align-self: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      float: right;
-      padding-left: 91vw;
-      margin-right: 0;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-15%);
-      transform: translateY(-15%);
-    }
-    
-    .ln {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-linkedin:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-    
-    .git {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-github:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-    
-    .insta {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-instagram:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-    
-    .twitter {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-twitter:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-    
-    .discord {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-discord:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-    
-    .spotify {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-spotify:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-
-    .coffee {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-coffee:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-    
-    .email {
-      padding-bottom: 0.6em;
-      font-style: normal;
-    }
-    
-    .fa-paper-plane:hover {
-        color: var(--md-default-fg-color);
-        opacity: 0.65;
-        font-style: normal;
-    }
-
+ 
     .abtparent {
       position: absolute;
       top: 98%;
@@ -565,134 +778,163 @@ template: index.html
 
 <body>
  <span class="main-content">
-  <h1></h1>
-  <div id="typed-strings">
-    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-    <p>It <em>types</em> out sentences.</p>
-    <p>Your Mom.</p>
-  </div>
-  <span id="typed"></span>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-    </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  <div data-aos="fade-in">
-    <img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic">
-  </div>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-    </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-    </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-    <!-- <div class="socialsparent">
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/teddy-warner-880974200/" class="ln" style=" color: inherit;" title="Linked In - Teddy Warner"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Twarner491" class="git" style=" color: inherit;" title="Github - Twarner491"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/teddymakesstuff/" class="insta" style=" color: inherit;" title="Instagram - @teddymakesstuff"><i class="fa fa-instagram"></i></a>
-        <a href="https://twitter.com/WarnerTeddy" class="twitter" style=" color: inherit;" title="Twitter - @WarnerTeddy"><i class="fa fa-twitter"></i></a>
-        <a href="https://discordapp.com/users/534164566649733120/" class="ln" style=" color: inherit;" title="Discord - Twarner#2592"><i class="fab fa-discord"></i></a>
-        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb" class="spotify" style=" color: inherit;" title="Spotify - Teddy Warner"><i class="fab fa-spotify"></i></a>
-        <a href="https://www.buymeacoffee.com/teddywarner" class="coffee" style=" color: inherit;" title="Buy Me A Coffee! :)"><i class="fas fa-coffee"></i></a>
-        <a href="mailto:<Twarner491@gmail.com>" class="email" style=" color: inherit;" title="Email - Twarner491@gmail.com"><i class="fas fa-paper-plane"></i></a>
+      <div data-scroll-container>
+            <section class="c-section" data-scroll-section>
+              <div class="o-container" id="scroll-direction">
+                  <div class="c-direction-block_wrapper">
+                      <div class="c-direction-block" id="direction">
+                          <div class="c-direction-block_item -two">
+                              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
+                                  And in this direction ... And in this direction
+                              </span>
+                          </div>
+                          <div class="c-direction-block_item -two">
+                              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
+                                  And in this direction ... And in this direction
+                              </span>
+                          </div>
+                          <div class="c-direction-block_item -two">
+                              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
+                                  And in this direction ... And in this direction
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section data-scroll-section>
+                  <div data-scroll>
+                      <div class="o-layout -gutter">
+                          <div class="o-layout_item u-2/5@from-medium">
+                            <div id="typed-strings">
+                              <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+                              <p>It <em>types</em> out sentences.</p>
+                              <p>Your Mom.</p>
+                            </div>
+                            <span id="typed"></span>
+                          </div>
+                          <div class="o-layout_item u-3/5@from-medium">
+                              <ul class="c-summary_list">
+                                  <li class="c-summary_list_item u-label" data-scroll>
+                                      <a href="#speed-control" data-scroll-to>
+                                          01. About
+                                          <span class="c-summary_list_icon u-icon">
+                                              ↓
+                                          </span>
+                                      </a>
+                                  </li>
+                                  <li class="c-summary_list_item u-label" data-scroll>
+                                      <a href="#scroll-direction" data-scroll-to>
+                                          02. Projects
+                                          <span class="c-summary_list_icon u-icon">
+                                              ↓
+                                          </span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+          </section>
+          <section class="c-section" data-scroll-section>
+              <div class="o-container" id="speed-control">
+                  <div class="o-layout -gutter">
+                      <div class="o-layout_item u-2/5@from-medium">
+                          <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2" data-scroll-call="test">
+                              <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                  <h3>
+                                      01. <br>
+                                      Speed control
+                                  </h3>
+                                  <div class="c-sections_infos_text u-text">
+                                      <p>
+                                          Each element can be animated at a different speed. You get to choo-choo-choose!
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="o-layout_item u-3/5@from-medium">
+                          <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                              <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                  <div class="o-image" data-scroll>
+                                      <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="o-layout -gutter -bottom">
+                      <div class="o-layout_item u-2/5@from-medium">
+                          <div class="c-speed-block" data-scroll data-scroll-speed="4">
+                              <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                  <div class="o-image" data-scroll data-scroll-speed="-1.5">
+                                      <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="o-layout_item u-3/5@from-medium">
+                          <div class="o-layout u-text-right">
+                              <div class="o-layout_item u-1/2@from-medium">
+                                  <div class="c-speed-block -margin" data-scroll data-scroll-speed="6">
+                                      <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                          <div class="o-image" data-scroll data-scroll-delay="0.1" data-scroll-speed="-2">
+                                              <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section>
+           </br>
+            <p>test</p>
+          </section>
+          <section class="c-section -fixed" data-scroll-section data-persistent>
+              <div class="o-container" id="fixed-elements">
+                  <div class="o-layout">
+                      <div class="o-layout_item u-2/5@from-medium">
+                          <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
+                              <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                  <h3>
+                                      04. <br>
+                                      Fixed elements
+                                  </h3>
+                                  <div class="c-sections_infos_text u-text">
+                                      <p>
+                                          Create slides that stick and untick to the viewport while scrolling through.
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="o-layout_item u-3/5@from-medium">
+                          <div class="c-fixed_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                              <div class="c-fixed_target" id="fixed-target"></div>
+                              <div class="c-fixed" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" style="background-image:url('https://avatars.githubusercontent.com/u/48384497')"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section>
+           </br>
+            <p>test</p>
+          </section>
       </div>
-    </div>
-  </div> -->
- </span> 
+  </span> 
+ <h1></h1>
 </body>
 
 <script>
-	AOS.init();
-	var image = document.getElementsByClassName('profilepic');
-	new simpleParallax(image, {
-		scale: 1.5,
-		delay: 0.6,
-		transition: 'cubic-bezier(0,0,0,1)'
-	});
+  const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+  });
 	var typed = new Typed('#typed', {
 	  stringsElement: '#typed-strings',
 	  startDelay: 1000,
