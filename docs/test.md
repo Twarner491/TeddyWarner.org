@@ -49,17 +49,15 @@ template: index.html
     })(jQuery);
   });
 
-  function togglemenu() {
-    var element = document.body;
-      element.classList.toggle("toggle");
-      element.classList.add("scrollUp");
-  } 
-
   const element = document.body;
   let lastScroll = 0;
 
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
+  scroll.on('scroll', (instance) => {
+    document.documentElement.setAttribute('data-direction', instance.direction);
+    document.documentElement.setAttribute('data-speed', instance.speed);
+    document.documentElement.setAttribute('data-scrollY', instance.scroll.y);
+
+    const currentScroll = instance.scroll.y;
     if (currentScroll <= 0) {
       element.classList.remove("scrollUp");
       return;
@@ -77,6 +75,12 @@ template: index.html
     }
     lastScroll = currentScroll;
   });
+
+  function togglemenu() {
+    var element = document.body;
+      element.classList.toggle("toggle");
+      element.classList.add("scrollUp");
+  } 
 
 </script>
 
@@ -779,6 +783,8 @@ template: index.html
 <body>
  <span class="main-content">
       <div data-scroll-container>
+        <section style="height: 200vh; width: 110vw; margin-left: -1.5em; margin-top: -6.5em; background: linear-gradient(0deg, var(--md-default-bg-color), #243596 80%) no-repeat;">
+        </section>
             <section class="c-section" data-scroll-section>
               <div class="o-container" id="scroll-direction">
                   <div class="c-direction-block_wrapper">
@@ -935,6 +941,7 @@ template: index.html
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
   });
+
 	var typed = new Typed('#typed', {
 	  stringsElement: '#typed-strings',
 	  startDelay: 1000,
