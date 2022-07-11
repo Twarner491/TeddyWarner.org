@@ -1,4 +1,5 @@
 ---
+title: Teddy Warner | Digital Fabricator
 template: index.html
 ---
 
@@ -82,6 +83,16 @@ template: index.html
       element.classList.add("scrollUp");
   } 
 
+  function leftrevon() {
+    var element = document.body;
+      element.classList.add("revleft");
+  } 
+
+  function leftrevoff() {
+    var element = document.body;
+      element.classList.remove("revleft");
+  } 
+
 </script>
 
 <style>
@@ -110,6 +121,7 @@ template: index.html
     }
 
     [data-md-color-scheme="slate"] {
+      /*--md-default-bg-color: hsla(228, 7%, 14%, 1);*/
         --inputicon: white;
         --toggledinputicon: hsla(0, 0%, 0%, 0.87);
         --formhover: hsla(0, 0%, 100%, 0.3);
@@ -260,7 +272,7 @@ template: index.html
       height: 100vh;
       list-style: none;
       margin: 0;
-      padding: 0
+      padding: 0;
     }
 
     .o-layout_item {
@@ -427,7 +439,7 @@ template: index.html
     .c-section {
       height: 100vh;
       position: relative;
-      z-index: 2;
+      z-index: -2;
     }
 
     .c-direction-block {
@@ -437,7 +449,7 @@ template: index.html
     }
 
     .c-direction-block_item span {
-      background-color: var(--md-default-bg-color);
+      background: none;
       display: block;
       padding: 0 20px;
       white-space: nowrap
@@ -537,7 +549,70 @@ template: index.html
       .u-3\/5\@from-medium {
         width: 60%
       }
-    }
+    } 
+
+  #toptitle {
+    font-size: 18vw;
+  }
+
+  .introabt {
+    float: right;
+    margin-right: 1.2em;
+    width: 48em;
+  }
+
+  .introabt h3 {
+    margin-left: 0.35em;
+    width: 93%;
+  }
+
+  #circle { 
+    top: -3.5em;
+    left: 24.75em;
+    position: relative; 
+    padding-bottom: 100%; 
+    overflow: hidden; 
+  }
+
+  .abtbtn {
+    width: 92px;
+    height: 92px;
+  }
+
+  #circle text { 
+    font-family: 'Fira Sans', sans-serif; 
+    font-size: 17.6px; 
+    font-weight: 500;
+  }
+
+  .textrev { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    overflow: hidden;
+    animation: rightrev 5s linear 0s infinite normal;
+  }
+
+  .revleft .textrev{ 
+    animation: leftrev 5s linear 0s infinite normal;
+  }
+
+  @keyframes leftrev {
+      from {
+          transform: rotate(0deg);
+      }
+      to {
+          transform: rotate(360deg);
+      }
+  }
+  @keyframes rightrev {
+      from {
+          transform: rotate(360deg);
+      }
+      to {
+          transform: rotate(0deg);
+      }
+  }
 
     .main-navigation {
       position: fixed;
@@ -694,7 +769,7 @@ template: index.html
     
     @media (max-width: 76em) {
       .logo {
-          padding-left: 1em;
+        padding-left: 1em;
       }
     }
     
@@ -714,42 +789,24 @@ template: index.html
       .toggle .md-search__icon.md-icon:first-of-type {
         color: var(--md-default-fg-color);
       }
-      .socials {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        float: right;
-        right: 0.15em;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-15%);
-        transform: translateY(-15%);
-      }
       .preloader {
         width: 500px;
       }
     }
 
-    @media (max-height: 33em) {
-      .socialsparent {
-        overflow-y: hidden;  
-        margin-top: -14.27em;
-        height: 100vh;
-        position: relative;
+    @media (max-width: 55.357142857142854em) {
+      .introabt {
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
       }
-      
-      .socials {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        float: right;
-        padding-left: 95vw;
-        margin: 0;
-        position: absolute;
-        top: 14em;
+      .introabt h2 {
+        font-size: 1.3em;
+      }
+      .introabt h3 {
+        font-weight: 425;
+        font-size: 1em;
       }
     }
 
@@ -783,70 +840,67 @@ template: index.html
 <body>
  <span class="main-content">
       <div data-scroll-container>
-        <section style="height: 200vh; width: 110vw; margin-left: -1.5em; margin-top: -6.5em; background: linear-gradient(0deg, var(--md-default-bg-color), #243596 80%) no-repeat;">
-        </section>
-            <section class="c-section" data-scroll-section>
-              <div class="o-container" id="scroll-direction">
+        <section data-scroll-section>
+          <div class="c-section" data-scroll-section>
+              <div id="scroll-direction">
                   <div class="c-direction-block_wrapper">
                       <div class="c-direction-block" id="direction">
                           <div class="c-direction-block_item -two">
-                              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
-                                  And in this direction ... And in this direction
+                              <span id="toptitle" class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" data-scroll-target="#direction">
+                                  Digital
                               </span>
                           </div>
                           <div class="c-direction-block_item -two">
-                              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
-                                  And in this direction ... And in this direction
-                              </span>
-                          </div>
-                          <div class="c-direction-block_item -two">
-                              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
-                                  And in this direction ... And in this direction
+                              <span id="toptitle" class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-target="#direction">
+                                  Fabricator
                               </span>
                           </div>
                       </div>
                   </div>
               </div>
-          </section>
-          <section data-scroll-section>
-                  <div data-scroll>
-                      <div class="o-layout -gutter">
-                          <div class="o-layout_item u-2/5@from-medium">
-                            <div id="typed-strings">
-                              <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-                              <p>It <em>types</em> out sentences.</p>
-                              <p>Your Mom.</p>
-                            </div>
-                            <span id="typed"></span>
-                          </div>
-                          <div class="o-layout_item u-3/5@from-medium">
-                              <ul class="c-summary_list">
-                                  <li class="c-summary_list_item u-label" data-scroll>
-                                      <a href="#speed-control" data-scroll-to>
-                                          01. About
-                                          <span class="c-summary_list_icon u-icon">
-                                              ↓
-                                          </span>
-                                      </a>
-                                  </li>
-                                  <li class="c-summary_list_item u-label" data-scroll>
-                                      <a href="#scroll-direction" data-scroll-to>
-                                          02. Projects
-                                          <span class="c-summary_list_icon u-icon">
-                                              ↓
-                                          </span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-          </section>
+          </div>
+        </section>
+        <section class="introabt" data-scroll-section>
+          <div class="o-layout_item">
+            <div class="c-speed-block" data-scroll data-scroll-speed="-3">
+              <div id="typed-strings">
+                <h2>a student.</h2>
+                <h2>a maker.</h2>
+                <h2>a developer.</h2>
+                <h2>an <em>award winning</em> designer.</h2>
+                <h2>a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>.</h2>
+              </div>
+              <h2><b>Hey! I’m Teddy Warner,</b> <span id="typed"></span></h2>
+              <h3>I'm a senior in highschool, currently located in <span style="margin:auto;">🇺🇸 </span> <em>Charlotte, NC</em>. As a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>, I have a great interest in contemporary fabrication technologies & a passion to spread the reaches of digital fabrication.
+              </h3> 
+              <h3>I'm a 'Full-Stack' Digital Fabricator, utilizing plethoras of fabrication processes to produce mixed-media projects equipped with additive & subtractive parts, custom electronics & software integration. My personal work encompasses my hope to inspire & showcase the vast potential of digital fabrication.
+              </h3>
+              <h3>When I'm not studying, I love to lose myself in the internet or pick up a new book, hit a mountain bike trail with my friends, and foremost, continue work on a project. Regardless of the activity, you'll always find me listing to some music.
+              </h3>
+              <div id="abtmebttncontainer">
+                <div id="circle">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 300 300" xml:space="preserve" class="textrev">
+                        <defs>
+                            <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                        </defs>
+                        <g>
+                            <use xlink:href="#circlePath" fill="none"/>
+                            <text>
+                                <textPath fill="var(--md-default-fg-color)" xlink:href="#circlePath">- More About Me - More About Me - More About Me </textPath>
+                            </text>
+                        </g>
+                        <a href="http://teddywarner.com/About-Me/about/" class="abtbtn" onmouseenter="leftrevon()" onmouseleave="leftrevoff()">
+                          <circle fill="none" cx="150" cy="150" r="75"/>
+                      </a>
+                    </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
           <section class="c-section" data-scroll-section>
-              <div class="o-container" id="speed-control">
-                  <div class="o-layout -gutter">
                       <div class="o-layout_item u-2/5@from-medium">
-                          <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2" data-scroll-call="test">
+                          <div class="c-section_infos -padding" data-scroll data-scroll-speed="-3" data-scroll-call="test">
                               <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
                                   <h3>
                                       01. <br>
@@ -859,9 +913,8 @@ template: index.html
                                   </div>
                               </div>
                           </div>
-                      </div>
                       <div class="o-layout_item u-3/5@from-medium">
-                          <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                          <div class="c-speed-block" data-scroll data-scroll-speed="-1">
                               <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
                                   <div class="o-image" data-scroll>
                                       <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
@@ -870,9 +923,8 @@ template: index.html
                           </div>
                       </div>
                   </div>
-                  <div class="o-layout -gutter -bottom">
                       <div class="o-layout_item u-2/5@from-medium">
-                          <div class="c-speed-block" data-scroll data-scroll-speed="4">
+                          <div class="c-speed-block" data-scroll data-scroll-speed="2">
                               <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
                                   <div class="o-image" data-scroll data-scroll-speed="-1.5">
                                       <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
@@ -893,15 +945,9 @@ template: index.html
                               </div>
                           </div>
                       </div>
-                  </div>
-              </div>
-          </section>
-          <section>
-           </br>
-            <p>test</p>
           </section>
           <section class="c-section -fixed" data-scroll-section data-persistent>
-              <div class="o-container" id="fixed-elements">
+              <div id="fixed-elements">
                   <div class="o-layout">
                       <div class="o-layout_item u-2/5@from-medium">
                           <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
