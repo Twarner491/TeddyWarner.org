@@ -129,6 +129,15 @@ template: index.html
         --toggledformhover: hsla(0, 0%, 0%, 0.32);
     }
 
+    @font-face {
+      font-family: "montchauve";
+      src: url("../fonts/montchauve/montchauve.eps");
+      src:
+      url("../fonts/montchauve/montchauve.sfd") format("woff"),
+      url("../fonts/montchauve/Montchauve.otf") format("opentype"),
+      url("../fonts/montchauve/montchauve.svg#filename") format("svg");
+    }
+
     @media screen and (min-width: 60em) {
       .md-sidebar--secondary {
         display: none;
@@ -553,6 +562,9 @@ template: index.html
 
   #toptitle {
     font-size: 18vw;
+    font-family: 'montchauve', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
   }
 
   .introabt {

@@ -153,16 +153,6 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 ---
 
-<!-- Compleation Badge
-
-![progress]()
-
-Done - https://img.shields.io/badge/progress-done!-success?style=flat-square
-Pending - https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square
-Halted - https://img.shields.io/badge/progress-halted-critical?style=flat-square
-Constantly Updating - https://img.shields.io/badge/progress-constantly%20updating-informational?style=flat-square
--->
-
 ![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
 
 I've used microcontrollers in most of my past projects. IC data sheets are super helpful in board design with their pinouts, but I've noticed much of the contents have been pretty foreign to me. Every once in a while, the youtube algorithm recommended one of [Ben Eater's](https://eater.net) computer concept videos to me, which provide a great explanation of the simplistic logic and proofs in computers. I ended up watching his entire [8-bit Breadboard Computer](https://eater.net/8bit) series (embedded below) over the fall of 2021, to try to get a bit of a better idea of the workings of a microcontroller. The computer is an "as simple as possible"[^1] take on an 8-bit computer, using only simple logic to create an 8-bit computer on breadboards. The computer is built-in sectioned modules and then interfaced together, making each section a bit easier to swallow.

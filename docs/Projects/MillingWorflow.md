@@ -631,15 +631,17 @@ function showHideRow(row) {
 <div style="margin-top: -0.8em;">
   <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Junior Year - 2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
   <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Milling/"><i class="fab fa-facebook-square"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Milling/&text=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Milling/&media=&description=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Milling/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/Milling/%0ACheck%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-facebook-square"></i></a>
+  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
+  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/MillingWorflow/&media=&description=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-linkedin"></i></a>
+  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/MillingWorflow/%0ACheck%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
   </span>
 </div>
 
 ---
+
+![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
 
 Subtractive manufacturing is a process I've always found mesmerizing. Although additive processes such as 3D printing allow for the creation of something from seemingly nothing, I believe it's even cooler to watch the morphing of existing stock into a different object. Despite this interest, I feel as though I've barely scratched the surface of CNC - primarily focusing on PCB milling in my subtractive manufacturing projects. I made a first attempt to dive into more subtractive manufacturing work a couple of years ago now when I built [V1 Engineering's](https://www.v1engineering.com/) original [MPCNC](https://docs.v1engineering.com/mpcnc/burly/).
 
@@ -1372,6 +1374,8 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
 
 [Fusion 360 Bantam Tool Library](https://support.bantamtools.com/hc/article_attachments/115002419813/Bantam%20Tools%20Tool%20Library%200.3.zip)
 
+## Gale Crater Mill
+
 ### Wax Seal Stamp
 
 ### Chocolate Molding
@@ -1419,7 +1423,7 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
 </center>
 
 
-## Autodesk Eagle
+## Bantam Tools CNC Software
 
 <center>
 
@@ -1434,21 +1438,13 @@ Inkscape to Eagle
 
 
 [^1]: https://www.cnccookbook.com/machining-carbon-fiber-composites-drilling-cnc-tools/
-
 [^2]: https://dragonplate.com/how-to-cut-carbon-fiber
-
 [^3]: https://www.gutenberg.org/files/12299/12299-h/12299-h.htm
-
 [^4]: https://www.practicalmachinist.com/vb/general-archive/face-milling-pvc-152424/
-
 [^5]: https://www.precisebits.com/tutorials/spindle-rpm
-
 [^6]: https://pub.pages.cba.mit.edu/feed_speeds/
-
 [^7]: https://www.protolabs.com/resources/design-tips/cnc-machining-materials/
-
 [^8]: https://www.3erp.com/blog/cnc-milling-materials-choose-application/
-
 [^9]: https://www.hubs.com/knowledge-base/selecting-right-cnc-material/
 
 *[FDM]: Fused Deposition Modeling

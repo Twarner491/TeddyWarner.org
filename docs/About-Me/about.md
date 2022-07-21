@@ -440,6 +440,9 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
       </p>
      <h2><i class="fas fa-address-card"></i> Featured -</h2>
       <p>
+        <strong><a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Autodesk Learn Lab - Upskilling for the Future</a></strong> (July 2022)
+      </p>
+      <p>
         <strong><a href="https://vimeo.com/563923609#t=4233s">Fab Academy - Final Project Presentation</a></strong>, 1:10:33 through 1:13:45. (June 2021)
       </p>
       <p>

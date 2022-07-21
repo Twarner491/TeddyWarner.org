@@ -260,32 +260,53 @@ hide:
   <div class="title">Project Feed</div>
  </center >
 
-<!--
- <div class="post alt">
+ <div class="post">
     <div class="meta">
-      <div class="photo" style="background-image: url('../images/')"></div>
+      <div class="photo" style="background-image: url('../images/AdaptableAquaponics/cover.jpg')"></div>
     </div>
     <div class="description">
-      <h1>CNC Milling Workflows</h1>
-      <h2>- Spring, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> X-X min</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+      <h1>Adaptable Aquaponics</h1>
+      <h2>- Summer, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> 18-23 minutes</span>
+      <p>A Theoretical Confrontation to Contemporary Farming Challenges. Adaptive Aquaponics is the scaled successor to my <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">Assistive Aquaponics Fish Tank</a> & my entry into Autodesk Instructable's <a href="https://www.instructables.com/contest/makeitmodular2022/">Make It Modular</a> student design scholarship.</p>
       <div class="con">
        <span class="share" style=" color: inherit;">
-        <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Milling/"><i class="fab fa-facebook-square"></i></a>
-        <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Milling/&text=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
-        <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Milling/&media=&description=Check%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
-        <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Milling/"><i class="fab fa-linkedin"></i></a>
-        <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/Milling/%0ACheck%20out%20Bantam%20CNC%20Milling%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+        <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/AdaptableAquaponics/"><i class="fab fa-facebook-square"></i></a>
+        <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/AdaptableAquaponics/&text=Check%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
+        <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/AdaptableAquaponics/&media=&description=Check%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+        <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/AdaptableAquaponics/"><i class="fab fa-linkedin"></i></a>
+        <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/AdaptableAquaponics/%0ACheck%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
        </span>
       </div>
       <p class="read-more">
-        <a href="../Projects/MillingWorkflow">Read More</a>
+        <a href="../Projects/AdaptableAquaponics/">Read More</a>
       </p>
     </div>
   </div>
-  -->
 
-  <div class="post">
+ <div class="post alt">
+    <div class="meta">
+      <div class="photo" style="background-image: url('../images/MillingWorkflow/cover.jpg')"></div>
+    </div>
+    <div class="description">
+      <h1>CNC Milling Workflows</h1>
+      <h2>- Spring-Summer, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> X-X min</span>
+      <p>A guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with Autodesk Fusion 360 & Vetric Aspire, and milling workflows for Shopbot & Bantam Tools machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals.</p>
+      <div class="con">
+       <span class="share" style=" color: inherit;">
+        <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-facebook-square"></i></a>
+        <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
+        <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/MillingWorflow/&media=&description=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+        <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-linkedin"></i></a>
+        <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/MillingWorflow/%0ACheck%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+       </span>
+      </div>
+      <p class="read-more">
+        <a href="../Projects/MillingWorflow/">Read More</a>
+      </p>
+    </div>
+  </div>
+
+<div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/8-bitComputer/clockmodule.jpg')"></div>
     </div>
@@ -307,7 +328,6 @@ hide:
        </p> 
     </div>
   </div>
-
 
   <div class="post alt">
     <div class="meta">
