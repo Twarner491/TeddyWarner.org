@@ -424,6 +424,12 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
       <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="margin-top: 0px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
       <p>
+        <strong><a href="https://www.instructables.com/contest/makeitmodular2022/">Autodesk Construction Solutions Scholarship Award</a></strong>, 1st Place. (July 2022)
+      </p>
+      <p>
+        <strong><a href="https://www.instructables.com/contest/digifab2022/">Instructables Digital Fabrication Student Design Challenge</a></strong>, 1st Place. (July 2022)
+      </p>
+      <p>
         <strong><a href="https://engagement.virginia.edu/clubs/signature-initiatives/jefferson-book-awards">The University of Virginia’s Jefferson Book Award</a></strong> (May 2022)
       </p>
       <p>
