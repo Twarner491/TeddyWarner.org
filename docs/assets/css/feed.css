@@ -1,0 +1,245 @@
+    [data-md-color-scheme="default"] {
+    --cover-color: white;
+    }
+    
+    [data-md-color-scheme="slate"] {
+    --cover-color: #212226;
+    }
+    
+    .post {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem auto;
+      box-shadow: 0 5px 9px 2px rgba(0, 0, 0, 0.4);
+      margin-bottom: 1.6%;
+      background: inherit;
+      line-height: 1.4;
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .post:hover .photo {
+      transform: scale(1.08) rotate(1deg);
+    }
+    
+    .post .meta {
+      position: relative;
+      z-index: 0;
+      height: 200px;
+    }
+    
+    .post .photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.2s;
+    }
+    
+    .post .details a {
+      -webkit-text-decoration: dotted underline;
+              text-decoration: dotted underline;
+    }
+    
+    .post .details .tags li {
+      margin-right: 2px;
+    }
+    
+    .post .details .tags li:first-child {
+      margin-left: -4px;
+    }
+    
+    .post .description {
+      padding: 1rem;
+      background: inherit;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .post .description h1 {
+      line-height: 1;
+      margin: 0;
+      color: inherit;
+      font-size: 1.7rem;
+    }
+    
+    .post .description h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      color: inherit;
+      margin-top: 5px;
+    }
+    
+    .post .description .read-more {
+      float: right;
+      text-align: right;
+      margin-top: -1.25em;
+      height: 1.45em;
+      width: 6.5em;
+    }
+    
+    .post .description .con {
+      position: relative;
+      margin-top: 1em;
+      height: 1.45em;
+      width: 9em;
+    }
+    
+    .post .description .con .share {
+      float:left;
+      font-size: 1.1em;
+    }
+    
+    .post .description .con .share a {
+      color: inherit;
+    }
+    
+    .post .description .read-more a {
+      color: #5466ce;
+      display: inline-block;
+      position: relative;
+    }
+    
+    .post .description .read-more a:after {
+      font-weight: 1000;
+      content:  "-->";
+      margin-left: -10px;
+      opacity: 0;
+      vertical-align: middle;
+      transition: margin 0.3s, opacity 0.3s;
+    }
+    
+    .post .description .read-more a:hover:after {
+      margin-left: 5px;
+      opacity: 1;
+    }
+    
+    .twitter {
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+    }
+    
+    .con .share a.twitter:hover {
+      color: #00acee;
+    }
+    
+    .fb {
+      padding-right: 0.2em;
+    }
+    
+    .con .share a.fb:hover {
+      color: #3b5998;
+    }
+    
+    .pin {
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+    }
+    
+    .con .share a.pin:hover {
+      color: 	#E60023;
+    }
+    
+    .ln {
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+    }
+    
+    .con .share a.ln:hover {
+      color: #0e76a8;
+    }
+    
+    .email {
+      padding-left: 0.2em;
+    }
+    
+    .con .share a.email:hover {
+      color: #5466ce;
+    }
+    
+    .post p {
+      position: relative;
+      color: inherit;
+      margin: 1rem 0 0;
+    }
+    
+    .post p:first-of-type {
+      margin-top: 1.25rem;
+    }
+    
+    .post p:first-of-type:before {
+      content: "";
+      position: absolute;
+      height: 4.5px;
+      background-color: #5466ce;
+      width: 55px;
+      top: -0.75rem;
+      border-radius: 5px;
+    }
+    
+    .post:hover .details {
+      left: 0%;
+    }
+    
+    .time {
+      position: relative;
+      float:right;
+      font-size: 0.95em;
+      margin-top: -2.41em;
+      margin-right: 0.5em;
+      color: inherit;
+    }
+    
+    .title {
+      margin-top: -1.3em;
+      font-size: 3.5em;
+      font-weight: 500;
+      font-style: oblique;
+    }
+    
+    @media (min-width: 640px) {
+      .post {
+        flex-direction: row;
+        max-width: 700px;
+      }
+    
+      .post .meta {
+        flex-basis: 40%;
+        height: auto;
+      }
+    
+      .post .description {
+        flex-basis: 60%;
+      }
+    
+      .post .description:before {
+        transform: skewX(-3deg);
+        background: var(--cover-color); 
+        content: "";
+        width: 40px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    
+      .post.alt {
+        flex-direction: row-reverse;
+      }
+    
+      .post.alt .description:before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg);
+      }
+    
+      .post.alt .details {
+        padding-left: 25px;
+      }
+    
+    }    

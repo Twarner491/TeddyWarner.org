@@ -10,119 +10,9 @@ tags:
   - Breadboard
 ---
 
+<link rel="stylesheet" href="../../assets/css/projects/project.css">
+
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-
-<style>
-
-.profilepic {
-  display: inline;
-  float: left; 
-  margin-top: -7px;
-  width: 35px;
-  height: 34px;
-  border-radius: 50%;
-}
-
-.abtlinks a {
-  color: var(--md-default-fg-color);
-}
-
-.share {
-  float:right;
-  margin-top: 0px;
-  font-size: 1.1em;
-}
-
-.share a {
-  color: inherit;
-}
-
-.twitter {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.twitter:hover {
-  color: #00acee;
-}
-
-.fb {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.fb:hover {
-  color: #3b5998;
-}
-
-.pin {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.pin:hover {
-  color: 	#E60023;
-}
-
-.ln {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.ln:hover {
-  color: #0e76a8;
-}
-
-.email {
-  padding-left: 0.2em;
-  padding-right: 1.5em;
-}
-
-@media (max-width: 40.55384615384616em) {
-  .share {
-    margin-top: -3.5em;
-    margin-right: -1.4em;
-  } 
-}
-
-@media (max-width: 37.4em) {
-  .share {
-    margin-top: -4.8em;
-    margin-right: -1.4em;
-  } 
-}
-
- @media (max-width: 35em) {
-  .year {
-    display: none;
-  }
-  .share {
-    font-size: 1em;
-    margin-top: 0.05em;
-    margin-right: -1.5em;
-  } 
-}
- 
- @media (max-width: 28em) {
-   .profilepic {
-    margin-top: -4.5px;
-    width: 30px;
-    height: 30px;
-  }
-  .abtlinks {
-    font-size: 0.9em;
-   }
-  .year {
-    display: none;
-  }
-  .share {
-    font-size: 0.9em;
-    margin-top: 0.05em;
-    margin-right: -1.5em;
-  } 
-}
-
-</style>
 
 # 8-bit Breadboard Computer - Build Log
 
@@ -141,7 +31,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 -->
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Junior Year - 2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2021-2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/8-bit/"><i class="fab fa-facebook-square"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/8-bit/&text=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on"><i class="fab fa-twitter"></i></a>

@@ -14,622 +14,16 @@ tags:
   - Bantam
 ---
 
+<link rel="stylesheet" href="../../assets/css/projects/milling.css">
+
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script>
-
-function unit() {
-  var element = document.body;
-  element.classList.toggle("metric");
-}
-
-window.onload = function() {
-  document.getElementById("outputval").style.display = "none"; 
-  var unit = document.getElementById('units');
-    if (unit.checked) {
-      var element = document.body;
-      element.classList.toggle("metric");
-    }
-}
-
-function calculate() {
-
-  var element = document.body;
-  document.getElementById("outputval").style.display = "inline"; 
-
-  var unit = document.getElementById('units');
-
-  if (unit.checked) {
-    var pi = Math.PI
-    var d = document.getElementById('diameter').value;
-    var f = document.getElementById('flutes').value;
-    var s = document.getElementById('surface').value;
-    var c = document.getElementById('chips').value;
-    var dimp = d / 25.4;
-    var simp = s / 0.3048;
-    var cimp = c / 25.4;
-    var SpindalSpeed = simp / (pi * (1/12) * dimp);
-    document.getElementById('speed').value = parseFloat(SpindalSpeed.toFixed(2));
-
-    var FeedRateimp = SpindalSpeed * f * cimp;
-    var FeedRatemet = FeedRateimp * 25.4;
-    document.getElementById('feed').value = parseFloat(FeedRatemet.toFixed(2));
-
-    var PlungeRateimp = FeedRateimp * (1/2);
-    var PlungeRatemet = PlungeRateimp * 25.4;
-    document.getElementById('plunge').value = parseFloat(PlungeRatemet.toFixed(2));
-
-    var Stepdownimp = (1/2) * dimp;
-    var Stepdownmet = Stepdownimp * 25.4;
-    document.getElementById('down').value = parseFloat(Stepdownmet.toFixed(3));
-
-    var Stepoverimp = (9.2/20) * dimp;
-    var Stepovermet = Stepoverimp * 25.4;
-    document.getElementById('over').value = parseFloat(Stepovermet.toFixed(3));
-
-  } 
-  else {
-      var pi = Math.PI
-      var d = document.getElementById('diameter').value;
-      var f = document.getElementById('flutes').value;
-      var s = document.getElementById('surface').value;
-      var c = document.getElementById('chips').value;
-      var SpindalSpeed = s / (pi * (1/12) * d);
-      document.getElementById('speed').value = parseFloat(SpindalSpeed.toFixed(2));
-
-      var FeedRate = SpindalSpeed * f * c;
-      document.getElementById('feed').value = parseFloat(FeedRate.toFixed(2));
-
-      var PlungeRate = FeedRate * (1/2);
-      document.getElementById('plunge').value = parseFloat(PlungeRate.toFixed(2));
-
-      var Stepdown = (1/2) * d;
-      document.getElementById('down').value = parseFloat(Stepdown.toFixed(3));
-
-      var Stepover = (9.2/20) * d;
-      document.getElementById('over').value = parseFloat(Stepover.toFixed(3));
-  }
-
-} 
-
-function myFunction() {
-
-    document.getElementById("outputval").style.display = "none"; 
-
-    document.getElementById('diameter').value = "";
-    document.getElementById('flutes').value = "";
-    document.getElementById('surface').value = "";
-    document.getElementById('chips').value = "";
-    document.getElementById('speed').value = "";
-    document.getElementById('feed').value = "";
-    document.getElementById('plunge').value = "";
-    document.getElementById('down').value = "";
-    document.getElementById('over').value = "";
-}
-
-function showHideRow(row) {
-  var element = document.body;
-    element.classList.toggle(row);
-	$("#" + row).toggle();
-}
-
-</script>
-
-<style>
-
-.profilepic {
-  display: inline;
-  float: left; 
-  margin-top: -7px;
-  width: 35px;
-  height: 34px;
-  border-radius: 50%;
-}
-
-.abtlinks a {
-  color: var(--md-default-fg-color);
-}
-
-.share {
-  float:right;
-  margin-top: 0px;
-  font-size: 1.1em;
-}
-
-.share a {
-  color: inherit;
-}
-
-.twitter {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.twitter:hover {
-  color: #00acee;
-}
-
-.fb {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.fb:hover {
-  color: #3b5998;
-}
-
-.pin {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.pin:hover {
-  color: 	#E60023;
-}
-
-.ln {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.share a.ln:hover {
-  color: #0e76a8;
-}
-
-.email {
-  padding-left: 0.2em;
-  padding-right: 1.5em;
-}
-
-@media (max-width: 40.55384615384616em) {
-  .share {
-    margin-top: -3.5em;
-    margin-right: -1.4em;
-  } 
-}
-
-@media (max-width: 37.4em) {
-  .share {
-    margin-top: -4.8em;
-    margin-right: -1.4em;
-  } 
-}
-
- @media (max-width: 35em) {
-  .year {
-    display: none;
-  }
-  .share {
-    font-size: 1em;
-    margin-top: 0.05em;
-    margin-right: -1.5em;
-  } 
-}
- 
- @media (max-width: 28em) {
-   .profilepic {
-    margin-top: -4.5px;
-    width: 30px;
-    height: 30px;
-  }
-  .abtlinks {
-    font-size: 0.9em;
-   }
-  .year {
-    display: none;
-  }
-  .share {
-    font-size: 0.9em;
-    margin-top: 0.05em;
-    margin-right: -1.5em;
-  } 
-}
- 
-.calcinput {
-  border: 1px solid black;
-  border-radius:3px;
-  color:black;
-}
- 
-.calcbutton {
-  background-color:transparent;
-  color:black;
-  border:1px solid black;
-  border-radius:3px;
-}
-
-.mm {
-  display: none;
-}
-
-.mmmin {
-  display: none;
-}
-
-.mmin {
-  display: none;
-}
-
-.in {
-  display: inline;
-}
-
-.inmin {
-  display: inline;
-}
-
-.ftmin {
-  display: inline;
-}
-
-.metric .mm {
-  display: inline;
-}
-
-.metric .mmmin {
-  display: inline;
-}
-
-.metric .mmin {
-  display: inline;
-}
-
-.metric .in {
-  display: none;
-}
-
-.metric .inmin {
-  display: none;
-}
-
-.metric .ftmin {
-  display: none;
-}
-
-#right1 {
-  display: inline;
-}
-
-#down1 {
-  display: none; 
-}
-
-#right2 {
-  display: inline;
-}
-
-#down2 {
-  display: none; 
-}
-
-#right3 {
-  display: inline;
-}
-
-#down3 {
-  display: none; 
-}
-
-#right4 {
-  display: inline;
-}
-
-#down4 {
-  display: none; 
-}
-
-#right5 {
-  display: inline;
-}
-
-#down5 {
-  display: none; 
-}
-
-#right6 {
-  display: inline;
-}
-
-#down6 {
-  display: none; 
-}
-
-#right7 {
-  display: inline;
-}
-
-#down7 {
-  display: none; 
-}
-
-#right8 {
-  display: inline;
-}
-
-#down8 {
-  display: none; 
-}
-
-#right9 {
-  display: inline;
-}
-
-#down9 {
-  display: none; 
-}
-
-#right10 {
-  display: inline;
-}
-
-#down10 {
-  display: none; 
-}
-
-#right11 {
-  display: inline;
-}
-
-#down11 {
-  display: none; 
-}
-
-#right12 {
-  display: inline;
-}
-
-#down12 {
-  display: none; 
-}
-
-#right13 {
-  display: inline;
-}
-
-#down13 {
-  display: none; 
-}
-
-#right14 {
-  display: inline;
-}
-
-#down14 {
-  display: none; 
-}
-
-#right15 {
-  display: inline;
-}
-
-#down15 {
-  display: none; 
-}
-
-#right16 {
-  display: inline;
-}
-
-#down16 {
-  display: none; 
-}
-
-#right17 {
-  display: inline;
-}
-
-#down17 {
-  display: none; 
-}
-
-#right18 {
-  display: inline;
-}
-
-#down18 {
-  display: none; 
-}
-
-#right19 {
-  display: inline;
-}
-
-#down19 {
-  display: none; 
-}
-
-#right20 {
-  display: inline;
-}
-
-#down20 {
-  display: none; 
-}
-
-#right21 {
-  display: inline;
-}
-
-#down21 {
-  display: none; 
-}
-
-
-.hidden_row1 #right1 {
-  display: none;
-}
-
-.hidden_row1 #down1 {
-  display: inline; 
-}
-
-.hidden_row2 #right2 {
-  display: none;
-}
-
-.hidden_row2 #down2 {
-  display: inline; 
-}
-
-.hidden_row3 #right3 {
-  display: none;
-}
-
-.hidden_row3 #down3 {
-  display: inline; 
-}
-
-.hidden_row4 #right4 {
-  display: none;
-}
-
-.hidden_row4 #down4 {
-  display: inline; 
-}
-
-.hidden_row5 #right5 {
-  display: none;
-}
-
-.hidden_row5 #down5 {
-  display: inline; 
-}
-
-.hidden_row6 #right6 {
-  display: none;
-}
-
-.hidden_row6 #down6 {
-  display: inline; 
-}
-
-.hidden_row7 #right7 {
-  display: none;
-}
-
-.hidden_row7 #down7 {
-  display: inline; 
-}
-
-.hidden_row8 #right8 {
-  display: none;
-}
-
-.hidden_row8 #down8 {
-  display: inline; 
-}
-
-.hidden_row9 #right9 {
-  display: none;
-}
-
-.hidden_row9 #down9 {
-  display: inline; 
-}
-
-.hidden_row10 #right10 {
-  display: none;
-}
-
-.hidden_row10 #down10 {
-  display: inline; 
-}
-
-.hidden_row11 #right11 {
-  display: none;
-}
-
-.hidden_row11 #down11 {
-  display: inline; 
-}
-
-.hidden_row12 #right12 {
-  display: none;
-}
-
-.hidden_row12 #down12 {
-  display: inline; 
-}
-
-.hidden_row13 #right13 {
-  display: none;
-}
-
-.hidden_row13 #down13 {
-  display: inline; 
-}
-
-.hidden_row14 #right14 {
-  display: none;
-}
-
-.hidden_row14 #down14 {
-  display: inline; 
-}
-
-.hidden_row15 #right15 {
-  display: none;
-}
-
-.hidden_row15 #down15 {
-  display: inline; 
-}
-
-.hidden_row16 #right16 {
-  display: none;
-}
-
-.hidden_row16 #down16 {
-  display: inline; 
-}
-
-.hidden_row17 #right17 {
-  display: none;
-}
-
-.hidden_row17 #down17 {
-  display: inline; 
-}
-
-.hidden_row18 #right18 {
-  display: none;
-}
-
-.hidden_row18 #down18 {
-  display: inline; 
-}
-
-.hidden_row19 #right19 {
-  display: none;
-}
-
-.hidden_row19 #down19 {
-  display: inline; 
-}
-
-.hidden_row20 #right20 {
-  display: none;
-}
-
-.hidden_row20 #down20 {
-  display: inline; 
-}
-
-.hidden_row20 #right21 {
-  display: none;
-}
-
-.hidden_row20 #down21 {
-  display: inline; 
-}
-
-</style>
+<script src="../../assets/js/milling.js"></script> 
 
 # CNC Milling Workflows
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Junior Year - 2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Spring & Summer, 2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-facebook-square"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
@@ -660,18 +54,31 @@ Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com
 
 <center>
 
-![](../images/MillingWorkflow/BantamBanner.png){width="54%"}
-![](../images/MillingWorkflow/ShopbotBanner.png){width="43%"}
+[![](../images/MillingWorkflow/BantamBanner.png){width="54%"}](https://www.bantamtools.com/)
+[![](../images/MillingWorkflow/ShopbotBanner.png){width="43%"}](https://www.shopbottools.com/)
 
 </center>
 
-This machine was the needed spark for this CNC milling documentation article and will be the machine most of this page's projects are completed on. Thus, I'll be primarily focusing on a CAM to Bantam workflow in this article, highlighting powerful CAM workflows in [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview), along with our lab's [Vectric Aspire](https://www.vectric.com/products/aspire) workflow. This article will be based upon a collection of micro-projects to display these workflows, giving me plenty of the subtractive manufacturing projects I've been looking for :smile:.
+This machine was the needed spark for this CNC milling documentation article and will be the machine most of this page's projects are completed on. This article attempts to serve as a compleate guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview) & [Vectric Aspire](https://www.vectric.com/products/aspire), and milling workflows for [Shopbot](https://www.shopbottools.com/) & [Bantam Tools](https://www.bantamtools.com/) machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals :smile:.
+
+!!! example "Milling Micro-Projects"
+
+    This page starys from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a simmilar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any addational milling micro-project I compleate. That being said, be sure to stay tuned for future updates!
 
 ## Feeds & Speeds
 
-Creating a successfuly subtractive manufcaturing toolpath can be a bit more intimidating than sliceing for an additive manufactuing. Not only can you jepordize your stock material, incrorect feeds and speeds can yeild a hazeround enviornment & portential machine damage. **There is no streamlined answer to find the right feeds and speeds**, ideal values depend on numerous variables & feeds and speeds may not remain constant from job to job. This secontion provides a starting place for feeds and speeds, with general values provided as well as a calcuator for the required inputs in your toolpath. **This is by no means a universal key** and necisary precaution & alterations should be made to provided values to mesh with your manufactuing workflow. Often times the manufacture of your tool & your machine will provide generic feeds and speeds for your specfic equipment. Opperator input is required to achieve successful & safe cuts, often times you'll be able to hear machine starin - a telltail sign of poor cutting. Trial and error adjusting is neccicary to achieve the sweet spot for your feeds and speeds.
+<div class="toggleswitch">
+  <label class="cl-switch">
+    <span class="label">Imperial</span>
+    <input type="checkbox" id="units" onclick="unit()">
+    <span class="switcher"></span>
+    <span class="label">Metric</span>
+  </label>
+</div>
 
-!!! abstract "Feeds & Speeds Terminology"
+Creating a successfuly subtractive manufcaturing toolpath can be a bit more intimidating than sliceing for an additive manufactuing. Not only can you jepordize your stock material, incrorect feeds and speeds can yeild a hazeround enviornment & portential machine damage. **There is no streamlined answer to find the right feeds and speeds**, ideal values depend on numerous variables & feeds and speeds may not remain constant from job to job. This secontion provides a starting place for feeds and speeds, with general values provided as well as a calcuator for the required inputs in your toolpath. **This is by no means a universal key** and necisary precaution & alterations should be made to provided values to mesh with your manufactuing workflow. Often times the manufacture of your tool & your machine will provide generic feeds and speeds for your specfic equipment. Opperator input is required to achieve successful & safe cuts, often times you'll be able to hear machine strain - a telltail sign of poor cutting. Trial and error adjusting is neccicary to achieve the sweet spot for your feeds and speeds.  
+
+???+ abstract "Feeds & Speeds Terminology"
 
     `Tool Diameter`
 
@@ -708,7 +115,7 @@ Creating a successfuly subtractive manufcaturing toolpath can be a bit more inti
 
     `Chip Load`
 
-    :  The thickness of offcut 'chips' removed with each flute per revolution of the endmill. Maximum chip load is typically provided by the endmill's manufacturer, based upon the tool's characteristics. Finding a balance between chip load extremes is crucial for the safety of you and your machine. While larger chip loads yield shorter machine time, they also put greater forces on your endmill, potentially pushing the bit towards its point of rupture. On the other hand, smaller chip loads increase machine time, while expelling waste and heat from the tool at a slower pace, thus risking overheating and potential fire. Safe chip load values usually fall between *0.001"* & *0.010"*.
+    :  The thickness of offcut 'chips' removed with each flute per revolution of the endmill. Maximum chip load is typically provided by the endmill's manufacturer, based upon the tool's characteristics. Finding a balance between chip load extremes is crucial for the safety of you and your machine. While larger chip loads yield shorter machine time, they also put greater forces on your endmill, potentially pushing the bit towards its point of rupture. On the other hand, smaller chip loads increase machine time, while expelling waste and heat from the tool at a slower pace, thus risking overheating and potential fire. Safe chip load values usually fall between <span class="in">*0.001"* & *0.010"*</span><span class="mm"><i>0.0254mm</i> & <i>0.254mm</i></span>.
 
         <center>
 
@@ -728,9 +135,20 @@ Creating a successfuly subtractive manufcaturing toolpath can be a bit more inti
 
         </center>
 
+        <div class="ftmin">
+
         $$
         Spindle Speed (RPM) = {Surface Speed (ft/min) \over π ∗ {1 \over 12} ∗ Tool Diameter (in)}
         $$
+
+        </div>
+        <div class="mmin">
+        
+        $$
+        Spindle Speed (RPM) = {Surface Speed (M/min) \over π ∗ {1 \over 1000} ∗ Tool Diameter (mm)}
+        $$
+
+        </div>
 
     `Feed Rate`
 
@@ -743,9 +161,20 @@ Creating a successfuly subtractive manufcaturing toolpath can be a bit more inti
 
         </center>
 
+        <div class="ftmin">
+
         $$
         Feed Rate (in/min) = Spindle Speed (RPM) ∗ Flute Count ∗ Chip Load (in)
         $$
+
+        </div>
+        <div class="mmin">
+        
+        $$
+        Feed Rate (mm/min) = Spindle Speed (RPM) ∗ Flute Count ∗ Chip Load (mm)
+        $$
+
+        </div>
 
     `Plunge Rate`
 
@@ -758,9 +187,20 @@ Creating a successfuly subtractive manufcaturing toolpath can be a bit more inti
 
         </center>
 
+        <div class="ftmin">
+
         $$
         Plunge Rate(in/min) = Feed Rate (in/min) * {1 \over 2}
         $$
+
+        </div>
+        <div class="mmin">
+        
+        $$
+        Plunge Rate(mm/min) = Feed Rate (mm/min) * {1 \over 2}
+        $$
+
+        </div>
 
     `Stepdown`
 
@@ -773,9 +213,20 @@ Creating a successfuly subtractive manufcaturing toolpath can be a bit more inti
 
         </center>
 
+        <div class="ftmin">
+
         $$
         Stepover(in) = Tool Diameter (in) * {3 \over 5}
         $$
+
+        </div>
+        <div class="mmin">
+        
+        $$
+        Stepover(mm) = Tool Diameter (mm) * {3 \over 5}
+        $$
+
+        </div>
 
     `Stepover`
 
@@ -788,13 +239,24 @@ Creating a successfuly subtractive manufcaturing toolpath can be a bit more inti
 
         </center> 
 
+        <div class="ftmin">
+
         $$
         Stepover(in) = Tool Diameter (in) * {9 \over 20}
         $$
 
+        </div>
+        <div class="mmin">
+        
+        $$
+        Stepover(mm) = Tool Diameter (mm) * {9 \over 20}
+        $$
+
+        </div>
+
 ### Material Reference
 
-Feeds and speeds are equally dependent on material proterities and the specfic of your machoine & tool. 
+Feeds and speeds are equally dependent on material proterities and the specfic of your machoine & tool. Below I've compiled a table of commonly milled stock amterials, ranging from woods to plastics to metals. Each material offers a breif description of the stock, as well as avrage surface speed & chip loads. Chiploads are tool dependent just as much as they are material dependent, so be sure to select an adequate load for your tools diameter. More conserative chip loads are given on the left, while agressive loads are given on the right. Consertive values will extend the life of your tool, while the higher loads will catalize your job time - select a chipload withen the provided range based on your needs. As meantioned above, **This is by no means a universal key** and necisary precaution & alterations should be made to provided values to mesh with your manufactuing workflow. Often times the manufacture of your tool & your machine will provide generic feeds and speeds for your specfic equipment. Opperator input is required to achieve successful & safe cuts, often times you'll be able to hear machine strain - a telltail sign of poor cutting.
 
 <center>
 
@@ -803,7 +265,7 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <td><b>Material</b></td>
         <td><b>Description</b></td>
     </tr>
-    <tr onclick="showHideRow('hidden_row1');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row1');">
         <td><i id="right1" class="fas fa-angle-right"></i><i id="down1" class="fas fa-angle-down"></i> Wax</td>
         <td>A easily milled medium, commonly used for casting cores, molds, and CNC program proofs.</td>
     </tr>
@@ -820,18 +282,18 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Self-lubricating</li>
         <li>Easy on Tooling</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code> 200 </code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code> 200 </code></span><span class="mmin"><code> 60.96 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.0089</code> - <code>0.005</code>
-          </br>1/4" Tool Diameter - <code>0.010</code> - <code>0.015</code>
-          </br>3/8" Tool Diameter - <code>0.015</code> - <code>0.020</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.025</code> - <code>0.033</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.0089</code> - <code>0.005</code></span><span class="mm"><code>0.22606</code> - <code>0.127</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.015</code></span><span class="mm"><code>0.254</code> - <code>0.381</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.015</code> - <code>0.020</code></span><span class="mm"><code>0.381</code> - <code>0.508</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.025</code> - <code>0.033</code></span><span class="mm"><code>0.635</code> - <code>0.8382</code></span>
           </p>
         </div>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row20');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row20');">
         <td><i id="right20" class="fas fa-angle-right"></i><i id="down20" class="fas fa-angle-down"></i> Soft Wood</td>
         <td>A accessible & stylish medium, not to tricky to mill, often used for large scale parts - Pine, Spruce, Cedar, etc.</td>
     </tr>
@@ -846,17 +308,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Cheap & readily available</li>
         <li>Easily milled</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>650</code></span><span class="mmin"><code> 198.12 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.006</code>
-          </br>1/4" Tool Diameter - <code>0.011</code> - <code>0.013</code>
-          </br>3/8" Tool Diameter - <code>0.017</code> - <code>0.020</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.021</code> - <code>0.023</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.004</code> - <code>0.006</code></span><span class="mm"><code>0.1016</code> - <code>0.1524</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.011</code> - <code>0.013</code></span><span class="mm"><code>0.2794</code> - <code>0.3302</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.017</code> - <code>0.020</code></span><span class="mm"><code>0.4318</code> - <code>0.508</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.021</code> - <code>0.023</code></span><span class="mm"><code>0.5334</code> - <code>0.5842</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row2');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row2');">
         <td><i id="right2" class="fas fa-angle-right"></i><i id="down2" class="fas fa-angle-down"></i> Hard Wood</td>
         <td>Similar benefits to soft wood, can be a bit more costly - Maple, Walnut, Cherry, Ash, etc.</td>
     </tr>
@@ -870,17 +332,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Enhanced strength when compared to softwoods, higher density</li>
         <li>Naturally more fire resistance than softwoods</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>650</code></span><span class="mmin"><code> 198.12 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.005</code>
-          </br>1/4" Tool Diameter - <code>0.009</code> - <code>0.011</code>
-          </br>3/8" Tool Diameter - <code>0.016</code> - <code>0.018</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.019</code> - <code>0.021</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.003</code> - <code>0.005</code></span><span class="mm"><code>0.0762</code> - <code>0.127</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.009</code> - <code>0.011</code></span><span class="mm"><code>0.2286</code> - <code>0.2794</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.016</code> - <code>0.018</code></span><span class="mm"><code>0.4064</code> - <code>0.4572</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.019</code> - <code>0.021</code></span><span class="mm"><code>0.4826</code> - <code>0.5334</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row3');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row3');">
         <td><i id="right3" class="fas fa-angle-right"></i><i id="down3" class="fas fa-angle-down"></i> Medium Density Fiberboard <code>MDF</code></td>
         <td>An easily machined & finished material, relatively cheap, commonly used for jigs, fixtures, vacuum molds & engraving.</td>
     </tr>
@@ -897,17 +359,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Easily machined</li>
         <li>Easy to post-process, paint & seal</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>650</code></span><span class="mmin"><code> 198.12 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.007</code>
-          </br>1/4" Tool Diameter - <code>0.013</code> - <code>0.016</code>
-          </br>3/8" Tool Diameter - <code>0.020</code> - <code>0.023</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.025</code> - <code>0.027</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.004</code> - <code>0.007</code></span><span class="mm"><code>0.1016</code> - <code>0.1778</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.013</code> - <code>0.016</code></span><span class="mm"><code>0.3302</code> - <code>0.4064</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.020</code> - <code>0.023</code></span><span class="mm"><code>0.508</code> - <code>0.5842</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.025</code> - <code>0.027</code></span><span class="mm"><code>0.635</code> - <code>0.6858</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row4');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row4');">
         <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board <code>OBS</code></td>
         <td>A strong, light weight, cost-efficient material, a great choice for large scale stiff parts.</td>
     </tr>
@@ -919,20 +381,20 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Recyclable into new OBS</li>
         <li>Stiff & lightweight</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>650</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>650</code></span><span class="mmin"><code> 198.12 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.006</code>
-          </br>1/4" Tool Diameter - <code>0.011</code> - <code>0.013</code>
-          </br>3/8" Tool Diameter - <code>0.017</code> - <code>0.020</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.021</code> - <code>0.023</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.004</code> - <code>0.006</code></span><span class="mm"><code>0.1016</code> - <code>0.1524</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.011</code> - <code>0.013</code></span><span class="mm"><code>0.2794</code> - <code>0.3302</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.017</code> - <code>0.020</code></span><span class="mm"><code>0.4318</code> - <code>0.508</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.021</code> - <code>0.023</code></span><span class="mm"><code>0.5334</code> - <code>0.5842</code></span>
           </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/obs.png">
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row5');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row5');">
         <td><i id="right5" class="fas fa-angle-right"></i><i id="down5" class="fas fa-angle-down"></i> High-density Polyethylene <code>HDPE</code></td>
         <td>A soft-ish plastic, great for prototyping but a tricky material to mill.</td>
     </tr>
@@ -949,17 +411,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Stiff & strong</li>
         <li>Emits not hazardous odors or waste</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>450</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>450</code></span><span class="mmin"><code> 137.16 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.006</code>
-          </br>1/4" Tool Diameter - <code>0.007</code> - <code>0.010</code>
-          </br>3/8" Tool Diameter - <code>0.010</code> - <code>0.012</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.012</code> - <code>0.016</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.003</code> - <code>0.006</code></span><span class="mm"><code>0.0762</code> - <code>0.1524</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.007</code> - <code>0.010</code></span><span class="mm"><code>0.1778</code> - <code>0.254</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.012</code> - <code>0.016</code></span><span class="mm"><code>0.3048</code> - <code>0.4064</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row6');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row6');">
         <td><i id="right6" class="fas fa-angle-right"></i><i id="down6" class="fas fa-angle-down"></i> Polyetheretherketone <code>PEEK</code></td>
         <td>A high-performance thermoplastic, great for structural applications with resistance to fatigue and stress-cracking.</td>
     </tr>
@@ -975,20 +437,20 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Temperature resistant, can operate up to 480° F</li>
         <li>Easy to machine</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>500</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>500</code></span><span class="mmin"><code> 152.4 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
-          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.002</code> - <code>0.004</code></span><span class="mm"><code>0.0508</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.009</code></span><span class="mm"><code>0.1524</code> - <code>0.2286</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
           </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/peek.png" align="left">
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row7');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row7');">
         <td><i id="right7" class="fas fa-angle-right"></i><i id="down7" class="fas fa-angle-down"></i> Polyetherimide <code>PEI</code></td>
         <td>A high-performance thermoplastic, with great heat, solvent & flame resistant. Often used in applications with long term steam exposure.</td>
     </tr>
@@ -1000,20 +462,20 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Creep-resistant, strong & rigid</li>
         <li>Heat & flame resistant</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>360</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>360</code></span><span class="mmin"><code> 109.728 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
-          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.002</code> - <code>0.004</code></span><span class="mm"><code>0.0508</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.009</code></span><span class="mm"><code>0.1524</code> - <code>0.2286</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
           </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pei.png">
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row8');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row8');">
         <td><i id="right8" class="fas fa-angle-right"></i><i id="down8" class="fas fa-angle-down"></i> Polyvinyl Chloride <code>PVC</code></td>
         <td>An cost efficient & accessible plastic, typically used across industry but offers a cheap & lightweight medium.</td>
     </tr>
@@ -1029,17 +491,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Waterproof</li>
         <li>Easy to machine</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>250</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>250</code></span><span class="mmin"><code> 76.2 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
-          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.002</code> - <code>0.004</code></span><span class="mm"><code>0.0508</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.009</code></span><span class="mm"><code>0.1524</code> - <code>0.2286</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row9');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row9');">
         <td><i id="right9" class="fas fa-angle-right"></i><i id="down9" class="fas fa-angle-down"></i> Polyoxymethylene <code>POM</code></td>
         <td>A general purpose, good all around thermoplastic - also know as <i>Acetal</i> or <i>Delrin</i>.</td>
     </tr>
@@ -1055,17 +517,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>High dimensional accuracy</li>
         <li>Wear resistant</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>375</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>375</code></span><span class="mmin"><code> 114.3 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
-          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.002</code> - <code>0.004</code></span><span class="mm"><code>0.0508</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.009</code></span><span class="mm"><code>0.1524</code> - <code>0.2286</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row10');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row10');">
         <td><i id="right10" class="fas fa-angle-right"></i><i id="down10" class="fas fa-angle-down"></i> Acrylonitrile Butadiene Styrene <code>ABS</code></td>
         <td>Easily accessed & low cost thermoplastic, commonly used for molding applications.</td>
     </tr>
@@ -1082,17 +544,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Good insulating properties</li>
         <li>Easy to machine</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>300</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>300</code></span><span class="mmin"><code> 91.44 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
-          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.002</code> - <code>0.004</code></span><span class="mm"><code>0.0508</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.009</code></span><span class="mm"><code>0.1524</code> - <code>0.2286</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row11');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row11');">
         <td><i id="right11" class="fas fa-angle-right"></i><i id="down11" class="fas fa-angle-down"></i> Polycarbonate <code>PC</code></td>
         <td>An incredibly strong and possibly transparent thermoplastic, known for maintained temperature resistance.</td>
     </tr>
@@ -1104,20 +566,20 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Easy to paint</li>
         <li>Chemically weldable</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>360</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>360</code></span><span class="mmin"><code> 109.728 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
-          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.002</code> - <code>0.004</code></span><span class="mm"><code>0.0508</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.009</code></span><span class="mm"><code>0.1524</code> - <code>0.2286</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
           </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pc.png">
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row12');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row12');">
         <td><i id="right12" class="fas fa-angle-right"></i><i id="down12" class="fas fa-angle-down"></i> Nylon</td>
         <td>A cost-effective & long-lasting thermoplastic, used in cases of required mechanical dampening or electrical insulation.</td>
     </tr>
@@ -1133,17 +595,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Corrosion & abrasion resistant</li>
         <li>Great insulating prosperities</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>400</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>400</code></span><span class="mmin"><code> 121.92 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.002</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.006</code> - <code>0.009</code>
-          </br>3/8" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.010</code> - <code>0.012</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.002</code> - <code>0.004</code></span><span class="mm"><code>0.0508</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.009</code></span><span class="mm"><code>0.1524</code> - <code>0.2286</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row13');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row13');">
         <td><i id="right13" class="fas fa-angle-right"></i><i id="down13" class="fas fa-angle-down"></i> Acrylic</td>
         <td>A lightweight insulating  thermoplastic, serves as an effective replacement for glass.</td>
     </tr>
@@ -1158,17 +620,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Good impact resistance</li>
         <li>Great thermal insulation</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>500</code>, <code>130</code> without coolant</p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>500</code>, <code>130</code></span><span class="mmin"><code>152.4</code>, <code>39.624</code></span> without coolant</p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.005</code>
-          </br>1/4" Tool Diameter - <code>0.008</code> - <code>0.010</code>
-          </br>3/8" Tool Diameter - <code>0.010</code> - <code>0.012</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.012</code> - <code>0.015</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.003</code> - <code>0.005</code></span><span class="mm"><code>0.0762</code> - <code>0.127</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.010</code> - <code>0.012</code></span><span class="mm"><code>0.254</code> - <code>0.3048</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.012</code> - <code>0.015</code></span><span class="mm"><code>0.3048</code> - <code>0.381</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row21');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row21');">
         <td><i id="right21" class="fas fa-angle-right"></i><i id="down21" class="fas fa-angle-down"></i> Carbon Fiber</td>
         <td>A strong & lightweight composite of carbon based fibers, desirable for various industrial applications due to its heat & chemical resistance.</td>
     </tr>
@@ -1181,20 +643,20 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>High temperature tolerance with low thermal expansion</li>
         <li>Resistant to chemical abrasion</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>5.45</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>5.45</code></span><span class="mmin"><code> 1.66116 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.006</code>
-          </br>1/4" Tool Diameter - <code>0.009</code> - <code>0.012</code>
-          </br>3/8" Tool Diameter - <code>0.016</code> - <code>0.018</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.023</code> - <code>0.025</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.003</code> - <code>0.006</code></span><span class="mm"><code>0.0762</code> - <code>0.1524</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.009</code> - <code>0.012</code></span><span class="mm"><code>0.2286</code> - <code>0.3048</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.016</code> - <code>0.018</code></span><span class="mm"><code>0.4064</code> - <code>0.4572</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.023</code> - <code>0.025</code></span><span class="mm"><code>0.5842</code> - <code>0.635</code></span>
           </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/cf.png">
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row14');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row14');">
         <td><i id="right14" class="fas fa-angle-right"></i><i id="down14" class="fas fa-angle-down"></i> Aluminium</td>
         <td>An accessible, easy to mill metal, seen across thermal & electrical conducting components.</td>
     </tr>
@@ -1209,17 +671,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Lightweight & durable metal</li>
         <li>Good electrical & heat conductor</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code>, <code>200</code> without coolant</p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>600</code>, <code>200</code></span><span class="mmin"><code>182.88</code>, <code>60.96</code></span> without coolant</p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.003</code> - <code>0.004</code>
-          </br>1/4" Tool Diameter - <code>0.005</code> - <code>0.007</code>
-          </br>3/8" Tool Diameter - <code>0.006</code> - <code>0.008</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.008</code> - <code>0.010</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.003</code> - <code>0.004</code></span><span class="mm"><code>0.0762</code> - <code>0.1016</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.005</code> - <code>0.007</code></span><span class="mm"><code>0.127</code> - <code>0.1778</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.006</code> - <code>0.008</code></span><span class="mm"><code>0.1524</code> - <code>0.2032</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.008</code> - <code>0.010</code></span><span class="mm"><code>0.2032</code> - <code>0.254</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row15');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row15');">
         <td><i id="right15" class="fas fa-angle-right"></i><i id="down15" class="fas fa-angle-down"></i> Brass</td>
         <td>A easy to machine & highly conductive metal, ideal for low friction & intricate parts.</td>
     </tr>
@@ -1233,20 +695,20 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>High malleability</li>
         <li>Antibacterial</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>600</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>600</code></span><span class="mmin"><code> 182.88 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0010</code>
-          </br>1/4" Tool Diameter - <code>0.0005</code> - <code>0.0020</code>
-          </br>3/8" Tool Diameter - <code>0.0005</code> - <code>0.0030</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.0010</code> - <code>0.0060</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.0004</code> - <code>0.0010</code></span><span class="mm"><code>0.01016</code> - <code>0.0254</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.0005</code> - <code>0.0020</code></span><span class="mm"><code>0.0127</code> - <code>0.0508</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.0005</code> - <code>0.0030</code></span><span class="mm"><code>0.0127</code> - <code>0.0762</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.0010</code> - <code>0.0060</code></span><span class="mm"><code>0.0254</code> - <code>0.1524</code></span>
           </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/brass.png">
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row16');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row16');">
         <td><i id="right16" class="fas fa-angle-right"></i><i id="down16" class="fas fa-angle-down"></i> Copper</td>
         <td>A malleable metal, typically used for its high electrical & thermal conductivity.</td>
     </tr>
@@ -1262,17 +724,17 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>High malleability</li>
         <li>Antibacterial</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>550</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>550</code></span><span class="mmin"><code> 167.64 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0010</code>
-          </br>1/4" Tool Diameter - <code>0.0005</code> - <code>0.0020</code>
-          </br>3/8" Tool Diameter - <code>0.0005</code> - <code>0.0030</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.0010</code> - <code>0.0060</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.0004</code> - <code>0.0010</code></span><span class="mm"><code>0.01016</code> - <code>0.0254</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.0005</code> - <code>0.0020</code></span><span class="mm"><code>0.0127</code> - <code>0.0508</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.0005</code> - <code>0.0030</code></span><span class="mm"><code>0.0127</code> - <code>0.0762</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.0010</code> - <code>0.0060</code></span><span class="mm"><code>0.0254</code> - <code>0.1524</code></span>
           </p>
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row17');">
+    <tr class="tablehover" onclick="showHideRow('hidden_row17');">
         <td><i id="right17" class="fas fa-angle-right"></i><i id="down17" class="fas fa-angle-down"></i> Steel</td>
         <td>An iron alloy with high strength & fracture resistance, typically used in situations requiring its high tensile strength, such as tools & machines.</td>
     </tr>
@@ -1283,21 +745,21 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>High fracture resistance</li>
         <li>Wear & corrosion resistant</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>200</code>, <code>50</code> without coolant</p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>200</code>, <code>50</code></span><span class="mmin"><code>60.96</code>, <code>15.24</code></span> without coolant</p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.0004</code> - <code>0.0008</code>
-          </br>1/4" Tool Diameter - <code>0.0008</code> - <code>0.0010</code>
-          </br>3/8" Tool Diameter - <code>0.0012</code> - <code>0.0015</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.0015</code> - <code>0.0025</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.0004</code> - <code>0.0008</code></span><span class="mm"><code>0.01016</code> - <code>0.02032</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.0008</code> - <code>0.0010</code></span><span class="mm"><code>0.02032</code> - <code>0.0254</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.0012</code> - <code>0.0015</code></span><span class="mm"><code>0.03048</code> - <code>0.0381</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.0015</code> - <code>0.0025</code></span><span class="mm"><code>0.0381</code> - <code>0.0635</code></span>
           </p>
 			</td>
 			<td>
         <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/steel.png">
 			</td>
 		</tr>
-    <tr onclick="showHideRow('hidden_row18');">
-        <td><i id="right19" class="fas fa-angle-right"></i><i id="down19" class="fas fa-angle-down"></i> Insulation Foam</td>
+    <tr class="tablehover" onclick="showHideRow('hidden_row18');">
+        <td><i id="right18" class="fas fa-angle-right"></i><i id="down18" class="fas fa-angle-down"></i> Insulation Foam</td>
         <td>A low cost, accessible & easy to mill material, commonly used for large molds & as cores for lightweight parts. </td>
     </tr>
     <tr id="hidden_row18" style="display: none;">
@@ -1312,13 +774,13 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
         <li>Cheap & accessible</li>
         <li>Resistance to water absorption</li>
         </ul>
-        <p><strong>Surface Speed</strong> <em>(ft/min)</em> = <code>1000</code></p>
-        <p><strong>Chip Load</strong> <em>(in)</em> -
+        <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>1000</code></span><span class="mmin"><code> 304.8 </code></span></p>
+        <p><strong>Chip Load</strong> <em>(<span class="in">in</span><span class="mm">mm</span>)</em> -
         <div style="margin-left: 0.75em; margin-top:-2.5em;">
-          </br>1/8" Tool Diameter - <code>0.004</code> - <code>0.006</code>
-          </br>1/4" Tool Diameter - <code>0.011</code> - <code>0.013</code>
-          </br>3/8" Tool Diameter - <code>0.017</code> - <code>0.020</code>
-          </br>≥ 1/2" Tool Diameter - <code>0.021</code> - <code>0.023</code>
+          </br><span class="in">1/8" Tool Diameter</span><span class="mm">3.175mm Tool Diameter</span> - <span class="in"><code>0.004</code> - <code>0.006</code></span><span class="mm"><code>0.1016</code> - <code>0.1524</code></span>
+          </br><span class="in">1/4" Tool Diameter</span><span class="mm">6.35mm Tool Diameter</span> - <span class="in"><code>0.011</code> - <code>0.013</code></span><span class="mm"><code>0.2794</code> - <code>0.3302</code></span>
+          </br><span class="in">3/8" Tool Diameter</span><span class="mm">9.525mm Tool Diameter</span> - <span class="in"><code>0.017</code> - <code>0.020</code></span><span class="mm"><code>0.4318</code> - <code>0.508</code></span>
+          </br><span class="in">≥ 1/2" Tool Diameter</span><span class="mm">≥ 12.7mm Tool Diameter</span> - <span class="in"><code>0.021</code> - <code>0.023</code></span><span class="mm"><code>0.5334</code> - <code>0.5842</code></span>
           </p>
 			</td>
 		</tr>
@@ -1328,33 +790,30 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
 
 ### Feeds & Speeds Calculator
 
-!!! example ""
+Plug in your tool and material settings to derive *Spindle Speed (RPM), Feed Rate, Plunge Rate, Stepdown, Stepover*. On the of chance you'd like these values in Metric units, toggle the *Metric?* checkbox above.
 
-    Metric? <input type="checkbox" id="units" onclick="unit()">
+!!! warning ""
 
-    Tool Diameter (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="diameter" type="text">
+    <div class="FluteCountParent"><div class="quantity"><label for="flutes">Flute Count:</label><input type="number" class="calcinput" id="flutes" min="1" max="12" step="1" value="1"></div></div>
         <br><br>
-    Flute Count: <input class="calcinput" id="flutes" type="text">
+    <div class="outlined-input"><input type="text" class="calcinput" id="diameter" name="diameter" placeholder=" "><label for="diameter">Tool Diameter (<span class="in">in</span><span class="mm">mm</span>)</label></div>
         <br><br>
-    Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>): <input class="calcinput" id="surface" type="text">
+    <div class="outlined-input"><input type="text" class="calcinput" id="surface" name="surface" placeholder=" "><label for="surface">Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</label></div>
         <br><br>
-    Chip Load (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="chips" type="text">
+    <div class="outlined-input"><input type="text" class="calcinput" id="chips" name="chips" placeholder=" "><label for="chips">Chip Load (<span class="in">in</span><span class="mm">mm</span>)</label></div>
       
     <hr></hr>
 
     <div id="outputval">
-
-    Spindle Speed (RPM): <input class="calcinput" id="speed" type="text" disabled>
+    <div class="outlined-input"><input type="text" class="calcinput" id="speed" name="speed" placeholder=" " disabled><label for="speed">Spindle Speed (RPM)</label></div>
         <br><br>
-    Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>): <input class="calcinput" id="feed" type="text" disabled>
+    <div class="outlined-input"><input type="text" class="calcinput" id="feed" name="feed" placeholder=" " disabled><label for="feed">Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
         <br><br>
-    Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>): <input class="calcinput" id="plunge" type="text" disabled>
+    <div class="outlined-input"><input type="text" class="calcinput" id="plunge" name="plunge" placeholder=" " disabled><label for="plunge">Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
         <br><br>
-    Stepdown (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="down" type="text" disabled>
+    <div class="outlined-input"><input type="text" class="calcinput" id="down" name="down" placeholder=" " disabled><label for="down">Stepdown (<span class="in">in</span><span class="mm">mm</span>)</label></div>
         <br><br>
-    Stepover (<span class="in">in</span><span class="mm">mm</span>): <input class="calcinput" id="over" type="text" disabled>
-        <br><br>
-
+    <div class="outlined-input"><input type="text" class="calcinput" id="over" name="over" placeholder=" " disabled><label for="diameter">Stepover (<span class="in">in</span><span class="mm">mm</span>)</label></div>
     </div>
         
     <button class="calcbutton" onclick="calculate()"> Calculate </button>
@@ -1374,7 +833,7 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
 
 [Fusion 360 Bantam Tool Library](https://support.bantamtools.com/hc/article_attachments/115002419813/Bantam%20Tools%20Tool%20Library%200.3.zip)
 
-## Gale Crater Mill
+### Gale Crater Mill
 
 ### Wax Seal Stamp
 
@@ -1421,6 +880,8 @@ Feeds and speeds are equally dependent on material proterities and the specfic o
   <figcaption>Caption</figcaption>
 
 </center>
+
+### Flat-Pack Stools
 
 
 ## Bantam Tools CNC Software
