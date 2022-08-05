@@ -3,6 +3,16 @@ title: Teddy Warner | Digital Fabricator
 template: index.html
 ---
 
+<link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+<link rel="manifest" href="../images/icons/site.webmanifest">
+<link rel="mask-icon" href="../images/icons/safari-pinned-tab.svg" color="#5466ce">
+<link rel="shortcut icon" href="../images/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#5466ce">
+<meta name="msapplication-config" content="../images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
 <link rel="stylesheet" href="../assets/css/test.css">
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
