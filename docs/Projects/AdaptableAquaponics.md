@@ -88,9 +88,11 @@ Both the Fusion 360 model and the prototyping mesh & SVG files for this project 
 
 </center>
 
-!!! Abstract "Make it Modular"
+!!! Success "Make it Modular"
 
-     Adaptive Aquaponics is the scaled successor to my <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">Assistive Aquaponics Fish Tank</a> & my entry into Autodesk Instructable's <a href="https://www.instructables.com/contest/makeitmodular2022/">Make It Modular</a> student design scholarship. Be sure to check [Adaptable Aquaponics](https://www.instructables.com/Adaptable-Aquaponics/) out on instructables!
+    ![alt-text](../images/AdaptableAquaponics/scholarship.jpg){: align=left height="4em"}
+
+     Adaptive Aquaponics is the scaled successor to my <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">Assistive Aquaponics Fish Tank</a> & my winning entry into Autodesk Instructable's <a href="https://www.instructables.com/contest/makeitmodular2022/">Make It Modular</a> student design challenge receiving the Autodesk Construction Solutions Scholarship Award. Be sure to check [Adaptable Aquaponics](https://www.instructables.com/Adaptable-Aquaponics/) out on instructables!
 
 ## CAD - Fusion 360
 
