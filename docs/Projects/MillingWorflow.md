@@ -59,11 +59,11 @@ Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com
 
 </center>
 
-This machine was the needed spark for this CNC milling documentation article and will be the machine most of this page's projects are completed on. This article attempts to serve as a compleate guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview) & [Vectric Aspire](https://www.vectric.com/products/aspire), and milling workflows for [Shopbot](https://www.shopbottools.com/) & [Bantam Tools](https://www.bantamtools.com/) machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals :smile:.
+This article attempts to serve as a complete guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview) & [Vectric Aspire](https://www.vectric.com/products/aspire), and milling workflows for [Shopbot](https://www.shopbottools.com/) & [Bantam Tools](https://www.bantamtools.com/) machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals :smile:.
 
 !!! example "Milling Micro-Projects"
 
-    This page starys from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a simmilar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any addational milling micro-project I compleate. That being said, be sure to stay tuned for future updates!
+    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. That being said, be sure to stay tuned for future updates!
 
 ## Feeds & Speeds
 
@@ -76,7 +76,7 @@ This machine was the needed spark for this CNC milling documentation article and
   </label>
 </div>
 
-Creating a successfuly subtractive manufcaturing toolpath can be a bit more intimidating than sliceing for an additive manufactuing. Not only can you jepordize your stock material, incrorect feeds and speeds can yeild a hazeround enviornment & portential machine damage. **There is no streamlined answer to find the right feeds and speeds**, ideal values depend on numerous variables & feeds and speeds may not remain constant from job to job. This secontion provides a starting place for feeds and speeds, with general values provided as well as a calcuator for the required inputs in your toolpath. **This is by no means a universal key** and necisary precaution & alterations should be made to provided values to mesh with your manufactuing workflow. Often times the manufacture of your tool & your machine will provide generic feeds and speeds for your specfic equipment. Opperator input is required to achieve successful & safe cuts, often times you'll be able to hear machine strain - a telltail sign of poor cutting. Trial and error adjusting is neccicary to achieve the sweet spot for your feeds and speeds.  
+Creating a successful subtractive manufacturing toolpath can be a bit more intimidating than slicing for additive manufacturing. Not only can you jeopardize your stock material, but incorrect feeds and speeds can also yield a hazardous environment & potential machine damage. **There is no streamlined answer to find the right feeds and speeds**, ideal values depend on numerous variables & feeds and speeds may not remain constant from job to job. This section provides a starting place for feeds and speeds, with general values provided as well as a calculator for the required inputs in your toolpath. **This is by no means a universal key** and necessary precautions & alterations should be made to provide values to mesh with your manufacturing workflow. Often the manufacturer of your tool & your machine will provide generic feeds and speeds for your specific equipment. Operator input is required to achieve successful & safe cuts, often you'll be able to hear machine strain - a telltale sign of poor cutting. Trial and error adjusting is necessary to achieve the sweet spot for your feeds and speeds.  
 
 ???+ abstract "Feeds & Speeds Terminology"
 
@@ -256,7 +256,7 @@ Creating a successfuly subtractive manufcaturing toolpath can be a bit more inti
 
 ### Material Reference
 
-Feeds and speeds are equally dependent on material proterities and the specfic of your machoine & tool. Below I've compiled a table of commonly milled stock amterials, ranging from woods to plastics to metals. Each material offers a breif description of the stock, as well as avrage surface speed & chip loads. Chiploads are tool dependent just as much as they are material dependent, so be sure to select an adequate load for your tools diameter. More conserative chip loads are given on the left, while agressive loads are given on the right. Consertive values will extend the life of your tool, while the higher loads will catalize your job time - select a chipload withen the provided range based on your needs. As meantioned above, **This is by no means a universal key** and necisary precaution & alterations should be made to provided values to mesh with your manufactuing workflow. Often times the manufacture of your tool & your machine will provide generic feeds and speeds for your specfic equipment. Opperator input is required to achieve successful & safe cuts, often times you'll be able to hear machine strain - a telltail sign of poor cutting.
+Feeds and speeds are equally dependent on material properties and the specific of your machine & tool. Below I've compiled a table of commonly milled stock materials, ranging from woods to plastics to metals. Each material offers a brief description of the stock, as well as average surface speed & chip loads. Chiploads are tool-dependent just as much as they are material-dependent, so be sure to select an adequate load for your tool's diameter. More conservative chip loads are given on the left, while aggressive loads are given on the right. Conservative values will extend the life of your tool, while the higher loads will catalyze your job time - select a chipload within the provided range based on your needs. As mentioned above, **This is by no means a universal key** and necessary precautions & alterations should be made to provide values to mesh with your manufacturing workflow. Often the manufacturer of your tool & your machine will provide generic feeds and speeds for your specific equipment. Operator input is required to achieve successful & safe cuts, often you'll be able to hear machine strain - a telltale sign of poor cutting.
 
 <center>
 
@@ -826,6 +826,8 @@ Plug in your tool and material settings to derive *Spindle Speed (RPM), Feed Rat
 ![](../images/MillingWorkflow/FusionBanner.jpg){width="100%"}
 
 </center>
+
+
 
 [Fusion 360 Manufacturing Overview](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-BEC5DEA9-AC3E-4FA8-998E-4AE8CD0D0B1E)
 
