@@ -837,9 +837,43 @@ Plug in your tool and material settings to derive *Spindle Speed (RPM), Feed Rat
 
 ### Gale Crater Mill
 
-### Wax Seal Stamp
+<center>
+  <iframe width="98%" height="550" src="https://www.youtube.com/embed/coUpBlCA4uU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
-### Chocolate Molding
+
+
+<center>
+  <iframe width="98%" height="550" src="https://www.youtube.com/embed/yV5A9La4UWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+
+
+<center>
+ <div style="width: 98%; height: 550; margin: 10px;">
+  <iframe width="49%" height="550" align="left" src="https://www.youtube.com/embed/KlI0BbFsN2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="49%" height="550" align="right" src="https://www.youtube.com/embed/8p87vys_IMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+</center>
+
+Text
+
+<center>
+
+![](../images/MillingWorkflow/galeraw.jpg){width="98%"}
+
+</center>
+
+<center>
+
+![](../images/MillingWorkflow/galeglory1.jpg){width="49%"}
+![](../images/MillingWorkflow/galeglory2.jpg){width="49%"}
+
+</center>
+
+<!--- ### Wax Seal Stamp -->
+
+
+<!--- ### Chocolate Molding -->
 
 
 ## Vectric Aspire
@@ -883,7 +917,36 @@ Plug in your tool and material settings to derive *Spindle Speed (RPM), Feed Rat
 
 </center>
 
-### Flat-Pack Stools
+<center>
+
+![](../images/MillingWorkflow/tahoestock.jpg){width="33%"}
+![](../images/MillingWorkflow/tahoeroughingpass.jpg){width="33%"}
+![](../images/MillingWorkflow/tahoefinishingpass.jpg){width="33%"}
+
+</center>
+
+<center>
+  <iframe width="98%" height="550" align="left" src="https://www.youtube.com/embed/U-eiMsjUyIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+Text
+
+<center>
+ <div style="width: 98%; height: 550; margin: 0px;">
+  <iframe width="49%" height="550" align="left" src="https://www.youtube.com/embed/-axCvptGYzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="49%" height="550" align="right" src="https://www.youtube.com/embed/ofZhTsMJd7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+</center>
+
+Text
+
+<center>
+
+![](../images/MillingWorkflow/tahoeglory1.jpg){width="49%"}
+![](../images/MillingWorkflow/tahoeglory2.jpg){width="49%"}
+
+</center>
+
+<!--- ### Flat-Pack Stools -->
 
 
 ## Bantam Tools CNC Software
