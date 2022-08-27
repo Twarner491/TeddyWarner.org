@@ -370,7 +370,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row4');">
-        <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board <code>OBS</code></td>
+        <td><i id="right4" class="fas fa-angle-right"></i><i id="down4" class="fas fa-angle-down"></i> Oriented Strand Board <code>OSB</code></td>
         <td>A strong, light weight, cost-efficient material, a great choice for large scale stiff parts.</td>
     </tr>
     <tr id="hidden_row4" style="display: none;">
@@ -378,7 +378,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
         <ul>
         <li>Similar to plywood but contains no natural defects, knot free and consistent density</li>
         <li>Environmentally friendly, often produced from sustainable rapid growing trees</li>
-        <li>Recyclable into new OBS</li>
+        <li>Recyclable into new OSB</li>
         <li>Stiff & lightweight</li>
         </ul>
         <p><strong>Surface Speed</strong> <em>(<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</em> = <span class="ftmin"><code>650</code></span><span class="mmin"><code> 198.12 </code></span></p>
@@ -793,6 +793,39 @@ Feeds and speeds are equally dependent on material properties and the specific o
 Plug in your tool and material settings to derive *Spindle Speed (RPM), Feed Rate, Plunge Rate, Stepdown, Stepover*. On the of chance you'd like these values in Metric units, toggle the *Metric?* checkbox above.
 
 !!! warning ""
+
+    <div class="toggleswitch">
+      <label class="cl-switch">
+        <span class="label">No Coolant</span>
+        <input type="checkbox" id="coolant" onchange="matChange();">
+        <span class="switcher"></span>
+        <span class="label">Coolant</span>
+      </label>
+    </div>
+
+    <select id="matlib" onchange="matChange();">
+      <option value="Mlib">Material Library</option>
+      <option value="Wax">Wax</option>
+      <option value="SWood">Soft Wood</option>
+      <option value="HWood">Hard Wood</option>
+      <option value="MDF">MDF</option>
+      <option value="OSB">OSB</option>
+      <option value="HDPE">HDPE</option>
+      <option value="PEEK">PEEK</option>
+      <option value="PEI">PEI</option>
+      <option value="PVC">PVC</option>
+      <option value="POM">POM</option>
+      <option value="ABS">ABS</option>
+      <option value="PC">PC</option>
+      <option value="Nylon">Nylon</option>
+      <option value="Acrylic">Acrylic</option>
+      <option value="CFiber">Carbon Fiber</option>
+      <option value="Aluminium">Aluminium</option>
+      <option value="Brass">Brass</option>
+      <option value="Copper">Copper</option>
+      <option value="Steel">Steel</option>
+      <option value="IFoam">Insulation Foam</option>
+    </select>
 
     <div class="FluteCountParent"><div class="quantity"><label for="flutes">Flute Count:</label><input type="number" class="calcinput" id="flutes" min="1" max="12" step="1" value="1"></div></div>
         <br><br>
