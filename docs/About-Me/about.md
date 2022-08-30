@@ -37,7 +37,7 @@ title: About Me
     <div class="stuff__content">
      <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
       <div class="underline"></div>
-      <p><strong>Hey! I’m Teddy Warner,</strong> a senior in high school enrolled at Charlotte Latin School in Charlotte, North Carolina. I have a great interest in modern fabrication technologies such as 3d printing & CNC machines. I love using these interests to benefit my community through volunteering. </p>
+      <p><strong>Hey! I’m Teddy Warner,</strong> a senior enrolled at Charlotte Latin School in Charlotte, North Carolina. My passion lies in rapid-prototyping & digital fabrication & I love using these interests to benefit my community. I tend to respond to emails quickly, and I am always open to chat!</p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
       <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:70px;margin-top: 7px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Teaching Assistant</p>
       <ul>
