@@ -85,6 +85,7 @@ function unit() {
       document.getElementById('plunge').value = "";
       document.getElementById('down').value = "";
       document.getElementById('over').value = "";
+      document.getElementById('matlib').value = "Mlib";
   }
   
   function showHideRow(row) {

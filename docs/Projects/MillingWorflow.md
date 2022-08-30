@@ -790,67 +790,63 @@ Feeds and speeds are equally dependent on material properties and the specific o
 
 ### Feeds & Speeds Calculator
 
-Plug in your tool and material settings to derive *Spindle Speed (RPM), Feed Rate, Plunge Rate, Stepdown, Stepover*. On the of chance you'd like these values in Metric units, toggle the *Metric?* checkbox above.
+<div class="toggleswitch">
+  <label class="cl-switch">
+    <span class="label">No Coolant</span>
+    <input type="checkbox" id="coolant" onchange="matChange();">
+    <span class="switcher"></span>
+    <span class="label">Coolant</span>
+  </label>
+</div>
 
-!!! warning ""
+<div id="diameterparent" class="outlined-input"><input type="text" class="calcinput" id="diameter" name="diameter" placeholder=" "><label for="diameter">Tool Diameter (<span class="in">in</span><span class="mm">mm</span>)</label></div><div style="padding-left: 200px;" class="FluteCountParent"><div class="quantity"><label for="flutes">Flute Count:</label><input type="number" class="calcinput" id="flutes" min="1" max="12" step="1" value="1"></div></div>
 
-    <div class="toggleswitch">
-      <label class="cl-switch">
-        <span class="label">No Coolant</span>
-        <input type="checkbox" id="coolant" onchange="matChange();">
-        <span class="switcher"></span>
-        <span class="label">Coolant</span>
-      </label>
-    </div>
+<br></br>
 
-    <select id="matlib" onchange="matChange();">
-      <option value="Mlib">Material Library</option>
-      <option value="Wax">Wax</option>
-      <option value="SWood">Soft Wood</option>
-      <option value="HWood">Hard Wood</option>
-      <option value="MDF">MDF</option>
-      <option value="OSB">OSB</option>
-      <option value="HDPE">HDPE</option>
-      <option value="PEEK">PEEK</option>
-      <option value="PEI">PEI</option>
-      <option value="PVC">PVC</option>
-      <option value="POM">POM</option>
-      <option value="ABS">ABS</option>
-      <option value="PC">PC</option>
-      <option value="Nylon">Nylon</option>
-      <option value="Acrylic">Acrylic</option>
-      <option value="CFiber">Carbon Fiber</option>
-      <option value="Aluminium">Aluminium</option>
-      <option value="Brass">Brass</option>
-      <option value="Copper">Copper</option>
-      <option value="Steel">Steel</option>
-      <option value="IFoam">Insulation Foam</option>
-    </select>
+<select id="matlib" onchange="matChange();">
+  <option value="Mlib">Material Library</option>
+  <option value="Wax">Wax</option>
+  <option value="SWood">Soft Wood</option>
+  <option value="HWood">Hard Wood</option>
+  <option value="MDF">MDF</option>
+  <option value="OSB">OSB</option>
+  <option value="HDPE">HDPE</option>
+  <option value="PEEK">PEEK</option>
+  <option value="PEI">PEI</option>
+  <option value="PVC">PVC</option>
+  <option value="POM">POM</option>
+  <option value="ABS">ABS</option>
+  <option value="PC">PC</option>
+  <option value="Nylon">Nylon</option>
+  <option value="Acrylic">Acrylic</option>
+  <option value="CFiber">Carbon Fiber</option>
+  <option value="Aluminium">Aluminium</option>
+  <option value="Brass">Brass</option>
+  <option value="Copper">Copper</option>
+  <option value="Steel">Steel</option>
+  <option value="IFoam">Insulation Foam</option>
+</select>
+   
+<div class="outlined-input"><input type="text" class="calcinput" id="surface" name="surface" placeholder=" "><label for="surface">Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</label></div>
+  <br><br>
+<div class="outlined-input"><input type="text" class="calcinput" id="chips" name="chips" placeholder=" "><label for="chips">Chip Load (<span class="in">in</span><span class="mm">mm</span>)</label></div>
 
-    <div class="FluteCountParent"><div class="quantity"><label for="flutes">Flute Count:</label><input type="number" class="calcinput" id="flutes" min="1" max="12" step="1" value="1"></div></div>
-        <br><br>
-    <div class="outlined-input"><input type="text" class="calcinput" id="diameter" name="diameter" placeholder=" "><label for="diameter">Tool Diameter (<span class="in">in</span><span class="mm">mm</span>)</label></div>
-        <br><br>
-    <div class="outlined-input"><input type="text" class="calcinput" id="surface" name="surface" placeholder=" "><label for="surface">Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</label></div>
-        <br><br>
-    <div class="outlined-input"><input type="text" class="calcinput" id="chips" name="chips" placeholder=" "><label for="chips">Chip Load (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+<button class="calcbutton" onclick="calculate()"> Calculate </button>
+<button class="calcbutton" onclick="myFunction()"> Clear </button>
       
-    <hr></hr>
+  <hr></hr>
 
-    <div id="outputval">
-    <div class="outlined-input"><input type="text" class="calcinput" id="speed" name="speed" placeholder=" " disabled><label for="speed">Spindle Speed (RPM)</label></div>
-        <br><br>
-    <div class="outlined-input"><input type="text" class="calcinput" id="feed" name="feed" placeholder=" " disabled><label for="feed">Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
-        <br><br>
-    <div class="outlined-input"><input type="text" class="calcinput" id="plunge" name="plunge" placeholder=" " disabled><label for="plunge">Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
-        <br><br>
-    <div class="outlined-input"><input type="text" class="calcinput" id="down" name="down" placeholder=" " disabled><label for="down">Stepdown (<span class="in">in</span><span class="mm">mm</span>)</label></div>
-        <br><br>
-    <div class="outlined-input"><input type="text" class="calcinput" id="over" name="over" placeholder=" " disabled><label for="diameter">Stepover (<span class="in">in</span><span class="mm">mm</span>)</label></div>
-    </div>
-        
-    <button class="calcbutton" onclick="calculate()"> Calculate </button>
-    <button class="calcbutton" onclick="myFunction()"> Clear </button>
+<div id="outputval">
+  <div class="outlined-input"><input type="text" class="calcinput" id="speed" name="speed" placeholder=" " disabled><label for="speed">Spindle Speed (RPM)</label></div>
+    <br><br>
+  <div class="outlined-input"><input type="text" class="calcinput" id="feed" name="feed" placeholder=" " disabled><label for="feed">Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
+    <br><br>
+  <div class="outlined-input"><input type="text" class="calcinput" id="plunge" name="plunge" placeholder=" " disabled><label for="plunge">Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
+    <br><br>
+  <div class="outlined-input"><input type="text" class="calcinput" id="down" name="down" placeholder=" " disabled><label for="down">Stepdown (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+    <br><br>
+  <div class="outlined-input"><input type="text" class="calcinput" id="over" name="over" placeholder=" " disabled><label for="diameter">Stepover (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+</div>
 
 ## Fusion 360 CAM
 
@@ -902,6 +898,8 @@ Text
 ![](../images/MillingWorkflow/galeglory2.jpg){width="49%"}
 
 </center>
+
+### Flat-Pack Furniture
 
 <!--- ### Wax Seal Stamp -->
 
