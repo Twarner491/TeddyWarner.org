@@ -41,7 +41,7 @@ hide:
     </div>
     <div class="description">
       <h1>CNC Milling Workflows</h1>
-      <h2>- Spring & Summer, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> X-X min</span>
+      <h2>- Spring-Fall, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> X-X min</span>
       <p>A guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with Autodesk Fusion 360 & Vetric Aspire, and milling workflows for Shopbot & Bantam Tools machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals.</p>
       <div class="con">
        <span class="share" style=" color: inherit;">
@@ -87,7 +87,7 @@ hide:
     </div>
     <div class="description">
       <h1>UPDI Serial Programming</h1>
-      <h2>- Summer & Winter, 2021 -</h2> <span class="time"><i class="far fa-clock"></i> 24-31 min</span>
+      <h2>- Summer-Winter, 2021 -</h2> <span class="time"><i class="far fa-clock"></i> 24-31 min</span>
       <p>Programming via the megaTinyCore library, enabling your IDE for serial UPDI programming via a portable python implementation and temporary hardware, or one of two designated serial programmer options. Each UPDI serial programmer enables switching between serial programming and monitoring without any rewiring.</p>
       <div class="con">
        <span class="share" style=" color: inherit;">
