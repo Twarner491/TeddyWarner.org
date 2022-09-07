@@ -18,7 +18,7 @@ hide:
     </div>
     <div class="description">
       <h1>Adaptable Aquaponics</h1>
-      <h2>- Pee, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> 18-23 minutes</span>
+      <h2>- Summer, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> 18-23 minutes</span>
       <p>A Theoretical Confrontation to Contemporary Farming Challenges. Adaptive Aquaponics is the scaled successor to my <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">Assistive Aquaponics Fish Tank</a> & my entry into Autodesk Instructable's <a href="https://www.instructables.com/contest/makeitmodular2022/">Make It Modular</a> student design scholarship.</p>
       <div class="con">
        <span class="share" style=" color: inherit;">
