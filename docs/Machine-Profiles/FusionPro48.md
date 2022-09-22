@@ -20,7 +20,9 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 ![GitHub](https://img.shields.io/github/license/Twarner491/Project-Documentation-Site?color=%234051b5&style=flat-square)
 
 ## Machine Manual
-<iframe width="100%" height="480px" src="https://docs.google.com/document/d/e/2PACX-1vRv0R8clRXQiDcU1YUReBdS3oltwa2FsR66z4xU1nFz05Oghz5xIchRQraOFN5Hjg/pub?embedded=true"></iframe>
+<center>
+    <iframe src="https://drive.google.com/file/d/1Uh_irO-Hn7QCUaXMZCdzbgddoy2A34wz/preview" width="100%" height="480px" allow="autoplay"></iframe>
+</center>
 
 ## Machine Workflow
 
