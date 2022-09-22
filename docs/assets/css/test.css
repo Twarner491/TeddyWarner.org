@@ -33,12 +33,10 @@
       }
   
       @font-face {
-        font-family: "montchauve";
-        src: url("../fonts/montchauve/montchauve.eps");
-        src:
-        url("../fonts/montchauve/montchauve.sfd") format("woff"),
-        url("../fonts/montchauve/Montchauve.otf") format("opentype"),
-        url("../fonts/montchauve/montchauve.svg#filename") format("svg");
+        font-family: 'format1452';
+        src: url('../fonts/format1452/Format_1452.eot');
+        src: url('../fonts/format1452/Format_1452.woff2') format('woff2'), 
+             url('../fonts/format1452/Format_1452.woff') format('woff');
       }
   
       @media screen and (min-width: 60em) {
@@ -369,9 +367,9 @@
   
     #toptitle {
       font-size: 18vw;
-      font-family: 'montchauve', Arial, sans-serif;
-      font-weight:normal;
-      font-style:normal;
+      font-family: 'format1452', Arial, sans-serif;
+      font-weight: normal;
+      font-style: normal;
     }
   
     .avatar {
