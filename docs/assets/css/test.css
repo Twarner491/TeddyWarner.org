@@ -50,6 +50,15 @@
           display: none;
         }
       }
+
+      section {
+        height: 100vh;
+        z-index: 2;
+      }
+
+      .md-sidebar {
+        width: 0px;
+      }
   
       .preloader {
         position: absolute;
@@ -170,11 +179,6 @@
   
       .logo {
         padding-left: 0;
-      }
-  
-      section {
-        height: 100vh;
-        z-index: 2;
       }
   
       .o-layout {
@@ -371,10 +375,16 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    .avatarpar {
+      width: 100%;
+      height: 100vh;
+    }
   
     .avatar {
       content: var(--avatar);
-      width: 28em;
+      width: 48em;
+      margin-bottom: -75vh;
     }
   
     .introabt {

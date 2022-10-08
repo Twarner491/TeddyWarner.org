@@ -639,7 +639,7 @@ markdown_extensions:
 
 <center>
 
-[Icon & Emoji Search Engine :fontawesome-solid-globe-americas:](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search){ .md-button .md-button--primary}
+[Icon & Emoji Search Engine :fontawesome-solid-earth-americas:](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search){ .md-button .md-button--primary}
 
 </center>
 

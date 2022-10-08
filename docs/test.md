@@ -30,7 +30,7 @@ template: index.html
 <body>
 <span class="main-content">
       <div data-scroll-container>
-         <section data-scroll-section>
+         <!---<section data-scroll-section>
           <div class="c-section" data-scroll-section>
               <div id="scroll-direction">
                   <div class="c-direction-block_wrapper">
@@ -49,17 +49,15 @@ template: index.html
                   </div>
               </div>
           </div>
-        </section>
-        <section class="introabt" data-scroll-section>
-          <div class="o-layout_item">
-            <div class="c-section" data-scroll data-scroll-speed="-3">
-              <center>
+        </section>--->
+        <section class="avatarpar" data-scroll-section>
+            <div data-scroll data-scroll-speed="-3.5">
+               <center>
                 <img class="avatar">
-              </center>
+               </center>
             </div>
-          </div>
         </section>
-        <section class="introabt" data-scroll-section>
+        <!---<section class="introabt" data-scroll-section>
           <div class="o-layout_item">
             <div class="c-speed-block" data-scroll data-scroll-speed="-3">
               <div id="typed-strings">
@@ -96,7 +94,7 @@ template: index.html
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
           <section class="c-section" data-scroll-section>
                       <div class="o-layout_item u-2/5@from-medium">
                           <div class="c-section_infos -padding" data-scroll data-scroll-speed="-3" data-scroll-call="test">
