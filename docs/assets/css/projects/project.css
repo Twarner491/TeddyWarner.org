@@ -1,9 +1,20 @@
 .profilepic {
-  display: inline;
-  float: left; 
-  margin-top: -7px;
-  width: 35px;
-  height: 34px;
+  display: inline-block;
+  vertical-align:middle;
+  margin-top: -2px;
+  margin-right: -4px;
+  width: 30px;
+  height: 29px;
+  border-radius: 50%;
+}
+
+.profilepic2 {
+  display: inline-block;
+  vertical-align:middle;
+  margin-top: -2px;
+  margin-right: -4px;
+  width: 30px;
+  height: 29px;
   border-radius: 50%;
 }
 

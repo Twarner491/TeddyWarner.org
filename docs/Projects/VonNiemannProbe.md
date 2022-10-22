@@ -1,5 +1,5 @@
 ---
-title: PROJECT-TITLE
+title: Von Niemann Probe
 hide:
   - navigation
   - tags
@@ -12,7 +12,7 @@ tags:
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 
-# PROJECT-TITLE
+# Von Niemann Probe
 
 <!--- Social Links
 
@@ -29,7 +29,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 -->
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| MONTH, YEAR </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span style="font-weight: 300;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Profile Picture" class="profilepic2"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Fall, 2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
   <a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
@@ -40,6 +40,12 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 </div>
 
 ---
+
+<center>
+
+**A AVR based bluetooth telegraph inlayed in a parametric shoe insole.**
+
+</center>
 
 [Hyperlink](URl)
 
