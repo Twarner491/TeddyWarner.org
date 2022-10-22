@@ -365,7 +365,7 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
 |x1|FTDI Serial Adapter|$14.95|[link](https://www.sparkfun.com/products/9716)|
 
 Total Cost (W/out FTDI)- **$2.83** 
-</br>
+
 Final Cost- **$17.78**
 
 </center>
@@ -499,6 +499,8 @@ Which turned out incredible. The Gerber files for these boards are included in t
 ![](../images/SerialUPDI/orderedsolderedpcbbottom.jpg){width="49.4%"}
   <figcaption>ftdi2updi Front and Back</figcaption>
 
+[Download the FTDI2UPDI Files :fontawesome-brands-github:](https://github.com/Twarner491/FTDI2UPDI){ .md-button .md-button--primary }
+
 </center>
 
 #### USB-C UPDI
@@ -556,11 +558,9 @@ Which turned out incredible. The Gerber files for these boards are included in t
 
 </center>
 
-
-
 <center>
 
-[Download the UPDI Serial Programmers Project Files :fontawesome-solid-download:](https://github.com/Twarner491/project-files/tree/main/USB-C%20UPDI){ .md-button .md-button--primary }
+[Download the USB-C UPDI Files :fontawesome-brands-github:](https://github.com/Twarner491/USB-C-UPDI){ .md-button .md-button--primary }
 
 </center>
 
