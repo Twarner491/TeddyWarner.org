@@ -39,10 +39,16 @@ title: About Me
       <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a senior enrolled at Charlotte Latin School in Charlotte, North Carolina. My passion lies in rapid-prototyping & digital fabrication & I love using these interests to benefit my community. I tend to respond to emails quickly, and I am always open to chat!</p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
+     <p><a href="https://rhythmlink.com/"><img src="https://teddywarner.org/images/About/rythemlink.png" alt="RLI Logo" class="logo" style="width:70px;margin-top: 7px;"></a><strong>RHYTHMLINK INTERNATIONAL</strong><span class="date" style=" color: inherit;">2022-Present</span><br>R&D Engineering Intern</p>
+      <ul>
+        <li>Rapid mechanical prototyping with digital fabrication
+        <li>Electronic system development
+        </li>
+      </ul>
       <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:70px;margin-top: 7px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Teaching Assistant</p>
       <ul>
-        <li>Co-Instructing a fabrication course for middle & high school students.
-        <li>Facilitating STEAM summer classes for children ages 4 to 16.
+        <li>Co-Instructing a fabrication course for middle & high school students
+        <li>Facilitating STEAM summer classes for children ages 4 to 16
         </li>
       </ul>
       <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:42px;margin-top: -2px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Freelance Research and Development</p>
