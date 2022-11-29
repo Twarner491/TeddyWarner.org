@@ -44,9 +44,9 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 ---
 
-Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!
-
 <center>
+
+**Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!**
 
 ![](../images/ParametricGenerator/beautyshot1.jpg){width="100%"}
 
@@ -223,7 +223,7 @@ in the Fusion browser. The lid styles can be toggled between via the eye icon to
 
 !!! success "Congrats!"
 
-    You've successfully generated your own bottle cap!,
+    You've successfully generated your own bottle cap!
 
 [^1]: https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx
 [^2]: https://www.iso.org/standard/57778.html
