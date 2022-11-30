@@ -52,7 +52,7 @@ The *Pizza-Pizza CNC* is built from mostly aluminum rails and PETG 3D printed pa
   <figcaption>Pizza-Pizza CNC LCD Status Display Screen</figcaption>
 
 ![](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/images/week09/electronicboxlights.jpg)
-  <figcaption>Electronics Enclosure Before Motor Wireing</figcaption>
+  <figc aption>Electronics Enclosure Before Motor Wireing</figcaption>
 
 ![](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/images/week09/powersupplysystem.jpg)
   <figcaption>Electronics System Running off of Power Supply</figcaption>
@@ -76,4 +76,4 @@ Of course, after all this work on a pizza preparing machine, the only logical te
 
 </center>
 
-it worked!! The pizza preparing gcode worked through both of its tool changes, creating spirals of sauce and cheese on our pizza crust. Unfortunately, there were a couple of small issues in the run-through, one being not enough sauce put in our sauce hopper, so upon its tool docking, the hopper wasn't heavy enough to stay in the holder, and the other being a sticky cheese. We had left our cheese and sauce out in our lab for almost two days before the test, and not only did this cause the cheese to smell, but also left us with a cheese that would not stop sticking to itself, proving an issue when trying to get the cheese to fall from the hopper, however, the cheese fell through the hopper hole with a little convincing, and finally we had prepared a pizza. :smile:
+it worked!! Unfortunately, there were a couple of small issues in the run-through, one being not enough sauce put in our sauce hopper, so upon its tool docking, the hopper wasn't heavy enough to stay in the holder, and the other being a sticky cheese. Regardless, the *Pizza-Pizza CNC* lived up to its name. :smile:
