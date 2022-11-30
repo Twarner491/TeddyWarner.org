@@ -68,12 +68,10 @@ The final pieces to the CNC involved routing wires from the machines motors and 
 
 </center>
 
-Of course, after all this work on a pizza preparing machine, the only logical test for the machine would be preparing a pizza. We set up our CNC by covering the entire work area and all parts that could be covered with a plastic trash bag, as I didn't want to get sauce on our newly working machine. From here, we loaded the two hoppers with tomato sauce and some shredded cheese, confirmed everything looked right, and then ran the final pizza preparing gcode, and ...
+Of course, after all this work on a pizza preparing machine, the only logical test for the machine would be preparing a pizza. We set up our CNC by covering the entire work area and all parts that could be covered with a plastic trash bag, as I didn't want to get sauce on our newly working machine. From here, we loaded the two hoppers with tomato sauce and some shredded cheese, confirmed everything looked right, and then ran the final pizza preparing gcode, and ... it worked!! Unfortunately, there were a couple of small issues in the run-through, one being not enough sauce put in our sauce hopper, so upon its tool docking, the hopper wasn't heavy enough to stay in the holder, and the other being a sticky cheese. Regardless, the *Pizza-Pizza CNC* lived up to its name. :smile:
 
 <center>
 
 <iframe width="100%" height="650" src="https://www.youtube.com/embed/Tk6OREM7gic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </center>
-
-it worked!! Unfortunately, there were a couple of small issues in the run-through, one being not enough sauce put in our sauce hopper, so upon its tool docking, the hopper wasn't heavy enough to stay in the holder, and the other being a sticky cheese. Regardless, the *Pizza-Pizza CNC* lived up to its name. :smile:
