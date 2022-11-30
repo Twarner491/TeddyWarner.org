@@ -52,7 +52,7 @@ The *Pizza-Pizza CNC* is built from mostly aluminum rails and PETG 3D printed pa
   <figcaption>Pizza-Pizza CNC LCD Status Display Screen</figcaption>
 
 ![](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/images/week09/electronicboxlights.jpg)
-  <figc aption>Electronics Enclosure Before Motor Wireing</figcaption>
+  <figcaption>Electronics Enclosure Before Motor Wireing</figcaption>
 
 ![](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/images/week09/powersupplysystem.jpg)
   <figcaption>Electronics System Running off of Power Supply</figcaption>
