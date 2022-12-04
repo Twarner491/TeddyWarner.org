@@ -48,7 +48,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 <center>
 
-![](../images/AdaptableAquaponics/header.jpg){width="98%"}
+<iframe width="98%" height="650" src="https://www.youtube.com/embed/hvQVoDwjI9o" title="Adaptable Aquaponics | USC Iovine and Young Academy Pitch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **A Theoretical Confrontation to Contemporary Farming Challenges.**
 
