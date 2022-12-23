@@ -7,60 +7,6 @@
     }
   }
   
-  /* bottom buttons */
-  
-  #btn-flip-board {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/switch-enabled.svg');
-  }
-  #btn-flip-board.disabled {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/switch-disabled.svg');
-  }
-  
-  #btn-switch-sides {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/switch-sides.svg');
-  }
-  
-  #btn-save-pgn {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/save-pgn-enabled.svg');
-  }
-  #btn-save-pgn:hover {
-  }
-  #btn-save-pgn.disabled {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/save-pgn-disabled.svg');
-  }
-  
-  #btn-show-hint .icon {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/hint-enabled.svg');
-  }
-  #btn-show-hint.disabled .icon {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/hint-disabled.svg');
-  }
-  #btn-show-hint.loading .icon {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/loading.svg');
-    animation: spin 5s linear infinite;
-  }
-  
-  #btn-engine-disable .active {
-    text-decoration: line-through;
-  }
-  
-  #btn-take-back {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/takeback-enabled.svg');
-  }
-  #btn-take-back.disabled {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/takeback-disabled.svg');
-  }
-  
-  /* side buttons */
-  
-  #btn-analyze .icon {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/analyze.svg');
-  }
-  #btn-analyze.loading .icon {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/loading.svg');
-    animation: spin 5s linear infinite;
-  }
-  
   #btn-new-game .icon {
     background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/new-game.svg');
   }
@@ -68,12 +14,6 @@
   #btn-resign {
     background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/resign.svg');
   }
-  
-  #btn-settings {
-    background-image: url('../../../../images/VonNiemannProbe/ChessEngineIcons/settings.svg');
-  }
-  
-  /* main styles */
   
   .buttons > button {
     background-color: #ffffff;
