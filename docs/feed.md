@@ -12,7 +12,7 @@ hide:
   <div class="title">Project Feed</div>
  </center >
 
- <div class="post">
+ <div class="post alt">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/AdaptableAquaponics/cover.jpg')"></div>
     </div>
@@ -35,7 +35,7 @@ hide:
     </div>
   </div>
 
- <div class="post alt">
+ <div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/MillingWorkflow/cover.jpg')"></div>
     </div>
@@ -58,7 +58,7 @@ hide:
     </div>
   </div>
 
-<div class="post">
+<!--<div class="post">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/8-bitComputer/clockmodule.jpg')"></div>
     </div>
@@ -79,7 +79,7 @@ hide:
         <a href="../Projects/8-bit">Read More</a>
        </p> 
     </div>
-  </div>
+  </div>--->
 
   <div class="post alt">
     <div class="meta">

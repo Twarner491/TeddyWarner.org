@@ -174,337 +174,341 @@ As shown above, your *printer.cfg* file can be accessed in FluiddPi's configurat
 
 </center>
 
-```yaml linenums="1" title="printer.cfg"
-# See docs/Config_Reference.md for a description of parameters.
+<div style="height:660px; overflow:scroll;">
 
-[virtual_sdcard]
-path: ~/gcode_files
+  ```yaml linenums="1" title="printer.cfg"
+  # See docs/Config_Reference.md for a description of parameters.
 
-[display_status]
+  [virtual_sdcard]
+  path: ~/gcode_files
 
-[pause_resume]
+  [display_status]
 
-[stepper_x]
-step_pin: PB13
-dir_pin: !PB12
-enable_pin: !PB14
-microsteps: 16
-rotation_distance: 40
-endstop_pin: ^PC0
-position_endstop: 0
-position_max: 235
-homing_speed: 50
+  [pause_resume]
 
-[tmc2209 stepper_x]
-uart_pin: PC11
-tx_pin: PC10
-uart_address: 0
-run_current: 0.580
-hold_current: 0.500
-stealthchop_threshold: 999999
+  [stepper_x]
+  step_pin: PB13
+  dir_pin: !PB12
+  enable_pin: !PB14
+  microsteps: 16
+  rotation_distance: 40
+  endstop_pin: ^PC0
+  position_endstop: 0
+  position_max: 235
+  homing_speed: 50
 
-[stepper_y]
-step_pin: PB10
-dir_pin: !PB2
-enable_pin: !PB11
-microsteps: 16
-rotation_distance: 40
-endstop_pin: ^PC1
-position_endstop: 0
-position_max: 235
-homing_speed: 50
+  [tmc2209 stepper_x]
+  uart_pin: PC11
+  tx_pin: PC10
+  uart_address: 0
+  run_current: 0.580
+  hold_current: 0.500
+  stealthchop_threshold: 999999
 
-[tmc2209 stepper_y]
-uart_pin: PC11
-tx_pin: PC10
-uart_address: 2
-run_current: 0.580
-hold_current: 0.500
-stealthchop_threshold: 999999
+  [stepper_y]
+  step_pin: PB10
+  dir_pin: !PB2
+  enable_pin: !PB11
+  microsteps: 16
+  rotation_distance: 40
+  endstop_pin: ^PC1
+  position_endstop: 0
+  position_max: 235
+  homing_speed: 50
 
-[stepper_z]
-step_pin: PB0
-dir_pin: PC5
-enable_pin: !PB1
-microsteps: 16
-rotation_distance: 8
-endstop_pin: probe:z_virtual_endstop
-#position_endstop: 0.0
-position_min: -5
-position_max: 250
+  [tmc2209 stepper_y]
+  uart_pin: PC11
+  tx_pin: PC10
+  uart_address: 2
+  run_current: 0.580
+  hold_current: 0.500
+  stealthchop_threshold: 999999
 
-[tmc2209 stepper_z]
-uart_pin: PC11
-tx_pin: PC10
-uart_address: 1
-run_current: 0.580
-hold_current: 0.500
-stealthchop_threshold: 999999
+  [stepper_z]
+  step_pin: PB0
+  dir_pin: PC5
+  enable_pin: !PB1
+  microsteps: 16
+  rotation_distance: 8
+  endstop_pin: probe:z_virtual_endstop
+  #position_endstop: 0.0
+  position_min: -5
+  position_max: 250
 
-[extruder]
-step_pin: PB3
-dir_pin: !PB4
-enable_pin: !PD2
-microsteps: 16
-rotation_distance: 7.61
-pressure_advance = 0.235
-nozzle_diameter: 0.400
-filament_diameter: 1.750
-heater_pin: PC8
-sensor_type: EPCOS 100K B57560G104F
-sensor_pin: PA0
-#control: pid
-#pid_Kp: 21.527
-#pid_Ki: 1.063
-#pid_Kd: 108.982
-min_temp: 0
-max_temp: 250
+  [tmc2209 stepper_z]
+  uart_pin: PC11
+  tx_pin: PC10
+  uart_address: 1
+  run_current: 0.580
+  hold_current: 0.500
+  stealthchop_threshold: 999999
 
-[tmc2209 extruder]
-uart_pin: PC11
-tx_pin: PC10
-uart_address: 3
-run_current: 0.650
-hold_current: 0.500
-stealthchop_threshold: 999999
+  [extruder]
+  step_pin: PB3
+  dir_pin: !PB4
+  enable_pin: !PD2
+  microsteps: 16
+  rotation_distance: 7.61
+  pressure_advance = 0.235
+  nozzle_diameter: 0.400
+  filament_diameter: 1.750
+  heater_pin: PC8
+  sensor_type: EPCOS 100K B57560G104F
+  sensor_pin: PA0
+  #control: pid
+  #pid_Kp: 21.527
+  #pid_Ki: 1.063
+  #pid_Kd: 108.982
+  min_temp: 0
+  max_temp: 250
 
-[heater_bed]
-heater_pin: PC9
-sensor_type: ATC Semitec 104GT-2
-sensor_pin: PC3
-#control: pid
-#pid_Kp: 54.027
-#pid_Ki: 0.770
-#pid_Kd: 948.182
-min_temp: 0
-max_temp: 130
+  [tmc2209 extruder]
+  uart_pin: PC11
+  tx_pin: PC10
+  uart_address: 3
+  run_current: 0.650
+  hold_current: 0.500
+  stealthchop_threshold: 999999
 
-[heater_fan nozzle_cooling_fan]
-pin: PC7
+  [heater_bed]
+  heater_pin: PC9
+  sensor_type: ATC Semitec 104GT-2
+  sensor_pin: PC3
+  #control: pid
+  #pid_Kp: 54.027
+  #pid_Ki: 0.770
+  #pid_Kd: 948.182
+  min_temp: 0
+  max_temp: 130
 
-[fan]
-pin: PC6
+  [heater_fan nozzle_cooling_fan]
+  pin: PC7
 
-[mcu]
-serial: /dev/serial/by-id/usb-Klipper_stm32f103xe_36FFDB05424E313841781457-if00
+  [fan]
+  pin: PC6
 
-[printer]
-kinematics: cartesian
-max_velocity: 300
-max_accel: 3000
-max_z_velocity: 5
-max_z_accel: 100
+  [mcu]
+  serial: /dev/serial/by-id/usb-Klipper_stm32f103xe_36FFDB05424E313841781457-if00
 
-[static_digital_output usb_pullup_enable]
-pins: !PA14
+  [printer]
+  kinematics: cartesian
+  max_velocity: 300
+  max_accel: 3000
+  max_z_velocity: 5
+  max_z_accel: 100
 
-[board_pins]
-aliases:
-    # EXP1 header
-    EXP1_1=PB5,  EXP1_3=PA9,   EXP1_5=PA10, EXP1_7=PB8,  EXP1_9=<GND>,
-    EXP1_2=PA15, EXP1_4=<RST>, EXP1_6=PB9,  EXP1_8=PB15, EXP1_10=<5V>
+  [static_digital_output usb_pullup_enable]
+  pins: !PA14
 
-[display]
-lcd_type: st7920
-cs_pin: EXP1_7
-sclk_pin: EXP1_6
-sid_pin: EXP1_8
-encoder_pins: ^EXP1_5, ^EXP1_3
-click_pin: ^!EXP1_2
+  [board_pins]
+  aliases:
+      # EXP1 header
+      EXP1_1=PB5,  EXP1_3=PA9,   EXP1_5=PA10, EXP1_7=PB8,  EXP1_9=<GND>,
+      EXP1_2=PA15, EXP1_4=<RST>, EXP1_6=PB9,  EXP1_8=PB15, EXP1_10=<5V>
 
-[bltouch]
-sensor_pin: ^PC2
-control_pin: PA1
-x_offset: 32
-y_offset: -2
-#z_offset = 3.050
+  [display]
+  lcd_type: st7920
+  cs_pin: EXP1_7
+  sclk_pin: EXP1_6
+  sid_pin: EXP1_8
+  encoder_pins: ^EXP1_5, ^EXP1_3
+  click_pin: ^!EXP1_2
 
-[safe_z_home]
-home_xy_position: 85.5,119.5
-speed: 75
-z_hop: 10                 
-z_hop_speed: 5
+  [bltouch]
+  sensor_pin: ^PC2
+  control_pin: PA1
+  x_offset: 32
+  y_offset: -2
+  #z_offset = 3.050
 
-[bed_mesh]
-speed: 120
-horizontal_move_z: 5
-mesh_min: 32,44
-mesh_max: 202, 220
-probe_count: 3,3
+  [safe_z_home]
+  home_xy_position: 85.5,119.5
+  speed: 75
+  z_hop: 10                 
+  z_hop_speed: 5
 
-[screws_tilt_adjust]
-screw1: 0,45
-screw1_name: front left screw
-screw2: 164,45
-screw2_name: front right screw
-screw3: 164,220
-screw3_name: rear right screw
-screw4: 0,220
-screw4_name: rear left screw
-horizontal_move_z: 10.
-speed: 50.
-screw_thread: CW-M4
+  [bed_mesh]
+  speed: 120
+  horizontal_move_z: 5
+  mesh_min: 32,44
+  mesh_max: 202, 220
+  probe_count: 3,3
 
-[gcode_macro PAUSE]
-description: Pause the actual running print
-rename_existing: PAUSE_BASE
-# change this if you need more or less extrusion
-variable_extrude: 1.0
-gcode:
-  ##### read E from pause macro #####
-  {% set E = printer["gcode_macro PAUSE"].extrude|float %}
-  ##### set park positon for x and y #####
-  # default is your max posion from your printer.cfg
-  {% set x_park = printer.toolhead.axis_maximum.x|float - 5.0 %}
-  {% set y_park = printer.toolhead.axis_maximum.y|float - 5.0 %}
-  ##### calculate save lift position #####
-  {% set max_z = printer.toolhead.axis_maximum.z|float %}
-  {% set act_z = printer.toolhead.position.z|float %}
-  {% if act_z < (max_z - 2.0) %}
-      {% set z_safe = 2.0 %}
-  {% else %}
-      {% set z_safe = max_z - act_z %}
-  {% endif %}
-  ##### end of definitions #####
-  PAUSE_BASE
-  G91
-  {% if printer.extruder.can_extrude|lower == 'true' %}
-    G1 E-{E} F2100
-  {% else %}
-    {action_respond_info("Extruder not hot enough")}
-  {% endif %}
-  {% if "xyz" in printer.toolhead.homed_axes %}
-    G1 Z{z_safe} F900
-    G90
-    G1 X{x_park} Y{y_park} F6000
-  {% else %}
-    {action_respond_info("Printer not homed")}
-  {% endif %} 
+  [screws_tilt_adjust]
+  screw1: 0,45
+  screw1_name: front left screw
+  screw2: 164,45
+  screw2_name: front right screw
+  screw3: 164,220
+  screw3_name: rear right screw
+  screw4: 0,220
+  screw4_name: rear left screw
+  horizontal_move_z: 10.
+  speed: 50.
+  screw_thread: CW-M4
 
-[gcode_macro RESUME]
-description: Resume the actual running print
-rename_existing: RESUME_BASE
-gcode:
-  ##### read E from pause macro #####
-  {% set E = printer["gcode_macro PAUSE"].extrude|float %}
-  #### get VELOCITY parameter if specified ####
-  {% if 'VELOCITY' in params|upper %}
-    {% set get_params = ('VELOCITY=' + params.VELOCITY)  %}
-  {%else %}
-    {% set get_params = "" %}
-  {% endif %}
-  ##### end of definitions #####
-  {% if printer.extruder.can_extrude|lower == 'true' %}
+  [gcode_macro PAUSE]
+  description: Pause the actual running print
+  rename_existing: PAUSE_BASE
+  # change this if you need more or less extrusion
+  variable_extrude: 1.0
+  gcode:
+    ##### read E from pause macro #####
+    {% set E = printer["gcode_macro PAUSE"].extrude|float %}
+    ##### set park positon for x and y #####
+    # default is your max posion from your printer.cfg
+    {% set x_park = printer.toolhead.axis_maximum.x|float - 5.0 %}
+    {% set y_park = printer.toolhead.axis_maximum.y|float - 5.0 %}
+    ##### calculate save lift position #####
+    {% set max_z = printer.toolhead.axis_maximum.z|float %}
+    {% set act_z = printer.toolhead.position.z|float %}
+    {% if act_z < (max_z - 2.0) %}
+        {% set z_safe = 2.0 %}
+    {% else %}
+        {% set z_safe = max_z - act_z %}
+    {% endif %}
+    ##### end of definitions #####
+    PAUSE_BASE
     G91
-    G1 E{E} F2100
-  {% else %}
-    {action_respond_info("Extruder not hot enough")}
-  {% endif %}  
-  RESUME_BASE {get_params}
+    {% if printer.extruder.can_extrude|lower == 'true' %}
+      G1 E-{E} F2100
+    {% else %}
+      {action_respond_info("Extruder not hot enough")}
+    {% endif %}
+    {% if "xyz" in printer.toolhead.homed_axes %}
+      G1 Z{z_safe} F900
+      G90
+      G1 X{x_park} Y{y_park} F6000
+    {% else %}
+      {action_respond_info("Printer not homed")}
+    {% endif %} 
 
-[gcode_macro CANCEL_PRINT]
-description: Cancel the actual running print
-rename_existing: CANCEL_PRINT_BASE
-gcode:
-  TURN_OFF_HEATERS
-  CANCEL_PRINT_BASE
+  [gcode_macro RESUME]
+  description: Resume the actual running print
+  rename_existing: RESUME_BASE
+  gcode:
+    ##### read E from pause macro #####
+    {% set E = printer["gcode_macro PAUSE"].extrude|float %}
+    #### get VELOCITY parameter if specified ####
+    {% if 'VELOCITY' in params|upper %}
+      {% set get_params = ('VELOCITY=' + params.VELOCITY)  %}
+    {%else %}
+      {% set get_params = "" %}
+    {% endif %}
+    ##### end of definitions #####
+    {% if printer.extruder.can_extrude|lower == 'true' %}
+      G91
+      G1 E{E} F2100
+    {% else %}
+      {action_respond_info("Extruder not hot enough")}
+    {% endif %}  
+    RESUME_BASE {get_params}
 
-[gcode_macro START_PRINT]
-gcode:
-    {% set BED_TEMP = params.BED_TEMP|default(60)|float %}
-    {% set EXTRUDER_TEMP = params.EXTRUDER_TEMP|default(190)|float %}
-    # Start bed heating
-    M140 S{BED_TEMP}
-    # Use absolute coordinates
-    G90
-    # Reset the G-Code Z offset (adjust Z offset if needed)
-    SET_GCODE_OFFSET Z=0.395
-    # Home the printer
-    G28
-    # Move the nozzle
-    G1 Z10 F3000
-    G0 X10 Y0
-    # Wait for bed to reach temperature
-    M190 S{BED_TEMP}
-    # Set and wait for nozzle to reach temperature
-    M109 S{EXTRUDER_TEMP}
+  [gcode_macro CANCEL_PRINT]
+  description: Cancel the actual running print
+  rename_existing: CANCEL_PRINT_BASE
+  gcode:
+    TURN_OFF_HEATERS
+    CANCEL_PRINT_BASE
 
-    G92 E0 ; reset extruder G1 Z1.0 F3000 ; move z up little to prevent scratching of surface
-    G1 X0.1 Y20 Z0.395 F5000.0 ; move to start-line position
-    G1 X0.1 Y200.0 Z0.395 F1500.0 E15 ; draw 1st line
-    G1 X0.4 Y200.0 Z0.395 F5000.0 ; move to side a little
-    G1 X0.4 Y20 Z0.395 F1500.0 E30 ; draw 2nd line
-    G92 E0 ; reset extruder
-    
-[gcode_macro END_PRINT]
-gcode:
-    # Turn off bed, extruder, and fan
-    M140 S0
-    M104 S0
-    M106 S0
-    # Move nozzle away from print while retracting
-    G91
-    G1 X-2 Y-2 E-3 F300
-    # Raise nozzle by 15mm
-    G1 Z15 F3000
-    # Present Print
-    G90
-    G1 X0 Y190 F6000
-    G90
-    # Disable steppers
-    M84
+  [gcode_macro START_PRINT]
+  gcode:
+      {% set BED_TEMP = params.BED_TEMP|default(60)|float %}
+      {% set EXTRUDER_TEMP = params.EXTRUDER_TEMP|default(190)|float %}
+      # Start bed heating
+      M140 S{BED_TEMP}
+      # Use absolute coordinates
+      G90
+      # Reset the G-Code Z offset (adjust Z offset if needed)
+      SET_GCODE_OFFSET Z=0.395
+      # Home the printer
+      G28
+      # Move the nozzle
+      G1 Z10 F3000
+      G0 X10 Y0
+      # Wait for bed to reach temperature
+      M190 S{BED_TEMP}
+      # Set and wait for nozzle to reach temperature
+      M109 S{EXTRUDER_TEMP}
 
-[gcode_macro M600]
-gcode:
-    {% set X = params.X|default(50)|float %}
-    {% set Y = params.Y|default(0)|float %}
-    {% set Z = params.Z|default(10)|float %}
-    SAVE_GCODE_STATE NAME=M600_state
-    PAUSE
-    G91
-    G1 E-.8 F2700
-    G1 Z{Z}
-    G90
-    G1 X{X} Y{Y} F3000
-    G91
-    G1 E-50 F1000
-    RESTORE_GCODE_STATE NAME=M600_state
+      G92 E0 ; reset extruder G1 Z1.0 F3000 ; move z up little to prevent scratching of surface
+      G1 X0.1 Y20 Z0.395 F5000.0 ; move to start-line position
+      G1 X0.1 Y200.0 Z0.395 F1500.0 E15 ; draw 1st line
+      G1 X0.4 Y200.0 Z0.395 F5000.0 ; move to side a little
+      G1 X0.4 Y20 Z0.395 F1500.0 E30 ; draw 2nd line
+      G92 E0 ; reset extruder
+      
+  [gcode_macro END_PRINT]
+  gcode:
+      # Turn off bed, extruder, and fan
+      M140 S0
+      M104 S0
+      M106 S0
+      # Move nozzle away from print while retracting
+      G91
+      G1 X-2 Y-2 E-3 F300
+      # Raise nozzle by 15mm
+      G1 Z15 F3000
+      # Present Print
+      G90
+      G1 X0 Y190 F6000
+      G90
+      # Disable steppers
+      M84
 
-#*# <---------------------- SAVE_CONFIG ---------------------->
-#*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
-#*#
-#*# [bed_mesh default]
-#*# version = 1
-#*# points =
-#*# 	  -0.160000, -0.305000, -0.365000
-#*# 	  0.107500, -0.015000, -0.337500
-#*# 	  0.097500, -0.020000, -0.162500
-#*# tension = 0.2
-#*# min_x = 32.0
-#*# algo = lagrange
-#*# y_count = 3
-#*# mesh_y_pps = 2
-#*# min_y = 44.0
-#*# x_count = 3
-#*# max_y = 220.0
-#*# mesh_x_pps = 2
-#*# max_x = 202.0
-#*#
-#*# [heater_bed]
-#*# control = pid
-#*# pid_kp = 63.826
-#*# pid_ki = 1.462
-#*# pid_kd = 696.505
-#*#
-#*# [extruder]
-#*# control = pid
-#*# pid_kp = 25.693
-#*# pid_ki = 1.338
-#*# pid_kd = 123.326
-#*#
-#*# [bltouch]
-#*# z_offset = 2.900
-```
+  [gcode_macro M600]
+  gcode:
+      {% set X = params.X|default(50)|float %}
+      {% set Y = params.Y|default(0)|float %}
+      {% set Z = params.Z|default(10)|float %}
+      SAVE_GCODE_STATE NAME=M600_state
+      PAUSE
+      G91
+      G1 E-.8 F2700
+      G1 Z{Z}
+      G90
+      G1 X{X} Y{Y} F3000
+      G91
+      G1 E-50 F1000
+      RESTORE_GCODE_STATE NAME=M600_state
+
+  #*# <---------------------- SAVE_CONFIG ---------------------->
+  #*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
+  #*#
+  #*# [bed_mesh default]
+  #*# version = 1
+  #*# points =
+  #*# 	  -0.160000, -0.305000, -0.365000
+  #*# 	  0.107500, -0.015000, -0.337500
+  #*# 	  0.097500, -0.020000, -0.162500
+  #*# tension = 0.2
+  #*# min_x = 32.0
+  #*# algo = lagrange
+  #*# y_count = 3
+  #*# mesh_y_pps = 2
+  #*# min_y = 44.0
+  #*# x_count = 3
+  #*# max_y = 220.0
+  #*# mesh_x_pps = 2
+  #*# max_x = 202.0
+  #*#
+  #*# [heater_bed]
+  #*# control = pid
+  #*# pid_kp = 63.826
+  #*# pid_ki = 1.462
+  #*# pid_kd = 696.505
+  #*#
+  #*# [extruder]
+  #*# control = pid
+  #*# pid_kp = 25.693
+  #*# pid_ki = 1.338
+  #*# pid_kd = 123.326
+  #*#
+  #*# [bltouch]
+  #*# z_offset = 2.900
+  ```
+
+</div>
 
 ## Slicer Configuration
 
