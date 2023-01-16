@@ -1,3 +1,21 @@
+:root {
+  --lightdisplaystyle: inline;
+  --darkdisplaystyle: none;
+}
+
+[data-md-color-scheme="slate"] {
+  --lightdisplaystyle: none;
+  --darkdisplaystyle: inline;
+}
+
+.lighttweet {
+  display: var(--lightdisplaystyle);
+}
+
+.darktweet {
+  display: var(--darkdisplaystyle);
+}
+
 .profilepic {
   display: inline-block;
   vertical-align:middle;
