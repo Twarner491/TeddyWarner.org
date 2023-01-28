@@ -65,7 +65,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
     <iframe width="100%" height="100" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/ygy8M-QhbSo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
-**An AVR-based Bluetooth telegraphing shoe insole that lets you play chess like Hans Niemann!**
+**An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!**
 
 </center>
 
