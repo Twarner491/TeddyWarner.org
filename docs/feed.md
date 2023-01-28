@@ -19,7 +19,7 @@ hide:
     <div class="description">
       <h1>Von Niemann Probe</h1>
       <h2>- Winter, 2023 -</h2> <span class="time"><i class="far fa-clock"></i> 46–58 minutes</span>
-      <p>An AVR-based Bluetooth telegraphing shoe insole that lets you play chess like Hans Niemann! This project is our contribution to the ongoing investigation into the Hans Niemann/Magnus Carlsen cheating scandal and tests the feasibility of creating and using an over-the-board chess cheating aid.</p>
+      <p>An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused! This project is our contribution to the ongoing investigation into the Hans Niemann/Magnus Carlsen cheating scandal and tests the feasibility of creating and using an over-the-board chess cheating aid.</p>
       <div class="con">
        <span class="share" style=" color: inherit;">
         <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fab fa-facebook-square"></i></a>
