@@ -9,19 +9,19 @@ tags:
 ---
 
 <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
-<link rel="stylesheet" id="chessboard-css" href="../../assets/css/projects/ChessEngine/chessboard.css" />
-<link rel="stylesheet" href="../../assets/css/projects/ChessEngine/board.css" />
+<!--<link rel="stylesheet" id="chessboard-css" href="../../assets/css/projects/ChessEngine/chessboard.css" />
+<link rel="stylesheet" href="../../assets/css/projects/ChessEngine/board.css" />-->
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../../assets/js/ChessEngine/jquery-3.6.0.min.js"></script>
+<!--<script src="../../assets/js/ChessEngine/jquery-3.6.0.min.js"></script>
 <script src="../../assets/js/ChessEngine/chess.min.js"></script>
-<script src="../../assets/js/ChessEngine/ltpgnviewer.js"></script>
+<script src="../../assets/js/ChessEngine/ltpgnviewer.js"></script>-->
 <script src="../../assets/js/vnp.js"></script> 
 
 # Von Niemann Probe
 
-<!--- Social Links
+<!--- Social Linksmkdo
 
 HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
@@ -48,13 +48,14 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 ---
 
+![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
+
 <center>
+  <div style="position:relative;padding-bottom:56.25%;">
+    <iframe width="100%" height="100" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/ygy8M-QhbSo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
 
-INSERT VIDEO
-
-**A AVR based bluetooth telegraph inlayed in a parametric shoe insole that lets you play chess like Hans Niemann!**
-
-[Von Niemann Probe Repository :fontawesome-brands-github:](https://github.com/Twarner491/VonNiemannProbe){: align=right .md-button .md-button--primary }
+**An AVR-based Bluetooth telegraphing shoe insole that lets you play chess like Hans Niemann!**
 
 </center>
 
@@ -96,7 +97,7 @@ Niemann's counterattack hasn't ended in his pursuit of reparations, Niemann clai
 Niemann's victory over the world champion, "should have propelled Niemann's career to the next level and allowed him to continue realizing his enormous potential as the next great American chess player."[^20] Yet, "Unbeknownst to Niemann at the time, Defendants would do whatever it took to ensure that this would never happen."[^20]
 
 <center>
-  <iframe src="https://storage.courtlistener.com/recap/gov.uscourts.moed.198608/gov.uscourts.moed.198608.1.0.pdf" height="650" width="100%" allow="autoplay"></iframe>
+  <iframe src="https://drive.google.com/file/d/1Gtqr3ASuJxgTa3li6C0mxTj4dTvbuYLU/preview" width="100%" height="600" allow="autoplay"></iframe>
 </center>
 
 It's worth mentioning again that Niemann has publically admitted to cheating with aid from electronic devices in online matches, once at age 12 and again at age 16. Niemann referred to one of these instances as "an absolutely ridiculous mistake"[^22], while maintaining that he had never cheated in a tournament with prize money. 
@@ -105,9 +106,17 @@ A couple of weeks after their initial accusations, [Chess.com](https://www.chess
 
 In a private letter to Niemann, Chess.com's Chief Chess Officer, Danny Rechsch writes "We are prepared to present strong statistical evidence that confirms each of those cases above, as well as clear ‘toggling’ vs ‘non-toggling’ evidence, where you perform much better while toggling to a different screen during your moves".[^13] While the report outlines that [Chess.com](https://www.chess.com/home) has historically treated bans as a private matter, the ongoing accusations and Niemann's ban from the site's Global Championship spurred the platform to provide the investigation that provided justification for their decisions. 
 
-<iframe src="https://drive.google.com/file/d/11IokKgTVSXdpYEzAuyViIleSZ_2wl0ag/preview" width="100%" height="650" allow="autoplay"></iframe>
-        
+<center>
+  <iframe src="https://drive.google.com/file/d/11IokKgTVSXdpYEzAuyViIleSZ_2wl0ag/preview" width="100%" height="600" allow="autoplay"></iframe>
+</center>     
 
+While this evidence against Niemann appears to be overwealming, its important to remeber that the Sinquefield Cup is an over the board tournament. Cheating online and over the board are two entirly seprate entities, no ammount of online cheating in the world provides sufficent reason to accuse Hans of over the board cheating, as the act itself is a totally different task that would require extreme preparation to achieve. Thus, in face of a lack of evidece to support over the board cheating allegations against Niemann, the Von Niemann Probe was born. In an attempt to further the investigation into this scandal, we devloped an AVR-based Bluetooth telegraphing shoe insole to test the fesibility of creating and using an over the board chess cheating aid.
+
+<center>
+
+  [Von Niemann Probe Repository :fontawesome-brands-github:](https://github.com/Twarner491/VonNiemannProbe){: align=right .md-button .md-button--primary }
+
+</center>
 
 ## Telegraph Design
 
@@ -115,13 +124,15 @@ In a private letter to Niemann, Chess.com's Chief Chess Officer, Danny Rechsch w
 
 At the heart of the Von Niemann Probe lies a AVR ATtiny 412 based Bluetooth telegraph. This PCB is capable of interpreting Bluetooth serial data from our chess engine (see Step 3), and translating the signal to pulses of a vibration motor. Before starting any PCB design work in Autodesk EAGLE, I took some time to write out these expectations for the systems operating principal, and then began the PCB schematic. The VNP mainboard is a barebones ATtiny 412 setup, including voltage regulation and smoothing capacitors, as well as headers for connection to a Bluetooth module, vibration motor, and battery power.
 
+The schematic includes headers for an HC-06, with serial conenctions to the ATTiny 412, and shared power line swith both the IC, and Vibration Motor. This vibration motor is wired both to common GND on the PCB, as well as to *Digital Pin 2*, allowing the IC to pulse the motor to convey moves in morse code.
+
 <center>
 
 ![](../images/VonNiemannProbe/VNPSchematic.jpg){width="100%"}
 
 </center>
 
-With this schematic done, I moved on to generating my final board file. The PCB is built around the rectangular nature of the HC-05 Bluetooth module - one of these modules is placed in the center of the PCB, allowing for an as-compact-as-possible footprint ideal for fitting in the VNP's discrete insole body (see Step 2). Just above the HC-05 module lies the ATtiny 412 circuit and UPDI programing pins, as well as a cutout and mounting points for the telegraph's vibration motor. The entire PCB is designed to be mounted inside the VNP insole with M3 screws, and has been designed to maintain a large, shared surface area with the 3D printed insole to ensure the transferer of vibration from the telegraph.
+With this schematic done, I moved on to generating my final board file. The PCB is built around the rectangular nature of the HC-06 Bluetooth module - one of these modules is placed in the center of the PCB, allowing for an as-compact-as-possible footprint ideal for fitting in the VNP's discrete insole body (see Step 2). Just above the HC-06 module lies the ATtiny 412 circuit and UPDI programing pins, as well as a cutout and mounting points for the telegraph's vibration motor. The entire PCB is designed to be mounted inside the VNP insole with M3 screws, and has been designed to maintain a large, shared surface area with the 3D printed insole to ensure the transferer of vibration from the telegraph.
 
 <center>
 
@@ -130,12 +141,20 @@ With this schematic done, I moved on to generating my final board file. The PCB 
 </center>
 
 <center>
-  <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c5397659f14ec98ed3cb?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c539a842c922b0c2da02?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 </center>
 
 ### Parametric Shoe Insole
 
-To prove the feasibility of the accusations placed against Hans Niemann, the Von Niemann Probe (VNP) must be robust enough to see consistent use, while remaining discrete enough as to not be detected. This in mind, we selected to place our Bluetooth telegraph inside the body of a parametric shoe insole. The VNP was designed in Autodesk's Fusion 360, and makes heavy use of the software's Parametric Engine, allowing a custom insole to be generated for all foot sizes. The insole consists of two main parts, the body which is the bulk of the insole itself, and the lid, which screws to the bottom of the body, covering the electronics compartment. The body of the insole consists of mounting points for the main PCB designed in Step 1, as well as a 1000mah LiPo battery, a USB-C LiPo charging board, a power switch, and a 3.3v to 5v boost converter. The lid not only hides the VNP's electronics system from sight, but also redistributes the load placed upon the insole when a user is standing on it.
+To prove the feasibility of the accusations placed against Hans Niemann, the Von Niemann Probe (VNP) must be robust enough to see consistent use, while remaining discrete enough as to not be detected. This in mind, we selected to place our Bluetooth telegraph inside the body of a parametric shoe insole. The VNP was designed in Autodesk's Fusion 360, and makes heavy use of the software's Parametric Engine, allowing a custom insole to be generated for all foot sizes. 
+
+<center>
+
+![](../images/VonNiemannProbe/FusionParameters.png){width="100%"}
+
+</center>
+
+The insole consists of two main parts, the body which is the bulk of the insole itself, and the lid, which screws to the bottom of the body, covering the electronics compartment. The body of the insole consists of mounting points for the main PCB designed in Step 1, as well as a 1000mah LiPo battery, a USB-C LiPo charging board, a power switch, and a 3.3v to 5v boost converter. The lid not only hides the VNP's electronics system from sight, but also redistributes the load placed upon the insole when a user is standing on it.
 
 <center>
   <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53962a650b709446403?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
@@ -148,6 +167,7 @@ The Von Niemann Probe is useless without a competent artificial intelligence run
 
 INSERT PARAGRAPH ABOUT NOT CONDONING CHEATING
 
+<!--
 <div class="content">
   <div class="chess-area">
     <div class="board-table">
@@ -240,6 +260,7 @@ INSERT PARAGRAPH ABOUT NOT CONDONING CHEATING
     </div>
   <div class="chess-log"></div>
 </div>
+-->
 
 !!! warning "Python Dependencies"
       **Various Python dependencies are needed to run the chess engine script**, but overall the installation is pretty lightweight. Install commands for all Python dependencies are below, any release past Python 3.7 will work.
@@ -926,411 +947,44 @@ The local char, receive, is set to each byte contained in the move, in the order
 
 </div>
 
-## Learning Morse Code
-
-<div style="height:660px; overflow:scroll;">
-
-  ``` c++ linenums="1" title="Morse Pratice"
-      //(c) Teddy Warner & Jack Hollingsworth - 2022
-
-      //This work may be reproduced, modified, distributed, performed, and displayed
-      //for any purpose, but must acknowledge Teddy Warner  & Jack Hollingsworth.
-      //Copyright is retained and must be preserved. The work is provided as is;
-      //no warranty is provided, and users accept all liability.
-
-      //only for learning a-h and 1-8 of morse
-
-      #include <Arduino.h> //Arduino Parent Lib
-
-      int outputPin = 13; //pin of whatever output does morse
-      int index;
-      String letters = "abcdefgh";
-      String numbers = "12345678";
-      String randomString = ""; //placeholder string to be filled with morse
-      String morseString = ""; //placeholder for morse converted string
-
-
-      void setup(){
-          pinMode(outputPin, OUTPUT);
-          Serial.begin(9600); //initizalize serial at 9600 baud
-          Serial.print("morse code practice");
-      }
-
-      void loop(){
-          randomString = "";
-          index = random(0, 7); //takes random value between indexes 0 and 7 of numbers and letters strings
-          randomString += letters.substring(index, index); //take one char from letters string add to random string
-          index = random(0,7);
-          randomString += numbers.substring(index, index);
-          index = random(0,7);
-          randomString += letters.substring(index,index);
-          index = random(0,7);
-          randomString += letters.substring(index, index);
-      }
-
-      char receive = HC06.read(); //Read from Serial Communication
-          if(receive =='.'){
-            digitalWrite(buzzerPin, HIGH);
-            delay(dotLength); //delay for dotlength
-            digitalWrite(buzzerPin, LOW);
-            delay(dotLength); //dotlength delay between next character
-          }
-          if(receive == '-')
-          {
-          digitalWrite(buzzerPin, HIGH);
-          delay(dashLength);
-          digitalWrite(buzzerPin, LOW);
-          delay(dotLength); //dot length delay between next character
-          }
-          if(receive =='9'){
-            digitalWrite(buzzerPin, LOW);
-            delay(2000); //delay for another 2 seconds if space, gives 3 seconds total division between letters
-          }
-          else {
-            delay(5);
-          }
-  ```
-
-</div>
-
-
-<div style="height:660px; overflow:scroll;">
-
-  ``` c++ linenums="1" title="String to Morse"
-      //(c) Teddy Warner & Jack Hollingsworth - 2022
-
-      //This work may be reproduced, modified, distributed, performed, and displayed
-      //for any purpose, but must acknowledge Teddy Warner  & Jack Hollingsworth.
-      //Copyright is retained and must be preserved. The work is provided as is;
-      //no warranty is provided, and users accept all liability.
-
-      /*
-
-        Morse Code Project
-        
-        This code will loop through a string of characters and convert these to morse code.  
-        It will blink two LED lights and play audio on a speaker.  
-      */
-
-      #include <Arduino.h> //Arduino Parent Lib
-      
-      //**************************************************//
-      //   Type the String to Convert to Morse Code Here  //
-      //**************************************************//
-      char stringToMorseCode[] = "teddy is cool";
-
-      int morseOutput = 13;      //pin of morse output
-      int led6 = 6;        
-      int audio8 = 8;     
-      int note = 1200;   
-
-      int dotLen = 1000;  
-      int dashLen = dotLen * 3;   
-      int elemPause = dotLen; 
-      int Spaces = dotLen * 3;     
-      int wordPause = dotLen * 7;  
-
-      int index;
-      String letters = "abcdefgh";
-      String numbers = "12345678";
-      String randomString = ""; //placeholder string to be filled with morse
-      String morseString = ""; //placeholder for morse converted string
-
-
-      void setup() {                
-        pinMode(morseOutput, OUTPUT);
-        Serial.begin(9600); //initizalize serial at 9600 baud
-        Serial.print("morse code practice");
-      }
-
-
-      void loop()
-      { 
-          randomString = "";
-          index = random(0, 7); //takes random value between indexes 0 and 7 of numbers and letters strings
-          randomString += letters.substring(index, index); //take one char from letters string add to random string
-          index = random(0,7);
-          randomString += numbers.substring(index, index);
-          index = random(0,7);
-          randomString += letters.substring(index,index);
-          index = random(0,7);
-          randomString += letters.substring(index, index);
-          Serial.println(randomString);
-
-        // Loop through the string and get each character one at a time until the end is reached
-        for (int i = 0; i < sizeof(stringToMorseCode) - 1; i++)
-        {
-          // Get the character in the current position
-        char tmpChar = stringToMorseCode[i];
-        // Set the case to lower case
-        tmpChar = toLowerCase(tmpChar);
-        // Call the subroutine to get the morse code equivalent for this character
-        GetChar(tmpChar);
-        Serial.print(stringToMorseCode);
-        }
-        
-        // At the end of the string long pause before looping and starting again
-        LightsOff(8000);			
-      }
-
-      // DOT
-      void MorseDot()
-      {
-        digitalWrite(morseOutput, HIGH);  	// turn the LED on 
-        delay(dotLen);             	// hold in this position
-      }
-
-      // DASH
-      void MorseDash()
-      {
-        digitalWrite(morseOutput, HIGH);  	// turn the LED on 
-        digitalWrite(led6, HIGH);
-        tone(audio8, note, dashLen);	// start playing a tone
-        delay(dashLen);               // hold in this position
-      }
-
-      // Turn Off
-      void LightsOff(int delayTime)
-      {
-        digitalWrite(morseOutput, LOW);    	// turn the LED off  	
-        digitalWrite(led6, LOW);
-        noTone(audio8);	       	   	// stop playing a tone
-        delay(delayTime);            	// hold in this position
-      }
-
-      // *** Characters to Morse Code Conversion *** //
-      void GetChar(char tmpChar)
-      {
-        // Take the passed character and use a switch case to find the morse code for that character
-        switch (tmpChar) {
-          case 'a':	
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'b':
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'c':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'd':
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'e':
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'f':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'g':
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'h':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'i':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'j':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-            case 'k':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'l':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-            case 'm':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'n':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'o':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'p':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 'q':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'r':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 's':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          case 't':
-            MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'u':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'v':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'w':
-            MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'x':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'y':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          break;
-          case 'z':
-            MorseDash();
-          LightsOff(elemPause);
-          MorseDash();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          MorseDot();
-          LightsOff(elemPause);
-          break;
-          default: 
-          // If a matching character was not found it will default to a blank space
-          LightsOff(Spaces);			
-        }
-      }
-  ```
-
-</div>
-
 ## Fabrication & Testing
 
+<center>
+  <iframe width="100%" height="650" src="https://www.youtube.com/embed/V-S8DX_Sjtc" title="Von Niemann Probe Prototype Milling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
+<iframe width="48%" height="650" src="https://www.youtube.com/embed/zLLnN3N27Xs" title="Von Niemann Probe CAD!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="48%" height="650" src="https://www.youtube.com/embed/XEVX8DvXH7A" title="Von Niemann Probe Motor Bracket!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="48%" height="650" src="https://www.youtube.com/embed/R1te_hj5dec" title="Von Niemann Probe Prototype Insole Printing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="48%" height="650" src="https://www.youtube.com/embed/Y08WkrvqDDM" title="Von Niemann Probe Insole Printing!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<center>
+
+![](../images/VonNiemannProbe/allprints.jpg){width="100%"}
+
+</center>
+
+<center>
+  <iframe width="100%" height="650" src="https://www.youtube.com/embed/BDq32QYUcXc" title="Von Niemann Probe Prototype Assembly" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<center>
+
+![](../images/VonNiemannProbe/mainboard.png){width="100%"}
+
+</center>
+
+<center>
+
+![](../images/VonNiemannProbe/FinalElectronics.jpg){width="49%"}
+![](../images/VonNiemannProbe/bottomview.jpg){width="49.75%"}
+
+</center>
+
+<center>
+
+![](../images/VonNiemannProbe/VNPTWxJHH.jpg){width="100%"}
+![](../images/VonNiemannProbe/insoleirl.jpg){width="100%"}
+![](../images/VonNiemannProbe/inshoe.jpg){width="100%"}
+
+</center>
 
 [^1]:https://www.npr.org/2022/10/21/1130442319/hans-niemann-sues-magnus-carlsen-for-100-million-accusing-him-of-defamation
 [^2]:https://youtu.be/eg5G1A_mTFg
@@ -1355,6 +1009,37 @@ The local char, receive, is set to each byte contained in the move, in the order
 [^20]:https://storage.courtlistener.com/recap/gov.uscourts.moed.198608/gov.uscourts.moed.198608.1.0.pdf
 [^21]:https://frontofficesports.com/top-chess-player-platform-join-forces-in-82-9m-deal/
 [^22]:https://www.washingtonpost.com/sports/2022/10/05/chess-com-investigation-cheating-hans-niemann-magnus-carlsen/
+[^23]:https://www.youtube.com/watch?v=5uDM3fPeNFM&t=224s 
+[^24]:https://www.youtube.com/watch?v=QNuu8KTUEwU&t=390s 
+[^25]:https://www.reddit.com/r/chess/comments/x6ixud/during_magnus_carlsens_current_unbroken_streak_as/ 
+[^26]:https://pawnalyze.com/chess-drama/2022/09/05/Analyzing-Allegations-Niemann-Cheating-Scandal.html 
+[^27]:https://www.chess.com/news/view/hans-niemann-us-junior-championship-annie-wang 
+[^28]:https://www.mid-day.com/sports/other-sports/article/world-champion-magnus-carlsen-quits-game-amid-cheating-allegations-23246759 
+[^29]:https://www.fide.com/news/1968 
+[^30]:https://www.youtube.com/watch?v=TkUkvLqHfZM 
+[^31]:https://www.youtube.com/watch?v=9wtvXoXh0VU 
+[^32]:https://www.chess.com/events/2022-sinquefield-cup/03/Carlsen_Magnus-Niemann_Hans_Moke 
+[^33]:https://www.youtube.com/watch?v=CJZuT-_kij0 
+[^34]:https://www.youtube.com/watch?v=VptbNKbHQiM&t=5s 
+[^35]:https://www.youtube.com/watch?v=O6ML2b7IdD4&t=2s 
+[^36]:https://www.youtube.com/watch?v=qjtbXxA8Fcc 
+[^37]:https://www.youtube.com/watch?v=uCzwLk6fXXs 
+[^38]:https://www.youtube.com/watch?v=LkXDhw-TuGw 
+[^39]:https://www.nationalworld.com/news/offbeat/how-do-you-cheat-at-chess-cheating-player-hans-niemann-scandal-play-online-board-3870066 
+[^40]:https://www.nytimes.com/2022/12/04/business/chess-cheating-scandal-magnus-carlsen-hans-niemann.html 
+[^41]:https://www.wsj.com/articles/chess-cheating-magnus-carlsen-hans-niemann-11663751262?mod=article_inline 
+[^42]:https://www.buzzfeednews.com/article/kelseyweekman/chess-cheating-anal-beads-conspiracy-hans-niemann 
+[^43]:https://www.youtube.com/watch?v=lpfWGyvO80o 
+[^44]:https://www.youtube.com/watch?v=GLwyhmmEoAQ 
+[^45]:https://www.youtube.com/watch?v=umaHIQJY6Tw
+[^46]:https://www.youtube.com/watch?v=aDUmS_MJceU
+[^47]:https://www.republicworld.com/world-news/rest-of-the-world-news/elon-musk-claims-niemann-may-have-used-anal-beads-to-beat-carlsen-in-chess-championship-articleshow.html 
+[^48]:https://www.newsweek.com/hans-niemann-magnus-carlsen-chess-sex-toy-scandal-1749903 
+[^49]:https://www.youtube.com/watch?v=HdHWAuQRG7E 
+[^50]:https://www.youtube.com/watch?v=J4_e12Md4Fg 
+[^51]:https://www.youtube.com/watch?v=XjupJslRj5E
+[^52]:https://twitter.com/nigelshortchess/status/1573434084239593481  
+[^53]:https://twitter.com/hansmokeniemann/status/1583164606029365248  
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control
