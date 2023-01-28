@@ -5,7 +5,19 @@ hide:
   - tags
 template: comments.html
 tags:
-  - 
+  - Software
+  - CAD
+  - Fusion 360
+  - Inkscape
+  - Autodesk Eagle
+  - CNC
+  - 3D Printing
+  - PCB
+  - Laser Cutting
+  - Microcontroller
+  - Python
+  - C++
+  - Programming
 ---
 
 <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
@@ -36,7 +48,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 -->
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span style="font-weight: 300;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Profile Picture" class="profilepic2"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span style="font-weight: 300;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Profile Picture" class="profilepic2"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <i class="far fa-clock"></i> 46–58 minutes</span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fab fa-facebook-square"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
@@ -47,8 +59,6 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 </div>
 
 ---
-
-![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
 
 <center>
   <div style="position:relative;padding-bottom:56.25%;">
@@ -110,7 +120,11 @@ In a private letter to Niemann, Chess.com's Chief Chess Officer, Danny Rechsch w
   <iframe src="https://drive.google.com/file/d/11IokKgTVSXdpYEzAuyViIleSZ_2wl0ag/preview" width="100%" height="600" allow="autoplay"></iframe>
 </center>     
 
-While this evidence against Niemann appears to be overwealming, its important to remeber that the Sinquefield Cup is an over the board tournament. Cheating online and over the board are two entirly seprate entities, no ammount of online cheating in the world provides sufficent reason to accuse Hans of over the board cheating, as the act itself is a totally different task that would require extreme preparation to achieve. Thus, in face of a lack of evidece to support over the board cheating allegations against Niemann, the Von Niemann Probe was born. In an attempt to further the investigation into this scandal, we devloped an AVR-based Bluetooth telegraphing shoe insole to test the fesibility of creating and using an over the board chess cheating aid.
+While this evidence against Niemann appears to be overwhelming, it's important to remember that the Sinquefield Cup is an over-the-board tournament. Cheating online and over the board are two entirely separate entities, no amount of online cheating in the world provides sufficient reason to accuse Hans of over-the-board cheating, as the act itself is a different task that would require extreme preparation to achieve. Thus, in face of a lack of evidence to support over-the-board cheating allegations against Niemann, the Von Niemann Probe was born. In an attempt to further the investigation into this scandal, we developed an AVR-based Bluetooth telegraphing shoe insole to test the feasibility of creating and using an over-the-board chess cheating aid.
+
+!!! failure "Cheating in Chess"
+
+    ***Cheating in chess, whether online or over the board, is wrong and ruins the game for everyone.*** This project has been published to showcase the possibility of such a device's existence/use, and should not be recreated with the intent of using it for genuine foul play.
 
 <center>
 
@@ -122,9 +136,9 @@ While this evidence against Niemann appears to be overwealming, its important to
 
 ### PCB Design & Integration
 
-At the heart of the Von Niemann Probe lies a AVR ATtiny 412 based Bluetooth telegraph. This PCB is capable of interpreting Bluetooth serial data from our chess engine (see Step 3), and translating the signal to pulses of a vibration motor. Before starting any PCB design work in Autodesk EAGLE, I took some time to write out these expectations for the systems operating principal, and then began the PCB schematic. The VNP mainboard is a barebones ATtiny 412 setup, including voltage regulation and smoothing capacitors, as well as headers for connection to a Bluetooth module, vibration motor, and battery power.
+At the heart of the Von Niemann Probe lies an AVR ATtiny 412-based Bluetooth telegraph. This PCB is capable of interpreting Bluetooth serial data from our chess engine (see Step 3), and translating the signal to pulses of a vibration motor. Before starting any PCB design work in Autodesk EAGLE, I took some time to write out these expectations for the systems operating principle and then began the PCB schematic. The VNP mainboard is a barebones ATtiny 412 setup, including voltage regulation and smoothing capacitors, as well as headers for connection to a Bluetooth module, vibration motor, and battery power.
 
-The schematic includes headers for an HC-06, with serial conenctions to the ATTiny 412, and shared power line swith both the IC, and Vibration Motor. This vibration motor is wired both to common GND on the PCB, as well as to *Digital Pin 2*, allowing the IC to pulse the motor to convey moves in morse code.
+The schematic includes headers for an HC-06, with serial connections to the ATTiny 412, and a shared power line with both the IC and Vibration Motor. This vibration motor is wired both to common GND on the PCB, as well as to *Digital Pin 2*, allowing the IC to pulse the motor to convey moves in morse code.
 
 <center>
 
@@ -132,7 +146,7 @@ The schematic includes headers for an HC-06, with serial conenctions to the ATTi
 
 </center>
 
-With this schematic done, I moved on to generating my final board file. The PCB is built around the rectangular nature of the HC-06 Bluetooth module - one of these modules is placed in the center of the PCB, allowing for an as-compact-as-possible footprint ideal for fitting in the VNP's discrete insole body (see Step 2). Just above the HC-06 module lies the ATtiny 412 circuit and UPDI programing pins, as well as a cutout and mounting points for the telegraph's vibration motor. The entire PCB is designed to be mounted inside the VNP insole with M3 screws, and has been designed to maintain a large, shared surface area with the 3D printed insole to ensure the transferer of vibration from the telegraph.
+With this schematic done, I moved on to generating my final board file. The PCB is built around the rectangular nature of the HC-06 Bluetooth module - one of these modules is placed in the center of the PCB, allowing for an as-compact-as-possible footprint ideal for fitting in the VNP's discrete insole body (see Step 2). Just above the HC-06 module lies the ATtiny 412 circuit and UPDI programming pins, as well as a cutout and mounting points for the telegraph's vibration motor. The entire PCB is designed to be mounted inside the VNP insole with M3 screws and has been designed to maintain a large, shared surface area with the 3D-printed insole to ensure the transfer of vibration from the telegraph.
 
 <center>
 
@@ -146,7 +160,39 @@ With this schematic done, I moved on to generating my final board file. The PCB 
 
 ### Parametric Shoe Insole
 
-To prove the feasibility of the accusations placed against Hans Niemann, the Von Niemann Probe (VNP) must be robust enough to see consistent use, while remaining discrete enough as to not be detected. This in mind, we selected to place our Bluetooth telegraph inside the body of a parametric shoe insole. The VNP was designed in Autodesk's Fusion 360, and makes heavy use of the software's Parametric Engine, allowing a custom insole to be generated for all foot sizes. 
+To prove the feasibility of the accusations placed against Hans Niemann, the Von Niemann Probe (VNP) must be robust enough to see consistent use, while remaining discrete enough to not be detected. With this in mind, we selected to place our Bluetooth telegraph inside the body of a parametric shoe insole. The VNP was designed in Autodesk's Fusion 360, and makes heavy use of the software's Parametric Engine, allowing a custom insole to be generated for all foot sizes. Using the shoe size standards found in the table below, an insole may be generated to fit your exact foot dimensions. *Note - the sizes included in the table below are Mens, as that is the style of shoe both Jack and I wear - be sure to convert your shoe size accordingly.*
+
+<center>
+
+![](../images/VonNiemannProbe/footdi.png){width="80%"}
+
+| US Size | UK Size | European Size | Japanese Size | Length *(S~L~)* | Width *(S~MW~)* |
+|---------|---------|---------------|---------------|--------|--------|
+| 6       | 5.5     | 39            | 25            | 23.5cm | 8.9cm  |
+| 6.5     | 6       | 39/40         | 25.5          | 24.1cm | 9cm    |
+| 7       | 6.5     | 40            | 26            | 24.4cm | 9.2cm  |
+| 7.5     | 7       | 40/41         | 26.5          | 24.8cm | 9.4cm  |
+| 8       | 7.5     | 41            | 27            | 25.4cm | 9.5cm  |
+| 8.5     | 8       | 41/42         | 27.5          | 25.7cm | 9.7cm  |
+| 9       | 8.5     | 42            | 28            | 26cm   | 9.8cm  |
+| 9.5     | 9       | 42/43         | 28.5          | 26.7cm | 10cm   |
+| 10      | 9.5     | 43            | 29            | 27cm   | 10.2cm |
+| 10.5    | 10      | 43/44         | 29.5          | 27.3cm | 10.3cm |
+| 11      | 10.5    | 44            | 30            | 28.9cm | 10.5cm |
+| 11.5    | 11      | 44/45         | 31            | 28.3cm | 10.6cm |
+| 12      | 11.5    | 45            | 32            | 28.6cm | 10.8cm |
+| 12.5    | 12      | 45/46         |               | 29.2cm | 11cm   |
+| 13      | 12.5    | 46            |               | 29.5cm | 11.1cm |
+| 13.5    | 13      | 46/47         |               | 30.2cm | 11.3cm |
+| 14      | 13.5    | 47            |               | 31cm   | 11.4cm |
+| 14.5    | 14      | 47/48         |               | 31cm   | 11.6cm |
+| 15      | 14.5    | 48            |               | 31.4cm | 11.7cm |
+
+![](../images/VonNiemannProbe/footgraph.png){width="80%"}
+
+</center>
+
+A custom insole will be generated after updating the model with your foot Length *(S~L~)* & Width *(S~MW~)* via Fusion's *Change Parameters* tool. Paste in your foot length *(S~L~)* in the *InsoleLegnth* expression input, and repeat with your foot width *(S~MW~)* and the *InsoleWidth* expression input.
 
 <center>
 
@@ -154,18 +200,30 @@ To prove the feasibility of the accusations placed against Hans Niemann, the Von
 
 </center>
 
-The insole consists of two main parts, the body which is the bulk of the insole itself, and the lid, which screws to the bottom of the body, covering the electronics compartment. The body of the insole consists of mounting points for the main PCB designed in Step 1, as well as a 1000mah LiPo battery, a USB-C LiPo charging board, a power switch, and a 3.3v to 5v boost converter. The lid not only hides the VNP's electronics system from sight, but also redistributes the load placed upon the insole when a user is standing on it.  
+After establishing the model's parameters and extruding a basic shape, I drafted the insole's outer edge to allow the insole to fit the angled inner walls of shoes, before using Fusion 360's *Surface* workspace to ad a 3D profile to the top of the insole.
+
+<center>
+
+![](../images/VonNiemannProbe/extrudeFusion.png){width="48.35%"}
+![](../images/VonNiemannProbe/formedFusion.png){width="49%"}
+
+</center>
+
+The insole consists of two main parts, the body which is the bulk of the insole itself, and the lid, which screws to the bottom of the body, covering the electronics compartment. The body of the insole consists of mounting points for the main PCB, as well as a 1000mah LiPo battery, a USB-C LiPo charging board, a power switch, and a 3.3v to 5v boost converter. The lid not only hides the VNP's electronics system from sight but also redistributes the load placed upon the insole when a user is standing on it.  
+
+<center>
+
+![](../images/VonNiemannProbe/electronicsVNP.png){width="100%"}
+
+</center>
 
 <center>
   <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53962a650b709446403?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 </center>
 
-
 ## Chess Engine
 
 The Von Niemann Probe is useless without a competent artificial intelligence running the show behind the scenes, obviously requiring a hefty amount of code to get it to work properly. I decided to build the brains around Stockfish, a famous chess engine that already has a functioning Python integration and also happens to be the highest-rated engine at the time of writing. For reference, the engine plays at a 4000 level, while the current highest-rated player, Magnus Carlsen, is currently sitting at about 3200. Safe to say, Stockfish is more than sufficient for the players our insole will encounter who are obviously considerably worse than Carlsen.
-
-INSERT PARAGRAPH ABOUT NOT CONDONING CHEATING
 
 <!--
 <div class="content">
@@ -949,40 +1007,47 @@ The local char, receive, is set to each byte contained in the move, in the order
 
 ## Fabrication & Testing
 
+I began the fabrication of the Von Niemann Probe through some prototype PCB milling on the [Bantam Tools Desktop CNC Milling Machine](https://store.bantamtools.com/products/bantam-tools-desktop-cnc-milling-machine) ...
+
 <center>
   <iframe width="100%" height="650" src="https://www.youtube.com/embed/V-S8DX_Sjtc" title="Von Niemann Probe Prototype Milling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>
 
+Leveraging these machines would allow me to test early designs before ordering final boards from PCBWay, allowing me to ensure their functionality early on in the design process. This process also makes it considerably easier to make changes, as I can test multiple iterations within several hours of each other, including the time to solder each board!
+
+<center>
+
+![](../images/VonNiemannProbe/mainboard.png){width="100%"}
+  <figcaption>Von Niemann Probe Mainboard</figcaption>
+
+</center>
+
+Next up, 3D Printing ... and a lot of it. All prototype prints for the Von Niemann Probe were done on a [Prusa I3 MK3S+](https://www.prusa3d.com/category/original-prusa-i3-mk3s/) equipped with an 0.4mm [E3D Nozzle X](https://e3d-online.com/blogs/news/nozzle-x-the-one-nozzle-to-rule-them-all) from White PETG.
+
 <iframe width="48%" height="650" src="https://www.youtube.com/embed/zLLnN3N27Xs" title="Von Niemann Probe CAD!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="48%" height="650" src="https://www.youtube.com/embed/XEVX8DvXH7A" title="Von Niemann Probe Motor Bracket!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="48%" height="650" src="https://www.youtube.com/embed/R1te_hj5dec" title="Von Niemann Probe Prototype Insole Printing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="48%" height="650" src="https://www.youtube.com/embed/Y08WkrvqDDM" title="Von Niemann Probe Insole Printing!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Similar to the PCB prototyping, I fabricated several prints while iterating on the insole's CAD, before ordering the final iteration from PCBWay. Each print required over 14 hours of print time and numerous hours to complete the necessary changes to the design. 
 
 <center>
 
 ![](../images/VonNiemannProbe/allprints.jpg){width="100%"}
+  <figcaption>All Iterations of the Von Niemann Probe Insole</figcaption>
 
 </center>
+
+After finally arriving at a version of the insole that I was satisfied with, I was ready to assemble the device ...
 
 <center>
   <iframe width="100%" height="650" src="https://www.youtube.com/embed/BDq32QYUcXc" title="Von Niemann Probe Prototype Assembly" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>
 
-<center>
-
-![](../images/VonNiemannProbe/mainboard.png){width="100%"}
-
-</center>
+Leaving me with the final product below! :smile:
 
 <center>
 
 ![](../images/VonNiemannProbe/FinalElectronics.jpg){width="49%"}
 ![](../images/VonNiemannProbe/bottomview.jpg){width="49.75%"}
-
-</center>
-
-<center>
-
-![](../images/VonNiemannProbe/VNPTWxJHH.jpg){width="100%"}
-![](../images/VonNiemannProbe/insoleirl.jpg){width="100%"}
-![](../images/VonNiemannProbe/inshoe.jpg){width="100%"}
+  <figcaption>Von Niemann Probe Electronics Enclosure & Cover</figcaption>
 
 </center>
 

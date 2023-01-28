@@ -10,7 +10,30 @@ hide:
 
  <center>
   <div class="title">Project Feed</div>
- </center >
+ </center>
+
+  <div class="post">
+    <div class="meta">
+      <div class="photo" style="background-image: url('../images/VonNiemannProbe/cover.jpg')"></div>
+    </div>
+    <div class="description">
+      <h1>Von Niemann Probe</h1>
+      <h2>- Winter, 2023 -</h2> <span class="time"><i class="far fa-clock"></i> 46–58 minutes</span>
+      <p>An AVR-based Bluetooth telegraphing shoe insole that lets you play chess like Hans Niemann! This project is our contribution to the ongoing investigation into the Hans Niemann/Magnus Carlsen cheating scandal and tests the feasibility of creating and using an over-the-board chess cheating aid.</p>
+      <div class="con">
+       <span class="share" style=" color: inherit;">
+        <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fab fa-facebook-square"></i></a>
+        <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
+        <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/VonNiemannProbe/&media=&description=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+        <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fab fa-linkedin"></i></a>
+        <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/VonNiemannProbe/%0ACheck%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+       </span>
+      </div>
+      <p class="read-more">
+        <a href="../Projects/VonNiemannProbe/">Read More</a>
+      </p>
+    </div>
+  </div>
 
  <div class="post alt">
     <div class="meta">
