@@ -33,7 +33,7 @@ tags:
 
 # Von Niemann Probe
 
-<!--- Social Linksmkdo
+<!--- Social Links
 
 HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
@@ -125,6 +125,9 @@ While this evidence against Niemann appears to be overwhelming, it's important t
 !!! failure "Cheating in Chess"
 
     ***Cheating in chess, whether online or over the board, is wrong and ruins the game for everyone.*** This project has been published to showcase the possibility of such a device's existence/use, and should not be recreated with the intent of using it for genuine foul play.
+
+!!! note "Name Orgins"
+    The Von Niemann Probe is named after a theoretical self-replicating space probe known as the Von Neumann Probe, named after legendary 20th century Hungarian-American mathematician *John Von Neumann*. The Von Neumann Probe is regarded as the optimal way to explore the cosmos, as it can mine asteroids and leverage the exponential growth of its progeny to more efficiently visit star systems. And, coincidentally, probes are also medical devices that can be used to explore one’s bowels. Thus, we settled on naming our device the Von Niemann Probe.
 
 <center>
 
