@@ -95,85 +95,13 @@ template: index.html
             </div>
           </div>
         </section>
-          <section class="c-section" data-scroll-section>
-                      <div class="o-layout_item u-2/5@from-medium">
-                          <div class="c-section_infos -padding" data-scroll data-scroll-speed="-3" data-scroll-call="test">
-                              <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
-                                  <h3>
-                                      01. <br>
-                                      Speed control
-                                  </h3>
-                                  <div class="c-sections_infos_text u-text">
-                                      <p>
-                                          Each element can be animated at a different speed. You get to choo-choo-choose!
-                                      </p>
-                                  </div>
-                              </div>
-                          </div>
-                      <div class="o-layout_item u-3/5@from-medium">
-                          <div class="c-speed-block" data-scroll data-scroll-speed="-1">
-                              <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
-                                  <div class="o-image" data-scroll>
-                                      <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                      <div class="o-layout_item u-2/5@from-medium">
-                          <div class="c-speed-block" data-scroll data-scroll-speed="2">
-                              <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
-                                  <div class="o-image" data-scroll data-scroll-speed="-1.5">
-                                      <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="o-layout_item u-3/5@from-medium">
-                          <div class="o-layout u-text-right">
-                              <div class="o-layout_item u-1/2@from-medium">
-                                  <div class="c-speed-block -margin" data-scroll data-scroll-speed="6">
-                                      <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
-                                          <div class="o-image" data-scroll data-scroll-delay="0.1" data-scroll-speed="-2">
-                                              <img class="c-speed-block_image" src="https://avatars.githubusercontent.com/u/48384497" alt="Locomotive image from unsplash">
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-          </section>
-          <section class="c-section -fixed" data-scroll-section data-persistent>
-              <div id="fixed-elements">
-                  <div class="o-layout">
-                      <div class="o-layout_item u-2/5@from-medium">
-                          <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
-                              <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
-                                  <h3>
-                                      04. <br>
-                                      Fixed elements
-                                  </h3>
-                                  <div class="c-sections_infos_text u-text">
-                                      <p>
-                                          Create slides that stick and untick to the viewport while scrolling through.
-                                      </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="o-layout_item u-3/5@from-medium">
-                          <div class="c-fixed_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
-                              <div class="c-fixed_target" id="fixed-target"></div>
-                              <div class="c-fixed" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" style="background-image:url('https://avatars.githubusercontent.com/u/48384497')"></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
-          <section>
-           </br>
-            <p>test</p>
-          </section>
+        <section class="funnyquote" data-scroll-section>
+            <div data-scroll data-scroll-speed="-3.5">
+            <center>
+                <img class="quote">
+            </center>
+            </div>
+        </section>
       </div>
   </span> 
  <h1></h1>

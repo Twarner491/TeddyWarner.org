@@ -20,6 +20,7 @@
         --toggledform: hsla(0, 0%, 100%, 0.12);
         --toggledformhover: hsla(0, 0%, 100%, 0.3);
         --avatar: url("../../images/index/avatardark.svg");
+        --quote: url("../../images/index/quote/");
       }
   
       [data-md-color-scheme="slate"] {
@@ -30,13 +31,7 @@
           --toggledform: hsla(0, 0%, 0%, 0.2);
           --toggledformhover: hsla(0, 0%, 0%, 0.32);
           --avatar: url("../../images/index/avatarlight.svg");
-      }
-  
-      @font-face {
-        font-family: 'format1452';
-        src: url('../fonts/format1452/Format_1452.eot');
-        src: url('../fonts/format1452/Format_1452.woff2') format('woff2'), 
-             url('../fonts/format1452/Format_1452.woff') format('woff');
+          --quote: url("../../images/index/quote/");
       }
   
       @media screen and (min-width: 60em) {

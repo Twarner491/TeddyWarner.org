@@ -2,7 +2,7 @@
 hide:
   - navigation
   - toc
-title: About Me
+title: About Me 
 ---
 
 <link rel="stylesheet" href="../../assets/css/about.css">
@@ -66,6 +66,9 @@ title: About Me
       <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>OUTWARD BOUND SCHOOL</strong><span class="date" style=" color: inherit;">Fall 2019</span><br>4 Day Course in the North Carolina Mountains</p>
       <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="width:65px;margin-top: 6px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
+     <p>
+        <strong><a href="https://www.instructables.com/contest/anythinggoes/">Instructables Anything Goes Contest</a></strong>, prize winner. (Feb 2023)
+      </p>
       <p>
         <strong><a href="https://www.instructables.com/contest/makeitmodular2022/">Autodesk Construction Solutions Scholarship Award</a></strong>, 1st Place. (July 2022)
       </p>
@@ -89,7 +92,16 @@ title: About Me
       </p>
      <h2><i class="fas fa-address-card"></i> Featured -</h2>
       <p>
-        <strong><a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Autodesk Learn Lab - Upskilling for the Future</a></strong> (July 2022)
+        <strong><a href="https://blog.adafruit.com/2023/02/01/the-von-niemann-probe-aims-to-investigate-the-accusations-of-chess-cheating-wearablewednesday/">Adafruit - This Project Aims to Investigate the Accusations of Chess Cheating</a></strong> (Feb 2023)
+      </p>
+      <p>
+        <strong><a href="https://hackaday.com/2023/02/01/electronic-shoe-explores-alleged-chess-misbehavior/">Hackaday - Electronic Shoe Explores Alleged Chess Misbehavior</a></strong> (Feb 2023)
+      </p>
+      <p>
+        <strong><a href="https://www.hackster.io/news/this-chess-cheating-wearable-aims-to-investigate-the-accusations-against-grandmaster-hans-neimann-90b63403b5d0">Hackster.io - This Chess-Cheating Wearable  ...</a></strong> (Feb 2023)
+      </p>
+      <p>
+        <strong><a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Autodesk Learn Lab - Upskilling for the Future...</a></strong> (July 2022)
       </p>
       <p>
         <strong><a href="https://vimeo.com/563923609#t=4233s">Fab Academy - Final Project Presentation</a></strong>, 1:10:33 through 1:13:45. (June 2021)
