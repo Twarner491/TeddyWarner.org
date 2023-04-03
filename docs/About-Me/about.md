@@ -40,19 +40,19 @@ title: About Me
       <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a senior enrolled at Charlotte Latin School in Charlotte, North Carolina. My passion lies in rapid-prototyping & digital fabrication & I love using these interests to benefit my community. I tend to respond to emails quickly, and I am always open to chat!</p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
-     <p><a href="https://rhythmlink.com/"><img src="https://teddywarner.org/images/About/rythemlink.png" alt="RLI Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>RHYTHMLINK INTERNATIONAL</strong><span class="date" style=" color: inherit;">2022-Present</span><br>R&D Engineering Intern</p>
+     <p><a href="https://rhythmlink.com/"><img src="https://teddywarner.org/images/About/rythemlink.png" alt="RLI Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>RHYTHMLINK INTERNATIONAL</strong><span class="date" style=" color: inherit;">2022-2023</span><br>R&D Engineering Intern</p>
       <ul>
         <li>Rapid mechanical prototyping with digital fabrication
         <li>Electronic system development
         </li>
       </ul>
-      <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:80px;margin-top: 8px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Teaching Assistant</p>
+      <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:80px;margin-top: 8px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-2023</span><br>Teaching Assistant</p>
       <ul>
         <li>Co-Instructing a fabrication course for middle & high school students
         <li>Facilitating STEAM summer classes for children ages 4 to 16
         </li>
       </ul>
-      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">2020-Present</span><br>Freelance Research and Development</p>
+      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">2020-2023</span><br>Freelance Research and Development</p>
       <ul>
       <li>General Lab Maintenance and Development
       <li><a href="https://teddywarner.org/images/Octoprint/laboctoprint.jpg">Print farm</a> setup and maintenance
@@ -60,10 +60,11 @@ title: About Me
       <li>Machine workflow writing
       <li><a href="https://teddywarner.org/Machine-Profiles/FusionPro48/">Epilog Laser</a> Setup and Maintenance
       </li>
-      </ul>
+      </ul
      <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
-      <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;width:70px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><span class="date" style=" color: inherit;">2018-Present</span><br>High School Diploma, Class of 2023</p>
+      <p><a href="https://iovine-young.usc.edu/"><img src="https://teddywarner.org/images/About/USC.png" alt="USC Logo" class="logo" style="margin-top: 7px;width:70px;"></a><strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong><span class="date" style=" color: inherit;">2023-2027</span><br>B.S. Art, Technology, and the Business of Innovation, Class of 2027</p>
       <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
+      <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;width:70px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><span class="date" style=" color: inherit;">2018-2023</span><br>High School Diploma, Class of 2023</p>
       <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>OUTWARD BOUND SCHOOL</strong><span class="date" style=" color: inherit;">Fall 2019</span><br>4 Day Course in the North Carolina Mountains</p>
       <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="width:65px;margin-top: 6px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
@@ -141,19 +142,6 @@ title: About Me
       </p>
       <center>
        <p>--- Total Service - <strong>218.0 Hours</strong> ---</p>
-      </center>
-      <p>
-     <h2><a href="https://www.instagram.com/teddymakesstuff/">@Teddymakesstuff</a> On <i class="fa fa-instagram"></i> <span class="instatext">Instagram</span> -</h2>
-      <center class="instafeed">
-        <span class="instalight">
-          <div data-mc-src="d8c73608-fcc8-4290-8302-9ada8c38e0f5#instagram"></div>
-          <script src="https://cdn2.woxo.tech/a.js#624e1b157fd2b900217e7b0d" async data-usrc></script>
-        </span>
-        <span class="instadark">
-          <div data-mc-src="5e60f977-523e-4cdd-82b3-56e287242388#instagram"></div>   
-          <script src="https://cdn2.woxo.tech/a.js#624e1b157fd2b900217e7b0d" async data-usrc></script>
-        </span>
-      </center>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
       <p class="music">
        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=5eba25ddc4f74313">

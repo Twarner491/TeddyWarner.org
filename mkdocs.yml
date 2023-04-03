@@ -42,11 +42,13 @@ extra:
 
   analytics:
     provider: google
-    property: G-DRNQ5C2ZP2
+    property: !ENV GOOGLE_ANALYTICS_KEY
 
 theme:
   name: material
   custom_dir: overrides
+  features:
+    - announce.dismiss
 
   palette:
     - scheme: default
@@ -126,6 +128,12 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
+  #- social:
+   #   cards: !ENV [CARDS, false]
+   #   cards_font: Fira Sans
+    #  cards_color:
+    #    fill: "#5466CE" 
+     #   text: "#FFFFFF"
 
 extra_css:
   - assets/css/extra.css
