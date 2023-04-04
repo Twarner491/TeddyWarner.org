@@ -60,8 +60,8 @@ title: About Me
       <li>Machine workflow writing
       <li><a href="https://teddywarner.org/Machine-Profiles/FusionPro48/">Epilog Laser</a> Setup and Maintenance
       </li>
-      </ul
-     <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
+      </ul>
+   <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
       <p><a href="https://iovine-young.usc.edu/"><img src="https://teddywarner.org/images/About/USC.png" alt="USC Logo" class="logo" style="margin-top: 6px;width:40px;"></a><strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong><span class="date" style=" color: inherit;">2023-2027</span><br>B.S. Art, Technology, and the Business of Innovation, Class of 2027</p>
       <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
       <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;width:70px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><span class="date" style=" color: inherit;">2018-2023</span><br>High School Diploma, Class of 2023</p>
