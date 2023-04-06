@@ -142,11 +142,15 @@ title: About Me
       </p>
       <center>
        <p>--- Total Service - <strong>218.0 Hours</strong> ---</p>
+      </center>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
+      <center>
       <p class="music">
        <a href="https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=5eba25ddc4f74313">
         <img src="https://novatorem-oqoqm52ci-twarner491.vercel.app/api/spotify" alt="Spotify">
        </a>
+      </p>
+      </center>
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-name: Documentation
+name: Publish Docs
 on:
   push:
     branches:
@@ -17,8 +17,8 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install 
-          mkdocs-material 
+      - run: pip install mkdocs-material 
         env:
+          CUSTOM_DOMAIN: teddywarner.org
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
       - run: mkdocs gh-deploy --force
