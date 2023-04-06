@@ -21,3 +21,5 @@ jobs:
           mkdocs-material 
           pillow cairosvg
       - run: mkdocs gh-deploy --force
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
