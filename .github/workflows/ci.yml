@@ -1,4 +1,6 @@
-name: Updated Site 
+name: Documentation
+env:
+  SERVER: production
 on:
   push:
     branches:
@@ -7,6 +9,7 @@ permissions:
   contents: write
 jobs:
   deploy:
+    name: Build Documentation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,9 +20,11 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - name: Install Dependencies
       - run: pip install 
           mkdocs-material 
           pillow cairosvg
-      - run: mkdocs gh-deploy --force
+      - name: Deploy Documentation
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+      - run: mkdocs gh-deploy --force
