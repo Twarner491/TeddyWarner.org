@@ -17,8 +17,9 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material 
+      - uses: afritzler/mkdocs-gh-pages-action@main
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REQUIREMENTS: ../../requirements.txt
           CUSTOM_DOMAIN: teddywarner.org
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-      - run: mkdocs gh-deploy --force
