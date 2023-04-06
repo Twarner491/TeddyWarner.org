@@ -1,5 +1,5 @@
 <center>
- ![](docs/images/outlinedTeddyWarner.svg)
+ ![](docs/images/outlinedTeddyWarner.png)
 </center>
 
 # Sponsors -

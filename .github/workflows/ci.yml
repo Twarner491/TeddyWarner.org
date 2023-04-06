@@ -1,4 +1,6 @@
 name: Publish Docs
+env:
+  GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 on:
   push:
     branches:
@@ -22,4 +24,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REQUIREMENTS: ../../requirements.txt
           CUSTOM_DOMAIN: teddywarner.org
-          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
