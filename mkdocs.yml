@@ -42,13 +42,11 @@ extra:
 
   analytics:
     provider: google
-    property: G-DRNQ5C2ZP2
+    property: !ENV GOOGLE_ANALYTICS_KEY
 
 theme:
   name: material
   custom_dir: overrides
-  features:
-    - announce.dismiss
 
   palette:
     - scheme: default
