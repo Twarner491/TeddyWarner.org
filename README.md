@@ -10,4 +10,4 @@
 > The work is provided as is; no warranty is provided, and users accept all liability.
 
 ### Sponsors -
-[![](https://teddywarner.org/images/VonNiemannProbe/PCBWay.png | width=100)](https://www.pcbway.com/)
+[![](https://teddywarner.org/images/VonNiemannProbe/PCBWay.png|width=100)](https://www.pcbway.com/)
