@@ -9,6 +9,7 @@ title: About Me
 <link rel="stylesheet" href="../../assets/css/about.css">
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+<script src="../assets/js/about.js"></script> 
 
 <div class="stuff">
   <div class="sidebarparent">
@@ -41,6 +42,11 @@ title: About Me
       <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a senior enrolled at Charlotte Latin School in Charlotte, North Carolina. My passion lies in rapid-prototyping & digital fabrication & I love using these interests to benefit my community. I tend to respond to emails quickly, and I am always open to chat!</p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
+     <p><a href="https://escapetactic.com/"><img src="https://teddywarner.org/images/About/escapetactic.png" alt="ET Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>ESCAPE TACTIC</strong><span class="date" style=" color: inherit;">2023-2023</span><br>Freelance R&D</p>
+      <ul>
+        <li>Puzzle Research, Devolopment, and Fabrication
+        </li>
+      </ul>
      <p><a href="https://rhythmlink.com/"><img src="https://teddywarner.org/images/About/rythemlink.png" alt="RLI Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>RHYTHMLINK INTERNATIONAL</strong><span class="date" style=" color: inherit;">2022-2023</span><br>R&D Engineering Intern</p>
       <ul>
         <li>Rapid mechanical prototyping with digital fabrication
@@ -53,7 +59,7 @@ title: About Me
         <li>Facilitating STEAM summer classes for children ages 4 to 16
         </li>
       </ul>
-      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">2020-2023</span><br>Freelance Research and Development</p>
+      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">2020-2023</span><br>Freelance R&D</p>
       <ul>
       <li>General Lab Maintenance and Development
       <li><a href="https://teddywarner.org/images/Octoprint/laboctoprint.jpg">Print farm</a> setup and maintenance

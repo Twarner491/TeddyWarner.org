@@ -1,5 +1,5 @@
 ---
-title: Teddy Warner | Digital Fabricator
+title: TeddyWarner.org
 template: index.html
 ---
 
@@ -33,30 +33,12 @@ template: index.html
      <section class="avatarpar" data-scroll-section>
         <div data-scroll data-scroll-speed="-3.5">
            <center>
-            <img class="avatar">
+            <video width="48em" autoplay loop muted playsinline>
+              <source class="avatar" src="../images/index/avatardark.mov" type="video/mov" />
+            </video>~
            </center>
         </div>
      </section>
-         <section data-scroll-section>
-          <div class="c-section" data-scroll-section>
-              <div id="scroll-direction">
-                  <div class="c-direction-block_wrapper">
-                      <div class="c-direction-block" id="direction">
-                          <div class="c-direction-block_item -two">
-                              <span id="toptitle" class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" data-scroll-target="#direction">
-                                  DIGITAL
-                              </span>
-                          </div>
-                          <div class="c-direction-block_item -two">
-                              <span id="toptitle" class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-target="#direction">
-                                  FABRICATOR
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </section>
         <section class="introabt" data-scroll-section>
           <div class="o-layout_item">
             <div class="c-speed-block" data-scroll data-scroll-speed="-3">

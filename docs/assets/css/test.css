@@ -19,7 +19,7 @@
         --formhover: hsla(0, 0%, 0%, 0.32);
         --toggledform: hsla(0, 0%, 100%, 0.12);
         --toggledformhover: hsla(0, 0%, 100%, 0.3);
-        --avatar: url("../../images/index/avatardark.svg");
+        --avatar: url("../../images/index/avatardark.mov");
         --quote: url("../../images/index/quote/");
       }
   
@@ -30,7 +30,7 @@
           --formhover: hsla(0, 0%, 100%, 0.3);
           --toggledform: hsla(0, 0%, 0%, 0.2);
           --toggledformhover: hsla(0, 0%, 0%, 0.32);
-          --avatar: url("../../images/index/avatarlight.svg");
+          --avatar: url("../../images/index/avatarlight.mov");
           --quote: url("../../images/index/quote/");
       }
   
@@ -378,7 +378,7 @@
   
     .avatar {
       content: var(--avatar);
-      width: 48em;
+      pointer-events: none;
       margin-bottom: -75vh;
     }
   

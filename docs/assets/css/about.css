@@ -246,6 +246,8 @@ background: linear-gradient(155deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
     transition: all .4s ease-in-out;
 }
 
+
+
 @media (min-width: 68em) {
   .stuff {
     display: flex;
