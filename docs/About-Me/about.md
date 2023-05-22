@@ -41,10 +41,17 @@ title: About Me
      <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
       <div class="underline"></div>
       <p><strong>Hey! I’m Teddy Warner,</strong> a senior enrolled at Charlotte Latin School in Charlotte, North Carolina. My passion lies in rapid-prototyping & digital fabrication & I love using these interests to benefit my community. I tend to respond to emails quickly, and I am always open to chat!</p>
+      <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
+      <p><a href="https://iovine-young.usc.edu/"><img src="https://teddywarner.org/images/About/USC.png" alt="USC Logo" class="logo" style="margin-top: 6px;width:40px;"></a><strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong><span class="date" style=" color: inherit;">2023-2027</span><br>B.S. Art, Technology, and the Business of Innovation, Class of 2027</p>
+      <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
+      <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;width:70px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><span class="date" style=" color: inherit;">2018-2023</span><br>High School Diploma, Class of 2023</p>
+      <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>OUTWARD BOUND SCHOOL</strong><span class="date" style=" color: inherit;">Fall 2019</span><br>4 Day Course in the North Carolina Mountains</p>
+      <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="width:65px;margin-top: 6px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-briefcase"></i> Experience -</h2>
-     <p><a href="https://escapetactic.com/"><img src="https://teddywarner.org/images/About/escapetactic.png" alt="ET Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>ESCAPE TACTIC</strong><span class="date" style=" color: inherit;">2023-2023</span><br>Freelance R&D</p>
+     <p><a href="https://escapetactic.com/"><img src="https://teddywarner.org/images/About/escapetactic.png" alt="ET Logo" class="logo" style="width:36px;margin-top: 5px;"></a><strong>ESCAPE TACTIC</strong><span class="date" style=" color: inherit;">Spring 2023</span><br>Freelance R&D</p>
       <ul>
         <li>Puzzle Research, Devolopment, and Fabrication
+        <li>Electronic system development
         </li>
       </ul>
      <p><a href="https://rhythmlink.com/"><img src="https://teddywarner.org/images/About/rythemlink.png" alt="RLI Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>RHYTHMLINK INTERNATIONAL</strong><span class="date" style=" color: inherit;">2022-2023</span><br>R&D Engineering Intern</p>
@@ -68,12 +75,6 @@ title: About Me
       <li><a href="https://teddywarner.org/Machine-Profiles/FusionPro48/">Epilog Laser</a> Setup and Maintenance
       </li>
       </ul>
-   <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
-      <p><a href="https://iovine-young.usc.edu/"><img src="https://teddywarner.org/images/About/USC.png" alt="USC Logo" class="logo" style="margin-top: 6px;width:40px;"></a><strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong><span class="date" style=" color: inherit;">2023-2027</span><br>B.S. Art, Technology, and the Business of Innovation, Class of 2027</p>
-      <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
-      <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;width:70px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><span class="date" style=" color: inherit;">2018-2023</span><br>High School Diploma, Class of 2023</p>
-      <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>OUTWARD BOUND SCHOOL</strong><span class="date" style=" color: inherit;">Fall 2019</span><br>4 Day Course in the North Carolina Mountains</p>
-      <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="width:65px;margin-top: 6px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
      <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
      <p>
         <strong><a href="https://www.instructables.com/contest/anythinggoes/">Instructables Anything Goes Contest</a></strong>, prize winner. (Feb 2023)
