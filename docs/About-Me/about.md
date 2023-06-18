@@ -40,7 +40,7 @@ title: About Me
     <div class="stuff__content">
      <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
       <div class="underline"></div>
-      <p><strong>Hey! I’m Teddy Warner,</strong> a senior enrolled at Charlotte Latin School in Charlotte, North Carolina. My passion lies in rapid-prototyping & digital fabrication & I love using these interests to benefit my community. I tend to respond to emails quickly, and I am always open to chat!</p>
+      <p><strong>Hey! I'm Teddy Warner✌️</strong>, a maker, and a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a>. My passion lies in rapid prototyping & digital fabrication - be sure to explore my <a href="https://teddywarner.org/feed/">projects</a> page to see some of my work!</p>
       <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
       <p><a href="https://iovine-young.usc.edu/"><img src="https://teddywarner.org/images/About/USC.png" alt="USC Logo" class="logo" style="margin-top: 6px;width:40px;"></a><strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong><span class="date" style=" color: inherit;">2023-2027</span><br>B.S. Art, Technology, and the Business of Innovation, Class of 2027</p>
       <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
@@ -111,7 +111,16 @@ title: About Me
         <strong><a href="https://www.hackster.io/news/this-chess-cheating-wearable-aims-to-investigate-the-accusations-against-grandmaster-hans-neimann-90b63403b5d0">Hackster.io - This Chess-Cheating Wearable  ...</a></strong> (Feb 2023)
       </p>
       <p>
-        <strong><a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Autodesk Learn Lab - Upskilling for the Future...</a></strong> (July 2022)
+        <strong><a href="https://hackaday.com/2023/01/25/pizza-making-cnc-machine-is-the-only-tool-weve-ever-dreamed-of/">Hackaday - The Only Tool We’ve Ever Dreamed Of ...</a></strong> (Jan 2023)
+      </p>
+      <p>
+        <strong><a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Hackaday - Turning A Microchip MPLAB Snap ...</a></strong> (Dec 2022)
+      </p>
+      <p>
+        <strong><a href="https://www.hackster.io/news/pizza-pizza-cnc-machine-makes-pizzas-so-you-don-t-have-to-2abc96e2c411">Hackster.io - Makes Pizzas So You Don’t Have To ...</a></strong> (Dec 2022)
+      </p>
+      <p>
+        <strong><a href="https://hackaday.com/2022/12/26/turning-a-microchip-mplab-snap-into-a-udpi-avr-programmer/">Autodesk Learn Lab - Upskilling for the Future ...</a></strong> (July 2022)
       </p>
       <p>
         <strong><a href="https://vimeo.com/563923609#t=4233s">Fab Academy - Final Project Presentation</a></strong>, 1:10:33 through 1:13:45. (June 2021)

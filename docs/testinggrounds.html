@@ -1,0 +1,66 @@
+<style>
+
+  .movingtext{
+
+  }
+
+</style>
+
+</br>
+</br>
+</br>
+
+<svg id="text-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1346.667 1348" width="700px">
+  <path id="text-curve" d="M1069.59 1279.719c-8.033-38.894-15.99-77.42-18.066-104.547-2.076-27.127 1.809-41.835 1.127-63.576-.682-21.742-5.968-50.375-14.965-86.56-8.997-36.186-21.546-79.379-33.146-106.104-11.6-26.726-22.173-36.71-38.766-47.87-16.593-11.16-39.206-23.495-57.254-32.617-18.048-9.122-31.53-15.032-41.18-23.293-9.65-8.262-15.468-18.876-15.754-31.912-.287-13.037 4.957-28.495 13.066-42.217 8.11-13.722 19.082-25.706 28.042-37.46 8.96-11.755 15.908-23.28 23.617-34.483 7.708-11.203 16.177-22.084 26.333-32.859 10.157-10.775 22-21.444 30.71-33.807 8.71-12.363 14.285-26.419 21.726-40.1 7.44-13.682 16.746-26.988 26.21-40.64 9.465-13.651 19.225-27.848 22.529-43.56 3.304-15.711.22-33.038-3.18-46.98-3.4-13.942-7.025-24.237-11.65-52.798-4.626-28.56-10.206-75.255-19.574-122.437-9.367-47.181-22.521-94.846-46.077-131.931-23.555-37.085-57.712-63.744-91.666-81.396C837.72 24.92 803.87 16.198 759.118 14.225c-44.752-1.973-100.405 2.803-143.912 12.46C571.7 36.34 540.343 50.878 514.13 66.51c-26.213 15.634-47.507 32.545-66.51 56.427-19.001 23.882-35.822 54.823-47.243 84.416-11.422 29.592-17.444 57.834-27.827 89.815-10.384 31.98-25.128 67.698-34.576 92.722-9.45 25.024-13.602 39.352-8.098 58.354 5.503 19.002 20.662 42.675 32.603 64.168 11.94 21.494 20.663 40.806 30.603 70.51 9.941 29.703 21.209 70.182 37.615 98.01 16.406 27.827 38.002 43.194 46.412 60.741 8.41 17.548 3.645 37.232-8.843 51.072-12.487 13.84-32.585 21.714-56.882 35.627-24.297 13.914-52.747 33.85-72.787 57.109-20.04 23.259-31.67 49.84-43.85 81.705-12.18 31.866-24.783 68.644-31.948 96.99-7.164 28.347-8.825 48.075-4.775 63.546 4.05 15.471 13.81 26.685 19.209 57.004 5.398 30.32 6.437 79.743 7.475 129.166" style="fill:none;stroke:#000;stroke-opacity:1"/>
+  <text class="movingtext" y="0" font-size="32">
+  <textPath id="text-path" href="#text-curve" startOffset="200">
+    TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG TEDDYWARNER.ORG 
+  </textPath>
+</text>
+</svg>
+
+</br>
+</br>
+</br></br>
+</br>
+</br></br>
+</br>
+</br></br>
+</br>
+</br></br>
+</br>
+</br></br>
+</br>
+</br>
+
+<script>
+
+  console.clear();
+  
+  var textPath = document.querySelector('#text-path');
+  
+  var textContainer = document.querySelector('#text-container');
+  
+  var path = document.querySelector( textPath.getAttribute('href') );
+  
+  var pathLength = path.getTotalLength();
+  console.log(pathLength);
+  
+  function updateTextPathOffset(offset){
+    textPath.setAttribute('startOffset', offset); 
+  }
+  
+  updateTextPathOffset(pathLength);
+  
+  function onScroll(){
+    requestAnimationFrame(function(){
+      var rect = textContainer.getBoundingClientRect();
+      var scrollPercent = rect.y / window.innerHeight;
+      console.log(scrollPercent);
+      updateTextPathOffset( scrollPercent * 2 * pathLength );
+    });
+  }
+
+  window.addEventListener('scroll',onScroll);
+  
+  </script>
