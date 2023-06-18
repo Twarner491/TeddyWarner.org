@@ -114,13 +114,13 @@ title: About Me
         <strong><a href="https://hackaday.com/2023/01/25/pizza-making-cnc-machine-is-the-only-tool-weve-ever-dreamed-of/">Hackaday - The Only Tool We’ve Ever Dreamed Of ...</a></strong> (Jan 2023)
       </p>
       <p>
-        <strong><a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Hackaday - Turning A Microchip MPLAB Snap ...</a></strong> (Dec 2022)
+        <strong><a href="https://hackaday.com/2022/12/26/turning-a-microchip-mplab-snap-into-a-udpi-avr-programmer/">Hackaday - Turning A Microchip MPLAB Snap ...</a></strong> (Dec 2022)
       </p>
       <p>
         <strong><a href="https://www.hackster.io/news/pizza-pizza-cnc-machine-makes-pizzas-so-you-don-t-have-to-2abc96e2c411">Hackster.io - Makes Pizzas So You Don’t Have To ...</a></strong> (Dec 2022)
       </p>
       <p>
-        <strong><a href="https://hackaday.com/2022/12/26/turning-a-microchip-mplab-snap-into-a-udpi-avr-programmer/">Autodesk Learn Lab - Upskilling for the Future ...</a></strong> (July 2022)
+        <strong><a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Autodesk Learn Lab - Upskilling for the Future ...</a></strong> (July 2022)
       </p>
       <p>
         <strong><a href="https://vimeo.com/563923609#t=4233s">Fab Academy - Final Project Presentation</a></strong>, 1:10:33 through 1:13:45. (June 2021)
