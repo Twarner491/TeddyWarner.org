@@ -49,7 +49,7 @@ template: index.html
         </div>
   <p class="sub-message">In the meantime...</p>
   <div class="options">
-    <a href="https://teddywarner.com/feed/">
+    <a href="http://teddywarner.com/feed/">
       <button class="btn" style="color:black;">Check out my projects!</button>
     </a>
   </div>
