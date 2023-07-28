@@ -2,6 +2,8 @@
 hide:
   - navigation
   - toc
+search:
+  exclude: true
 ---
 
 <link rel="stylesheet" href="../assets/css/feed.css">

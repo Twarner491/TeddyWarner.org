@@ -1,11 +1,15 @@
 ---
 title: PROJECT-TITLE
+description: This is a template for my project pages!
 hide:
   - navigation
   - tags
 template: comments.html
 tags:
   - 
+status: 
+search:
+  exclude: true
 ---
 
 <link rel="stylesheet" href="../../assets/css/projects/project.css">

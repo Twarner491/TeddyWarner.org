@@ -1,5 +1,6 @@
 ---
 title: Adaptable Aquaponics
+description: A Theoretical Confrontation to Contemporary Farming Challenges.
 hide:
   - navigation
   - tags

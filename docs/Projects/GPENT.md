@@ -1,5 +1,6 @@
 ---
 title: GPENT
+description: A GPT-Integrated Pen Plotter.
 hide:
   - navigation
   - tags
@@ -18,6 +19,8 @@ tags:
   - Python
   - C++
   - Programming
+search:
+  exclude: true
 ---
 
 <link rel="stylesheet" href="../../assets/css/projects/project.css">

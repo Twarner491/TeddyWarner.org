@@ -1,5 +1,6 @@
 ---
 title: Assistive Aquaponics Fish Tank
+description: Expanding the accessibility of successful & thriving aquaponics ecosystems.
 hide:
   - navigation
   - tags

@@ -8,34 +8,26 @@ site_url: https://teddywarner.org/
 repo_url: https://github.com/Twarner491/TeddyWarner.org
 repo_name: Twarner491/TeddyWarner.org
 
-copyright: Copyright &copy; 2021 - 2023 Teddy Warner
+copyright: >
+  Copyright &copy; 2021 - 2023 Teddy Warner
 
 extra:
   social:
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/teddy-warner-880974200/
-      name: Linked In - Teddy Warner
     - icon: fontawesome/brands/github
       link: https://github.com/Twarner491
       name: Github - Twarner491
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/@teddywarner
-      name: YouTube - @teddywarner
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/teddy-warner-880974200/
+      name: Linked In - Teddy Warner
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/teddymakesstuff/
       name: Instagram - @teddymakesstuff
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/WarnerTeddy
-      name: Twitter - @WarnerTeddy
-    - icon: fontawesome/brands/discord
-      link: https://discordapp.com/users/534164566649733120/
-      name: Discord - Twarner#2592
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@teddywarner
+      name: YouTube - @teddywarner
     - icon: fontawesome/brands/spotify
       link: https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb
       name: Spotify - Teddy Warner
-    - icon: mug-saucer-solid
-      link: https://www.buymeacoffee.com/teddywarner
-      name: Buy Me A Coffee! :)
     - icon: fontawesome/solid/paper-plane
       link: mailto:<Twarner491@gmail.com>
       name: Email - Twarner491@gmail.com
@@ -43,6 +35,14 @@ extra:
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
+
+  consent:
+    title: 🍪 Cookie Consent
+    description: >- 
+      TeddyWarner.org uses cookies to recognize your repeated visits and preferences, 
+      as well as to measure the effectiveness of my documentation and whether users
+      find what they're searching for. With your consent, you're helping me to
+      make my documentation better. Thank you!
 
 theme:
   name: material
@@ -77,14 +77,18 @@ theme:
                           
   features:
    - navigation.instant
+   - navigation.tracking
    - navigation.top
    - navigation.tabs
    - navigation.expand
    - content.code.annotate
    - search.share
+   - search.suggest
    - content.tabs.link
+   - announce.dismiss
 
 plugins:
+  - social
   - material/search
   - tags
 

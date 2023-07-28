@@ -1,5 +1,6 @@
 ---
 title: Parametric Bottle Cap Generator
+description: Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!
 hide:
   - navigation
   - tags

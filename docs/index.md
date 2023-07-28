@@ -1,6 +1,9 @@
 ---
 title: TeddyWarner.org
+description: Project Portfolio and Documentation Site for Teddy Warner.
 template: index.html
+search:
+  exclude: true
 ---
 
 <head>

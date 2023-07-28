@@ -1,5 +1,6 @@
 ---
 title: Octoprint Setup
+description: A complete Octoprint setup documentation.
 hide:
   - navigation
   - tags

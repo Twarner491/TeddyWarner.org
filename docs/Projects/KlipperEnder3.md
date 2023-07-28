@@ -1,5 +1,6 @@
 ---
 title: Klipper Enabled Ender 3
+description: As the name suggests, an Ender 3 with Klipper firmware.
 hide:
   - navigation
   - tags

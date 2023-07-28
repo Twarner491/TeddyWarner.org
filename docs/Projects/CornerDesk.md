@@ -1,5 +1,6 @@
 ---
 title: Cable Managed Corner Desk
+description: A clean modern corner desk.
 hide:
   - navigation
   - tags

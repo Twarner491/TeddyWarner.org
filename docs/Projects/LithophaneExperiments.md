@@ -1,5 +1,6 @@
 ---
 title: Lithophane Experiments
+description: A gallery of lithophanes.
 hide:
   - navigation
   - tags

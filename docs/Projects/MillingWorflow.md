@@ -1,5 +1,6 @@
 ---
 title: CNC Milling Workflows
+description: A relatively comprehensive guide for CNC milling.
 hide:
   - navigation
   - tags

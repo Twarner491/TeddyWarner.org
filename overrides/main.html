@@ -5,23 +5,36 @@
     <aside class="md-banner">
       <div class="md-banner__inner md-grid md-typeset">
         {% if "announce.dismiss" in features %}
-          <button class="md-banner__button md-icon" aria-label="{{ lang.t('announce.dismiss') }}">
+          <button
+            class="md-banner__button md-icon"
+            aria-label="{{ lang.t('announce.dismiss') }}"
+          >
             {% include ".icons/material/close.svg" %}
           </button>
         {% endif %}
         {% block announce %}
-          <center>
-            <a href="https://www.youtube.com/@teddywarner" style="color:white;">
-              -- Check out <strong>@TeddyWarner</strong> on
-              <span class="twemoji youtube">
-                <i style="background: #c4302b;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;" class="fab fa-youtube"></i>
-              </span>
-              <strong>Youtube</strong> --
-            </a>
-          </center>
-        {% endblock %}
+        <center>
+          <p style="color:white;">
+            Check out <strong>@TeddyWarner</strong> on
+           <a href="https://www.youtube.com/@teddywarner" style="color:white;">
+            <span class="twemoji youtube">
+              <i style="background: #c4302b;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;" class="fab fa-youtube"></i>
+            </span>
+            <strong>Youtube</strong>
+           </a> and
+           <a href="https://www.instagram.com/teddywarner/" style="color:white;">
+            <span class="twemoji instagram">
+              <i style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;" class="fab fa-instagram"></i>
+            </span>
+            <strong>Instagram</strong>
+           </a>
+          </p>
+        </center>
+      {% endblock %}
       </div>
       {% if "announce.dismiss" in features %}
         {% include "partials/javascripts/announce.html" %}
@@ -29,7 +42,6 @@
     </aside>
   {% endif %}
 </div>
-
 
 {% block header %}
 <!-- Determine base classes -->

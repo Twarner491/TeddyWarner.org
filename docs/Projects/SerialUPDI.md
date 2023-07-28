@@ -1,5 +1,6 @@
 ---
 title: UPDI Serial Programming
+description: Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.
 hide:
   - navigation
   - tags

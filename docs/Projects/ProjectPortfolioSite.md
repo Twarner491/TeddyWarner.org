@@ -1,5 +1,6 @@
 ---
 title: Project Portfolio Site
+description: Static site generation with Mkdocs, and hosting via GitHub Pages.
 hide:
   - navigation
   - tags
@@ -678,8 +679,11 @@ git push # (3)
 **Wooo :partying_face: :partying_face:** as of 12/01/2021, *teddywarner.org* is now **100 Commits** old!!
 ![](../images/PortfolioSite/100commit.jpg){width="100%"}
 
-**200 Commits :raised_hands:** - 5/02/2022!
+**200 Commits :raised_hands:** - 05/02/2022!
 ![](../images/PortfolioSite/200commit.jpg){width="100%"}
+
+**... and 300 Commits! :exploding_head:** - 06/28/2023!
+![](../images/PortfolioSite/300commit.png){width="100%"}
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control

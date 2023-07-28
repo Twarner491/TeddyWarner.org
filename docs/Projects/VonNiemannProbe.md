@@ -1,5 +1,6 @@
 ---
 title: Von Niemann Probe
+description: An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!
 hide:
   - navigation
   - tags
@@ -18,6 +19,7 @@ tags:
   - Python
   - C++
   - Programming
+  status: new
 ---
 
 <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
