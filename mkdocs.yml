@@ -85,7 +85,7 @@ theme:
    - content.tabs.link
 
 plugins:
-  - search
+  - material/search
   - tags
 
 markdown_extensions:

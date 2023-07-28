@@ -13,9 +13,9 @@ template: index.html
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
 <script src="../assets/js/test.js"></script> 
+<script src="../assets/js/gradpath.js"></script> 
 
-<img class="preloader" src="../images/index/loader.gif">
-<div class="preloaderbg"></div>
+
 
 <nav class="main-navigation">
     <ul>
@@ -33,47 +33,34 @@ template: index.html
      <section class="avatarpar" data-scroll-section>
         <div data-scroll data-scroll-speed="-3.5">
            <center>
-            <video width="48em" autoplay loop muted playsinline>
-              <source class="avatar" src="../images/index/avatardark.mov" type="video/mov" />
-            </video>~
+            <img width="550px" src="../images/index/avatardark.svg">
+           </center>
+           <center>
+            <svg class="svgwave" xmlns="http://www.w3.org/2000/svg" width="301" height="21" viewBox="0 0 301 21">
+              <defs>
+                <linearGradient id="grad">
+                  <stop offset="5%" stop-color="#0f5cbf"/>
+                  <stop offset="25%" stop-color="#25d964"/>
+                  <stop offset="50%" stop-color="#f2b90f"/>
+                  <stop offset="75%" stop-color="#f24f13"/>
+                  <stop offset="95%" stop-color="#8080ff"/>
+                </linearGradient>
+              </defs>
+              <path id="wavepath" d="M0,.5c30.0978,0,30.0978,20,60.1956,20S90.2948.5,120.394.5s30.1,20,60.2,20c30.1015,0,30.1015-20,60.203-20s30.1014,20,60.2029,20"></path>
+              <text id="wavetext" text-anchor="middle">
+                <textPath class="my-text" href="#wavepath" startOffset="50%">
+                <animate attributeName="startOffset" from="-50%" to="150%" begin="0s" dur="100s" repeatCount="indefinite"></animate>
+                TEDDYWARNER.ORG • TEDDYWARNER.ORG • TEDDYWARNER.ORG • TEDDYWARNER.ORG • TEDDYWARNER.ORG • TEDDYWARNER.ORG • TEDDYWARNER.ORG • TEDDYWARNER.ORG • 
+                </textPath>
+              </text>
+            </svg>
            </center>
         </div>
      </section>
         <section class="introabt" data-scroll-section>
           <div class="o-layout_item">
-            <div class="c-speed-block" data-scroll data-scroll-speed="-3">
-              <div id="typed-strings">
-                <h2>a student.</h2>
-                <h2>a maker.</h2>
-                <h2>a developer.</h2>
-                <h2>an <em>award winning</em> designer.</h2>
-                <h2>a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>.</h2>
-              </div>
-              <h2><b>Hey! I’m Teddy Warner,</b> <span id="typed"></span></h2>
-              <h3>I'm a senior in highschool, currently located in <span style="margin:auto;">🇺🇸 </span> <em>Charlotte, NC</em>. As a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>, I have a great interest in contemporary fabrication technologies & a passion to spread the reaches of digital fabrication.
-              </h3> 
-              <h3>I'm a 'Full-Stack' Digital Fabricator, utilizing plethoras of fabrication processes to produce mixed-media projects equipped with additive & subtractive parts, custom electronics & software integration. My personal work encompasses my hope to inspire & showcase the vast potential of digital fabrication.
-              </h3>
-              <h3>When I'm not studying, I love to lose myself in the internet or pick up a new book, hit a mountain bike trail with my friends, and foremost, continue work on a project. Regardless of the activity, you'll always find me listing to some music.
-              </h3>
-              <div id="abtmebttncontainer">
-                <div id="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 300 300" xml:space="preserve" class="textrev">
-                        <defs>
-                            <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
-                        </defs>
-                        <g>
-                            <use xlink:href="#circlePath" fill="none"/>
-                            <text>
-                                <textPath fill="var(--md-default-fg-color)" xlink:href="#circlePath">- More About Me - More About Me - More About Me </textPath>
-                            </text>
-                        </g>
-                        <a href="http://teddywarner.com/About-Me/about/" class="abtbtn" onmouseenter="leftrevon()" onmouseleave="leftrevoff()">
-                          <circle fill="none" cx="150" cy="150" r="75"/>
-                      </a>
-                    </svg>
-                </div>
-              </div>
+            <div class="c-speed-block" data-scroll data-scroll-speed="-3.5">
+
             </div>
           </div>
         </section>
