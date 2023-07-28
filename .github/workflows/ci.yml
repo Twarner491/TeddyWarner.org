@@ -19,6 +19,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - run: pip install pillow cairosvg urllib3==v1.26.6
       - uses: afritzler/mkdocs-gh-pages-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

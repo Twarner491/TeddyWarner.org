@@ -1,3 +1,1 @@
 mkdocs-material
-pillow_cairosvg_urllib3==v1.26.6
-pngquant
