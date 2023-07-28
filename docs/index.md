@@ -49,7 +49,7 @@ template: index.html
         </div>
   <p class="sub-message">In the meantime...</p>
   <div class="options">
-    <a href="https://teddywarner.org/feed/">
+    <a href="https://teddywarner.com/feed/">
       <button class="btn" style="color:black;">Check out my projects!</button>
     </a>
   </div>
@@ -235,6 +235,36 @@ template: index.html
   <script src="../assets/js/index.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#/';
+            window.location.reload();
+        }
+    }
+    window.addEventListener( "pageshow", function ( event ) {
+      var historyTraversal = event.persisted || 
+                            ( typeof window.performance != "undefined" && 
+                                  window.performance.navigation.type === 2 );
+      if ( historyTraversal ) {
+        window.location.reload();
+        (function ($) {
+          preloaderFadeOutInit();
+        })(jQuery);
+      }
+    });
+    function preloaderFadeOutInit(){  
+      $('.preloader').delay(1800).fadeOut(525);
+      $('.main-content').hide().delay(2500).fadeIn(160);
+      $('.preloaderbg').delay(2500).fadeOut(160);
+      $('body').attr('id','');
+    }
+    jQuery(window).on('load', function () {
+      (function ($) {
+      preloaderFadeOutInit();
+      })(jQuery);
+    });
+  </script>
   <script>
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),

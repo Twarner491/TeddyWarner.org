@@ -4,38 +4,6 @@ var supportsCssVars = function() {
 
 supportsCssVars() || alert("Please view this page in a modern browser that supports CSS Variables :)."); 
 
-window.onload = function() {
-    if(!window.location.hash) {
-        window.location = window.location + '#/';
-        window.location.reload();
-    }
-}
-
-window.addEventListener( "pageshow", function ( event ) {
-  var historyTraversal = event.persisted || 
-                        ( typeof window.performance != "undefined" && 
-                              window.performance.navigation.type === 2 );
-  if ( historyTraversal ) {
-    window.location.reload();
-    (function ($) {
-       preloaderFadeOutInit();
-    })(jQuery);
-  }
-});
-
-function preloaderFadeOutInit(){  
-  $('.preloader').delay(1800).fadeOut(525);
-  $('.main-content').hide().delay(2500).fadeIn(160);
-  $('.preloaderbg').delay(2500).fadeOut(160);
-  $('body').attr('id','');
-}
-
-jQuery(window).on('load', function () {
-  (function ($) {
-  preloaderFadeOutInit();
-  })(jQuery);
-});
-
 const element = document.body;
 let lastScroll = 0;
 
