@@ -19,7 +19,6 @@ tags:
   - Python
   - C++
   - Programming
-  status: new
 ---
 
 <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
