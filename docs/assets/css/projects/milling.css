@@ -7,6 +7,12 @@
     --toggleboxshadow: 0 1px 3px rgba(75, 75, 75, 0.6);
     --calcplaceholder: rgba(255, 255, 255, 0.75);
   }
+
+  @media (max-width: 400px) {
+    .announcelarge {
+      display: none;
+    }
+  }
   
   .profilepic {
     display: inline;

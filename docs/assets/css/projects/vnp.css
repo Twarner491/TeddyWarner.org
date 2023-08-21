@@ -16,6 +16,12 @@
   display: var(--darkdisplaystyle);
 }
 
+@media (max-width: 400px) {
+  .announcelarge {
+    display: none;
+  }
+}
+
 .profilepic {
   display: inline-block;
   vertical-align:middle;

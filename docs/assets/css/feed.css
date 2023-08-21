@@ -5,6 +5,12 @@
     [data-md-color-scheme="slate"] {
     --cover-color: #212226;
     }
+
+    @media (max-width: 400px) {
+      .announcelarge {
+        display: none;
+      }
+    }
     
     .post {
       display: flex;
@@ -196,9 +202,10 @@
     
     .title {
       margin-top: -1.3em;
+      margin-bottom: -0.2em;
+      font-family: Romalika;
       font-size: 3.5em;
-      font-weight: 500;
-      font-style: oblique;
+      font-weight: 700;
     }
     
     @media (min-width: 640px) {

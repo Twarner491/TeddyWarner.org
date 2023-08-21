@@ -34,6 +34,12 @@
       --quote: url("../../images/index/quote/");
   }
 
+  @media (max-width: 400px) {
+    .announcelarge {
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 60em) {
     .md-sidebar--secondary {
       display: none;
