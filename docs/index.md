@@ -382,7 +382,7 @@ search:
     const hoursEl = document.getElementById("hours");
     const minsEl = document.getElementById("mins");
     const secondsEl = document.getElementById("seconds");
-    const newYears = "20 Sep 2023";
+    const newYears = "25 Sep 2023";
     function countdown() {
         const newYearsDate = new Date(newYears);
         const currentDate = new Date();
