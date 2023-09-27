@@ -11,7 +11,7 @@ search:
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 
  <center>
-  <div class="title">- Project Feed -</div>
+  <div class="title">Project Feed</div>
  </center>
 
   <div class="post">
