@@ -10,7 +10,6 @@ search:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teddy Warner</title>
-  <link rel="stylesheet" href="../assets/css/index.css">
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 </head>
 
@@ -254,6 +253,7 @@ search:
     <h1></h1>
    </div>
   </main>
+  <link rel="stylesheet" href="../assets/css/index.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
