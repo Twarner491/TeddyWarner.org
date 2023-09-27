@@ -11,12 +11,11 @@ search:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teddy Warner</title>
   <link rel="stylesheet" href="../assets/css/index.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 </head>
 
-<img class="preloader" src="../images/index/loader.gif">
-<div class="preloaderbg"></div>
+<!--<img class="preloader" src="../images/index/loader.gif">
+<div class="preloaderbg"></div>-->
 
 <nav class="main-navigation">
     <ul>
@@ -28,39 +27,9 @@ search:
     </ul>
 </nav>
 
-<h1></h1>
-
-<div class="modal">
-  <p class="message">New Index Page Underway.</p>
-        <div class="countdown-container">
-            <div class="countdown-el days-c">
-                <p class="big-text" id="days">0</p>
-                <span>days</span>
-            </div>
-            <div class="countdown-el hours-c">
-                <p class="big-text" id="hours">0</p>
-                <span>hours</span>
-            </div>
-            <div class="countdown-el mins-c">
-                <p class="big-text" id="mins">0</p>
-                <span>mins</span>
-            </div>
-            <div class="countdown-el seconds-c">
-                <p class="big-text" id="seconds">0</p>
-                <span>seconds</span>
-            </div>
-        </div>
-  <p class="sub-message">In the meantime...</p>
-  <div class="options">
-    <a href="http://teddywarner.com/feed/">
-      <button class="btn" style="color:black;">Check out my projects!</button>
-    </a>
-  </div>
-</div>
-
-<!--<body>
+<body>
   <main data-scroll-container>
-   <section class="head" style="height:72em" data-scroll-section>
+   <section class="head" data-scroll-section>
     <div class="funnyworm" style="z-index:-1;">
       <svg class="svgwave" xmlns="http://www.w3.org/2000/svg" width="651.13959" height="458.78751" viewBox="0 0 651.13959 458.78751">
         <defs>
@@ -86,6 +55,7 @@ search:
         <img class="avatar">
       </center>
     </div>
+   <div class="content">
     <div class="hole1" style="z-index:-1;">
       <svg class="svgspin1" xmlns="http://www.w3.org/2000/svg" width="109.01334mm" height="108.60135mm" viewBox="0 0 109.01334 108.60135">
         <defs>
@@ -113,7 +83,7 @@ search:
         <h2>a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>.</h2>
       </div>
       <h2><b>Hey! I’m Teddy Warner✌️,</b> <span id="typed"></span></h2>
-      <h3>I'm a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a>, currently located in <em>Charlotte, NC</em> 🇺🇸. As a graduate of the Fab Foundation's <a href="https://fabacademy.org/">Fab Academy</a>, I have a great interest in contemporary fabrication technologies, and a passion to spread the reaches of digital fabrication.
+      <h3>I'm a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a> from <em>Charlotte, NC</em> 🇺🇸. As a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>, I have a great interest in contemporary fabrication technologies, and a passion to spread the reaches of digital fabrication.
       </h3> 
       <h3> I utlize plethoras of fabrication processes to produce mixed-media projects equipped with additive and subtractive parts, custom electronics, and software integration. My personal work encompasses my hope to inspire & showcase the vast potential of digital fabrication.
       </h3>
@@ -139,269 +109,184 @@ search:
        </div>
     </div>
    </section>
-    <section class="funnyquote" style="height:100vh;" data-scroll-section>
-      <img class="quote" src="https://picsum.photos/800/400">
-    </section>    
     <section class="featured-projects" data-scroll-section>
-      <h2>Featured Projects</h2>
+    <div class="content">
+    <h2>Featured Projects</h2>
       <div class="grid">
-        <div class="project shadowbox large">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-        </div>
-        <div class="project shadowbox medium">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-        </div>
-        <div class="project shadowbox small">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-        </div>
-        <div class="project shadowbox small">
-          <img src="project4.jpg" alt="Project 4">
-          <h3>Project 4</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-        </div>
-        <div class="project shadowbox large">
-          <img src="project5.jpg" alt="Project 5">
-          <h3>Project 5</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-        </div>
+      <div class="projparent">
+        <a href="https://teddywarner.org/Projects/AdaptableAquaponics/">
+          <div class="project shadowbox p1"></div>
+        </a>
+        <a href="https://teddywarner.org/Projects/VonNiemannProbe/">
+          <div class="project p2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-846.979 63.885 447.7 559.7" style="transform: scale(1.1);">
+              <defs>
+                <clipPath id="funnypath">
+                  <path d="m-424.23 623.55h-218.67a24.985 24.985 0 0 1-24.985-24.985v-49.171a34.979 34.979 0 0 0-34.979-34.979h-119.13a24.985 24.985 0 0 1-24.985-24.985v-400.56a24.985 24.985 0 0 1 24.985-24.985h397.77a24.985 24.985 0 0 1 24.985 24.985v509.7a24.985 24.985 0 0 1-24.985 24.985z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#funnypath)">
+                <image width="504px" x="-846.979" y="63.885" xlink:href="https://teddywarner.org/images/VonNiemannProbe/cover.jpg" />
+              </g>
+            </svg>
+          </div>
+        </a>
+        <a href="https://teddywarner.org/Projects/ParametricGenerator">
+          <div class="project shadowbox p3"></div>
+        </a>
+        <a href="https://teddywarner.org/Projects/SerialUPDI">
+          <div class="project shadowbox p4"></div>
+        </a>
+        <a href="https://teddywarner.org/Projects/AssistiveAquaponics">
+          <div class="project shadowbox p5"></div>
+        </a>
       </div>
+        <div id="circle1">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 300 300" xml:space="preserve" class="textrev">
+            <defs>
+              <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+            </defs>
+            <g>
+              <use xlink:href="#circlePath" fill="none"/>
+                <text>
+                  <textPath fill="var(--md-default-fg-color)" xlink:href="#circlePath">- More Projects - More Projects - More Projects </textPath>
+                </text>
+            </g>
+            <a href="http://teddywarner.com/feed/" class="abtbtn" onmouseenter="leftrevon()" onmouseleave="leftrevoff()">
+              <circle fill="none" cx="150" cy="150" r="75"/>
+            </a>
+          </svg>
+        </div>
+      <div class="newcheck">
+        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 24 24"><title>New Project!</title><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M13,17H11V15H13V17M13,13H11V7H13V13Z" fill="#26a7de"/></svg>
+      </div>
+    </div>
+    </div>
     </section>    
     <section class="featured-articles" data-scroll-section>
+    <div class="content">
       <h2>Featured Articles</h2>
-      <div class="article-scroller">
+      <div class="article-container">
+       <div class="article-scroller">
         <div class="article-set">
           <div class="article">
-            <img src="article1.jpg" alt="Article 1">
-            <h3>Article 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://hackaday.com/2023/02/01/electronic-shoe-explores-alleged-chess-misbehavior/">
+            <img src="https://hackaday.com/wp-content/uploads/2023/01/chess-shoe-main.png?w=800" alt="Article 1">
+            <h3>Electronic Shoe Explores Alleged Chess Misbehavior </h3>
+           </a> 
           </div>
           <div class="article">
-            <img src="article2.jpg" alt="Article 2">
-            <h3>Article 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://blog.adafruit.com/2023/02/01/the-von-niemann-probe-aims-to-investigate-the-accusations-of-chess-cheating-wearablewednesday/">
+            <img src="https://img.youtube.com/vi/ygy8M-QhbSo/maxresdefault.jpg" alt="Article 2">
+            <h3>Adafruit - This Project Aims to Investigate the Accusations ...</h3>
+           </a> 
           </div>
           <div class="article">
-            <img src="article3.jpg" alt="Article 3">
-            <h3>Article 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://www.hackster.io/news/this-chess-cheating-wearable-aims-to-investigate-the-accusations-against-grandmaster-hans-neimann-90b63403b5d0">
+            <img src="https://hackster.imgix.net/uploads/attachments/1550803/image_bMAvYsmMhu.png?auto=compress%2Cformat&w=830&h=466.875&fit=min&dpr=2" alt="Article 3">
+            <h3>Hackster.io - This Chess-Cheating Wearable Aims to Investigate ...</h3>
+           </a> 
           </div>
         </div>
         <div class="article-set">
           <div class="article">
-            <img src="article4.jpg" alt="Article 4">
-            <h3>Article 4</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://hackaday.com/2023/01/25/pizza-making-cnc-machine-is-the-only-tool-weve-ever-dreamed-of/">
+            <img src="https://hackaday.com/wp-content/uploads/2023/01/Pizza-Making-1-52-screenshot.png?w=800" alt="Article 4">
+            <h3>Pizza-Making CNC Machine Is The Only Tool We’ve Ever Dreamed Of</h3>
+           </a> 
           </div>
           <div class="article">
-            <img src="article5.jpg" alt="Article 5">
-            <h3>Article 5</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://hackaday.com/2022/12/26/turning-a-microchip-mplab-snap-into-a-udpi-avr-programmer/">
+            <img src="https://hackaday.com/wp-content/uploads/2022/12/mplab-snap_etn_36_udpi_mod.jpg?w=800" alt="Article 5">
+            <h3>Turning A Microchip MPLAB Snap Into A UDPI AVR Programmer</h3>
+           </a> 
           </div>
           <div class="article">
-            <img src="article6.jpg" alt="Article 6">
-            <h3>Article 6</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://www.hackster.io/news/pizza-pizza-cnc-machine-makes-pizzas-so-you-don-t-have-to-2abc96e2c411">
+            <img src="https://hackaday.com/wp-content/uploads/2023/01/Pizza-Making-1-52-screenshot.png?w=800" alt="Article 6">
+            <h3>Pizza-Pizza CNC Machine Makes Pizzas So You Don’t Have To</h3>
+           </a> 
           </div>
         </div>
         <div class="article-set">
           <div class="article">
-            <img src="article7.jpg" alt="Article 7">
-            <h3>Article 7</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">
+            <img src="https://blogs.autodesk.com/learn-lab/wp-content/uploads/sites/156/Warner_bottle_cap_multiple.jpg" alt="Article 7">
+            <h3>Autodesk Learn Lab - Upskilling for the Future </h3>
+           </a> 
           </div>
           <div class="article">
-            <img src="article8.jpg" alt="Article 8">
-            <h3>Article 8</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://vimeo.com/563923609">
+            <img src="https://i.vimeocdn.com/video/1165780963-031763527679aed085ad9c54196879eacf928d680f33bc1048a17fe438cb12b9-d_640" alt="Article 8">
+            <h3>Fab Academy 2021 Final Project Presentation</h3>
+           </a> 
           </div>
           <div class="article">
-            <img src="article9.jpg" alt="Article 9">
-            <h3>Article 9</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+           <a href="https://www.chicagotribune.com/suburbs/wilmette/ct-wml-st-francis-underwater-robotics-tl-0107-20160104-story.html">
+            <img src="https://www.chicagotribune.com/resizer/9jpk85aAIZ9E7sHCula9d2MS584=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/EI3WDETQOFF7DKTWBWVW5YOMQY.jpg" alt="Article 9">
+            <h3>St. Francis students gain skills while creating underwater robot</h3>
+           </a> 
+          </div>
+        </div>
+        <div class="article-set">
+          <div class="article">
+           <a href="https://www.instagram.com/p/CgyCMWkr7Wc/">
+            <img src="../images/index/fusionfeature.jpg" alt="Article 4">
+            <h3>Fusion 360 Students - Student Spotlight</h3>
+           </a> 
+          </div>
+          <div class="article">
+           <a href="https://www.instagram.com/p/CYboI6zrTs8/">
+            <img src="../images/index/studentfeature.jpg" alt="Article 5">
+            <h3>Charlotte Latin School Fab Lab - Student Spotlight</h3>
+           </a> 
           </div>
         </div>
       </div>
+     </div>
       <div class="navigation-arrows">
-        <button class="next-arrow"></button>
-        <button class="prev-arrow"></button>
+        <button onclick="scrollPrev()"><i class="fas fa-chevron-left"></i></button>
+        <button onclick="scrollNext()"><i class="fas fa-chevron-right"></i></button>
       </div>
+      <div class="dots-container"></div>
+     </div>
     </section>
     <h1></h1>
-  </main>-->
-
+   </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="../assets/js/index.js"></script>
   <script>
-    var supportsCssVars = function() {
-        var e, t = document.createElement("style");
-        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e};
-    supportsCssVars() || alert("Please view this page in a modern browser that supports CSS Variables :)."); 
     window.onload = function() {
-        if(!window.location.hash) {
+        if (!window.location.hash) {
             window.location = window.location + '#/';
             window.location.reload();
         }
     }
-    window.addEventListener( "pageshow", function ( event ) {
-      var historyTraversal = event.persisted || 
-                            ( typeof window.performance != "undefined" && 
-                                  window.performance.navigation.type === 2 );
-      if ( historyTraversal ) {
-        window.location.reload();
-        (function ($) {
-          preloaderFadeOutInit();
+    window.addEventListener('pageshow', function(event) {
+        var historyTraversal = event.persisted ||
+            (typeof window.performance != 'undefined' &&
+                window.performance.navigation.type === 2);
+        if (historyTraversal) {
+            window.location.reload();
+            (function($) {
+                preloaderFadeOutInit();
+            })(jQuery);
+        }
+    });
+    function preloaderFadeOutInit() {
+        $('.preloader').delay(1800).fadeOut(525);
+        $('.main-content').hide().delay(2500).fadeIn(160);
+        $('.preloaderbg').delay(2500).fadeOut(160);
+        $('body').attr('id', '');
+    }
+    jQuery(window).on('load', function() {
+        (function($) {
+            preloaderFadeOutInit();
         })(jQuery);
-      }
     });
-    function preloaderFadeOutInit(){  
-      $('.preloader').delay(1800).fadeOut(525);
-      $('.main-content').hide().delay(2500).fadeIn(160);
-      $('.preloaderbg').delay(2500).fadeOut(160);
-      $('body').attr('id','');
-    }
-    jQuery(window).on('load', function () {
-      (function ($) {
-      preloaderFadeOutInit();
-      })(jQuery);
-    });
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      smoothMobile: true,
-      inertia: 0.75,
-      touchMultiplier: 2.5,
-    });
-    window.addEventListener('load', () => {
-      scroll.update();
-    });
-    var typed = new Typed('#typed', {
-      stringsElement: '#typed-strings',
-      startDelay: 1000,
-      loop: true
-    });
-    var typed = new Typed('#typed2', {
-      stringsElement: '#typed-strings2',
-      startDelay: 1000,
-    });
-    const element = document.body;
-    let lastScroll = 0;
-    scroll.on('scroll', (instance) => {
-      document.documentElement.setAttribute('data-direction', instance.direction);
-      document.documentElement.setAttribute('data-speed', instance.speed);
-      document.documentElement.setAttribute('data-scrollY', instance.scroll.y);
-      const currentScroll = instance.scroll.y;
-      if (currentScroll <= 0) {
-        element.classList.remove("scrollUp");
-        return;
-      }
-      if (currentScroll > lastScroll && !element.classList.contains("scrollDown")) {
-        element.classList.remove("scrollUp");
-        element.classList.add("scrollDown");
-      } else if (
-        currentScroll < lastScroll &&
-        element.classList.contains("scrollDown")
-      ) {
-        element.classList.remove("scrollDown");
-        element.classList.add("scrollUp");
-      }
-      lastScroll = currentScroll;
-    });
-    function togglemenu() {
-      var element = document.body;
-        element.classList.toggle("toggle");
-        element.classList.add("scrollUp");
-    } 
-    function leftrevon() {
-      var element = document.body;
-        element.classList.add("revleft");
-    } 
-    function leftrevoff() {
-      var element = document.body;
-        element.classList.remove("revleft");
-    } 
-    const articleScroller = document.querySelector('.article-scroller');
-    const articleSets = document.querySelectorAll('.article-set');
-    const prevArrow = document.querySelector('.prev-arrow');
-    const nextArrow = document.querySelector('.next-arrow');
-    let currentSet = 0;
-    const scrollAmount = articleSets[0].clientWidth + parseInt(window.getComputedStyle(articleSets[0]).marginRight);
-    function scrollNext() {
-      currentSet = (currentSet + 1) % articleSets.length;
-      articleScroller.scrollTo({
-        left: scrollAmount * currentSet,
-        behavior: 'smooth',
-      });
-    }
-    function scrollPrev() {
-      console.log("Hello world!"); 
-      currentSet = (currentSet - 1 + articleSets.length) % articleSets.length;
-      articleScroller.scrollTo({
-        left: scrollAmount * currentSet,
-        behavior: 'smooth',
-      });
-    }
-    prevArrow.addEventListener('click', scrollPrev);
-    nextArrow.addEventListener('click', scrollNext);
-    function scrollFirst() {
-      currentSet = 0;
-      articleScroller.scrollTo({
-        left: scrollAmount * currentSet,
-        behavior: 'smooth',
-      });
-    }
-    function scrollLast() {
-      currentSet = articleSets.length - 1;
-      articleScroller.scrollTo({
-        left: scrollAmount * currentSet,
-        behavior: 'smooth',
-      });
-    }
-    prevArrow.addEventListener('click', () => {
-      if (currentSet === 0) {
-        scrollLast();
-      } else {
-        scrollPrev();
-      }
-    });
-    nextArrow.addEventListener('click', () => {
-      if (currentSet === articleSets.length - 1) {
-        scrollFirst();
-      } else {
-        scrollNext();
-      }
-    });
-  </script>
-  <script>
-    const daysEl = document.getElementById("days");
-    const hoursEl = document.getElementById("hours");
-    const minsEl = document.getElementById("mins");
-    const secondsEl = document.getElementById("seconds");
-    const newYears = "15 Aug 2023";
-    function countdown() {
-        const newYearsDate = new Date(newYears);
-        const currentDate = new Date();
-        const totalSeconds = (newYearsDate - currentDate) / 1000;
-        const days = Math.floor(totalSeconds / 3600 / 24);
-        const hours = Math.floor(totalSeconds / 3600) % 24;
-        const mins = Math.floor(totalSeconds / 60) % 60;
-        const seconds = Math.floor(totalSeconds) % 60;
-        daysEl.innerHTML = days;
-        hoursEl.innerHTML = formatTime(hours);
-        minsEl.innerHTML = formatTime(mins);
-        secondsEl.innerHTML = formatTime(seconds);
-    }
-    function formatTime(time) {
-        return time < 10 ? `0${time}` : time;
-    }
-    // initial call
-    countdown();
-    setInterval(countdown, 1000);
   </script>
 </body>
 </html>
