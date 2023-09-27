@@ -14,8 +14,8 @@ search:
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 </head>
 
-<!--<img class="preloader" src="../images/index/loader.gif">
-<div class="preloaderbg"></div>-->
+<img class="preloader" src="../images/index/loader.gif">
+<div class="preloaderbg"></div>
 
 <nav class="main-navigation">
     <ul>
