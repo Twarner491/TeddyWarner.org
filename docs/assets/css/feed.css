@@ -199,6 +199,11 @@
       margin-right: 0.5em;
       color: inherit;
     }
+
+    @font-face {
+      font-family: Romalika;
+      src: url(../fonts/ROMALIKA.OTF);
+    }
     
     .title {
       margin-top: -1.3em;
