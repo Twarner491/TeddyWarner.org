@@ -1199,13 +1199,13 @@ search:
     <h2>Featured Projects</h2>
       <div class="grid">
       <div class="projparent">
-        <a href="https://teddywarner.com/Projects/AdaptableAquaponics/">
+        <a href="http://teddywarner.com/Projects/AdaptableAquaponics/">
           <div class="project shadowbox p1">
             <!--<h3>Adaptable Aquaponics</h3>
             <p>A Theoretical Confrontation to Contemporary Farming Challenges. Adaptive Aquaponics is the scaled successor to my Assistive Aquaponics Fish Tank & my entry into Autodesk Instructable's Make It Modular student design scholarship.</p>-->
           </div>
         </a>
-        <a href="https://teddywarner.com/Projects/VonNiemannProbe/">
+        <a href="http://teddywarner.com/Projects/VonNiemannProbe/">
           <div class="project p2">
           <!--<h3 class="p2title">Von Niemann Probe</h3>
           <p class="p2paragraph">An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused! This project is our contribution to the ongoing investigation into the Hans Niemann/Magnus Carlsen cheating scandal and tests the feasibility of creating and using an over-the-board chess cheating aid.</p>-->
@@ -1221,19 +1221,19 @@ search:
             </svg>
           </div>
         </a>
-        <a href="https://teddywarner.com/Projects/ParametricGenerator">
+        <a href="http://teddywarner.com/Projects/ParametricGenerator">
           <div class="project shadowbox p3">
             <!--<h3>Parametric Bottle Cap Generator</h3>
             <p>Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads! Uses metric thread standards via equasions in fusions parameters, allowing for the generation of a threaded cap with only 3 required measurements.</p>-->
            </div>
         </a>
-        <a href="https://teddywarner.com/Projects/SerialUPDI">
+        <a href="http://teddywarner.com/Projects/SerialUPDI">
           <div class="project shadowbox p4">
             <!--<h3>UPDI Serial Programming</h3>
             <p>Programming via the megaTinyCore library, enabling your IDE for serial UPDI programming.</p>-->
            </div>
         </a>
-        <a href="https://teddywarner.com/Projects/AssistiveAquaponics">
+        <a href="http://teddywarner.com/Projects/AssistiveAquaponics">
           <div class="project shadowbox p5">
             <!--<h3>Assistive Aquaponics Tank</h3>
             <p>A monitored aquaponics ecosystem, expanding the accessibility of successful & thriving aquaponics ecosystems.</p>-->
