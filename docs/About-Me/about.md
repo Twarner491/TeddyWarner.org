@@ -38,7 +38,7 @@ title: About Me
   </div>
   <div class="stuff__container">
     <div class="stuff__content">
-     <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
+     <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1PYGzcMTuvcSjJsXomp-win3_tvn-WFpQ/edit?usp=sharing&ouid=117910198967406819470&rtpof=true&sd=true">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
       <div class="underline"></div>
       <p><strong>Hey! I'm Teddy Warner✌️</strong>, a maker, and a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a>. My passion lies in rapid prototyping & digital fabrication - be sure to explore my <a href="https://teddywarner.org/feed/">projects</a> page to see some of my work!</p>
       <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
