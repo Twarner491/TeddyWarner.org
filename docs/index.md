@@ -1168,11 +1168,11 @@ search:
         <h2>a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>.</h2>
       </div>
       <h2><b>Hey! I’m Teddy Warner✌️,</b> <span id="typed"></span></h2>
-      <h3>I'm a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a> from <em>Charlotte, NC</em> 🇺🇸. As a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>, I have a great interest in contemporary fabrication technologies, and a passion to spread the reaches of digital fabrication.
+      <h3>I'm a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a> from <em>Charlotte, NC</em> 🇺🇸. As a graduate of the <a href="https://fabacademy.org/">Fab Academy</a>, I have a great interest in contemporary fabrication technologies and a passion for spreading the reach of digital fabrication.
       </h3> 
-      <h3> I utlize plethoras of fabrication processes to produce mixed-media projects equipped with additive and subtractive parts, custom electronics, and software integration. My personal work encompasses my hope to inspire & showcase the vast potential of digital fabrication.
+      <h3> I utilize a plethora of fabrication processes to produce mixed-media projects equipped with additive and subtractive parts, custom electronics, and software integration. My personal work encompasses my hope to inspire & showcase the vast potential of digital fabrication.
       </h3>
-      <h3 style="width:31em;">When I'm not studying, I love to lose myself in the internet or pick up a new book, hit a mountain bike trail with my friends, and foremost, continue work on a project. Regardless of the activity, you'll always find me listing to some music.
+      <h3 style="width:31em;">When I'm not studying, I love to lose myself on the internet or pick up a new book, hit a mountain bike trail with my friends, and foremost, continue work on a project. Regardless of the activity, you'll always find me listening to some music.
       </h3>
       <div id="abtmebttncontainer">
         <div id="circle">
@@ -1224,7 +1224,7 @@ search:
         <a href="http://teddywarner.com/Projects/ParametricGenerator">
           <div class="project shadowbox p3">
             <!--<h3>Parametric Bottle Cap Generator</h3>
-            <p>Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads! Uses metric thread standards via equasions in fusions parameters, allowing for the generation of a threaded cap with only 3 required measurements.</p>-->
+            <p>Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads! Uses metric thread standards via equations in fusions parameters, allowing for the generation of a threaded cap with only 3 required measurements.</p>-->
            </div>
         </a>
         <a href="http://teddywarner.com/Projects/SerialUPDI">
@@ -1323,7 +1323,7 @@ search:
           <div class="article">
            <a href="https://www.chicagotribune.com/suburbs/wilmette/ct-wml-st-francis-underwater-robotics-tl-0107-20160104-story.html">
             <img src="https://www.chicagotribune.com/resizer/9jpk85aAIZ9E7sHCula9d2MS584=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/EI3WDETQOFF7DKTWBWVW5YOMQY.jpg" alt="Article 9">
-            <h3>St. Francis students gain skills while creating underwater robot</h3>
+            <h3>St. Francis students gain skills while creating underwater robots</h3>
            </a> 
           </div>
         </div>
