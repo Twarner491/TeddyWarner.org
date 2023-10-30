@@ -38,7 +38,7 @@ title: About Me
   </div>
   <div class="stuff__container">
     <div class="stuff__content">
-     <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1jV6DjJ6Y5BZHakTcLHbSO4ZxNAdQNouvXiMn1IuTLG0/edit?usp=sharing">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
+     <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1PYGzcMTuvcSjJsXomp-win3_tvn-WFpQ/edit?usp=sharing&ouid=117910198967406819470&rtpof=true&sd=true">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
       <div class="underline"></div>
       <p><strong>Hey! I'm Teddy Warner✌️</strong>, a maker, and a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a>. My passion lies in rapid prototyping & digital fabrication - be sure to explore my <a href="https://teddywarner.org/feed/">projects</a> page to see some of my work!</p>
       <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
@@ -136,7 +136,7 @@ title: About Me
       </p>
      <h2><i class="fas fa-map-marker-alt"></i> Where I'm Located -</h2>
       <center>
-        <iframe width="100%" height="350" style="margin-bottom: 12px; border:0 " loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgRo4_MQfVIgRZNFDv-ZQRog&key=AIzaSyAvEiiuu4x7x8z9fQz31hkuRNY1yCJzRq0"></iframe> 
+        <iframe width="100%" height="350" style="margin-bottom: 12px; border:0 " loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0440627345!2d-118.74136525966654!3d34.020608476662154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1698637611473!5m2!1sen!2sus"></iframe> 
       </center>
      <h2><i class="fas fa-city"></i> Community Involvement -</h2>
       <p>
@@ -155,7 +155,7 @@ title: About Me
         <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>, Designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020 – Aug 2020 / 72 Volunteer Hours)
       </p>
       <p>
-        <strong><a href="https://photos.app.goo.gl/kWnrCmx1bZPvqDK29">D is for Desk</a></strong>, A friend of mine's Eagle Scout Project, we built Toe Hawks for the D is for Desk charity. (Nov 2020 / 17 Volunteer Hours) 
+        <strong><a href="https://photos.app.goo.gl/kWnrCmx1bZPvqDK29">D is for Desk</a></strong>, A friend of mine's Eagle Scout Project, we built hardwood desks for the D is for Desk charity. (Nov 2020 / 17 Volunteer Hours) 
       </p>
       <center>
        <p>--- Total Service - <strong>218.0 Hours</strong> ---</p>
