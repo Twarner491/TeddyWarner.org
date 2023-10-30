@@ -468,11 +468,6 @@ search:
   .project:hover {
     transform: translateY(-5px);
   }
-  .projtextparent{
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-  }
   .project:hover .p1 {
     transition: all 0.3s linear;
     background: rgba(255, 255, 255, 0.2); 
