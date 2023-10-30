@@ -17,7 +17,7 @@ title: About Me
      <center>
      <p><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"></p>
       <h1>Teddy Warner</h1>
-      <h2>Charlotte,NC</h2>
+      <h2>Los Angeles, CA</h2>
       <h3>Student/Maker<h3>
       <div class="socials">
        <a href="https://www.linkedin.com/in/teddy-warner-880974200/" class="ln" style=" color: inherit;" title="Linked In - Teddy Warner"><i class="fab fa-linkedin"></i></a>
@@ -40,42 +40,43 @@ title: About Me
     <div class="stuff__content">
      <span class="resume" style=" color: inherit;"><a href="https://docs.google.com/document/d/1PYGzcMTuvcSjJsXomp-win3_tvn-WFpQ/edit?usp=sharing&ouid=117910198967406819470&rtpof=true&sd=true">Export Resume <i class="far fa-file-alt"></i></a></span><h1>About Me</h1>
       <div class="underline"></div>
-      <p><strong>Hey! I'm Teddy Warner✌️</strong>, a maker, and a student at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a>. My passion lies in rapid prototyping & digital fabrication - be sure to explore my <a href="https://teddywarner.org/feed/">projects</a> page to see some of my work!</p>
-      <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
-      <p><a href="https://iovine-young.usc.edu/"><img src="https://teddywarner.org/images/About/USC.png" alt="USC Logo" class="logo" style="margin-top: 6px;width:40px;"></a><strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong><span class="date" style=" color: inherit;">2023-2027</span><br>B.S. Art, Technology, and the Business of Innovation, Class of 2027</p>
+      <p><strong>Hey! I'm Teddy Warner✌️</strong>, an enthusiastic and detail-oriented student and maker at the University of Southern California's <a href="https://iovine-young.usc.edu/">Iovine and Young Academy</a>. I bring a strong foundation in conceptualizing and executing innovative designs through rapid prototyping and digital fabrication. I’m enthralled by any opportunity to use these skills to aid and influence others' lives. Visit my <a href="http://teddywarner.com/feed/">projects</a> page to explore some of my work!</p>
+     <h2><i class="fas fa-briefcase"></i> Professional Experience -</h2>
+      <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:80px;margin-top: 8px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">Jun 2019-Aug 2023</span><br>Instructor and Curriculum Developer</p>
+      <ul>
+        <li>Instructed fabrication courses for elementary, middle & high school students
+        <li>Facilitated STEAM summer classes for children ages 4 to 16
+        </li>
+      </ul>
+      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">Oct 2020-Jul 2023</span><br>Research and Development</p>
+      <ul>
+        <li>Orchestrated general lab maintenance and advised middle and high school students
+        <li>Built and installed custom PCs utilized in Innovation and Design classes
+        <li>Networked and maintained the lab's <a href="https://teddywarner.org/images/Octoprint/laboctoprint.jpg">3D Printer farm</a>
+        <li>Deployed and diagnosed issues with 21st-century fabrication tools
+        <li>Wrote machine workflows for the lab’s <a href="https://teddywarner.org/Machine-Profiles/FusionPro48/">Epilog Fusion Pro laser engraver</a>, 3D printers, and CNC machines
+        </li>
+      </ul>
+     <p><a href="https://escapetactic.com/"><img src="https://teddywarner.org/images/About/escapetactic.png" alt="ET Logo" class="logo" style="width:36px;margin-top: 5px;"></a><strong>ESCAPE TACTIC</strong><span class="date" style=" color: inherit;">Jan 2022-Jun 2023</span><br>Freelance R&D</p>
+      <ul>
+        <li>Engineered, fabricated, and installed escape room puzzles
+        <li>Developed and produced custom mechatronic products for use within escape room puzzles
+        </li>
+      </ul>
+     <p><a href="https://rhythmlink.com/"><img src="https://teddywarner.org/images/About/rythemlink.png" alt="RLI Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>RHYTHMLINK INTERNATIONAL</strong><span class="date" style=" color: inherit;">Oct 2022-May 2023</span><br>Research and Development Engineering Intern</p>
+      <ul>
+        <li>Architected and programmed custom electronic systems to catalyze the testing of 44 million EMG, IONM, and cEEG probes annually
+        <li>Expedited mechanical prototyping of an electrode testing rig with digital fabrication
+        </li>
+      </ul>
+     <h2><i class="fas fa-graduation-cap"></i> Education -</h2>
+      <p><a href="https://iovine-young.usc.edu/"><img src="https://teddywarner.org/images/About/USC.png" alt="USC Logo" class="logo" style="margin-top: 6px;width:40px;"></a><strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong><span class="date" style=" color: inherit;">2023-2027</span><br>B.S. Arts, Technology, and the Business of Innovation, Class of 2027</p>
       <p><a href="https://fabacademy.org/"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>Fab Academy</strong><span class="date" style=" color: inherit;">2020-2021</span><br>Principles and Applications of Digital Fabrication Diploma</p>
       <p><a href="https://www.charlottelatin.org"><img src="https://teddywarner.org/images/About/latin.png" alt="CLS Logo" class="logo" style="margin-top: 7px;width:70px;"></a><strong>CHARLOTTE LATIN SCHOOL</strong><span class="date" style=" color: inherit;">2018-2023</span><br>High School Diploma, Class of 2023</p>
-      <p><a href="https://www.outwardbound.org/about-us/schools/north-carolina-outward-bound-school/"><img src="https://teddywarner.org/images/About/ob.png" alt="Outward Bound Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>OUTWARD BOUND SCHOOL</strong><span class="date" style=" color: inherit;">Fall 2019</span><br>4 Day Course in the North Carolina Mountains</p>
-      <p><a href="https://www.ecybermission.com/"><img src="https://teddywarner.org/images/About/AEOP.png" alt="AEOP Logo" class="logo" style="width:65px;margin-top: 6px;"></a><strong>ARMY EDUCATION OUTREACH PROGRAM</strong><span class="date" style=" color: inherit;">2018-2019</span><br>2nd Place, eCYBERMISSION STEM competition for 6th through 9th grade students</p>
-     <h2><i class="fas fa-briefcase"></i> Experience -</h2>
-     <p><a href="https://escapetactic.com/"><img src="https://teddywarner.org/images/About/escapetactic.png" alt="ET Logo" class="logo" style="width:36px;margin-top: 5px;"></a><strong>ESCAPE TACTIC</strong><span class="date" style=" color: inherit;">Spring 2023</span><br>Freelance R&D</p>
-      <ul>
-        <li>Puzzle Research, Devolopment, and Fabrication
-        <li>Electronic system development
-        </li>
-      </ul>
-     <p><a href="https://rhythmlink.com/"><img src="https://teddywarner.org/images/About/rythemlink.png" alt="RLI Logo" class="logo" style="width:55px;margin-top: 6px;"></a><strong>RHYTHMLINK INTERNATIONAL</strong><span class="date" style=" color: inherit;">2022-2023</span><br>R&D Engineering Intern</p>
-      <ul>
-        <li>Rapid mechanical prototyping with digital fabrication
-        <li>Electronic system development
-        </li>
-      </ul>
-      <p><a href="https://www.youngengineersoftoday.com/"><img src="https://teddywarner.org/images/About/yeot.png" alt="YEOT Logo" class="logo" style="width:80px;margin-top: 8px;"></a><strong>YOUNG ENGINEERS OF TODAY</strong><span class="date" style=" color: inherit;">2020-2023</span><br>Teaching Assistant</p>
-      <ul>
-        <li>Co-Instructing a fabrication course for middle & high school students
-        <li>Facilitating STEAM summer classes for children ages 4 to 16
-        </li>
-      </ul>
-      <p><a href="https://www.charlottelatin.org/academics/steam"><img src="https://teddywarner.org/images/About/fablogo.png" alt="Fab Logo" class="logo" style="width:38px;margin-top: 6px;"></a><strong>CHARLOTTE LATIN FAB LAB</strong><span class="date" style=" color: inherit;">2020-2023</span><br>Freelance R&D</p>
-      <ul>
-      <li>General Lab Maintenance and Development
-      <li><a href="https://teddywarner.org/images/Octoprint/laboctoprint.jpg">Print farm</a> setup and maintenance
-      <li>PC Building, Setup, and installation
-      <li>Machine workflow writing
-      <li><a href="https://teddywarner.org/Machine-Profiles/FusionPro48/">Epilog Laser</a> Setup and Maintenance
-      </li>
-      </ul>
      <h2><i class="fas fa-award"></i> Honors & Awards -</h2>
+     <p>
+        <strong><a href="https://issuu.com/charlottelatinschool/docs/service_society_2023">Charlotte Latin School Service Society</a></strong>,  219.5 hours. (May 2023)
+      </p>
      <p>
         <strong><a href="https://www.instructables.com/contest/anythinggoes/">Instructables Anything Goes Contest</a></strong>, prize winner. (Feb 2023)
       </p>
@@ -140,26 +141,41 @@ title: About Me
       </center>
      <h2><i class="fas fa-city"></i> Community Involvement -</h2>
       <p>
-        <strong>Charlotte Latin School Engineering Club Leader</strong>, Planning and facilitating club meetings (Aug 2020 - Present)
+        <strong><a href="https://www.hacksc.com/">HackSC Product Engineer</a></strong>, organizing one of the largest student-run hackathons in Southern California, seeking to inspire and empower the next generation of tech leaders. (Sep 2023-Present)
       </p>
       <p>
-        <strong><a href="https://fabacademy.org/2021/labs/charlotte/">Charlotte Latin Fab Lab</a></strong> Community member, student & volunteer. (Aug 2018 - Present / 70.5 Volunteer Hours)
+        <strong>USC Concerts Committee</strong>, bringing concerts and special events to USC students. (Sep 2023 - Present)
       </p>
       <p>
-        <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">Toe Hawks</a></strong>, Custom shoe insole aiming towards helping out youth affected by idiopathic toe walking. (Oct 2018 - Feb 2019)
+        <strong><a href="https://fabacademy.org/2021/labs/charlotte/">Charlotte Latin Fab Lab</a></strong> community member, student & volunteer. (Aug 2018-July 2023 / 70.5 Volunteer Hours)
+      </p>
+      <p>
+        <strong>Charlotte Latin SET Club Founder</strong>, increasing interest and curiosity in science, engineering & technology through hands-on learning and effective community engagement. (Aug 2022-May2023)
+      </p>
+      <p>
+        <strong>Charlotte Latin Outdoors Club Member</strong>, participated in monthly student-led hikes. (Aug 2021-May2023)
+      </p>
+      <p>
+        <strong>Health 4 PINE</strong>, health for people in need everywhere. (Jan 2022-May2023)
+      </p>
+      <p>
+        <strong>Charlotte Latin School Engineering Club Leader</strong>, planning and facilitating club meetings (Sep 2019-Aug 2022)
+      </p>
+      <p>
+        <strong><a href="https://photos.app.goo.gl/kWnrCmx1bZPvqDK29">D is for Desk</a></strong>, a friend of mine's Eagle Scout Project, we built hardwood desks for the D is for Desk charity. (Nov 2020 / 17 Volunteer Hours) 
+      </p>
+      <p>
+        <strong>Outward Bound School</strong>, a weeklong leadership retreat in the Appalachian Valley. (Oct 2020) 
       </p>
       <p>
         <strong>YEOT Summer Camp Counselor</strong>, Volunteer summer camp counselor for Young Engineers of Today's Racing Drones & Starwars Camps. (July 2020 / 57 Volunteer Hours) 
       </p>
       <p>
-        <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>, Designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020 – Aug 2020 / 72 Volunteer Hours)
+        <strong><a href="https://www.instagram.com/p/COdXD7fJ5Zl/?">Covid-19 Shields</a></strong>, designing, manufacturing, and delivering of shields and barriers to prevent the spread of Covid-19 through the school year in our FabLab. (Jul 2020–Aug 2020 / 72 Volunteer Hours)
       </p>
       <p>
-        <strong><a href="https://photos.app.goo.gl/kWnrCmx1bZPvqDK29">D is for Desk</a></strong>, A friend of mine's Eagle Scout Project, we built hardwood desks for the D is for Desk charity. (Nov 2020 / 17 Volunteer Hours) 
+        <strong><a href="https://sites.google.com/charlottelatin.net/toe-hawking/home">Toe Hawks</a></strong>, custom shoe insole aiming towards helping out youth affected by idiopathic toe walking. (Oct 2018-Feb 2019)
       </p>
-      <center>
-       <p>--- Total Service - <strong>218.0 Hours</strong> ---</p>
-      </center>
      <h2><i class="fas fa-headphones-alt"></i> What I'm Listening To -</h2>
       <center>
       <p class="music">
