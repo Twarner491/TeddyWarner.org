@@ -13,6 +13,7 @@ search:
   <title>Teddy Warner</title>
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/feed.css">
+    <!-- Stylesheet not working with current static site implementation, so enjoy the inline styles lol -->
   <style>
     .scrollDown .md-header {
     transform: translate3d(0, -100%, 0);
