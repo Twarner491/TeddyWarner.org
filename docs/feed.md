@@ -63,7 +63,7 @@ search:
     z-index: 3;
     }
     main {
-    margin-top: -6.25em;
+    margin-top: -7em;
     z-index: 2;
     overflow-y: hidden;
     }
