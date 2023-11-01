@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+  - feedback
 template: feed.html
 search:
   exclude: true
@@ -60,12 +61,13 @@ search:
     }
     }
     .md-banner {
+    position: relative;
     z-index: 3;
     }
     main {
     margin-top: -7em;
+    position: relative;
     z-index: 2;
-    overflow-y: hidden;
     }
     section {
     height: auto;
@@ -75,7 +77,7 @@ search:
     width: 0px;
     }
     .md-footer {
-    display: hidden;
+    display: none;
     } 
     .md-main__inner {
     margin: 0;
