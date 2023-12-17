@@ -323,7 +323,7 @@ search:
 
 <!--- Post Template
 
-  <div class="post">
+  <div class="post" id="Title">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/')"></div>
     </div>
@@ -340,13 +340,11 @@ search:
         <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
        </span>
       </div>
-      <p class="read-more">
-        <a href="http://teddywarner.com/Projects/">Read More</a>
-      </p>
+        <p class="read-more">Read More</p>
     </div>
   </div>
 
-  <div class="post alt">
+  <div class="post alt" id="Title">
     <div class="meta">
       <div class="photo" style="background-image: url('../images/')"></div>
     </div>
@@ -363,9 +361,7 @@ search:
         <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
        </span>
       </div>
-      <p class="read-more">
-        <a href="http://teddywarner.com/Projects/">Read More</a>
-      </p>
+        <p class="read-more">Read More</p>
     </div>
   </div>
 
@@ -382,7 +378,7 @@ search:
     <center>
     <div class="title">Project Feed</div>
     </center>
-    <div class="post">
+    <div class="post" id="vnp">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/VonNiemannProbe/cover.jpg')"></div>
         </div>
@@ -399,12 +395,30 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/VonNiemannProbe/%0ACheck%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/VonNiemannProbe/">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post alt">
+    <div class="post alt" id="cnc">
+        <div class="meta">
+        <div class="photo" style="background-image: url('../images/MillingWorkflow/cover.jpg')"></div>
+        </div>
+        <div class="description">
+        <h1>CNC Milling Workflows</h1>
+        <h2>- 2022-2023 -</h2> <span class="time"><i class="far fa-clock"></i> 12-15 min</span>
+        <p>A guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with Autodesk Fusion 360 & Vetric Aspire, and milling workflows for Shopbot & Bantam Tools machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals.</p>
+        <div class="con">
+        <span class="share" style=" color: inherit;">
+            <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-facebook-square"></i></a>
+            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/MillingWorflow/&media=&description=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+            <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-linkedin"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/MillingWorflow/%0ACheck%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+        </span>
+        </div>
+        <p class="read-more">Read More</p>
+        </div>
+    </div>
+    <div class="post" id="aa">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/AdaptableAquaponics/cover.jpg')"></div>
         </div>
@@ -421,34 +435,10 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/AdaptableAquaponics/%0ACheck%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/AdaptableAquaponics/">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post">
-        <div class="meta">
-        <div class="photo" style="background-image: url('../images/MillingWorkflow/cover.jpg')"></div>
-        </div>
-        <div class="description">
-        <h1>CNC Milling Workflows</h1>
-        <h2>- Spring-Fall, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> X-X min</span>
-        <p>A guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with Autodesk Fusion 360 & Vetric Aspire, and milling workflows for Shopbot & Bantam Tools machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals.</p>
-        <div class="con">
-        <span class="share" style=" color: inherit;">
-            <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/MillingWorflow/&media=&description=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
-            <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/MillingWorflow/%0ACheck%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
-        </span>
-        </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/MillingWorflow/">Read More</a>
-        </p>
-        </div>
-    </div>
-    <!--<div class="post">
+    <!--<div class="post" id="bit">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/8-bitComputer/clockmodule.jpg')"></div>
         </div>
@@ -465,17 +455,15 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on%20https://teddywarner.org/Projects/8-bit/%20!"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/8-bit">Read More</a>
-        </p> 
+        <p class="read-more">Read More</p>
         </div>
     </div>--->
-    <div class="post alt">
+    <div class="post alt" id="updi">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/SerialUPDI/ftdi2updisolderedtop.jpg')"></div>
         </div>
         <div class="description">
-        <h1>UPDI Serial Programming</h1>
+        <h1>UPDI Programming</h1>
         <h2>- Summer-Winter, 2021 -</h2> <span class="time"><i class="far fa-clock"></i> 24-31 min</span>
         <p>Programming via the megaTinyCore library, enabling your IDE for serial UPDI programming via a portable python implementation and temporary hardware, or one of two designated serial programmer options. Each UPDI serial programmer enables switching between serial programming and monitoring without any rewiring.</p>
         <div class="con">
@@ -487,12 +475,10 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/SerialUPDI">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post">
+    <div class="post" id="bc">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/ParametricGenerator/beautyshot1.jpg')"></div>
         </div>
@@ -509,18 +495,16 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on%20https://teddywarner.org/Projects/ParametricGenerator/"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/ParametricGenerator">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post alt">
+    <div class="post alt" id="le">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/LithophaneExperiments/friendslithophane.jpg')"></div>
         </div>
         <div class="description">
         <h1>Lithophane Experiments</h1>
-        <h2>- 2019-Present -</h2> <span class="time"><i class="far fa-clock"></i> 1-2 min</span>
+        <h2>- 2019-2022 -</h2> <span class="time"><i class="far fa-clock"></i> 1-2 min</span>
         <p>A Lithophane is a piece of art made out of a thin translucent material designed to show an image in a “grisaille” color format when held up to light, an art medium I use to test slicer changes with.</p>
         <div class="con">
         <span class="share" style=" color: inherit;">
@@ -531,12 +515,10 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20this%20compilation%20of%20Litophanes%20on%20https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fas fa-paper-plane"></i></i></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/LithophaneExperiments">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post">
+    <div class="post" id="os">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/Octoprint/personaloctoprint.jpg')"></div>
         </div>
@@ -553,17 +535,15 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/Octoprint">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post alt">
+    <div class="post alt" id="assistivea">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/AssistiveAquaponics/tankhighlight.jpg')"></div>
         </div>
         <div class="description">
-        <h1>Assistive Aquaponics Tank</h1>
+        <h1>Assistive Aquaponics</h1>
         <h2>- Winter & Spring, 2021 -</h2> <span class="time"><i class="far fa-clock"></i> 1-2 min</span>
         <p>A monitored aquaponics ecosystem, expanding the accessibility of successful & thriving aquaponics ecosystems. - my Fab Academy final project.</p>
         <div class="con">
@@ -575,12 +555,10 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on%20https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/AssistiveAquaponics">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post">
+    <div class="post" id="ender">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/KlipperEnder3/directdrive.jpg')"></div>
         </div>
@@ -597,19 +575,17 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/KlipperEnder3">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post alt">
+    <div class="post alt" id="site">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/PortfolioSite/highlightcode.jpg')"></div>
         </div>
         <div class="description">
         <h1>Project Portfolio Site</h1>
         <h2>- Summer, 2021 -</h2> <span class="time"><i class="far fa-clock"></i> 6-7 min</span>
-        <p>The behind the scenes of the site you are on right now :) - Static site generation with Mkdocs, and hosting via GitHub Pages.</p>
+        <p>The behind the scenes of the site you are on right now - Static site generation with Mkdocs, and hosting via GitHub Pages.</p>
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fab fa-facebook-square"></i></a>
@@ -619,12 +595,10 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on%20https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/ProjectPortfolioSite">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
-    <div class="post">
+    <div class="post" id="desk">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/CornerDesk/finishedwoodassembly.jpg')"></div>
         </div>
@@ -641,9 +615,7 @@ search:
             <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on%20https://teddywarner.org/Projects/CornerDesk/"><i class="fas fa-paper-plane"></i></a>
         </span>
         </div>
-        <p class="read-more">
-            <a href="http://teddywarner.com/Projects/CornerDesk">Read More</a>
-        </p>
+        <p class="read-more">Read More</p>
         </div>
     </div>
    </section>
@@ -655,5 +627,40 @@ search:
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="../assets/js/feed.js"></script>
+  <script>
+    document.getElementById('vnp').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/VonNiemannProbe/'; 
+    });
+    document.getElementById('cnc').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/MillingWorflow/'; 
+    });
+    document.getElementById('aa').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/AdaptableAquaponics/'; 
+    });
+    document.getElementById('updi').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/SerialUPDI'; 
+    });
+    document.getElementById('bc').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/ParametricGenerator'; 
+    });
+    document.getElementById('le').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/LithophaneExperiments'; 
+    });
+    document.getElementById('os').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/Octoprint'; 
+    });
+    document.getElementById('assistivea').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/AssistiveAquaponics'; 
+    });
+    document.getElementById('ender').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/KlipperEnder3'; 
+    });
+    document.getElementById('site').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/ProjectPortfolioSite'; 
+    });
+    document.getElementById('desk').addEventListener('click', function() {
+        window.location.href = 'http://teddywarner.com/Projects/CornerDesk'; 
+    });
+    </script>
 </body>
 </html>

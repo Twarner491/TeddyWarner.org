@@ -23,6 +23,7 @@
       border-radius: 5px;
       overflow: hidden;
       z-index: 0;
+      cursor: pointer;
     }
     
     .post:hover .photo {
@@ -87,6 +88,22 @@
       height: 1.45em;
       width: 6.5em;
     }
+
+    .post .description .read-more:after {
+      font-weight: 800;
+      font-size: 0.6em;
+      font-family: 'Font Awesome 5 Free';
+      content:  "\f061";
+      margin-left: -10px;
+      opacity: 0;
+      vertical-align: middle;
+      transition: margin 0.3s, opacity 0.3s;
+    }
+
+    .post .description .read-more:hover:after {
+      margin-left: 5px;
+      opacity: 1;
+    }
     
     .post .description .con {
       position: relative;
@@ -102,26 +119,6 @@
     
     .post .description .con .share a {
       color: inherit;
-    }
-    
-    .post .description .read-more a {
-      color: #5466ce;
-      display: inline-block;
-      position: relative;
-    }
-    
-    .post .description .read-more a:after {
-      font-weight: 1000;
-      content:  "-->";
-      margin-left: -10px;
-      opacity: 0;
-      vertical-align: middle;
-      transition: margin 0.3s, opacity 0.3s;
-    }
-    
-    .post .description .read-more a:hover:after {
-      margin-left: 5px;
-      opacity: 1;
     }
     
     .twitter {
@@ -166,6 +163,13 @@
     .con .share a.email:hover {
       color: #5466ce;
     }
+
+    a.fill-div {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+  }
     
     .post p {
       position: relative;
@@ -181,7 +185,7 @@
       content: "";
       position: absolute;
       height: 4.5px;
-      background-color: #5466ce;
+      background-color: var(--md-default-fg-color);
       width: 55px;
       top: -0.75rem;
       border-radius: 5px;
