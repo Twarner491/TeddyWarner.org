@@ -204,6 +204,55 @@
       background-color: #e2e2e2 !important;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) !important; 
     }
+
+    #matlib {
+      position: relative;
+      top: 0.1em;
+      left: 80%;
+      padding-right: 2em;
+      color: var(--md-default-fg-color);
+      height: 31.5px;
+      width: 180px;
+      outline: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 5px;
+      border: none;
+      background-color: var(--md-default-bg-color);
+      padding-left: 20px;
+      font-size: 1em;
+    }
+
+    #matlib option {
+      color: var(--calcplaceholder); 
+      text-align: center;
+      font-size: 1em;
+      pointer-events: none;
+      z-index: 2;
+  }
+
+  #diameterparent{
+    position: relative;
+    left: 1em;
+  }
+
+  .FluteCountParent {
+    position: relative;
+    top: -1.9em;
+    padding-left: 14em;
+  }
+
+  #surfacepar {
+    position: relative;
+    top: -3em;
+    left: 1em;
+    margin-bottom:-5em;
+  }
+
+  #chippar {
+    position: relative;
+    top: -5em;
+    left: 14em;
+    margin-bottom:-5em;
+  }
   
   @media (max-width: 59.892857142857146em) {
     .cl-switch {
@@ -213,6 +262,24 @@
       float: right;
       margin-right: -1.6em;
       margin-bottom: -5em;
+    }
+    #matlib {
+      position: relative;
+      top: 0em;
+      left: 0;
+      float: right;
+      margin-right: 0;
+      margin-bottom: -5em;
+    }
+    #surfacepar {
+      position: relative;
+      top: 0em;
+      margin-bottom: -3.5em;
+    }
+    #chippar {
+      position: relative;
+      top: -3.7em;
+      margin-bottom: -3.5em;
     }
   }
   
@@ -271,10 +338,17 @@
   }
   
   .calcbutton {
-    background-color:transparent;
-    color:black;
-    border:1px solid black;
-    border-radius:3px;
+    position: relative;
+    left: 1em;
+    color: var(--md-default-fg-color);
+    height: 31.5px;
+    outline: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    border: none;
+    background-color: var(--md-default-bg-color);
+    padding: 3px;
+    font-size: 1em;
+    margin-right: 0.5em;
   }
   
   .flutecountparent {

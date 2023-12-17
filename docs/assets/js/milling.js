@@ -15,7 +15,8 @@ function unit() {
   function calculate() {
   
     var element = document.body;
-    document.getElementById("outputval").style.display = "inline"; 
+    document.getElementById("outputval").style.display = "inline";
+    document.getElementById("cock").style.cssText = "margin-top: -16.5em;";
   
     var unit = document.getElementById('units');
   
@@ -75,6 +76,7 @@ function unit() {
   function myFunction() {
   
       document.getElementById("outputval").style.display = "none"; 
+      document.getElementById("cock").style.cssText = "margin-top: 0em;";
   
       document.getElementById('diameter').value = "";
       document.getElementById('flutes').value = "1";

@@ -24,7 +24,7 @@ tags:
 # CNC Milling Workflows
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Spring & Summer, 2022 </span>| <i class="far fa-clock"></i> X-X minutes</span></span></span>
+  <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2022-2023 </span>| <i class="far fa-clock"></i> 12-15 minutes</span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-facebook-square"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
@@ -35,8 +35,6 @@ tags:
 </div>
 
 ---
-
-![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
 
 Subtractive manufacturing is a process I've always found mesmerizing. Although additive processes such as 3D printing allow for the creation of something from seemingly nothing, I believe it's even cooler to watch the morphing of existing stock into a different object. Despite this interest, I feel as though I've barely scratched the surface of CNC - primarily focusing on PCB milling in my subtractive manufacturing projects. I made a first attempt to dive into more subtractive manufacturing work a couple of years ago now when I built [V1 Engineering's](https://www.v1engineering.com/) original [MPCNC](https://docs.v1engineering.com/mpcnc/burly/).
 
@@ -60,11 +58,11 @@ Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com
 
 </center>
 
-This article attempts to serve as a complete guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview) & [Vectric Aspire](https://www.vectric.com/products/aspire), and milling workflows for [Shopbot](https://www.shopbottools.com/) & [Bantam Tools](https://www.bantamtools.com/) machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals :smile:.
+This article attempts to serve as a complete guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview) & [Vectric Aspire](https://www.vectric.com/products/aspire), and milling workflows for [Shopbot](https://www.shopbottools.com/) & [Bantam Tools](https://www.bantamtools.com/) machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals :smile:. 
 
 !!! example "Milling Micro-Projects"
 
-    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. That being said, be sure to stay tuned for future updates!
+    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](http://teddywarner.com/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator(http://teddywarner.com/Projects/MillingWorflow/#feeds-speeds-calculator)]. That being said, be sure to stay tuned for future updates!
 
 ## Feeds & Speeds
 
@@ -800,9 +798,17 @@ Feeds and speeds are equally dependent on material properties and the specific o
   </label>
 </div>
 
-<div id="diameterparent" class="outlined-input"><input type="text" class="calcinput" id="diameter" name="diameter" placeholder=" "><label for="diameter">Tool Diameter (<span class="in">in</span><span class="mm">mm</span>)</label></div><div style="padding-left: 200px;" class="FluteCountParent"><div class="quantity"><label for="flutes">Flute Count:</label><input type="number" class="calcinput" id="flutes" min="1" max="12" step="1" value="1"></div></div>
+??? note "Instructions for Use"
+    Work through the calcuator from top to bottom. First select your coolant prefrence, then input tool diamater and flute count. *You may pull reccomended material settings from the table above via the "Material Library" dropdown, or you may under your own.* Please note the prior warnings on calcuator dependence: **This is by no means a universal key** and necessary precautions & alterations should be made to provide values to mesh with your manufacturing workflow. Often the manufacturer of your tool & your machine will provide generic feeds and speeds for your specific equipment. Operator input is required to achieve successful & safe cuts, often you'll be able to hear machine strain - a telltale sign of poor cutting.
 
-<br></br>
+<hr></hr>
+
+<div id="diameterparent" class="outlined-input"><input type="text" class="calcinput" id="diameter" name="diameter" placeholder=" "><label for="diameter">Tool Diameter (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+
+<div class="FluteCountParent"><div class="quantity"><label style="font-size:0.7em;" for="flutes">Flute #:</label><input type="number" class="calcinput" id="flutes" min="1" max="12" step="1" value="1"></div></div>
+
+<div style="height:0.5em; position:relative;"></div>
+<hr></hr>
 
 <select id="matlib" onchange="matChange();">
   <option value="Mlib">Material Library</option>
@@ -828,36 +834,36 @@ Feeds and speeds are equally dependent on material properties and the specific o
   <option value="IFoam">Insulation Foam</option>
 </select>
    
-<div class="outlined-input"><input type="text" class="calcinput" id="surface" name="surface" placeholder=" "><label for="surface">Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</label></div>
+<div id="surfacepar" class="outlined-input"><input type="text" class="calcinput" id="surface" name="surface" placeholder=" "><label for="surface">Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</label></div>
   <br><br>
-<div class="outlined-input"><input type="text" class="calcinput" id="chips" name="chips" placeholder=" "><label for="chips">Chip Load (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+<div id="chippar" class="outlined-input"><input type="text" class="calcinput" id="chips" name="chips" placeholder=" "><label for="chips">Chip Load (<span class="in">in</span><span class="mm">mm</span>)</label></div>
 
-<button class="calcbutton" onclick="calculate()"> Calculate </button>
-<button class="calcbutton" onclick="myFunction()"> Clear </button>
-      
-  <hr></hr>
+<hr></hr>
 
 <div id="outputval">
-  <div class="outlined-input"><input type="text" class="calcinput" id="speed" name="speed" placeholder=" " disabled><label for="speed">Spindle Speed (RPM)</label></div>
+  <div style="height:1em; position:relative;"></div>
+  <div class="outlined-input" style="position:relative; left: 1em;"><input type="text" class="calcinput" id="speed" name="speed" placeholder=" " disabled><label for="speed">Spindle Speed (RPM)</label></div>
     <br><br>
-  <div class="outlined-input"><input type="text" class="calcinput" id="feed" name="feed" placeholder=" " disabled><label for="feed">Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
+  <div class="outlined-input" style="position:relative; top:-5.2em; left: 14em;"><input type="text" class="calcinput" id="feed" name="feed" placeholder=" " disabled><label for="feed">Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
     <br><br>
-  <div class="outlined-input"><input type="text" class="calcinput" id="plunge" name="plunge" placeholder=" " disabled><label for="plunge">Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
+  <div class="outlined-input" style="position:relative; top:-10.3em; left: 27em;"><input type="text" class="calcinput" id="plunge" name="plunge" placeholder=" " disabled><label for="plunge">Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
     <br><br>
-  <div class="outlined-input"><input type="text" class="calcinput" id="down" name="down" placeholder=" " disabled><label for="down">Stepdown (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+  <div class="outlined-input" style="position:relative; top:-12em; left:1em;"><input type="text" class="calcinput" id="down" name="down" placeholder=" " disabled><label for="down">Stepdown (<span class="in">in</span><span class="mm">mm</span>)</label></div>
     <br><br>
-  <div class="outlined-input"><input type="text" class="calcinput" id="over" name="over" placeholder=" " disabled><label for="diameter">Stepover (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+  <div class="outlined-input" style="position:relative; top:-17.2em; left:14em;"><input type="text" class="calcinput" id="over" name="over" placeholder=" " disabled><label for="diameter">Stepover (<span class="in">in</span><span class="mm">mm</span>)</label></div>
+  <div style="position:relative; top:-16.5em;">
+    <hr></hr>
+  </div>
+</div>
+
+<div id="cock" style="height:auto;">
+  <button class="calcbutton" onclick="calculate()"> Calculate </button>
+  <button class="calcbutton" onclick="myFunction()"> Clear </button>
+
+  <hr></hr>
 </div>
 
 ## Fusion 360 CAM
-
-<center>
-
-![](../images/MillingWorkflow/FusionBanner.jpg){width="100%"}
-
-</center>
-
-
 
 [Fusion 360 Manufacturing Overview](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-BEC5DEA9-AC3E-4FA8-998E-4AE8CD0D0B1E)
 
@@ -885,8 +891,6 @@ Feeds and speeds are equally dependent on material properties and the specific o
  </div>
 </center>
 
-Text
-
 <center>
 
 ![](../images/MillingWorkflow/galeraw.jpg){width="98%"}
@@ -900,7 +904,7 @@ Text
 
 </center>
 
-### Flat-Pack Furniture
+<!---  ### Flat-Pack Furniture
 
 <center>
   <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53939dacd8c9526c3f3?mode=embed" width="98%" height="550" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
@@ -908,7 +912,7 @@ Text
 
 <center>
   <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c539b2e9f6750ceba03a?mode=embed" width="98%" height="550" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-</center>
+</center> -->
 
 <!--- ### Wax Seal Stamp -->
 
@@ -917,12 +921,6 @@ Text
 
 
 ## Vectric Aspire
-
-<center>
-
-![](../images/MillingWorkflow/AspireBanner.png){width="55%"}
-
-</center>
 
 [VCarve & Bantam Milling](https://support.bantamtools.com/hc/en-us/articles/115001668333-VCarve)
 
@@ -969,7 +967,7 @@ Text
   <iframe width="98%" height="550" align="left" src="https://www.youtube.com/embed/U-eiMsjUyIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-Text
+
 
 <center>
  <div style="width: 98%; height: 550; margin: 0px;">
@@ -977,7 +975,7 @@ Text
  </div>
 </center>
 
-Text
+
 
 <center>
 
@@ -989,7 +987,7 @@ Text
 <!--- ### Flat-Pack Stools -->
 
 
-## Bantam Tools CNC Software
+<!--- ## Bantam Tools CNC Software
 
 <center>
 
@@ -999,9 +997,7 @@ Text
 
 ### PCB Badge
 
-Inkscape to Eagle
-
-
+Inkscape to Eagle -->
 
 [^1]: https://www.cnccookbook.com/machining-carbon-fiber-composites-drilling-cnc-tools/
 [^2]: https://dragonplate.com/how-to-cut-carbon-fiber

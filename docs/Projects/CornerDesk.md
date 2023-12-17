@@ -53,7 +53,7 @@ This start of the Pandemic project stemmed from my freshman year engineering cap
 
 </center>
 
-## CAD Design
+## CAD
 
 So I set off in Fusion to design a desk that fit all of my needs. My goals were to have a desk measured to fit perfectly in the corner of my room, with plenty of legroom so I would never hit my knees on it, and the best cable management imaginable. And after a couple of different iterations, I came up with this Model.
 
