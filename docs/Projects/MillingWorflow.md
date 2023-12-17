@@ -62,7 +62,7 @@ This article attempts to serve as a complete guide for CNC milling, covering mac
 
 !!! example "Milling Micro-Projects"
 
-    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](http://teddywarner.com/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator(http://teddywarner.com/Projects/MillingWorflow/#feeds-speeds-calculator)]. That being said, be sure to stay tuned for future updates!
+    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](http://teddywarner.com/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator](http://teddywarner.com/Projects/MillingWorflow/#feeds-speeds-calculator). That being said, be sure to stay tuned for future updates!
 
 ## Feeds & Speeds
 
