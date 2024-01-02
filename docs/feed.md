@@ -239,23 +239,23 @@ search:
     .main-content {
     z-index: 1;
     }
-    .home:hover {
+    .main-navigation a.home:hover {
     color: #5466CE;
     font-style: italic;
     }
-    .about:hover {
+    .main-navigation a.about:hover {
     color: #5466CE;
     font-style: italic;
     }
-    .proj:hover {
+    .main-navigation a.proj:hover {
     color: #5466CE;
     font-style: italic;
     }
-    .mach:hover {
+    .main-navigation a.mach:hover {
     color: #5466CE;
     font-style: italic;
     }
-    .fab:hover {
+    .main-navigation a.fab:hover {
     color: #5466CE;
     font-style: italic;
     }
@@ -334,10 +334,10 @@ search:
       <div class="con">
        <span class="share" style=" color: inherit;">
         <a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
-        <a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
-        <a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+        <a class="twitter" title="Share on X" href="TWITTER-URL"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fa-brands fa-square-pinterest"></i></a>
         <a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
-        <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+        <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fa-solid fa-square-envelope"></i></a>
        </span>
       </div>
         <p class="read-more">Read More</p>
@@ -355,10 +355,10 @@ search:
       <div class="con">
        <span class="share" style=" color: inherit;">
         <a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
-        <a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
-        <a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+        <a class="twitter" title="Share on X" href="TWITTER-URL"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fa-brands fa-square-pinterest"></i></a>
         <a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
-        <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+        <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fa-solid fa-square-envelope"></i></a>
        </span>
       </div>
         <p class="read-more">Read More</p>
@@ -389,10 +389,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/VonNiemannProbe/&media=&description=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/VonNiemannProbe/&media=&description=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/VonNiemannProbe/%0ACheck%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/VonNiemannProbe/%0ACheck%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -409,10 +409,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/MillingWorflow/&media=&description=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/MillingWorflow/&media=&description=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/MillingWorflow/%0ACheck%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/MillingWorflow/%0ACheck%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -429,10 +429,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/AdaptableAquaponics/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/AdaptableAquaponics/&text=Check%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/AdaptableAquaponics/&media=&description=Check%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/AdaptableAquaponics/&text=Check%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/AdaptableAquaponics/&media=&description=Check%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/AdaptableAquaponics/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/AdaptableAquaponics/%0ACheck%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/AdaptableAquaponics/%0ACheck%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -449,10 +449,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/8-bit/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/8-bit/&text=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/8-bit/&media=&description=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on%20https://teddywarner.org/Projects/8-bit/%20!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/8-bit/&text=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/8-bit/&media=&description=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on%20https://teddywarner.org/Projects/8-bit/%20!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/8-bit/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on%20https://teddywarner.org/Projects/8-bit/%20!"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on%20https://teddywarner.org/Projects/8-bit/%20!"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -469,10 +469,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/SerialUPDI/&media=&description=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/SerialUPDI/&media=&description=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -489,10 +489,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/ParametricGenerator/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/ParametricGenerator/&text=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/ParametricGenerator/&media=&description=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on%20https://teddywarner.org/Projects/ParametricGenerator/%20!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/ParametricGenerator/&text=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/ParametricGenerator/&media=&description=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on%20https://teddywarner.org/Projects/ParametricGenerator/%20!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/ParametricGenerator/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on%20https://teddywarner.org/Projects/ParametricGenerator/"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on%20https://teddywarner.org/Projects/ParametricGenerator/"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -509,10 +509,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/LithophaneExperiments/&text=Check%20Out%20this%20compilation%20of%20Litophanes%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/LithophaneExperiments/&media=&description=Check%20Out%20this%20compilation%20of%20Litophanes%20on%20https://teddywarner.org/Projects/LithophaneExperiments/%20!"><i class="fab fa-pinterest"></i></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/LithophaneExperiments/&text=Check%20Out%20this%20compilation%20of%20Litophanes%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/LithophaneExperiments/&media=&description=Check%20Out%20this%20compilation%20of%20Litophanes%20on%20https://teddywarner.org/Projects/LithophaneExperiments/%20!"><i class="fa-brands fa-square-pinterest"></i></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fab fa-linkedin"></i></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20this%20compilation%20of%20Litophanes%20on%20https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fas fa-paper-plane"></i></i></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20this%20compilation%20of%20Litophanes%20on%20https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fa-solid fa-square-envelope"></i></i></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -529,10 +529,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Octoprint/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Octoprint/&text=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Octoprint/&media=&description=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Octoprint/&text=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Octoprint/&media=&description=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Octoprint/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -549,10 +549,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/&text=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/&media=&description=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on%20https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/%20!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/&text=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/&media=&description=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on%20https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/%20!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on%20https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on%20https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -569,10 +569,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/KlipperEnder3/&text=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/KlipperEnder3/&media=&description=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/%20!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/KlipperEnder3/&text=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/KlipperEnder3/&media=&description=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/%20!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on%20https://teddywarner.org/Projects/KlipperEnder3/"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -589,10 +589,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/ProjectPortfolioSite/&text=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/ProjectPortfolioSite/&media=&description=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on%20https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/ProjectPortfolioSite/&text=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/ProjectPortfolioSite/&media=&description=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on%20https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on%20https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on%20https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
@@ -609,10 +609,10 @@ search:
         <div class="con">
         <span class="share" style=" color: inherit;">
             <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/CornerDesk/"><i class="fab fa-facebook-square"></i></a>
-            <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/CornerDesk/&text=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on"><i class="fab fa-twitter"></i></a>
-            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/CornerDesk/&media=&description=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on%20https://teddywarner.org/Projects/CornerDesk/%20!"><i class="fab fa-pinterest"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/CornerDesk/&text=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/CornerDesk/&media=&description=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on%20https://teddywarner.org/Projects/CornerDesk/%20!"><i class="fa-brands fa-square-pinterest"></i></a>
             <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/CornerDesk/"><i class="fab fa-linkedin"></i></a>
-            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on%20https://teddywarner.org/Projects/CornerDesk/"><i class="fas fa-paper-plane"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on%20https://teddywarner.org/Projects/CornerDesk/"><i class="fa-solid fa-square-envelope"></i></a>
         </span>
         </div>
         <p class="read-more">Read More</p>
