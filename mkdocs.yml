@@ -1,7 +1,7 @@
 site_name: TeddyWarner.org
 site_author: Teddy Warner
 site_description: >-
-    Project Portfolio and Documentation Site for Teddy Warner - A Student, Maker, Developer, Award Winning Designer & Graduate of the Fab Academy.
+    Teddy Warner - A Student, Maker, Developer, Award Winning Designer & Graduate of the Fab Academy.
 
 site_url: https://teddywarner.org/
 
@@ -9,7 +9,7 @@ repo_url: https://github.com/Twarner491/TeddyWarner.org
 repo_name: Twarner491/TeddyWarner.org
 
 copyright: >
-  Copyright &copy; 2021 - 2023 Teddy Warner
+  Copyright &copy; 2021 Teddy Warner
 
 extra:
   social:
@@ -19,6 +19,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/teddy-warner-880974200/
       name: Linked In - Teddy Warner
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/WarnerTeddy
+      name: X - @WarnerTeddy
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/teddymakesstuff/
       name: Instagram - @teddymakesstuff

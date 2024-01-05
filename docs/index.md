@@ -310,23 +310,23 @@ search:
   .main-content {
     z-index: 1;
   }
-  .home:hover {
+  .main-navigation a.home:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .about:hover {
+  .main-navigation a.about:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .proj:hover {
+  .main-navigation a.proj:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .mach:hover {
+  .main-navigation a.mach:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .fab:hover {
+  .main-navigation a.fab:hover {
     color: #5466CE;
     font-style: italic;
   }

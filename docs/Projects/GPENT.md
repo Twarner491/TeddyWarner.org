@@ -35,10 +35,10 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 <span class="share" style=" color: inherit;">
 <a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
-<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
-<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+<a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fa-brands fa-square-x-twitter"></i></a>
+<a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fa-brands fa-square-pinterest"></i></a>
 <a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
-<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+<a class="email" title="Share via Email" href="EMAIL-URL"><i class="fa-solid fa-square-envelope"></i></a>
 </span>
 
 -->
@@ -47,10 +47,10 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
   <span class="abtlinks"><a href="https://teddywarner.org/About-Me/about/"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span style="font-weight: 300;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Profile Picture" class="profilepic2"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Summer, 2023 </span>| <i class="far fa-clock"></i> XX-XX minutes</span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="FACEBOOK-URL"><i class="fab fa-facebook-square"></i></a>
-  <a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fab fa-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fab fa-pinterest"></i></a>
+  <a class="twitter" title="Share on Twitter" href="TWITTER-URL"><i class="fa-brands fa-square-x-twitter"></i></a>
+  <a class="pin" title="Share on Pinterest" href="PINTEREST-URL"><i class="fa-brands fa-square-pinterest"></i></a>
   <a class="ln" title="Share on LinkedIn" href="LINKEDIN-URL"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fas fa-paper-plane"></i></a>
+  <a class="email" title="Share via Email" href="EMAIL-URL"><i class="fa-solid fa-square-envelope"></i></a>
   </span>
 </div>
 
