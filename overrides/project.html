@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
+<div data-md-component="announce"> 
+  {% if self.announce() %}
+    <aside class="md-banner">
+      <div class="md-banner__inner md-grid md-typeset">
+        {% if "announce.dismiss" in features %}
+          <button
+            class="md-banner__button md-icon"
+            aria-label="{{ lang.t('announce.dismiss') }}"
+          >
+            {% include ".icons/material/close.svg" %}
+          </button>
+        {% endif %}
+        {% block announce %}
+        <center>
+          <p style="color:white;">
+            <span class="announcelarge">Check out </span><strong>@TeddyWarner</strong> on
+           <a href="https://www.youtube.com/@teddywarner" style="color:white;">
+            <span class="twemoji youtube">
+              <i style="background: #c4302b;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;" class="fab fa-youtube"></i>
+            </span>
+            <strong>Youtube</strong>
+           </a> &
+           <a href="https://www.instagram.com/teddywarner/" style="color:white;">
+            <span class="twemoji instagram">
+              <i style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;" class="fab fa-instagram"></i>
+            </span>
+            <strong>Instagram</strong>
+           </a>
+          </p>
+        </center>
+      {% endblock %}
+      </div>
+      {% if "announce.dismiss" in features %}
+        {% include "partials/javascripts/announce.html" %}
+      {% endif %}
+    </aside>
+  {% endif %}
+</div>
+
+{% block header %}
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="{{ lang.t('header.title') }}"
+  >
+
+  <a
+  href="http://teddywarner.com/"
+  title="{{ config.site_name | e }}"
+  class="md-header__rectangle"
+  aria-label="{{ config.site_name }}"
+  data-md-component="logo"
+  >
+  <img class="logo" src="../images/outlinedTeddyWarner.svg" alt="Teddy Warner"/>
+  </a>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            {% if page and page.meta and page.meta.title %}
+            {% else %}
+            {% endif %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette -->
+    {% if not config.theme.palette is mapping %}
+      <form class="md-header__option" data-md-component="palette">
+        {% for option in config.theme.palette %}
+          {% set primary = option.primary | replace(" ", "-") | lower %}
+          {% set accent  = option.accent  | replace(" ", "-") | lower %}
+          <input
+            class="md-option"
+            data-md-color-media="{{ option.media }}"
+            data-md-color-scheme="{{ option.scheme }}"
+            data-md-color-accent="{{ accent }}"
+            {% if option.toggle %}
+              aria-label="{{ option.toggle.name }}"
+            {% else  %}
+              aria-hidden="true"
+            {% endif %}
+            type="radio"
+            name="__palette"
+            id="__palette_{{ loop.index }}"
+          />
+          {% if option.toggle %}
+            <label
+              class="md-header__button md-icon"
+              onclick="colortheme()"
+              title="{{ option.toggle.name }}"
+              for="__palette_{{ loop.index0 or loop.length }}"
+              hidden
+            >
+              {% include ".icons/" ~ option.toggle.icon ~ ".svg" %}
+            </label>
+          {% endif %}
+        {% endfor %}
+      </form>
+    {% endif %}
+
+    <!-- Site language selector -->
+    {% if config.extra.alternate %}
+      <div class="md-header__option"></form>
+        <div class="md-select">
+          {% set icon = config.theme.icon.alternate or "material/translate" %}
+          <button
+            class="md-header__button md-icon"
+            aria-label="{{ lang.t('select.language.title') }}"
+          >
+            {% include ".icons/" ~ icon ~ ".svg" %}
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              {% for alt in config.extra.alternate %}
+                <li class="md-select__item">
+                  <a
+                    href="{{ alt.link | url }}"
+                    hreflang="{{ alt.lang }}"
+                    class="md-select__link"
+                  >
+                    {{ alt.name }}
+                  </a>
+                </li>
+                {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- Button to open search modal -->
+    {% if "material/search" in config.plugins %}
+      <label class="md-header__button md-icon" for="__search">
+        {% include ".icons/material/magnify.svg" %}
+      </label>
+
+      <!-- Search interface -->
+      {% include "partials/search.html" %}
+    {% endif %}
+
+    <label class="md-header__button md-icon" id="parent" onclick="togglemenu()">
+     <span class="menu">
+      {% include ".icons/material/menu" ~ ".svg" %}
+     </span>
+     <span class="close">
+      {% include ".icons/material/close" ~ ".svg" %}
+     </span>
+    </label>
+
+  </nav>
+</header>
+
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+
+  <!-- Giscus -->
+  <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+  <script src="https://giscus.app/client.js"
+  data-repo="Twarner491/TeddyWarner.org"
+  data-repo-id="MDEwOlJlcG9zaXRvcnkzNzgyODU0MTk="
+  data-category="General"
+  data-category-id="DIC_kwDOFowta84CA5IA"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Reload on palette change -->
+  <script>
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object")
+      if (palette.color.scheme === "slate") {
+        var giscus = document.querySelector("script[src*=giscus]")
+        giscus.setAttribute("data-theme", "dark") 
+      }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+{% endblock %}
+
+{% block footer %}
+<section class="footer" data-scroll-section>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      {% include "partials/copyright.html" %}
+
+      <!-- Social links -->
+      {% if config.extra.social %}
+        {% include "partials/social.html" %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}
