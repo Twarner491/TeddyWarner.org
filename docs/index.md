@@ -747,9 +747,6 @@ search:
       top: -1.2em;
       left: -1em;
     }
-    .circle1 { 
-      left: -15%;
-    }
   }
   @media (max-width: 100.96428571428571em) {
     .content {
