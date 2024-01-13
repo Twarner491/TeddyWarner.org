@@ -558,13 +558,7 @@ search:
     border-radius: 48%;
     margin: 15px;
   }
-  .newcheck {
-    width: 81px;
-    position: relative;
-    top: -15.5%;
-    left: -24em;
-  }
-  #circle1 { 
+  .circle1 { 
     width: 200px;
     top: 33%;
     left: -85%;
@@ -572,7 +566,7 @@ search:
     padding-bottom: 100%; 
     overflow: hidden; 
   }
-  #circle1 text { 
+  .circle1 text { 
     font-family: 'Fira Sans', sans-serif; 
     font-size: 17.6px; 
     font-weight: 500;
@@ -753,9 +747,6 @@ search:
       top: -1.2em;
       left: -1em;
     }
-    .newcheck {
-      left: -22em;
-    }
   }
   @media (max-width: 100.96428571428571em) {
     .content {
@@ -805,11 +796,7 @@ search:
       width: 221.76px;
       height: 369.6px;
     }
-    .newcheck {
-      top: -16em;
-      left: -51.5em;
-    }
-    #circle1 { 
+    .circle1 { 
       top: 19.5%;
       left: -36em;
     }
@@ -874,12 +861,7 @@ search:
       width: 204.019px;
       height: 340.032px;
     }
-    .newcheck {
-      width: 65px;
-      top: -15em;
-      left: -63em;
-    }
-    #circle1 { 
+    .circle1 { 
       top: 18%;
       left: -47em;
     }
@@ -940,12 +922,7 @@ search:
       width: 187.6975px;
       height: 312.8294px;
     }
-    .newcheck {
-      width: 65px;
-      top: -14em;
-      left: -64em;
-    }
-    #circle1 { 
+    .circle1 { 
       top: 14%;
       left: -48.5em;
     }
@@ -981,12 +958,7 @@ search:
       top: -4%;
       left: 49.75%;
     }
-    .newcheck {
-      width: 65px;
-      top: -14em;
-      left: -61em;
-    }
-    #circle1 { 
+    .circle1 { 
       top: 14%;
       left: -46.5em;
     }
@@ -1036,12 +1008,7 @@ search:
       width: 168.9278px;
       height: 281.5465px;
     }
-    .newcheck {
-      width: 65px;
-      top: -13.5em;
-      left: -66em;
-    }
-    #circle1 { 
+    .circle1 { 
       top: 13%;
       left: -50em;
     }
@@ -1235,7 +1202,7 @@ search:
            </div>
         </a>
       </div>
-        <div id="circle1">
+        <div class="circle1">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 300 300" xml:space="preserve" class="textrev">
             <defs>
               <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
@@ -1251,9 +1218,6 @@ search:
             </a>
           </svg>
         </div>
-      <div class="newcheck">
-        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 24 24"><title>New Project!</title><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M13,17H11V15H13V17M13,13H11V7H13V13Z" fill="#26a7de"/></svg>
-      </div>
     </div>
     </div>
     </section>    
