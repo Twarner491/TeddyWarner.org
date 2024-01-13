@@ -747,6 +747,9 @@ search:
       top: -1.2em;
       left: -1em;
     }
+    .circle1 { 
+      left: -15%;
+    }
   }
   @media (max-width: 100.96428571428571em) {
     .content {
@@ -798,7 +801,7 @@ search:
     }
     .circle1 { 
       top: 19.5%;
-      left: -36em + 115%;
+      left: -36em + 125%;
     }
     .featured-articles {
       top: -30em;
