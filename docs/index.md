@@ -561,7 +561,7 @@ search:
   .circle1 { 
     width: 200px;
     top: 33%;
-    left: 50%;
+    left: 40%;
     position: relative; 
     padding-bottom: 100%; 
     overflow: hidden; 
@@ -798,7 +798,7 @@ search:
     }
     .circle1 { 
       top: 19.5%;
-      left: -36em;
+      left: -36em + 125%;
     }
     .featured-articles {
       top: -30em;
@@ -863,7 +863,7 @@ search:
     }
     .circle1 { 
       top: 18%;
-      left: -47em;
+      left: -47em + 125%;
     }
     .featured-articles {
       top: -30em;
@@ -924,7 +924,7 @@ search:
     }
     .circle1 { 
       top: 14%;
-      left: -48.5em;
+      left: -48.5em + 125%;
     }
     .featured-articles {
       top: -30em;
@@ -960,7 +960,7 @@ search:
     }
     .circle1 { 
       top: 14%;
-      left: -46.5em;
+      left: -46.5em + 125%;
     }
     .featured-articles {
       top: -30em;
@@ -1010,7 +1010,7 @@ search:
     }
     .circle1 { 
       top: 13%;
-      left: -50em;
+      left: -50em + 125%;
     }
     .featured-articles {
       top: -35em;
