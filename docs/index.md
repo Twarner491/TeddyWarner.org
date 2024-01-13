@@ -798,7 +798,7 @@ search:
     }
     .circle1 { 
       top: 19.5%;
-      left: -36em + 125%;
+      left: -36em + 115%;
     }
     .featured-articles {
       top: -30em;
