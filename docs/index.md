@@ -310,23 +310,23 @@ search:
   .main-content {
     z-index: 1;
   }
-  .main-navigation a.home:hover {
+  .home:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .main-navigation a.about:hover {
+  .about:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .main-navigation a.proj:hover {
+  .proj:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .main-navigation a.mach:hover {
+  .mach:hover {
     color: #5466CE;
     font-style: italic;
   }
-  .main-navigation a.fab:hover {
+  .fab:hover {
     color: #5466CE;
     font-style: italic;
   }
@@ -1344,6 +1344,29 @@ search:
       </div>
       <div class="dots-container"></div>
      </div>
+    </section>
+    <section class="footer" style="position:realitive;margin-top:-15em;height:12em;" data-scroll-section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Logo">
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-cookie-settings">
+          <a href="#">Change Cookie Settings</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2021 Teddy Warner. All rights reserved.</p>
+      </div>
+    </footer>
     </section>
     <h1></h1>
    </div>
