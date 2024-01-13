@@ -1235,7 +1235,7 @@ search:
            </div>
         </a>
       </div>
-        <!--<div id="circle1">
+        <div id="circle1">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 300 300" xml:space="preserve" class="textrev">
             <defs>
               <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
@@ -1253,7 +1253,7 @@ search:
         </div>
       <div class="newcheck">
         <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 24 24"><title>New Project!</title><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M13,17H11V15H13V17M13,13H11V7H13V13Z" fill="#26a7de"/></svg>
-      </div>-->
+      </div>
     </div>
     </div>
     </section>    
