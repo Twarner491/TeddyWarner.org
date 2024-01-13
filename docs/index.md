@@ -561,6 +561,7 @@ search:
   .circle1 { 
     width: 200px;
     top: 33%;
+    left: 30%;
     position: relative; 
     padding-bottom: 100%; 
     overflow: hidden; 
