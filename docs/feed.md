@@ -378,13 +378,33 @@ search:
     <center>
     <div class="title">Project Feed</div>
     </center>
+    <div class="post alt" id="tone">
+        <div class="meta">
+        <div class="photo" style="background-image: url('https://tone.computer/images/thumbnail.png')"></div>
+        </div>
+        <div class="description">
+        <h1>Tone</h1>
+        <h2>- 2023-2024 -</h2> <span class="time"><i class="far fa-clock"></i> 1-2 min</span>
+        <p>An AI-enabled pendant that acts as your second brain, distilling your lived experiences into a personal AI. A digital extension of yourself, starting in the form of a necklace.</p>
+        <div class="con">
+        <span class="share" style=" color: inherit;">
+            <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://tone.computer"><i class="fab fa-facebook-square"></i></a>
+            <a class="twitter" title="Share on X" href="https://twitter.com/intent/tweet?url=https://tone.computer&text=Introducing%20Tone,%20a%20$299%20AI%20wearable%20that%20acts%20as%20your%20second%20brain,%20distilling%20your%20lived%20experiences%20into%20a%20personal%20AI%20to%20give%20you%20superpowers."><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://tone.computer&media=&description=Introducing%20Tone,%20a%20$299%20AI%20wearable%20that%20acts%20as%20your%20second%20brain,%20distilling%20your%20lived%20experiences%20into%20a%20personal%20AI%20to%20give%20you%20superpowers."><i class="fa-brands fa-square-pinterest"></i></a>
+            <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://tone.computer"><i class="fab fa-linkedin"></i></a>
+            <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://tone.computer%0AIntroducing%20Tone,%20a%20$299%20AI%20wearable%20that%20acts%20as%20your%20second%20brain,%20distilling%20your%20lived%20experiences%20into%20a%20personal%20AI%20to%20give%20you%20superpowers."><i class="fa-solid fa-square-envelope"></i></a>
+        </span>
+        </div>
+            <p class="read-more">Read More</p>
+        </div>
+    </div>
     <div class="post" id="vnp">
         <div class="meta">
         <div class="photo" style="background-image: url('../images/VonNiemannProbe/cover.jpg')"></div>
         </div>
         <div class="description">
         <h1>Von Niemann Probe</h1>
-        <h2>- Winter, 2023 -</h2> <span class="time"><i class="far fa-clock"></i> 46–58 minutes</span>
+        <h2>- Winter, 2023 -</h2> <span class="time"><i class="far fa-clock"></i> 46–58 min</span>
         <p>An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused! This project is our contribution to the ongoing investigation into the Hans Niemann/Magnus Carlsen cheating scandal and tests the feasibility of creating and using an over-the-board chess cheating aid.</p>
         <div class="con">
         <span class="share" style=" color: inherit;">
@@ -424,7 +444,7 @@ search:
         </div>
         <div class="description">
         <h1>Adaptable Aquaponics</h1>
-        <h2>- Summer, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> 18-23 minutes</span>
+        <h2>- Summer, 2022 -</h2> <span class="time"><i class="far fa-clock"></i> 18-23 min</span>
         <p>A Theoretical Confrontation to Contemporary Farming Challenges. Adaptive Aquaponics is the scaled successor to my <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">Assistive Aquaponics Fish Tank</a> & my entry into Autodesk Instructable's <a href="https://www.instructables.com/contest/makeitmodular2022/">Make It Modular</a> student design scholarship.</p>
         <div class="con">
         <span class="share" style=" color: inherit;">
@@ -628,6 +648,9 @@ search:
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="../assets/js/feed.js"></script>
   <script>
+    document.getElementById('tone').addEventListener('click', function() {
+        window.location.href = 'https://tone.computer/'; 
+    });
     document.getElementById('vnp').addEventListener('click', function() {
         window.location.href = 'http://teddywarner.com/Projects/VonNiemannProbe/'; 
     });
