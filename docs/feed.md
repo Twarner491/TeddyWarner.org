@@ -380,7 +380,7 @@ search:
     </center>
     <div class="post alt" id="tone">
         <div class="meta">
-        <div class="photo" style="background-image: url('https://tone.computer/images/thumbnail.png')"></div>
+        <div class="photo" style="background-image: url('https://tone.computer/images/thumb.png')"></div>
         </div>
         <div class="description">
         <h1>Tone</h1>
