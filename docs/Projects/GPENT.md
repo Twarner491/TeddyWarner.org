@@ -60,7 +60,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 
 
-![alt-text](../images/https://picsum.photos/500){: align=RIGHT/LEFT width="100%"}
+![alt-text](../assets/images/https://picsum.photos/500){: align=RIGHT/LEFT width="100%"}
   <figcaption>Caption</figcaption>
 
 
@@ -125,7 +125,7 @@ theme:
 ```
 
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be expressed in Markdown.
+    text__, assets/images, ... basically anything that can be expressed in Markdown.
 
 
 

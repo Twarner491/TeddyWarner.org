@@ -50,7 +50,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 <center>
 
-![](../images/Octoprint/Octoprint.png){width="100%"}
+![](../assets/images/Octoprint/Octoprint.png){width="100%"}
 
 </center>
 
@@ -123,7 +123,7 @@ Beginning with the configuration of the interface itself, basic settings can be 
 
 <center>
 
-![](../images/Octoprint/AppearanceSettings.png){width="95%"}
+![](../assets/images/Octoprint/AppearanceSettings.png){width="95%"}
 
 </center>
 
@@ -135,7 +135,7 @@ To enable Octoprint's main purpose, a machine must be connected to the hardware 
 
     In the case of my Prusa I3 MK3S+, I took advantage of this GPIO communication setup, to allow for the mounting of my Raspberry Pi directly under my printer's mainboard (via [this](https://www.prusaprinters.org/prints/24475-remix-of-raspberry-pi-4-case-3030-hanging-mount-fo) Raspberry Pi 4 Case) without a bulky USB cable connecting them ...
     <center>
-    ![](../images/Octoprint/mountedelectronics.jpg){width="95%"}
+    ![](../assets/images/Octoprint/mountedelectronics.jpg){width="95%"}
     </center>
 
 
@@ -143,7 +143,7 @@ Your serial connection must be set up software side in the *Serial Connection* m
 
 <center>
 
-![](../images/Octoprint/serialconnection.png){width="95%"}
+![](../assets/images/Octoprint/serialconnection.png){width="95%"}
 
 </center>
 
@@ -151,7 +151,7 @@ Next, a machine profile must be created for your connected machine to ensure saf
 
 <center>
 
-![](../images/Octoprint/printerpofiles.png){width="95%"}
+![](../assets/images/Octoprint/printerpofiles.png){width="95%"}
 
 </center>
 
@@ -161,15 +161,15 @@ One key feature of Octoprint is its webcam machine stream, allowing for remote s
 
     On my printer, I've mounted a Raspberry Pi camera to the X-Axis stepper of my machine (via [this](https://www.thingiverse.com/thing:3121052) Raspberry Pi camera mount), yielding a pretty nice side view of prints, shown below.
     <center>
-    ![](../images/Octoprint/cameramount.png){width="95%"}
-    ![](../images/Octoprint/CameraWindow.png){width="95%"}
+    ![](../assets/images/Octoprint/cameramount.png){width="95%"}
+    ![](../assets/images/Octoprint/CameraWindow.png){width="95%"}
     </center>
 
 Due to my printers camera mount, my Raspberry Pi camera is heald in an upsidedown orientation and thus needs to be compensated for on the software side. Luckily, in the *Webcam & Timelapse* menu under the *Features* section of the Octorprint interface settings, webcam orientation can be changed. In addition, more advanced webcam options can be found, allowing for the use of almost all cameras connected to the hardware running Octorpint.
 
 <center>
 
-![](../images/Octoprint/webcamsettings.png){width="95%"}
+![](../assets/images/Octoprint/webcamsettings.png){width="95%"}
 
 </center>
 
@@ -183,7 +183,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
 <center>
 
-![](../images/Octoprint/pluginsettings.png){width="95%"}
+![](../assets/images/Octoprint/pluginsettings.png){width="95%"}
 
 </center>
 
@@ -191,10 +191,10 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../images/Octoprint/homescreen.jpg){width="46%"}
-  ![](../images/Octoprint/tsdapp.jpg){width="47.5%"}
+  ![](../assets/images/Octoprint/homescreen.jpg){width="46%"}
+  ![](../assets/images/Octoprint/tsdapp.jpg){width="47.5%"}
 
-  ![](../images/Octoprint/tsdcontrol.jpg){width="94%"}
+  ![](../assets/images/Octoprint/tsdcontrol.jpg){width="94%"}
 
   </center>
 
@@ -202,7 +202,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
  
  <center>
 
-  ![](../images/Octoprint/bedlevlevisualizer.png){width="95%"}
+  ![](../assets/images/Octoprint/bedlevlevisualizer.png){width="95%"}
 
   </center>
 
@@ -210,7 +210,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
  <center>
 
 
-  ![](../images/Octoprint/custombackground.png){width="95%"}
+  ![](../assets/images/Octoprint/custombackground.png){width="95%"}
 
   </center>
 
@@ -218,7 +218,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../images/Octoprint/excluderegions.png){width="95%"}
+  ![](../assets/images/Octoprint/excluderegions.png){width="95%"}
 
   </center>
 
@@ -227,8 +227,8 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../images/Octoprint/edit_gcode.png){width="50%"}
-  ![](../images/Octoprint/edit_gcode2.png){width="46%"}
+  ![](../assets/images/Octoprint/edit_gcode.png){width="50%"}
+  ![](../assets/images/Octoprint/edit_gcode2.png){width="46%"}
 
   </center>
 
@@ -237,7 +237,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../images/Octoprint/navbar.png){width="60%"}
+  ![](../assets/images/Octoprint/navbar.png){width="60%"}
 
   </center>
 
@@ -245,7 +245,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../images/Octoprint/eta.png){width="300"}
+  ![](../assets/images/Octoprint/eta.png){width="300"}
   
   </center>
 
@@ -253,7 +253,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../images/Octoprint/PrettyGcode-Screen3.jpg){width="75%"}
+  ![](../assets/images/Octoprint/PrettyGcode-Screen3.jpg){width="75%"}
 
   </center>
 
@@ -262,7 +262,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../images/Octoprint/ipdisplay.jpg){width="95%"}
+  ![](../assets/images/Octoprint/ipdisplay.jpg){width="95%"}
 
   </center>
 
@@ -276,10 +276,10 @@ Although the Octoprint web interface is rather intuitive, the number of stock fe
 
 <center>
 
-![](../images/Octoprint/personaloctoprint.jpg){width="95%"}
+![](../assets/images/Octoprint/personaloctoprint.jpg){width="95%"}
   <figcaption>My Personal Octoprint Enabled Prusa I3 MK3S+</figcaption>
 
-![](../images/Octoprint/laboctoprint.jpg){width="95%"}
+![](../assets/images/Octoprint/laboctoprint.jpg){width="95%"}
   <figcaption>My Lab's Octoprint Enabled Printer Farm</figcaption>
 
 </center>

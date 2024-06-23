@@ -71,7 +71,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 </center>
 
 !!! tip "Project Sponsor"
-    ![PCBWay](../images/VonNiemannProbe/PCBWay.png){: align=right width="45%"}
+    ![PCBWay](../assets/images/VonNiemannProbe/PCBWay.png){: align=right width="45%"}
     <center style="font-size:1.15em; width:55%;">**The development of the Von Niemann Probe was made possible by [PCBWay](https://www.pcbway.com/), who provided the fabrication of the probe's main board and nylon insole.** Be sure to check out [PCBWay.com](https://www.pcbway.com/) for all your PCB prototyping, assembly, design, CNC, and 3D printing needs! Thank you to the wonderful folks at [PCBWay](https://www.pcbway.com/) for sponsoring this project!</center>
     
 On September 4, 2022, 19-year-old rising chess superstar, Grandmaster Hans Moke Niemann, shocked the chess world when he ended the 8-time World Champion, and arguably the greatest player in world history, Magnus Carlsen's unprecedented 53-game win streak at the Sinquefield Cup in St. Louis, Missouri. Niemann added insult to injury by accomplishing this as the lowest-ranked player in the tournament while playing with the black pieces, which possess a slight, but crucially important, disadvantage at the highest levels of competition. 
@@ -146,7 +146,7 @@ The schematic includes headers for an HC-06, with serial connections to the ATTi
 
 <center>
 
-![](../images/VonNiemannProbe/VNPSchematic.jpg){width="100%"}
+![](../assets/images/VonNiemannProbe/VNPSchematic.jpg){width="100%"}
 
 </center>
 
@@ -154,7 +154,7 @@ With this schematic done, I moved on to generating my final board file. The PCB 
 
 <center>
 
-![](../images/VonNiemannProbe/VNPBoard.jpg){width="100%"}
+![](../assets/images/VonNiemannProbe/VNPBoard.jpg){width="100%"}
 
 </center>
 
@@ -168,7 +168,7 @@ To prove the feasibility of the accusations placed against Hans Niemann, the Von
 
 <center>
 
-![](../images/VonNiemannProbe/footdi.png){width="80%"}
+![](../assets/images/VonNiemannProbe/footdi.png){width="80%"}
 
 | US Size | UK Size | European Size | Japanese Size | Length *(S~L~)* | Width *(S~MW~)* |
 |---------|---------|---------------|---------------|--------|--------|
@@ -192,7 +192,7 @@ To prove the feasibility of the accusations placed against Hans Niemann, the Von
 | 14.5    | 14      | 47/48         |               | 31cm   | 11.6cm |
 | 15      | 14.5    | 48            |               | 31.4cm | 11.7cm |
 
-![](../images/VonNiemannProbe/footgraph.png){width="80%"}
+![](../assets/images/VonNiemannProbe/footgraph.png){width="80%"}
 
 </center>
 
@@ -200,7 +200,7 @@ A custom insole will be generated after updating the model with your foot Length
 
 <center>
 
-![](../images/VonNiemannProbe/FusionParameters.png){width="100%"}
+![](../assets/images/VonNiemannProbe/FusionParameters.png){width="100%"}
 
 </center>
 
@@ -208,8 +208,8 @@ After establishing the model's parameters and extruding a basic shape, I drafted
 
 <center>
 
-![](../images/VonNiemannProbe/extrudeFusion.png){width="48.35%"}
-![](../images/VonNiemannProbe/formedFusion.png){width="49%"}
+![](../assets/images/VonNiemannProbe/extrudeFusion.png){width="48.35%"}
+![](../assets/images/VonNiemannProbe/formedFusion.png){width="49%"}
 
 </center>
 
@@ -217,7 +217,7 @@ The insole consists of two main parts, the body which is the bulk of the insole 
 
 <center>
 
-![](../images/VonNiemannProbe/electronicsVNP.png){width="100%"}
+![](../assets/images/VonNiemannProbe/electronicsVNP.png){width="100%"}
 
 </center>
 
@@ -1021,7 +1021,7 @@ Leveraging these machines would allow me to test early designs before ordering f
 
 <center>
 
-![](../images/VonNiemannProbe/mainboard.png){width="100%"}
+![](../assets/images/VonNiemannProbe/mainboard.png){width="100%"}
   <figcaption>Von Niemann Probe Mainboard</figcaption>
 
 </center>
@@ -1034,7 +1034,7 @@ Similar to the PCB prototyping, I fabricated several prints while iterating on t
 
 <center>
 
-![](../images/VonNiemannProbe/allprints.jpg){width="100%"}
+![](../assets/images/VonNiemannProbe/allprints.jpg){width="100%"}
   <figcaption>All Iterations of the Von Niemann Probe Insole</figcaption>
 
 </center>
@@ -1049,8 +1049,8 @@ Leaving me with the final product below! :smile:
 
 <center>
 
-![](../images/VonNiemannProbe/FinalElectronics.jpg){width="49%"}
-![](../images/VonNiemannProbe/bottomview.jpg){width="49.75%"}
+![](../assets/images/VonNiemannProbe/FinalElectronics.jpg){width="49%"}
+![](../assets/images/VonNiemannProbe/bottomview.jpg){width="49.75%"}
   <figcaption>Von Niemann Probe Electronics Enclosure & Cover</figcaption>
 
 </center>

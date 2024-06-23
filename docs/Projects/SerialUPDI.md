@@ -87,7 +87,7 @@ Extract the contents of this downloaded sketch folder by first unzipping the dow
 
 <center>
 
-![](../images/SerialUPDI/foldernaming.png){width="95%"}
+![](../assets/images/SerialUPDI/foldernaming.png){width="95%"}
 
 </center>
 
@@ -95,7 +95,7 @@ Inside of this *jtag2updi* folder, navigate to the *jtag2UPDI.ino* project - cir
 
 <center>
 
-![](../images/SerialUPDI/projectopen.png){width="95%"}
+![](../assets/images/SerialUPDI/projectopen.png){width="95%"}
 
 </center>
 
@@ -103,7 +103,7 @@ This will open the *jtag2updi* project file system, leaving you with a blank *jt
 
 <center>
 
-![](../images/SerialUPDI/blankjtagsketch.png){width="95%"}
+![](../assets/images/SerialUPDI/blankjtagsketch.png){width="95%"}
 
 </center>
 
@@ -113,7 +113,7 @@ You can next upload this sketch to your 328p-based board of choice as you would 
 
     As a first test to confirm the successful upload of this sketch to your board, hook up an LED to pin 6 of the board. If the board is successfully programmed, the LED will be dimly lit as shown below. **This simple test eliminates a potential error while troubleshooting a project, and confirms the programmer's working condition.**
     <center>
-    ![](../images/SerialUPDI/jtagtest.jpg){width="95%"}
+    ![](../assets/images/SerialUPDI/jtagtest.jpg){width="95%"}
     </center>
 
 Once a board is programmed with the *jtag2updi* project, it will act as a programmer until the next sketch is uploaded, unless the board's reset line is cut.
@@ -169,7 +169,7 @@ The serial programming style relies on this prior mentioned portable python inst
  2. Some Jumper Wires
  3. A Schottky Diode - I tacked some leads to an SMD package (as shown below), but if you can get your hands on a through-hole package, that works great as well.
  <center>
-![](../images/SerialUPDI/diodeleads.jpg){width="95%"}
+![](../assets/images/SerialUPDI/diodeleads.jpg){width="95%"}
 </center>
  4. A 470-ohm Resistor - If creating a UPDI programmable board, incorporate this resistor into your schematic using the pinout below, running the 470-ohm resistor inline to the UPDI pin. Any value between 100 and 1k ohms will do here, but 470 is the optimal value.
 
@@ -225,7 +225,7 @@ I rigged up the second included schematic on a breadboard as unfortunately the b
 
 <center>
 
-![](../images/SerialUPDI/SerialBreadboardWired.jpg){width="95%"}
+![](../assets/images/SerialUPDI/SerialBreadboardWired.jpg){width="95%"}
   <figcaption>Serial Programmer Setup on a Breadboard</figcaption>
 
 </center>
@@ -290,7 +290,7 @@ The *FT232RL* is broken out following the same wiring principals diagrammed in t
 
 <center>
 
-![](../images/SerialUPDI/ICPSchem1.png){width="100%"}
+![](../assets/images/SerialUPDI/ICPSchem1.png){width="100%"}
   <figcaption>USB-C UPDI Programmer Eagle Schematic</figcaption>
 
 </center>
@@ -299,9 +299,9 @@ Then came the nesting process. Being my first double-sided board in Eagle, it to
 
 <center>
 
-![](../images/SerialUPDI/ICPTop1.png){width="100%"}
-![](../images/SerialUPDI/ICPBottom1.png){width="100%"}
-![](../images/SerialUPDI/ICPLayered1.png){width="100%"}
+![](../assets/images/SerialUPDI/ICPTop1.png){width="100%"}
+![](../assets/images/SerialUPDI/ICPBottom1.png){width="100%"}
+![](../assets/images/SerialUPDI/ICPLayered1.png){width="100%"}
   <figcaption>USB-C UPDI Programmer Eagle Board</figcaption>
 
 </center>
@@ -310,7 +310,7 @@ The nesting of the two highest pinout parts on the board's topside inspired my n
 
 <center>
 
-![](../images/SerialUPDI/topstencil.png){width="100%"}
+![](../assets/images/SerialUPDI/topstencil.png){width="100%"}
   <figcaption>Tcream board layer in Eagle</figcaption>
 
 **Bill of Matierals - USB-C UPDI**
@@ -340,7 +340,7 @@ The board's schematic is a cloned iteration of the prior programmer, but with th
 
 <center>
 
-![](../images/SerialUPDI/ftdi2updischem.png){width="100%"}
+![](../assets/images/SerialUPDI/ftdi2updischem.png){width="100%"}
   <figcaption>First Iteration ftdi2updi Programmer Eagle Schematic</figcaption>
 
 </center>
@@ -349,9 +349,9 @@ I was compelled to expand on the original shape of an FTDI serial adapter for th
 
 <center>
 
-![](../images/SerialUPDI/ftdi2upditop.png){width="100%"}
-![](../images/SerialUPDI/ftdi2updibottom.png){width="100%"}
-![](../images/SerialUPDI/ftdi2updiboard.png){width="100%"}
+![](../assets/images/SerialUPDI/ftdi2upditop.png){width="100%"}
+![](../assets/images/SerialUPDI/ftdi2updibottom.png){width="100%"}
+![](../assets/images/SerialUPDI/ftdi2updiboard.png){width="100%"}
   <figcaption>First Iteration ftdi2updi Programmer Eagle Board</figcaption>
 
 **Bill of Matierals - ftdi2updi**
@@ -381,20 +381,20 @@ I used a 0.005" PCB engraving bit for the ftdi2updi's traces, and a 1/32" for it
 
 <center>
 
-![](../images/SerialUPDI/ftdi2updiirltop.jpg){width="47.4%"}
-![](../images/SerialUPDI/ftdi2updiirlbottom.jpg){width="46%"}
+![](../assets/images/SerialUPDI/ftdi2updiirltop.jpg){width="47.4%"}
+![](../assets/images/SerialUPDI/ftdi2updiirlbottom.jpg){width="46%"}
 
 </center>
 
 After the milling, I washed off my board with some soap and water. The [Bantam Tools Desktop Milling Machine Software](https://www.bantamtools.com/software-download) makes the milling of double-sided boards super straightforward, not much harder than a single-sided PCB, however, the boards require the extra step of riveting vias between both sides of the board before soldering. This article on [PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/) from the Fab Docs walks through the process down into a couple of steps.
 
-First the via has to be inserted into its corresponding hole, I used 0.6mm vias here. Then I used a V-Shaped nail to chamfer the top of the via and finally pressed it flush with a flat press, each step shown in the three images below.
+First the via has to be inserted into its corresponding hole, I used 0.6mm vias here. Then I used a V-Shaped nail to chamfer the top of the via and finally pressed it flush with a flat press, each step shown in the three assets/images below.
 
 <center>
 
-![](../images/SerialUPDI/viasstep1.jpg){width="31.5%"}
-![](../images/SerialUPDI/viasstep2.jpg){width="31.5%"}
-![](../images/SerialUPDI/viasstep3.jpg){width="31.5%"}
+![](../assets/images/SerialUPDI/viasstep1.jpg){width="31.5%"}
+![](../assets/images/SerialUPDI/viasstep2.jpg){width="31.5%"}
+![](../assets/images/SerialUPDI/viasstep3.jpg){width="31.5%"}
 
 </center>
 
@@ -402,8 +402,8 @@ Finally, to ensure a proper connection, I soldered over each side of the via and
 
 <center>
 
-![](../images/SerialUPDI/solderedviasbottom.jpg){width="49.3%"}
-![](../images/SerialUPDI/solderedviastop.jpg){width="47%"}
+![](../assets/images/SerialUPDI/solderedviasbottom.jpg){width="49.3%"}
+![](../assets/images/SerialUPDI/solderedviastop.jpg){width="47%"}
   <figcaption>Boards with Vias</figcaption>
 
 </center>
@@ -416,8 +416,8 @@ I finished the stuffing and soldering of this board, a simple enough process due
 
 <center>
 
-![](../images/SerialUPDI/ftdi2updisolderedtop.jpg){width="47%"}
-![](../images/SerialUPDI/ftdi2updisolderedbottom.jpg){width="50%"}
+![](../assets/images/SerialUPDI/ftdi2updisolderedtop.jpg){width="47%"}
+![](../assets/images/SerialUPDI/ftdi2updisolderedbottom.jpg){width="50%"}
 
 </center>
 
@@ -458,7 +458,7 @@ I ran two tests on the ftdi2updi, one proving each of the board's functions.
 
     <center>
 
-    ![](../images/SerialUPDI/serialtestwireing.jpg){width="95%"}
+    ![](../assets/images/SerialUPDI/serialtestwireing.jpg){width="95%"}
 
     </center>
 
@@ -487,8 +487,8 @@ I ordered a couple of these final iteration boards from a PCB fab ...
 
 <center>
 
-![](../images/SerialUPDI/orderedpcbtop.jpg){width="47%"}
-![](../images/SerialUPDI/orderedpcbback.jpg){width="45.4%"}
+![](../assets/images/SerialUPDI/orderedpcbtop.jpg){width="47%"}
+![](../assets/images/SerialUPDI/orderedpcbback.jpg){width="45.4%"}
 
 </center>
 
@@ -496,8 +496,8 @@ Which turned out incredible. The Gerber files for these boards are included in t
 
 <center>
 
-![](../images/SerialUPDI/orderedsolderedpcbtop.jpg){width="47%"}
-![](../images/SerialUPDI/orderedsolderedpcbbottom.jpg){width="49.4%"}
+![](../assets/images/SerialUPDI/orderedsolderedpcbtop.jpg){width="47%"}
+![](../assets/images/SerialUPDI/orderedsolderedpcbbottom.jpg){width="49.4%"}
   <figcaption>ftdi2updi Front and Back</figcaption>
 
 [Download the FTDI2UPDI Files :fontawesome-brands-github:](https://github.com/Twarner491/FTDI2UPDI){ .md-button .md-button--primary }
@@ -516,8 +516,8 @@ Which turned out incredible. The Gerber files for these boards are included in t
 
 <center>
 
-![](../images/SerialUPDI/2ndgenmileldtop.jpg){width="48%"}
-![](../images/SerialUPDI/2ndgenmilledbottom.jpg){width="45.95%"}
+![](../assets/images/SerialUPDI/2ndgenmileldtop.jpg){width="48%"}
+![](../assets/images/SerialUPDI/2ndgenmilledbottom.jpg){width="45.95%"}
 
 </center>
 
@@ -528,34 +528,34 @@ Which turned out incredible. The Gerber files for these boards are included in t
 
 <center>
 
-![](../images/SerialUPDI/pastestencil.jpg){width="95%"}
+![](../assets/images/SerialUPDI/pastestencil.jpg){width="95%"}
 
 </center>
 
 <center>
 
-![](../images/SerialUPDI/pasteapplication.jpg){width="95%"}
+![](../assets/images/SerialUPDI/pasteapplication.jpg){width="95%"}
 
 </center>
 
 <center>
 
-![](../images/SerialUPDI/2ndgensolderdtop.jpg){width="48%"}
-![](../images/SerialUPDI/2ndgensolderedbottom.jpg){width="48%"}
+![](../assets/images/SerialUPDI/2ndgensolderdtop.jpg){width="48%"}
+![](../assets/images/SerialUPDI/2ndgensolderedbottom.jpg){width="48%"}
 
 </center>
 
 <center>
 
-![](../images/SerialUPDI/3genmilledtop.jpg){width="48%"}
-![](../images/SerialUPDI/3rdgenmilledback.jpg){width="47.35%"}
+![](../assets/images/SerialUPDI/3genmilledtop.jpg){width="48%"}
+![](../assets/images/SerialUPDI/3rdgenmilledback.jpg){width="47.35%"}
 
 </center>
 
 <center>
 
-![](../images/SerialUPDI/3rdgensolderedtop.jpg){width="48%"}
-![](../images/SerialUPDI/3rdgensolderedback.jpg){width="48.4%"}
+![](../assets/images/SerialUPDI/3rdgensolderedtop.jpg){width="48%"}
+![](../assets/images/SerialUPDI/3rdgensolderedback.jpg){width="48.4%"}
 
 </center>
 
@@ -581,9 +581,9 @@ To use the UPDI programming function, toggle the programmers switch to *UPDI* as
 
 <center>
 
-![](../images/SerialUPDI/updiswitch.jpg){width="85%"}
+![](../assets/images/SerialUPDI/updiswitch.jpg){width="85%"}
   <figcaption>Switched to Progamming Mode</figcaption>
-![](../images/SerialUPDI/updiwireing.jpg){width="85%"}
+![](../assets/images/SerialUPDI/updiwireing.jpg){width="85%"}
   <figcaption>Minimum Wiring for UPDI Programming</figcaption>
 
 </center>
@@ -600,7 +600,7 @@ and then selecting your microcontroller from the list, shown in the image below.
 
 <center>
 
-![](../images/SerialUPDI/boardselection.jpg){width="95%"}
+![](../assets/images/SerialUPDI/boardselection.jpg){width="95%"}
 
 </center>
 
@@ -614,7 +614,7 @@ and then select the serial port your programmer board is connected to (In my cas
 
 <center>
 
-![](../images/SerialUPDI/portselection.jpg){width="95%"}
+![](../assets/images/SerialUPDI/portselection.jpg){width="95%"}
 
 </center>
 
@@ -626,7 +626,7 @@ Finally, select your programming style. For all programmers documented on this p
 
 <center>
 
-![](../images/SerialUPDI/programmerselection.jpg){width="95%"}
+![](../assets/images/SerialUPDI/programmerselection.jpg){width="95%"}
 
 </center>
 
@@ -640,9 +640,9 @@ To use the serial monitoring function, toggle the programmers switch to *Serial*
 
 <center>
 
-![](../images/SerialUPDI/serialswitch.jpg){width="85%"}
+![](../assets/images/SerialUPDI/serialswitch.jpg){width="85%"}
   <figcaption>Switched to Monitoring Mode</figcaption>
-![](../images/SerialUPDI/serialwireing.jpg){width="85%"}
+![](../assets/images/SerialUPDI/serialwireing.jpg){width="85%"}
   <figcaption>Minimum Wiring for Serial Monitoring</figcaption>
 
 </center>
@@ -657,7 +657,7 @@ as selected in the picture below
 
 <center>
 
-![](../images/SerialUPDI/serialmonitroselection.jpg){width="95%"}
+![](../assets/images/SerialUPDI/serialmonitroselection.jpg){width="95%"}
 
 </center>
 
@@ -665,7 +665,7 @@ This will open the IDE's serial terminal, where incoming serial data is printed,
 
 <center>
 
-![](../images/SerialUPDI/serialmonitor.jpg){width="95%"}
+![](../assets/images/SerialUPDI/serialmonitor.jpg){width="95%"}
 
 </center>
 

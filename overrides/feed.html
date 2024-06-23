@@ -2,40 +2,7 @@
 
 <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
 
-<div data-md-component="announce"> 
-  {% if self.announce() %}
-    <aside class="md-banner">
-      <div class="md-banner__inner md-grid md-typeset">
-        {% if "announce.dismiss" in features %}
-          <button
-            class="md-banner__button md-icon"
-            aria-label="{{ lang.t('announce.dismiss') }}"
-          >
-            {% include ".icons/material/close.svg" %}
-          </button>
-        {% endif %}
-        {% block announce %}
-        <center>
-          <p style="color:white;">
-            <a href="https://www.twitter.com/WarnerTeddy" style="color:white;">
-            <span class="announcelarge">Check out </span><strong>@WarnerTeddy</strong> on
-            <span class="twemoji twitter">
-              <i style="background: #1DA1F2;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;" class="fab fa-twitter"></i>
-            </span>
-            <strong>Twitter</strong>
-           </a>
-          </p>
-        </center>
-      {% endblock %}
-      </div>
-      {% if "announce.dismiss" in features %}
-        {% include "partials/javascripts/announce.html" %}
-      {% endif %}
-    </aside>
-  {% endif %}
-</div>
+{% block announce %}{% endblock %}
 
 {% block header %}
 <header class="md-header" data-md-component="header">
@@ -51,7 +18,7 @@
   aria-label="{{ config.site_name }}"
   data-md-component="logo"
   >
-  <img class="logo" src="../images/outlinedTeddyWarner.svg" alt="Teddy Warner"/>
+  <img class="logo" src="../assets/images/outlinedTeddyWarner.svg" alt="Teddy Warner"/>
   </a>
 
     <!-- Header title -->

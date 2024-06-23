@@ -68,8 +68,8 @@ Addressing the developing demand for food requires a direct confrontation with e
 
 <center>
 
-![](../images/AdaptableAquaponics/note1.png){width="48.5%"}
-![](../images/AdaptableAquaponics/note2.png){width="48%"}
+![](../assets/images/AdaptableAquaponics/note1.png){width="48.5%"}
+![](../assets/images/AdaptableAquaponics/note2.png){width="48%"}
   <figcaption>Aquaponics System Diagrams</figcaption>
 
 </center>
@@ -93,7 +93,7 @@ Both the Fusion 360 model and the prototyping mesh & SVG files for this project 
 
 !!! Success "Make it Modular"
 
-    ![alt-text](../images/AdaptableAquaponics/scholarship.jpg){: align=left height="4em"}
+    ![alt-text](../assets/images/AdaptableAquaponics/scholarship.jpg){: align=left height="4em"}
 
      Adaptive Aquaponics is the scaled successor to my <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">Assistive Aquaponics Fish Tank</a> & my winning entry into Autodesk Instructable's <a href="https://www.instructables.com/contest/makeitmodular2022/">Make It Modular</a> student design challenge receiving the Autodesk Construction Solutions Scholarship Award. Be sure to check [Adaptable Aquaponics](https://www.instructables.com/Adaptable-Aquaponics/) out on instructables!
 
@@ -119,7 +119,7 @@ Adaptable Aquaponics is constructed with layered modularity, a distinction highl
 
 <center>
 
-![](../images/AdaptableAquaponics/modelinfucion.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/modelinfucion.jpg){width="100%"}
 
 </center>
 
@@ -131,7 +131,7 @@ Shifting to an analysis of the CAD work behind Adaptable Aquaponics, I was super
 
 <center>
 
-![](../images/AdaptableAquaponics/AutomatedModelingToolbar.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/AutomatedModelingToolbar.jpg){width="100%"}
 
 </center>
 
@@ -139,7 +139,7 @@ Automated modeling is about as intuitive as you can get, requiring only three in
 
 <center>
 
-![](../images/AdaptableAquaponics/automateddesign.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/automateddesign.jpg){width="100%"}
   <figcaption>Bodies to Avoid are highlighted red, while Faces to Connect are highlighted in blue</figcaption>
 
 </center>
@@ -158,7 +158,7 @@ Preferences < Design < Allow 3D sketching of lines and splines
 
 <center>
 
-![](../images/AdaptableAquaponics/preferences.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/preferences.jpg){width="100%"}
 
 </center>
 
@@ -166,7 +166,7 @@ Preferences < Design < Allow 3D sketching of lines and splines
  
 <center>
 
-![](../images/AdaptableAquaponics/spatialplumbing.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/spatialplumbing.jpg){width="100%"}
 
 </center>
  
@@ -184,7 +184,7 @@ Once Adaptable Aquaponics was finalized - *the 95th iteration ... phew* - I cont
 
 <center>
 
-![](../images/AdaptableAquaponics/rendertoolbar.jpg){width="55%"}
+![](../assets/images/AdaptableAquaponics/rendertoolbar.jpg){width="55%"}
 
 </center>
 
@@ -198,8 +198,8 @@ Setup < Scene Settings < Environment Library
 
 <center>
 
-![](../images/AdaptableAquaponics/RenderWorkspace.jpg){width="76.8%"}
-![](../images/AdaptableAquaponics/hdirbg.jpg){width="21%"}
+![](../assets/images/AdaptableAquaponics/RenderWorkspace.jpg){width="76.8%"}
+![](../assets/images/AdaptableAquaponics/hdirbg.jpg){width="21%"}
 
 </center>
 
@@ -213,9 +213,9 @@ Setup < Scene Settings
 
 <center>
 
-![](../images/AdaptableAquaponics/Render1.png){width="63%"}
-![](../images/AdaptableAquaponics/render2.png){width="35.5%"}
-![](../images/AdaptableAquaponics/render3.png){width="99.25%"}
+![](../assets/images/AdaptableAquaponics/Render1.png){width="63%"}
+![](../assets/images/AdaptableAquaponics/render2.png){width="35.5%"}
+![](../assets/images/AdaptableAquaponics/render3.png){width="99.25%"}
 
 </center>
 
@@ -243,10 +243,10 @@ Computationally designed elements utilize organic surveys to ensure optimal geom
 
 <center>
 
-![](../images/AdaptableAquaponics/prusaslicer.jpg){width="53%"}
-![](../images/AdaptableAquaponics/print1.jpg){width="44.5%"}
-![](../images/AdaptableAquaponics/print2.jpg){width="48%"}
-![](../images/AdaptableAquaponics/print3.jpg){width="49.4%"}
+![](../assets/images/AdaptableAquaponics/prusaslicer.jpg){width="53%"}
+![](../assets/images/AdaptableAquaponics/print1.jpg){width="44.5%"}
+![](../assets/images/AdaptableAquaponics/print2.jpg){width="48%"}
+![](../assets/images/AdaptableAquaponics/print3.jpg){width="49.4%"}
 
 </center>
 
@@ -256,7 +256,7 @@ PETG is my go-to generic 3D printing material, however, it really shines when fa
 
 <iframe width="98%" height="560" src="https://www.youtube.com/embed/-e6EYHS1u_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![](../images/AdaptableAquaponics/post-processedprint.jpg){width="98%"}
+![](../assets/images/AdaptableAquaponics/post-processedprint.jpg){width="98%"}
 
 </center>
 
@@ -270,12 +270,12 @@ I cleaned up the final cut parts with some soap and water, before continuing to 
 
 <center>
 
-![](../images/AdaptableAquaponics/solarparts.jpg){width="60%"}
-![](../images/AdaptableAquaponics/assembledsolar.jpg){width="39%"}
+![](../assets/images/AdaptableAquaponics/solarparts.jpg){width="60%"}
+![](../assets/images/AdaptableAquaponics/assembledsolar.jpg){width="39%"}
 
 <iframe width="99%" height="560" src="https://www.youtube.com/embed/RmUPD9cld18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![](../images/AdaptableAquaponics/assembledshippingcont.jpg){width="99%"}
+![](../assets/images/AdaptableAquaponics/assembledshippingcont.jpg){width="99%"}
 
 </center>
 
@@ -287,9 +287,9 @@ The glue up of these shelves was a bit finicky, as my fingers just seem to be a 
 
 <iframe width="97.5%" height="560" src="https://www.youtube.com/embed/_TvLxb7OKS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![](../images/AdaptableAquaponics/assembledshelf.jpg){width="48%"}
-![](../images/AdaptableAquaponics/installedshelf.jpg){width="49%"}
-![](../images/AdaptableAquaponics/assembledmodel.jpg){width="97.5%"}
+![](../assets/images/AdaptableAquaponics/assembledshelf.jpg){width="48%"}
+![](../assets/images/AdaptableAquaponics/installedshelf.jpg){width="49%"}
+![](../assets/images/AdaptableAquaponics/assembledmodel.jpg){width="97.5%"}
 
 </center>
 
@@ -299,7 +299,7 @@ As a finishing touch, I used a [Cricut Explore Air 2](https://cricut.com/en-us/c
 
 <iframe width="98%" height="560" src="https://www.youtube.com/embed/bYOHFo1ECQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![](../images/AdaptableAquaponics/Sticker!.jpg){width="98%"}
+![](../assets/images/AdaptableAquaponics/Sticker!.jpg){width="98%"}
 
 </center>
 
@@ -308,9 +308,9 @@ As a finishing touch, I used a [Cricut Explore Air 2](https://cricut.com/en-us/c
 
 <center>
 
-![](../images/AdaptableAquaponics/glory3.jpg){width="49.5%"}
-![](../images/AdaptableAquaponics/glory2.jpg){width="47%"}
-![](../images/AdaptableAquaponics/glory1.jpg){width="97%"}
+![](../assets/images/AdaptableAquaponics/glory3.jpg){width="49.5%"}
+![](../assets/images/AdaptableAquaponics/glory2.jpg){width="47%"}
+![](../assets/images/AdaptableAquaponics/glory1.jpg){width="97%"}
 
 </center>
 

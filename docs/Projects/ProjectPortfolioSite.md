@@ -479,7 +479,7 @@ theme:
     ```
 
     1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-        text__, images, ... basically anything that can be expressed in Markdown.
+        text__, assets/images, ... basically anything that can be expressed in Markdown.
 
 === "C++"
 
@@ -677,13 +677,13 @@ git push # (3)
     You now have built your very own static site with [MKdocs](https://www.mkdocs.org/) and its [Material Theme](https://squidfunk.github.io/mkdocs-material/).
 
 **Wooo :partying_face: :partying_face:** as of 12/01/2021, *teddywarner.org* is now **100 Commits** old!!
-![](../images/PortfolioSite/100commit.jpg){width="100%"}
+![](../assets/images/PortfolioSite/100commit.jpg){width="100%"}
 
 **200 Commits :raised_hands:** - 05/02/2022!
-![](../images/PortfolioSite/200commit.jpg){width="100%"}
+![](../assets/images/PortfolioSite/200commit.jpg){width="100%"}
 
 **... and 300 Commits! :exploding_head:** - 06/28/2023!
-![](../images/PortfolioSite/300commit.png){width="100%"}
+![](../assets/images/PortfolioSite/300commit.png){width="100%"}
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control

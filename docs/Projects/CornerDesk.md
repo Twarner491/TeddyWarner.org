@@ -48,8 +48,8 @@ This start of the Pandemic project stemmed from my freshman year engineering cap
 
 <center>
 
-![](../images/CornerDesk/desknotes1.jpg){width="95%"}
-![](../images/CornerDesk/desknotes2.jpg){width="60%"}
+![](../assets/images/CornerDesk/desknotes1.jpg){width="95%"}
+![](../assets/images/CornerDesk/desknotes2.jpg){width="60%"}
 
 </center>
 
@@ -67,7 +67,7 @@ However shortly after finishing up the CAD aspect of this project, Covid-19 caus
 
 <center>
 
-![](../images/CornerDesk/kregjig.jpg){width="100%"}
+![](../assets/images/CornerDesk/kregjig.jpg){width="100%"}
 
 </center>
 
@@ -77,9 +77,9 @@ A couple of days after getting the wood, I finally started assembling the desk, 
 
 <center>
 
-![](../images/CornerDesk/framelayout.jpg){width="100%"}
-![](../images/CornerDesk/baseframe.jpg){width="100%"}
-![](../images/CornerDesk/finishedwoodassembly.jpg){width="100%"}
+![](../assets/images/CornerDesk/framelayout.jpg){width="100%"}
+![](../assets/images/CornerDesk/baseframe.jpg){width="100%"}
+![](../assets/images/CornerDesk/finishedwoodassembly.jpg){width="100%"}
 
 </center>
 
@@ -93,7 +93,7 @@ I spent the next two days painting the frame with three coats of white paint and
 
 <center>
 
-![](../images/CornerDesk/stainedtop.jpg){width="100%"}
+![](../assets/images/CornerDesk/stainedtop.jpg){width="100%"}
   <figcaption>Stained Desktop</figcaption>
 
 </center>
@@ -104,7 +104,7 @@ As I said earlier the choice of wood for the surface of the desk took some thoug
 
 <center>
 
-![](../images/CornerDesk/laptoparm.jpg){width="100%"}
+![](../assets/images/CornerDesk/laptoparm.jpg){width="100%"}
 
 </center>
 
@@ -114,7 +114,7 @@ This is a huge part of the project as it's one of the reasons I decided to even 
 
 <center>
 
-![](../images/CornerDesk/cableclips.jpg){width="100%"}
+![](../assets/images/CornerDesk/cableclips.jpg){width="100%"}
 
 </center>
 
@@ -124,7 +124,7 @@ I love how my desk came out, It solves all of my annoying cable issues and fits 
 
 <center>
 
-![](../images/CornerDesk/deskbeautyshot.jpg){width="100%"}
+![](../assets/images/CornerDesk/deskbeautyshot.jpg){width="100%"}
   <figcaption>Final Desk Beauty Shot</figcaption>
 
 </center>

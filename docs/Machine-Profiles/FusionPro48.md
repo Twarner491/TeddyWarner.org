@@ -37,7 +37,7 @@ Constantly Updating - https://img.shields.io/badge/progress-constantly%20updatin
 
 <center>
 
-![](../images/FusionPro48/corellprint.png){width="90%"}
+![](../assets/images/FusionPro48/corellprint.png){width="90%"}
 
 </center>
 
@@ -46,7 +46,7 @@ Preferences < Advanced < Paper Size has to pe “PostScript Custom Page Size”
 
 <center>
 
-![](../images/FusionPro48/papersize.png){width="50%"}
+![](../assets/images/FusionPro48/papersize.png){width="50%"}
 
 </center>
 
@@ -57,7 +57,7 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/printcolor.png){width="50%"}
+![](../assets/images/FusionPro48/printcolor.png){width="50%"}
 
 </center>
 
@@ -66,7 +66,7 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/printpostscript.png){width="50%"}
+![](../assets/images/FusionPro48/printpostscript.png){width="50%"}
 
 </center>
 
@@ -78,7 +78,7 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/machinejog.png){width="200"}
+![](../assets/images/FusionPro48/machinejog.png){width="200"}
 
 </center>
         
@@ -88,7 +88,7 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/filealignment.png){width="90%"}
+![](../assets/images/FusionPro48/filealignment.png){width="90%"}
 
 </center>
 
@@ -108,7 +108,7 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/materialsettings.png){width="40%"}
+![](../assets/images/FusionPro48/materialsettings.png){width="40%"}
 
 </center>
 
@@ -116,8 +116,8 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/engravesettings.png){width="47.5%"}
-![](../images/FusionPro48/vectorsettings.png){width="47%"}
+![](../assets/images/FusionPro48/engravesettings.png){width="47.5%"}
+![](../assets/images/FusionPro48/vectorsettings.png){width="47%"}
 
 </center>
 
@@ -125,7 +125,7 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/colormap.png){width="40%"}
+![](../assets/images/FusionPro48/colormap.png){width="40%"}
 
 </center>
 
@@ -143,7 +143,7 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/intreface.png){width="90%"}
+![](../assets/images/FusionPro48/intreface.png){width="90%"}
 
 </center>
 
@@ -164,8 +164,8 @@ Then Click ok until your back to the Print page
 
 <center>
 
-![](../images/FusionPro48/airnozzlefar.png){width="47.2%"}
-![](../images/FusionPro48/airnozzleclose.png){width="47%"}
+![](../assets/images/FusionPro48/airnozzlefar.png){width="47.2%"}
+![](../assets/images/FusionPro48/airnozzleclose.png){width="47%"}
 
 </center>
 

@@ -112,7 +112,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../images/8-bitComputer/setastable.jpg){ width="80%"}
+![](../assets/images/8-bitComputer/setastable.jpg){ width="80%"}
 
 </center>
 
@@ -120,14 +120,14 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../images/8-bitComputer/555wave.jpg){ width="100%"}
+![](../assets/images/8-bitComputer/555wave.jpg){ width="100%"}
   <figcaption>Clock vs Capacitor</figcaption>
 
 </center>
 
 <center>
 
-![](../images/8-bitComputer/variableastable.jpg){ width="80%"}
+![](../assets/images/8-bitComputer/variableastable.jpg){ width="80%"}
 
 </center>
 
@@ -135,7 +135,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../images/8-bitComputer/monostable.jpg){ width="80%"}
+![](../assets/images/8-bitComputer/monostable.jpg){ width="80%"}
 
 </center>
 
@@ -155,7 +155,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../images/8-bitComputer/clockmodule.jpg){ width="100%"}
+![](../assets/images/8-bitComputer/clockmodule.jpg){ width="100%"}
 
 </center>
 
@@ -173,7 +173,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../images/8-bitComputer/8-BitRegister.jpg){ width="100%"}
+![](../assets/images/8-bitComputer/8-BitRegister.jpg){ width="100%"}
 
 </center>
 
@@ -245,13 +245,13 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../images/8-bitComputer/Fibonaccisequencespiral.png){ width="60%"}
+![](../assets/images/8-bitComputer/Fibonaccisequencespiral.png){ width="60%"}
 
 </center>
 
 <center>
 
-![](../images/8-bitComputer/FibonacciEquasion.png){ width="80%"}
+![](../assets/images/8-bitComputer/FibonacciEquasion.png){ width="80%"}
 
 </center>
 

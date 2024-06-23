@@ -40,8 +40,8 @@ Subtractive manufacturing is a process I've always found mesmerizing. Although a
 
 <center>
 
-![](../images/MillingWorkflow/MPCNC1.jpg){width="49%"}
-![](../images/MillingWorkflow/MPCNC2.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/MPCNC1.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/MPCNC2.jpg){width="49%"}
 
   <figcaption>My Mostly Printed CNC Machine</figcaption>
 
@@ -53,8 +53,8 @@ Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com
 
 <center>
 
-[![](../images/MillingWorkflow/BantamBanner.png){width="54%"}](https://www.bantamtools.com/)
-[![](../images/MillingWorkflow/ShopbotBanner.png){width="43%"}](https://www.shopbottools.com/)
+[![](../assets/images/MillingWorkflow/BantamBanner.png){width="54%"}](https://www.bantamtools.com/)
+[![](../assets/images/MillingWorkflow/ShopbotBanner.png){width="43%"}](https://www.shopbottools.com/)
 
 </center>
 
@@ -85,8 +85,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darkdiameter.png#only-light){width="50%"}
-          ![](../images/MillingWorkflow/lightdiameter.png#only-dark){width="50%"}
+          ![](../assets/images/MillingWorkflow/darkdiameter.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightdiameter.png#only-dark){width="50%"}
 
         </center>
 
@@ -96,8 +96,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darkflute.png#only-light){width="50%"}
-          ![](../images/MillingWorkflow/lightflute.png#only-dark){width="50%"}
+          ![](../assets/images/MillingWorkflow/darkflute.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightflute.png#only-dark){width="50%"}
 
         </center>
 
@@ -107,8 +107,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darksurface.png#only-light){width="40%"}
-          ![](../images/MillingWorkflow/lightsurface.png#only-dark){width="40%"}
+          ![](../assets/images/MillingWorkflow/darksurface.png#only-light){width="40%"}
+          ![](../assets/images/MillingWorkflow/lightsurface.png#only-dark){width="40%"}
 
         </center>
 
@@ -118,8 +118,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darkchip.png#only-light){width="32%"}
-          ![](../images/MillingWorkflow/lightchip.png#only-dark){width="32%"}
+          ![](../assets/images/MillingWorkflow/darkchip.png#only-light){width="32%"}
+          ![](../assets/images/MillingWorkflow/lightchip.png#only-dark){width="32%"}
 
         </center>
 
@@ -129,8 +129,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darkspindal.png#only-light){width="30%"}
-          ![](../images/MillingWorkflow/lightspindal.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkspindal.png#only-light){width="30%"}
+          ![](../assets/images/MillingWorkflow/lightspindal.png#only-dark){width="30%"}
 
         </center>
 
@@ -155,8 +155,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darkfeed.png#only-light){width="30%"}
-          ![](../images/MillingWorkflow/lightfeed.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkfeed.png#only-light){width="30%"}
+          ![](../assets/images/MillingWorkflow/lightfeed.png#only-dark){width="30%"}
 
         </center>
 
@@ -181,8 +181,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
         
         <center>
 
-          ![](../images/MillingWorkflow/darkplunge.png#only-light){width="45%"}
-          ![](../images/MillingWorkflow/lightplunge.png#only-dark){width="45%"}
+          ![](../assets/images/MillingWorkflow/darkplunge.png#only-light){width="45%"}
+          ![](../assets/images/MillingWorkflow/lightplunge.png#only-dark){width="45%"}
 
         </center>
 
@@ -207,8 +207,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darkstepdown.png#only-light){width="30%"}
-          ![](../images/MillingWorkflow/lightstepdown.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkstepdown.png#only-light){width="30%"}
+          ![](../assets/images/MillingWorkflow/lightstepdown.png#only-dark){width="30%"}
 
         </center>
 
@@ -233,8 +233,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../images/MillingWorkflow/darkstepover.png#only-light){width="30%"}
-          ![](../images/MillingWorkflow/lightstepover.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkstepover.png#only-light){width="30%"}
+          ![](../assets/images/MillingWorkflow/lightstepover.png#only-dark){width="30%"}
 
         </center> 
 
@@ -270,7 +270,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row1" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/wax.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/wax.png">
 			</td>
       <td>
         <ul>
@@ -298,7 +298,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row20" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/softwood.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/softwood.png">
 			</td>
       <td>
         <ul>
@@ -323,7 +323,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row2" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/wood.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/wood.png">
 			</td>
       <td>
         <ul>
@@ -347,7 +347,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row3" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/mdf.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/mdf.png">
 			</td>
       <td>
         <p>⚠️ <b>Strong Dust Collection Required</b>, as the fused nature of the material creates extremely fine dust.</p>
@@ -390,7 +390,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/obs.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/obs.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row5');">
@@ -399,7 +399,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row5" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/hdpe.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/hdpe.png">
 			</td>
       <td>
         <ul>
@@ -446,7 +446,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/peek.png" align="left">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/peek.png" align="left">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row7');">
@@ -471,7 +471,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pei.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pei.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row8');">
@@ -480,7 +480,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row8" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pvc.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pvc.png">
 			</td>
       <td>
         <ul>
@@ -506,7 +506,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row9" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pom.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pom.png">
 			</td>
       <td>
         <ul>
@@ -532,7 +532,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row10" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/abs.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/abs.png">
 			</td>
       <td>
         <ul>
@@ -575,7 +575,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/pc.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pc.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row12');">
@@ -584,7 +584,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row12" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/nylon.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/nylon.png">
 			</td>
       <td>
         <ul>
@@ -610,7 +610,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row13" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/acrylic.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/acrylic.png">
 			</td>
       <td>
       <p>⚠️ Acrylic is prone to stress cracks & fractures during milling & post-processing.</p>
@@ -652,7 +652,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/cf.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/cf.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row14');">
@@ -661,7 +661,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row14" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/aluminum.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/aluminum.png">
 			</td>
       <td>
         <ul>
@@ -704,7 +704,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/brass.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/brass.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row16');">
@@ -713,7 +713,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row16" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/copper.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/copper.png">
 			</td>
       <td>
         <ul>
@@ -754,7 +754,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/steel.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/steel.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row18');">
@@ -763,7 +763,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row18" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/images/MillingWorkflow/materials/foam.png">
+        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/foam.png">
 			</td>
       <td>
         <ul>
@@ -893,14 +893,14 @@ Feeds and speeds are equally dependent on material properties and the specific o
 
 <center>
 
-![](../images/MillingWorkflow/galeraw.jpg){width="98%"}
+![](../assets/images/MillingWorkflow/galeraw.jpg){width="98%"}
 
 </center>
 
 <center>
 
-![](../images/MillingWorkflow/galeglory1.jpg){width="49%"}
-![](../images/MillingWorkflow/galeglory2.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/galeglory1.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/galeglory2.jpg){width="49%"}
 
 </center>
 
@@ -936,30 +936,30 @@ Feeds and speeds are equally dependent on material properties and the specific o
 
 <center>
 
-![](../images/MillingWorkflow/topographylocation.jpg){width="55%"}
+![](../assets/images/MillingWorkflow/topographylocation.jpg){width="55%"}
   <figcaption>Caption</figcaption>
 
 </center>
 
 <center>
 
-![](../images/MillingWorkflow/Topographyselection.jpg){width="100%"}
+![](../assets/images/MillingWorkflow/Topographyselection.jpg){width="100%"}
   <figcaption>Caption</figcaption>
 
 </center>
 
 <center>
 
-![](../images/MillingWorkflow/topographywaterbase.jpg){width="55%"}
+![](../assets/images/MillingWorkflow/topographywaterbase.jpg){width="55%"}
   <figcaption>Caption</figcaption>
 
 </center>
 
 <center>
 
-![](../images/MillingWorkflow/tahoestock.jpg){width="33%"}
-![](../images/MillingWorkflow/tahoeroughingpass.jpg){width="33%"}
-![](../images/MillingWorkflow/tahoefinishingpass.jpg){width="33%"}
+![](../assets/images/MillingWorkflow/tahoestock.jpg){width="33%"}
+![](../assets/images/MillingWorkflow/tahoeroughingpass.jpg){width="33%"}
+![](../assets/images/MillingWorkflow/tahoefinishingpass.jpg){width="33%"}
 
 </center>
 
@@ -979,8 +979,8 @@ Feeds and speeds are equally dependent on material properties and the specific o
 
 <center>
 
-![](../images/MillingWorkflow/tahoeglory1.jpg){width="49%"}
-![](../images/MillingWorkflow/tahoeglory2.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/tahoeglory1.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/tahoeglory2.jpg){width="49%"}
 
 </center>
 
@@ -991,7 +991,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
 
 <center>
 
-![](../images/MillingWorkflow/EagleBanner.png){width="100%"}
+![](../assets/images/MillingWorkflow/EagleBanner.png){width="100%"}
 
 </center>
 

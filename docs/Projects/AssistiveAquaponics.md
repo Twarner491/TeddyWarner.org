@@ -69,7 +69,7 @@ The Assistive Aquaponics Fish Tank was my final project masterpiece during my cy
 
 [Fab Academy 2021 - Assistive Aquaponics Fish Tank :fontawesome-solid-earth-americas:](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/){ .md-button .md-button--primary }
 
-![](../images/AssistiveAquaponics/presentation.png)
+![](../assets/images/AssistiveAquaponics/presentation.png)
 
 <iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

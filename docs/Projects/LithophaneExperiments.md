@@ -65,26 +65,26 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 <center>
 
-![](../images/LithophaneExperiments/friends.jpg){width="49.5%"}
-![](../images/LithophaneExperiments/friendslithophane.jpg){width="46.6%"}
+![](../assets/images/LithophaneExperiments/friends.jpg){width="49.5%"}
+![](../assets/images/LithophaneExperiments/friendslithophane.jpg){width="46.6%"}
 
-![](../images/LithophaneExperiments/fam.jpg){width="51.5%"}
-![](../images/LithophaneExperiments/famlithophane.jpg){width="45.7%"}
+![](../assets/images/LithophaneExperiments/fam.jpg){width="51.5%"}
+![](../assets/images/LithophaneExperiments/famlithophane.jpg){width="45.7%"}
 
-![](../images/LithophaneExperiments/MC.jpg){width="51.5%"}
-![](../images/LithophaneExperiments/MClithophane.jpg){width="46.3%"}
+![](../assets/images/LithophaneExperiments/MC.jpg){width="51.5%"}
+![](../assets/images/LithophaneExperiments/MClithophane.jpg){width="46.3%"}
 
-![](../images/LithophaneExperiments/nina.jpg){width="50%"}
-![](../images/LithophaneExperiments/ninalithophane.jpg){width="46.4%"}
+![](../assets/images/LithophaneExperiments/nina.jpg){width="50%"}
+![](../assets/images/LithophaneExperiments/ninalithophane.jpg){width="46.4%"}
 
-![](../images/LithophaneExperiments/zach.jpg){width="55.5%"}
-![](../images/LithophaneExperiments/zachlithophane.jpg){width="43%"}
+![](../assets/images/LithophaneExperiments/zach.jpg){width="55.5%"}
+![](../assets/images/LithophaneExperiments/zachlithophane.jpg){width="43%"}
 
-![](../images/LithophaneExperiments/maeko.jpg){width="47.2%"}
-![](../images/LithophaneExperiments/lithophanemakeo.jpg){width="49.1%"}
+![](../assets/images/LithophaneExperiments/maeko.jpg){width="47.2%"}
+![](../assets/images/LithophaneExperiments/lithophanemakeo.jpg){width="49.1%"}
 
-![](../images/LithophaneExperiments/alex.jpg){width="51.5%"}
-![](../images/LithophaneExperiments/alexlithophane.jpg){width="44.5%"}
+![](../assets/images/LithophaneExperiments/alex.jpg){width="51.5%"}
+![](../assets/images/LithophaneExperiments/alexlithophane.jpg){width="44.5%"}
 
 </center>
 
@@ -92,14 +92,14 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 <center>
 
-![](../images/LithophaneExperiments/keithharring.jpg){width="51%"}
-![](../images/LithophaneExperiments/keithharringlithophane.jpg){width="45%"}
+![](../assets/images/LithophaneExperiments/keithharring.jpg){width="51%"}
+![](../assets/images/LithophaneExperiments/keithharringlithophane.jpg){width="45%"}
 
-![](../images/LithophaneExperiments/painting.jpg){width="52%"}
-![](../images/LithophaneExperiments/paintinglithophane.jpg){width="46%"}
+![](../assets/images/LithophaneExperiments/painting.jpg){width="52%"}
+![](../assets/images/LithophaneExperiments/paintinglithophane.jpg){width="46%"}
 
-![](../images/LithophaneExperiments/gerogiaokeef.jpg){width="51.5%"}
-![](../images/LithophaneExperiments/gerogiaokeeflithophane.jpg){width="44.6%"}
+![](../assets/images/LithophaneExperiments/gerogiaokeef.jpg){width="51.5%"}
+![](../assets/images/LithophaneExperiments/gerogiaokeeflithophane.jpg){width="44.6%"}
 
 </center>
 

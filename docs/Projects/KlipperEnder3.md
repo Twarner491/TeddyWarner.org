@@ -59,7 +59,7 @@ Due to uncertainty surrounding lab access during the Covid-19 pandemic, I receiv
 
 <center>
 
-![](../images/KlipperEnder3/directdrive.jpg){width="70%"}
+![](../assets/images/KlipperEnder3/directdrive.jpg){width="70%"}
 
 </center>
 
@@ -67,8 +67,8 @@ Finally, I moved all of the electronics of the machine to the rear of the machin
 
 <center>
 
-![](../images/KlipperEnder3/electronicsenclouser.jpg){width="80%"}
-![](../images/KlipperEnder3/installedelebox.jpg){width="80%"}
+![](../assets/images/KlipperEnder3/electronicsenclouser.jpg){width="80%"}
+![](../assets/images/KlipperEnder3/installedelebox.jpg){width="80%"}
 
 </center>
 
@@ -76,11 +76,11 @@ I used this Thingiverse [design](https://www.thingiverse.com/thing:2886101) to m
 
 <center>
 
-![](../images/KlipperEnder3/ender3cam.jpg){width="80%"}
+![](../assets/images/KlipperEnder3/ender3cam.jpg){width="80%"}
 
 </center>
 
-![](../images/KlipperEnder3/wholeprinter.jpg){: align=right width="30%"}
+![](../assets/images/KlipperEnder3/wholeprinter.jpg){: align=right width="30%"}
 
 ## Klipper Installation
 
@@ -113,7 +113,7 @@ sudo apt-get upgrade
 
 <center>
 
-![](../images/KlipperEnder3/fluiddinterface.png){width="95%"}
+![](../assets/images/KlipperEnder3/fluiddinterface.png){width="95%"}
   <figcaption>The FluiddPi Web Server Interface</figcaption>
 
 </center>
@@ -162,7 +162,7 @@ As mentioned prior, unlike the Marlin firmware, Klipper is not compiled for a sp
 
 <center>
 
-![](../images/KlipperEnder3/fluiddconfig.png){width="95%"}
+![](../assets/images/KlipperEnder3/fluiddconfig.png){width="95%"}
   <figcaption>FluiddPi's Configuration Menu in Web Server Interface</figcaption>
 
 </center>

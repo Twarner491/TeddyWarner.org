@@ -49,7 +49,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 **Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!**
 
-![](../images/ParametricGenerator/beautyshot1.jpg){width="100%"}
+![](../assets/images/ParametricGenerator/beautyshot1.jpg){width="100%"}
 
 *Be Sure to check out this projects page on [PrusaPrinters](https://www.prusaprinters.org/prints/76271-parametric-bottle-cap-generator), and its [Instructable](https://www.instructables.com/Parametric-Bottle-Cap-Generator/)!*
 
@@ -63,7 +63,7 @@ This model was designed in Fusion 360 and uses 3 required input parameters and [
 
 <center>
 
-![](../images/ParametricGenerator/capparameters.png){width="95%"}
+![](../assets/images/ParametricGenerator/capparameters.png){width="95%"}
 
 </center>
 
@@ -75,7 +75,7 @@ Following the standard Metric thread profile[^1] (displayed in the diagram below
 
 <center>
 
-![](../images/ParametricGenerator/ISOThreadForm1.jpg){width="75%"}
+![](../assets/images/ParametricGenerator/ISOThreadForm1.jpg){width="75%"}
 
 </center>
 
@@ -100,7 +100,7 @@ all of which are included, shown below, to generate the cap's threads.
 
 <center>
 
-![](../images/ParametricGenerator/ThreadCap.png){width="95%"}
+![](../assets/images/ParametricGenerator/ThreadCap.png){width="95%"}
 
 </center>
 
@@ -108,7 +108,7 @@ Following the Generation of the caps thread, an inner contour is added defined b
 
 <center>
 
-![](../images/ParametricGenerator/ISOExternalThreadRootContour.jpg){width="50%"}
+![](../assets/images/ParametricGenerator/ISOExternalThreadRootContour.jpg){width="50%"}
 
 </center>
 
@@ -121,7 +121,7 @@ The contour is created with Fusion's Fillet tool and the prior mentioned values,
 
 <center>
 
-![](../images/ParametricGenerator/threadfillet.png){width="95%"}
+![](../assets/images/ParametricGenerator/threadfillet.png){width="95%"}
 
 </center>
 
@@ -153,31 +153,31 @@ There are three measurements required to generate your cap, all of which can be 
 1. [x] **Connector Diameter -**
 Measure the diameter (in MM) of your existing connector, from the very farthest point (i.e. the point of the thread) on either side. 
 <center>
-![](../images/ParametricGenerator/diametermeasurment.jpg){width="95%"}
+![](../assets/images/ParametricGenerator/diametermeasurment.jpg){width="95%"}
 </center>
 Then, update the Expression value in the ConnectDiameter row (the box highlighted yellow below) with this found value.
 <center>
-![](../images/ParametricGenerator/connectdiameter.png){width="95%"}
+![](../assets/images/ParametricGenerator/connectdiameter.png){width="95%"}
 </center>
 
 2. [x] **Connector Length -**
 Measure the height (in MM) of your existing connector, from the top lip to underneath the threads.
 <center>
-![](../images/ParametricGenerator/legnthmeasurement.jpg){width="95%"}
+![](../assets/images/ParametricGenerator/legnthmeasurement.jpg){width="95%"}
 </center>
 Then, update the Expression value in the ConnectLegnth row (the box highlighted yellow below) with this found value.
 <center>
-![](../images/ParametricGenerator/connectlegnth.png){width="95%"}
+![](../assets/images/ParametricGenerator/connectlegnth.png){width="95%"}
 </center>
  
 3. [x] **Thread Pitch -**
 Measure the thread pitch of your existing connector, the distance in MM between the points of two sequential threads. 
 <center>
-![](../images/ParametricGenerator/pitchmeasurment.jpg){width="95%"}
+![](../assets/images/ParametricGenerator/pitchmeasurment.jpg){width="95%"}
 </center>
 Then, update the Expression value in the ThreadPitch row (the box highlighted yellow below) with this found value.
 <center>
-![](../images/ParametricGenerator/threadpitch.png){width="95%"}
+![](../assets/images/ParametricGenerator/threadpitch.png){width="95%"}
 </center>
 
 ### Optional Customization
@@ -187,13 +187,13 @@ To offer a bit more customization to each generated cap, there are a couple of d
 1. [ ] **Number of Grips -**
 The number of grips lining the edge of the cap can be changed in the Expression value of the NumofGrips row. I find values between 40 through 55 work best, but if your experimenting, going below 11 will stop the generation of grip chamfered.
 <center>
-![](../images/ParametricGenerator/numofgrips.png){width="95%"}
+![](../assets/images/ParametricGenerator/numofgrips.png){width="95%"}
 </center>
 
 2. [ ] **Grip Depth -**
 The depths of these grips can be altered, determining how grippy your grips are. I've found a value around 0.3 or 0.4 offers a good texture around the edge.
 <center>
-![](../images/ParametricGenerator/gripdepth.png){width="95%"}
+![](../assets/images/ParametricGenerator/gripdepth.png){width="95%"}
 </center>
 
 3. [ ] **Lid Style -**
@@ -207,19 +207,19 @@ in the Fusion browser. The lid styles can be toggled between via the eye icon to
 
 1. Plain -
 <center>
-![](../images/ParametricGenerator/plain.png){width="95%"}
+![](../assets/images/ParametricGenerator/plain.png){width="95%"}
 </center>
 2. Single Hole -
 <center>
-![](../images/ParametricGenerator/singlehole.png){width="95%"}
+![](../assets/images/ParametricGenerator/singlehole.png){width="95%"}
 </center>
 3. Salt Shaker -
 <center>
-![](../images/ParametricGenerator/saltshaker.png){width="95%"}
+![](../assets/images/ParametricGenerator/saltshaker.png){width="95%"}
 </center>
 4. Lanyard -
 <center>
-![](../images/ParametricGenerator/lanyard.png){width="95%"}
+![](../assets/images/ParametricGenerator/lanyard.png){width="95%"}
 </center>
 
 !!! success "Congrats!"
