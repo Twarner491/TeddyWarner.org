@@ -118,9 +118,14 @@
 }
 
 header {
+  height: 192px;
   padding-top: 10em;
   padding-left: 4em;
   padding-right: 4em;
+}
+
+.toggle header {
+  padding-top: 12.6em;
 }
 
 .menu {
@@ -231,6 +236,7 @@ header {
 .main-navigation ul {
   font-size: 9vmin;
   width: 100%;
+  height: auto;
   z-index: 4;
 }
 
@@ -240,6 +246,8 @@ header {
   position: relative;
   overflow: hidden;
   z-index: 4;
+  margin-top: -0.3em;
+  margin-bottom: -0.3em;
 }
 
 .main-navigation li:after {
@@ -248,7 +256,7 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1vmin;
+  height: auto;
   background-color: inherit;
   transform-origin: 0 50%;
   transform: translateX(-100%) skew(15deg);
@@ -261,7 +269,9 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   color: var(--md-default-bg-color);
-  line-height: 1.08;
+  font-family: "Crimson Pro";
+  font-size: 1.2em;
+  line-height: 1.2;
   text-decoration: none;
   user-select: none;
   padding: auto;
@@ -269,12 +279,20 @@ header {
   z-index: 4;
 }
 
+.main-navigation a:hover {
+  cursor: pointer;
+  color: var(--md-default-bg-color);
+}
+
 .main-content {
   z-index: 1;
 }
 
-.home:hover, .proj:hover, .mach:hover, .fab:hover {
-  color: #5466CE;
+.home, .proj, .writ {
+  transition: all 0.3s ease;
+}
+
+.home:hover, .proj:hover, .writ:hover {
   font-style: italic;
 }
 
@@ -836,6 +854,7 @@ header {
   .toggle .md-search__icon.md-icon:first-of-type {
       color: var(--md-default-fg-color);
   }
+  
 }
 
 @media (max-width: 1200px) { /* Laptop */
@@ -843,6 +862,12 @@ header {
     padding-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
+  }
+  .toggle header {
+    padding-top: 6.5em;
+  }
+  .main-navigation a {
+    font-size: 1.1em;
   }
   body {
     font-size: 0.9em;
@@ -1031,6 +1056,9 @@ header {
 @media (max-width: 695px) { /* Mobile */
   :root{
     --content6-height: 700px;
+  }
+  .main-navigation a {
+    font-size: 1.5em;
   }
   body {
     font-size: 0.8em;
