@@ -65,7 +65,7 @@ theme:
 
   logo: assets/images/TeddyWarner.svg
 
-  favicon: assets/images/TW.svg
+  favicon: assets/images/favicon.png
 
   icon:
     repo: fontawesome/brands/git-alt
