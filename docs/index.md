@@ -325,46 +325,47 @@ search:
   </script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-    const toneImage = document.querySelector('.project .toneimg');
-    const root = document.documentElement;
+      const toneImage = document.querySelector('.project .toneimg');
+      const root = document.documentElement;
       function colortheme() {
-        const selectedOption = document.querySelector('input[name="__palette"]:checked');
-        const currentTheme = selectedOption ? selectedOption.getAttribute('data-md-color-scheme') : 'light';
-        let toneUrl;
-        if (currentTheme === 'slate') {
-          toneUrl = getComputedStyle(root).getPropertyValue('--tone-url-slate').trim().replace(/^"(.*)"$/, '$1');
-        } else {
-          toneUrl = getComputedStyle(root).getPropertyValue('--tone-url-light').trim().replace(/^"(.*)"$/, '$1');
-        }
-        toneImage.setAttribute('href', toneUrl);
+          const selectedOption = document.querySelector('input[name="__palette"]:checked');
+          const currentTheme = selectedOption ? selectedOption.getAttribute('data-md-color-scheme') : 'light';
+          let toneUrl;
+          if (currentTheme === 'slate') {
+              toneUrl = getComputedStyle(root).getPropertyValue('--tone-url-slate').trim().replace(/^"(.*)"$/, '$1');
+          } else {
+              toneUrl = getComputedStyle(root).getPropertyValue('--tone-url-light').trim().replace(/^"(.*)"$/, '$1');
+          }
+          toneImage.setAttribute('href', toneUrl);
       }
-      function saveTheme() {
-        const selectedOption = document.querySelector('input[name="__palette"]:checked');
-        if (selectedOption) {
-          const currentTheme = selectedOption.getAttribute('data-md-color-scheme');
-          localStorage.setItem('theme', currentTheme);
-        }
-      }
-      function applySavedTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-          const themeOption = document.querySelector(`input[name="__palette"][data-md-color-scheme="${savedTheme}"]`);
-          if (themeOption) {
-            themeOption.checked = true;
-            root.setAttribute('data-md-color-scheme', savedTheme);
-            colortheme();
+        function saveTheme() {
+          const selectedOption = document.querySelector('input[name="__palette"]:checked');
+          if (selectedOption) {
+            const currentTheme = selectedOption.getAttribute('data-md-color-scheme');
+            localStorage.setItem('theme', currentTheme);
           }
         }
-      }
-      applySavedTheme();
-      document.querySelectorAll('input[name="__palette"]').forEach((input) => {
-        input.addEventListener('change', () => {
-          colortheme();
-          saveTheme();
+        function applySavedTheme() {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme) {
+            const themeOption = document.querySelector(`input[name="__palette"][data-md-color-scheme="${savedTheme}"]`);
+            if (themeOption) {
+              themeOption.checked = true;
+              root.setAttribute('data-md-color-scheme', savedTheme);
+              colortheme();
+            }
+          }
+        }
+        applySavedTheme();
+        colortheme(); 
+        document.querySelectorAll('input[name="__palette"]').forEach((input) => {
+            input.addEventListener('change', () => {
+                colortheme();
+                saveTheme();
+            });
         });
+        window.colortheme = colortheme;
       });
-      window.colortheme = colortheme;
-    });
   </script>
   <script src="../assets/js/index.js"></script>
 </body>
