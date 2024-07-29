@@ -53,7 +53,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/VonNiemannProbe/">
+          <a href="http://teddywarner.com/Projects/VonNiemannProbe/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/VonNiemannProbe/coverR.jpg"></div>
             <p class="projtitle">Von Niemann Probe</p>
             <p class="writeyear">Winter 2023</p>
@@ -65,7 +65,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/MillingWorflow/">
+          <a href="http://teddywarner.com/Projects/MillingWorflow/">
             <div class="imgparent"><img class="writeimg" style="object-position: 0px 60%;" src="../assets/images/MillingWorkflow/cover.jpg"></div>
             <p class="projtitle">CNC Milling Workflows</p>
             <p class="writeyear">2022-2023</p>
@@ -77,7 +77,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/AdaptableAquaponics/">
+          <a href="http://teddywarner.com/Projects/AdaptableAquaponics/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/AdaptableAquaponics/cover.jpg"></div>
             <p class="projtitle">Adaptable Aquaponics</p>
             <p class="writeyear">Summer 2022</p>
@@ -89,7 +89,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/SerialUPDI/">
+          <a href="http://teddywarner.com/Projects/SerialUPDI/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/SerialUPDI/ftdi2updisolderedtop.jpg"></div>
             <p class="projtitle">UPDI Programming</p>
             <p class="writeyear">Summer-Winter 2021</p>
@@ -101,7 +101,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/ParametricGenerator/">
+          <a href="http://teddywarner.com/Projects/ParametricGenerator/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/ParametricGenerator/beautyshot1.jpg"></div>
             <p class="projtitle">Parametric Bottle Cap Generator</p>
             <p class="writeyear">Fall 2021</p>
@@ -113,7 +113,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/LithophaneExperiments/">
+          <a href="http://teddywarner.com/Projects/LithophaneExperiments/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/LithophaneExperiments/friendslithophane.jpg"></div>
             <p class="projtitle">Lithophane Experiments</p>
             <p class="writeyear">2019-2022</p>
@@ -125,7 +125,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/Octoprint/">
+          <a href="http://teddywarner.com/Projects/Octoprint/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/Octoprint/personaloctoprint.jpg"></div>
             <p class="projtitle">Octoprint Setup</p>
             <p class="writeyear">Fall 2021</p>
@@ -137,7 +137,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">
+          <a href="http://teddywarner.com/Projects/AssistiveAquaponics/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/AssistiveAquaponics/tankhighlight.jpg"></div>
             <p class="projtitle">Assistive Aquaponics Fish Tank</p>
             <p class="writeyear">Winter-Spring 2021</p>
@@ -149,7 +149,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/KlipperEnder3/">
+          <a href="http://teddywarner.com/Projects/KlipperEnder3/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/KlipperEnder3/directdrive.jpg"></div>
             <p class="projtitle">Klipper Enabled Ender 3</p>
             <p class="writeyear">Spring-Summer 2021</p>
@@ -161,7 +161,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/ProjectPortfolioSite/">
+          <a href="http://teddywarner.com/Projects/ProjectPortfolioSite/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/PortfolioSite/highlightcode.jpg"></div>
             <p class="projtitle">Project Portfolio Site</p>
             <p class="writeyear">Summer 2021</p>
@@ -173,7 +173,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/CornerDesk/">
+          <a href="http://teddywarner.com/Projects/CornerDesk/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/CornerDesk/finishedwoodassembly.jpg"></div>
             <p class="projtitle">Cable-managed Corner Desk</p>
             <p class="writeyear">Spring 2020</p>

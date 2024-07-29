@@ -65,7 +65,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/MillingWorflow/">
+          <a href="http://teddywarner.com/writings/torpediniformes">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/snake.png"></div>
             <p class="projtitle">Torpediniformes</p>
             <p class="writeyear">2022</p>
