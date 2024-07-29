@@ -455,6 +455,28 @@ header {
   line-height: 109.588%;
 }
 
+.pfp {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 1px;
+  margin-bottom: -0.1em;
+  flex-shrink: 0;
+}
+
+.inlineImg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 2px;
+  margin-left: -2px;
+  margin-bottom: -0.3em;
+  flex-shrink: 0;
+}
+
 .companylogo {
   display: inline-block;
   width: 28px;
@@ -895,6 +917,13 @@ header {
     margin-right: 9px;
     margin-bottom: -0.4em;
   }
+  .pfp {
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+    margin-left: 2px;
+    margin-bottom: -0.05em;
+  }
   .company {
     font-size: 0.95em;
   }
@@ -1007,6 +1036,16 @@ header {
     margin-right: 8px;
     margin-bottom: -0.3em;
   }
+  .inlineImg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin-right: 0;
+    margin-left: -3px;
+    margin-bottom: -0.3em;
+    flex-shrink: 0;
+  }
   .company {
     font-size: 0.8em;
   }
@@ -1094,6 +1133,23 @@ header {
     height: 20px;
     margin-right: 8px;
     margin-bottom: -0.3em;
+  }
+  .pfp {
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+    margin-left: 2px;
+    margin-bottom: -0.07em;
+  }
+  .inlineImg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin-right: 0;
+    margin-left: -5px;
+    margin-bottom: -0.3em;
+    flex-shrink: 0;
   }
   .company {
     font-size: 0.8em;
@@ -1210,4 +1266,8 @@ header {
     font-size: 0.6em;
   }
 }
-
+@media (max-width: 400px) { /* Mobile Small */
+  .pfp {
+    display: none;
+  }
+}

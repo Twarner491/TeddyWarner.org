@@ -1,5 +1,9 @@
 ---
 description: Project Portfolio and Documentation Site for Teddy Warner.
+hide:
+  - navigation
+  - toc
+  - feedback
 template: index.html
 search:
   exclude: true
@@ -18,6 +22,7 @@ search:
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+
   <nav class="main-navigation">
     <ul>
       <li><a class="home" href="http://teddywarner.com"><span class="navnum">01</span> Home</a></li>
@@ -31,7 +36,7 @@ search:
     <section class="intro-section">
       <div class="content1">
         <div class="introabt">
-          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy">Teddy</a>, <span id="typed"></span></h2>
+          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="https://pbs.twimg.com/profile_images/1794427673546035200/QnksLLBB_400x400.jpg">Teddy</a>, <span id="typed"></span></h2>
           <h3>I use digital fabrication techniques to<br>accelerate human centric design.</h3>
         </div>
       </div>
@@ -156,13 +161,13 @@ search:
     <section class="about">
       <div class="content4">
         <h2>About</h2>
-        <p class="abt1">I’m an engineer & designer focused on PCB development and mechatronics. I’m currently based in San Francisco, building hardware at <a target=”_blank” href="https://www.midjourney.com/home/">Midjourney</a>.</p>
+        <p class="abt1">I’m an engineer & designer focused on PCB development and mechatronics. I’m currently based in San Francisco <img class="inlineImg" src="assets/images/index/sf.png">, building hardware at <a target=”_blank” href="https://www.midjourney.com/home/">Midjourney</a>.</p>
         <p class="abt2">I'm a student at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> studying engineering, design, and venture management, and a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
         <p class="abt3">This site holds my <a href="http://teddywarner.com/proj">work</a> and <a href="http://teddywarner.com/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
-        <h2>Projects</h2>
+        <a href="http://teddywarner.com/proj"><h2>Projects</h2></a>
         <div class="grid-container">
           <a href="http://teddywarner.com/Projects/SerialUPDI/"> <div class="grid-item">
               <p class="projtitle">UPDI Serial Programming</p>
@@ -201,7 +206,7 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <h2>Writing</h2>
+        <a href="http://teddywarner.com/writ"><h2>Writing</h2></a>
         <div class="writparent">
           <a href="http://teddywarner.com/writings/a-mutual-meaning">
             <div class="imgparent"><img class="writeimg" src="assets/images/index/orange.png"></div>

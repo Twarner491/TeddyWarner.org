@@ -1,7 +1,7 @@
 site_name: Teddy Warner
 site_author: Teddy Warner
 site_description: >-
-    Teddy Warner - A Student, Maker, Developer, Award Winning Designer & Graduate of the Fab Academy.
+    causa sui. // @WarnerTeddy
 
 site_url: https://teddywarner.org/
 
@@ -22,15 +22,9 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/WarnerTeddy
       name: X - @WarnerTeddy
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/teddymakesstuff/
-      name: Instagram - @teddymakesstuff
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@teddywarner
       name: YouTube - @teddywarner
-    - icon: fontawesome/brands/spotify
-      link: https://open.spotify.com/user/mskz5e4dyzv4cb4kkn73iipq0?si=58a503e3c7a54eeb
-      name: Spotify - Teddy Warner
     - icon: fontawesome/solid/paper-plane
       link: mailto:<Twarner491@gmail.com>
       name: Email - Twarner491@gmail.com
@@ -143,12 +137,5 @@ extra_javascript:
 
 nav:
   - Home : http://teddywarner.com
-  - About : About-Me/about.md
-  - Projects:  http://teddywarner.com/feed/
-  - Machine Profiles: 
-    - Laser Cutters :
-      - Epliog Fusion Pro 48 : Machine-Profiles/FusionPro48.md
-    - 3D Printers : 
-      - Prusa I3 MK3S+ : Machine-Profiles/MK3S+.md
-      - Klipper Enabled Ender 3 : Machine-Profiles/KlipperEnder3Profile.md
-  - Fab Academy: "http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/"
+  - Projects:  http://teddywarner.com/proj/
+  - Writings:  http://teddywarner.com/writ/
