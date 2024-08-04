@@ -31,11 +31,20 @@
 .share {
   float:right;
   margin-top: 0px;
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 
 .share a {
-  color: inherit;
+  color: var(--md-default-fg-color);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.share a:hover {
+  color: var(--md-default-fg-color);
+  opacity: 0.45;
+  font-size: 0.99em;
+  cursor: pointer;
 }
 
 .twitter {
@@ -43,17 +52,9 @@
   padding-right: 0.2em;
 }
 
-.share a.twitter:hover {
-  color: #00acee;
-}
-
 .fb {
   padding-left: 0.2em;
   padding-right: 0.2em;
-}
-
-.share a.fb:hover {
-  color: #3b5998;
 }
 
 .pin {
@@ -61,17 +62,9 @@
   padding-right: 0.2em;
 }
 
-.share a.pin:hover {
-  color: 	#E60023;
-}
-
 .ln {
   padding-left: 0.2em;
   padding-right: 0.2em;
-}
-
-.share a.ln:hover {
-  color: #0e76a8;
 }
 
 .email {
