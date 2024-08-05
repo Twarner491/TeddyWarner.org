@@ -21,21 +21,42 @@ tags:
   - Programming
 ---
 
-<link rel="stylesheet" href="../../assets/css/projects/vnp.css">
-<!--<link rel="stylesheet" id="chessboard-css" href="../../assets/css/projects/ChessEngine/chessboard.css" />
-<link rel="stylesheet" href="../../assets/css/projects/ChessEngine/board.css" />-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--<script src="../../assets/js/ChessEngine/jquery-3.6.0.min.js"></script>
-<script src="../../assets/js/ChessEngine/chess.min.js"></script>
-<script src="../../assets/js/ChessEngine/ltpgnviewer.js"></script>-->
-<script src="../../assets/js/vnp.js"></script> 
+  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--<script src="../../assets/js/ChessEngine/jquery-3.6.0.min.js"></script>
+  <script src="../../assets/js/ChessEngine/chess.min.js"></script>
+  <script src="../../assets/js/ChessEngine/ltpgnviewer.js"></script>-->
+  <script src="../../assets/js/vnp.js"></script> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/css/projects/project.css">
+  <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
+  <!--<link rel="stylesheet" id="chessboard-css" href="../../assets/css/projects/ChessEngine/chessboard.css" />
+  <link rel="stylesheet" href="../../assets/css/projects/ChessEngine/board.css" />-->
+</head>
+
+  <nav class="main-navigation">
+    <ul>
+      <li><a class="home" href="http://teddywarner.com"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="http://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="http://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+    </ul>
+  </nav>
+
+<div class="return2feed"><a href="http://teddywarner.com/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
 
 # Von Niemann Probe
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Teddy Warner</a><span style="font-weight: 300;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Profile Picture" class="profilepic2"><span class="abt" style="font-weight: 300; padding-left: 6px;"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <i class="far fa-clock"></i> 46–58 minutes</span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span style="font-weight: 300; padding-right: 5px;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Profile Picture" class="profilepic2"><span class="abt" style="font-weight: 300; padding-left: 7px;"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <span class="readTime"><i class="far fa-clock"></i> 46–58 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-brands fa-x-twitter"></i></a>
