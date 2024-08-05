@@ -1,0 +1,10 @@
+User-agent: Twitterbot
+Disallow:
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: *
+Allow: /
+
+Sitemap: https://teddywarner.org/sitemap.xml
