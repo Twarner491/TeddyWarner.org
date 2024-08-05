@@ -691,24 +691,21 @@ git push # (3)
 **... and 300 Commits! :exploding_head:** - 06/28/2023!
 ![](../assets/images/PortfolioSite/300commit.png){width="100%"}
 
+[^1]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
+[^2]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
+[^3]: This is the footnote. 
+
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control
 *[MPCNC]: Mostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/
 *[SSH]: Secure Shell
 *[GPIO]: General-Purpose Input/Output
 *[USB]: Universal Serial Bus
-*[Baudrate]: Measurement of Symbol Rate
 *[ETA]: Estimated Time of Arrival
-*[GCode]: A software programming language used to control a CNC machine
-*[Git]: Software for tracking changes in any set of files
-*[GUI]: Graphical User Interface
-*[Parametric]: Parametric design is a process based on algorithmic thinking that enables the expression of parameters and rules that, together, define, encode and clarify the relationship between design intent and design response.
 *[ISO]: International Organization for Standardization
-*[Kreg-Jig]: A Pocket-Hole Jig
 *[UPDI]: Unified Program and Debug Interface
 *[AVR]: A Family of microcontrollers developed since 1996 by Atmel
-*[programmer]: A piece of electronic equipment that arranges written software to configure programmable non-volatile integrated circuits
-*[jtag]: Joint Test Action Group
+*[JTAG]: Joint Test Action Group
 *[IDE]: Integrated Development Environment
 *[Rx]: Receiving Signal
 *[Tx]: Transmitting Signal
@@ -722,7 +719,33 @@ git push # (3)
 *[DPST]: Double Pole Single Throw Switch
 *[DPDT]: Double Pole Double Throw Switch
 *[EEPROM]: Electrically Erasable Programmable Read-Only Memory
-
-[^1]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
-[^2]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
-[^3]: This is the footnote. 
+*[PCB]: Printed Circuit Board
+*[PWM]: Pulse Width Modulation
+*[SPI]: Serial Peripheral Interface
+*[I2C]: Inter-Integrated Circuit
+*[UART]: Universal Asynchronous Receiver/Transmitter
+*[ADC]: Analog-to-Digital Converter
+*[DAC]: Digital-to-Analog Converter
+*[MCU]: Microcontroller Unit
+*[FPGA]: Field-Programmable Gate Array
+*[SLA]: Stereolithography
+*[DLP]: Digital Light Processing 
+*[SLS]: Selective Laser Sintering
+*[PLA]: Polylactic Acid 
+*[ABS]: Acrylonitrile Butadiene Styrene 
+*[PETG]: Polyethylene Terephthalate Glycol 
+*[CAD]: Computer-Aided Design
+*[CAM]: Computer-Aided Manufacturing
+*[G-code]: A language for controlling CNC machines
+*[PID]: Proportional-Integral-Derivative (control loop feedback mechanism)
+*[MOSFET]: Metal-Oxide-Semiconductor Field-Effect Transistor
+*[BJT]: Bipolar Junction Transistor
+*[SMD]: Surface-Mount Device
+*[THT]: Through-Hole Technology
+*[DIP]: Dual In-line Package
+*[ESC]: Electronic Speed Controller
+*[BEC]: Battery Eliminator Circuit
+*[LiPo]: Lithium Polymer 
+*[NiMH]: Nickel-Metal Hydride 
+*[EMI]: Electromagnetic Interference
+*[ESD]: Electrostatic Discharge
