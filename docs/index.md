@@ -158,11 +158,11 @@ search:
         <a target=”_blank” href="https://www.midjourney.com/home">
           <img class="companylogo" src="assets/images/index/logos/mj.png"><p class="company">Midjourney</p></a><p class="role">Engineering<span class="mobileyear">, R&D</span></p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Present</span></p>
         <hr/>
-        <a target=”_blank” href="https://tone.computer/">
-          <img class="companylogo" src="assets/images/index/logos/tone.png"><p class="company">Tone</p></a><p class="role">Co-founder</p><p class="year"><span class="mobileyear">Oct 2023 - July </span>2024</p>
-        <hr/>
         <a target=”_blank” href="https://www.autodesk.com/">
           <img class="companylogo" src="assets/images/index/logos/autodesk.png"><p class="company">Autodesk</p></a><p class="role"><span class="mobileyear">Design & Make </span>Community Manager</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - Aug 2024</span></p>
+        <hr/>
+        <a target=”_blank” href="https://tone.computer/">
+          <img class="companylogo" src="assets/images/index/logos/tone.png"><p class="company">Tone</p></a><p class="role">Co-founder</p><p class="year"><span class="mobileyear">Oct 2023 - July </span>2024</p>
         <hr/>
         <a target=”_blank” href="https://rhythmlink.com/">
           <img class="companylogo" src="assets/images/index/logos/ri.png"><p class="company">Rhythmlink International</p></a><p class="role"><span class="mobileyear">Engineering, </span>R&D</p><p class="year"><span class="mobileyear">Oct </span>2022 - <span class="mobileyear">May </span>2023</p>
