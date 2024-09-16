@@ -397,6 +397,7 @@ header {
 }
 
 .share {
+  display: inline;
   float:right;
   margin-top: 0.225em;
   font-size: 0.9em;
@@ -570,6 +571,12 @@ header {
   }
   body {
     font-size: 0.8em;
+  }
+  .share {
+    display:none;
+  }
+  #name {
+    padding-right: 7px;
   }
 }
 

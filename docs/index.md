@@ -156,7 +156,7 @@ search:
       <div class="content3">
         <h2>What I’ve Been Up To</h2>
         <a target=”_blank” href="https://www.midjourney.com/home">
-          <img class="companylogo" src="assets/images/index/logos/mj.png"><p class="company">Midjourney</p></a><p class="role">Engineering<span class="mobileyear">, R&D</span></p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Present</span></p>
+          <img class="companylogo" src="assets/images/index/logos/mj.png"><p class="company">Midjourney</p></a><p class="role">Engineering<span class="mobileyear">, R&D</span></p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Aug 2024</span></p>
         <hr/>
         <a target=”_blank” href="https://www.autodesk.com/">
           <img class="companylogo" src="assets/images/index/logos/autodesk.png"><p class="company">Autodesk</p></a><p class="role"><span class="mobileyear">Design & Make </span>Community Manager</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - Aug 2024</span></p>
@@ -227,7 +227,7 @@ search:
             <div class="imgparent"><img class="writeimg" src="assets/images/index/orange.png"></div>
             <p class="projtitle">A Mutual Meaning</p>
             <p class="projdescription">Discovering Eastern philosophy.</p>
-            <p class="writeyear">2023</p>
+            <p class="writeyear">2024</p>
             <span class="mobileyear">
             <p class="readtime">7-11 mins</p>
             </span>
@@ -235,13 +235,13 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/writings/chiastic-change">
-            <div class="imgparent"><img class="writeimg" src="assets/images/index/greek.png"></div>
-            <p class="projtitle">Chiastic Change</p>
-            <p class="projdescription">Sing, goddess, the change of Achilleus.</p>
-            <p class="writeyear">2023</p>
+          <a href="http://teddywarner.com/writings/otherness-and-belonging/">
+            <div class="imgparent"><img class="writeimg" src="assets/images/index/onb.png"></div>
+            <p class="projtitle">Otherness and Belonging</p>
+            <p class="projdescription">Some notes on neuroscience.</p>
+            <p class="writeyear">2024</p>
             <span class="mobileyear">
-            <p class="readtime">5-8 mins</p>
+            <p class="readtime">4-6 mins</p>
             </span>
           </a>
         </div>

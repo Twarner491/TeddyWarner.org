@@ -1,0 +1,20 @@
+# How To Take Smart Notes
+## 3 Sentence Summary -
+ > What are the crucial points in this source that make it iconic, ideas I want to remember for the rest of my life?
+1. Our brain requires a complementary external structure to enable optimal relativity![[Highlights - How To Take Smart Notes#^5adc28]]
+2. Brainstorming is often a weak approach to beginning a paper, as your brain will most easily remember the most recent information learned, and not make strong creative connections across similar or different topics.
+3. There is no need to force yourself to continue a task which you are do longer interested in, doing so will simply result in unnecessary burn out, instead simply switch your productivity to another topic. ![[I only do what is easy. I only write when I immediately know how to do it. If I falter for a moment, I put the matter aside and do something else.#^57fe59]] ![[Highlights - How To Take Smart Notes#^1d6ff0]]
+>[!info] Abstract -
+>"How to Take Smart Notes" by [[Sönke Ahrens]] is a transformative guide that unveils a systematic approach to note-taking, enabling readers to enhance their learning, creativity, and productivity. Ahrens introduces the concept of the [[Zettelkasten]] method, a powerful system for organizing and connecting ideas through a network of notes. By emphasizing the importance of capturing fleeting thoughts and making meaningful connections, Ahrens provides readers with practical strategies to overcome information overload, foster deep understanding, and generate original insights. With its insightful advice and actionable techniques, this book serves as an invaluable resource for anyone seeking to revolutionize their note-taking practices and unlock their intellectual potential.
+## Notes -
+- Reading without note taking is practically the same as not reading at all ![[Highlights - How To Take Smart Notes#^95eac1]]
+- The blank page is a fallacy, your research, what you learn and compile will always exist
+	- Brainstorming is often a weak approach to beginning a paper, as your brain will most easily remember the most recent information learned, and not make strong creative connections across similar or different topics
+	- Establishing an external structure for your brain serves as a means to promote quick, creative, and strong connections ![[Highlights - How To Take Smart Notes#^0aae18]] ![[Highlights - How To Take Smart Notes#^f79fe9]] ![[Highlights - How To Take Smart Notes#^709a65]]
+- Your brain requires some external structure to optimize creativity
+	- By writing things down, taking quick notes, or keeping a to do list, you free up space in your brain as you trick yourself into no longer stressing over said thing, as because it has been noted, your brain assigns that task as handled ![[Highlights - How To Take Smart Notes#^f416a6]] ![[Highlights - How To Take Smart Notes#^62fd04]]
+- Be an expert, not a planner ![[Highlights - How To Take Smart Notes#^4aad1c]] ![[Highlights - How To Take Smart Notes#^3fbdca]]
+	- By remaining your flexibility, you preserve your willpower for the few tasks which require it
+	- Will power is not a necessity when a solid external structure is in place, habit will drive your productivity ![[Highlights - How To Take Smart Notes#^f688a7]]
+- Make it a habit to note ideas as the arouse - said Ideas are referred to as [[Fleeting Notes]] and are temporary. As the idea builds and research occurs, said fleeting notes should be compiled into [[Permanent Notes]] and logged in my personal [[Slip-Box]] ![[Highlights - How To Take Smart Notes#^418a1e]]![[Highlights - How To Take Smart Notes#^d84554]]
+- The [[Zettelkasten|slip-box]] does not perfectly follow the metaphor of a personal Wikipedia, as the idea is not to collect content, but to create a workspace to "develop ideas, arguments and discussions" (p.23) ![[Highlights - How To Take Smart Notes#^5b7c26]]

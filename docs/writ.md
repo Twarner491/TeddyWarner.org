@@ -44,7 +44,7 @@ search:
           <a target=”_blank” href="http://teddywarner.com/writings/a-mutual-meaning">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/orange.png"></div>
             <p class="projtitle">A Mutual Meaning</p>
-            <p class="writeyear">2023</p>
+            <p class="writeyear">2024</p>
             <span class="mobileyear">
             <p class="readtime">7-11 mins</p>
             </span>
@@ -53,14 +53,14 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/writings/chiastic-change">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/greek.png"></div>
-            <p class="projtitle">Chiastic Change</p>
-            <p class="writeyear">2023</p>
+          <a href="http://teddywarner.com/writings/otherness-and-belonging/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/index/onb.png"></div>
+            <p class="projtitle">Otherness and Belonging</p>
+            <p class="writeyear">2024</p>
             <span class="mobileyear">
-            <p class="readtime">5-8 mins</p>
+            <p class="readtime">4-6 mins</p>
             </span>
-            <p class="projdescription">Sing, goddess, the change of Achilleus.</p>
+            <p class="projdescription">Some notes on neuroscience.</p>
           </a>
         </div>
         <hr/>
