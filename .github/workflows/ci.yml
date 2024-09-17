@@ -1,12 +1,16 @@
 name: Publish Docs
+
 env:
   GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+
 on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,9 +23,14 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install pillow cairosvg urllib3==v1.26.6
-      - uses: afritzler/mkdocs-gh-pages-action@main
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+          pip install pillow cairosvg
+          pip install -r requirements.txt
+      - name: Deploy
+        run: |
+          mkdocs gh-deploy --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REQUIREMENTS: ../../requirements.txt
           CUSTOM_DOMAIN: teddywarner.org
