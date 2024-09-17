@@ -198,6 +198,3 @@ Most importantly the understanding I’ve gained over meaning and value in our r
 [^32]: Hanh, “The Other Shore”, 39, 40.
 [^33]: Hanh, “The Other Shore”, 65.
 [^34]: Hanh, “The Other Shore”, 121.
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../assets/js/tineline.js"></script>

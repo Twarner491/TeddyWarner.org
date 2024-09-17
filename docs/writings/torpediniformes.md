@@ -60,6 +60,3 @@ Logic must be the torpedo fish, and the numbness induced by it the result of dep
 [^4]: Plato, et al. Meno, 80a.
 [^5]: Plato, et al. Meno, 84b.
 [^6]: Plato, et al. Meno, 84c.
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../assets/js/tineline.js"></script>

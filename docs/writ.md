@@ -102,20 +102,6 @@ search:
   </div>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var content6 = document.getElementById('content6');
-      var observer = new ResizeObserver(entries => {
-        for (let entry of entries) {
-          var content6Height = entry.contentRect.height;
-          document.documentElement.style.setProperty('--content6-height', content6Height + 'px');
-        }
-      });
-      observer.observe(content6);
-    });
-  </script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       var content1 = document.getElementById('content1');
@@ -126,6 +112,16 @@ search:
         }
       });
       observer.observe(content1);
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+      var content6 = document.getElementById('content6');
+      var observer = new ResizeObserver(entries => {
+        for (let entry of entries) {
+          var content6Height = entry.contentRect.height;
+          document.documentElement.style.setProperty('--content6-height', content6Height + 'px');
+        }
+      });
+      observer.observe(content6);
     });
   </script>
   <script src="../../assets/js/proj.js"></script>

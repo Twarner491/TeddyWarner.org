@@ -97,6 +97,3 @@ Ive been thinking alot about the neuroscience of otherness and belonging. *Here 
 		1. Expansiveness of ones social group
 		2. Sense of agency
 		3. A "Habit" of helping behavior
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../assets/js/tineline.js"></script>

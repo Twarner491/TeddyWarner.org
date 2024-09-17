@@ -1,5 +1,5 @@
 ---
-description: Project Portfolio and Documentation Site for Teddy Warner.
+description: causa sui. // @WarnerTeddy
 hide:
   - navigation
   - toc
@@ -111,10 +111,11 @@ search:
                                       <rect x="804.5" y="624" width="226" height="272" rx="21" fill="var(--md-default-bg-color)" fill-opacity="0.4" />
                                       <rect x="843" y="645" width="149" height="31" rx="15.5" fill="var(--md-default-bg-color)" />
                                       <text x="917.5" y="665" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.55" font-family="JetBrains Mono" font-size="12" font-style="normal" font-weight="300" line-height="109.588%">What I'm Reading</text>
-                                      <text x="865" y="716" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="26" font-style="normal" font-weight="500" line-height="109.588%">Build</text>
-                                      <text x="865" y="736" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="12" font-style="normal" font-weight="400" line-height="109.588%">Tony Fadell</text>
+                                      <text x="816" y="706" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="17" font-style="normal" font-weight="500" line-height="109.588%">Crime and</text>
+                                      <text x="816" y="726" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="17" font-style="normal" font-weight="500" line-height="109.588%">Punishment</text>
+                                      <text x="817" y="742" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">F. Dostoevsky</text>
                                   </g>
-                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="assets/images/index/book.png" preserveAspectRatio="xMidYMid slice" />
+                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="assets/images/index/book.jpg" preserveAspectRatio="xMidYMid slice" />
                               </g>
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
@@ -176,7 +177,7 @@ search:
     <section class="about">
       <div class="content4">
         <h2>About</h2>
-        <p class="abt1">I’m an engineer & designer focused on PCB development and mechatronics. I’m currently based in San Francisco <img class="inlineImg" src="assets/images/index/sf.png">, building hardware at <a target=”_blank” href="https://www.midjourney.com/home/">Midjourney</a>.</p>
+        <p class="abt1">I’m an engineer & designer focused on PCB development and mechatronics. I’m currently based in Los Angeles, building in the logic design space.</p>
         <p class="abt2">I'm a student at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> studying engineering, design, and venture management, and a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
         <p class="abt3">This site holds my <a href="http://teddywarner.com/proj">work</a> and <a href="http://teddywarner.com/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
     </section>
@@ -300,8 +301,6 @@ search:
       backDelay: 1200,
       loop: true
     });
-  </script>
-  <script>
     document.addEventListener("DOMContentLoaded", function() {
       var content2 = document.getElementById('content2');
       var observer = new ResizeObserver(entries => {
@@ -312,20 +311,6 @@ search:
       });
       observer.observe(content2);
     });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var content6 = document.getElementById('content6');
-      var observer = new ResizeObserver(entries => {
-        for (let entry of entries) {
-          var content6Height = entry.contentRect.height;
-          document.documentElement.style.setProperty('--content6-height', content6Height + 'px');
-        }
-      });
-      observer.observe(content6);
-    });
-  </script>
-  <script>
     document.addEventListener("DOMContentLoaded", function() {
       const toneImage = document.querySelector('.project .toneimg');
       const root = document.documentElement;
@@ -368,6 +353,16 @@ search:
         });
         window.colortheme = colortheme;
       });
+    document.addEventListener("DOMContentLoaded", function() {
+      var content6 = document.getElementById('content6');
+      var observer = new ResizeObserver(entries => {
+        for (let entry of entries) {
+          var content6Height = entry.contentRect.height;
+          document.documentElement.style.setProperty('--content6-height', content6Height + 'px');
+        }
+      });
+      observer.observe(content6);
+    });
   </script>
   <script src="../assets/js/index.js"></script>
 </body>
