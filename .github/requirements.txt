@@ -1,0 +1,4 @@
+mkdocs-material
+pillow
+cairosvg
+urllib3==v1.26.6

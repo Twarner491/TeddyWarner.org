@@ -1,16 +1,12 @@
 name: Publish Docs
-
 env:
   GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-
 on:
   push:
     branches:
       - main
-
 permissions:
   contents: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,12 +19,8 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - name: Install dependencies
-        run: |
-          pip install -r .github/workflows/requirements.txt
-      - name: Deploy
-        run: |
-          mkdocs gh-deploy --force
+      - uses: afritzler/mkdocs-gh-pages-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REQUIREMENTS: ../../requirements.txt
           CUSTOM_DOMAIN: teddywarner.org
