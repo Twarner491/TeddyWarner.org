@@ -48,7 +48,7 @@ search:
             <span class="mobileyear">
             <p class="readtime">X-X mins</p>
             </span>
-            <p class="projdescription">DESCRIPTION</p>
+            <p class="projdescription">Applied Artificial Intelligence with fastai</p>
           </a>
         </div>
         <hr/>-->

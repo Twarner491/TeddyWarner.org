@@ -40,6 +40,18 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
+        <!--<div class="writparent">
+          <a target=”_blank” href="http://teddywarner.com/writings/juggling">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/writ/juggle.png"></div>
+            <p class="projtitle">Learning to Juggle</p>
+            <p class="writeyear">2024</p>
+            <span class="mobileyear">
+            <p class="readtime">X-X mins</p>
+            </span>
+            <p class="projdescription">A journey to lessen doom-scrolling.</p>
+          </a>
+        </div>
+        <hr/>-->
         <div class="writparent">
           <a target=”_blank” href="http://teddywarner.com/writings/a-mutual-meaning">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/orange.png"></div>
