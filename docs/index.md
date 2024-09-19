@@ -236,7 +236,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.org/writings/otherness-and-belonging/">
+          <a href="https://teddywarner.org/writings/otherness-and-belonging/">
             <div class="imgparent"><img class="writeimg" src="assets/images/index/onb.png"></div>
             <p class="projtitle">Otherness and Belonging</p>
             <p class="projdescription">Some notes on neuroscience.</p>
