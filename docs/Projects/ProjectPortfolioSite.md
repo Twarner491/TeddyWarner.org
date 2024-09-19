@@ -691,6 +691,9 @@ git push # (3)
 **... and 300 Commits! :exploding_head:** - 06/28/2023!
 ![](../assets/images/PortfolioSite/300commit.png){width="100%"}
 
+**400 Commits :interrobang:** - 09/18/2024!
+![](../assets/images/PortfolioSite/400commit.png){width="100%"}
+
 [^1]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
 [^2]: https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration 
 [^3]: This is the footnote. 
