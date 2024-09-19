@@ -548,6 +548,47 @@ header {
   
 }
 
+@media screen and (min-width: 2000px) { /* Desktop */
+  :root {
+    --font-size: 1em;
+  }
+  .introabt h2 {
+    font-size: 2.5em;
+  }
+  .introabt h3 {
+    font-size: 0.98em;
+  }
+  .projtitle {
+    font-size: 1em;
+  }
+  .projdescription {
+    font-size: 0.9em;
+  }
+  .content6 .projtitle {
+    position: relative;
+    top: -13em;
+    left: 20.75em;
+  }
+  
+  .content6 .projdescription {
+    position: relative;
+    top: -20.65em;
+    left: 23.1em;
+  }
+  .writeyear {
+    font-size: 0.85em;
+  }
+  .readtime {
+    font-size: 0.85em;
+  }
+  .copyright {
+    font-size: 0.8em;
+  }
+  .laphide {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) { /* Laptop */
   header {
     padding-top: 5em;

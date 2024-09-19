@@ -879,6 +879,54 @@ header {
   
 }
 
+@media screen and (min-width: 2000px) { /* Desktop */
+  :root {
+    --font-size: 1em;
+  }
+  .introabt h2 {
+    font-size: 2.5em;
+  }
+  .introabt h3 {
+    font-size: 0.98em;
+  }
+  .content3 h2 {
+    font-size: 1.9em;
+  }
+  .company {
+    font-size: 1em;
+  }
+  .role{
+    font-size: 1em;
+  }
+  .year {
+    font-size: 1em;
+  }
+  .content4 h2, .content5 h2, .content6 h2, .content7 h2 {
+    font-size: 32px;
+  }
+  .content4 p, .content7 p {
+    font-size: 0.9em;
+  }
+  .content4 a, .content7 a {
+    font-size: 1em;
+  }
+  .projtitle {
+    font-size: 1em;
+  }
+  .projdescription {
+    font-size: 0.9em;
+  }
+  .writeyear {
+    font-size: 0.85em;
+  }
+  .readtime {
+    font-size: 0.85em;
+  }
+  .copyright {
+    font-size: 0.8em;
+  }
+}
+
 @media (max-width: 1200px) { /* Laptop */
   header {
     padding-top: 5em;

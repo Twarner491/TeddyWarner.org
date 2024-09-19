@@ -53,7 +53,7 @@ search:
 
 [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://www.goodreads.com/book/show/54331465-deep-learning-for-coders-with-fastai-and-pytorch)
 
---- 
+
 
 ### Market Trend Classification with Deep Convolutional Neural Networks
 

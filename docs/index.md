@@ -178,15 +178,15 @@ search:
       <div class="content4">
         <h2>About</h2>
         <p class="abt1">I’m an engineer & designer focused on PCB development and mechatronics. I’m currently based in Los Angeles, building in the logic design space.</p>
-        <p class="abt2">I'm a student at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> studying engineering, design, and venture management, and a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
-        <p class="abt3">This site holds my <a href="http://teddywarner.com/proj">work</a> and <a href="http://teddywarner.com/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
+        <p class="abt2">I'm a student at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> studying engineering, design, and venture management, and a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
+        <p class="abt3">This site holds my <a href="http://teddywarner.com/proj">work</a> and <a href="http://teddywarner.com/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
         <a href="http://teddywarner.com/proj"><h2>Projects</h2></a>
         <div class="grid-container">
           <a href="http://teddywarner.com/Projects/SerialUPDI/"> <div class="grid-item">
-              <p class="projtitle">UPDI Serial Programming</p>
+              <p class="projtitle">UPDI Serial Programming</p>
               <p class="projdescription">$2.20 and 22x Faster.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
@@ -202,7 +202,7 @@ search:
             </div> </a>
           <span class="mobileyear">
           <a href="http://teddywarner.com/Projects/MillingWorflow/"> <div class="grid-item">
-              <p class="projtitle">CNC Milling Workflows</p>
+              <p class="projtitle">CNC Milling Workflows</p>
               <p class="projdescription">Jargon, Feeds & Speeds, etc.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
@@ -367,5 +367,3 @@ search:
   <script src="../assets/js/index.js"></script>
 </body>
 </html>
-
-

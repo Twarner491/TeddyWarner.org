@@ -40,6 +40,18 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
+        <!--<div class="writparent">
+          <a target=”_blank” href="http://teddywarner.com/Projects/fastai/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/fastai/fastai.png"></div>
+            <p class="projtitle">Hands on Neural Networks</p>
+            <p class="writeyear">Fall 2024</p>
+            <span class="mobileyear">
+            <p class="readtime">X-X mins</p>
+            </span>
+            <p class="projdescription">DESCRIPTION</p>
+          </a>
+        </div>
+        <hr/>-->
         <div class="writparent">
           <a target=”_blank” href="https://tone.computer/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/toneSmall.png"></div>
@@ -108,7 +120,7 @@ search:
             <span class="mobileyear">
             <p class="readtime">6-7 mins</p>
             </span>
-            <p class="projdescription">Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads! Uses metric thread standards via equasions in fusions parameters, allowing for the generation of a threaded cap with only 3 required measurements.</p>
+            <p class="projdescription">Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!<span class="laphide"> Uses metric thread standards via equasions in fusions parameters, allowing for the generation of a threaded cap with only 3 required measurements.</span></p>
           </a>
         </div>
         <hr/>
@@ -212,24 +224,18 @@ search:
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      var content1 = document.getElementById('content1');
-      var observer = new ResizeObserver(entries => {
-        for (let entry of entries) {
-          var content1Height = entry.contentRect.height;
-          document.documentElement.style.setProperty('--content1-height', content1Height + 'px');
-        }
+      const elements = ['content1', 'content6'];
+      const observer = new ResizeObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.id;
+          const height = entry.contentRect.height;
+          document.documentElement.style.setProperty(`--${id}-height`, `${height}px`);
+        });
       });
-      observer.observe(content1);
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-      var content6 = document.getElementById('content6');
-      var observer = new ResizeObserver(entries => {
-        for (let entry of entries) {
-          var content6Height = entry.contentRect.height;
-          document.documentElement.style.setProperty('--content6-height', content6Height + 'px');
-        }
+      elements.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) observer.observe(element);
       });
-      observer.observe(content6);
     });
   </script>
   <script src="../../assets/js/proj.js"></script>

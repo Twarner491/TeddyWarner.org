@@ -27,10 +27,6 @@ tags:
 
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--<script src="../../assets/js/ChessEngine/jquery-3.6.0.min.js"></script>
-  <script src="../../assets/js/ChessEngine/chess.min.js"></script>
-  <script src="../../assets/js/ChessEngine/ltpgnviewer.js"></script>-->
-  <script src="../../assets/js/vnp.js"></script> 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,8 +35,6 @@ tags:
 
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
-  <!--<link rel="stylesheet" id="chessboard-css" href="../../assets/css/projects/ChessEngine/chessboard.css" />
-  <link rel="stylesheet" href="../../assets/css/projects/ChessEngine/board.css" />-->
 </head>
 
   <nav class="main-navigation">
