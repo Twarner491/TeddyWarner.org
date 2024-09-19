@@ -40,9 +40,9 @@ search:
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="https://teddywarner.org"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.org/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.org/writ/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="/"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="/proj"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="/writ"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
 

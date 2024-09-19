@@ -23,13 +23,13 @@ template: comments.html
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="http://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="http://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="http://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="https://teddywarner.org"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="https://teddywarner.org/proj/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.org/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
 
-<div class="return2feed"><a href="http://teddywarner.com/writ"><i class="fa-solid fa-arrow-left-long"></i> Writing Feed</a></div>
+<div class="return2feed"><a href="https://teddywarner.org/writ"><i class="fa-solid fa-arrow-left-long"></i> Writing Feed</a></div>
 
 # A Mutual Meaning
 
