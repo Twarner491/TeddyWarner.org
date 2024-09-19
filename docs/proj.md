@@ -21,9 +21,9 @@ search:
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="http://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="http://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="http://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="https://teddywarner.org"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="https://teddywarner.org/proj/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.org/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
 
@@ -41,7 +41,7 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <!--<div class="writparent">
-          <a target=”_blank” href="http://teddywarner.com/Projects/fastai/">
+          <a target=”_blank” href="https://teddywarner.org/Projects/fastai/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/fastai/fastai.png"></div>
             <p class="projtitle">Hands on Neural Networks</p>
             <p class="writeyear">Fall 2024</p>
@@ -65,7 +65,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/VonNiemannProbe/">
+          <a href="https://teddywarner.org/Projects/VonNiemannProbe/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/VonNiemannProbe/coverR.jpg"></div>
             <p class="projtitle">Von Niemann Probe</p>
             <p class="writeyear">Winter 2023</p>
@@ -77,7 +77,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/MillingWorflow/">
+          <a href="https://teddywarner.org/Projects/MillingWorflow/">
             <div class="imgparent"><img class="writeimg" style="object-position: 0px 60%;" src="../assets/images/MillingWorkflow/cover.jpg"></div>
             <p class="projtitle">CNC Milling Workflows</p>
             <p class="writeyear">2022-2023</p>
@@ -89,7 +89,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/AdaptableAquaponics/">
+          <a href="https://teddywarner.org/Projects/AdaptableAquaponics/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/AdaptableAquaponics/cover.jpg"></div>
             <p class="projtitle">Adaptable Aquaponics</p>
             <p class="writeyear">Summer 2022</p>
@@ -101,7 +101,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/SerialUPDI/">
+          <a href="https://teddywarner.org/Projects/SerialUPDI/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/SerialUPDI/ftdi2updisolderedtop.jpg"></div>
             <p class="projtitle">UPDI Programming</p>
             <p class="writeyear">Summer-Winter 2021</p>
@@ -113,7 +113,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/ParametricGenerator/">
+          <a href="https://teddywarner.org/Projects/ParametricGenerator/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/ParametricGenerator/beautyshot1.jpg"></div>
             <p class="projtitle">Parametric Bottle Cap Generator</p>
             <p class="writeyear">Fall 2021</p>
@@ -125,7 +125,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/LithophaneExperiments/">
+          <a href="https://teddywarner.org/Projects/LithophaneExperiments/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/LithophaneExperiments/friendslithophane.jpg"></div>
             <p class="projtitle">Lithophane Experiments</p>
             <p class="writeyear">2019-2022</p>
@@ -137,7 +137,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/Octoprint/">
+          <a href="https://teddywarner.org/Projects/Octoprint/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/Octoprint/personaloctoprint.jpg"></div>
             <p class="projtitle">Octoprint Setup</p>
             <p class="writeyear">Fall 2021</p>
@@ -161,7 +161,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/KlipperEnder3/">
+          <a href="https://teddywarner.org/Projects/KlipperEnder3/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/KlipperEnder3/directdrive.jpg"></div>
             <p class="projtitle">Klipper Enabled Ender 3</p>
             <p class="writeyear">Spring-Summer 2021</p>
@@ -173,7 +173,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/ProjectPortfolioSite/">
+          <a href="https://teddywarner.org/Projects/ProjectPortfolioSite/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/PortfolioSite/highlightcode.jpg"></div>
             <p class="projtitle">Project Portfolio Site</p>
             <p class="writeyear">Summer 2021</p>
@@ -185,7 +185,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/Projects/CornerDesk/">
+          <a href="https://teddywarner.org/Projects/CornerDesk/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/CornerDesk/finishedwoodassembly.jpg"></div>
             <p class="projtitle">Cable-managed Corner Desk</p>
             <p class="writeyear">Spring 2020</p>

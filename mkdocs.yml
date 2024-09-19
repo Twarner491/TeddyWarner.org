@@ -135,6 +135,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Home : http://teddywarner.com
-  - Projects:  http://teddywarner.com/proj/
-  - Writings:  http://teddywarner.com/writ/
+  - Home : https://teddywarner.org
+  - Projects:  https://teddywarner.org/proj/
+  - Writings:  https://teddywarner.org/writ/

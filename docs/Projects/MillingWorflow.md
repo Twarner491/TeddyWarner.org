@@ -34,13 +34,13 @@ tags:
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="http://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="http://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="http://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="https://teddywarner.org"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="https://teddywarner.org/proj/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.org/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
 
-<div class="return2feed"><a href="http://teddywarner.com/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
+<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
 
 # CNC Milling Workflows
 
@@ -83,7 +83,7 @@ This article attempts to serve as a complete guide for CNC milling, covering mac
 
 !!! example "Milling Micro-Projects"
 
-    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](http://teddywarner.com/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator](http://teddywarner.com/Projects/MillingWorflow/#feeds-speeds-calculator). That being said, be sure to stay tuned for future updates!
+    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](https://teddywarner.org/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator](https://teddywarner.org/Projects/MillingWorflow/#feeds-speeds-calculator). That being said, be sure to stay tuned for future updates!
 
 ## Feeds & Speeds
 

@@ -40,9 +40,9 @@ search:
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="http://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="http://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="http://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="https://teddywarner.org"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="https://teddywarner.org/proj/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.org/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
 
@@ -87,7 +87,7 @@ search:
                             <rect x="141.5" y="143.5" width="223" height="48" rx="24" stroke="var(--md-default-fg-color--lighter)" />
                             <text x="253" y="175" fill="var(--md-default-fg-color--light)" text-anchor="middle" font-family="Crimson Pro" font-size="23" font-style="normal" font-weight="300" line-height="109.588%">A Creative Curation</text>
                         </g>
-                        <a href="http://teddywarner.com/Projects/AssistiveAquaponics/">
+                        <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">
                             <g id="image-card-1" class="project">
                                 <rect x="1057" y="299" width="240" height="405" rx="120" fill="var(--md-default-fg-color--lightest)" />
                                 <rect x="1057.5" y="299.5" width="239" height="404" rx="119.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -95,7 +95,7 @@ search:
                                 <rect x="1065.5" y="307.5" width="224" height="388" rx="112" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
-                        <a href="http://teddywarner.com/writ">
+                        <a href="https://teddywarner.org/writ">
                           <g id="image-card-2" class="project">
                               <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
                               <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -120,7 +120,7 @@ search:
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
                         </a>
-                        <a href="http://teddywarner.com/Projects/VonNiemannProbe/">
+                        <a href="https://teddywarner.org/Projects/VonNiemannProbe/">
                             <g id="image-card-4" class="project">
                                 <g clip-path="url(#clip1_107_71)">
                                     <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
@@ -137,7 +137,7 @@ search:
                                 <path d="M847.468 115H819.532H658.601H649.2C645.28 115 643.319 115 641.822 115.763C640.505 116.434 639.434 117.505 638.763 118.822C638 120.319 638 122.28 638 126.2V135.343V470.823V480.8C638 484.72 638 486.681 638.763 488.178C639.434 489.495 640.505 490.566 641.822 491.237C643.319 492 645.28 492.165 649.2 492.165H659.601H749.535H759.685C760.842 492.165 761.42 492.165 761.909 492.176C784.891 492.699 803.397 511.205 803.92 534.187C803.931 534.676 803.931 535.254 803.931 536.411V565.657V575.731C803.931 579.651 804 581.681 804.763 583.178C805.434 584.495 806.505 585.566 807.822 586.237C809.319 587 811.28 587 815.2 587L825.463 586.931L1007.4 587H1017.8C1021.72 587 1023.68 587 1025.18 586.237C1026.5 585.566 1027.57 584.495 1028.24 583.178C1029 581.681 1029 579.72 1029 575.8V565.657V136.343V126.2C1029 122.28 1029 120.319 1028.24 118.822C1027.57 117.505 1026.5 116.434 1025.18 115.763C1023.68 115 1021.72 115 1017.8 115H1007.4H847.468Z" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
-                        <a class="circleLink" href="http://teddywarner.com/proj">
+                        <a class="circleLink" href="https://teddywarner.org/proj">
                             <g class="circleGroup" id="circleGroup">
                                 <circle class="abtbtn" stroke="none" fill="var(--md-default-bg-color)" cx="1137" cy="797" r="50" onmouseenter="leftrevoff()" onmouseleave="leftrevon()" />
                                 <path id="circlePath" d="M 1137 797 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="none" />
@@ -179,35 +179,35 @@ search:
         <h2>About</h2>
         <p class="abt1">I’m an engineer & designer focused on PCB development and mechatronics. I’m currently based in Los Angeles, building in the logic design space.</p>
         <p class="abt2">I'm a student at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> studying engineering, design, and venture management, and a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
-        <p class="abt3">This site holds my <a href="http://teddywarner.com/proj">work</a> and <a href="http://teddywarner.com/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
+        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
-        <a href="http://teddywarner.com/proj"><h2>Projects</h2></a>
+        <a href="https://teddywarner.org/proj"><h2>Projects</h2></a>
         <div class="grid-container">
-          <a href="http://teddywarner.com/Projects/SerialUPDI/"> <div class="grid-item">
+          <a href="https://teddywarner.org/Projects/SerialUPDI/"> <div class="grid-item">
               <p class="projtitle">UPDI Serial Programming</p>
               <p class="projdescription">$2.20 and 22x Faster.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
-          <a href="http://teddywarner.com/Projects/AssistiveAquaponics/"> <div class="grid-item">
+          <a href="https://teddywarner.org/Projects/AssistiveAquaponics/"> <div class="grid-item">
               <p class="projtitle">Assistive Aquaponics</p>
               <p class="projdescription">Automated ecosystem monitoring.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
-          <a href="http://teddywarner.com/Projects/VonNiemannProbe/"> <div class="grid-item">
+          <a href="https://teddywarner.org/Projects/VonNiemannProbe/"> <div class="grid-item">
               <p class="projtitle">Von Niemann Probe</p>
               <p class="projdescription">A Chess cheating device.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
           <span class="mobileyear">
-          <a href="http://teddywarner.com/Projects/MillingWorflow/"> <div class="grid-item">
+          <a href="https://teddywarner.org/Projects/MillingWorflow/"> <div class="grid-item">
               <p class="projtitle">CNC Milling Workflows</p>
               <p class="projdescription">Jargon, Feeds & Speeds, etc.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
           </span>
-          <a href="http://teddywarner.com/Projects/ParametricGenerator/"> <div class="grid-item">
+          <a href="https://teddywarner.org/Projects/ParametricGenerator/"> <div class="grid-item">
               <p class="projtitle">Parametric Cap Generator</p>
               <p class="projdescription">Lost a cap? Make a new one.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -222,9 +222,9 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <a href="http://teddywarner.com/writ"><h2>Writing</h2></a>
+        <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
         <div class="writparent">
-          <a href="http://teddywarner.com/writings/a-mutual-meaning">
+          <a href="https://teddywarner.org/writings/a-mutual-meaning">
             <div class="imgparent"><img class="writeimg" src="assets/images/index/orange.png"></div>
             <p class="projtitle">A Mutual Meaning</p>
             <p class="projdescription">Discovering Eastern philosophy.</p>
@@ -249,7 +249,7 @@ search:
         <span class="mobileyear">
         <hr/>
         <div class="writparent">
-          <a href="http://teddywarner.com/writings/torpediniformes">
+          <a href="https://teddywarner.org/writings/torpediniformes">
             <div class="imgparent"><img class="writeimg" src="assets/images/index/snake.png"></div>
             <p class="projtitle">Torpediniformes</p>
             <p class="projdescription">An analysis of The Meno.</p>
