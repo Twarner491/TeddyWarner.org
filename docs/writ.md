@@ -53,7 +53,7 @@ search:
         </div>
         <hr/>-->
         <div class="writparent">
-          <a target=”_blank” href="https://teddywarner.org/writings/a-mutual-meaning">
+          <a href="https://teddywarner.org/writings/a-mutual-meaning">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/orange.png"></div>
             <p class="projtitle">A Mutual Meaning</p>
             <p class="writeyear">2024</p>
