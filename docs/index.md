@@ -290,7 +290,6 @@ search:
   </div>
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#typed', {
@@ -323,7 +322,7 @@ search:
           } else {
               toneUrl = getComputedStyle(root).getPropertyValue('--tone-url-light').trim().replace(/^"(.*)"$/, '$1');
           }
-          toneImage.setAttribute('href', toneUrl);
+          toneImage.setAttributeNS('http://www.w3.org/1999/xlink', 'href', toneUrl);
       }
         function saveTheme() {
           const selectedOption = document.querySelector('input[name="__palette"]:checked');
