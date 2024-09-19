@@ -120,7 +120,7 @@ header {
 }
 
 .toggle header {
-  padding-top: 12.6em;
+  padding-top: 12.174em;
 }
 
 .menu {
@@ -549,6 +549,9 @@ header {
 }
 
 @media screen and (min-width: 2000px) { /* Desktop */
+  .toggle header {
+    padding-top: 11.765em;
+  }
   :root {
     --font-size: 1em;
   }
@@ -586,6 +589,12 @@ header {
   }
   .laphide {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .toggle header {
+    padding-top: 12.6em;
   }
 }
 

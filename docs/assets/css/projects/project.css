@@ -101,7 +101,7 @@ header {
 }
 
 .toggle header {
-  padding-top: 12.6em;
+  padding-top: 12.174em;
 }
 
 .menu {
@@ -539,6 +539,18 @@ header {
 @media (max-width: 59.892857142857146em) {
   .toggle .md-search__icon.md-icon:first-of-type {
     color: var(--md-default-fg-color);
+  }
+}
+
+@media screen and (min-width: 2000px) { /* Desktop */
+  .toggle header {
+    padding-top: 11.765em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .toggle header {
+    padding-top: 12.6em;
   }
 }
 
