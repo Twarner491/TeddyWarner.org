@@ -224,6 +224,18 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/juggling">
+            <div class="imgparent"><img class="writeimg" src="assets/images/juggle/juggle.png"></div>
+            <p class="projtitle">Learning to Juggle</p>
+            <p class="projdescription">A journey to lessen doom-scrolling.</p>
+            <p class="writeyear">2024</p>
+            <span class="mobileyear">
+            <p class="readtime">5-7 mins</p>
+            </span>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/a-mutual-meaning">
             <div class="imgparent"><img class="writeimg" src="assets/images/index/orange.png"></div>
             <p class="projtitle">A Mutual Meaning</p>
@@ -234,6 +246,7 @@ search:
             </span>
           </a>
         </div>
+        <span class="mobileyear">
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/otherness-and-belonging/">
@@ -244,17 +257,6 @@ search:
             <span class="mobileyear">
             <p class="readtime">4-6 mins</p>
             </span>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr/>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/torpediniformes">
-            <div class="imgparent"><img class="writeimg" src="assets/images/index/snake.png"></div>
-            <p class="projtitle">Torpediniformes</p>
-            <p class="projdescription">An analysis of The Meno.</p>
-            <p class="writeyear">2022</p>
-            <p class="readtime">3-5 mins</p>
           </a>
         </div>
         </span>

@@ -721,6 +721,7 @@ header {
 }
 
 .imgparent img {
+  object-fit: cover;
   display: flex;
   width: 141px;
   height: 77px;

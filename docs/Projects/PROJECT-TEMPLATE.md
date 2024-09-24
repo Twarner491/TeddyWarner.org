@@ -72,7 +72,7 @@ HTML Link Generator - https://www.websiteplanet.com/webtools/sharelink/
 
 
 
-![alt-text](../assets/images/https://picsum.photos/500){: align=RIGHT/LEFT width="100%"}
+![alt-text](../assets/images/){: align=RIGHT/LEFT width="100%"}
   <figcaption>Caption</figcaption>
 
 
