@@ -1,0 +1,1360 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.">
+      
+      
+        <meta name="author" content="Teddy Warner">
+      
+      
+        <link rel="canonical" href="https://teddywarner.org/Projects/SerialUPDI/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+    
+    
+      
+        <title>UPDI Serial Programming - Teddy Warner</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-DRNQ5C2ZP2"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-DRNQ5C2ZP2",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-DRNQ5C2ZP2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UPDI Serial Programming - Teddy Warner" >
+      
+        <meta  property="og:description"  content="Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware." >
+      
+        <meta  property="og:image"  content="https://teddywarner.org/assets/images/social/Projects/SerialUPDI.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://teddywarner.org/Projects/SerialUPDI/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UPDI Serial Programming - Teddy Warner" >
+      
+        <meta  name="twitter:description"  content="Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware." >
+      
+        <meta  name="twitter:image"  content="https://teddywarner.org/assets/images/social/Projects/SerialUPDI.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#updi-serial-programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="header.title"
+  >
+
+  <a
+  href="https://teddywarner.com/"
+  title="Teddy Warner"
+  class="md-header__rectangle"
+  aria-label="Teddy Warner"
+  data-md-component="logo"
+  >
+  <img class="logo"/>
+  </a>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title"></div>
+
+    <!-- Color palette -->
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input
+            class="md-option"
+            data-md-color-media=""
+            data-md-color-scheme="default"
+            data-md-color-accent="black"
+            
+              aria-label="Switch to dark mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_1"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              onclick="colortheme()"
+              title="Switch to dark mode"
+              for="__palette_2"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+            </label>
+          
+        
+          
+          
+          <input
+            class="md-option"
+            data-md-color-media=""
+            data-md-color-scheme="slate"
+            data-md-color-accent="white"
+            
+              aria-label="Switch to light mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_2"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              onclick="colortheme()"
+              title="Switch to light mode"
+              for="__palette_1"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <!-- Search interface -->
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+
+      <!-- Search input -->
+      <input
+        type="text"
+        class="md-search__input"
+        name="query"
+        aria-label="Search"
+        placeholder="Search"
+        autocapitalize="off"
+        autocorrect="off"
+        autocomplete="off"
+        spellcheck="false"
+        data-md-component="search-query"
+        required
+      />
+
+      <!-- Button to open search -->
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+
+      <!-- Search options -->
+      <nav
+        class="md-search__options"
+        aria-label="Search"
+      >
+
+        <!-- Button to share search -->
+        
+          <a
+            href="javascript:void(0)"
+            class="md-search__icon md-icon"
+            title="Share"
+            aria-label="Share"
+            data-clipboard
+            data-clipboard-text=""
+            data-md-component="search-share"
+            tabindex="-1"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+
+        <!-- Button to reset search -->
+        <button
+          type="reset"
+          class="md-search__icon md-icon"
+          title="Clear"
+          aria-label="Clear"
+          tabindex="-1"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+
+      <!-- Search suggestions -->
+      
+        <div
+          class="md-search__suggest"
+          data-md-component="search-suggest"
+        ></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+
+        <!-- Search results -->
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <label class="md-header__button md-icon" id="parent" onclick="togglemenu()">
+     <span class="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+     </span>
+     <span class="close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+     </span>
+    </label>
+
+  </nav>
+</header>
+
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://teddywarner.org" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://teddywarner.org/proj/" class="md-tabs__link">
+        
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://teddywarner.org/writ/" class="md-tabs__link">
+        
+  
+    
+  
+  Writings
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="nav.title"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="../.."
+      title="Teddy Warner"
+      class="md-header__rectangle"
+      aria-label="Teddy Warner"
+      data-md-component="logo"
+    >
+      <img src="../../assets/images/TeddyWarner.svg" alt="home"/>
+    </a>
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Twarner491/TeddyWarner.org" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Twarner491/TeddyWarner.org
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#megatinycore-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      megaTinyCore Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="megaTinyCore Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jtag2updi-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      jtag2UPDI Programming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="jtag2UPDI Programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jtag2updi-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      jtag2UPDI Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serial Programming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  
+                  <!-- Tags -->
+
+  
+  
+
+<nav class="md-tags" hidden>
+  
+    
+    
+    
+      <span class="md-tag">Software</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">CAD</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">Autodesk Eagle</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">PCB</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">AVR</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">Microcontroller</span>
+    
+  
+</nav>
+
+
+<!-- Actions -->
+
+  
+  
+
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+
+
+<!-- Page content -->
+<p><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+
+<p><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet"></p>
+<p><link rel="stylesheet" href="../../assets/css/projects/project.css">
+</head></p>
+<nav class="main-navigation">
+    <ul>
+      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+    </ul>
+  </nav>
+
+<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
+
+<h1 id="updi-serial-programming"><abbr title="Unified Program and Debug Interface">UPDI</abbr> Serial Programming<a class="headerlink" href="#updi-serial-programming" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -0.8em;">
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt"><span class="year">| Summer & Winter, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 24-31 minutes</span></span></span></span>
+  <span class="share" style=" color: inherit;">
+  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/SerialUPDI/"><i class="fa-brands fa-facebook"></i></a>
+  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fa-brands fa-x-twitter"></i></a>
+  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/SerialUPDI/&media=&description=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fa-brands fa-pinterest"></i></a>
+  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-linkedin"></i></a>
+  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fa-solid fa-paper-plane"></i></a>
+  </span>
+</div>
+
+<hr />
+<p>Many modern small chipsets rely on the Unified Program and Debug Interface (<abbr title="Unified Program and Debug Interface">UPDI</abbr>), a one-wire interface allowing for the changing of fuzes, burning of bootloaders, or uploading of sketches to any <abbr title="A Family of microcontrollers developed since 1996 by Atmel">AVR</abbr> Dx-series parts or any modern <a href="https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus"><abbr title="A Family of microcontrollers developed since 1996 by Atmel">AVR</abbr> Microcontrollers</a>. Due to their reliance on the Unified Program and Debug Interface, these parts cannot be programmed with classic ISP style programmers, and thus a <abbr title="Unified Program and Debug Interface">UPDI</abbr> enabled programmer is required. Although <abbr title="Unified Program and Debug Interface">UPDI</abbr> is the only programming option in the case of these parts, the one-wire interface is superior to the four-wire of a classic ISP programmer and allows for quicker programming setup and less cluttered boards due to fewer programming pins. This <abbr title="Universal Serial Bus">USB</abbr>-C <abbr title="Unified Program and Debug Interface">UPDI</abbr> programmer is built with a <a href="https://ftdichip.com/products/ft232rl/">Ft232rl</a> chip allowing for serial interfacing, and runs alongside the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library witch equips your <abbr title="Integrated Development Environment">IDE</abbr> for serial <abbr title="Unified Program and Debug Interface">UPDI</abbr> programming via a portable python implementation.</p>
+<h2 id="megatinycore-documentation"><a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> Documentation<a class="headerlink" href="#megatinycore-documentation" title="Permanent link">&para;</a></h2>
+<p>In short, the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library is &ldquo;An Arduino core for the tinyAVR 0-series, 1-series, and now the 2-series&rdquo;<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> project was created and maintained by <a href="https://github.com/SpenceKonde">SpenceKonde</a>. As mentioned above, the library equips your <abbr title="Integrated Development Environment">IDE</abbr> for <abbr title="Unified Program and Debug Interface">UPDI</abbr> programming via a portable python installation and can be used alongside a handful of different programmer types. The <abbr title="Universal Serial Bus">USB</abbr>-C <abbr title="Unified Program and Debug Interface">UPDI</abbr> Serial programmer documented alter on this page is currently the optimal choice out of these options due to its low component requirement and faster speeds than other programmers. In addition to serial programmers, One can use a 328p based board as a programmer (i.e. an Arduino or any of its clones) via <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore&rsquo;s</a> <em>jtag2updi</em> sketch, or a designated microchip programming board or and <abbr title="Unified Program and Debug Interface">UPDI</abbr> programming tool that mimicks any listed above. <a href="http://sheekgeek.org/">Dr. Adam Harris</a>, a mentor of mine during my cycle of <a href="https://fabacademy.org/">Fab Academy</a> has a <a href="http://sheekgeek.org/2020/adamsheekgeek/simple-fab-jtag2updi-board">Simple Fab-jtag2UPDI Board</a> project where a 328p based board is used alongside the jtag2UPDI sketch and is a great option when creating an In-Circuit programmer though the library. I manufactured this board during my <a href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/">Electronics Production</a> and continued to use it for the next 16 weeks of the course.</p>
+<h3 id="package-installation">Package Installation<a class="headerlink" href="#package-installation" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Software Requirement</p>
+<p><strong>Arduino 1.8.13 is recommended</strong> for use with the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library</p>
+</div>
+<p>Recent updates to the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library have simplified the installation process significantly. The library relies upon a board package that can be installed via the board manager witch can be installed with 3 simple steps included below<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>http://drazzy.com/package_drazzy.com_index.json
+</code></pre></div>
+<ol>
+<li>File -&gt; Preferences, enter the above URL in <em>Additional Boards Manager URLs</em></li>
+<li>Tools -&gt; Boards -&gt; Boards Manager&hellip;</li>
+<li>Select <em>megaTinyCore by Spence Konde</em> and click &ldquo;Install&rdquo;. For best results, choose the most recent version.</li>
+</ol>
+<h3 id="jtag2updi-programming">jtag2UPDI Programming<a class="headerlink" href="#jtag2updi-programming" title="Permanent link">&para;</a></h3>
+<p><img alt="Promotion" src="https://img.shields.io/badge/-No%20Longer%20Recommended-critical?style=flat-square" /></p>
+<p>As mentioned prior, <em>jtag2updi</em> is a sketch from the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library, allowing for the use of a 328p-based board (i.e. Arduino or a clone) as an In-Circuit programmer. To begin with, this programming approach, download the latest version of the <em>jtag2udpi</em> sketch via the button below (Code -&gt; <em>Download Zip</em>).</p>
+<p><center></p>
+<p><a class="md-button md-button--primary" href="https://github.com/SpenceKonde/jtag2updi">Download the Latest jtag2udpi Sketch <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48"/></svg></span></a></p>
+<p></center></p>
+<p>Extract the contents of this downloaded sketch folder by first unzipping the downloaded folder and next moving the contained sketch folder in the unzipped folder to a separate location. Finally, <strong>Rename this sketch folder to <em>jtag2updi</em></strong>, leaving you with a folder similar to the one circled in red in the image below.</p>
+<p><center></p>
+<p><img alt="" src="../../assets/images/SerialUPDI/foldernaming.png" width="95%" /></p>
+<p></center></p>
+<p>Inside of this <em>jtag2updi</em> folder, navigate to the <em>jtag2UPDI.ino</em> project - circled and highlighted below - and open it in your <abbr title="Integrated Development Environment">IDE</abbr>. </p>
+<p><center></p>
+<p><img alt="" src="../../assets/images/SerialUPDI/projectopen.png" width="95%" /></p>
+<p></center></p>
+<p>This will open the <em>jtag2updi</em> project file system, leaving you with a blank <em>jtag2updi</em> sketch followed by multiple file tabs in your <abbr title="Integrated Development Environment">IDE</abbr> (like shown in the picture below).</p>
+<p><center></p>
+<p><img alt="" src="../../assets/images/SerialUPDI/blankjtagsketch.png" width="95%" /></p>
+<p></center></p>
+<p>You can next upload this sketch to your 328p-based board of choice as you would any other sketch. </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>As a first test to confirm the successful upload of this sketch to your board, hook up an <abbr title="Light-Emitting Diode">LED</abbr> to pin 6 of the board. If the board is successfully programmed, the <abbr title="Light-Emitting Diode">LED</abbr> will be dimly lit as shown below. <strong>This simple test eliminates a potential error while troubleshooting a project, and confirms the programmer&rsquo;s working condition.</strong>
+<center>
+<img alt="" src="../../assets/images/SerialUPDI/jtagtest.jpg" width="95%" />
+</center></p>
+</div>
+<p>Once a board is programmed with the <em>jtag2updi</em> project, it will act as a programmer until the next sketch is uploaded, unless the board&rsquo;s reset line is cut.</p>
+<h4 id="jtag2updi-usage">jtag2UPDI Usage<a class="headerlink" href="#jtag2updi-usage" title="Permanent link">&para;</a></h4>
+<p>To make use of a <em>jtag2updi</em> enabled In-Circuit programmer board, prepare a sketch in your <abbr title="Integrated Development Environment">IDE</abbr> to upload to your desired board. For documentation purposes, I&rsquo;ll be uploading the simple blink sketch included below to a super simple ATtiny 412 based <abbr title="Light-Emitting Diode">LED</abbr> board I made in <a href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#blinky-test-board">week 4</a> of my Fab Academy cycle and documenting it for use with the Arduino <abbr title="Integrated Development Environment">IDE</abbr>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>To upload code to your board via your <em>jtag2updi</em> enabled In-Circuit programmer board &hellip;</p>
+<ol>
+<li>Wire your board to your <em>jtag2updi</em> In-Circuit Programmer board - <abbr title="Unified Program and Debug Interface">UPDI</abbr> pin of the board to pin 6 of <em>jtag2updi</em> In-Circuit Programmer board with an inline 100-470 ohm resistor running between the <abbr title="Unified Program and Debug Interface">UPDI</abbr> pin and the In-Circuit Programmer, <abbr title="Voltage Common Collector (+)">VCC</abbr> to <abbr title="Voltage Common Collector (+)">VCC</abbr>, and <abbr title="Ground / Common Drain (-)">GND</abbr> to <abbr title="Ground / Common Drain (-)">GND</abbr></li>
+<li>Under the <em>Tools</em> menu in the Arduino <abbr title="Integrated Development Environment">IDE</abbr>, change your board to your board&rsquo;s chipset by navigating to the <em>megaTinyCore</em> board menu via <em>Tools -&gt; Board -&gt; megaTinyCore</em> and then selecting your chip group from the list. </li>
+<li>Next, specify your chip type under the <em>Chip</em> menu via <em>Tools -&gt; Chip</em>. </li>
+<li>For use with you <em>jtag2updi</em> In-Circuit Programmer board, change the programmer option to <em>Tools–&gt;Programmer –&gt; jtag2updi</em></li>
+<li>Change your COM port to connect via serial to your In-Circuit Programmer board if not already connected</li>
+<li>Finally, upload your sketch via the <strong><em>Upload Using Programmer</em></strong> button found under the <abbr title="Integrated Development Environment">IDE</abbr>&rsquo;s <em>Sketch</em> menu - Not with the normal upload button (this will override your programmers <em>jtag2updi</em> sketch if done).</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Following these steps on my simple ATtiny 412 board yielded the 1/2 second blink example below. 
+<center>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/vvL9G3BIThU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center></p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Congrats!</p>
+<p>You can now program any modern <a href="https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus"><abbr title="A Family of microcontrollers developed since 1996 by Atmel">AVR</abbr> Microcontrollers</a> via <abbr title="Unified Program and Debug Interface">UPDI</abbr> and a <em>jtag2updi</em> enabled 328p-based board. </p>
+</div>
+<h3 id="serial-programming">Serial Programming<a class="headerlink" href="#serial-programming" title="Permanent link">&para;</a></h3>
+<p><img alt="Promotion" src="https://img.shields.io/badge/-Recommended-success?style=flat-square" /></p>
+<div class="admonition info">
+<p class="admonition-title">Serial <abbr title="Unified Program and Debug Interface">UPDI</abbr> Programming with megaTinyCore</p>
+<p>Version 2.2.0 of the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library brings the implementation of a portable python implementation. This installation, based on <a href="https://pypi.org/project/pymcuprog/">pymcuprog</a>, <strong>allows for a programming speed increase by a factor of 20</strong> when compared to the prior <em>jtag2udpi</em> programming style. With this performance increase in addition to a smaller &amp; cheaper hardware list, Serial UDPI programming with the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library is the most optimal form of programming I&rsquo;ve used on my boards to date.</p>
+</div>
+<p>The serial programming style relies on this prior mentioned portable python installation alongside a <abbr title="Universal Serial Bus">USB</abbr>-Serial adapter acting as the programmer in this case. Though this section of the page will document this programming style via a pre-made <abbr title="Universal Serial Bus">USB</abbr>-Serial adapter (in this case an FTDI chip) and some other hardware bits, please note the <a href="https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing"><abbr title="Universal Serial Bus">USB</abbr>-C <abbr title="Unified Program and Debug Interface">UPDI</abbr> Serial Programmer</a> board documented later on this page - this board is a set hardware piece for this Serial <abbr title="Unified Program and Debug Interface">UPDI</abbr> programming style, and provides a permanent hardware programming board. To engage the Serial <abbr title="Unified Program and Debug Interface">UPDI</abbr> programming method without a board like this you&rsquo;ll need the required hardware&hellip;</p>
+<ol>
+<li>A <abbr title="Universal Serial Bus">USB</abbr>-Serial Adapter - I&rsquo;ll be using an FTDI FT232 for this documentation, but boards based on the CH340G or the CP210 chips work great as well</li>
+<li>Some Jumper Wires</li>
+<li>A Schottky Diode - I tacked some leads to an <abbr title="Surface-Mount Device">SMD</abbr> package (as shown below), but if you can get your hands on a through-hole package, that works great as well.
+ <center>
+<img alt="" src="../../assets/images/SerialUPDI/diodeleads.jpg" width="95%" />
+</center></li>
+<li>A 470-ohm Resistor - If creating a <abbr title="Unified Program and Debug Interface">UPDI</abbr> programmable board, incorporate this resistor into your schematic using the pinout below, running the 470-ohm resistor inline to the <abbr title="Unified Program and Debug Interface">UPDI</abbr> pin. Any value between 100 and 1k ohms will do here, but 470 is the optimal value.</li>
+</ol>
+<p>``` title=&rdquo;Target Board Programming Headers&rdquo;
+      <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_
+-----| <abbr title="Unified Program and Debug Interface">UPDI</abbr>&mdash;\/\/------&gt;
+-----| Gnd    470 ohms (100 ~ 1k)
+-----| Vcc
+     |</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>If not creating your own board, and there&#39;s no inline UPDI resistor, you&#39;ll need to include this resistor externally. With that said, wiring between your serial adapter and the target device is diagrammed in the schematics below.
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a> - VCC of Adapter to VCC of Target
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a> - GND of Adapter to GND of Target
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a> - Schottky Diode between the Rx &amp; Tx of Serial Adapter (Cathode to Tx)
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a> - Rx of Adapter to UPDI of Target - Here include the 470 ohms resistor as needed 
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>``` title=&quot;Ideal - internal resistor in the adapter - not more than 1k&quot;
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>--------------------                                 To Target device
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>                DTR|                                  __________________
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    internal    Rx |--------------,------------------| UPDI---\/\/------&gt;
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>  Tx---/\/\/\---Tx |-------|&lt;|---&#39;          .--------| Gnd    470 ohms (100 ~ 1k)
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    resistor    Vcc|---------------------------------| Vcc
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>  typ. 1k       CTS|                     .`          |__________________
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>                Gnd|--------------------&#39;             If you make a 3-pin connector, use this pinout
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>--------------------
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>or
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>--------------------                                 To Target device
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>                DTR|     External 470 ohms (100 ~ 1k) __________________
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    internal    Rx |--------------,--\/\/------------| UPDI-------------&gt;
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>  Tx---/\/\/\---Tx |-------|&lt;|---&#39;          .--------| Gnd
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    resistor    Vcc|---------------------------------| Vcc
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>  typ 1k        CTS|                     .`          |__________________
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>                Gnd|--------------------&#39;
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>--------------------
+</code></pre></div></p>
+<p><code>`` title="Or with no internal resistor on the adapter - as long as the target has one"
+--------------------                                 To Target device
+                DTR|                                  __________________
+       no       Rx |--------------,------------------| UPDI---\/\/------&gt;
+    internal    Tx |-------|&lt;|---'          .--------| Gnd    470 ohms (100 ~ 1k)
+    resistor    Vcc|---------------------------------| Vcc
+                CTS|                     .</code>          |<strong><em>_</em></strong><strong><em>_</em></strong>____
+                Gnd|--------------------&lsquo;</p>
+<hr />
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>I rigged up the second included schematic on a breadboard as unfortunately the blinky board I&#39;m programming doesn&#39;t have a valid inline resistor I can use. 
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>&lt;center&gt;
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>![](../assets/images/SerialUPDI/SerialBreadboardWired.jpg){width=&quot;95%&quot;}
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  &lt;figcaption&gt;Serial Programmer Setup on a Breadboard&lt;/figcaption&gt;
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>&lt;/center&gt;
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>#### Serial Programmer Usage
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>To program via your USB-Serial setup ...
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a> 1. Navigate to the *Tools -&gt; Programmer* menu and select an iteration of the *Serial-UPDI* options (Based on upload speeds, the tinyAVR core offers 57600 baud, 230400 baud, and 460800 baud options - thus the different speed settings)
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a> 2. Then, under *Tools -&gt; Port* select the port connected to your USB-Serial adapter, if not already selected
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a> 3. Finally, upload your sketch via the *Upload* button and watch as your board is programmed at lightning speeds!
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>!!! warning &quot;Note - this serial programmer setup does not give you a serial monitor&quot;
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    You&#39;ll need to connect a serial adapter the normal way for that. **The later documented [USB-C UPDI Serial Programmer](https://teddywarner.org/Projects/SerialUPDI/#usb-c-updi-programmer-manufacturing) &amp; [ftdi2updi](https://teddywarner.org/Projects/SerialUPDI/#ftdi2updi) boards provide a switching feature between a serial programming and serial monitoring mode, allowing for all programming and monitoring work to be done without rework of connections.** Be sure to check out the specific [USB-C UPDI Serial Programmer usage](https://teddywarner.org/Projects/SerialUPDI/#programmer-usage) section for use of this feature.
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>!!! example &quot;Example&quot;
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    For this example, I modified my prior used blink sketch to run a 5-second delay as opposed to the prior 0.5 seconds...
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    ```c++ linenums=&quot;1&quot;
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    void setup() {
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>      pinMode(0, OUTPUT);
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    }
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    void loop() {
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>      digitalWrite(0, HIGH); 
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>      delay(5000);
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>      digitalWrite(0, LOW); 
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>      delay(5000); 
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    }
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>    ```
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>    I uploaded this via the three-step process listed above, yielding the successful results below.
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>    &lt;center&gt;
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>    &lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;https://www.youtube.com/embed/kzWAhotTQuY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>    &lt;/center&gt;
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>!!! success &quot;Congrats!&quot;
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>    You can now program any modern [AVR Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus) via UPDI with a simple USB-Serial adapter with a speed increase by a factor of twenty when compared with the prior *jtag2updi* method.
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>## UPDI Serial Programmer Manufacturing
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>I made countless PCBs during my cycle of the [Fab Academy](https://fabacademy.org/), one of the first being a tool to program the rest, an [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer). Being one of the first boards I fabricated myself, from the PCB milling to soldering &amp; stuffing, I hadn&#39;t yet taken up the practice of designing my boards, and for this assignment, fabricated the [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) design of one of my mentors, [Dr. Adam Harris](http://sheekgeek.org/). This board is a specialized Arduino-like board, running on an ATMega 328p with a programmer sketch provided by the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library. 
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>!!! abstract &quot;Project Origins&quot;
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>    The [In-Circuit Programmer](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week04/#in-circuit-programmer) I fabricated in Fab Academy&#39;s operation is great, but due to new updates in the [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, the process can be optimized for faster speeds, and the board size and component requirements can be reduced. This board marks my first steps into the world of multi-layered PCB design and fabrication, a process I&#39;m super pumped to pick up and apply to future projects.
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>The USB-C UPDI Programmer is a specialized piece of hardware for use with the prior discussed [serial programming](https://teddywarner.org/Projects/SerialUPDI/#serial-programming) method and has a couple of advantages over rigging a programmer up on a breadboard. A permanent piece of the hardware enables the serial programming method to require a bit less setup, once the board has been made. Following that, this board includes &quot;modes&quot;, allowing switching between serial programming and monitoring functions. When rigging a serial programmer up via a USB-serial adapter as documented prior, you cannot monitor serial from the board at the same time, but instead are required to require the board to the USB-serial adapter. The switching of &quot;modes&quot; on this programmer eliminates this extra hassle, handling all the required connections at the flip of a switch located on the board&#39;s underside.
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>### USB-C UPDI Design
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>
+<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>It was this elimination of hassle that pushed me to create this piece of hardware, yielding a simple workflow when serial programming. The USB-C UPDI Serial Programmer is based on the *FT232RL*[^3] IC, handling the USB protocol and USB to serial data transfer on the programmer. 
+<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>
+<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>&lt;iframe src=&quot;https://drive.google.com/file/d/1sXxm9A5GLxVPGFNDkNBzLakp-TWlVKT2/preview&quot; width=&quot;100%&quot; height=&quot;500&quot; allow=&quot;autoplay&quot;&gt;&lt;/iframe&gt;
+<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>
+<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>The *FT232RL* is broken out following the same wiring principals diagrammed in the prior [serial programming](https://teddywarner.org/Projects/SerialUPDI/#serial-programming) documentation, converting the IC&#39;s *Rx* and *Tx* lines to a UPDI line, routed to a programming pin. Just before this *Rx* and *Tx* junction, a Double-Pole Double-Through switch allows for the switching of this conversion to UPDI to straightforward *Rx* and *Tx* lines, routed each to their corresponding pin. Thus, the programmer board includes a UPDI, *Rx*, and *Tx* output pin, in addition to a VCC and GND line. This 5 pin programming pinout can be mimicked on any board containing a [AVR Microcontroller](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus), allowing for programming and monitoring functions to be switched without reworking connections between the programmer and board.
+<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>
+<a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a>&lt;center&gt;
+<a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a>
+<a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a>![](../assets/images/SerialUPDI/ICPSchem1.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a>  &lt;figcaption&gt;USB-C UPDI Programmer Eagle Schematic&lt;/figcaption&gt;
+<a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>
+<a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>&lt;/center&gt;
+<a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a>
+<a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a>Then came the nesting process. Being my first double-sided board in Eagle, it took some work to get used to the use of vias between sides, but eventually, I worked out the process of changing Via&#39;s drill class through Eagle&#39;s *Change -&gt; Drill* tool. I ended up using 0.6mm rivets for this board&#39;s vias, using 8 on the board in total. I nested bards on the board, including both the *FT232RL* and the USB-C female adapter on the top side, along with some smoothing capacitors, and on the bottom, the UPDI programming component array, as well as the DPDT switch.
+<a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a>
+<a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a>&lt;center&gt;
+<a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a>
+<a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a>![](../assets/images/SerialUPDI/ICPTop1.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a>![](../assets/images/SerialUPDI/ICPBottom1.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a>![](../assets/images/SerialUPDI/ICPLayered1.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a>  &lt;figcaption&gt;USB-C UPDI Programmer Eagle Board&lt;/figcaption&gt;
+<a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a>
+<a id="__codelineno-3-84" name="__codelineno-3-84" href="#__codelineno-3-84"></a>&lt;/center&gt;
+<a id="__codelineno-3-85" name="__codelineno-3-85" href="#__codelineno-3-85"></a>
+<a id="__codelineno-3-86" name="__codelineno-3-86" href="#__codelineno-3-86"></a>The nesting of the two highest pinout parts on the board&#39;s topside inspired my next experiment with this board, [Solder Paste Stencil](https://www.sparkfun.com/tutorials/383) making. Although I feel pretty confident in my SMD soldering skills, soldering pads this small wouldn&#39;t only be a hassle, it would also be tedious time waste, and thus I settled on a solder paste stencil approach for the boards topside, while hand soldering the bottom half. I exported the *Tcream* layer of my programmer board from Eagle as a *.pdf* for cutting of the stencil from cardstock on a [Epliog Fusion Pro 48](https://teddywarner.org/Machine-Profiles/FusionPro48/) laser.
+<a id="__codelineno-3-87" name="__codelineno-3-87" href="#__codelineno-3-87"></a>
+<a id="__codelineno-3-88" name="__codelineno-3-88" href="#__codelineno-3-88"></a>&lt;center&gt;
+<a id="__codelineno-3-89" name="__codelineno-3-89" href="#__codelineno-3-89"></a>
+<a id="__codelineno-3-90" name="__codelineno-3-90" href="#__codelineno-3-90"></a>![](../assets/images/SerialUPDI/topstencil.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-91" name="__codelineno-3-91" href="#__codelineno-3-91"></a>  &lt;figcaption&gt;Tcream board layer in Eagle&lt;/figcaption&gt;
+<a id="__codelineno-3-92" name="__codelineno-3-92" href="#__codelineno-3-92"></a>
+<a id="__codelineno-3-93" name="__codelineno-3-93" href="#__codelineno-3-93"></a>**Bill of Matierals - USB-C UPDI**
+<a id="__codelineno-3-94" name="__codelineno-3-94" href="#__codelineno-3-94"></a>
+<a id="__codelineno-3-95" name="__codelineno-3-95" href="#__codelineno-3-95"></a>|Qty.| Part | Cost | URL |
+<a id="__codelineno-3-96" name="__codelineno-3-96" href="#__codelineno-3-96"></a>|--|----|---|---|
+<a id="__codelineno-3-97" name="__codelineno-3-97" href="#__codelineno-3-97"></a>|x1|SMD DPDT Switch|$1.50|[link](https://www.sparkfun.com/products/597)|
+<a id="__codelineno-3-98" name="__codelineno-3-98" href="#__codelineno-3-98"></a>|x1|CDBM1100-G|$0.39|[link](https://www.digikey.com/en/products/detail/CDBM1100-G/641-1331-1-ND/2021252?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-99" name="__codelineno-3-99" href="#__codelineno-3-99"></a>|x1|470 ohm SMD Resistor|$0.10|[link](https://www.digikey.com/en/products/detail/CRCW1206470RFKEA/541-470FCT-ND/1181722?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-100" name="__codelineno-3-100" href="#__codelineno-3-100"></a>|x1|1.5k ohm SMD Resistor|$0.10|[link](https://www.digikey.com/en/products/detail/RC1206JR-071K5L/311-1.5KERCT-ND/732145?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-101" name="__codelineno-3-101" href="#__codelineno-3-101"></a>|x1|100nf SMD Cap|$0.18|[link](https://www.digikey.com/en/products/detail/12061C104KAT2A/478-1529-1-ND/564561?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-102" name="__codelineno-3-102" href="#__codelineno-3-102"></a>|x1|1uf SMD Cap|$0.10   |[link](https://www.digikey.com/en/products/detail/12063C105KAT2A/478-1567-1-ND/564599?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-103" name="__codelineno-3-103" href="#__codelineno-3-103"></a>|x1|DX07S016JA1R1500|$1.59|[link](https://www.digikey.com/en/products/detail/DX07S016JA1R1500/670-DX07S016JA1R1500CT-ND/11586676?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-104" name="__codelineno-3-104" href="#__codelineno-3-104"></a>|x1|FT232RL|$4.19|[link](https://uk.rs-online.com/web/p/multiprotocol-transceivers/0406580?cm_mmc=aff2-_-uk-_-octopart-_-Instock406580)|
+<a id="__codelineno-3-105" name="__codelineno-3-105" href="#__codelineno-3-105"></a>|x11|Header Pins|$0.14|[link](https://www.amazon.com/MCIGICM-Header-2-45mm-Arduino-Connector/dp/B07PKKY8BX/ref=sr_1_5?keywords=male+headers&amp;qid=1639060454&amp;sr=8-5)|
+<a id="__codelineno-3-106" name="__codelineno-3-106" href="#__codelineno-3-106"></a>|x1|Copper PCB Blank|$0.70|[link](https://www.amazon.com/MCIGICM-Copper-Laminate-Circuit-Single/dp/B01MCVLDDZ/ref=sr_1_1?keywords=copper+pcb+blank&amp;qid=1639060805&amp;sr=8-1)|
+<a id="__codelineno-3-107" name="__codelineno-3-107" href="#__codelineno-3-107"></a>
+<a id="__codelineno-3-108" name="__codelineno-3-108" href="#__codelineno-3-108"></a>Total Cost- **$8.99**
+<a id="__codelineno-3-109" name="__codelineno-3-109" href="#__codelineno-3-109"></a>
+<a id="__codelineno-3-110" name="__codelineno-3-110" href="#__codelineno-3-110"></a>&lt;/center&gt;
+<a id="__codelineno-3-111" name="__codelineno-3-111" href="#__codelineno-3-111"></a>
+<a id="__codelineno-3-112" name="__codelineno-3-112" href="#__codelineno-3-112"></a>### ftdi2updi Design
+<a id="__codelineno-3-113" name="__codelineno-3-113" href="#__codelineno-3-113"></a>
+<a id="__codelineno-3-114" name="__codelineno-3-114" href="#__codelineno-3-114"></a>In addition to the prior USB-C UPDI Serial Programmer board, I created an alternative hardware programmer that makes use of a pre-existing FTDI chip, enabling it with the same switching functions feature as the prior board. This provided a workaround to 2021&#39;s silicone shortage, as due to backed-up supply chains, I wasn&#39;t able to get my hands on the FT232RL right away.
+<a id="__codelineno-3-115" name="__codelineno-3-115" href="#__codelineno-3-115"></a>
+<a id="__codelineno-3-116" name="__codelineno-3-116" href="#__codelineno-3-116"></a>The board&#39;s schematic is a cloned iteration of the prior programmer, but with the USB-C &amp; FT232RL components removed, and replaced with headers for connection to an FTDI adapter, yielding the schematic below.
+<a id="__codelineno-3-117" name="__codelineno-3-117" href="#__codelineno-3-117"></a>
+<a id="__codelineno-3-118" name="__codelineno-3-118" href="#__codelineno-3-118"></a>&lt;center&gt;
+<a id="__codelineno-3-119" name="__codelineno-3-119" href="#__codelineno-3-119"></a>
+<a id="__codelineno-3-120" name="__codelineno-3-120" href="#__codelineno-3-120"></a>![](../assets/images/SerialUPDI/ftdi2updischem.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-121" name="__codelineno-3-121" href="#__codelineno-3-121"></a>  &lt;figcaption&gt;First Iteration ftdi2updi Programmer Eagle Schematic&lt;/figcaption&gt;
+<a id="__codelineno-3-122" name="__codelineno-3-122" href="#__codelineno-3-122"></a>
+<a id="__codelineno-3-123" name="__codelineno-3-123" href="#__codelineno-3-123"></a>&lt;/center&gt;
+<a id="__codelineno-3-124" name="__codelineno-3-124" href="#__codelineno-3-124"></a>
+<a id="__codelineno-3-125" name="__codelineno-3-125" href="#__codelineno-3-125"></a>I was compelled to expand on the original shape of an FTDI serial adapter for this board, as it expands on the functionality of the adapter itself. I used Inkscape to create the board shape, allowing for meshing with an FTDI serial adapter, with the board aligning two of the sides of the adapter and then imported this board shape into Eagle via an *ulp* as documented on my [Fab Academy Final Project](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/#main-board-eagle-prototyping-and-design) page. I then nested the components on both sides of the board, aligning the FTDI connection pins allowing for proper seating of the FTDI serial adapter with the board.
+<a id="__codelineno-3-126" name="__codelineno-3-126" href="#__codelineno-3-126"></a>
+<a id="__codelineno-3-127" name="__codelineno-3-127" href="#__codelineno-3-127"></a>&lt;center&gt;
+<a id="__codelineno-3-128" name="__codelineno-3-128" href="#__codelineno-3-128"></a>
+<a id="__codelineno-3-129" name="__codelineno-3-129" href="#__codelineno-3-129"></a>![](../assets/images/SerialUPDI/ftdi2upditop.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-130" name="__codelineno-3-130" href="#__codelineno-3-130"></a>![](../assets/images/SerialUPDI/ftdi2updibottom.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-131" name="__codelineno-3-131" href="#__codelineno-3-131"></a>![](../assets/images/SerialUPDI/ftdi2updiboard.png){width=&quot;100%&quot;}
+<a id="__codelineno-3-132" name="__codelineno-3-132" href="#__codelineno-3-132"></a>  &lt;figcaption&gt;First Iteration ftdi2updi Programmer Eagle Board&lt;/figcaption&gt;
+<a id="__codelineno-3-133" name="__codelineno-3-133" href="#__codelineno-3-133"></a>
+<a id="__codelineno-3-134" name="__codelineno-3-134" href="#__codelineno-3-134"></a>**Bill of Matierals - ftdi2updi**
+<a id="__codelineno-3-135" name="__codelineno-3-135" href="#__codelineno-3-135"></a>
+<a id="__codelineno-3-136" name="__codelineno-3-136" href="#__codelineno-3-136"></a>|Qty.| Part | Cost | URL |
+<a id="__codelineno-3-137" name="__codelineno-3-137" href="#__codelineno-3-137"></a>|--|----|---|---|
+<a id="__codelineno-3-138" name="__codelineno-3-138" href="#__codelineno-3-138"></a>|x1|SMD DPDT Switch|$1.50|[link](https://www.sparkfun.com/products/597)|
+<a id="__codelineno-3-139" name="__codelineno-3-139" href="#__codelineno-3-139"></a>|x1|CDBM1100-G|$0.39|[link](https://www.digikey.com/en/products/detail/CDBM1100-G/641-1331-1-ND/2021252?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-140" name="__codelineno-3-140" href="#__codelineno-3-140"></a>|x1|470 ohm SMD Resistor|$0.10|[link](https://www.digikey.com/en/products/detail/CRCW1206470RFKEA/541-470FCT-ND/1181722?utm_campaign=buynow&amp;utm_medium=aggregator&amp;curr=usd&amp;utm_source=octopart)|
+<a id="__codelineno-3-141" name="__codelineno-3-141" href="#__codelineno-3-141"></a>|x11|Header Pins|$0.14|[link](https://www.amazon.com/MCIGICM-Header-2-45mm-Arduino-Connector/dp/B07PKKY8BX/ref=sr_1_5?keywords=male+headers&amp;qid=1639060454&amp;sr=8-5)|
+<a id="__codelineno-3-142" name="__codelineno-3-142" href="#__codelineno-3-142"></a>|x1|Copper PCB Blank|$0.70|[link](https://www.amazon.com/MCIGICM-Copper-Laminate-Circuit-Single/dp/B01MCVLDDZ/ref=sr_1_1?keywords=copper+pcb+blank&amp;qid=1639060805&amp;sr=8-1)|
+<a id="__codelineno-3-143" name="__codelineno-3-143" href="#__codelineno-3-143"></a>|x1|FTDI Serial Adapter|$14.95|[link](https://www.sparkfun.com/products/9716)|
+<a id="__codelineno-3-144" name="__codelineno-3-144" href="#__codelineno-3-144"></a>
+<a id="__codelineno-3-145" name="__codelineno-3-145" href="#__codelineno-3-145"></a>Total Cost (W/out FTDI)- **$2.83** 
+<a id="__codelineno-3-146" name="__codelineno-3-146" href="#__codelineno-3-146"></a>
+<a id="__codelineno-3-147" name="__codelineno-3-147" href="#__codelineno-3-147"></a>Final Cost- **$17.78**
+<a id="__codelineno-3-148" name="__codelineno-3-148" href="#__codelineno-3-148"></a>
+<a id="__codelineno-3-149" name="__codelineno-3-149" href="#__codelineno-3-149"></a>&lt;/center&gt;
+<a id="__codelineno-3-150" name="__codelineno-3-150" href="#__codelineno-3-150"></a>
+<a id="__codelineno-3-151" name="__codelineno-3-151" href="#__codelineno-3-151"></a>### Fabrication &amp; Testing
+<a id="__codelineno-3-152" name="__codelineno-3-152" href="#__codelineno-3-152"></a>
+<a id="__codelineno-3-153" name="__codelineno-3-153" href="#__codelineno-3-153"></a>#### ftdi2updi
+<a id="__codelineno-3-154" name="__codelineno-3-154" href="#__codelineno-3-154"></a>
+<a id="__codelineno-3-155" name="__codelineno-3-155" href="#__codelineno-3-155"></a>I milled my boards with a Bantam PCB mill and its [Bantam Tools Desktop Milling Machine Software](https://www.bantamtools.com/software-download). The software handles all toolpath generation from my Eagle board file, and conveniently, when paired with Bantam&#39;s PCB placement bracket, also handles the double-sided board milling process via a toggle switch in the interface. I followed the same milling process I have documented on my [week 4](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week04/#blinky-test-board) Fab Academy page, however after the top-side traces and holes were milled, I flipped the copper stock, aligning to the right-hand corner of the PCB alignment bracket as opposed to the left, and toggled the board to its bottom side in the [Bantam Tools Desktop Milling Machine Software](https://www.bantamtools.com/software-download). With the stock realigned, I repeated the same milling process for the bottom side of the board. This whole process is showcased in [this view](https://www.youtube.com/watch?v=DCGLEa2UUaY) from Bantam.
+<a id="__codelineno-3-156" name="__codelineno-3-156" href="#__codelineno-3-156"></a>
+<a id="__codelineno-3-157" name="__codelineno-3-157" href="#__codelineno-3-157"></a>I used a 0.005&quot; PCB engraving bit for the ftdi2updi&#39;s traces, and a 1/32&quot; for its holes and outlines, yielding the milled results below.
+<a id="__codelineno-3-158" name="__codelineno-3-158" href="#__codelineno-3-158"></a>
+<a id="__codelineno-3-159" name="__codelineno-3-159" href="#__codelineno-3-159"></a>&lt;center&gt;
+<a id="__codelineno-3-160" name="__codelineno-3-160" href="#__codelineno-3-160"></a>
+<a id="__codelineno-3-161" name="__codelineno-3-161" href="#__codelineno-3-161"></a>![](../assets/images/SerialUPDI/ftdi2updiirltop.jpg){width=&quot;47.4%&quot;}
+<a id="__codelineno-3-162" name="__codelineno-3-162" href="#__codelineno-3-162"></a>![](../assets/images/SerialUPDI/ftdi2updiirlbottom.jpg){width=&quot;46%&quot;}
+<a id="__codelineno-3-163" name="__codelineno-3-163" href="#__codelineno-3-163"></a>
+<a id="__codelineno-3-164" name="__codelineno-3-164" href="#__codelineno-3-164"></a>&lt;/center&gt;
+<a id="__codelineno-3-165" name="__codelineno-3-165" href="#__codelineno-3-165"></a>
+<a id="__codelineno-3-166" name="__codelineno-3-166" href="#__codelineno-3-166"></a>After the milling, I washed off my board with some soap and water. The [Bantam Tools Desktop Milling Machine Software](https://www.bantamtools.com/software-download) makes the milling of double-sided boards super straightforward, not much harder than a single-sided PCB, however, the boards require the extra step of riveting vias between both sides of the board before soldering. This article on [PCB Rivets](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets/) from the Fab Docs walks through the process down into a couple of steps.
+<a id="__codelineno-3-167" name="__codelineno-3-167" href="#__codelineno-3-167"></a>
+<a id="__codelineno-3-168" name="__codelineno-3-168" href="#__codelineno-3-168"></a>First the via has to be inserted into its corresponding hole, I used 0.6mm vias here. Then I used a V-Shaped nail to chamfer the top of the via and finally pressed it flush with a flat press, each step shown in the three assets/images below.
+<a id="__codelineno-3-169" name="__codelineno-3-169" href="#__codelineno-3-169"></a>
+<a id="__codelineno-3-170" name="__codelineno-3-170" href="#__codelineno-3-170"></a>&lt;center&gt;
+<a id="__codelineno-3-171" name="__codelineno-3-171" href="#__codelineno-3-171"></a>
+<a id="__codelineno-3-172" name="__codelineno-3-172" href="#__codelineno-3-172"></a>![](../assets/images/SerialUPDI/viasstep1.jpg){width=&quot;31.5%&quot;}
+<a id="__codelineno-3-173" name="__codelineno-3-173" href="#__codelineno-3-173"></a>![](../assets/images/SerialUPDI/viasstep2.jpg){width=&quot;31.5%&quot;}
+<a id="__codelineno-3-174" name="__codelineno-3-174" href="#__codelineno-3-174"></a>![](../assets/images/SerialUPDI/viasstep3.jpg){width=&quot;31.5%&quot;}
+<a id="__codelineno-3-175" name="__codelineno-3-175" href="#__codelineno-3-175"></a>
+<a id="__codelineno-3-176" name="__codelineno-3-176" href="#__codelineno-3-176"></a>&lt;/center&gt;
+<a id="__codelineno-3-177" name="__codelineno-3-177" href="#__codelineno-3-177"></a>
+<a id="__codelineno-3-178" name="__codelineno-3-178" href="#__codelineno-3-178"></a>Finally, to ensure a proper connection, I soldered over each side of the via and repeated this process for all four of the board&#39;s vias.
+<a id="__codelineno-3-179" name="__codelineno-3-179" href="#__codelineno-3-179"></a>
+<a id="__codelineno-3-180" name="__codelineno-3-180" href="#__codelineno-3-180"></a>&lt;center&gt;
+<a id="__codelineno-3-181" name="__codelineno-3-181" href="#__codelineno-3-181"></a>
+<a id="__codelineno-3-182" name="__codelineno-3-182" href="#__codelineno-3-182"></a>![](../assets/images/SerialUPDI/solderedviasbottom.jpg){width=&quot;49.3%&quot;}
+<a id="__codelineno-3-183" name="__codelineno-3-183" href="#__codelineno-3-183"></a>![](../assets/images/SerialUPDI/solderedviastop.jpg){width=&quot;47%&quot;}
+<a id="__codelineno-3-184" name="__codelineno-3-184" href="#__codelineno-3-184"></a>  &lt;figcaption&gt;Boards with Vias&lt;/figcaption&gt;
+<a id="__codelineno-3-185" name="__codelineno-3-185" href="#__codelineno-3-185"></a>
+<a id="__codelineno-3-186" name="__codelineno-3-186" href="#__codelineno-3-186"></a>&lt;/center&gt;
+<a id="__codelineno-3-187" name="__codelineno-3-187" href="#__codelineno-3-187"></a>
+<a id="__codelineno-3-188" name="__codelineno-3-188" href="#__codelineno-3-188"></a>I finished the stuffing and soldering of this board, a simple enough process due to the small component size. 
+<a id="__codelineno-3-189" name="__codelineno-3-189" href="#__codelineno-3-189"></a>
+<a id="__codelineno-3-190" name="__codelineno-3-190" href="#__codelineno-3-190"></a>!!! warning &quot;Note&quot;
+<a id="__codelineno-3-191" name="__codelineno-3-191" href="#__codelineno-3-191"></a>
+<a id="__codelineno-3-192" name="__codelineno-3-192" href="#__codelineno-3-192"></a>    The board that is being documented here is an early iteration of the ftdi2updi and contains an extra resistor, and thus your final board may not look exactly like the ones on this page until the *Programmer Usage* section.
+<a id="__codelineno-3-193" name="__codelineno-3-193" href="#__codelineno-3-193"></a>
+<a id="__codelineno-3-194" name="__codelineno-3-194" href="#__codelineno-3-194"></a>&lt;center&gt;
+<a id="__codelineno-3-195" name="__codelineno-3-195" href="#__codelineno-3-195"></a>
+<a id="__codelineno-3-196" name="__codelineno-3-196" href="#__codelineno-3-196"></a>![](../assets/images/SerialUPDI/ftdi2updisolderedtop.jpg){width=&quot;47%&quot;}
+<a id="__codelineno-3-197" name="__codelineno-3-197" href="#__codelineno-3-197"></a>![](../assets/images/SerialUPDI/ftdi2updisolderedbottom.jpg){width=&quot;50%&quot;}
+<a id="__codelineno-3-198" name="__codelineno-3-198" href="#__codelineno-3-198"></a>
+<a id="__codelineno-3-199" name="__codelineno-3-199" href="#__codelineno-3-199"></a>&lt;/center&gt;
+<a id="__codelineno-3-200" name="__codelineno-3-200" href="#__codelineno-3-200"></a>
+<a id="__codelineno-3-201" name="__codelineno-3-201" href="#__codelineno-3-201"></a>I ran two tests on the ftdi2updi, one proving each of the board&#39;s functions. 
+<a id="__codelineno-3-202" name="__codelineno-3-202" href="#__codelineno-3-202"></a>
+<a id="__codelineno-3-203" name="__codelineno-3-203" href="#__codelineno-3-203"></a>!!! example &quot;Programming Test&quot;
+<a id="__codelineno-3-204" name="__codelineno-3-204" href="#__codelineno-3-204"></a>
+<a id="__codelineno-3-205" name="__codelineno-3-205" href="#__codelineno-3-205"></a>    Beginning with its programming function, I uploaded a modified version of the same blink test sketch used above to my simple LED board ...
+<a id="__codelineno-3-206" name="__codelineno-3-206" href="#__codelineno-3-206"></a>
+<a id="__codelineno-3-207" name="__codelineno-3-207" href="#__codelineno-3-207"></a>    ``` c++ linenums=&quot;1&quot;
+<a id="__codelineno-3-208" name="__codelineno-3-208" href="#__codelineno-3-208"></a>    void setup() {
+<a id="__codelineno-3-209" name="__codelineno-3-209" href="#__codelineno-3-209"></a>      pinMode(0, OUTPUT);
+<a id="__codelineno-3-210" name="__codelineno-3-210" href="#__codelineno-3-210"></a>    }
+<a id="__codelineno-3-211" name="__codelineno-3-211" href="#__codelineno-3-211"></a>
+<a id="__codelineno-3-212" name="__codelineno-3-212" href="#__codelineno-3-212"></a>    void loop() {
+<a id="__codelineno-3-213" name="__codelineno-3-213" href="#__codelineno-3-213"></a>      digitalWrite(0, HIGH); 
+<a id="__codelineno-3-214" name="__codelineno-3-214" href="#__codelineno-3-214"></a>      Serial.println(&#39;ON&#39;)
+<a id="__codelineno-3-215" name="__codelineno-3-215" href="#__codelineno-3-215"></a>      delay(5000);
+<a id="__codelineno-3-216" name="__codelineno-3-216" href="#__codelineno-3-216"></a>      digitalWrite(0, LOW); 
+<a id="__codelineno-3-217" name="__codelineno-3-217" href="#__codelineno-3-217"></a>      Serial.println(&#39;OFF&#39;)
+<a id="__codelineno-3-218" name="__codelineno-3-218" href="#__codelineno-3-218"></a>      delay(5000); 
+<a id="__codelineno-3-219" name="__codelineno-3-219" href="#__codelineno-3-219"></a>    }
+<a id="__codelineno-3-220" name="__codelineno-3-220" href="#__codelineno-3-220"></a>    ```
+<a id="__codelineno-3-221" name="__codelineno-3-221" href="#__codelineno-3-221"></a>
+<a id="__codelineno-3-222" name="__codelineno-3-222" href="#__codelineno-3-222"></a>    I uploaded this via the *Programmer Usage* process documented in the corresponding section below. The first upload was successful at a medium (230400) baudrate. Then I uploaded the test, and repeated it at the highest (TURBO 4.5v + 460800) baudrate, yielding the successful results below. 
+<a id="__codelineno-3-223" name="__codelineno-3-223" href="#__codelineno-3-223"></a>
+<a id="__codelineno-3-224" name="__codelineno-3-224" href="#__codelineno-3-224"></a>    &lt;center&gt;
+<a id="__codelineno-3-225" name="__codelineno-3-225" href="#__codelineno-3-225"></a>    &lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;https://www.youtube.com/embed/eTtsF79EW4c&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+<a id="__codelineno-3-226" name="__codelineno-3-226" href="#__codelineno-3-226"></a>    &lt;/center&gt;
+<a id="__codelineno-3-227" name="__codelineno-3-227" href="#__codelineno-3-227"></a>
+<a id="__codelineno-3-228" name="__codelineno-3-228" href="#__codelineno-3-228"></a>!!! warning &quot;Note&quot;
+<a id="__codelineno-3-229" name="__codelineno-3-229" href="#__codelineno-3-229"></a>
+<a id="__codelineno-3-230" name="__codelineno-3-230" href="#__codelineno-3-230"></a>    The ftdi2updi serial adapter meshing headers were reversed in this iteration, and thus I attached the serial adapter upsidedown for this test, the proper orientation as outlined in the following *Programmer Usage* section.
+<a id="__codelineno-3-231" name="__codelineno-3-231" href="#__codelineno-3-231"></a>
+<a id="__codelineno-3-232" name="__codelineno-3-232" href="#__codelineno-3-232"></a>!!! example &quot;Serial Monitoring Test&quot;
+<a id="__codelineno-3-233" name="__codelineno-3-233" href="#__codelineno-3-233"></a>
+<a id="__codelineno-3-234" name="__codelineno-3-234" href="#__codelineno-3-234"></a>    Next, I switched the programmer to its monitoring mode and hooked it up to Arduino *RX* &amp; *TX* pins, shown below. Unfortunately, my simple LED board doesn&#39;t have serial communication pins, and thus this Arduino was my next best testing option.
+<a id="__codelineno-3-235" name="__codelineno-3-235" href="#__codelineno-3-235"></a>
+<a id="__codelineno-3-236" name="__codelineno-3-236" href="#__codelineno-3-236"></a>    &lt;center&gt;
+<a id="__codelineno-3-237" name="__codelineno-3-237" href="#__codelineno-3-237"></a>
+<a id="__codelineno-3-238" name="__codelineno-3-238" href="#__codelineno-3-238"></a>    ![](../assets/images/SerialUPDI/serialtestwireing.jpg){width=&quot;95%&quot;}
+<a id="__codelineno-3-239" name="__codelineno-3-239" href="#__codelineno-3-239"></a>
+<a id="__codelineno-3-240" name="__codelineno-3-240" href="#__codelineno-3-240"></a>    &lt;/center&gt;
+<a id="__codelineno-3-241" name="__codelineno-3-241" href="#__codelineno-3-241"></a>
+<a id="__codelineno-3-242" name="__codelineno-3-242" href="#__codelineno-3-242"></a>    I uploaded this super simple serial print sketch to the Arduino ...
+<a id="__codelineno-3-243" name="__codelineno-3-243" href="#__codelineno-3-243"></a>
+<a id="__codelineno-3-244" name="__codelineno-3-244" href="#__codelineno-3-244"></a>    ``` c++ linenums=&quot;1&quot;
+<a id="__codelineno-3-245" name="__codelineno-3-245" href="#__codelineno-3-245"></a>    void setup(){
+<a id="__codelineno-3-246" name="__codelineno-3-246" href="#__codelineno-3-246"></a>      Serial.begin(9600);
+<a id="__codelineno-3-247" name="__codelineno-3-247" href="#__codelineno-3-247"></a>    }
+<a id="__codelineno-3-248" name="__codelineno-3-248" href="#__codelineno-3-248"></a>
+<a id="__codelineno-3-249" name="__codelineno-3-249" href="#__codelineno-3-249"></a>    void loop(){
+<a id="__codelineno-3-250" name="__codelineno-3-250" href="#__codelineno-3-250"></a>      Serial.println(&quot;Hello World&quot;);
+<a id="__codelineno-3-251" name="__codelineno-3-251" href="#__codelineno-3-251"></a>      delay(5000);
+<a id="__codelineno-3-252" name="__codelineno-3-252" href="#__codelineno-3-252"></a>    }
+<a id="__codelineno-3-253" name="__codelineno-3-253" href="#__codelineno-3-253"></a>    ```
+<a id="__codelineno-3-254" name="__codelineno-3-254" href="#__codelineno-3-254"></a>
+<a id="__codelineno-3-255" name="__codelineno-3-255" href="#__codelineno-3-255"></a>    and then opened the Arduino IDE&#39;s serial monitor on my ftdi2updi port, which successfully read the serial output printed, shown below - and also was able to transmit via serial, shown by the Arduinos receiving LED. 
+<a id="__codelineno-3-256" name="__codelineno-3-256" href="#__codelineno-3-256"></a>
+<a id="__codelineno-3-257" name="__codelineno-3-257" href="#__codelineno-3-257"></a>    &lt;center&gt;
+<a id="__codelineno-3-258" name="__codelineno-3-258" href="#__codelineno-3-258"></a>    &lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;https://www.youtube.com/embed/MHLoW-Os5n0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+<a id="__codelineno-3-259" name="__codelineno-3-259" href="#__codelineno-3-259"></a>    &lt;/center&gt;
+<a id="__codelineno-3-260" name="__codelineno-3-260" href="#__codelineno-3-260"></a>
+<a id="__codelineno-3-261" name="__codelineno-3-261" href="#__codelineno-3-261"></a>Although this first iteration of the ftdi2updi worked, there were a couple of design flaws (Noted above) I&#39;ve flatted out in later versions including - a reversed FTDI header, oversized vias, an unnecessary 1k resistor, and improper meshing with an existing FTDI serial adapter. **The final version of this programmer (and its CAM files) can be accessed in the repo linked by the download button at the bottom of the *Fabrication &amp; Testing* section.** Use this version as refrence whilst fabricating your own board.
+<a id="__codelineno-3-262" name="__codelineno-3-262" href="#__codelineno-3-262"></a>
+<a id="__codelineno-3-263" name="__codelineno-3-263" href="#__codelineno-3-263"></a>I ordered a couple of these final iteration boards from a PCB fab ...
+<a id="__codelineno-3-264" name="__codelineno-3-264" href="#__codelineno-3-264"></a>
+<a id="__codelineno-3-265" name="__codelineno-3-265" href="#__codelineno-3-265"></a>&lt;center&gt;
+<a id="__codelineno-3-266" name="__codelineno-3-266" href="#__codelineno-3-266"></a>
+<a id="__codelineno-3-267" name="__codelineno-3-267" href="#__codelineno-3-267"></a>![](../assets/images/SerialUPDI/orderedpcbtop.jpg){width=&quot;47%&quot;}
+<a id="__codelineno-3-268" name="__codelineno-3-268" href="#__codelineno-3-268"></a>![](../assets/images/SerialUPDI/orderedpcbback.jpg){width=&quot;45.4%&quot;}
+<a id="__codelineno-3-269" name="__codelineno-3-269" href="#__codelineno-3-269"></a>
+<a id="__codelineno-3-270" name="__codelineno-3-270" href="#__codelineno-3-270"></a>&lt;/center&gt;
+<a id="__codelineno-3-271" name="__codelineno-3-271" href="#__codelineno-3-271"></a>
+<a id="__codelineno-3-272" name="__codelineno-3-272" href="#__codelineno-3-272"></a>Which turned out incredible. The Gerber files for these boards are included in the Repo linked via the download button at the bottom of the *Fabrication &amp; Testing* section, along with an Eagle board file with silkscreen decals instead of milled ones. I soldered the components to this board, a process made even easier by the already plated vias, and lack of need to insert my own.
+<a id="__codelineno-3-273" name="__codelineno-3-273" href="#__codelineno-3-273"></a>
+<a id="__codelineno-3-274" name="__codelineno-3-274" href="#__codelineno-3-274"></a>&lt;center&gt;
+<a id="__codelineno-3-275" name="__codelineno-3-275" href="#__codelineno-3-275"></a>
+<a id="__codelineno-3-276" name="__codelineno-3-276" href="#__codelineno-3-276"></a>![](../assets/images/SerialUPDI/orderedsolderedpcbtop.jpg){width=&quot;47%&quot;}
+<a id="__codelineno-3-277" name="__codelineno-3-277" href="#__codelineno-3-277"></a>![](../assets/images/SerialUPDI/orderedsolderedpcbbottom.jpg){width=&quot;49.4%&quot;}
+<a id="__codelineno-3-278" name="__codelineno-3-278" href="#__codelineno-3-278"></a>  &lt;figcaption&gt;ftdi2updi Front and Back&lt;/figcaption&gt;
+<a id="__codelineno-3-279" name="__codelineno-3-279" href="#__codelineno-3-279"></a>
+<a id="__codelineno-3-280" name="__codelineno-3-280" href="#__codelineno-3-280"></a>[Download the FTDI2UPDI Files :fontawesome-brands-github:](https://github.com/Twarner491/FTDI2UPDI){ .md-button .md-button--primary }
+<a id="__codelineno-3-281" name="__codelineno-3-281" href="#__codelineno-3-281"></a>
+<a id="__codelineno-3-282" name="__codelineno-3-282" href="#__codelineno-3-282"></a>&lt;/center&gt;
+<a id="__codelineno-3-283" name="__codelineno-3-283" href="#__codelineno-3-283"></a>
+<a id="__codelineno-3-284" name="__codelineno-3-284" href="#__codelineno-3-284"></a>#### USB-C UPDI
+<a id="__codelineno-3-285" name="__codelineno-3-285" href="#__codelineno-3-285"></a>
+<a id="__codelineno-3-286" name="__codelineno-3-286" href="#__codelineno-3-286"></a>!!! warning &quot;Pending Compleation&quot;
+<a id="__codelineno-3-287" name="__codelineno-3-287" href="#__codelineno-3-287"></a>
+<a id="__codelineno-3-288" name="__codelineno-3-288" href="#__codelineno-3-288"></a>    As mentioned prior, due to 2021&#39;s supply chain limitations, I cannot currently get my hands on an FT232RL, and thus, for now, the *fabrication &amp; testing* sections will only include my *ftdi2upid* board. **This section will be updated by future me once I can get an FT232RL.**
+<a id="__codelineno-3-289" name="__codelineno-3-289" href="#__codelineno-3-289"></a>
+<a id="__codelineno-3-290" name="__codelineno-3-290" href="#__codelineno-3-290"></a>!!! danger &quot;This USB-C UPDI Programmer Board is not yet complete&quot;
+<a id="__codelineno-3-291" name="__codelineno-3-291" href="#__codelineno-3-291"></a>
+<a id="__codelineno-3-292" name="__codelineno-3-292" href="#__codelineno-3-292"></a>    Although you can download its files, the board is still in development and may not function properly. Again, this section will be updated upon its completion.
+<a id="__codelineno-3-293" name="__codelineno-3-293" href="#__codelineno-3-293"></a>
+<a id="__codelineno-3-294" name="__codelineno-3-294" href="#__codelineno-3-294"></a>&lt;center&gt;
+<a id="__codelineno-3-295" name="__codelineno-3-295" href="#__codelineno-3-295"></a>
+<a id="__codelineno-3-296" name="__codelineno-3-296" href="#__codelineno-3-296"></a>![](../assets/images/SerialUPDI/2ndgenmileldtop.jpg){width=&quot;48%&quot;}
+<a id="__codelineno-3-297" name="__codelineno-3-297" href="#__codelineno-3-297"></a>![](../assets/images/SerialUPDI/2ndgenmilledbottom.jpg){width=&quot;45.95%&quot;}
+<a id="__codelineno-3-298" name="__codelineno-3-298" href="#__codelineno-3-298"></a>
+<a id="__codelineno-3-299" name="__codelineno-3-299" href="#__codelineno-3-299"></a>&lt;/center&gt;
+<a id="__codelineno-3-300" name="__codelineno-3-300" href="#__codelineno-3-300"></a>
+<a id="__codelineno-3-301" name="__codelineno-3-301" href="#__codelineno-3-301"></a> - Process Type - Vector
+<a id="__codelineno-3-302" name="__codelineno-3-302" href="#__codelineno-3-302"></a> - Speed - 100.0%
+<a id="__codelineno-3-303" name="__codelineno-3-303" href="#__codelineno-3-303"></a> - Power - 19.0%
+<a id="__codelineno-3-304" name="__codelineno-3-304" href="#__codelineno-3-304"></a> - Frequency - 6.0%
+<a id="__codelineno-3-305" name="__codelineno-3-305" href="#__codelineno-3-305"></a>
+<a id="__codelineno-3-306" name="__codelineno-3-306" href="#__codelineno-3-306"></a>&lt;center&gt;
+<a id="__codelineno-3-307" name="__codelineno-3-307" href="#__codelineno-3-307"></a>
+<a id="__codelineno-3-308" name="__codelineno-3-308" href="#__codelineno-3-308"></a>![](../assets/images/SerialUPDI/pastestencil.jpg){width=&quot;95%&quot;}
+<a id="__codelineno-3-309" name="__codelineno-3-309" href="#__codelineno-3-309"></a>
+<a id="__codelineno-3-310" name="__codelineno-3-310" href="#__codelineno-3-310"></a>&lt;/center&gt;
+<a id="__codelineno-3-311" name="__codelineno-3-311" href="#__codelineno-3-311"></a>
+<a id="__codelineno-3-312" name="__codelineno-3-312" href="#__codelineno-3-312"></a>&lt;center&gt;
+<a id="__codelineno-3-313" name="__codelineno-3-313" href="#__codelineno-3-313"></a>
+<a id="__codelineno-3-314" name="__codelineno-3-314" href="#__codelineno-3-314"></a>![](../assets/images/SerialUPDI/pasteapplication.jpg){width=&quot;95%&quot;}
+<a id="__codelineno-3-315" name="__codelineno-3-315" href="#__codelineno-3-315"></a>
+<a id="__codelineno-3-316" name="__codelineno-3-316" href="#__codelineno-3-316"></a>&lt;/center&gt;
+<a id="__codelineno-3-317" name="__codelineno-3-317" href="#__codelineno-3-317"></a>
+<a id="__codelineno-3-318" name="__codelineno-3-318" href="#__codelineno-3-318"></a>&lt;center&gt;
+<a id="__codelineno-3-319" name="__codelineno-3-319" href="#__codelineno-3-319"></a>
+<a id="__codelineno-3-320" name="__codelineno-3-320" href="#__codelineno-3-320"></a>![](../assets/images/SerialUPDI/2ndgensolderdtop.jpg){width=&quot;48%&quot;}
+<a id="__codelineno-3-321" name="__codelineno-3-321" href="#__codelineno-3-321"></a>![](../assets/images/SerialUPDI/2ndgensolderedbottom.jpg){width=&quot;48%&quot;}
+<a id="__codelineno-3-322" name="__codelineno-3-322" href="#__codelineno-3-322"></a>
+<a id="__codelineno-3-323" name="__codelineno-3-323" href="#__codelineno-3-323"></a>&lt;/center&gt;
+<a id="__codelineno-3-324" name="__codelineno-3-324" href="#__codelineno-3-324"></a>
+<a id="__codelineno-3-325" name="__codelineno-3-325" href="#__codelineno-3-325"></a>&lt;center&gt;
+<a id="__codelineno-3-326" name="__codelineno-3-326" href="#__codelineno-3-326"></a>
+<a id="__codelineno-3-327" name="__codelineno-3-327" href="#__codelineno-3-327"></a>![](../assets/images/SerialUPDI/3genmilledtop.jpg){width=&quot;48%&quot;}
+<a id="__codelineno-3-328" name="__codelineno-3-328" href="#__codelineno-3-328"></a>![](../assets/images/SerialUPDI/3rdgenmilledback.jpg){width=&quot;47.35%&quot;}
+<a id="__codelineno-3-329" name="__codelineno-3-329" href="#__codelineno-3-329"></a>
+<a id="__codelineno-3-330" name="__codelineno-3-330" href="#__codelineno-3-330"></a>&lt;/center&gt;
+<a id="__codelineno-3-331" name="__codelineno-3-331" href="#__codelineno-3-331"></a>
+<a id="__codelineno-3-332" name="__codelineno-3-332" href="#__codelineno-3-332"></a>&lt;center&gt;
+<a id="__codelineno-3-333" name="__codelineno-3-333" href="#__codelineno-3-333"></a>
+<a id="__codelineno-3-334" name="__codelineno-3-334" href="#__codelineno-3-334"></a>![](../assets/images/SerialUPDI/3rdgensolderedtop.jpg){width=&quot;48%&quot;}
+<a id="__codelineno-3-335" name="__codelineno-3-335" href="#__codelineno-3-335"></a>![](../assets/images/SerialUPDI/3rdgensolderedback.jpg){width=&quot;48.4%&quot;}
+<a id="__codelineno-3-336" name="__codelineno-3-336" href="#__codelineno-3-336"></a>
+<a id="__codelineno-3-337" name="__codelineno-3-337" href="#__codelineno-3-337"></a>&lt;/center&gt;
+<a id="__codelineno-3-338" name="__codelineno-3-338" href="#__codelineno-3-338"></a>
+<a id="__codelineno-3-339" name="__codelineno-3-339" href="#__codelineno-3-339"></a>&lt;center&gt;
+<a id="__codelineno-3-340" name="__codelineno-3-340" href="#__codelineno-3-340"></a>
+<a id="__codelineno-3-341" name="__codelineno-3-341" href="#__codelineno-3-341"></a>[Download the USB-C UPDI Files :fontawesome-brands-github:](https://github.com/Twarner491/USB-C-UPDI){ .md-button .md-button--primary }
+<a id="__codelineno-3-342" name="__codelineno-3-342" href="#__codelineno-3-342"></a>
+<a id="__codelineno-3-343" name="__codelineno-3-343" href="#__codelineno-3-343"></a>&lt;/center&gt;
+<a id="__codelineno-3-344" name="__codelineno-3-344" href="#__codelineno-3-344"></a>
+<a id="__codelineno-3-345" name="__codelineno-3-345" href="#__codelineno-3-345"></a>## Programmer Usage
+<a id="__codelineno-3-346" name="__codelineno-3-346" href="#__codelineno-3-346"></a>
+<a id="__codelineno-3-347" name="__codelineno-3-347" href="#__codelineno-3-347"></a>Serial programming with the megaTinyCore library is incredibly straightforward, and when pair with the switching functionality of both of my hardware programmers, the process is streamlined. I&#39;ll be using a final iteration ftdi2updi board for this *Programmer Usage* documentation, however, **these steps will work for either programmer style included on this page, regardless of fabrication technique.**
+<a id="__codelineno-3-348" name="__codelineno-3-348" href="#__codelineno-3-348"></a>
+<a id="__codelineno-3-349" name="__codelineno-3-349" href="#__codelineno-3-349"></a>Both Serial UPDI programmers rely on the prior documented [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore) library, which must be installed for programmer usage. This process is outlined in the [Package Installation](https://teddywarner.org/Projects/SerialUPDI/#package-installation) section of this page.
+<a id="__codelineno-3-350" name="__codelineno-3-350" href="#__codelineno-3-350"></a>
+<a id="__codelineno-3-351" name="__codelineno-3-351" href="#__codelineno-3-351"></a>### Programming
+<a id="__codelineno-3-352" name="__codelineno-3-352" href="#__codelineno-3-352"></a>
+<a id="__codelineno-3-353" name="__codelineno-3-353" href="#__codelineno-3-353"></a>To use the UPDI programming function, toggle the programmers switch to *UPDI* as shown below, and then connect UPDI and GND lines to their corresponding pins. Here you can also run a VCC line to your target board, which provides 5v, shown in the wiring below. 
+<a id="__codelineno-3-354" name="__codelineno-3-354" href="#__codelineno-3-354"></a>
+<a id="__codelineno-3-355" name="__codelineno-3-355" href="#__codelineno-3-355"></a>!!! note &quot;Note&quot; 
+<a id="__codelineno-3-356" name="__codelineno-3-356" href="#__codelineno-3-356"></a>
+<a id="__codelineno-3-357" name="__codelineno-3-357" href="#__codelineno-3-357"></a>    Connecting serial data lines here is totally ok, as the switch disconnects them from communication when in programming mode. The wiring shown here is just the required connections for UPDI programming.
+<a id="__codelineno-3-358" name="__codelineno-3-358" href="#__codelineno-3-358"></a>
+<a id="__codelineno-3-359" name="__codelineno-3-359" href="#__codelineno-3-359"></a>&lt;center&gt;
+<a id="__codelineno-3-360" name="__codelineno-3-360" href="#__codelineno-3-360"></a>
+<a id="__codelineno-3-361" name="__codelineno-3-361" href="#__codelineno-3-361"></a>![](../assets/images/SerialUPDI/updiswitch.jpg){width=&quot;85%&quot;}
+<a id="__codelineno-3-362" name="__codelineno-3-362" href="#__codelineno-3-362"></a>  &lt;figcaption&gt;Switched to Progamming Mode&lt;/figcaption&gt;
+<a id="__codelineno-3-363" name="__codelineno-3-363" href="#__codelineno-3-363"></a>![](../assets/images/SerialUPDI/updiwireing.jpg){width=&quot;85%&quot;}
+<a id="__codelineno-3-364" name="__codelineno-3-364" href="#__codelineno-3-364"></a>  &lt;figcaption&gt;Minimum Wiring for UPDI Programming&lt;/figcaption&gt;
+<a id="__codelineno-3-365" name="__codelineno-3-365" href="#__codelineno-3-365"></a>
+<a id="__codelineno-3-366" name="__codelineno-3-366" href="#__codelineno-3-366"></a>&lt;/center&gt;
+<a id="__codelineno-3-367" name="__codelineno-3-367" href="#__codelineno-3-367"></a>
+<a id="__codelineno-3-368" name="__codelineno-3-368" href="#__codelineno-3-368"></a>Once connections are made between the programmer and the target board, you must configure your target board in your IDE. For this documentation, I&#39;ll continue using the Arduino IDE, however other IDEs with the megaTinyCore installed can be used for this (I may do some tests with PlatformIO in the future, and will update this page accordingly). 
+<a id="__codelineno-3-369" name="__codelineno-3-369" href="#__codelineno-3-369"></a>
+<a id="__codelineno-3-370" name="__codelineno-3-370" href="#__codelineno-3-370"></a>First, you must select your target board&#39;s microcontroller by navigating to ...
+</code></pre></div>
+Tools &gt; Board &gt; megaTinyCore
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>and then selecting your microcontroller from the list, shown in the image below.
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>&lt;center&gt;
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>![](../assets/images/SerialUPDI/boardselection.jpg){width=&quot;95%&quot;}
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>&lt;/center&gt;
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>Next, connect your programmer to your computer via a serial cable and, select your serial port by navigating to ...
+</code></pre></div>
+Tools &gt; Port
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>and then select the serial port your programmer board is connected to (In my case this port was *COM11* - shown below). If you&#39;re on windows, you can find this connection on *Device Manager* before your selection in the IDE.
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>&lt;center&gt;
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>![](../assets/images/SerialUPDI/portselection.jpg){width=&quot;95%&quot;}
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>&lt;/center&gt;
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>Finally, select your programming style. For all programmers documented on this page, the *Serial UPDI w/ 4.7k resistor or diode* series of styles are used, and you can select between three baudrate/speed options (highlighted in the image below) ...
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a> - SLOW (57600 baud)
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a> - (230400 baud)
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a> - (TURBO 4.5v + 460800 baud)
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>&lt;center&gt;
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>![](../assets/images/SerialUPDI/programmerselection.jpg){width=&quot;95%&quot;}
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>&lt;/center&gt;
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>### Monitoring
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>To use the serial monitoring function, toggle the programmers switch to *Serial* as shown below, and then connect Transmitting and Receiving Data lines as well as GND to their corresponding pins. ***Keep in Mind RX and TX lines must be switched between the programmer board and the target,*** with Transmitting of one going to Receiving of the other and vise versa. Here, as prior, you can also run a VCC line to your target board, which provides 5v. 
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>!!! note &quot;Note&quot;
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>    Connecting the UPDI line here is totally ok, as the switch disconnects it from communication when in monitoring mode. The wiring shown here is just the required connections for Serial monitoring.
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>&lt;center&gt;
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>![](../assets/images/SerialUPDI/serialswitch.jpg){width=&quot;85%&quot;}
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>  &lt;figcaption&gt;Switched to Monitoring Mode&lt;/figcaption&gt;
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>![](../assets/images/SerialUPDI/serialwireing.jpg){width=&quot;85%&quot;}
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>  &lt;figcaption&gt;Minimum Wiring for Serial Monitoring&lt;/figcaption&gt;
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>&lt;/center&gt;
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>To begin serial monitoring through the programmer in the Arduino IDE, first, ensure your programmer is connected to your computer via a serial cable, and the proper boart is selected in the IDE (as done in the prior programming section - and highlighted below). Then navigate to ...
+</code></pre></div>
+Tools &gt; Serial Monitor 
+```</p>
+<p>as selected in the picture below</p>
+<p><center></p>
+<p><img alt="" src="../../assets/images/SerialUPDI/serialmonitroselection.jpg" width="95%" /></p>
+<p></center></p>
+<p>This will open the <abbr title="Integrated Development Environment">IDE</abbr>&rsquo;s serial terminal, where incoming serial data is printed, and outgoing data can be transmitted via the input at the top of the window. I wired a programmer to a simple <em>&ldquo;Hello World&rdquo;</em> printing Arduino, yielding the received results below.</p>
+<p><center></p>
+<p><img alt="" src="../../assets/images/SerialUPDI/serialmonitor.jpg" width="95%" /></p>
+<p></center></p>
+<div class="admonition success">
+<p class="admonition-title">Congrats!</p>
+<p>You now know the methods to <abbr title="Unified Program and Debug Interface">UPDI</abbr> programming with the <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> library, and may have a cool hardware programmer to show for it <img alt="😁" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f601.svg" title=":grin:" />.</p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>https://github.com/SpenceKonde/megaTinyCore&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>https://drive.google.com/file/d/1sXxm9A5GLxVPGFNDkNBzLakp-TWlVKT2/view&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+  
+
+
+
+<!-- Comment system -->
+
+                
+
+  <!-- Giscus -->
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+  data-repo="Twarner491/TeddyWarner.org"
+  data-repo-id="MDEwOlJlcG9zaXRvcnkzNzgyODU0MTk="
+  data-category="General"
+  data-category-id="DIC_kwDOFowta84CA5IA"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="light"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Reload on palette change -->
+  <script>
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object")
+      if (palette.color.scheme === "slate") {
+        var giscus = document.querySelector("script[src*=giscus]")
+        giscus.setAttribute("data-theme", "dark") 
+      }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+<section class="footer">
+  <div class="socials">
+    <div class="socialpar">
+      <a target=”_blank” href="https://github.com/Twarner491">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <div class="socialpar">
+      <a target=”_blank” href="https://x.com/WarnerTeddy">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </div>
+    <div class="socialpar">
+      <a target=”_blank” href="mailto:tawarner@usc.edu">
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+    </div>
+  </div>
+    <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+      <p class="copyright">Copyright © 2021 Teddy Warner</p>
+    </a>
+</section>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs", "navigation.expand", "content.code.annotate", "search.share", "search.suggest", "content.tabs.link", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      
+        <script src="../../assets/js/index.js"></script>
+      
+        <script src="../../assets/js/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
