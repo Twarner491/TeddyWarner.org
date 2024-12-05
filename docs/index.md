@@ -111,11 +111,10 @@ search:
                                       <rect x="804.5" y="624" width="226" height="272" rx="21" fill="var(--md-default-bg-color)" fill-opacity="0.4" />
                                       <rect x="843" y="645" width="149" height="31" rx="15.5" fill="var(--md-default-bg-color)" />
                                       <text x="917.5" y="665" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.55" font-family="JetBrains Mono" font-size="12" font-style="normal" font-weight="300" line-height="109.588%">What I'm Reading</text>
-                                      <text x="816" y="706" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="17" font-style="normal" font-weight="500" line-height="109.588%">Crime and</text>
-                                      <text x="816" y="726" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="17" font-style="normal" font-weight="500" line-height="109.588%">Punishment</text>
-                                      <text x="817" y="742" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">F. Dostoevsky</text>
+                                      <text x="816" y="715" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="18" font-style="normal" font-weight="500" line-height="109.588%">BOOM</text>
+                                      <text x="817" y="733" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Hobart & Huber</text>
                                   </g>
-                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="assets/images/index/book.jpg" preserveAspectRatio="xMidYMid slice" />
+                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1728481365i/205307264.jpg" preserveAspectRatio="xMidYMid slice" />
                               </g>
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
@@ -177,7 +176,7 @@ search:
     <section class="about">
       <div class="content4">
         <h2>About</h2>
-        <p class="abt1">I’m an engineer & designer focused on PCB development and mechatronics. I’m currently based in Los Angeles, building in the logic design space.</p>
+        <p class="abt1">I’m an engineer & designer specialized in rapid prototyping and PCB dev. I’m currently based in LA, building in the applied AI space.</p>
         <p class="abt2">I'm a student at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> studying engineering, design, and venture management, and a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
         <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
     </section>
