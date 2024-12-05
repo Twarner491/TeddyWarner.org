@@ -10,14 +10,37 @@ template: comments.html
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Torpediniformes - Teddy Warner">
+  <meta name="description" content="An analysis of The Meno.">
+  <meta name="keywords" content="Plato, The Meno, Socratic dialogue, Virtue, Naïveté, Learning process, Philosophy, Socrates, Meno, Bravery, Knowledge, Correct opinion">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teddywarner.org/writings/torpediniformes/">
+  <meta property="og:title" content="Torpediniformes - Teddy Warner">
+  <meta property="og:description" content="An analysis of The Meno.">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.org/writings/torpediniformes/">
+  <meta property="twitter:title" content="Torpediniformes - Teddy Warner">
+  <meta property="twitter:description" content="An analysis of The Meno.">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+
+  <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
 </head>
 

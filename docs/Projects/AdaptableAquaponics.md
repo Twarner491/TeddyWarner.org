@@ -17,14 +17,37 @@ tags:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Adaptable Aquaponics - Teddy Warner">
+  <meta name="description" content="A Theoretical Confrontation to Contemporary Farming Challenges.">
+  <meta name="keywords" content="Aquaponics, Sustainable farming, Urban agriculture, Food production, Modular farming, Hydroponics, Fish farming, Sustainable agriculture, Agricultural innovation, Food security, Vertical farming, Solar powered farming, Resource efficiency, Water conservation, Community farming">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teddywarner.org/Projects/AdaptableAquaponics/">
+  <meta property="og:title" content="Adaptable Aquaponics - Teddy Warner">
+  <meta property="og:description" content="A Theoretical Confrontation to Contemporary Farming Challenges.">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.org/Projects/AdaptableAquaponics/">
+  <meta property="twitter:title" content="Adaptable Aquaponics - Teddy Warner">
+  <meta property="twitter:description" content="A Theoretical Confrontation to Contemporary Farming Challenges.">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+
+  <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
 </head>
 
@@ -280,7 +303,7 @@ I cleaned up the final cut parts with some soap and water, before continuing to 
 ![](../assets/images/AdaptableAquaponics/solarparts.jpg){width="60%"}
 ![](../assets/images/AdaptableAquaponics/assembledsolar.jpg){width="39%"}
 
-<iframe width="99%" height="560" src="https://www.youtube.com/embed/RmUPD9cld18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="98%" height="560" src="https://www.youtube.com/embed/RmUPD9cld18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![](../assets/images/AdaptableAquaponics/assembledshippingcont.jpg){width="99%"}
 

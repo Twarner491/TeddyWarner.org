@@ -9,26 +9,9 @@ repo_url: https://github.com/Twarner491/TeddyWarner.org
 repo_name: Twarner491/TeddyWarner.org
 
 copyright: >
-  Copyright &copy; 2021 Teddy Warner
+  Copyright &copy; 2024 Teddy Warner
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Twarner491
-      name: Github - Twarner491
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/teddy-warner-880974200/
-      name: Linked In - Teddy Warner
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/WarnerTeddy
-      name: X - @WarnerTeddy
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/@teddywarner
-      name: YouTube - @teddywarner
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<Twarner491@gmail.com>
-      name: Email - Twarner491@gmail.com
-
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
@@ -77,7 +60,6 @@ theme:
    - announce.dismiss
 
 plugins:
-  - social
   - material/search
   - tags
 
@@ -119,12 +101,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
-  #- social:
-   #   cards: !ENV [CARDS, false]
-   #   cards_font: Fira Sans
-    #  cards_color:
-    #    fill: "#5466CE" 
-     #   text: "#FFFFFF"
 
 extra_css:
   - assets/css/extra.css

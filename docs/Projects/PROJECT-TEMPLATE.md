@@ -12,14 +12,37 @@ search:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="PROJECT-TITLE - Teddy Warner">
+  <meta name="description" content="This is a template for my project pages!">
+  <meta name="keywords" content="Digital fabrication, PCB development, Mechatronics engineering, USC Iovine and Young Academy, Engineering design, Fab Academy, Hardware engineering, Rapid prototyping, CAD design, Physical computing, Electronics design, IoT development, Wearable technology, Engineering portfolio">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teddywarner.org/Projects/PROJECT-TEMPLATE/">
+  <meta property="og:title" content="PROJECT-TITLE - Teddy Warner">
+  <meta property="og:description" content="This is a template for my project pages!">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.org/Projects/PROJECT-TEMPLATE/">
+  <meta property="twitter:title" content="PROJECT-TITLE - Teddy Warner">
+  <meta property="twitter:description" content="This is a template for my project pages!">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+
+  <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
 </head>
 

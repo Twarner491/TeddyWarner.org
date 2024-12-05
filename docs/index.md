@@ -16,17 +16,30 @@ search:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Teddy Warner">
+  <meta name="description" content="causa sui. // @WarnerTeddy">
+  <meta name="keywords" content="Digital fabrication, PCB development, Mechatronics engineering, USC Iovine and Young Academy, Engineering design, Fab Academy, Hardware engineering, Rapid prototyping, CAD design, Physical computing, Electronics design, IoT development, Wearable technology, Engineering portfolio">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teddywarner.org/">
   <meta property="og:title" content="Teddy Warner">
   <meta property="og:description" content="causa sui. // @WarnerTeddy">
   <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Teddy Warner">
-  <meta name="twitter:description" content="causa sui. // @WarnerTeddy">
-  <meta name="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.org/">
+  <meta property="twitter:title" content="Teddy Warner">
+  <meta property="twitter:description" content="causa sui. // @WarnerTeddy">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -284,7 +297,7 @@ search:
           </a>
         </div>
         <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
-          <p class="copyright">Copyright © 2021 Teddy Warner</p>
+          <p class="copyright">Copyright © 2024 Teddy Warner</p>
         </a>
     </section>
     <h1></h1>

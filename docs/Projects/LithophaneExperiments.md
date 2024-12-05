@@ -13,14 +13,37 @@ tags:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Lithophane Experiments - Teddy Warner">
+  <meta name="description" content="A gallery of lithophanes.">
+  <meta name="keywords" content="Lithophane, 3D Printing, Photography, Art, 3dp.rocks, Image processing, Light art, Custom prints, Photo printing, 3D art, DIY lithophanes">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teddywarner.org/Projects/LithophaneExperiments/">
+  <meta property="og:title" content="Lithophane Experiments - Teddy Warner">
+  <meta property="og:description" content="A gallery of lithophanes.">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.org/Projects/LithophaneExperiments/">
+  <meta property="twitter:title" content="Lithophane Experiments - Teddy Warner">
+  <meta property="twitter:description" content="A gallery of lithophanes.">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+
+  <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
 </head>
 

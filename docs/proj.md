@@ -11,6 +11,32 @@ search:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Project Portfolio - Teddy Warner">
+  <meta name="description" content="Some of the Open-Source shenanigans I've been up to.">
+  <meta name="keywords" content="Digital fabrication, PCB development, Mechatronics engineering, USC Iovine and Young Academy, Engineering design, Fab Academy, Hardware engineering, Rapid prototyping, CAD design, Physical computing, Electronics design, IoT development, Wearable technology, Engineering portfolio">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teddywarner.org/proj/">
+  <meta property="og:title" content="Project Portfolio - Teddy Warner">
+  <meta property="og:description" content="Some of the Open-Source shenanigans I've been up to.">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.org/proj/">
+  <meta property="twitter:title" content="Project Portfolio - Teddy Warner">
+  <meta property="twitter:description" content="Some of the Open-Source shenanigans I've been up to.">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+
+  <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,18 +66,6 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <!--<div class="writparent">
-          <a target=”_blank” href="https://teddywarner.org/Projects/fastai/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/fastai/fastai.png"></div>
-            <p class="projtitle">Hands on Neural Networks</p>
-            <p class="writeyear">Fall 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">X-X mins</p>
-            </span>
-            <p class="projdescription">Applied Artificial Intelligence with fastai</p>
-          </a>
-        </div>
-        <hr/>-->
         <div class="writparent">
           <a target=”_blank” href="https://tone.computer/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/toneSmall.png"></div>
@@ -215,7 +229,7 @@ search:
           </a>
         </div>
         <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
-          <p class="copyright">Copyright © 2021 Teddy Warner</p>
+          <p class="copyright">Copyright © 2024 Teddy Warner</p>
         </a>
     </section>
     <h1></h1>

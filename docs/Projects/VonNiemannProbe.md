@@ -24,15 +24,38 @@ tags:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Von Niemann Probe - Teddy Warner">
+  <meta name="description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
+  <meta name="keywords" content="Chess cheating, Hans Niemann, Bluetooth telegraph, AVR microcontroller, Shoe insole, Parametric design, PCB design, Morse code, Chess scandal, Magnus Carlsen, Electronics project">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
+  <meta property="og:title" content="Von Niemann Probe - Teddy Warner">
+  <meta property="og:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
+  <meta property="twitter:title" content="Von Niemann Probe - Teddy Warner">
+  <meta property="twitter:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+
+  <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
 </head>
@@ -114,9 +137,9 @@ Niemann's victory over the world champion, "should have propelled Niemann's care
 
 It's worth mentioning again that Niemann has publically admitted to cheating with aid from electronic devices in online matches, once at age 12 and again at age 16. Niemann referred to one of these instances as "an absolutely ridiculous mistake"[^22], while maintaining that he had never cheated in a tournament with prize money. 
 
-A couple of weeks after their initial accusations, [Chess.com](https://www.chess.com/home) released a formal, 72-page report (found below) outlining an investigation into Niemann's play, and alleging that **Niemann has likely cheated with electronic aid in more than 100 games, and as recently as 2020**, including in matches where money was on the line. The magnitude of Niemann's alleged cheating scandal, as presented in [Chess.com](https://www.chess.com/home)'s report, proves to be much larger and longer-lasting than Niemann publically admitted. [Chess.com](https://www.chess.com/home)'s investigation relied on a variety of analytical tools to compare the moves of Niemann to those recommended by chess engines, and noted "many remarkable signals and unusual patterns in Hans’ path as a player.”[^13] The site claims that "while [they] don’t doubt that Hans is a talented player, we note that his results are statistically extraordinary”[^13], and their investigation into Niemann's gameplay has uncovered "blatant cheating".[^13] **The report states that Niemann privately confessed to these allegations and that his Chess.com account was subsequently closed in 2020.**
+A couple of weeks after their initial accusations, [Chess.com](https://www.chess.com/home) released a formal, 72-page report (found below) outlining an investigation into Niemann's play, and alleging that **Niemann has likely cheated with electronic aid in more than 100 games, and as recently as 2020**, including in matches where money was on the line. The magnitude of Niemann's alleged cheating scandal, as presented in [Chess.com](https://www.chess.com/home)'s report, proves to be much larger and longer-lasting than Niemann publically admitted. [Chess.com](https://www.chess.com/home)'s investigation relied on a variety of analytical tools to compare the moves of Niemann to those recommended by chess engines, and noted "many remarkable signals and unusual patterns in Hans' path as a player.”[^13] The site claims that "while [they] don't doubt that Hans is a talented player, we note that his results are statistically extraordinary"[^13], and their investigation into Niemann's gameplay has uncovered "blatant cheating".[^13] **The report states that Niemann privately confessed to these allegations and that his Chess.com account was subsequently closed in 2020.**
 
-In a private letter to Niemann, Chess.com's Chief Chess Officer, Danny Rechsch writes "We are prepared to present strong statistical evidence that confirms each of those cases above, as well as clear ‘toggling’ vs ‘non-toggling’ evidence, where you perform much better while toggling to a different screen during your moves".[^13] While the report outlines that [Chess.com](https://www.chess.com/home) has historically treated bans as a private matter, the ongoing accusations and Niemann's ban from the site's Global Championship spurred the platform to provide the investigation that provided justification for their decisions. 
+In a private letter to Niemann, Chess.com's Chief Chess Officer, Danny Rechsch writes "We are prepared to present strong statistical evidence that confirms each of those cases above, as well as clear 'toggling' vs 'non-toggling' evidence, where you perform much better while toggling to a different screen during your moves".[^13] While the report outlines that [Chess.com](https://www.chess.com/home) has historically treated bans as a private matter, the ongoing accusations and Niemann's ban from the site's Global Championship spurred the platform to provide the investigation that provided justification for their decisions. 
 
 <center>
   <iframe src="https://drive.google.com/file/d/11IokKgTVSXdpYEzAuyViIleSZ_2wl0ag/preview" width="100%" height="600" allow="autoplay"></iframe>
@@ -129,7 +152,7 @@ While this evidence against Niemann appears to be overwhelming, it's important t
     ***Cheating in chess, whether online or over the board, is wrong and ruins the game for everyone.*** This project has been published to showcase the possibility of such a device's existence/use, and should not be recreated with the intent of using it for genuine foul play.
 
 !!! note "Name Orgins"
-    The Von Niemann Probe is named after a theoretical self-replicating space probe known as the Von Neumann Probe, named after legendary 20th century Hungarian-American mathematician *John Von Neumann*. The Von Neumann Probe is regarded as the optimal way to explore the cosmos, as it can mine asteroids and leverage the exponential growth of its progeny to more efficiently visit star systems. And, coincidentally, probes are also medical devices that can be used to explore one’s bowels. Thus, we settled on naming our device the Von Niemann Probe.
+    The Von Niemann Probe is named after a theoretical self-replicating space probe known as the Von Neumann Probe, named after legendary 20th century Hungarian-American mathematician *John Von Neumann*. The Von Neumann Probe is regarded as the optimal way to explore the cosmos, as it can mine asteroids and leverage the exponential growth of its progeny to more efficiently visit star systems. And, coincidentally, probes are also medical devices that can be used to explore one's bowels. Thus, we settled on naming our device the Von Niemann Probe.
 
 <center>
 
@@ -160,7 +183,7 @@ With this schematic done, I moved on to generating my final board file. The PCB 
 </center>
 
 <center>
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c539a842c922b0c2da02?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53962a650b709446403?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 </center>
 
 ### Parametric Shoe Insole
@@ -229,101 +252,6 @@ The insole consists of two main parts, the body which is the bulk of the insole 
 ## Chess Engine
 
 The Von Niemann Probe is useless without a competent artificial intelligence running the show behind the scenes, obviously requiring a hefty amount of code to get it to work properly. I decided to build the brains around Stockfish, a famous chess engine that already has a functioning Python integration and also happens to be the highest-rated engine at the time of writing. For reference, the engine plays at a 4000 level, while the current highest-rated player, Magnus Carlsen, is currently sitting at about 3200. Safe to say, Stockfish is more than sufficient for the players our insole will encounter who are obviously considerably worse than Carlsen.
-
-<!--
-<div class="content">
-  <div class="chess-area">
-    <div class="board-table">
-      <div id="board-top-controls" class="top-controls">
-        <div id="game-promotion" class="promotion hidden">
-          <span figure="q">Queen</span>
-          <span figure="b">Bishop</span>
-          <span figure="n">Knight</span>
-          <span figure="r">Rook</span>
-        </div>
-        <div id="board-resign-game-area" class="popup hidden">
-          <span class="close"></span>
-          <label>Do you want to resign?</label>
-          <button class="yes">Yes</button>
-          <button class="no">No</button>
-        </div>
-      </div>
-      <div id="board" class="board"></div>
-        <div id="board-controls" class="controls">
-          <div id="board-messages" class="messages hidden" style="display: none !important;"></div>
-        </div>
-      </div>
-      <div class="board-settings">
-        <div class="apex">
-          <span class="label-history">Play Stockfish!</span>
-          <div style="display: none;" class="game-level" id="game-difficulty-option" title="Choose The Engine's Skill Level">
-            <span class="label"></span>
-            <span class="value" id="game-difficulty-skill-value"></span>
-          </div>
-        </div>
-        <div class="game-difficulty hidden" id="game-difficulty-skill-settings">
-          <span class="label">Select Engine's Level:</span>
-          <span class="close"></span>
-          <div class="values">
-            <span class="1">1</span>
-            <span class="2">2</span>
-            <span class="3">3</span>
-            <span class="4">4</span>
-            <span class="5">5</span>
-            <span class="6">6</span>
-            <span class="7">7</span>
-            <span class="8">8</span>
-            <span class="9">9</span>
-            <span class="10 selected">10</span>
-            <span class="11">11</span>
-            <span class="12">12</span>
-            <span class="13">13</span>
-            <span class="14">14</span>
-            <span class="15">15</span>
-            <span class="16">16</span>
-            <span class="17">17</span>
-            <span class="18">18</span>
-            <span class="19">19</span>
-            <span class="20">20</span>
-          </div>
-        </div>
-        <div class="turns-history" id="game-turns-history">
-          <ol></ol>
-        </div>
-        <div class="game-analyze hidden" id="game-analyze-string"></div>
-        <div class="game-menu hidden" id="game-settings">
-          <span class="label-choose-side">Select Side</span>
-          <span class="btn game-white-side selected" id="btn-choose-white-side"></span>
-          <span class="btn game-black-side" id="btn-choose-black-side"></span>
-        </div>
-        <div class="tunes">
-          <span id="btn-new-game" title="Start New Game" class="btn-new-game">
-            <span class="icon"></span>
-            <span class="label">New Game</span>
-          </span>
-          <span style="display: none;" id="btn-settings" title="Choose The Engine's Skill Level" class="btn settings"></span>
-          <span id="btn-resign" title="Resign" class="btn resign"></span>
-          <span style="display: none;" id="btn-analyze" title="Request Engine Evaluation" class="btn analyze">
-            <i class="icon"></i>
-          </span>
-        </div>
-        <div class="params">
-          <div class="cell side" id="game-player-side" style="display: none;">
-            <label>Your Side:</label>
-              <span class="white active">White</span>
-              <span class="black">Black</span>
-          </div>
-          <div class="cell first-turn" id="game-first-turn" style="display: none;">
-            <label>First Turn:</label>
-              <span class="player active">Player</span>
-              <span class="computer">Computer</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  <div class="chess-log"></div>
-</div>
--->
 
 !!! warning "Python Dependencies"
       **Various Python dependencies are needed to run the chess engine script**, but overall the installation is pretty lightweight. Install commands for all Python dependencies are below, any release past Python 3.7 will work.
@@ -543,7 +471,7 @@ The above function is responsible for sending the moves. During testing, I found
 morse = re.sub("[ ]", "9", morse)
 ```
 
-I realized that spaces can behave weirdly when sent over Bluetooth using UTF-8, so instead of further researching the problem I simply set all of the spaces to a value that cannot appear in a chess move before sending them to the insole. 9’s are simply treated as a constant delay in the C++ code that runs on the insole.
+I realized that spaces can behave weirdly when sent over Bluetooth using UTF-8, so instead of further researching the problem I simply set all of the spaces to a value that cannot appear in a chess move before sending them to the insole. 9's are simply treated as a constant delay in the C++ code that runs on the insole.
 
 At this point, the work of the Python function is complete. A player move has been input, checked for legality, and an engine move has been generated, converted, and sent to the insole. Once the player wearing the device makes the move on the board and the human player responds, this process will continue until Stockfish triumphs!
 
@@ -950,7 +878,7 @@ void loop(){
 
 The Python program sends bytes one at a time and they simply pile up in the stack on the ATTiny412. This allows us to interact with each byte one at a time and not touch the other ones until they are ready to be buzzed. This prevents the need for any local strings or storage for the moves, as each byte in a move is no longer necessary after it is buzzed once, which means that accessing these bytes just once is sufficient.
 
-The local char, receive, is set to each byte contained in the move, in the order that they are received. With our encoding method, each byte is either a “.” or a “9” or empty, so these are the only conditions necessary that will result in a buzz. Sometimes junk data is sent, so it is better to leave this final condition open-ended as an else statement instead of including another conditional checking for null bytes, as junk data would result in a crash in this case.
+The local char, receive, is set to each byte contained in the move, in the order that they are received. With our encoding method, each byte is either a "." or a "9" or empty, so these are the only conditions necessary that will result in a buzz. Sometimes junk data is sent, so it is better to leave this final condition open-ended as an else statement instead of including another conditional checking for null bytes, as junk data would result in a crash in this case.
 
 <div style="height:660px; overflow:scroll;">
 
