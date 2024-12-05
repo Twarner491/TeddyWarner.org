@@ -4,8 +4,6 @@ hide:
   - navigation
   - toc
   - feedback
-social:
-  cards_layout: custom
 template: index.html
 search:
   exclude: true
