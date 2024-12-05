@@ -224,6 +224,18 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/downforce">
+            <div class="imgparent"><img class="writeimg" src="assets/images/force/force.png"></div>
+            <p class="projtitle">To Drive with Downforce</p>
+            <p class="projdescription">Addressing the confidence bottleneck.</p>
+            <p class="writeyear">2024</p>
+            <span class="mobileyear">
+            <p class="readtime">~2 mins</p>
+            </span>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/juggling">
             <div class="imgparent"><img class="writeimg" src="assets/images/juggle/juggle.png"></div>
             <p class="projtitle">Learning to Juggle</p>
@@ -234,6 +246,7 @@ search:
             </span>
           </a>
         </div>
+        <span class="mobileyear">
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/a-mutual-meaning">
@@ -243,19 +256,6 @@ search:
             <p class="writeyear">2024</p>
             <span class="mobileyear">
             <p class="readtime">7-11 mins</p>
-            </span>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr/>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/otherness-and-belonging/">
-            <div class="imgparent"><img class="writeimg" src="assets/images/index/onb.png"></div>
-            <p class="projtitle">Otherness and Belonging</p>
-            <p class="projdescription">Some notes on neuroscience.</p>
-            <p class="writeyear">2024</p>
-            <span class="mobileyear">
-            <p class="readtime">4-6 mins</p>
             </span>
           </a>
         </div>

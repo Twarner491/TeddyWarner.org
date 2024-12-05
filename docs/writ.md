@@ -41,6 +41,18 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/downforce">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/force/force.png"></div>
+            <p class="projtitle">To Drive with Downforce</p>
+            <p class="writeyear">2024</p>
+            <span class="mobileyear">
+            <p class="readtime">~2 mins</p>
+            </span>
+            <p class="projdescription">Addressing the confidence bottleneck.</p>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/juggling">
             <div class="imgparent"><img class="writeimg" src="../assets/images/juggle/juggle.png"></div>
             <p class="projtitle">Learning to Juggle</p>
