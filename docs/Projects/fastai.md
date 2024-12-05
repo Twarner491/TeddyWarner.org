@@ -48,26 +48,19 @@ search:
 
 ---
 
+I built in the agentic hardware space for over a year and povited to working at Midjourney, all without having ever trained a neural network of my own. It's about time I put the hardware aside and pick up some deep learning fundamentals.
 
-![](../assets/images/fastai/book.jpg){: align=left width="40%"}
-
-[Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://www.goodreads.com/book/show/54331465-deep-learning-for-coders-with-fastai-and-pytorch)
-
-
+I started reading Jeremy Howard's [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://www.goodreads.com/book/show/54331465-deep-learning-for-coders-with-fastai-and-pytorch), as well as working through his complementary [fast.ai](https://course.fast.ai/) course. This article is doccumentation of my journey learning to write and fit neural networks, including notes and projects I took on along the way. Enjoy! 😺
 
 ### Market Trend Classification with Deep Convolutional Neural Networks
 
 [Open in Colab :simple-googlecolab:](https://colab.research.google.com/drive/10lzn1q10XbpikhFbWtgyV0F9hI_739WK?usp=sharing){ .md-button .md-button--primary}
 
+Both Jermey's Book and Course open with the introduction of Convolution Neural Networks, or CNNs,
+
 I recently started John C. Bogle's [*The Little Book of Common Sense Investing*](https://www.goodreads.com/book/show/171127.The_Little_Book_of_Common_Sense_Investing), and in anthesis of the books advocation for simple, long-term investments (perticulary index funds), I though it would be a bit fun to fine-tune a CNN to classify market trends for short-term trading (this also seems to stay on tune with the first lesson of the [fast.ai](https://course.fast.ai//) course).
 
-This is by no means investment advice, the model simply classifies the probibility of the input chart of being a known market trend and outputs a boolean "Should I invest: Yes/No" based upon its results. Enjoy! 😺
-
-<center>
-  <div style="position:relative;padding-bottom:56.25%;">
-    <iframe width="100%" height="100" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/8SF_h3xF3cE" title="Practical Deep Learning for Coders: Lesson 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</center>
+This is by no means investment advice, the model simply classifies the probibility of the input chart of being a known market trend and outputs a boolean "Should I invest: Yes/No" based upon its results. 
 
 ``` py linenums="1"
 import sys
@@ -75,7 +68,7 @@ if 'google.colab' not in sys.modules:
     raise Exception("run this in google colab please.")
 ```
 
-``` py linenums="1"
+``` bash linenums="1"
 !pip install -Uqq fastai duckduckgo_search
 ```
 
@@ -95,7 +88,7 @@ import ipywidgets as widgets
 from pathlib import Path
 ```
 
-Download images of various stock chart patterns
+**Download images of various stock chart patterns**
 
 *Implemented boolean search queries to better filter the scraped data.*
 
@@ -105,6 +98,8 @@ Scraping stock chart images of the internet is a rather dumb way of fitting this
 - [Stock Chart Patterns](https://www.kaggle.com/datasets/mustaphaelbakai/stock-chart-patterns)
 - [200+ Financial Indicators of US stocks (2014-2018)](https://www.kaggle.com/datasets/cnic92/200-financial-indicators-of-us-stocks-20142018)
 - [Stock Prices Predictions-EDA,LSTM(DeepExploration)](https://www.kaggle.com/code/saurabhshahane/stock-prices-predictions-eda-lstm-deepexploration)
+
+<div style="height:660px; overflow:scroll;">
 
 ``` py linenums="1"
 def search_images(term, max_images=30):
@@ -169,7 +164,7 @@ for search in searches:
     resize_images(dest, max_size=400, dest=dest)
 ```
 
-Train the model
+</div>
 
 Remove any failed downloads
 
@@ -260,6 +255,8 @@ learn.save('stock_trend_classifier_v2')
 ```
 
 Use the model
+
+<div style="height:660px; overflow:scroll;">
 
 ``` py linenums="1"
 def classify_trend(img):
@@ -381,6 +378,8 @@ def classify_trend(img):
     print("\n=============================")
 ```
 
+</div>
+
 File upload
 
 ``` py linenums="1"
@@ -421,7 +420,7 @@ There's a lot of interesting material on learning the tricks/metals to this game
   </div>
 </center>
 
-``` py linenums="1"
+``` bash linenums="1"
 !pip install -Uqq fastbook
 !pip install -Uqq fastai
 !pip install -Uqq duckduckgo_search
@@ -488,12 +487,14 @@ def download_image(url, dest):
         return False
 ```
 
+<div style="height:440px; overflow:scroll;">
+
 ``` py linenums="1"
 def download_images(country, query, max_images=100):
     dest = (path/country)
     dest.mkdir(exist_ok=True)
     with DDGS() as ddgs:
-        results = list(ddgs.images(query, max_results=max_images*3))  # Get more results to account for failures
+        results = list(ddgs.images(query, max_results=max_images*3))  
 
     random.shuffle(results)
 
@@ -524,6 +525,8 @@ with tqdm(total=total_downloads, desc="Downloading images") as pbar:
         time.sleep(2)
 ```
 
+</div>
+
 Verify and clean up images
 
 ``` py linenums="1"
@@ -533,6 +536,8 @@ failed.map(Path.unlink)
 ```
 
 define dataloaders and augment data
+
+<div style="height:440px; overflow:scroll;">
 
 ``` py linenums="1"
 def get_valid_images(path):
@@ -573,6 +578,8 @@ except Exception as e:
         count = sum(1 for f in valid_files if parent_label(f) == label)
         print(f"Class {label}: {count} images")
 ```
+
+</div>
 
 Model Def
 
@@ -657,6 +664,8 @@ geoKnower.export('geoKnower.pkl')
 
 Colab UI
 
+<div style="height:440px; overflow:scroll;">
+
 ``` py linenums="1"
 uploader = widgets.FileUpload()
 output = widgets.Output()
@@ -694,6 +703,8 @@ label.layout.margin = '20px 0 0 0'
 display(vbox)
 ```
 
+</div>
+
 ### Emotional (Artificial) Intelligence
 
 [Open in Colab :simple-googlecolab:](https://colab.research.google.com/drive/1OjpLPut2ydwMuCOyYbkISs-ZpasqG0GG?usp=sharing){ .md-button .md-button--primary}
@@ -708,7 +719,7 @@ I've chosen to use the levit_384 architecture and a Kaggle dataset "[Face expres
   </div>
 </center>
 
-``` py linenums="1"
+``` bash linenums="1"
 !pip install -Uqq fastai kaggle timm
 ```
 
@@ -724,7 +735,7 @@ import numpy as np
 
 Set up Kaggle API
 
-``` py linenums="1"
+``` bash linenums="1"
 !mkdir -p ~/.kaggle
 !cp /content/kaggle.json ~/.kaggle/
 !chmod 600 ~/.kaggle/kaggle.json
@@ -732,13 +743,13 @@ Set up Kaggle API
 
 Download the dataset
 
-``` py linenums="1"
+``` bash linenums="1"
 !kaggle datasets download -d jonathanoheix/face-expression-recognition-dataset
 ```
 
 Unzip the dataset
 
-``` py linenums="1"
+``` bash linenums="1"
 !unzip face-expression-recognition-dataset.zip -d /content/face_expression_dataset
 ```
 
@@ -821,6 +832,8 @@ def predict_image(img):
 
 UI
 
+<div style="height:660px; overflow:scroll;">
+
 ``` py linenums="1"
 uploader = widgets.FileUpload(accept='image/*', multiple=False)
 output = widgets.Output()
@@ -880,6 +893,490 @@ button.style.button_color = '#4CAF50'
 label.layout.margin = '20px 0 0 0'
 
 display(vbox)
+```
+
+</div>
+
+### Tweet Vitality Testing via Natural Language Processing
+
+[Open in Colab :simple-googlecolab:](https://colab.research.google.com/drive/1DI_seFwh8J067h5n5RZgN3GYv7wL_Hpo?usp=sharing){ .md-button .md-button--primary}
+
+Twitter is a very curious corner of the internet. While I'm guilty of spending a bit too much time of the platform (as its how I stay up to date with tech news), there is much hate and negitivity to look out for while on the site.
+
+I did some digging and found this curious Kaggle dataset: [Twitter Sentiment Analysis](https://www.google.com/url?q=https%3A%2F%2Fwww.kaggle.com%2Fdatasets%2Fjp797498e%2Ftwitter-entity-sentiment-analysis%2Fdata), which provides a "entity-level sentiment analysis dataset of twitter". I've fine-tuned an NLP model to utlize this dataset to predict the potential for virality of any given input tweet(based upon its percieved positivity realitive to the average tweet).
+
+<center>
+  <div style="position:relative;padding-bottom:56.25%;">
+    <iframe width="100%" height="100" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/toUgBQv1BT8" title="Lesson 4: Practical Deep Learning for Coders 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</center>
+
+``` bash linenums="1"
+!pip install transformers datasets pandas numpy torch fastai ipywidgets
+```
+
+``` py linenums="1"
+import os
+from google.colab import files
+import pandas as pd
+import numpy as np
+from pathlib import Path
+from fastai.text.all import *
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer
+from datasets import Dataset, DatasetDict
+from sklearn.model_selection import train_test_split
+import torch
+from ipywidgets import widgets
+from IPython.display import display
+```
+
+``` py linenums="1"
+uploaded = files.upload()
+```
+
+``` bash linenums="1"
+!mkdir -p ~/.kaggle
+!mv kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+```
+
+``` bash linenums="1"
+!kaggle datasets download -d jp797498e/twitter-entity-sentiment-analysis
+!unzip twitter-entity-sentiment-analysis.zip
+```
+
+Load the data
+
+``` py linenums="1"
+train_df = pd.read_csv('twitter_training.csv', header=None)
+val_df = pd.read_csv('twitter_validation.csv', header=None)
+```
+
+Assign column names
+
+``` py linenums="1"
+column_names = ['id', 'entity', 'sentiment', 'text']
+train_df.columns = column_names
+val_df.columns = column_names
+```
+
+Create a binary target for viral potential
+
+In this case im assuing that positive things are more likely to go viral. While this is certainly not the case in reality, espically not on Twitter, it's nice to think that it could be lol.
+
+``` py linenums="1"
+train_df['viral'] = (train_df['sentiment'] == 'Positive').astype(int)
+val_df['viral'] = (val_df['sentiment'] == 'Positive').astype(int)
+```
+
+Combine text and entity for input
+
+``` py linenums="1"
+train_df['text'] = train_df['text'].astype(str)
+train_df['entity'] = train_df['entity'].astype(str)
+val_df['text'] = val_df['text'].astype(str)
+val_df['entity'] = val_df['entity'].astype(str)
+```
+
+Create datasets
+
+``` py linenums="1"
+train_dataset = Dataset.from_pandas(train_df)
+val_dataset = Dataset.from_pandas(val_df)
+```
+
+Combine into a Dataset dict
+
+``` py linenums="1"
+dataset = DatasetDict({
+    'train': train_dataset,
+    'validation': val_dataset
+})
+```
+
+set up the model and tokenizer
+
+``` py linenums="1"
+model_name = 'distilbert-base-uncased'
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+```
+
+``` py linenums="1"
+def tokenize_function(examples):
+    texts = examples['text']
+    entities = examples['entity']
+
+    combined_inputs = [f"{text} [SEP] {entity}" for text, entity in zip(texts, entities)]
+
+    tokenized = tokenizer(combined_inputs,
+                          padding="max_length",
+                          truncation=True,
+                          max_length=128,
+                          return_tensors=None)
+
+    tokenized['labels'] = examples['viral']
+
+    return tokenized
+
+columns_to_remove = [col for col in dataset['train'].column_names if col != 'viral']
+tokenized_datasets = dataset.map(tokenize_function, batched=True, remove_columns=columns_to_remove)
+```
+
+Set up the model
+
+``` py linenums="1"
+model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
+```
+
+Set up training arguments
+
+``` py linenums="1"
+training_args = TrainingArguments(
+    output_dir="./results",
+    learning_rate=2e-5,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=16,
+    num_train_epochs=3,
+    weight_decay=0.01,
+    evaluation_strategy="epoch",
+    save_strategy="epoch",
+    load_best_model_at_end=True,
+)
+```
+
+Define a custom data collator
+
+``` py linenums="1"
+def custom_data_collator(features):
+    batch = {k: torch.tensor([f[k] for f in features]) for k in features[0].keys()}
+    return batch
+```
+
+Create and train the model
+
+``` py linenums="1"
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_datasets["train"],
+    eval_dataset=tokenized_datasets["validation"],
+    data_collator=custom_data_collator,
+)
+
+trainer.train()
+```
+
+Evaluate the model
+
+``` py linenums="1"
+eval_results = trainer.evaluate()
+print(f"Evaluation results: {eval_results}")
+```
+
+Make predictions on the validation set
+
+``` py linenums="1"
+predictions = trainer.predict(tokenized_datasets["validation"])
+predicted_labels = np.argmax(predictions.predictions, axis=1)
+```
+
+Calculate accuracy
+
+``` py linenums="1"
+accuracy = np.mean(predicted_labels == tokenized_datasets["validation"]["viral"])
+print(f"Accuracy: {accuracy}")
+```
+
+some debug shennanigans
+
+``` py linenums="1"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+```
+
+``` py linenums="1"
+model = model.to(device)
+```
+
+Function to predict viral potential for new tweets
+
+``` py linenums="1"
+def predict_viral_potential(tweet, entity):
+    combined_input = f"{tweet} [SEP] {entity}"
+    inputs = tokenizer(combined_input, return_tensors="pt", padding=True, truncation=True, max_length=128)
+
+    inputs = {k: v.to(device) for k, v in inputs.items()}
+
+    with torch.no_grad():
+        outputs = model(**inputs)
+    probabilities = torch.nn.functional.softmax(outputs.logits, dim=-1)
+    return probabilities[0][1].item()
+```
+
+UI components
+
+<div style="height:440px; overflow:scroll;">
+
+``` py linenums="1"
+tweet_input = widgets.Textarea(
+    value='',
+    placeholder='Enter your tweet here',
+    description='Tweet:',
+    disabled=False
+)
+
+entity_input = widgets.Text(
+    value='',
+    placeholder='Enter the entity (e.g., "technology")',
+    description='Entity:',
+    disabled=False
+)
+
+predict_button = widgets.Button(description="Predict")
+output = widgets.Output()
+
+def on_button_clicked(_):
+    with output:
+        output.clear_output()
+        tweet = tweet_input.value
+        entity = entity_input.value
+        if tweet and entity:
+            try:
+                probability = predict_viral_potential(tweet, entity)
+                print(f"Probability of the tweet going viral: {probability:.2f}")
+            except Exception as e:
+                print(f"An error occurred: {str(e)}")
+        else:
+            print("Please enter both a tweet and an entity.")
+
+predict_button.on_click(on_button_clicked)
+```
+
+</div>
+
+UI
+
+``` py linenums="1"
+display(tweet_input, entity_input, predict_button, output)
+```
+
+### Quora Insincere Questions Classification
+
+[Open in Kaggle :fontawesome-brands-kaggle:](https://colab.research.google.com/drive/10lzn1q10XbpikhFbWtgyV0F9hI_739WK?usp=sharing){ .md-button .md-button--primary}
+
+``` py linenums="1"
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+import torch
+from torch.utils.data import DataLoader, TensorDataset
+from torch import nn
+import torch.nn.functional as F
+from torch.optim import Adam
+from tqdm import tqdm
+import zipfile
+import io
+```
+
+Load the data
+
+``` py linenums="1"
+train_df = pd.read_csv('../input/quora-insincere-questions-classification/train.csv')
+test_df = pd.read_csv('../input/quora-insincere-questions-classification/test.csv')
+```
+
+Split the training data into train and validation sets
+
+``` py linenums="1"
+train_df, val_df = train_test_split(train_df, test_size=0.1, random_state=42)
+```
+
+Load pre-trained embeddings
+
+``` py linenums="1"
+embeddings_index = {}
+error_count = 0
+with zipfile.ZipFile('../input/quora-insincere-questions-classification/embeddings.zip') as z:
+    with z.open('glove.840B.300d/glove.840B.300d.txt') as f:
+        for line in tqdm(io.TextIOWrapper(f, 'utf-8'), total=2196017, desc="Loading GloVe"):
+            try:
+                values = line.split()
+                word = values[0]
+                coefs = np.asarray(values[1:], dtype='float32')
+                embeddings_index[word] = coefs
+            except ValueError:
+                error_count += 1
+                continue  
+​
+print(f"Loaded {len(embeddings_index)} word vectors")
+print(f"Encountered {error_count} errors while loading embeddings")
+```
+
+Prepare tokenizer
+
+``` py linenums="1"
+def tokenize(text):
+    return text.lower().split()
+```
+
+Create vocabulary
+
+``` py linenums="1"
+vocab = set()
+train_df['question_text'].apply(lambda x: vocab.update(tokenize(x)))
+val_df['question_text'].apply(lambda x: vocab.update(tokenize(x)))
+```
+
+Create word to index mapping
+
+``` py linenums="1"
+word_to_index = {word: i+1 for i, word in enumerate(vocab)}
+index_to_word = {i+1: word for i, word in enumerate(vocab)}
+```
+
+Create embedding matrix
+
+``` py linenums="1"
+embedding_matrix = np.zeros((len(word_to_index) + 1, 300))
+for word, i in word_to_index.items():
+    embedding_vector = embeddings_index.get(word)
+    if embedding_vector is not None:
+        embedding_matrix[i] = embedding_vector
+```
+
+Tokenize and pad sequences
+
+``` py linenums="1"
+max_length = 100
+​
+def text_to_sequence(text, max_length):
+    sequence = [word_to_index.get(word, 0) for word in tokenize(text)[:max_length]]
+    return sequence + [0] * (max_length - len(sequence))
+​
+X_train = np.array([text_to_sequence(text, max_length) for text in train_df['question_text']])
+y_train = train_df['target'].values
+X_val = np.array([text_to_sequence(text, max_length) for text in val_df['question_text']])
+y_val = val_df['target'].values
+X_test = np.array([text_to_sequence(text, max_length) for text in test_df['question_text']])
+```
+
+Define model
+
+``` py linenums="1"
+class QuoraModel(nn.Module):
+    def __init__(self, vocab_size, embedding_dim, hidden_dim):
+        super(QuoraModel, self).__init__()
+        self.embedding = nn.Embedding(vocab_size, embedding_dim)
+        self.lstm = nn.LSTM(embedding_dim, hidden_dim, batch_first=True, bidirectional=True)
+        self.fc = nn.Linear(hidden_dim * 2, 1)
+        
+    def forward(self, x):
+        x = self.embedding(x)
+        _, (hidden, _) = self.lstm(x)
+        hidden = torch.cat((hidden[-2,:,:], hidden[-1,:,:]), dim=1)
+        return self.fc(hidden)
+```
+
+Initialize model
+
+``` py linenums="1"
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model = QuoraModel(len(word_to_index) + 1, 300, 128).to(device)
+model.embedding.weight.data.copy_(torch.from_numpy(embedding_matrix))
+model.embedding.weight.requires_grad = False
+```
+
+Prepare data loaders
+
+``` py linenums="1"
+train_dataset = TensorDataset(torch.tensor(X_train, dtype=torch.long), torch.tensor(y_train, dtype=torch.float))
+val_dataset = TensorDataset(torch.tensor(X_val, dtype=torch.long), torch.tensor(y_val, dtype=torch.float))
+train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=64)
+```
+
+Training loop
+
+``` py linenums="1"
+criterion = nn.BCEWithLogitsLoss()
+optimizer = Adam(model.parameters())
+num_epochs = 3
+​
+for epoch in range(num_epochs):
+    model.train()
+    for batch in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs}"):
+        inputs, targets = [b.to(device) for b in batch]
+        optimizer.zero_grad()
+        outputs = model(inputs).squeeze()
+        loss = criterion(outputs, targets)
+        loss.backward()
+        optimizer.step()
+    
+    model.eval()
+    val_loss = 0
+    correct = 0
+    with torch.no_grad():
+        for inputs, targets in val_loader:
+            inputs, targets = inputs.to(device), targets.to(device)
+            outputs = model(inputs).squeeze()
+            val_loss += criterion(outputs, targets).item()
+            correct += ((outputs > 0) == targets).sum().item()
+    
+    val_loss /= len(val_loader)
+    accuracy = correct / len(val_dataset)
+    print(f"Validation Loss: {val_loss:.4f}, Accuracy: {accuracy:.4f}")
+```
+
+``` py linenums="1"
+val_preds = []
+model.eval()
+with torch.no_grad():
+    for inputs, _ in val_loader:
+        inputs = inputs.to(device)
+        outputs = model(inputs).squeeze()
+        val_preds.extend((outputs > 0).int().cpu().numpy())
+​
+print(f"Validation set class distribution: {np.bincount(val_preds)}")
+```
+
+Make predictions on the test set
+
+``` py linenums="1"
+model.eval()
+test_dataset = TensorDataset(torch.tensor(X_test, dtype=torch.long))
+test_loader = DataLoader(test_dataset, batch_size=64)
+​
+predictions = []
+with torch.no_grad():
+    for inputs in tqdm(test_loader, desc="Predicting"):
+        inputs = inputs[0].to(device)
+        outputs = model(inputs).squeeze()
+        predictions.extend((outputs > 0).int().cpu().numpy())
+​
+print(f"Test set prediction distribution: {np.bincount(predictions)}")
+```
+
+Create submission file
+
+``` py linenums="1"
+print("Creating submission file...")
+submission_df = pd.DataFrame({
+    'qid': test_df['qid'],
+    'prediction': predictions
+})
+​
+submission_df['prediction'] = submission_df['prediction'].astype(int)
+​
+submission_df.to_csv('submission.csv', index=False)
+print("Submission file created: submission.csv")
+​
+print("\nVerifying submission file:")
+verification_df = pd.read_csv('submission.csv')
+print(verification_df.head())
+print(f"\nSubmission file shape: {verification_df.shape}")
+print(f"Columns: {verification_df.columns}")
+print(f"\nData types:\n{verification_df.dtypes}")
+print(f"\nUnique values in 'prediction' column: {verification_df['prediction'].unique()}")
+print(f"\nClass distribution in submission: {verification_df['prediction'].value_counts()}")
 ```
 
 - https://docs.fast.ai/

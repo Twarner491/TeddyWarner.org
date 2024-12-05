@@ -44,14 +44,6 @@
   }
 }
 
-.scrollDown .md-header {
-  transform: translateZ(-100%);
-}
-
-.scrollUp .md-header {
-  transform: none;
-}
-
 .md-sidebar {
   width: 0px;
 }
