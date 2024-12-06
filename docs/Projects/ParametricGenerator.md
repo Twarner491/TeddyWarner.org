@@ -18,7 +18,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Parametric Bottle Cap Generator - Teddy Warner">
-  <meta name="description" content="Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!">
+  <meta name="description" content="Create custom bottle caps with the Parametric Bottle Cap Generator, featuring adjustable parameters for perfect fit and functionality, designed for 3D printing enthusiasts.">
   <meta name="keywords" content="Parametric design, Bottle caps, 3D printing, Fusion 360, Custom threads, CAD modeling, Thread profiles, Customizable caps, 3D printed lids, Parametric generator">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

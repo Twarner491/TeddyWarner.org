@@ -19,7 +19,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Octoprint Setup - Teddy Warner">
-  <meta name="description" content="A complete Octoprint setup documentation.">
+  <meta name="description" content="Comprehensive setup guide for Octoprint on Raspberry Pi, detailing installation, configuration, and optimization for enhanced 3D printing control and monitoring.">
   <meta name="keywords" content="Octoprint, 3D Printing, Raspberry Pi, Print server, Remote printing, Print monitoring, Web interface, Print farm, Printer control, Plugin configuration, Network printing">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

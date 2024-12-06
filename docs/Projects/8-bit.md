@@ -17,7 +17,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="8-bit Breadboard Computer - Teddy Warner">
-  <meta name="description" content="A dive into computer logic, and processor workings.">
+  <meta name="description" content="A dive into computer logic and processor workings through building an 8-bit computer from scratch using breadboards and basic logic gates. Based on Ben Eater's design.">
   <meta name="keywords" content="8-bit computer, Breadboard computer, Computer logic, Digital electronics, Ben Eater, Logic gates, Computer architecture, Digital circuits, Hardware engineering, Electronics projects, DIY computer, Processor design, Digital logic, Computer engineering, Hardware development">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

@@ -13,7 +13,7 @@ template: comments.html
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Learning to Juggle - Teddy Warner">
-  <meta name="description" content="A journey to lessen doom-scrolling.">
+  <meta name="description" content="Join me on a journey to learn juggling, exploring techniques, personal insights, and the benefits of this engaging skill for enhancing focus and reducing screen time.">
   <meta name="keywords" content="Juggling, Digital wellness, Phone addiction, Screen time, Productivity habits, Phone brightness, Greyscale mode, Digital minimalism, Screen addiction, Healthy apps">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

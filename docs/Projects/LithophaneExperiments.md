@@ -16,7 +16,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Lithophane Experiments - Teddy Warner">
-  <meta name="description" content="A gallery of lithophanes.">
+  <meta name="description" content="Explore a captivating gallery of lithophanes, showcasing unique 3D printed art pieces created with innovative techniques and tools for stunning light effects.">
   <meta name="keywords" content="Lithophane, 3D Printing, Photography, Art, 3dp.rocks, Image processing, Light art, Custom prints, Photo printing, 3D art, DIY lithophanes">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

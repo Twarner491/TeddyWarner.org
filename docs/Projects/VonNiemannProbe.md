@@ -27,7 +27,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Von Niemann Probe - Teddy Warner">
-  <meta name="description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
+  <meta name="description" content="Explore the innovative Von Niemann Probe, an AVR-based Bluetooth telegraphing shoe insole designed to enhance chess gameplay, featuring detailed insights into its design, development, and functionality.">
   <meta name="keywords" content="Chess cheating, Hans Niemann, Bluetooth telegraph, AVR microcontroller, Shoe insole, Parametric design, PCB design, Morse code, Chess scandal, Magnus Carlsen, Electronics project">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

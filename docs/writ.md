@@ -14,7 +14,7 @@ search:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Writing Portfolio - Teddy Warner">
-  <meta name="description" content="A conglomerate of my thoughts and essays.">
+  <meta name="description" content="A collection of essays and thoughts on engineering, philosophy, and personal growth. Topics range from Eastern philosophy to neuroscience and technical analyses.">
   <meta name="keywords" content="Engineering essays, Technical writing, Philosophy analysis, Neuroscience writing, Personal development, Engineering blog, Technical analysis, Engineering philosophy, Learning experiences, Engineering insights, Personal growth, Technical documentation, Engineering perspective, Design thinking, Innovation writing">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
@@ -148,7 +148,7 @@ search:
           <p class="copyright">Copyright © 2024 Teddy Warner</p>
         </a>
     </section>
-    <h1></h1>
+    <h1 style="display:none;">Writing Portfolio - Engineering Essays & Technical Documentation</h1>
   </div>
   </main>
   <script>

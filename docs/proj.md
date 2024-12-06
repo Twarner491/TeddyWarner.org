@@ -14,7 +14,7 @@ search:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Project Portfolio - Teddy Warner">
-  <meta name="description" content="Some of the Open-Source shenanigans I've been up to.">
+  <meta name="description" content="Open-source engineering projects spanning digital fabrication, PCB development, and mechatronics. Portfolio includes work from USC Iovine and Young Academy and Fab Academy.">
   <meta name="keywords" content="Digital fabrication, PCB development, Mechatronics engineering, USC Iovine and Young Academy, Engineering design, Fab Academy, Hardware engineering, Rapid prototyping, CAD design, Physical computing, Electronics design, IoT development, Wearable technology, Engineering portfolio">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
@@ -232,7 +232,7 @@ search:
           <p class="copyright">Copyright © 2024 Teddy Warner</p>
         </a>
     </section>
-    <h1></h1>
+    <h1 style="display:none;">Project Portfolio - Digital Fabrication & Engineering Projects</h1>
   </div>
   </main>
   <script>

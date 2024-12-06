@@ -17,7 +17,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Cable Managed Corner Desk - Teddy Warner">
-  <meta name="description" content="A clean modern corner desk.">
+  <meta name="description" content="Explore the design and construction of a modern cable-managed corner desk, combining functionality and aesthetics for an ideal home office setup.">
   <meta name="keywords" content="Cable management, Corner desk, DIY desk, Fusion 360, CAD design, Home office setup, Pandemic project, Woodworking, Desk construction, Modern furniture, Workspace organization">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

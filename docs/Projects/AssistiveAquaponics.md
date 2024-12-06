@@ -24,7 +24,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Assistive Aquaponics Fish Tank - Teddy Warner">
-  <meta name="description" content="Expanding the accessibility of successful & thriving aquaponics ecosystems.">
+  <meta name="description" content="Adaptable Aquaponics offers innovative solutions to modern farming challenges by integrating aquaculture and hydroponics. Learn about sustainable practices, modular designs, and community-driven food production.">
   <meta name="keywords" content="Aquaponics, Assistive technology, Digital fabrication, 3D printing, CNC milling, PCB design, Sustainable farming, Fish tank, Fab Academy, Maker project, Smart agriculture, IoT farming, Accessible design, Educational aquaponics, DIY aquaponics">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

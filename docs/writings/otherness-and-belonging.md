@@ -13,7 +13,7 @@ template: comments.html
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Otherness and Belonging - Teddy Warner">
-  <meta name="description" content="Discovering Eastern philosophy.">
+  <meta name="description" content="Explore the intricate concepts of otherness and belonging through the lens of Eastern philosophy, neuroscience, and social psychology, uncovering the emotional and cognitive dimensions of human connection.">
   <meta name="keywords" content="Neuroscience, Belonging, Social psychology, Mirror neurons, Theory of Mind, Emotions, Decision making, Moral foundations, Social pain, Altruistic behavior">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

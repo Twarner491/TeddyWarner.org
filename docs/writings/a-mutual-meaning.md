@@ -13,7 +13,7 @@ template: comments.html
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="A Mutual Meaning - Teddy Warner">
-  <meta name="description" content="Discovering Eastern philosophy.">
+  <meta name="description" content="Delve into the exploration of Eastern philosophy and its insights on the meaning of life, personal agency, and interconnectedness, as presented through the lens of Nietzsche, Hinduism, and Buddhism.">
   <meta name="keywords" content="Eastern philosophy, Buddhism, Hinduism, The Upanishads, The Other Shore, Thich Nhat Hanh, Meaning of life, Interbeing, Meditation, Nietzsche, Philosophical writing">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

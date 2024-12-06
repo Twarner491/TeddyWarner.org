@@ -13,7 +13,7 @@ template: comments.html
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="To Drive with Downforce - Teddy Warner">
-  <meta name="description" content="Addressing the confidence bottleneck.">
+  <meta name="description" content="Explore the concept of downforce in racing, its engineering principles, and the psychological aspects of confidence in high-speed driving, drawing parallels to personal growth and overcoming challenges.">
   <meta name="keywords" content="Confidence, Racing, Downforce, Personal growth, Motorsport, Cornering techniques, Self-improvement, Racing metaphor, Challenges, Personal development">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

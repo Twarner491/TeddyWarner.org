@@ -20,7 +20,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="UPDI Serial Programming - Teddy Warner">
-  <meta name="description" content="Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.">
+  <meta name="description" content="Unlock the potential of serial UPDI programming with this comprehensive guide, featuring setup instructions, hardware recommendations, and tips for programming AVR microcontrollers efficiently.">
   <meta name="keywords" content="UPDI programming, AVR microcontrollers, Serial programming, MegaTinyCore, Firmware upload, USB-C programmer, Embedded systems, Arduino IDE, Python implementation, Hardware development">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

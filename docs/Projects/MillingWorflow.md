@@ -21,7 +21,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="CNC Milling Workflows - Teddy Warner">
-  <meta name="description" content="A relatively comprehensive guide for CNC milling.">
+  <meta name="description" content="A comprehensive guide to CNC milling workflows, covering essential techniques, tools, and projects for mastering subtractive manufacturing with detailed insights and resources.">
   <meta name="keywords" content="CNC milling, CAM, Feeds and speeds, ShopBot, Bantam Tools, Fusion 360, Vectric Aspire, Machining, Subtractive manufacturing, Tool paths, CNC programming">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

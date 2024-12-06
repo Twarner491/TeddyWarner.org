@@ -21,7 +21,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Project Portfolio Site - Teddy Warner">
-  <meta name="description" content="Static site generation with Mkdocs, and hosting via GitHub Pages.">
+  <meta name="description" content="Explore Teddy Warner's Project Portfolio Site, showcasing a collection of innovative projects, detailed documentation, and insights into software development, design, and 3D printing.">
   <meta name="keywords" content="MkDocs, Static site generator, GitHub Pages, Documentation site, Web development, Material theme, Python, Markdown, Site customization, Portfolio website, Technical documentation">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

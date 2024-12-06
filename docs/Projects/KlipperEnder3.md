@@ -18,7 +18,7 @@ tags:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Klipper Enabled Ender 3 - Teddy Warner">
-  <meta name="description" content="As the name suggests, an Ender 3 with Klipper firmware.">
+  <meta name="description" content="Discover the transformation of an Ender 3 3D printer with Klipper firmware, featuring detailed modifications, installation steps, and configuration tips for enhanced performance.">
   <meta name="keywords" content="Klipper, Ender 3, 3D Printer, Firmware, FluiddPi, Raspberry Pi, DIY, Printer modifications, Direct drive, Auto bed leveling, Custom firmware, 3D printing">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">

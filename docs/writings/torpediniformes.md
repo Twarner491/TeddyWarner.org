@@ -13,7 +13,7 @@ template: comments.html
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Torpediniformes - Teddy Warner">
-  <meta name="description" content="An analysis of The Meno.">
+  <meta name="description" content="An in-depth analysis of Plato's 'The Meno,' exploring themes of virtue, knowledge, and the learning process through the lens of Socratic dialogue and philosophical inquiry.">
   <meta name="keywords" content="Plato, The Meno, Socratic dialogue, Virtue, Naïveté, Learning process, Philosophy, Socrates, Meno, Bravery, Knowledge, Correct opinion">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
