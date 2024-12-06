@@ -13,8 +13,8 @@ search:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary Meta Tags -->
-  <meta name="title" content="Writing Portfolio - Teddy Warner">
-  <meta name="description" content="A collection of essays and thoughts on engineering, philosophy, and personal growth. Topics range from Eastern philosophy to neuroscience and technical analyses.">
+  <meta name="title" content="Writings - Teddy Warner">
+  <meta name="description" content="A conglomerate of my thoughts and essays.">
   <meta name="keywords" content="Engineering essays, Technical writing, Philosophy analysis, Neuroscience writing, Personal development, Engineering blog, Technical analysis, Engineering philosophy, Learning experiences, Engineering insights, Personal growth, Technical documentation, Engineering perspective, Design thinking, Innovation writing">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
@@ -22,7 +22,7 @@ search:
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teddywarner.org/writ/">
-  <meta property="og:title" content="Writing Portfolio - Teddy Warner">
+  <meta property="og:title" content="Writings - Teddy Warner">
   <meta property="og:description" content="A conglomerate of my thoughts and essays.">
   <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
@@ -32,7 +32,7 @@ search:
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://teddywarner.org/writ/">
-  <meta property="twitter:title" content="Writing Portfolio - Teddy Warner">
+  <meta property="twitter:title" content="Writings - Teddy Warner">
   <meta property="twitter:description" content="A conglomerate of my thoughts and essays.">
   <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 

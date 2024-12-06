@@ -17,7 +17,7 @@ search:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Teddy Warner">
-  <meta name="description" content="Engineering portfolio of Teddy Warner - USC Iovine and Young Academy student specializing in digital fabrication, PCB development, and human-centric design.">
+  <meta name="description" content="I build hardware. // @WarnerTeddy">
   <meta name="keywords" content="Digital fabrication, PCB development, Mechatronics engineering, USC Iovine and Young Academy, Engineering design, Fab Academy, Hardware engineering, Rapid prototyping, CAD design, Physical computing, Electronics design, IoT development, Wearable technology, Engineering portfolio">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
