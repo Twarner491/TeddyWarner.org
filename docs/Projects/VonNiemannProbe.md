@@ -37,7 +37,7 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
   <meta property="og:title" content="Von Niemann Probe - Teddy Warner">
   <meta property="og:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -47,7 +47,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
   <meta property="twitter:title" content="Von Niemann Probe - Teddy Warner">
   <meta property="twitter:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>

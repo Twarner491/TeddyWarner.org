@@ -24,7 +24,7 @@ search:
   <meta property="og:url" content="https://teddywarner.org/proj/">
   <meta property="og:title" content="Project Portfolio - Teddy Warner">
   <meta property="og:description" content="Some of the Open-Source shenanigans I've been up to.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@ search:
   <meta property="twitter:url" content="https://teddywarner.org/proj/">
   <meta property="twitter:title" content="Project Portfolio - Teddy Warner">
   <meta property="twitter:description" content="Some of the Open-Source shenanigans I've been up to.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>

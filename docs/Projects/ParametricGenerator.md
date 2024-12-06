@@ -28,7 +28,7 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/ParametricGenerator/">
   <meta property="og:title" content="Parametric Bottle Cap Generator - Teddy Warner">
   <meta property="og:description" content="Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -38,7 +38,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/ParametricGenerator/">
   <meta property="twitter:title" content="Parametric Bottle Cap Generator - Teddy Warner">
   <meta property="twitter:description" content="Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>

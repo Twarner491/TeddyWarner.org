@@ -27,7 +27,7 @@ search:
   <meta property="og:url" content="https://teddywarner.org/">
   <meta property="og:title" content="Teddy Warner">
   <meta property="og:description" content="causa sui. // @WarnerTeddy">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -37,7 +37,7 @@ search:
   <meta property="twitter:url" content="https://teddywarner.org/">
   <meta property="twitter:title" content="Teddy Warner">
   <meta property="twitter:description" content="causa sui. // @WarnerTeddy">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

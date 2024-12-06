@@ -34,7 +34,7 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/AssistiveAquaponics/">
   <meta property="og:title" content="Assistive Aquaponics Fish Tank - Teddy Warner">
   <meta property="og:description" content="Expanding the accessibility of successful & thriving aquaponics ecosystems.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -44,7 +44,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/AssistiveAquaponics/">
   <meta property="twitter:title" content="Assistive Aquaponics Fish Tank - Teddy Warner">
   <meta property="twitter:description" content="Expanding the accessibility of successful & thriving aquaponics ecosystems.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>

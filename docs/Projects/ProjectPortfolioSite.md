@@ -31,7 +31,7 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/ProjectPortfolioSite/">
   <meta property="og:title" content="Project Portfolio Site - Teddy Warner">
   <meta property="og:description" content="Static site generation with Mkdocs, and hosting via GitHub Pages.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/ProjectPortfolioSite/">
   <meta property="twitter:title" content="Project Portfolio Site - Teddy Warner">
   <meta property="twitter:description" content="Static site generation with Mkdocs, and hosting via GitHub Pages.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>

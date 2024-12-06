@@ -27,7 +27,7 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/8-bit/">
   <meta property="og:title" content="8-bit Breadboard Computer - Teddy Warner">
   <meta property="og:description" content="A dive into computer logic, and processor workings.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -37,7 +37,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/8-bit/">
   <meta property="twitter:title" content="8-bit Breadboard Computer - Teddy Warner">
   <meta property="twitter:description" content="A dive into computer logic, and processor workings.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png?foo=bar">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
