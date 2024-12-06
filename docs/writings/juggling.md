@@ -57,7 +57,7 @@ template: comments.html
 # Learning to Juggle
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2024 </span>| <span class="readTime"><i class="far fa-clock"></i> 5-7 mins</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2024 </span>| <span class="readTime"><i class="far fa-clock"></i> 5-7 mins</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/writings/juggling/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/writings/juggling/&text="><i class="fa-brands fa-x-twitter"></i></a>
@@ -98,8 +98,8 @@ The easiest way to eradicate temptation to doom-scroll is to follow the "out of 
 <br/>
 <center style="opacity:85%;">
 
- ![](../assets/images/juggle/light.png#only-light){width="50%"}
- ![](../assets/images/juggle/dark.png#only-dark){width="50%"}
+ ![](../assets/images/juggle/light.png#only-light){width="50%" alt="Healthy apps placed within thumb's reach on iPhone home screen in light theme"}
+ ![](../assets/images/juggle/dark.png#only-dark){width="50%" alt="Healthy apps placed within thumb's reach on iPhone home screen in dark theme"}
 
 </center>
 <br/>
@@ -149,8 +149,8 @@ To do so open settings and navigate to `Accessibility` -> `Display & Text Size`,
 
 <center>
 
- ![](../assets/images/juggle/color.png){width="30%"}
- ![](../assets/images/juggle/grey.png){width="30%"}
+ ![](../assets/images/juggle/color.png){width="30%" alt="iPhone screen showing normal color display"}
+ ![](../assets/images/juggle/grey.png){width="30%" alt="iPhone screen showing greyscale color filter applied"}
 
 </center>
 

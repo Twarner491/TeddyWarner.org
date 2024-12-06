@@ -84,8 +84,8 @@ Subtractive manufacturing is a process I've always found mesmerizing. Although a
 
 <center>
 
-![](../assets/images/MillingWorkflow/MPCNC1.jpg){width="49%"}
-![](../assets/images/MillingWorkflow/MPCNC2.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/MPCNC1.jpg){width="49%" alt="Mostly Printed CNC Machine - Image 1"}
+![](../assets/images/MillingWorkflow/MPCNC2.jpg){width="49%" alt="Mostly Printed CNC Machine - Image 2"}
 
   <figcaption>My Mostly Printed CNC Machine</figcaption>
 
@@ -97,8 +97,8 @@ Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com
 
 <center>
 
-[![](../assets/images/MillingWorkflow/BantamBanner.png){width="54%"}](https://www.bantamtools.com/)
-[![](../assets/images/MillingWorkflow/ShopbotBanner.png){width="43%"}](https://www.shopbottools.com/)
+[![](../assets/images/MillingWorkflow/BantamBanner.png){width="54%" alt="Bantam Tools Desktop CNC Milling Machine"}](https://www.bantamtools.com/)
+[![](../assets/images/MillingWorkflow/ShopbotBanner.png){width="43%" alt="ShopBot PRSalpha CNC Machine"}](https://www.shopbottools.com/)
 
 </center>
 
@@ -129,8 +129,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../assets/images/MillingWorkflow/darkdiameter.png#only-light){width="50%"}
-          ![](../assets/images/MillingWorkflow/lightdiameter.png#only-dark){width="50%"}
+          ![](../assets/images/MillingWorkflow/darkdiameter.png#only-light){width="50%" alt="Diagram showing tool diameter in CNC milling"}
+          ![](../assets/images/MillingWorkflow/lightdiameter.png#only-dark){width="50%" alt="Diagram showing tool diameter in CNC milling"}
 
         </center>
 
@@ -140,8 +140,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../assets/images/MillingWorkflow/darkflute.png#only-light){width="50%"}
-          ![](../assets/images/MillingWorkflow/lightflute.png#only-dark){width="50%"}
+          ![](../assets/images/MillingWorkflow/darkflute.png#only-light){width="50%" alt="Diagram showing flute count on an endmill"}
+          ![](../assets/images/MillingWorkflow/lightflute.png#only-dark){width="50%" alt="Diagram showing flute count on an endmill"}
 
         </center>
 
@@ -151,8 +151,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../assets/images/MillingWorkflow/darksurface.png#only-light){width="40%"}
-          ![](../assets/images/MillingWorkflow/lightsurface.png#only-dark){width="40%"}
+          ![](../assets/images/MillingWorkflow/darksurface.png#only-light){width="40%" alt="Diagram illustrating surface speed in CNC milling"}
+          ![](../assets/images/MillingWorkflow/lightsurface.png#only-dark){width="40%" alt="Diagram illustrating surface speed in CNC milling"}
 
         </center>
 
@@ -162,8 +162,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../assets/images/MillingWorkflow/darkchip.png#only-light){width="32%"}
-          ![](../assets/images/MillingWorkflow/lightchip.png#only-dark){width="32%"}
+          ![](../assets/images/MillingWorkflow/darkchip.png#only-light){width="32%" alt="Diagram showing chip load in CNC milling"}
+          ![](../assets/images/MillingWorkflow/lightchip.png#only-dark){width="32%" alt="Diagram showing chip load in CNC milling"}
 
         </center>
 
@@ -173,8 +173,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../assets/images/MillingWorkflow/darkspindal.png#only-light){width="30%"}
-          ![](../assets/images/MillingWorkflow/lightspindal.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkspindal.png#only-light){width="30%" alt="Diagram illustrating spindle speed in CNC milling"}
+          ![](../assets/images/MillingWorkflow/lightspindal.png#only-dark){width="30%" alt="Diagram illustrating spindle speed in CNC milling"}
 
         </center>
 
@@ -199,8 +199,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
         <center>
 
-          ![](../assets/images/MillingWorkflow/darkfeed.png#only-light){width="30%"}
-          ![](../assets/images/MillingWorkflow/lightfeed.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkfeed.png#only-light){width="30%" alt="Diagram showing feed rate in CNC milling"}
+          ![](../assets/images/MillingWorkflow/lightfeed.png#only-dark){width="30%" alt="Diagram showing feed rate in CNC milling"}
 
         </center>
 
@@ -225,8 +225,8 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
         
         <center>
 
-          ![](../assets/images/MillingWorkflow/darkplunge.png#only-light){width="45%"}
-          ![](../assets/images/MillingWorkflow/lightplunge.png#only-dark){width="45%"}
+          ![](../assets/images/MillingWorkflow/darkplunge.png#only-light){width="45%" alt="Diagram illustrating plunge rate in CNC milling"}
+          ![](../assets/images/MillingWorkflow/lightplunge.png#only-dark){width="45%" alt="Diagram illustrating plunge rate in CNC milling"}
 
         </center>
 

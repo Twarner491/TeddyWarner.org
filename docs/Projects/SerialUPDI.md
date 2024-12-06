@@ -64,13 +64,13 @@ tags:
 # UPDI Serial Programming
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt"><span class="year">| Summer & Winter, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 24-31 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt"><span class="year">| Summer & Winter, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 24-31 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/SerialUPDI/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/SerialUPDI/&text=Check%20Out%20UPDI%20Serial%20Programming%20on"><i class="fa-brands fa-x-twitter"></i></a>
   <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/SerialUPDI/&media=&description=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fa-brands fa-pinterest"></i></a>
   <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/SerialUPDI/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fa-solid fa-paper-plane"></i></a>
+  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&sbody=Check%20Out%20UPDI%20Serial%20Programming%20on%20https://teddywarner.org/Projects/SerialUPDI/%20!"><i class="fa-solid fa-paper-plane"></i></a>
   </span>
 </div>
 
@@ -116,7 +116,7 @@ Extract the contents of this downloaded sketch folder by first unzipping the dow
 
 <center>
 
-![](../assets/images/SerialUPDI/foldernaming.png){width="95%"}
+![](../assets/images/SerialUPDI/foldernaming.png){width="95%" alt="File explorer showing renamed jtag2updi folder structure"}
 
 </center>
 
@@ -124,7 +124,7 @@ Inside of this *jtag2updi* folder, navigate to the *jtag2UPDI.ino* project - cir
 
 <center>
 
-![](../assets/images/SerialUPDI/projectopen.png){width="95%"}
+![](../assets/images/SerialUPDI/projectopen.png){width="95%" alt="Arduino IDE showing jtag2updi project files"}
 
 </center>
 
@@ -132,7 +132,7 @@ This will open the *jtag2updi* project file system, leaving you with a blank *jt
 
 <center>
 
-![](../assets/images/SerialUPDI/blankjtagsketch.png){width="95%"}
+![](../assets/images/SerialUPDI/blankjtagsketch.png){width="95%" alt="Arduino IDE with blank jtag2updi sketch"}
 
 </center>
 
@@ -142,7 +142,7 @@ You can next upload this sketch to your 328p-based board of choice as you would 
 
     As a first test to confirm the successful upload of this sketch to your board, hook up an LED to pin 6 of the board. If the board is successfully programmed, the LED will be dimly lit as shown below. **This simple test eliminates a potential error while troubleshooting a project, and confirms the programmer's working condition.**
     <center>
-    ![](../assets/images/SerialUPDI/jtagtest.jpg){width="95%"}
+    ![](../assets/images/SerialUPDI/jtagtest.jpg){width="95%" alt="LED test showing successful jtag2updi programming"}
     </center>
 
 Once a board is programmed with the *jtag2updi* project, it will act as a programmer until the next sketch is uploaded, unless the board's reset line is cut.
@@ -198,7 +198,7 @@ The serial programming style relies on this prior mentioned portable python inst
  2. Some Jumper Wires
  3. A Schottky Diode - I tacked some leads to an SMD package (as shown below), but if you can get your hands on a through-hole package, that works great as well.
  <center>
-![](../assets/images/SerialUPDI/diodeleads.jpg){width="95%"}
+![](../assets/images/SerialUPDI/diodeleads.jpg){width="95%" alt="SMD Schottky diode with soldered leads"}
 </center>
  4. A 470-ohm Resistor - If creating a UPDI programmable board, incorporate this resistor into your schematic using the pinout below, running the 470-ohm resistor inline to the UPDI pin. Any value between 100 and 1k ohms will do here, but 470 is the optimal value.
 

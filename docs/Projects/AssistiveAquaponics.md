@@ -68,7 +68,7 @@ tags:
 # Assistive Aquaponics Fish Tank
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">|  Winter & Spring, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 1-2 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">|  Winter & Spring, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 1-2 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%2520Project/final-project/&text=Check%20Out%20the%20Assistive%20Aquaponics%20Fish%20Tank%20on"><i class="fa-brands fa-x-twitter"></i></a>
@@ -97,9 +97,9 @@ The Assistive Aquaponics Fish Tank was my final project masterpiece during my cy
 
 [Fab Academy 2021 - Assistive Aquaponics Fish Tank :fontawesome-solid-earth-americas:](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/){ .md-button .md-button--primary }
 
-![](../assets/images/AssistiveAquaponics/presentation.png)
+![](../assets/images/AssistiveAquaponics/presentation.png) alt="Presentation slide showing Assistive Aquaponics project overview"
 
-<iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="Assistive Aquaponics Fish Tank Project Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </center>
 

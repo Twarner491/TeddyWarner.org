@@ -73,7 +73,7 @@ tags:
 # Von Niemann Probe
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span style="font-weight: 300; padding-right: 5px;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Profile Picture" class="profilepic2"><span class="abt" id="name"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <span class="readTime"><i class="far fa-clock"></i> 46–58 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span style="font-weight: 300; padding-right: 5px;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Jack Hollingsworth's GitHub profile picture" class="profilepic2"><span class="abt" id="name"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <span class="readTime"><i class="far fa-clock"></i> 46–58 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-brands fa-x-twitter"></i></a>
@@ -95,7 +95,7 @@ tags:
 </center>
 
 !!! tip "Project Sponsor"
-    ![PCBWay](../assets/images/VonNiemannProbe/PCBWay.png){: align=right width="45%"}
+    ![PCBWay](../assets/images/VonNiemannProbe/PCBWay.png){: align=right width="45%" alt="PCBWay logo"}
     <center style="font-size:1.15em; width:55%;">**The development of the Von Niemann Probe was made possible by [PCBWay](https://www.pcbway.com/), who provided the fabrication of the probe's main board and nylon insole.** Be sure to check out [PCBWay.com](https://www.pcbway.com/) for all your PCB prototyping, assembly, design, CNC, and 3D printing needs! Thank you to the wonderful folks at [PCBWay](https://www.pcbway.com/) for sponsoring this project!</center>
     
 On September 4, 2022, 19-year-old rising chess superstar, Grandmaster Hans Moke Niemann, shocked the chess world when he ended the 8-time World Champion, and arguably the greatest player in world history, Magnus Carlsen's unprecedented 53-game win streak at the Sinquefield Cup in St. Louis, Missouri. Niemann added insult to injury by accomplishing this as the lowest-ranked player in the tournament while playing with the black pieces, which possess a slight, but crucially important, disadvantage at the highest levels of competition. 
@@ -170,7 +170,7 @@ The schematic includes headers for an HC-06, with serial connections to the ATTi
 
 <center>
 
-![](../assets/images/VonNiemannProbe/VNPSchematic.jpg){width="100%"}
+![](../assets/images/VonNiemannProbe/VNPSchematic.jpg){width="100%" alt="Schematic of the Von Niemann Probe PCB"}
 
 </center>
 
@@ -178,7 +178,7 @@ With this schematic done, I moved on to generating my final board file. The PCB 
 
 <center>
 
-![](../assets/images/VonNiemannProbe/VNPBoard.jpg){width="100%"}
+![](../assets/images/VonNiemannProbe/VNPBoard.jpg){width="100%" alt="PCB layout of the Von Niemann Probe"}
 
 </center>
 
@@ -192,7 +192,7 @@ To prove the feasibility of the accusations placed against Hans Niemann, the Von
 
 <center>
 
-![](../assets/images/VonNiemannProbe/footdi.png){width="80%"}
+![](../assets/images/VonNiemannProbe/footdi.png){width="80%" alt="Diagram of foot dimensions for insole design"}
 
 | US Size | UK Size | European Size | Japanese Size | Length *(S~L~)* | Width *(S~MW~)* |
 |---------|---------|---------------|---------------|--------|--------|

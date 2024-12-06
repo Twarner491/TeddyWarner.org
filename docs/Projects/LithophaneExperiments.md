@@ -60,7 +60,7 @@ tags:
 # Lithophane Experiments
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2019-2022 </span>| <span class="readTime"><i class="far fa-clock"></i> 1-2 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2019-2022 </span>| <span class="readTime"><i class="far fa-clock"></i> 1-2 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/LithophaneExperiments/&text=Check%20Out%20this%20compilation%20of%20Litophanes%20on"><i class="fa-brands fa-x-twitter"></i></a>
@@ -92,26 +92,26 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 <center>
 
-![](../assets/images/LithophaneExperiments/friends.jpg){width="49.5%"}
-![](../assets/images/LithophaneExperiments/friendslithophane.jpg){width="46.6%"}
+![](../assets/images/LithophaneExperiments/friends.jpg){width="49.5%" alt="Original photo of friends group"}
+![](../assets/images/LithophaneExperiments/friendslithophane.jpg){width="46.6%" alt="Lithophane print of friends group photo"}
 
-![](../assets/images/LithophaneExperiments/fam.jpg){width="51.5%"}
-![](../assets/images/LithophaneExperiments/famlithophane.jpg){width="45.7%"}
+![](../assets/images/LithophaneExperiments/fam.jpg){width="51.5%" alt="Original family photo"}
+![](../assets/images/LithophaneExperiments/famlithophane.jpg){width="45.7%" alt="Lithophane print of family photo"}
 
-![](../assets/images/LithophaneExperiments/MC.jpg){width="51.5%"}
-![](../assets/images/LithophaneExperiments/MClithophane.jpg){width="46.3%"}
+![](../assets/images/LithophaneExperiments/MC.jpg){width="51.5%" alt="Original photo of MC"}
+![](../assets/images/LithophaneExperiments/MClithophane.jpg){width="46.3%" alt="Lithophane print of MC photo"}
 
-![](../assets/images/LithophaneExperiments/nina.jpg){width="50%"}
-![](../assets/images/LithophaneExperiments/ninalithophane.jpg){width="46.4%"}
+![](../assets/images/LithophaneExperiments/nina.jpg){width="50%" alt="Original photo of Nina"}
+![](../assets/images/LithophaneExperiments/ninalithophane.jpg){width="46.4%" alt="Lithophane print of Nina photo"}
 
-![](../assets/images/LithophaneExperiments/zach.jpg){width="55.5%"}
-![](../assets/images/LithophaneExperiments/zachlithophane.jpg){width="43%"}
+![](../assets/images/LithophaneExperiments/zach.jpg){width="55.5%" alt="Original photo of Zach"}
+![](../assets/images/LithophaneExperiments/zachlithophane.jpg){width="43%" alt="Lithophane print of Zach photo"}
 
-![](../assets/images/LithophaneExperiments/maeko.jpg){width="47.2%"}
-![](../assets/images/LithophaneExperiments/lithophanemakeo.jpg){width="49.1%"}
+![](../assets/images/LithophaneExperiments/maeko.jpg){width="47.2%" alt="Original photo of Maeko"}
+![](../assets/images/LithophaneExperiments/lithophanemakeo.jpg){width="49.1%" alt="Lithophane print of Maeko photo"}
 
-![](../assets/images/LithophaneExperiments/alex.jpg){width="51.5%"}
-![](../assets/images/LithophaneExperiments/alexlithophane.jpg){width="44.5%"}
+![](../assets/images/LithophaneExperiments/alex.jpg){width="51.5%" alt="Original photo of Alex"}
+![](../assets/images/LithophaneExperiments/alexlithophane.jpg){width="44.5%" alt="Lithophane print of Alex photo"}
 
 </center>
 
@@ -119,14 +119,14 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 <center>
 
-![](../assets/images/LithophaneExperiments/keithharring.jpg){width="51%"}
-![](../assets/images/LithophaneExperiments/keithharringlithophane.jpg){width="45%"}
+![](../assets/images/LithophaneExperiments/keithharring.jpg){width="51%" alt="Original Keith Haring artwork"}
+![](../assets/images/LithophaneExperiments/keithharringlithophane.jpg){width="45%" alt="Lithophane print of Keith Haring artwork"}
 
-![](../assets/images/LithophaneExperiments/painting.jpg){width="52%"}
-![](../assets/images/LithophaneExperiments/paintinglithophane.jpg){width="46%"}
+![](../assets/images/LithophaneExperiments/painting.jpg){width="52%" alt="Original painting artwork"}
+![](../assets/images/LithophaneExperiments/paintinglithophane.jpg){width="46%" alt="Lithophane print of painting"}
 
-![](../assets/images/LithophaneExperiments/gerogiaokeef.jpg){width="51.5%"}
-![](../assets/images/LithophaneExperiments/gerogiaokeeflithophane.jpg){width="44.6%"}
+![](../assets/images/LithophaneExperiments/gerogiaokeef.jpg){width="51.5%" alt="Original Georgia O'Keeffe artwork"}
+![](../assets/images/LithophaneExperiments/gerogiaokeeflithophane.jpg){width="44.6%" alt="Lithophane print of Georgia O'Keeffe artwork"}
 
 </center>
 

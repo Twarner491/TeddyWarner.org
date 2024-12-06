@@ -68,7 +68,7 @@ search:
       <div class="content6" id="content6">
         <div class="writparent">
           <a href="https://teddywarner.org/writings/downforce">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/force/force.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/force/force.png" alt="To Drive with Downforce article cover image"></div>
             <p class="projtitle">To Drive with Downforce</p>
             <p class="writeyear">2024</p>
             <span class="mobileyear">
@@ -80,7 +80,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/juggling">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/juggle/juggle.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/juggle/juggle.png" alt="Learning to Juggle article cover image"></div>
             <p class="projtitle">Learning to Juggle</p>
             <p class="writeyear">2024</p>
             <span class="mobileyear">
@@ -92,7 +92,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/a-mutual-meaning">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/orange.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/index/orange.png" alt="A Mutual Meaning article cover image"></div>
             <p class="projtitle">A Mutual Meaning</p>
             <p class="writeyear">2024</p>
             <span class="mobileyear">
@@ -104,7 +104,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/otherness-and-belonging/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/onb.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/index/onb.png" alt="Otherness and Belonging article cover image"></div>
             <p class="projtitle">Otherness and Belonging</p>
             <p class="writeyear">2024</p>
             <span class="mobileyear">
@@ -116,7 +116,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/torpediniformes">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/snake.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/index/snake.png" alt="Torpediniformes article cover image"></div>
             <p class="projtitle">Torpediniformes</p>
             <p class="writeyear">2022</p>
             <span class="mobileyear">

@@ -57,7 +57,7 @@ template: comments.html
 # To Drive with Downforce
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2024 </span>| <span class="readTime"><i class="far fa-clock"></i> ~2 mins</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2024 </span>| <span class="readTime"><i class="far fa-clock"></i> ~2 mins</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/writings/downforce/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/writings/downforce/&text="><i class="fa-brands fa-x-twitter"></i></a>
@@ -77,8 +77,8 @@ To account for this, engineers implement wings and underbody designs to generate
 
 <center style="opacity:90%;">
 
- ![](../assets/images/force/light.png#only-light){width="70%"}
- ![](../assets/images/force/dark.png#only-dark){width="70%"}[^1]
+ ![](../assets/images/force/light.png#only-light){width="70%" alt="Diagram showing downforce effect on race car in light theme"}
+ ![](../assets/images/force/dark.png#only-dark){width="70%" alt="Diagram showing downforce effect on race car in dark theme"}[^1]
 
 </center>
 

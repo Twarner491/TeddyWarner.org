@@ -62,7 +62,7 @@ search:
     <section class="intro-section">
       <div class="content1">
         <div class="introabt">
-          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="https://pbs.twimg.com/profile_images/1794427673546035200/QnksLLBB_400x400.jpg">Teddy</a>, <span id="typed"></span></h2>
+          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="https://pbs.twimg.com/profile_images/1794427673546035200/QnksLLBB_400x400.jpg" alt="Profile picture of Teddy Warner">Teddy</a>, <span id="typed"></span></h2>
           <h3>I use digital fabrication techniques to<br>accelerate human centric design.</h3>
         </div>
       </div>
@@ -102,7 +102,7 @@ search:
                             <g id="image-card-1" class="project">
                                 <rect x="1057" y="299" width="240" height="405" rx="120" fill="var(--md-default-fg-color--lightest)" />
                                 <rect x="1057.5" y="299.5" width="239" height="404" rx="119.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                                <image x="1065" y="307" width="225" height="389" href="assets/images/index/aaft.png" clip-path="url(#clipImage1)" preserveAspectRatio="xMidYMid slice" />
+                                <image x="1065" y="307" width="225" height="389" href="assets/images/index/aaft.png" clip-path="url(#clipImage1)" preserveAspectRatio="xMidYMid slice" alt="Assistive Aquaponics project image" />
                                 <rect x="1065.5" y="307.5" width="224" height="388" rx="112" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
@@ -110,7 +110,7 @@ search:
                           <g id="image-card-2" class="project">
                               <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
                               <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                              <image x="277.5" y="527" width="492" height="328" href="assets/images/index/flowers.jpg" clip-path="url(#clipImage2)" preserveAspectRatio="xMidYMid slice" />
+                              <image x="277.5" y="527" width="492" height="328" href="assets/images/index/flowers.jpg" clip-path="url(#clipImage2)" preserveAspectRatio="xMidYMid slice" alt="Flowers project image" />
                               <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
                         </a>
@@ -125,7 +125,7 @@ search:
                                       <text x="816" y="715" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="18" font-style="normal" font-weight="500" line-height="109.588%">BOOM</text>
                                       <text x="817" y="733" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Hobart & Huber</text>
                                   </g>
-                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1728481365i/205307264.jpg" preserveAspectRatio="xMidYMid slice" />
+                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1728481365i/205307264.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of BOOM by Hobart & Huber" />
                               </g>
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
@@ -134,7 +134,7 @@ search:
                             <g id="image-card-4" class="project">
                                 <g clip-path="url(#clip1_107_71)">
                                     <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
-                                    <image x="151" y="220" width="451" height="273" href="assets/images/index/vnp.gif" clip-path="url(#clipImage4)" preserveAspectRatio="xMidYMid slice" />
+                                    <image x="151" y="220" width="451" height="273" href="assets/images/index/vnp.gif" clip-path="url(#clipImage4)" preserveAspectRatio="xMidYMid slice" alt="Von Niemann Probe project image" />
                                     <rect x="151.5" y="220.5" width="450" height="272" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                                 </g>
                                 <rect x="143.5" y="212.5" width="466" height="287" rx="24.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -143,7 +143,7 @@ search:
                         <a target="_blank" href="https://tone.computer/">
                             <g id="image-card-3" class="project">
                                 <path d="M848.04 107H818.96H652.485C644.615 107 640.679 107 637.673 108.503C635.029 109.825 632.879 111.935 631.532 114.53C630 117.48 630 121.342 630 129.066V477.986C630 485.71 630 489.572 631.532 492.522C632.879 495.117 635.029 497.227 637.673 498.549C640.679 500.052 644.615 500.052 652.485 500.052H750.262H760.035C780.16 500.052 796.475 516.367 796.475 536.493V572.934C796.475 580.658 796.475 584.52 798.007 587.47C799.354 590.065 801.504 592.175 804.149 593.497C807.155 595 811.09 595 818.96 595H818.96H1014.52H1014.52C1022.39 595 1026.32 595 1029.33 593.497C1031.97 592.175 1034.12 590.065 1035.47 587.47C1037 584.52 1037 580.658 1037 572.934V129.066V129.066C1037 121.342 1037 117.48 1035.47 114.53C1034.12 111.935 1031.97 109.825 1029.33 108.503C1026.32 107 1022.39 107 1014.52 107H848.04Z" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                                <image class="toneimg" x="638" y="107" width="390" height="488" clip-path="url(#clipImageTone)" preserveAspectRatio="xMidYMid slice" />
+                                <image class="toneimg" x="638" y="107" width="390" height="488" clip-path="url(#clipImageTone)" preserveAspectRatio="xMidYMid slice" alt="Tone project image" />
                                 <path d="M847.468 115H819.532H658.601H649.2C645.28 115 643.319 115 641.822 115.763C640.505 116.434 639.434 117.505 638.763 118.822C638 120.319 638 122.28 638 126.2V135.343V470.823V480.8C638 484.72 638 486.681 638.763 488.178C639.434 489.495 640.505 490.566 641.822 491.237C643.319 492 645.28 492.165 649.2 492.165H659.601H749.535H759.685C760.842 492.165 761.42 492.165 761.909 492.176C784.891 492.699 803.397 511.205 803.92 534.187C803.931 534.676 803.931 535.254 803.931 536.411V565.657V575.731C803.931 579.651 804 581.681 804.763 583.178C805.434 584.495 806.505 585.566 807.822 586.237C809.319 587 811.28 587 815.2 587L825.463 586.931L1007.4 587H1017.8C1021.72 587 1023.68 587 1025.18 586.237C1026.5 585.566 1027.57 584.495 1028.24 583.178C1029 581.681 1029 579.72 1029 575.8V565.657V136.343V126.2C1029 122.28 1029 120.319 1028.24 118.822C1027.57 117.505 1026.5 116.434 1025.18 115.763C1023.68 115 1021.72 115 1017.8 115H1007.4H847.468Z" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
@@ -167,22 +167,22 @@ search:
       <div class="content3">
         <h2>What I’ve Been Up To</h2>
         <a target=”_blank” href="https://www.midjourney.com/home">
-          <img class="companylogo" src="assets/images/index/logos/mj.png"><p class="company">Midjourney</p></a><p class="role">Engineering<span class="mobileyear">, R&D</span></p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Aug 2024</span></p>
+          <img class="companylogo" src="assets/images/index/logos/mj.png" alt="Midjourney logo"><p class="company">Midjourney</p></a><p class="role">Engineering<span class="mobileyear">, R&D</span></p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Aug 2024</span></p>
         <hr/>
         <a target=”_blank” href="https://www.autodesk.com/">
-          <img class="companylogo" src="assets/images/index/logos/autodesk.png"><p class="company">Autodesk</p></a><p class="role"><span class="mobileyear">Design & Make </span>Community Manager</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - Aug 2024</span></p>
+          <img class="companylogo" src="assets/images/index/logos/autodesk.png" alt="Autodesk logo"><p class="company">Autodesk</p></a><p class="role"><span class="mobileyear">Design & Make </span>Community Manager</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - Aug 2024</span></p>
         <hr/>
         <a target=”_blank” href="https://tone.computer/">
-          <img class="companylogo" src="assets/images/index/logos/tone.png"><p class="company">Tone</p></a><p class="role">Co-founder</p><p class="year"><span class="mobileyear">Oct 2023 - July </span>2024</p>
+          <img class="companylogo" src="assets/images/index/logos/tone.png" alt="Tone logo"><p class="company">Tone</p></a><p class="role">Co-founder</p><p class="year"><span class="mobileyear">Oct 2023 - July </span>2024</p>
         <hr/>
         <a target=”_blank” href="https://rhythmlink.com/">
-          <img class="companylogo" src="assets/images/index/logos/ri.png"><p class="company">Rhythmlink International</p></a><p class="role"><span class="mobileyear">Engineering, </span>R&D</p><p class="year"><span class="mobileyear">Oct </span>2022 - <span class="mobileyear">May </span>2023</p>
+          <img class="companylogo" src="assets/images/index/logos/ri.png" alt="Rhythmlink International logo"><p class="company">Rhythmlink International</p></a><p class="role"><span class="mobileyear">Engineering, </span>R&D</p><p class="year"><span class="mobileyear">Oct </span>2022 - <span class="mobileyear">May </span>2023</p>
         <hr/>
         <a target=”_blank” href="https://www.charlottelatin.org/academics/steam">
-          <img class="companylogo" src="assets/images/index/logos/fab.png"><p class="company"><span class="mobileyear">Charlotte Latin </span><span class="mobileshow">CLS </span>Fab Lab</p></a><p class="role">Manager<span class="mobileyear">, Machinist, R&D</span></p><p class="year"><span class="mobileyear">Oct </span>2020 - <span class="mobileyear">July </span>2023</p>
+          <img class="companylogo" src="assets/images/index/logos/fab.png" alt="Charlotte Latin Fab Lab logo"><p class="company"><span class="mobileyear">Charlotte Latin </span><span class="mobileshow">CLS </span>Fab Lab</p></a><p class="role">Manager<span class="mobileyear">, Machinist, R&D</span></p><p class="year"><span class="mobileyear">Oct </span>2020 - <span class="mobileyear">July </span>2023</p>
         <hr/>
         <a target=”_blank” href="https://www.youngengineersoftoday.com/">
-          <img class="companylogo" src="assets/images/index/logos/yeot.png"><p class="company"><span class="mobileyear">Young Engineers of Today</span><span class="mobileshow">YEOT</span></p></a><p class="role">Instructor<span class="mobileyear"> and Curriculum Developer</span></p><p class="year"><span class="mobileyear">June </span>2019 - <span class="mobileyear">Aug </span>2023</p>
+          <img class="companylogo" src="assets/images/index/logos/yeot.png" alt="Young Engineers of Today logo"><p class="company"><span class="mobileyear">Young Engineers of Today</span><span class="mobileshow">YEOT</span></p></a><p class="role">Instructor<span class="mobileyear"> and Curriculum Developer</span></p><p class="year"><span class="mobileyear">June </span>2019 - <span class="mobileyear">Aug </span>2023</p>
     </section>
     <section class="about">
       <div class="content4">
@@ -235,7 +235,7 @@ search:
         <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/downforce">
-            <div class="imgparent"><img class="writeimg" src="assets/images/force/force.png"></div>
+            <div class="imgparent"><img class="writeimg" src="assets/images/force/force.png" alt="To Drive with Downforce article image"></div>
             <p class="projtitle">To Drive with Downforce</p>
             <p class="projdescription">Addressing the confidence bottleneck.</p>
             <p class="writeyear">2024</p>
@@ -247,7 +247,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/juggling">
-            <div class="imgparent"><img class="writeimg" src="assets/images/juggle/juggle.png"></div>
+            <div class="imgparent"><img class="writeimg" src="assets/images/juggle/juggle.png" alt="Learning to Juggle article image"></div>
             <p class="projtitle">Learning to Juggle</p>
             <p class="projdescription">A journey to lessen doom-scrolling.</p>
             <p class="writeyear">2024</p>
@@ -260,7 +260,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/a-mutual-meaning">
-            <div class="imgparent"><img class="writeimg" src="assets/images/index/orange.png"></div>
+            <div class="imgparent"><img class="writeimg" src="assets/images/index/orange.png" alt="A Mutual Meaning article image"></div>
             <p class="projtitle">A Mutual Meaning</p>
             <p class="projdescription">Discovering Eastern philosophy.</p>
             <p class="writeyear">2024</p>

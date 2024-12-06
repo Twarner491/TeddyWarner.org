@@ -61,7 +61,7 @@ tags:
 # 8-bit Breadboard Computer - Build Log
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2021-2022 </span>| <span class="readTime"><i class="far fa-clock"></i> X-X minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2021-2022 </span>| <span class="readTime"><i class="far fa-clock"></i> X-X minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/8-bit/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/8-bit/&text=Check%20Out%20the%208-bit%20Breadboard%20Computer%20(Ben%20Eater%20Build%20Log)%20on"><i class="fa-brands fa-x-twitter"></i></a>
@@ -73,7 +73,7 @@ tags:
 
 ---
 
-![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square)
+![Progress](https://img.shields.io/badge/progress-pending%20completion-yellow?style=flat-square "Project progress indicator")
 
 I've used microcontrollers in most of my past projects. IC data sheets are super helpful in board design with their pinouts, but I've noticed much of the contents have been pretty foreign to me. Every once in a while, the youtube algorithm recommended one of [Ben Eater's](https://eater.net) computer concept videos to me, which provide a great explanation of the simplistic logic and proofs in computers. I ended up watching his entire [8-bit Breadboard Computer](https://eater.net/8bit) series (embedded below) over the fall of 2021, to try to get a bit of a better idea of the workings of a microcontroller. The computer is an "as simple as possible"[^1] take on an 8-bit computer, using only simple logic to create an 8-bit computer on breadboards. The computer is built-in sectioned modules and then interfaced together, making each section a bit easier to swallow.
 
@@ -141,7 +141,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../assets/images/8-bitComputer/setastable.jpg){ width="80%"}
+![](../assets/images/8-bitComputer/setastable.jpg){ width="80%" alt="Setup of astable multivibrator circuit"}
 
 </center>
 
@@ -149,14 +149,14 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../assets/images/8-bitComputer/555wave.jpg){ width="100%"}
+![](../assets/images/8-bitComputer/555wave.jpg){ width="100%" alt="Oscilloscope display showing clock vs capacitor waveforms"}
   <figcaption>Clock vs Capacitor</figcaption>
 
 </center>
 
 <center>
 
-![](../assets/images/8-bitComputer/variableastable.jpg){ width="80%"}
+![](../assets/images/8-bitComputer/variableastable.jpg){ width="80%" alt="Variable astable multivibrator circuit setup"}
 
 </center>
 
@@ -164,7 +164,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../assets/images/8-bitComputer/monostable.jpg){ width="80%"}
+![](../assets/images/8-bitComputer/monostable.jpg){ width="80%" alt="Monostable multivibrator circuit setup"}
 
 </center>
 
@@ -184,7 +184,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../assets/images/8-bitComputer/clockmodule.jpg){ width="100%"}
+![](../assets/images/8-bitComputer/clockmodule.jpg){ width="100%" alt="Completed clock module assembly"}
 
 </center>
 
@@ -202,7 +202,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../assets/images/8-bitComputer/8-BitRegister.jpg){ width="100%"}
+![](../assets/images/8-bitComputer/8-BitRegister.jpg){ width="100%" alt="8-bit register module assembly"}
 
 </center>
 
@@ -274,13 +274,13 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <center>
 
-![](../assets/images/8-bitComputer/Fibonaccisequencespiral.png){ width="60%"}
+![](../assets/images/8-bitComputer/Fibonaccisequencespiral.png){ width="60%" alt="Visual representation of Fibonacci sequence spiral"}
 
 </center>
 
 <center>
 
-![](../assets/images/8-bitComputer/FibonacciEquasion.png){ width="80%"}
+![](../assets/images/8-bitComputer/FibonacciEquasion.png){ width="80%" alt="Mathematical equation for Fibonacci sequence"}
 
 </center>
 

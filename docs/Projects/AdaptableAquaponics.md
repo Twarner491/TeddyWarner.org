@@ -65,7 +65,7 @@ tags:
 # Adaptable Aquaponics
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Summer, 2022 </span>| <span class="readTime"><i class="far fa-clock"></i> 18-23 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Summer, 2022 </span>| <span class="readTime"><i class="far fa-clock"></i> 18-23 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/AdaptableAquaponics/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/AdaptableAquaponics/&text=Check%20out%20Adaptable%20Aquaponics%20on%20teddywarner.org!"><i class="fa-brands fa-x-twitter"></i></a>
@@ -98,8 +98,8 @@ Addressing the developing demand for food requires a direct confrontation with e
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/note1.png){width="48.5%"}
-![](../assets/images/AdaptableAquaponics/note2.png){width="48%"}
+![](../assets/images/AdaptableAquaponics/note1.png){width="48.5%" alt="Basic aquaponics system diagram showing water flow"}
+![](../assets/images/AdaptableAquaponics/note2.png){width="48%" alt="Detailed aquaponics system diagram with component labels"}
   <figcaption>Aquaponics System Diagrams</figcaption>
 
 </center>
@@ -123,7 +123,7 @@ Both the Fusion 360 model and the prototyping mesh & SVG files for this project 
 
 !!! Success "Make it Modular"
 
-    ![alt-text](../assets/images/AdaptableAquaponics/scholarship.jpg){: align=left height="4em"}
+    ![alt-text](../assets/images/AdaptableAquaponics/scholarship.jpg){: align=left height="4em" alt="Autodesk Construction Solutions Scholarship Award badge"}
 
      Adaptive Aquaponics is the scaled successor to my <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">Assistive Aquaponics Fish Tank</a> & my winning entry into Autodesk Instructable's <a href="https://www.instructables.com/contest/makeitmodular2022/">Make It Modular</a> student design challenge receiving the Autodesk Construction Solutions Scholarship Award. Be sure to check [Adaptable Aquaponics](https://www.instructables.com/Adaptable-Aquaponics/) out on instructables!
 
@@ -149,7 +149,7 @@ Adaptable Aquaponics is constructed with layered modularity, a distinction highl
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/modelinfucion.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/modelinfucion.jpg){width="100%" alt="Fusion 360 browser showing component layering"}
 
 </center>
 
@@ -161,7 +161,7 @@ Shifting to an analysis of the CAD work behind Adaptable Aquaponics, I was super
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/AutomatedModelingToolbar.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/AutomatedModelingToolbar.jpg){width="100%" alt="Fusion 360 automated modeling toolbar interface"}
 
 </center>
 
@@ -169,7 +169,7 @@ Automated modeling is about as intuitive as you can get, requiring only three in
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/automateddesign.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/automateddesign.jpg){width="100%" alt="Automated design workspace showing bodies to avoid in red and faces to connect in blue"}
   <figcaption>Bodies to Avoid are highlighted red, while Faces to Connect are highlighted in blue</figcaption>
 
 </center>
@@ -188,7 +188,7 @@ Preferences < Design < Allow 3D sketching of lines and splines
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/preferences.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/preferences.jpg){width="100%" alt="Fusion 360 preferences menu showing 3D sketching option"}
 
 </center>
 
@@ -196,7 +196,7 @@ Preferences < Design < Allow 3D sketching of lines and splines
  
 <center>
 
-![](../assets/images/AdaptableAquaponics/spatialplumbing.jpg){width="100%"}
+![](../assets/images/AdaptableAquaponics/spatialplumbing.jpg){width="100%" alt="3D spline routing for plumbing system"}
 
 </center>
  
@@ -214,7 +214,7 @@ Once Adaptable Aquaponics was finalized - *the 95th iteration ... phew* - I cont
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/rendertoolbar.jpg){width="55%"}
+![](../assets/images/AdaptableAquaponics/rendertoolbar.jpg){width="55%" alt="Fusion 360 render workspace toolbar"}
 
 </center>
 
@@ -228,8 +228,8 @@ Setup < Scene Settings < Environment Library
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/RenderWorkspace.jpg){width="76.8%"}
-![](../assets/images/AdaptableAquaponics/hdirbg.jpg){width="21%"}
+![](../assets/images/AdaptableAquaponics/RenderWorkspace.jpg){width="76.8%" alt="Render workspace setup with HDRI environment"}
+![](../assets/images/AdaptableAquaponics/hdirbg.jpg){width="21%" alt="Ulmer Muenster HDRI background preview"}
 
 </center>
 
@@ -243,9 +243,9 @@ Setup < Scene Settings
 
 <center>
 
-![](../assets/images/AdaptableAquaponics/Render1.png){width="63%"}
-![](../assets/images/AdaptableAquaponics/render2.png){width="35.5%"}
-![](../assets/images/AdaptableAquaponics/render3.png){width="99.25%"}
+![](../assets/images/AdaptableAquaponics/Render1.png){width="63%" alt="Final render of Adaptable Aquaponics system - perspective view"}
+![](../assets/images/AdaptableAquaponics/render2.png){width="35.5%" alt="Final render of Adaptable Aquaponics system - side view"}
+![](../assets/images/AdaptableAquaponics/render3.png){width="99.25%" alt="Final render of Adaptable Aquaponics system - full setup"}
 
 </center>
 
@@ -303,7 +303,7 @@ I cleaned up the final cut parts with some soap and water, before continuing to 
 ![](../assets/images/AdaptableAquaponics/solarparts.jpg){width="60%"}
 ![](../assets/images/AdaptableAquaponics/assembledsolar.jpg){width="39%"}
 
-<iframe width="98%" height="560" src="https://www.youtube.com/embed/RmUPD9cld18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="99%" height="560" src="https://www.youtube.com/embed/RmUPD9cld18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![](../assets/images/AdaptableAquaponics/assembledshippingcont.jpg){width="99%"}
 

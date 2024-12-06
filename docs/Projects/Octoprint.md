@@ -63,7 +63,7 @@ tags:
 # Octoprint Setup Documentation 
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Fall, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 9-11 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Fall, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 9-11 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Octoprint/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Octoprint/&text=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With"><i class="fa-brands fa-x-twitter"></i></a>
@@ -77,7 +77,7 @@ tags:
 
 <center>
 
-![](../assets/images/Octoprint/Octoprint.png){width="100%"}
+![](../assets/images/Octoprint/Octoprint.png){width="100%" alt="Octoprint logo and interface overview"}
 
 </center>
 
@@ -150,7 +150,7 @@ Beginning with the configuration of the interface itself, basic settings can be 
 
 <center>
 
-![](../assets/images/Octoprint/AppearanceSettings.png){width="95%"}
+![](../assets/images/Octoprint/AppearanceSettings.png){width="95%" alt="Octoprint appearance settings menu"}
 
 </center>
 
@@ -162,7 +162,7 @@ To enable Octoprint's main purpose, a machine must be connected to the hardware 
 
     In the case of my Prusa I3 MK3S+, I took advantage of this GPIO communication setup, to allow for the mounting of my Raspberry Pi directly under my printer's mainboard (via [this](https://www.prusaprinters.org/prints/24475-remix-of-raspberry-pi-4-case-3030-hanging-mount-fo) Raspberry Pi 4 Case) without a bulky USB cable connecting them ...
     <center>
-    ![](../assets/images/Octoprint/mountedelectronics.jpg){width="95%"}
+    ![](../assets/images/Octoprint/mountedelectronics.jpg){width="95%" alt="Raspberry Pi mounted under printer mainboard using 3030 mount"}
     </center>
 
 
@@ -170,7 +170,7 @@ Your serial connection must be set up software side in the *Serial Connection* m
 
 <center>
 
-![](../assets/images/Octoprint/serialconnection.png){width="95%"}
+![](../assets/images/Octoprint/serialconnection.png){width="95%" alt="Serial connection settings for printer configuration"}
 
 </center>
 
@@ -178,7 +178,7 @@ Next, a machine profile must be created for your connected machine to ensure saf
 
 <center>
 
-![](../assets/images/Octoprint/printerpofiles.png){width="95%"}
+![](../assets/images/Octoprint/printerpofiles.png){width="95%" alt="Printer profiles configuration menu"}
 
 </center>
 
@@ -188,15 +188,15 @@ One key feature of Octoprint is its webcam machine stream, allowing for remote s
 
     On my printer, I've mounted a Raspberry Pi camera to the X-Axis stepper of my machine (via [this](https://www.thingiverse.com/thing:3121052) Raspberry Pi camera mount), yielding a pretty nice side view of prints, shown below.
     <center>
-    ![](../assets/images/Octoprint/cameramount.png){width="95%"}
-    ![](../assets/images/Octoprint/CameraWindow.png){width="95%"}
+    ![](../assets/images/Octoprint/cameramount.png){width="95%" alt="Raspberry Pi camera mounted to X-axis stepper motor"}
+    ![](../assets/images/Octoprint/CameraWindow.png){width="95%" alt="Octoprint webcam feed showing side view of print"}
     </center>
 
 Due to my printers camera mount, my Raspberry Pi camera is heald in an upsidedown orientation and thus needs to be compensated for on the software side. Luckily, in the *Webcam & Timelapse* menu under the *Features* section of the Octorprint interface settings, webcam orientation can be changed. In addition, more advanced webcam options can be found, allowing for the use of almost all cameras connected to the hardware running Octorpint.
 
 <center>
 
-![](../assets/images/Octoprint/webcamsettings.png){width="95%"}
+![](../assets/images/Octoprint/webcamsettings.png){width="95%" alt="Webcam and timelapse settings configuration"}
 
 </center>
 
@@ -210,7 +210,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
 <center>
 
-![](../assets/images/Octoprint/pluginsettings.png){width="95%"}
+![](../assets/images/Octoprint/pluginsettings.png){width="95%" alt="Plugin manager showing installed plugins"}
 
 </center>
 
@@ -218,10 +218,10 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../assets/images/Octoprint/homescreen.jpg){width="46%"}
-  ![](../assets/images/Octoprint/tsdapp.jpg){width="47.5%"}
+  ![](../assets/images/Octoprint/homescreen.jpg){width="46%" alt="The Spaghetti Detective home interface"}
+  ![](../assets/images/Octoprint/tsdapp.jpg){width="47.5%" alt="The Spaghetti Detective mobile app interface"}
 
-  ![](../assets/images/Octoprint/tsdcontrol.jpg){width="94%"}
+  ![](../assets/images/Octoprint/tsdcontrol.jpg){width="94%" alt="The Spaghetti Detective printer control interface"}
 
   </center>
 
@@ -229,7 +229,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
  
  <center>
 
-  ![](../assets/images/Octoprint/bedlevlevisualizer.png){width="95%"}
+  ![](../assets/images/Octoprint/bedlevlevisualizer.png){width="95%" alt="Bed visualizer showing mesh leveling data in 3D"}
 
   </center>
 
@@ -237,7 +237,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
  <center>
 
 
-  ![](../assets/images/Octoprint/custombackground.png){width="95%"}
+  ![](../assets/images/Octoprint/custombackground.png){width="95%" alt="Custom background image on temperature graph"}
 
   </center>
 
@@ -245,7 +245,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../assets/images/Octoprint/excluderegions.png){width="95%"}
+  ![](../assets/images/Octoprint/excluderegions.png){width="95%" alt="Exclude region configuration menu"}
 
   </center>
 
@@ -254,8 +254,8 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../assets/images/Octoprint/edit_gcode.png){width="50%"}
-  ![](../assets/images/Octoprint/edit_gcode2.png){width="46%"}
+  ![](../assets/images/Octoprint/edit_gcode.png){width="50%" alt="Gcode editor interface"}
+  ![](../assets/images/Octoprint/edit_gcode2.png){width="46%" alt="Gcode editor interface"}
 
   </center>
 
@@ -264,7 +264,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../assets/images/Octoprint/navbar.png){width="60%"}
+  ![](../assets/images/Octoprint/navbar.png){width="60%" alt="Navbar temperature display"}
 
   </center>
 
@@ -272,7 +272,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../assets/images/Octoprint/eta.png){width="300"}
+  ![](../assets/images/Octoprint/eta.png){width="300" alt="Octoprint display ETA"}
   
   </center>
 
@@ -280,7 +280,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../assets/images/Octoprint/PrettyGcode-Screen3.jpg){width="75%"}
+  ![](../assets/images/Octoprint/PrettyGcode-Screen3.jpg){width="75%" alt="PrettyGCode 3D GCode visualizer tab"}
 
   </center>
 
@@ -289,7 +289,7 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
  <center>
 
-  ![](../assets/images/Octoprint/ipdisplay.jpg){width="95%"}
+  ![](../assets/images/Octoprint/ipdisplay.jpg){width="95%" alt="IP address display on control panel"}
 
   </center>
 
@@ -303,10 +303,10 @@ Although the Octoprint web interface is rather intuitive, the number of stock fe
 
 <center>
 
-![](../assets/images/Octoprint/personaloctoprint.jpg){width="95%"}
+![](../assets/images/Octoprint/personaloctoprint.jpg){width="95%" alt="Personal Octoprint enabled Prusa I3 MK3S+"}
   <figcaption>My Personal Octoprint Enabled Prusa I3 MK3S+</figcaption>
 
-![](../assets/images/Octoprint/laboctoprint.jpg){width="95%"}
+![](../assets/images/Octoprint/laboctoprint.jpg){width="95%" alt="Lab's Octoprint enabled printer farm"}
   <figcaption>My Lab's Octoprint Enabled Printer Farm</figcaption>
 
 </center>

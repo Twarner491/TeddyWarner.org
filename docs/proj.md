@@ -68,7 +68,7 @@ search:
       <div class="content6" id="content6">
         <div class="writparent">
           <a target=”_blank” href="https://tone.computer/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/toneSmall.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/index/toneSmall.png" alt="Tone project preview image"></div>
             <p class="projtitle">Tone</p>
             <p class="writeyear">2023-2024</p>
             <span class="mobileyear">
@@ -80,7 +80,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/VonNiemannProbe/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/VonNiemannProbe/vonNiemannHero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/VonNiemannProbe/vonNiemannHero.png" alt="Von Niemann Probe project hero image"></div>
             <p class="projtitle">Von Niemann Probe</p>
             <p class="writeyear">Winter 2023</p>
             <span class="mobileyear">
@@ -92,7 +92,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/MillingWorflow/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/MillingWorkflow/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/MillingWorkflow/hero.png" alt="CNC Milling Workflows project hero image"></div>
             <p class="projtitle">CNC Milling Workflows</p>
             <p class="writeyear">2022-2023</p>
             <span class="mobileyear">
@@ -104,7 +104,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/AdaptableAquaponics/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/AdaptableAquaponics/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/AdaptableAquaponics/hero.png" alt="Adaptable Aquaponics project hero image"></div>
             <p class="projtitle">Adaptable Aquaponics</p>
             <p class="writeyear">Summer 2022</p>
             <span class="mobileyear">
@@ -116,7 +116,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/SerialUPDI/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/SerialUPDI/updiHero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/SerialUPDI/updiHero.png" alt="UPDI Programming project hero image"></div>
             <p class="projtitle">UPDI Programming</p>
             <p class="writeyear">Summer-Winter 2021</p>
             <span class="mobileyear">
@@ -128,7 +128,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/ParametricGenerator/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/ParametricGenerator/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/ParametricGenerator/hero.png" alt="Parametric Bottle Cap Generator project hero image"></div>
             <p class="projtitle">Parametric Bottle Cap Generator</p>
             <p class="writeyear">Fall 2021</p>
             <span class="mobileyear">
@@ -140,7 +140,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/LithophaneExperiments/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/LithophaneExperiments/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/LithophaneExperiments/hero.png" alt="Lithophane Experiments project hero image"></div>
             <p class="projtitle">Lithophane Experiments</p>
             <p class="writeyear">2019-2022</p>
             <span class="mobileyear">
@@ -152,7 +152,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/Octoprint/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/Octoprint/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/Octoprint/hero.png" alt="Octoprint Setup project hero image"></div>
             <p class="projtitle">Octoprint Setup</p>
             <p class="writeyear">Fall 2021</p>
             <span class="mobileyear">
@@ -164,7 +164,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/AssistiveAquaponics/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/AssistiveAquaponics/hero.png" alt="Assistive Aquaponics Fish Tank project hero image"></div>
             <p class="projtitle">Assistive Aquaponics Fish Tank</p>
             <p class="writeyear">Winter-Spring 2021</p>
             <span class="mobileyear">
@@ -176,7 +176,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/KlipperEnder3/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/KlipperEnder3/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/KlipperEnder3/hero.png" alt="Klipper Enabled Ender 3 project hero image"></div>
             <p class="projtitle">Klipper Enabled Ender 3</p>
             <p class="writeyear">Spring-Summer 2021</p>
             <span class="mobileyear">
@@ -188,7 +188,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/ProjectPortfolioSite/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/PortfolioSite/portfolioSiteHero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/PortfolioSite/portfolioSiteHero.png" alt="Project Portfolio Site hero image"></div>
             <p class="projtitle">Project Portfolio Site</p>
             <p class="writeyear">Summer 2021</p>
             <span class="mobileyear">
@@ -200,7 +200,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/CornerDesk/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/CornerDesk/hero.png"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/CornerDesk/hero.png" alt="Cable-managed Corner Desk project hero image"></div>
             <p class="projtitle">Cable-managed Corner Desk</p>
             <p class="writeyear">Spring 2020</p>
             <span class="mobileyear">

@@ -62,7 +62,7 @@ tags:
 # Klipper Enabled Ender 3
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Spring & Summer, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 10-12 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Spring & Summer, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 10-12 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/KlipperEnder3/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/KlipperEnder3/&text=Check%20Out%20the%20Klipper%20Enabled%20Ender%203%20on"><i class="fa-brands fa-x-twitter"></i></a>
@@ -88,7 +88,7 @@ Due to uncertainty surrounding lab access during the Covid-19 pandemic, I receiv
 
 <center>
 
-![](../assets/images/KlipperEnder3/directdrive.jpg){width="70%"}
+![](../assets/images/KlipperEnder3/directdrive.jpg){width="70%" alt="Direct drive system with custom nameplate on Ender 3"}
 
 </center>
 
@@ -96,8 +96,8 @@ Finally, I moved all of the electronics of the machine to the rear of the machin
 
 <center>
 
-![](../assets/images/KlipperEnder3/electronicsenclouser.jpg){width="80%"}
-![](../assets/images/KlipperEnder3/installedelebox.jpg){width="80%"}
+![](../assets/images/KlipperEnder3/electronicsenclouser.jpg){width="80%" alt="Electronics enclosure at the rear of the Ender 3"}
+![](../assets/images/KlipperEnder3/installedelebox.jpg){width="80%" alt="Installed electronics box with Raspberry Pi and mainboard"}
 
 </center>
 
@@ -105,11 +105,11 @@ I used this Thingiverse [design](https://www.thingiverse.com/thing:2886101) to m
 
 <center>
 
-![](../assets/images/KlipperEnder3/ender3cam.jpg){width="80%"}
+![](../assets/images/KlipperEnder3/ender3cam.jpg){width="80%" alt="Raspberry Pi camera mounted on Ender 3's x-axis"}
 
 </center>
 
-![](../assets/images/KlipperEnder3/wholeprinter.jpg){: align=right width="30%"}
+![](../assets/images/KlipperEnder3/wholeprinter.jpg){: align=right width="30%" alt="Full view of the modified Ender 3 printer"}
 
 ## Klipper Installation
 
@@ -142,7 +142,7 @@ sudo apt-get upgrade
 
 <center>
 
-![](../assets/images/KlipperEnder3/fluiddinterface.png){width="95%"}
+![](../assets/images/KlipperEnder3/fluiddinterface.png){width="95%" alt="FluiddPi web server interface for Klipper"}
   <figcaption>The FluiddPi Web Server Interface</figcaption>
 
 </center>
@@ -191,7 +191,7 @@ As mentioned prior, unlike the Marlin firmware, Klipper is not compiled for a sp
 
 <center>
 
-![](../assets/images/KlipperEnder3/fluiddconfig.png){width="95%"}
+![](../assets/images/KlipperEnder3/fluiddconfig.png){width="95%" alt="FluiddPi configuration menu for printer.cfg file"}
   <figcaption>FluiddPi's Configuration Menu in Web Server Interface</figcaption>
 
 </center>

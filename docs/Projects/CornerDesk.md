@@ -61,7 +61,7 @@ tags:
 # Cable Managed Corner Desk
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Spring, 2020 </span>| <span class="readTime"><i class="far fa-clock"></i> 6-8 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Spring, 2020 </span>| <span class="readTime"><i class="far fa-clock"></i> 6-8 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/CornerDesk/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/CornerDesk/&text=Check%20Out%20the%20Cable-Managed%20Corner%20Desk%20on"><i class="fa-brands fa-x-twitter"></i></a>
@@ -77,8 +77,8 @@ This start of the Pandemic project stemmed from my freshman year engineering cap
 
 <center>
 
-![](../assets/images/CornerDesk/desknotes1.jpg){width="95%"}
-![](../assets/images/CornerDesk/desknotes2.jpg){width="60%"}
+![](../assets/images/CornerDesk/desknotes1.jpg){width="95%" alt="Initial design sketches and measurements for corner desk"}
+![](../assets/images/CornerDesk/desknotes2.jpg){width="60%" alt="Additional design notes and calculations for desk"}
 
 </center>
 
@@ -96,7 +96,7 @@ However shortly after finishing up the CAD aspect of this project, Covid-19 caus
 
 <center>
 
-![](../assets/images/CornerDesk/kregjig.jpg){width="100%"}
+![](../assets/images/CornerDesk/kregjig.jpg){width="100%" alt="Kreg Jig setup for pocket hole joinery"}
 
 </center>
 
@@ -106,9 +106,9 @@ A couple of days after getting the wood, I finally started assembling the desk, 
 
 <center>
 
-![](../assets/images/CornerDesk/framelayout.jpg){width="100%"}
-![](../assets/images/CornerDesk/baseframe.jpg){width="100%"}
-![](../assets/images/CornerDesk/finishedwoodassembly.jpg){width="100%"}
+![](../assets/images/CornerDesk/framelayout.jpg){width="100%" alt="Initial layout of desk frame components"}
+![](../assets/images/CornerDesk/baseframe.jpg){width="100%" alt="Assembled base frame of the desk"}
+![](../assets/images/CornerDesk/finishedwoodassembly.jpg){width="100%" alt="Completed wood assembly before finishing"}
 
 </center>
 
@@ -122,7 +122,7 @@ I spent the next two days painting the frame with three coats of white paint and
 
 <center>
 
-![](../assets/images/CornerDesk/stainedtop.jpg){width="100%"}
+![](../assets/images/CornerDesk/stainedtop.jpg){width="100%" alt="Cedar desktop after staining with Provincial finish"}
   <figcaption>Stained Desktop</figcaption>
 
 </center>
@@ -133,7 +133,7 @@ As I said earlier the choice of wood for the surface of the desk took some thoug
 
 <center>
 
-![](../assets/images/CornerDesk/laptoparm.jpg){width="100%"}
+![](../assets/images/CornerDesk/laptoparm.jpg){width="100%" alt="Installed laptop mounting arm with cable management"}
 
 </center>
 
@@ -143,7 +143,7 @@ This is a huge part of the project as it's one of the reasons I decided to even 
 
 <center>
 
-![](../assets/images/CornerDesk/cableclips.jpg){width="100%"}
+![](../assets/images/CornerDesk/cableclips.jpg){width="100%" alt="3D printed cable management clips on desk back"}
 
 </center>
 
@@ -153,7 +153,7 @@ I love how my desk came out, It solves all of my annoying cable issues and fits 
 
 <center>
 
-![](../assets/images/CornerDesk/deskbeautyshot.jpg){width="100%"}
+![](../assets/images/CornerDesk/deskbeautyshot.jpg){width="100%" alt="Final beauty shot of completed corner desk installation"}
   <figcaption>Final Desk Beauty Shot</figcaption>
 
 </center>

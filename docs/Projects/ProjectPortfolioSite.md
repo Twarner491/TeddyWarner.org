@@ -65,7 +65,7 @@ tags:
 # Project Portfolio Site
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Summer, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 6-7 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Summer, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 6-7 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/ProjectPortfolioSite/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/ProjectPortfolioSite/&text=Check%20Out%20the%20Behind%20the%20Scenes%20to%20teddywarner.org%20on"><i class="fa-brands fa-x-twitter"></i></a>
@@ -268,7 +268,7 @@ hide:
         <figcaption>Caption</figcaption>
       ```
       <center>
-        ![alt text](https://picsum.photos/600/300){width="95%"}
+        ![alt text](https://picsum.photos/600/300){width="95%" alt="Terminal output showing successful mkdocs serve command"}
           <figcaption>Caption Example</figcaption>
       </center>
 
