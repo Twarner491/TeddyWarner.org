@@ -69,11 +69,11 @@ template: comments.html
 
 ---
 
-When learning to race cars, one of the steepest challenges drivers endure is mastering cornering techniques. To compete in the upper echelons of racing, drivers must navigate corners at speeds that approach the limits of tire grip. 
+When learning to race cars, one of the steepest challenges drivers endure is mastering cornering techniques. To compete in the upper echelons of racing, drivers must navigate corners at speeds approaching the limits of tire grip. 
 
-While race car tires are designed to maintain grip even at high speeds, they have limits. As speed increases, the lateral forces while rounding corners can exceed the tires ability to maintain grip. In essence, at the speeds required to win, a race car's tires cannot physically hold themselves to the track.
+While race car tires are designed to maintain grip even at high speeds, they have limits. As speed increases, the lateral forces while rounding corners can exceed the tire's ability to maintain grip. In essence, at the speeds required to win, a race car's tires cannot physically hold themselves to the track.
 
-To account for this, engineers implement wings and underbody designs to generate a "downforce" upon the car whilst its traveling at high enough speeds. This force increases the vertical load on the tires, effectively increasing their grip without adding additional weight.
+To account for this, engineers implement wings and underbody designs to generate a "downforce" upon the car while traveling at high enough speeds. This force increases the vertical load on the tires, effectively increasing their grip without adding additional weight.
 
 <center style="opacity:90%;">
 
@@ -88,7 +88,7 @@ To drive with downforce requires the confidence to continue where you can no lon
 
 Thus the bottleneck is confidence. You must believe you can continue to accelerate where your basic tools fall short and only confidence can keep you grounded.
 
-You must seek the [Torpediniformes](https://teddywarner.org/writings/torpediniformes/) and novel experiences, new challenges beyond the skills and abilities you currently hold.
+You must seek the [Torpediniformes](https://teddywarner.org/writings/torpediniformes/) and novel experiences, and new challenges beyond the skills and abilities you currently hold.
 
 You must endure challenges where confidence is your only tether.
 
