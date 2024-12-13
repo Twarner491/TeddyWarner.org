@@ -124,17 +124,17 @@ Self-talk is everything in expanding confidence. Do not tolerate negative self-t
 
 Do the opposite of what the emotion is telling you if you'd like to change it.
 
+Feel ^^X^^ → Do ^^Y^^
+
+^^X^^ = Signal of high stress and negative self-talk. <br>
+^^Y^^ = Activity to release stress (Pound your fists down and exclaim "I'm Excited!).
+
 <center style="opacity:85%;">
 
  ![](../assets/images/efd/stresslight.png#only-light){width="30%" alt="Stress Vs. Productivity"}
  ![](../assets/images/efd/stressdark.png#only-dark){width="30%" alt="Stress Vs. Productivity"}
 
 </center>
-
-!!! tip "Feel ^^X^^ → Do ^^Y^^"
-
-    ^^X^^ = Signal of high stress and negative self-talk. <br>
-    ^^Y^^ = Activity to release stress (Pound your fists down and exclaim "I'm Excited!).
 
 A few other practices to improve self-talk: gratitude and optimism.
 
@@ -149,6 +149,12 @@ Optimism is the belief that actions in the present will lead to better outcomes 
 
 ### Gradient Descent (into life satisfaction)
 
+To practice positive self-talk, you must take care of your brain and your body. Follow the rule: "Whatever you do for your body, is good for your brain."
+
+Focusing on fun/flow, movement, sleep, and fuel can generally catalyze your gradient descent into life satisfaction. 
+
+There's no one-size-fits-all formula for ensuring adequate amounts of all of these. Just follow the mantra introduced at the top of [What We Resist, Persists](#what-we-resist-persists): if you're not happy with your current balance, do the opposite of what your emotions are telling you to shift towards life satisfaction.
+
 I want to end with a few questions I was recently discussing with a friend:
 
 1. Why do you do what you do?
@@ -159,9 +165,23 @@ When I'm not consistent in physical activity, proper nutrition, and adequate sle
 
 When I begin the day with agency, I finish it as such. Thus I must act with agency. Doing so keeps me productive, creative, connected, and appreciative.
 
-You're in a perpetual rivalry between what you imagine you can do, and what you can achieve.
+**You're in a perpetual rivalry between what you imagine you can do, and what you can achieve.**
 
-*Confidence is key.*
+Confidence is key.
+
+---
+
+An addendum from [Calix](https://x.com/calixo888): 
+
+"I usually see the confidence and this subject as the midwit meme"
+
+<center>
+
+ ![](../assets/images/efd/midlight.png){width="60%" alt="Midwit bell curve"}
+
+</center>
+
+"In the beginning when we're naive, we just do things. Then when we progress, we become self-aware judgmental, and scared, and we overthink things. In the end, we learn ourselves, and we just go back to doing things."
 
 [^1]: https://pubmed.ncbi.nlm.nih.gov/24220041/
 [^2]: https://psycnet.apa.org/record/2000-16270-010

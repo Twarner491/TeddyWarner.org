@@ -234,38 +234,38 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/efd">
+            <div class="imgparent"><img class="writeimg" src="assets/images/efd/efd.png" alt="To Drive with Downforce article image"></div>
+            <p class="projtitle">The Emotion/Feeling Discontinuity</p>
+            <p class="projdescription">How to convince yourself into greatness.</p>
+            <p class="writeyear">Dec 2024</p>
+            <span class="mobileyear">
+            <p class="readtime">5-6 mins</p>
+            </span>
+          </a>
+        </div>
+        <hr>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/downforce">
             <div class="imgparent"><img class="writeimg" src="assets/images/force/force.png" alt="To Drive with Downforce article image"></div>
             <p class="projtitle">To Drive with Downforce</p>
             <p class="projdescription">Addressing the confidence bottleneck.</p>
-            <p class="writeyear">2024</p>
+            <p class="writeyear">Nov 2024</p>
             <span class="mobileyear">
             <p class="readtime">~2 mins</p>
-            </span>
-          </a>
-        </div>
-        <hr/>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/juggling">
-            <div class="imgparent"><img class="writeimg" src="assets/images/juggle/juggle.png" alt="Learning to Juggle article image"></div>
-            <p class="projtitle">Learning to Juggle</p>
-            <p class="projdescription">A journey to lessen doom-scrolling.</p>
-            <p class="writeyear">2024</p>
-            <span class="mobileyear">
-            <p class="readtime">5-7 mins</p>
             </span>
           </a>
         </div>
         <span class="mobileyear">
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/writings/a-mutual-meaning">
-            <div class="imgparent"><img class="writeimg" src="assets/images/index/orange.png" alt="A Mutual Meaning article image"></div>
-            <p class="projtitle">A Mutual Meaning</p>
-            <p class="projdescription">Discovering Eastern philosophy.</p>
-            <p class="writeyear">2024</p>
+          <a href="https://teddywarner.org/writings/juggling">
+            <div class="imgparent"><img class="writeimg" src="assets/images/juggle/juggle.png" alt="Learning to Juggle article image"></div>
+            <p class="projtitle">Learning to Juggle</p>
+            <p class="projdescription">A journey to lessen doom-scrolling.</p>
+            <p class="writeyear">Oct 2024</p>
             <span class="mobileyear">
-            <p class="readtime">7-11 mins</p>
+            <p class="readtime">5-7 mins</p>
             </span>
           </a>
         </div>
