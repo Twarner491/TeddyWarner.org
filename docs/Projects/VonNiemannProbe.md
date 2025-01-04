@@ -37,8 +37,8 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
   <meta property="og:title" content="Von Niemann Probe - Teddy Warner">
   <meta property="og:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
-  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/VonNiemannProbe/vonNiemannHero.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -47,7 +47,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
   <meta property="twitter:title" content="Von Niemann Probe - Teddy Warner">
   <meta property="twitter:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/VonNiemannProbe/vonNiemannHero.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -58,6 +58,7 @@ tags:
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
+  <link rel="stylesheet" href="../../assets/css/header.css">
 </head>
 
   <nav class="main-navigation">
@@ -67,13 +68,22 @@ tags:
       <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
+<script src="../../assets/js/header.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeHeader();
+  });
+</script>
+  
 <div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
 
 # Von Niemann Probe
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span style="font-weight: 300; padding-right: 5px;"> & </span><a href="http://fabacademy.org/2021/labs/charlotte/students/jack-hollingsworth/about/"><img src="https://avatars.githubusercontent.com/u/101671669?v=4" alt="Jack Hollingsworth's GitHub profile picture" class="profilepic2"><span class="abt" id="name"> Jack Hollingsworth</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <span class="readTime"><i class="far fa-clock"></i> 46–58 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span style="font-weight: 300; padding-right: 5px;"><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <span class="readTime"><i class="far fa-clock"></i> 46–58 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-brands fa-x-twitter"></i></a>
@@ -170,7 +180,7 @@ The schematic includes headers for an HC-06, with serial connections to the ATTi
 
 <center>
 
-![](../assets/images/VonNiemannProbe/VNPSchematic.jpg){width="100%" alt="Schematic of the Von Niemann Probe PCB"}
+![](../assets/images/VonNiemannProbe/VNPSchematic.jpg){width="100%"}
 
 </center>
 
@@ -178,7 +188,7 @@ With this schematic done, I moved on to generating my final board file. The PCB 
 
 <center>
 
-![](../assets/images/VonNiemannProbe/VNPBoard.jpg){width="100%" alt="PCB layout of the Von Niemann Probe"}
+![](../assets/images/VonNiemannProbe/VNPBoard.jpg){width="100%"}
 
 </center>
 

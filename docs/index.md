@@ -44,7 +44,8 @@ search:
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
 </head>
 
 <body>
@@ -56,6 +57,8 @@ search:
       <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
   <main data-scroll-container>
   <div class="content-container">
@@ -122,10 +125,13 @@ search:
                                       <rect x="804.5" y="624" width="226" height="272" rx="21" fill="var(--md-default-bg-color)" fill-opacity="0.4" />
                                       <rect x="843" y="645" width="149" height="31" rx="15.5" fill="var(--md-default-bg-color)" />
                                       <text x="917.5" y="665" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.55" font-family="JetBrains Mono" font-size="12" font-style="normal" font-weight="300" line-height="109.588%">What I'm Reading</text>
-                                      <text x="816" y="715" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="18" font-style="normal" font-weight="500" line-height="109.588%">BOOM</text>
-                                      <text x="817" y="733" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Hobart & Huber</text>
+                                      <text x="816" y="702" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">The</text>
+                                      <text x="816" y="722" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">History</text>
+                                      <text x="816" y="742" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">of Western</text>
+                                      <text x="816" y="762" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Philosophy</text>
+                                      <text x="817" y="782" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Lord Russell</text>
                                   </g>
-                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1728481365i/205307264.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of BOOM by Hobart & Huber" />
+                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1202878133i/2804722.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of The History of Western Philosophy" />
                               </g>
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
@@ -167,22 +173,22 @@ search:
       <div class="content3">
         <h2>What I’ve Been Up To</h2>
         <a target=”_blank” href="https://www.midjourney.com/home">
-          <img class="companylogo" src="assets/images/index/logos/mj.png" alt="Midjourney logo"><p class="company">Midjourney</p></a><p class="role">Engineering<span class="mobileyear">, R&D</span></p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Aug 2024</span></p>
+          <img class="companylogo" src="assets/images/index/logos/mj.png" alt="Midjourney logo"><p class="company">Midjourney</p></a><p class="role">Hardware</p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Aug 2024</span></p>
         <hr/>
         <a target=”_blank” href="https://www.autodesk.com/">
-          <img class="companylogo" src="assets/images/index/logos/autodesk.png" alt="Autodesk logo"><p class="company">Autodesk</p></a><p class="role"><span class="mobileyear">Design & Make </span>Community Manager</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - Aug 2024</span></p>
+          <img class="companylogo" src="assets/images/index/logos/autodesk.png" alt="Autodesk logo"><p class="company">Autodesk</p></a><p class="role"><span class="mobileyear">Author, </span>Community Manager</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - Aug 2024</span></p>
         <hr/>
         <a target=”_blank” href="https://tone.computer/">
-          <img class="companylogo" src="assets/images/index/logos/tone.png" alt="Tone logo"><p class="company">Tone</p></a><p class="role">Co-founder</p><p class="year"><span class="mobileyear">Oct 2023 - July </span>2024</p>
+          <img class="companylogo" src="assets/images/index/logos/tone.png" alt="Tone logo"><p class="company">Tone</p></a><p class="role">Founder</p><p class="year"><span class="mobileyear">Oct 2023 - July </span>2024</p>
         <hr/>
         <a target=”_blank” href="https://rhythmlink.com/">
-          <img class="companylogo" src="assets/images/index/logos/ri.png" alt="Rhythmlink International logo"><p class="company">Rhythmlink International</p></a><p class="role"><span class="mobileyear">Engineering, </span>R&D</p><p class="year"><span class="mobileyear">Oct </span>2022 - <span class="mobileyear">May </span>2023</p>
+          <img class="companylogo" src="assets/images/index/logos/ri.png" alt="Rhythmlink International logo"><p class="company">Rhythmlink</p></a><p class="role">Manufacturing<span class="mobileyear"> R&D</span><p class="year"><span class="mobileyear">Oct </span>2022 - <span class="mobileyear">May </span>2023</p>
         <hr/>
         <a target=”_blank” href="https://www.charlottelatin.org/academics/steam">
-          <img class="companylogo" src="assets/images/index/logos/fab.png" alt="Charlotte Latin Fab Lab logo"><p class="company"><span class="mobileyear">Charlotte Latin </span><span class="mobileshow">CLS </span>Fab Lab</p></a><p class="role">Manager<span class="mobileyear">, Machinist, R&D</span></p><p class="year"><span class="mobileyear">Oct </span>2020 - <span class="mobileyear">July </span>2023</p>
+          <img class="companylogo" src="assets/images/index/logos/fab.png" alt="Charlotte Latin Fab Lab logo"><p class="company"><span class="mobileyear">Charlotte Latin </span><span class="mobileshow">CLS </span>Fab Lab</p></a><p class="role">Manager, Machinist</span></p><p class="year"><span class="mobileyear">Oct </span>2020 - <span class="mobileyear">July </span>2023</p>
         <hr/>
         <a target=”_blank” href="https://www.youngengineersoftoday.com/">
-          <img class="companylogo" src="assets/images/index/logos/yeot.png" alt="Young Engineers of Today logo"><p class="company"><span class="mobileyear">Young Engineers of Today</span><span class="mobileshow">YEOT</span></p></a><p class="role">Instructor<span class="mobileyear"> and Curriculum Developer</span></p><p class="year"><span class="mobileyear">June </span>2019 - <span class="mobileyear">Aug </span>2023</p>
+          <img class="companylogo" src="assets/images/index/logos/yeot.png" alt="Young Engineers of Today logo"><p class="company"><span class="mobileyear">Young Engineers of Today</span><span class="mobileshow">YEOT</span></p></a><p class="role">Instructor</p><p class="year"><span class="mobileyear">June </span>2019 - <span class="mobileyear">Aug </span>2023</p>
     </section>
     <section class="about">
       <div class="content4">
@@ -375,6 +381,7 @@ search:
       observer.observe(content6);
     });
   </script>
-  <script src="../assets/js/index.js"></script>
+  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/header.js"></script>
 </body>
 </html>

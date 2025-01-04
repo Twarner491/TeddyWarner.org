@@ -22,6 +22,7 @@
   --content7-height: 93px;
   --tone-url-light: "assets/images/index/tonelight.png";
   --tone-url-slate: "assets/images/index/tonedark.png";
+  --scroll-position: 0px;
 }
 
 [data-md-color-scheme="slate"] {
@@ -55,10 +56,6 @@
 
 .md-source {
   color: var(--md-default-fg-color);  
-}
-
-.toggle .logo {
-  display: none;
 }
 
 .toggle .socialsparent {
@@ -114,6 +111,8 @@ header {
   padding-top: 10em;
   padding-left: 4em;
   padding-right: 4em;
+  transform: translateY(0);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .toggle header {
@@ -277,7 +276,8 @@ header {
 }
 
 .main-content {
-  z-index: 1;
+  position: relative;
+  will-change: filter;
 }
 
 .home, .proj, .writ {
@@ -292,6 +292,32 @@ header {
   font-size: 0.35em;
   font-weight: lighter;
   font-style: italic;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  pointer-events: none;
+  z-index: 2;
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0.6) 45%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0.6) 45%,
+    transparent 100%
+  );
 }
 
 .content1 {
@@ -1316,6 +1342,7 @@ header {
     font-size: 0.6em;
   }
 }
+
 @media (max-width: 400px) { /* Mobile Small */
   .pfp {
     display: none;

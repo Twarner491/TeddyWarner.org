@@ -23,7 +23,7 @@ template: comments.html
   <meta property="og:url" content="https://teddywarner.org/writings/downforce/">
   <meta property="og:title" content="To Drive with Downforce - Teddy Warner">
   <meta property="og:description" content="Addressing the confidence bottleneck.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/force/force.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@ template: comments.html
   <meta property="twitter:url" content="https://teddywarner.org/writings/downforce/">
   <meta property="twitter:title" content="To Drive with Downforce - Teddy Warner">
   <meta property="twitter:description" content="Addressing the confidence bottleneck.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/force/force.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -42,6 +42,7 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
+  <link rel="stylesheet" href="../../assets/css/header.css">
 </head>
 
   <nav class="main-navigation">
@@ -51,7 +52,16 @@ template: comments.html
       <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
+<script src="../../assets/js/header.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeHeader();
+  });
+</script>
+  
 <div class="return2feed"><a href="https://teddywarner.org/writ"><i class="fa-solid fa-arrow-left-long"></i> Writing Feed</a></div>
 
 # To Drive with Downforce

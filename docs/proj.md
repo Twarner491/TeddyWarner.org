@@ -42,7 +42,8 @@ search:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/proj.css">
+  <link rel="stylesheet" href="/assets/css/proj.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
 </head>
 
   <nav class="main-navigation">
@@ -52,6 +53,8 @@ search:
       <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
 <body>
   <main data-scroll-container>
@@ -60,12 +63,24 @@ search:
       <div class="content1">
         <div class="introabt">
           <h2>Project Portfolio</h2>
-          <h3>Here's some of the Open-Source </br> shenanigans I've been up to.</h3>
+          <h3>Here's some of the</br> shenanigans I've been up to.</h3>
         </div>
       </div>
     </section>
     <section class="writing">
       <div class="content6" id="content6">
+        <div class="writparent">
+          <a href="https://teddywarner.org/Projects/LearnedSpectrum/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedspec/hero.png" alt="Learned Spectrum project hero image"></div>
+            <p class="projtitle">Learned Spectrum</p>
+            <p class="writeyear">Fall-Winter 2024</p>
+            <span class="mobileyear">
+            <p class="readtime">23-29 mins</p>
+            </span>
+            <p class="projdescription">Towards temporal understanding in artifical intellegence through fMRI learning stage classification.</p>
+          </a>
+        </div>
+        <hr/>
         <div class="writparent">
           <a target=”_blank” href="https://tone.computer/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/toneSmall.png" alt="Tone project preview image"></div>
@@ -251,6 +266,7 @@ search:
       });
     });
   </script>
-  <script src="../../assets/js/proj.js"></script>
+  <script src="/assets/js/proj.js"></script>
+  <script src="/assets/js/header.js"></script>
 </body>
 </html>

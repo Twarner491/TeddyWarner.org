@@ -30,8 +30,8 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/SerialUPDI/">
   <meta property="og:title" content="UPDI Serial Programming - Teddy Warner">
   <meta property="og:description" content="Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
-  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/SerialUPDI/updiHero.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -40,7 +40,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/SerialUPDI/">
   <meta property="twitter:title" content="UPDI Serial Programming - Teddy Warner">
   <meta property="twitter:description" content="Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/SerialUPDI/updiHero.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -49,6 +49,7 @@ tags:
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
+  <link rel="stylesheet" href="../../assets/css/header.css">
 </head>
 
   <nav class="main-navigation">
@@ -58,7 +59,16 @@ tags:
       <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
+<script src="../../assets/js/header.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeHeader();
+  });
+</script>
+  
 <div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
 
 # UPDI Serial Programming
@@ -124,7 +134,7 @@ Inside of this *jtag2updi* folder, navigate to the *jtag2UPDI.ino* project - cir
 
 <center>
 
-![](../assets/images/SerialUPDI/projectopen.png){width="95%" alt="Arduino IDE showing jtag2updi project files"}
+![](../assets/images/SerialUPDI/projectopen.png){width="95%"}
 
 </center>
 
@@ -132,7 +142,7 @@ This will open the *jtag2updi* project file system, leaving you with a blank *jt
 
 <center>
 
-![](../assets/images/SerialUPDI/blankjtagsketch.png){width="95%" alt="Arduino IDE with blank jtag2updi sketch"}
+![](../assets/images/SerialUPDI/blankjtagsketch.png){width="95%"}
 
 </center>
 
@@ -198,7 +208,7 @@ The serial programming style relies on this prior mentioned portable python inst
  2. Some Jumper Wires
  3. A Schottky Diode - I tacked some leads to an SMD package (as shown below), but if you can get your hands on a through-hole package, that works great as well.
  <center>
-![](../assets/images/SerialUPDI/diodeleads.jpg){width="95%" alt="SMD Schottky diode with soldered leads"}
+![](../assets/images/SerialUPDI/diodeleads.jpg){width="95%"}
 </center>
  4. A 470-ohm Resistor - If creating a UPDI programmable board, incorporate this resistor into your schematic using the pinout below, running the 470-ohm resistor inline to the UPDI pin. Any value between 100 and 1k ohms will do here, but 470 is the optimal value.
 

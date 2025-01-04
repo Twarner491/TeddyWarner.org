@@ -29,13 +29,6 @@
   content: var(--avatar);
 }
 
-.scrollDown .md-header {
-  transform: translateZ(-100%);
-}
-
-.scrollUp .md-header {
-  transform: none;
-}
 
 .md-source {
   color: var(--md-default-fg-color);  
@@ -91,17 +84,6 @@
 
 .toggle .md-search__form:hover {
   background-color: var(--toggledformhover);
-}
-
-header {
-  height: 192px;
-  padding-top: 10em;
-  padding-left: 4em;
-  padding-right: 4em;
-}
-
-.toggle header {
-  padding-top: 12.174em;
 }
 
 .menu {
@@ -234,6 +216,32 @@ header {
   font-size: 0.35em;
   font-weight: lighter;
   font-style: italic;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  pointer-events: none;
+  z-index: 2;
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0.6) 45%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0.6) 45%,
+    transparent 100%
+  );
 }
 
 .return2feed {
@@ -542,27 +550,7 @@ header {
   }
 }
 
-@media screen and (min-width: 2000px) { /* Desktop */
-  .toggle header {
-    padding-top: 11.765em;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .toggle header {
-    padding-top: 12.6em;
-  }
-}
-
 @media (max-width: 1200px) { /* Laptop */
-  header {
-    padding-top: 5em;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .toggle header {
-    padding-top: 6.5em;
-  }
   .main-navigation a {
     font-size: 1.1em;
   }
@@ -609,5 +597,35 @@ header {
   }
   .year {
     display: none;
+  }
+}
+
+/* Add transition to sidebar while preserving MkDocs Material defaults */
+.md-sidebar__scrollwrap {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+/* When scrolled, move the scrollwrap up */
+.scrolled .md-sidebar__scrollwrap {
+  transform: translateY(-5.5em);
+}
+
+/* Match header.css media queries */
+@media screen and (min-width: 2000px) {
+  .scrolled .md-sidebar__scrollwrap {
+    transform: translateY(-6em);
+  }
+}
+
+@media (max-width: 1200px) {
+  .scrolled .md-sidebar__scrollwrap {
+    transform: translateY(-3em);
+  }
+}
+
+@media (max-width: 860px) {
+  .scrolled .md-sidebar__scrollwrap {
+    transform: translateY(-2.5em);
   }
 }

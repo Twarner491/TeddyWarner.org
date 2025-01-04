@@ -27,8 +27,8 @@ tags:
   <meta property="og:url" content="https://teddywarner.org/Projects/CornerDesk/">
   <meta property="og:title" content="Cable Managed Corner Desk - Teddy Warner">
   <meta property="og:description" content="A clean modern corner desk.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
-  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/CornerDesk/hero.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -37,7 +37,7 @@ tags:
   <meta property="twitter:url" content="https://teddywarner.org/Projects/CornerDesk/">
   <meta property="twitter:title" content="Cable Managed Corner Desk - Teddy Warner">
   <meta property="twitter:description" content="A clean modern corner desk.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/CornerDesk/hero.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -46,6 +46,7 @@ tags:
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
+  <link rel="stylesheet" href="../../assets/css/header.css">
 </head>
 
   <nav class="main-navigation">
@@ -55,7 +56,16 @@ tags:
       <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
+<script src="../../assets/js/header.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeHeader();
+  });
+</script>
+  
 <div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
 
 # Cable Managed Corner Desk

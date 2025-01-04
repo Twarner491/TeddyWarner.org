@@ -104,6 +104,17 @@
   background-color: var(--toggledformhover);
 }
 
+header {
+  height: 192px;
+  padding-top: 10em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.toggle header {
+  padding-top: 12.174em;
+}
+
 .menu {
   color: var(--md-default-fg-color);
 }
@@ -556,6 +567,9 @@
 }
 
 @media screen and (min-width: 2000px) { /* Desktop */
+  .toggle header {
+    padding-top: 11.765em;
+  }
   :root {
     --font-size: 1em;
   }
@@ -596,7 +610,21 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .toggle header {
+    padding-top: 12.6em;
+  }
+}
+
 @media (max-width: 1200px) { /* Laptop */
+  header {
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .toggle header {
+    padding-top: 6.5em;
+  }
   .main-navigation a {
     font-size: 1.1em;
   }

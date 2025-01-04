@@ -24,8 +24,8 @@ template: comments.html
   <meta property="og:url" content="https://teddywarner.org/Projects/LearnedSpectrum/">
   <meta property="og:title" content="Learned Spectrum - Teddy Warner">
   <meta property="og:description" content="Towards temporal understanding in artifical intellegence through fMRI learning stage classification.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
-  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/learnedspec/hero.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -34,7 +34,7 @@ template: comments.html
   <meta property="twitter:url" content="https://teddywarner.org/Projects/LearnedSpectrum/">
   <meta property="twitter:title" content="Learned Spectrum - Teddy Warner">
   <meta property="twitter:description" content="Towards temporal understanding in artifical intellegence through fMRI learning stage classification.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/learnedspec/hero.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -44,6 +44,7 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
+  <link rel="stylesheet" href="../../assets/css/header.css">
 </head>
 
   <nav class="main-navigation">
@@ -53,13 +54,22 @@ template: comments.html
       <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
+<script src="../../assets/js/header.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeHeader();
+  });
+</script>
+  
 <div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
 
 # Learned Spectrum
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt"><span class="year">| Fall 2024 </span>| <span class="readTime"><i class="far fa-clock"></i> 23-29 minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt"><span class="year">| Fall-Winter 2024 </span>| <span class="readTime"><i class="far fa-clock"></i> 23-29 minutes</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/LearnedSpectrum/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/LearnedSpectrum/&text="><i class="fa-brands fa-x-twitter"></i></a>
@@ -91,16 +101,16 @@ These methods aim to provide AI systems with a sense of time and space, but they
 
 While vision is an integral element under the multi-modal umbrella of a world model, relying on vision alone may be insufficient to capture a true temporal understanding of the world.
 
-Imaging a humaniod and a human are sitting together at a table. Suddenly, the human stands up, screams, and hurles a chair across the room. The robot, relying solely on visual input, might respond by moving away. In this case:
+Imagine a humaniod and a human are sitting together at a table. Suddenly, the human stands up, screams, and hurles a chair across the room. The robot, relying solely on visual input, might respond by moving away. In this case:
 
 \begin{align*}
 x(t) &= \text{scream, chair thrown} \\
 a(t) &= \text{move away} \\
 \end{align*}
 
-Where $x(t)$ is an observation in a given instant, and $a(t)$ the resulting action in that instant.
+$x(t)$ is an observation in a given instant and $a(t)$ is the resulting action in that instant.
 
-Now, consider the same scenario, but this time two humans sit togheter at a table. One human stands, screams, and hurles a chair across the room. The other human's response is more nuanced, responding first physologically: they exhibit a change in biometrics, then physically: they move backwards. In this case:
+Now, consider the same scenario, but this time two humans sit together at a table. One human stands, screams, and hurles a chair across the room. The other human's response is more nuanced, responding first physiologically: they exhibit a change in biometrics, then physically: they move backward. In this case:
 
 \begin{align*}
 x(t) &= \text{scream, chair thrown} \\
@@ -116,9 +126,9 @@ World models cannot truly gain a comprehensive temporal understanding based sole
 
 *Temporal understanding cannot be trained from data that goes from A -> C. World models must be trained on data that goes from A -> B -> C.*
 
-Collection of biometrics data may provide insight into man's temporal understaning, and thus how to train a neural network to understand cause and effect.
+The collection of biometrics data may provide insight into man's temporal understanding, and thus how to train a neural network to understand cause and effect.
 
-Current efforts in world model development often rely heavily on data collected from robotic systems or external observations which we humans can describe (i.e. see chair thrown -> move backward). These observations forgo the subconscious response integral to a human's actions (i.e. see chair thrown -> physiological state change -> move backward).
+Current efforts in world model development often rely heavily on data collected from robotic systems or external observations that we humans can describe (i.e. see chair thrown -> move backward). These observations forgo the subconscious response integral to a human's actions (i.e. see chair thrown -> physiological state change -> move backward).
 
 If we acknowledge that current AI systems lack a subjective understanding of time, why do we primarily use data from these systems to try to instill temporal understanding?
 
@@ -128,7 +138,7 @@ Data collected from human subjects could provide a window into how humans subjec
 
 <h4> Do biometrics relate to man's perception of time and space? </h4>
 
-Yes, biometrics may be able to provide a window into man's subjective expierence to time. But what biometrics?
+Yes, biometrics may be able to provide a window into man's subjective experience of time. But what biometrics?
 
 - Facial muscle activity: The dynamic electromyographic activity in the corrugator-supercilii muscle over time reflects objective time and predicts subjective judgments of duration [^36]. This suggests that subjective duration could be an embodiment process based on motor information changing over time and associated feelings.
 - Heart rate: Pulse rate has been found to correlate with subjective well-being metrics and could potentially offer insights into time perception [^37]. Additionally, heart rate variability, measured through the Lorenz plot area, has been used in stress estimation models, which could indirectly relate to time perception [^38].
@@ -139,16 +149,16 @@ It's important to note that the relationship between biometrics and time percept
 
 <h4> Why has no one done this? </h4>
 
-When my hypothesis first came to me, I believed I had to been nieve to some perticular reason our pipeline is robot -> simulator -> robot and not human -> simulator -> robot. It was simeltaniously a relief and a pain in the ass to not find a specfic reason on the first page of google.
+When my hypothesis first came to me, I believed I had to be naive to some particular reason our pipeline is robot -> simulator -> robot and not human -> simulator -> robot. It was simultaneously a relief and a pain in the ass to not find a specific reason on the first page of Google.
 
 I've got a few thoughts as to why no one has done this yet:
 
 1. It's hard to collect data from humans.
 2. The use of biometric data on mass raises important ethical and privacy considerations.
 3. Only recently have advances in transformer architecture made such analysis feasible at scale.
-4. Traditional approaches to world models have relied upon absolute temporal markers. Shifting to a subjective, biologically inspired approach would require signficant effort.
+4. Traditional approaches to world models have relied upon absolute temporal markers. Shifting to a subjective, biologically inspired approach would require significant effort.
 
-So thats it, that's the thought that's been tickling my brain for a month or two now. While I need to gather some resources before I can get started with biometric data colelction at a large enough scale to train a foundational model, I started by toying around with Vision Transformers and some fMRI datasets I found on the internet. The rest of this article is about that: Learned Spectrum: Towards Temporal Understanding in AI through fMRI Learning Stage Classification.
+So that's it, that's the thought that's been tickling my brain for a month or two now. While I need to gather some resources before I can get started with biometric data collection at a large enough scale to train a foundational model, I started by toying around with Vision Transformers and some fMRI datasets I found on the internet. The rest of this article is about: Learned Spectrum: Towards Temporal Understanding in AI through fMRI Learning Stage Classification.
 
 ## Abstract
 
