@@ -63,7 +63,7 @@ search:
       <div class="content1">
         <div class="introabt">
           <h2>Project Portfolio</h2>
-          <h3>Here's some of the</br> shenanigans I've been up to.</h3>
+          <h3>Here's some of the stuff I've been up to.</h3>
         </div>
       </div>
     </section>
