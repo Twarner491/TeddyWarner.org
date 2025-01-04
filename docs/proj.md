@@ -178,7 +178,7 @@ search:
         </div>
         <hr/>
         <div class="writparent">
-          <a href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/">
+          <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/AssistiveAquaponics/hero.png" alt="Assistive Aquaponics Fish Tank project hero image"></div>
             <p class="projtitle">Assistive Aquaponics Fish Tank</p>
             <p class="writeyear">Winter-Spring 2021</p>
