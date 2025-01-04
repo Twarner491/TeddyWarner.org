@@ -11,10 +11,6 @@ header {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.toggle header {
-    padding-top: 12.174em;
-}
-
 .scrolled header {
     transform: translateY(-5.5em);
 }
@@ -23,16 +19,7 @@ header {
   .scrolled header {
     transform: translateY(-6em);
   }
-  .toggle header {
-    padding-top: 10em;
-  }
 }
-
-@media screen and (max-width: 1600px) {
-    .toggle header {
-      padding-top: 10em;
-    }
-  }
 
 @media (max-width: 1200px) {
   .scrolled header {
@@ -42,9 +29,6 @@ header {
     padding-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
-  }
-  .toggle header {
-    padding-top: 5em;
   }
 }
 

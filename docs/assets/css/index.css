@@ -900,7 +900,7 @@ header {
 
 @media screen and (min-width: 2000px) { /* Desktop */
   .toggle header {
-    padding-top: 11.765em;
+    padding-top: 10em;
   }
   :root {
     --font-size: 1em;
@@ -951,7 +951,7 @@ header {
 
 @media screen and (max-width: 1600px) {
   .toggle header {
-    padding-top: 12.6em;
+    padding-top: 10em;
   }
 }
 
@@ -962,7 +962,7 @@ header {
     padding-right: 1em;
   }
   .toggle header {
-    padding-top: 6.5em;
+    padding-top: 5em;
   }
   .main-navigation a {
     font-size: 1.1em;

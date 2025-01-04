@@ -535,6 +535,10 @@
   animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
 }
 
+.toggle header {
+  padding-top: 12.174em;
+}
+
 @keyframes link-appear {
   0%, 25% {
     transform: translateY(100%);
@@ -550,6 +554,18 @@
   }
 }
 
+@media screen and (min-width: 2000px) { /* Desktop */
+  .toggle header {
+    padding-top: 11.25em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .toggle header {
+    padding-top: 11.66em;
+  }
+}
+
 @media (max-width: 1200px) { /* Laptop */
   .main-navigation a {
     font-size: 1.1em;
@@ -562,6 +578,9 @@
   }
   .copyright {
     font-size: 0.7em;
+  }
+  .toggle header {
+    padding-top: 6em;
   }
 }
 
