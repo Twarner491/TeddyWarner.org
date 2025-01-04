@@ -58,14 +58,17 @@ header {
 .logo {
   content: var(--avatar);
   opacity: 1;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.15s ease;
+  transition-delay: 0.15s;
   transform: scale(1);
   margin-top: -1em;
 }
 
 .toggle .logo {
-    opacity: 0;
-  }
+  opacity: 0;
+  transition: opacity 0.05s ease;
+  transition-delay: 0s;
+}
 
 .scrolled .logo {
   transform: scale(0.8);
