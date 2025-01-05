@@ -92,7 +92,7 @@ tags:
 
 <center>
 
-<iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="Assistive Aquaponics Fish Tank Project Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="Assistive Aquaponics Fish Tank Project Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 </center>
 
@@ -112,7 +112,7 @@ Before starting work on designing, manufacturing, and running an aquaponics syst
 
 When in balance, six steps create a successful aquaponics ecosystem, where all parts of the system rely on the others, a process known as recirculation. The aquatic life of the tank contributes poop and waste food into the ecosystem, creating ammonia, a toxin for the fish, in the water in the process. This generated ammonia is then converted into helpful Nitrites, and eventually, Nitrates by bacteria in the system through a natural process called *The Nitrification Cycle*, after which, the system's plants absorb these Nitades as plant food, filtering the water in the process, and therefore the eliminating any harmful ammonia in the system's water, returning the system to its starting place. The six major players in the system, Fish, Plants, Bacteria, Ammonia, Nitrites, and Nitrates, rotate around this six-step ecosystem repeatedly, and when kept intolerance with each other, create the thriving aquaponics ecosystem I'm looking for in creating my aquaponics fish tank. In *The Effectiveness of Aquaponic Compared to Modified Conventional Aquaculture for Improved of Ammonia, Nitrite, and Nitrate*, an academy journal article written by Deswati, Amelliza Deviona, Ella Intan Sari, Yulizar Yusuf, and Hilfi Pardi for the Rasayan Journal of Chemistry, elements of the aquaponic system are analyzed, and some ideal thresholds are given for a balanced system between Fish, Plants, Bacteria, Ammonia, Nitrites, and Nitrates, all with included real-life large scale aquaponics systems. I found this journal super helpful with providing application to aquaponics and also expanding my understanding of the ecosystem components through the journal's experiments.
 
-<iframe src="https://drive.google.com/file/d/1QwnFZ5CrjeZOEV_yVuPqWRHJbGDSE3x0/preview" width="900" height="650"></iframe> 
+<iframe src="https://drive.google.com/file/d/1QwnFZ5CrjeZOEV_yVuPqWRHJbGDSE3x0/preview" width="900" height="650" loading="lazy"></iframe> 
 
 *Deswati, et al. “The Effectiveness of Aquaponic Compared to Modified Conventional Aquaculture for Improved of Ammonia, Nitrite, and Nitrate.” Rasayan Journal of Chemistry, vol. 13, no. 1, Jan. 2020, p. 1. EBSCOhost, search.ebscohost.com/login.aspx?direct=true&db=edb&AN=142699175&site=eds-live.*
 
@@ -197,7 +197,7 @@ Total Cost: $323.60
 
 ## Tank Render - Fusion 360
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd96816389cb590d41e3d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd96816389cb590d41e3d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ## Electronics System
 
@@ -205,7 +205,7 @@ Total Cost: $323.60
 
 I started this final project board design process following the same steps I used while making any other board in the previous weeks of this class, beginning the process by creating a schematic of my board. Throughout the schematic creating process, I referenced a prior Fab Academy final project, the [Sashakit](http://fabacademy.org/archives/2015/doc/projects/satshakit/satshakit.html) "an Arduino compatible, fabbable board, and also an improved version of [Fabkit](http://www.fabacademy.org/archives/2015/doc/projects/fabkit-0.4.html)." (Quote from the [Sashakit](http://fabacademy.org/archives/2015/doc/projects/satshakit/satshakit.html), as well as one of my professors, [Dr. Adam Harris](http://sheekgeek.org/), In-Circuit programmer board I made in my [week 4](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week04/) class. I found that looking at the labeled schematics and board designs for these boards give me the information I needed to dive deeper into the workings of a microcontroller. Before starting any work in Autodesk EAGLE, I took some time to write out my needs on a final project board and was able to use all of this pre-work to start creating my final project board schematic. I worked through this schematic system by system, adding components as I went until I had a finished schematic. I found this approach to be more assistive in my understandings of how the components interact with each other and also allowed me to do some additional research on the different needed sections while working on them. I finished all major sections of my schematic following this approach, and the only editing that I had to go in to add later were 0-ohm jumper resistors, a component I used to connect traces at intersections while designing my final project board.
 
-![](../images/week06/Schem1.png)
+![](../assets/images/AssistiveAquaponics/Schem1.png)
 
 With this schematic done, I moved onto generating my final board file, however, I wasn't entirely happy with the default generation for my final project board, as I wanted it to have a little more flair, so I set off to add a custom board shape, and some icons to my board design before routing any traces on the board. After doing some research on this process, I found this good article on [Importing Custom Images into Eagle](https://learn.sparkfun.com/tutorials/importing-custom-images-into-eagle/all#method-2-import-dxf), a process easier said than done. Although this process of importing images and shapes into EAGLE is entirely possible, the software cannot handle the importing of any closed polygons or shapes with complex curves of any kind, and therefore any images/icons you want to be imported require a good bit of prep work. I completed this prep work in Inkscape on my desired board shape, a fishbowl, as well as on a little fish icon, and a TW logo for some more personalization. The prep work process for all these images was the same in Inkscape, starting with tracing the bitmaps into SVGs of these images after opening them in Inkscape. This step was to dive by right-clicking on the imported bitmap and selecting the *Trace from Bitmap* tool. This process generated a scalable vector graphic of the imported bitmap, that I could then start to alter so it could be imported into EAGLE. My workflow of altering this graphic started by resizing the Inkscape page by going to 
 
@@ -221,9 +221,9 @@ Extensions > Modify Path
 
 Where I used the *Add Nodes* tool to add excess nodes to my design. Under this same menu, I removed any complex curves that EAGLE would not be able to handle by using the *Flatten Beziers* tool with a flatness value of 8. Finally, to address EAGLE's inability to import closed polygons, I used the *Division* tool under the *Path* menu to cut any closed polygons in half, and then separated all of these nodes by using the *Break Apart* tool under the same menu. This process adds some unwanted dividing lines, that can be removed once imported into EAGLE, but these lines allow for the successful importing of these shapes in the first place, so are required. 
 
-![](../images/week06/InkscapeBowl.png)
-![](../images/week06/InkscapeFish.png)
-![](../images/week06/InkscapeTW.png)
+![](../assets/images/AssistiveAquaponics/InkscapeBowl.png)
+![](../assets/images/AssistiveAquaponics/InkscapeFish.png)
+![](../assets/images/AssistiveAquaponics/InkscapeTW.png)
 
 Once all this pre-work in Inkscape was complete, I saved each of these altered files as a *.dxf* file to my computer from Inkscape. To import these *.dxf* files into EAGLE, I found making use of the [import-dxf](https://github.com/erikwilson/import-dxf) plugin for EAGLE worked the best. After installing this ULP into EAGLE following the instructions provided by the [import-dxf](https://github.com/erikwilson/import-dxf) Github, I opened my final project generated board file in EAGLE and ran the command
 
@@ -233,7 +233,7 @@ run import-dxf
 
 This line opens the [import-dxf](https://github.com/erikwilson/import-dxf) interface, where the desired *.dxf* file can be selected, and then imported into a specific layer of a board design. I imported my fishbowl *.dxf* into layer 20 of my design, the *Dimensions* layer, to replace the generic rectangle board profile, and then ran the same command to import both the fish icon, and the TW logo, but to the *Top* layer over the *Dimensions*. Because these shapes are on the *Top* layer of my board design, they will both be milled as traces instead of being included with the outline shape of the board. With all of this importing work done, I had a template to start routing the traces of my board around. I opted for the hand routing process for my final project board, as after attempting to autoroute a couple of times, I just wasn't happy with the results. This also gave me the ability to utilize parts like 0-ohm resistors as jumpers over weird interceptions of the board, a technique I took advantage of while routing the traces on this board. This hand routing process was relatively tedious and pretty time-consuming, but I think the results look great and work much better than the autorouter generated traces with the weird constraints put in place by the odd board shape. 
 
-![](../images/week06/FishbowlV1.png)
+![](../assets/images/AssistiveAquaponics/FishbowlV1.png)
   <figcaption>Final Project Board With All Trace Routed, and Icons Imported</figcaption>
 
 Unfortunately, this first iteration of my final project board didn't work on the first attempt, and I seemed to have an excess of noize across it, probably due to the large quantity of 0-ohm resistors in line with the traces. 
@@ -252,55 +252,55 @@ I kept iterating on this board, working towards the removal of the excess 0 ohms
 
 Just like its prior iterations though, this sixth iteration was still unsuccessful, and so far I had been unable to get a version working. I began to make some larger strides on this board during my [week 13](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week13/) class and started another iteration of this board by working back through all systems in the board's schematic, familiarizing myself with the purpose of each system/component. From here, I started work on adding in a 12v to 5v voltage regulator on the fishbowl board, as my fish tank will be run on a 12v DC supply, and this regulator will allow for this 12v system. I took advantage of a 12v to 5v voltage regulator in this regulator system, opposed to a variable voltage regulator, as the components on my fishbowl board will always be 5v, and thus the voltage can be set by the regulator itself. Along with this regulator, I included two *10uf* capacitors between GND and VCC on the voltage regulators' input and output, reducing portion noise on my board.
 
-![](../images/week13/fishbowlschematic.png)
+![](../assets/images/AssistiveAquaponics/fishbowlschematic.png)
   <figcaption>Seventh Itteration of the Fish Bowl Main Board Schematic</figcaption>
 
 With the addition of these new voltage regulator systems, a rewiring of the fishbowl board was needed, and during this time around, I took some extra time to reduce the needed components on the board, and allow for easier soldering. After messing around in the board file for a bit, I found I could use one of my "Fish Bowl" shape decorative traces as a GND line that surrounded the entirety of my board. This line implemented a universal ground way more accessible from everywhere on the board and offered another solution to a problem I had previously addressed by using 0-ohm jumpers resistors to solve, routing GND lines over other traces with these "jumpers". This surrounding ground line reduced the crazy amount of 0-ohm resistors on my board and made the board's soldering/stuffing process simpler and less time-consuming.
 
-![](../images/week13/Fishbowlboard.png)
+![](../assets/images/AssistiveAquaponics/Fishbowlboard.png)
   <figcaption>Seventh First Itteration of the Fish Bowl Main Board </figcaption>
 
 I milled this board following the same steps I used while milling boards previously in [week 4](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week04/#milling-blinky-board), and other electronics production assignments in my previous weeks, starting with the board traces operation with a PCB engraving bit. While iterating on this board since [week 6](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week06/#final-project-board-work), I've milled a handful of tests, some yielding successes in some systems, but always including another issue/broken system to flatten out. I next moved on to milling the board's holes and outline, using a 1/32" bit for these two operations, before moving onto board soldering. 
 
 The part reduction steps I had taken earlier while encluding the wrap-around GND trace on my board paid off here, and the boards soldering and stuffing time had been greatly reduced. One thing that I've picked up on while soldering prior test fishbowl boards is a "drag" technique while soldering the ATMega to the board. I used this technique on these boards as well, first aligning the chip to its corresponding pins (ensuring correct orientation), before tacking down one of the pins of the chip to the board, and then dragging the tinned iron across one of the rows of pads, allowing solder to flow and connect between each of the chips pins and the board's pads, and leaving me with a clean set of joints. With the chip soldered, I wrapped up the board by soldering all of the other components, finishing with the three largest components, the crystal, voltage regulator, and reset button, leaving me with the boards show below.
 
-![](../images/week13/fishbowl1.jpg)
+![](../assets/images/AssistiveAquaponics/fishbowl1.jpg)
   <figcaption>Seventh Itteration of the Fish Bowl Main Board Stuffed & Soldered</figcaption>
 
 As the first test for this new fishbowl board, after soldering, I hooked up the board to a 12v DC power supply, and then probed the new voltage regulator output to test the output voltage. To my luck, the regulator yielded a 5v output and remained at a constant voltage throughout my probing. I next moved onto attempting to burn a bootloader to the fishbowl board. This process is similar to the one taken while burning the bootloader on my Sashakit made in our [Student Bootcamp](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/student-bootcamp/) class. The bootloader is burned to my board through an Arduino acting as an ISP programmer, so the first step while attempting to burn the bootloader was to set up the Arduino. I uploaded the Arduino example skets, *Arduino as ISP*, to an Arduino board, and referencing the *Arduino as ISP* sketch, and my fishbowl board eagle file, I attached the two with some jumpers using the pins called on by the *Arduino as ISP* sketch. From here, I opened the Arduino IDE, selected the port my Arduino acting as a programmer was connected to, and then used the IDE's *Burn Bootloader* tool, and ... it failed. Unfortunately, even after triple-checking my wiring, switching my Arduino board, reuploading the Arduino as an ISP sketch, and ensuring my fishbowl board was receiving enough power from my power supply, I still received an error message upon any attempt to burn a bootloader. I tried this process a couple of times and received two different error codes, one of which is shown below.
 
-![](../images/week13/Error.png)
+![](../assets/images/AssistiveAquaponics/Error.png)
   <figcaption>One Error Message Recieved Upon a Bootloader Burning Attempt</figcaption>
 
 A bit of research into the codes I was receiving helped me break down the problem a little bit, but not a ton. I found that there were three major potential flaws, however, a board short / VCC error, a "bricked" chip, or a non-oscillating clock, and decided to look into these three more. Being the easiest resolved I began looking into the VCC error a little more, starting by probing each of my board's traces for continuity between places that should not be connected, and also probed the voltages of the GND and VCC line of the board when supplied power, however, all of these results looked normal. After a little more research of the matter online, as well as into the ATMega 328p, I noticed that it recommended to included a smoothing *100nf* capacitor in between the chips *AREF* line and its nearest *GND* pin, so back in the board's eagle file, I added this smoothing capacitor along with the previously existing *100nf* smoothing capacitor running between two GND and VCC pins on my chip.
 
-![](../images/week13/fishbowlboard2.png)
+![](../assets/images/AssistiveAquaponics/fishbowlboard2.png)
   <figcaption>Eight Itteration of the Fish Bowl Main Board With Smoothing Cap</figcaption>
 
 From here, I also explored the other two potential causes of my bootloader burning issue, however, I found no easy fix to a "bricked" chip, and therefore moved on researching a non-oscillating clock a little more. I found that similar to the "bricked" chip, a non-oscillating clock is not easily fixed, but can be avoided, as the clock will not turn to its non-oscillating state unless the fuses of the ISP programmer are incorrectly set. Confirming in my ISP programmer, I had the correct fuses set, and eliminated this as being one of my potential issues.
 
 As a workaround to my inability to "Un-Brick" a chip, I followed the advice of one of my instructors, [Dr. Adam Harris](https://www.sheekgeek.org/), to test the working of my chip before using it aboard. To do this, I soldered up a Sashakit board, just like I had in my [Student Bootcamp](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/student-bootcamp/) class, however, I left the chip unsoldered to this board. I was then able to connect this Sashakit board to an ArduinoISP programmer, and then use it to try out the bootloader on multiple chips. I aligned a chip with its corresponding pads of the sashakit, heald it down in the center with a pair of tweezers, and used the Arduino IDE to burn a bootloader to my board. All this worked! and the Arduino let me burn a bootloader to a couple of different chips, however, I did find some other faulty "Bricked" chips along the way. Despite that, I was left with a couple of chips with bootloaders burned, that I could be sure were working, and was able to eliminate another potential issue on my board.
 
-![](../images/week13/bootloadingchips.jpg)
+![](../assets/images/AssistiveAquaponics/bootloadingchips.jpg)
   <figcaption>Sashakit ATMega 328p Bootloader Burning Setup</figcaption>
 
 With all this troubleshooting into my issues at a stopping point, I was ready to manufacture another board iteration, going first milling the PCB, 
 
-![](../images/week13/fisahbowl.png)
+![](../assets/images/AssistiveAquaponics/fisahbowl.png)
 
 then soldering and stuffing, leaving me with the board shown below.
 
-![](../images/week13/solderedfishbowl2.jpg)
+![](../assets/images/AssistiveAquaponics/solderedfishbowl2.jpg)
 
 Due to my previous failures with this board, I was pretty nervous to test this iteration and started my first just powering up the board through a power supply. Unfortunately, this simple startup produced a cloud of smoke from the top of my board, and the board's voltage regulator exploded. This error sucked, and ended up stemming from the misplacement of a strip of 5v to 3.3v regulators in a bin meant for 12v to 5v (the ones needed by my board), and the false component use ended up frying one of my boot loaded chips. I unsoldered the remains of the busted voltage regulator, as well as the fired chip, and replaced them with working correct components. I tested the board with power again, this time fortunately without explosion, and was ready to attempt to program the board again. I wired the board to an Arduino with the *Arduino as ISP* sketch flashed to it, and tried to upload a blink code ... no luck. Upon this uploading attempt, the uploading process began, and then returned error *0x0000000*, a GND or Reset error.
 
 Here I went back to my schematic, and went through the system by system, and referencing the datasheets for major components. I wanted to make sure to include all recommended/required components for components on each of their pins. In addition to what I already had, this included adding a larger smoothing capacitor between GND and VCC, another capacitor between AREF and its closest GND pin, as well as an additional RST pin, without the 100nf inline capacitor. After a board works though with [Dr. Adam Harris](https://www.sheekgeek.org/), I also moved these additional smoothing capacitors closer to my board's ATMega 328 to reduce any resistance build upon the traces. All of these changes left me with yet another board iteration, shown below.
 
-![](../images/week13/workingboardfile.png)
+![](../assets/images/AssistiveAquaponics/workingboardfile.png)
 
 Again, I worked through the manufacturing process for this board, first milling, and the soldering and stuffing of the board. All of these board iterations have sped up their production time, as I know have the component layout of the board memorized, and have increased my soldering speed with each iteration. 
 
-![](../images/week13/workingsolderedboard.jpg)
+![](../assets/images/AssistiveAquaponics/workingsolderedboard.jpg)
   <figcaption>Working Iterration of the ATMega 328 Fish Bowl Board</figcaption>
 
 Just like the prior iterations, I wired up this board to an Arduino with the *Arduino as ISP* example sketch flashed to it, and attempted a bootloader burn, this time, yielding successful results!! 
@@ -309,11 +309,11 @@ Just like the prior iterations, I wired up this board to an Arduino with the *Ar
 
 After all of the troubleshooting that went into my fishbowl board, it was super nice to finally have to worry about code. I began this fishbowl board programming process with a simple blink sketch, and uploaded the Arduino IDE *Blink* example sketch to my fishbowl board via an Arduino as ISP programmer, yielding a successful upload shown below.
 
-![](../images/week13/Fishbowlblinlk.png)
+![](../assets/images/AssistiveAquaponics/Fishbowlblinlk.png)
 
 This simple sketch proved the working of my board and flashed my onboard pin 13 LED on my fishbowl board.
 
-![](../images/week13/blinkybowl.jpg)
+![](../assets/images/AssistiveAquaponics/blinkybowl.jpg)
   <figcaption>Blinky Example Sketch Running on my Fish Bowl Board</figcaption>
 
 ![](../assets/images/AssistiveAquaponics/allboards.jpg)
@@ -329,7 +329,7 @@ A quick beginning note - here's the pH scale I referenced during the pH work of 
 
 <center>
 
-![](../assets/images/AssistiveAquaponics/ph-scale_orig.png)
+![](../assets/images/AssistiveAquaponics/ph-scale_orig.png){width="49%"}
 
 </center>
 
@@ -342,7 +342,11 @@ larger ions remain in the solution. The difference in the concentration of hydro
 (outside the probe vs. inside the probe) creates a VERY small current. This current
 is proportional to the concentration of hydrogen ions in the liquid being measured." ([Probe Datasheet](https://atlas-scientific.com/files/consumer-grade-pH-probe.pdf))
 
-![](../assets/images/AssistiveAquaponics/PHoperatingprincipal.png)
+<center>
+
+![](../assets/images/AssistiveAquaponics/PHoperatingprincipal.png){width="49%"}
+
+</center>
 
 "A pH electrode is a passive device that detects a current generated from hydrogen ion
 activity. This current (which can be positive or negative) is very weak and cannot be
@@ -350,13 +354,17 @@ detected with a multimeter, or an analog to digital converter. This weak electri
 can easily be disrupted and care should be taken to only use proper connectors and cables ... The current that is generated from the hydrogen ion activity is the reciprocal of that
 activity and can be predicted using [the equation pictured below]" ([Probe Datasheet](https://atlas-scientific.com/files/consumer-grade-pH-probe.pdf))
 
-![](../assets/images/AssistiveAquaponics/probeequasion.png)
+$$E = E^0 + \frac{RT}{F}\ln(\alpha_{H+}) = E^0 - \frac{2.303RT}{F}pH$$
 
  - Where R is the ideal gas constant
  - T is the temperature in Kelvin
  - F is the Faraday constant
 
-![](../assets/images/AssistiveAquaponics/PHtoV.jpg)
+ <center>
+
+![](../assets/images/AssistiveAquaponics/PHtoV.jpg){width="49%"}
+
+</center>
 
 To calibrate the pH probe to work against these voltage reading thresholds, a calibration is required. Included along with the Atlas Scientific pH probe I ordered were three packs of pH calibration liquids, a *4*, *7*, and *10* level liquid. The concept of the calibration reflects measurements of the probe at each of these points, and the probe can be calibrated by being placed in each one of these liquids and then set to the liquid's corresponding pH value, leaving a scale like that shown below.
 
@@ -461,7 +469,7 @@ I uploaded this code to my analog pH interfacing board, and connected the board'
 
 Following the calibration steps discussed a bit above, I completed the pH probe's first calibration starting with the *7* mid calibration liquid. I placed the end of the probe in the liquid, and set the command *CAL,7* via serial to my analog pH interfacing board. After this, I repeated this step with the *4* low calibration liquid with the line *CAL,4*, and for a final time with the *10* high calibration liquid, and the line *CAL,10*.
 
-<iframe width="900" height="600" src="https://www.youtube.com/embed/aHC4-tacAKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/aHC4-tacAKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 #### Temp/Humidity Sensor
 
@@ -469,15 +477,15 @@ Following my system's PH sensor, the next sensor in my system is a DHT11 Tempera
 
 I began this temperature monitoring board manufacturing process by reading up on the DHT11 temp and humidity sensor, finding this [link](https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino//) on its set up with an Arduino helpful, giving me some useful wiring diagrams. I planned on using this DHT11 Temperature and Humidity sensor on my temp and humidity monitoring board, reading the sensor through an onboard ATtiny 412, and writing the read values to another microcontroller through RX and TX pins. I started in EAGLE, creating a small ATtiny 412 circuit, incorporating a DHT11 Temperature and Humidity sensor, as well as some headers for programming and communication. First, I started a new schematic for the board, keeping in mind the required components while adding them to the schematic. The DHT11 sensor is a four-pin sensor with a VCC, GND, and two data pins. In my case, I communicated with the sensor via one data pin, keeping in mind this pin not only needed to be connected to my ATtiny 412 but also ran to VCC with a 10k ohms resistor. Along with its connection to this sensor, my board's ATtiny 412 also runs to two separate headers, one for programming via the board's UPDI pin, and another supplying the board's power, and RX and TX pins, for future communication between boards. A final little touch to this schematic was a power indicating LED, and this left me with the schematic shown below.
 
-![](../images/week11/fishschematic.png)
+![](../assets/images/AssistiveAquaponics/fishschematic.png)
 
 The next step in this board design process was the conversion of my schematic into my temperature and humidity reading board. Keeping with the aquarium theme, I decided to shape this board like a fish, following the same steps I used creating a custom board shape in eagle during [week 6](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week06/#design-work). For this board outline, I used the same fish icon I had created in that week's assignment, importing the shape into the dimensions layer of my sensor board file to create the shape. From here I began the process of laying out the board's components, in eagle, starting with the mounting position of the DHT11 sensor and ATtiny 412, and positioning around those two components. One thing I had to keep in mind during this layout is the size of the DHT11, as its connection to my board using a 4 pin header, but the body of the sensor itself was much larger than this. I began by positioning the header where I thought the rest of the sensor would fit, and checked this positioning by drawing a square from the corner of the header, so its dimensions were the size of the DHT11. From here I laid out all other components on my board and routed the board's traces. Due to the small size of this board, the trace routing was a relatively simple task and left me with a nice-looking temperature and humidity monitoring fish board.
 
-![](../images/week11/FishBoard.jpg)
+![](../assets/images/AssistiveAquaponics/FishBoard.jpg)
   <figcaption>Final Tempeture and Humitidy Monetering Fish Board</figcaption>
 
-![](../images/week11/milledfish.jpg)
-![](../images/week11/solderedfish.jpg)
+![](../assets/images/AssistiveAquaponics/milledfish.jpg)
+![](../assets/images/AssistiveAquaponics/solderedfish.jpg)
   <figcaption>Fish Tempature and Humidity Sensor Board</figcaption>
 
 Similarly to before starting my board's schematic, before programming the board, I read up on the DHT11 sensor, referencing the same site as before, found [here](https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino//). 
@@ -486,7 +494,12 @@ Similarly to before starting my board's schematic, before programming the board,
 
 The sensor relies on the [DHTLib](https://playground.arduino.cc/Main/DHTLib/) Arduino library and can read the sensors data pin into a readable humidity and temperature output. The libraries follow the equation below to derive the relative humidity from the sensor.
 
-![](../images/week11/humidityformula.png)
+$$RH = (\frac{\rho_w}{\rho_s}) \times 100\%$$
+
+Where:
+- $RH$: Relative Humidity
+- $\rho_w$: Density of water vapor
+- $\rho_s$: Density of water vapor at saturation
 
 With knowledge of the DHT11's workings, I began programming the code to read temp and humidity through the DHT11 and print the found values through TX to a serial monitor. I used the sensors reference code found on the [Circuit Basics](https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino//) code as a reference and began the coding process. The code starts by including the needed [DHTLib](https://playground.arduino.cc/Main/DHTLib/) library and setting up the DHT11's connections to my boards ATtiny 412. Next, the code begins serial and then prints the found values to it, with the prefixes "Temp" & "Humidity" in front of their corresponding values. This left me with the sensor reading code below.
 
@@ -518,7 +531,7 @@ With this code flattened out, I wired my fish sensor board to my in-circuit prog
 
 I attached this fish board to an FDTI chip, RX to TX, TX to RX, and GND to GND, and then attempted to read the sensors values again, and this time, it worked! Every five seconds the serial monitor is updated with reading temperature and humidity values from my DHT11, and output the values in a serial monitor through serial, shown below. 
 
-![](../images/week11/WorkingTempHumidity.jpg)
+![](../assets/images/AssistiveAquaponics/WorkingTempHumidity.jpg)
 
 The final step in this sensor board code was a little bit of alteration to the serial prints I did in my [week 14](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week14/) class. These alterations allow for the communication required to print the transmitted values to a specific line on my system's LCD, a feature discussed later on this page. Beginning this process, I had to figure out how to print a specific line of incoming serial to a controlled position on an LCD. After a bit of research online, It seemed like the best way about doing this would be to include an indicator between different lines being sent over serial, and then read that indicator to determine the position of the text in the interface. With this idea in mind, I altered my input board's code to include a *1* before the transmitted temperature line, and a *2* before the transmitted humidity.
 
@@ -559,33 +572,33 @@ I spent the better half of an afternoon during my [week 13](http://fabacademy.or
 
 This LCD met all of my space and screen size requirements, and I began in Eagle creating a breakout board to the screen. This board will mount to the LCD, and break out the screen pins to the headers that will need to connect to a microcontroller. The premise of the breakout board was pretty simple, and I referenced the *C204C-FTW-LW65*'s datasheet and attached the needed data lines from the LCD, *DB4-DB7*, to a set of breakout pins on the board. I next hooked up the LCD's VCC and GND, as well as its backlight VCC and GND, to their corresponding power headers on the board. A 330 ohms resistor is included on the LCD backlight's VCC line, to dim the light so the screen's content is readable. I found the 330 resistance value worked better than the standard 220 for my *C204C-FTW-LW65* greyscale style screen and allowed for better readability. The final portion of this board was a contrast adjusting 10k ohms potentiometer. This potentiometer provides a voltage to the LCD's contrast adjusting pin, allowing the LCD character brightness to be altered, leaving me with the final schematic shown below.
 
-![](../images/week13/LCDSchematic2.png)
+![](../assets/images/AssistiveAquaponics/LCDSchematic2.png)
 
 With this schematic flatted out, I moved onto converting this schematic into my LCD breakout board. Here I began again by referencing the datasheet, positioning the LCD mounting headers to the correct dimensions on my board to line up with the *C204C-FTW-LW65* LCD. From here, I positioned the contrast adjusting potentiometer to mount on the backside of the board, allowing the LCD to mount directly over the breakout board, in the most space-efficient manner. From here, I also positioned the board's resistor and jumper resistors, and then positioned the breakout headers towards the bottom of the board, before running all of the board's traces. Due to the mounting position of this breaker board, the shape had to fit in as compact of a space behind the LCD as possible, so I dragged the boards outline down to fit around the boards content, and used Eagles *miter* tool to round over the board's corners, leaving me with the boards shown below.
 
-![](../images/week13/LCDboard2.png)
+![](../assets/images/AssistiveAquaponics/LCDboard2.png)
 
 Due to its single 330 ohms resistor component and three-pin potentiometer, the milling and stuffing of this LCD breakout board weren't super time-consuming, and I worked through it with relative ease. I first attached the breakout board to the backside of the LCD board, soldering the pins of the LCD to their propper pads on the breakout board. From here I tracked down the 330 ohms resistor, and also soldered the potentiometer in place. Finally, I attached the breakout board headers, that would allow for connections between the LCD and the board, leaving me with the LCD and breakout system below.
 
-![](../images/week13/lcdboardsoldered2.jpg)
-![](../images/week13/lcdboardsoldered1.jpg)
+![](../assets/images/AssistiveAquaponics/lcdboardsoldered2.jpg)
+![](../assets/images/AssistiveAquaponics/lcdboardsoldered1.jpg)
   <figcaption>Compleated LCD and Breakout Board Assembly</figcaption>
 
 After the completion of my LCD breakout, I began the interface coding process in the second half of my [week 13](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week13/), and then later expanded on the interface in my [week 14](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week14/) networking and communication assignment. The LCD interface code utilizes the Liquid Crystal Library included by default in the Arduino library for LCD control. Breaking down the code, there are two sections of my LCD interface, a boot screen, and a status display screen that will in the future, provide information read from my Aquaponics fish tank's sensors. I started the interface work on my tank's boot screen. The boot screen code is a simple display of characters spanning the width of the LCD, with the top and bottom lines being filled with *-*, and the middle lines displaying the text *Aquaponics Fish Tank* and *... In Development*. The inclusion of this boot screen in the *Void Setup* function of my code shows this boot screen upon bootup of the system, and the function includes a short delay while displaying the screen, allowing all of the input sensors to get started up and begin future communications with the mainboard.
 
-![](../images/week13/LCDcode.png)
+![](../assets/images/AssistiveAquaponics/LCDcode.png)
   <figcaption>Aquaponics Fish Tank LCD Bootscreen Code </figcaption>
 
-![](../images/week13/bootscreen.jpg)
+![](../assets/images/AssistiveAquaponics/bootscreen.jpg)
   <figcaption>Aquaponics Fish Tank LCD Bootscreen Implemented in Void Setup</figcaption>
 
 From this boot screen, the interface next moves into its status screen display. It was here where I planned on taking full advantage of the 20 x 4 display size of my LCD, and decided to create some custom characters to include a fish icon on my status screen, as well as include an *Aquaponics Fish Tank* title. I began this status screen creation with some research on the creation of custom characters, where I found this [Hackster.io](https://www.hackster.io/jacoslabbert99/arduino-lcd-icons-custom-characters-548f38) article to give a good description of the topic. The article is linked to an online [LCD Character Creator](https://maxpromer.github.io/LCD-Character-Creator/), where a GUI is provided that converts a drawn character into the hex codes that can be written to an LCD in code. I used this generator online to create a 2 x 3 character fish and was able to copy the generated characters generated into my LCD code. 
 
-![](../images/week13/generator.png)
+![](../assets/images/AssistiveAquaponics/generator.png)
 
 I began the status screen code in the *Void Loop* function of my code, where I started by including an *Aquaponics Fish Tank* title printed at the top of the display. Following this, I called upon each of my 6 custom characters established earlier in the code, positioning each of them to create a 2 x 3 fish icon on the left side of the screen. The final touch to this first iteration of the status screen would be indicators for Temp, Humidity, and PH, each receiving their line in the interface. In this instance of the status screen, these indicators are just text displayed on a set line of the interface, to the right of the fish icon. All of this left me with the first iteration of the status screen, shown below.
 
-![](../images/week13/datascreentest.jpg)
+![](../assets/images/AssistiveAquaponics/datascreentest.jpg)
   <figcaption>First Itteration of the Aquaponics Fish Tank LCD Statusscreen</figcaption>
 
 I began working from this interface in my [week 14](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week14/) class to include the sensor readings on my interface's status screen, altering the loop to read transmitting nodes via the [software serial](https://www.arduino.cc/en/Reference/softwareSerial) library, and print them to their proper interface positions, removing the setup *Temp =*, *Humidity =*, and *PH =* place holders in the process. 
@@ -594,7 +607,7 @@ The bulk of this communication setup work is discussed on my [week 14](http://fa
 
 <center>
 
-![](../images/week14/ports.png)
+![](../assets/images/AssistiveAquaponics/week14/ports.png)
 
 </center>
 
@@ -606,11 +619,11 @@ I call upon each of these different nodes throughout my mainboard interface code
 
 as in the software serial library can only listen to one transmitting node through one port at a time, and then this data is saved to an incoming string. From here, the data is run through two of my code's parsing *If* statements, to determine whether the board is receiving temperature or humidity data, and the base of this, just as before, will print the read values to my LCD.
 
-![](../images/week14/dht11in.png)
+![](../assets/images/AssistiveAquaponics/dht11in.png)
 
 This same process is repeated in the *Void Loop* function, after the listing of *portDHT*, with *portPH*. This, just like the previous port, saves read data to a string, and then prints the read data to the proper line of the LCD interface, this time without any *If* statement due to the singular reading that will be coming in over this address.
 
-![](../images/week14/phin.png)
+![](../assets/images/AssistiveAquaponics/phin.png)
 
 All of these interface features and functions together left me with an LCD interface code capable of reading from transmitting sensor nodes and printing to the LCD, also including a startup routine with an included interface boot screen, as well as the main status screen with a custom fish icon. This final interface code, with all of these features implemented, is included below.
 
@@ -818,7 +831,7 @@ while(portPH.available()) {
 
 I updated my Fish Bowl mainboard with this final code, and tested the system with my Temp/Humidity sensor board, (shown in the image below), and ... It Worked!
 
-![](../images/week14/fishboardsoftwareserial.jpg)
+![](../assets/images/AssistiveAquaponics/fishboardsoftwareserial.jpg)
   <figcaption>Updated Software Serial Code Running on my System</figcaption>
 
 ### Power Supply & Breakout
@@ -876,7 +889,7 @@ To test this sketch and board, however, I didn't want to wait the 12-hour altern
 
 I uploaded this test code to my power breakout board, connected it to a voltage input, and probed the output terminal block ports with a multimeter, yielding the 5 seconds on 5 seconds off results shown below.
 
-<iframe width="900" height="600" src="https://www.youtube.com/embed/BrxtLnOwK7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/BrxtLnOwK7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 After this successful test, I uploaded the final 12-hour iteration of the code and was then ready to test the breakout in my system, the step where everything when wrong. Although the timing circuit of my power breakout board worked great, the board itself did not. Unfortunately during the design process, I forgot to consider my usage of an inductive load, my water pump. Upon the first bootup of my system with this power breakout board, the circuit worked great, however, after cutting power to the system, my inductive water pump sent a current back into my breakout, destroying the timing circuit of the board. This board design left me facing the problem of always off grow lights after powering the water pump since when power is cut to a motor, like my water pump, the motion doesn't stop, and the excess current generated needs to go somewhere, in my case, my timing circuit. The fix for this use of an inductive load revolves around the use of a flyback diode, a feature I'm familiar with from use on 3D Printers. 
  
@@ -895,7 +908,7 @@ Again, I fabricated this power breakout board, and uploaded my timing sketch to 
 
 I then implemented the power board in my tank's electronics system and booted up the PSU, yielding the results in the video below. All aspects of the electronics system are powered from the breakout, and bootup after multiple power cuts.
 
-<iframe width="900" height="600" src="https://www.youtube.com/embed/PK6Xp42kFps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/PK6Xp42kFps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 ## Tank Structure - CNC Milling & Laser Cutting
 
@@ -903,16 +916,16 @@ The wooden tank structure was my first large physical step towards my final proj
 
 Although I created a model of this wooden structure in Fusion 360 while planning the project, I began the structure creation process by starting to put some thought into the manufacturing processes I would need to take to produce this structure in real life. I settled on milling 6 different pieces to assemble the structure, one back wall, two sides, and 3 stacked pieces to make the base of the structure. I planned on creating these parts based on their corresponding components in my Fusion 360 design. For each of these pieces, I created a new sketch on the face of the profile and used Fusion 360's *Project* tool found under the *Sketch* menu to project all desired lines for each part into one single sketch in the Fusion 360 browser. With all of these lines in one single sketch for each of the 6 different components, I could export each sketch from the Fusion 360 browser onto my computer as a *.dxf* file by right-clicking on the sketch, and then selecting *export as .dxf*.
 
-![](../images/week07/ProjectedSketches.jpg)
+![](../assets/images/AssistiveAquaponics/ProjectedSketches.jpg)
   <figcaption>Fusion Model with Projected Sketches for Each Component</figcaption>
 
 ### Aspire Work & Structure Milling
 
 To generated the toolpaths I would later run on a CNC machine from my altered *.svg* files, I used Vectric CNC's [Aspire](https://www.vectric.com/products/aspire) CAM software. I firstly created a new file in Aspire, where I was prompted to set a workplane size. The workplane of the [ShopBot PRSalpha](https://www.shopbottools.com/products/alpha), the CNC I would be milling on, was 96" x 48", and my material height was 0.776", so I entered these value in the prompt accordingly. I then imported each of my *.svg* files into Aspire, nesting the files as I imported to reduce waste stock material. I spent a little more time with all of my files imported messing with the part orientation to ensure that there would be little stock material waste between my parts. In the assembly of my design, I planned to use milled tabs to align the back piece to the structure's two sidewalls and created this feature in my design. I then switched over to Aspires *3D View* by clicking on the tab labeled *3D View* at the top of the interface's workspace. Here I could start working on generating the different toolpaths for my parts. Throughout this process, I referenced my original Fusion 360 design to determine which sections of each of my files would require different toolpath operations. The first toolpath operation I generated was a Boreing operation that would boreholes for alignment dowels in the base of my structure. This operation was especially needed in my operation as I was not planning on switching to a drill bit anytime throughout the milling process, and this boreing operation allows me to mill these holes with an endmill instead. Nextly I generated Profile toolpaths for all of my parts, outlining each of my files, and cutting them out. I selected all intended profile cuts for each of my files and set the depth of each of these profile cuts to 0.776", the thickness of my stock material. This cut depth would ensure all of my profile cuts would go all the way through the material. Nextly I selected a *.25 Endmill* bit for both my profile and boreing operations, as this was the endmill I was planning on using. To prevent the movement of each of these parts after the profile cut completes, I added tabs to the toolpath under the *Edit Tabs* section of the toolpaths settings. These "Tabs" leave a small bit of stock material connecting the profile to the rest of the stock and holding their position. I found adding 3 to 4 tabs per profile, depending on size and shape, worked best to hold my parts in place. The final tool paths I generated were pocket cuts. These toolpaths remove material to add depth to some of my parts. These pockets were relatively straightforward, as they didn't require any added tabs because they cont cut through the material, however, I used a different, larger, bit size for these pockets to speed up milling time, so I was required to change that. Finally, before exporting any of these toolpaths, I went back through and turned on "Ramping" for each operation. This setting diagonally moves the Endmill bit, as opposed to vertical plunges and then horizontal movement, allowing the side of the endmill to cut material as intended. I saved all of these toolpaths from Aspire through the *Save Toolpath* menu. Each of these toolpaths was saved under the Shopbot format, *.sbp*, and grouped based on the bit used. This left me with 3 different *.sbp* files for each a 1/8", 1/4", and 1/2" bit.
 
-![](../images/week07/Aspire.png)
+![](../assets/images/AssistiveAquaponics/Aspire.png)
 
-![](../images/week07/UsingShopbot.jpg){: align=left }
+![](../assets/images/AssistiveAquaponics/UsingShopbot.jpg){: align=left }
 
 I began by prepping my machine with the proper bit and mounted my stock to the machine's bed. My classmate [Graham Smith](http://fabacademy.org/2021/labs/charlotte/students/graham-smith/) and I did all of our millings this week together as the operation of a machine on this scale can be unsafe if the right precautions are not taken, or if operated alone. I loaded my first tool path, my 1/2" pocket operation, into the [Shopbot Command Console](https://www.shopbottools.com/support/control-software) through the *Load File* menu under the *File* tab. I selected my *.sbp* toolpath, and under the pop-up menu, selected *3D Offset* as the operations offset, and then proceeded to click enter to start the cut. This "3D Offset" allows for me to complete an "Air Cut" of my file, where the tool doesn't engage with my stock material but just runs above it. I ran this Air Cut to ensure my part placement fit with the side of the machine's workspace limits, and also didn't run into any screws. This test of cutting air was successful, so I was ready to move onto the real milling operation. I loaded the file into [Shopbot Command Console](https://www.shopbottools.com/support/control-software) following the same steps taken previously, but this time I left the offset dropdown set to the default *No Offset* as opposed to *3D offset*, so the machine would run another air cut. Before running this operation, I ensured the dust collection was turned on, and then clicked the *enter* key to start the operation.
 
@@ -920,8 +933,8 @@ The assembly and post-processing work on this wooden tank structure is well docu
 
 <center>
 
-![](../images/week07/Final1.jpg)
-![](../images/week07/Final2.jpg)
+![](../assets/images/AssistiveAquaponics/Final1.jpg)
+![](../assets/images/AssistiveAquaponics/Final2.jpg)
 
   <figcaption>Final Shots of Sanded Fish Tank Structure</figcaption>
 
@@ -954,7 +967,7 @@ I then followed the same approach taken to remove material for my mains AC adapt
 
 To cover up this newly carved electronics clearance hole, and also complete the side symmetry of my plywood structure, my next step was to laser cut my tank structure's front plate. I began this plate in Fusion 360, as even in 2d design, I find myself most conferrable when using Fusion 360's constraints and sketch interface. I mocked this plate up to hold my system's LCD and a light power switch over the physical cut clearance hole and then added in some icons to the plate, including a *TW* logo, as well as a *light on* and *light off* icon.
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968c8a65966440fc191?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968c8a65966440fc191?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 I saved this Fusion 360 sketch as a *.dxf* and imported the file into CorelDRAW, where I could then, following the same process I took in [week 3](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week03/), could run this file on our lab's Fusion Pro 48 laser cutter. I ran this plate of a sheet of 1/4" plywood, a sheet with matching veneer to that of my plywood structure, allowing the front plate to blend in with the rest of the structure. I wanted to reduce as much laser residue and char on this piece as possible, so I weighted this piece down to the bed of the laser before focusing on the laser, and starting the job. To get a minimal amount of char took a couple of different attempts, but eventually, I was left with the product below ...
 
@@ -982,7 +995,7 @@ Being the real centerpiece of my Aquaponics Fish Tank project, the fish tank its
 
 I exported this Inkscape design as an SVG file, and then opened the file into CorelDRAW, and following the workflow for laser cutting I used in my [week 3](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week03/) class, I ran this tank file on a sheet of 1/4" clear acrylic on our lab's Fusion Pro 48 laser cutter.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/jMZu8fX5GOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/jMZu8fX5GOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 This job left me with the 5 panels of my tank, ready to assemble
 
@@ -1020,7 +1033,7 @@ Following the acrylic fish tank, the *aqua* part of the aquaponics system, it wa
 
 With the manufacturing process in mind, I began work on the plant box's CAD in Fusion 360. The CAD for this part is pretty complex, including not just water routing from a connection port on the bottom of the part, but also a water directing reflow system, and cable management with board mounts incorporated in the design. The part is split into four separate sections, to allow for optimal print orientation on my printer's bed. These four pieces align with three mounting alignment holes for embedded M3 nuts and bolts, and these same alignment screws are used to secure the four sections together.
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968a4933548ed23ebbd?mode=embed" width="900" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968a4933548ed23ebbd?mode=embed" width="900" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
   <figcaption>Final Plant Box Itteration in Fusion 360</figcaption>
 
@@ -1040,7 +1053,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d51722d9162f0667?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d51722d9162f0667?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/BoardMountTop.jpg)
 ![](../assets/images/AssistiveAquaponics/BoardMountSide.jpg)
@@ -1052,7 +1065,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968aa89914e1b566910?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968aa89914e1b566910?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/CableClip.jpg)
   <figcaption>12x Jumper Mount On Jumper Cables</figcaption>
@@ -1063,7 +1076,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d355621962c0c91a?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d355621962c0c91a?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/PSUMounts.jpg)
   <figcaption>Power Supply Mounting Brackets After Cleanup</figcaption>
@@ -1077,7 +1090,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968be6b7f066cc0cd5c?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968be6b7f066cc0cd5c?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/backgrommet.jpg)
   <figcaption>Back Wire Grommet After Cleanup</figcaption>
@@ -1091,7 +1104,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd9688419ecdc5dcb1d95?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd9688419ecdc5dcb1d95?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/PSUcover.jpg)
   <figcaption>PSU Terminal Cover Plate After Cleanup</figcaption>
@@ -1105,7 +1118,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968a55c6ebcdb28958d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968a55c6ebcdb28958d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/powerbreakouttop.jpg)
 ![](../assets/images/AssistiveAquaponics/powerbreakoutside.jpg)
@@ -1117,7 +1130,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968eaf997ed577288df?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968eaf997ed577288df?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/pHboardmount.jpg)
   <figcaption>pH electrical Isolation Board Mounted on Board Mount</figcaption>
@@ -1128,7 +1141,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968b18baf24f2649273?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968b18baf24f2649273?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/pHbracket.jpg)
   <figcaption>Assembled pH Probe Mount After Cleanup</figcaption>
@@ -1139,7 +1152,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968feb24eaf5dc2f362?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968feb24eaf5dc2f362?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ![](../assets/images/AssistiveAquaponics/cableclipmounted.jpg)
   <figcaption>Cable Bundle Clip Mounted to Back of Tank Structure</figcaption>
@@ -1258,7 +1271,7 @@ Although I had wired all of my connections with mounted boards in my electronics
 
 ... and, with all this assembly & integration work done, it was time for final testing. Below is a successful demonstration of my tank's electronics system. Just a note, in this video, my tank's pump is disconnected, because it's never good to run a water pump outside of water. Instead of leaving this pump connected during the testing of the electronics system, I tested the voltage and current from the pump cables run under the plant box.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/aCb7Cp4qs18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/aCb7Cp4qs18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 Finally, came the water test. Despite the number of water tests I had done with the subsystems before, and the proof of their watertight features, this test was damn stressful leading up to it, due to the inclusion of all my electronics in my system on this test. I prepared a spot outside where I could test my tank, and then began preparing the tank, first by filling the plant box with my LECA grow medium ...
 
@@ -1266,11 +1279,11 @@ Finally, came the water test. Despite the number of water tests I had done with 
 
 ... and next, by filling the tank itself. I did this with the help of a couple of my fab groupmates and was able to use a spare water pump and some excess silicone tubing to pump water into my fish tank, without concern of spilling around the base of the tank, where its electronics are located.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/_RH-z7r-aJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/_RH-z7r-aJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 Unsurprisingly, but to my relief, the filling of the tank went smoothly, and there was absolutely no spillage/leakes anywhere in the whole system, leaving me with the last remaining tank ... turning it on.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/k-yAUQGVHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/k-yAUQGVHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 it worked!, upon bootup, water begins flowing through the system, and draining out through the plant boxes draining feature, at the same time as the electronics system is taking measurements from the system and displaying it all of the tanks embedded front LCD. 
 
