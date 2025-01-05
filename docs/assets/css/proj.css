@@ -52,10 +52,6 @@
   color: var(--md-default-fg-color);  
 }
 
-.toggle .logo {
-  display: none;
-}
-
 .toggle .socialsparent {
   display: none;
 }
@@ -66,10 +62,6 @@
 
 .toggle .close {
   display: flex;
-}
-
-.toggle header {
-  padding-top: 12.174em;
 }
 
 .toggle .menu {
@@ -560,9 +552,6 @@
 }
 
 @media screen and (min-width: 2000px) { /* Desktop */
-  .toggle header {
-    padding-top: 11.25em;
-  }
   :root {
     --font-size: 1em;
   }
@@ -600,12 +589,6 @@
   }
   .laphide {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .toggle header {
-    padding-top: 11.66em;
   }
 }
 
@@ -685,9 +668,6 @@
   }
   .content8 {
     top: calc(var(--content1-height) + var(--content6-height) + 25em);
-  }
-  .toggle header {
-    padding-top: 6em;
   }
 }
 
