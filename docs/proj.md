@@ -81,6 +81,18 @@ search:
           </a>
         </div>
         <hr/>
+        <!--<div class="writparent">
+          <a target=”_blank” href="https://tawarner.webdev.iyaserver.com/acad276/VenueDB/docs/index.php">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/index/venuedb.png" alt="VenueDB project hero image"></div>
+            <p class="projtitle">VenueDB</p>
+            <p class="writeyear">Fall 2024</p>
+            <span class="mobileyear">
+            <p class="readtime">1-2 mins</p>
+            </span>
+            <p class="projdescription">A collection of all the best venues I've come across in and around USC, filterable by event type and number of people.</p>
+          </a>
+        </div>
+        <hr/>-->
         <div class="writparent">
           <a target=”_blank” href="https://tone.computer/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/toneSmall.png" alt="Tone project preview image"></div>

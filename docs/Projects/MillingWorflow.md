@@ -917,37 +917,42 @@ Feeds and speeds are equally dependent on material properties and the specific o
   <hr></hr>
 </div>
 
-## Fusion 360 CAM
+## Microprojects
 
-[Fusion 360 Manufacturing Overview](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-BEC5DEA9-AC3E-4FA8-998E-4AE8CD0D0B1E)
+An addendum - Jan 2025.
 
-[Fusion 360 & Bantam Milling](https://support.bantamtools.com/hc/en-us/articles/115001671574-Fusion-360)
+When I set out to write this piece a few years ago, I had the somewhat lofty intention of doccumenting as many different CAD/CAM softwares as I could, providing comprehensive walkthroughs for their usage. By the time I finished assembling and testing the above [Material Reference](#material-reference) section (believe me when I say this was a lift), I was quite burnt out of this endevour, and so this article just sat, unfinished on this site for a few years.
 
-[Fusion 360 Bantam Tool Library](https://support.bantamtools.com/hc/article_attachments/115002419813/Bantam%20Tools%20Tool%20Library%200.3.zip)
+In hopes of providing a slightly better "conclusion" to this piece, I've appended a gallary of project media below, all of which was machined with settings from the above [Feeds & Speeds Calcuator](#feeds--speeds-calculator). Enjoy!
 
 ### Gale Crater Mill
 
 <center>
   <iframe width="98%" height="550" src="https://www.youtube.com/embed/coUpBlCA4uU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <figcaption>Scanning the profile of my cedar stock</figcaption>
 </center>
 
 <center>
   <iframe width="98%" height="550" src="https://www.youtube.com/embed/yV5A9La4UWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <figcaption>and processing this scan on Inkscape</figcaption>
 </center>
 
 <center>
   <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53932259b2d8b04934a?mode=embed" width="98%" height="550" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+  <figcaption>Gale Crater model on Fusion 360</figcaption>
 </center>
 
 <center>
  <div style="width: 98%; height: 550; margin: 10px;">
   <iframe width="49%" height="550" align="left" src="https://www.youtube.com/embed/KlI0BbFsN2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="49%" height="550" align="right" src="https://www.youtube.com/embed/8p87vys_IMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </div>
+   <figcaption>Milling on the Shopbot Desktop MAX</figcaption>
 </center>
 
 <center>
 
 ![](../assets/images/MillingWorkflow/galeraw.jpg){width="98%"}
+   <figcaption>... and the results</figcaption>
 
 </center>
 
@@ -955,58 +960,22 @@ Feeds and speeds are equally dependent on material properties and the specific o
 
 ![](../assets/images/MillingWorkflow/galeglory1.jpg){width="49%"}
 ![](../assets/images/MillingWorkflow/galeglory2.jpg){width="49%"}
+   <figcaption>Final Gale Crater Mill after finishing</figcaption>
 
 </center>
-
-<!---  ### Flat-Pack Furniture
-
-<center>
-  <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53939dacd8c9526c3f3?mode=embed" width="98%" height="550" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-</center>
-
-<center>
-  <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c539b2e9f6750ceba03a?mode=embed" width="98%" height="550" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-</center> -->
-
-<!--- ### Wax Seal Stamp -->
-
-
-<!--- ### Chocolate Molding -->
-
-
-## Vectric Aspire
-
-[VCarve & Bantam Milling](https://support.bantamtools.com/hc/en-us/articles/115001668333-VCarve)
-
-[Bantam Post-processer for Vectric Aspire](https://support.bantamtools.com/hc/en-us/article_attachments/115002242053/Othermill_tinyG_mm.pp.zip )
 
 ### Topography Paper Weight
 
 <center>
 
-[Terrain2STL :fontawesome-solid-earth-americas:](https://jthatch.com/Terrain2STL/){ .md-button .md-button--primary}
-
-</center>
-
-<center>
-
-![](../assets/images/MillingWorkflow/topographylocation.jpg){width="55%"}
-  <figcaption>Caption</figcaption>
-
-</center>
-
-<center>
-
 ![](../assets/images/MillingWorkflow/Topographyselection.jpg){width="100%"}
-  <figcaption>Caption</figcaption>
+  <figcaption>Using <a href="https://jthatch.com/Terrain2STL/">Terrain2STL</a> to generate the topography</figcaption>
 
 </center>
 
 <center>
-
-![](../assets/images/MillingWorkflow/topographywaterbase.jpg){width="55%"}
-  <figcaption>Caption</figcaption>
-
+  <iframe width="98%" height="550" align="left" src="https://www.youtube.com/embed/U-eiMsjUyIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <figcaption>Milling on the Bantam Tools Desktop CNC Milling Machine</figcaption>
 </center>
 
 <center>
@@ -1014,44 +983,48 @@ Feeds and speeds are equally dependent on material properties and the specific o
 ![](../assets/images/MillingWorkflow/tahoestock.jpg){width="33%"}
 ![](../assets/images/MillingWorkflow/tahoeroughingpass.jpg){width="33%"}
 ![](../assets/images/MillingWorkflow/tahoefinishingpass.jpg){width="33%"}
+   <figcaption>Some more milling media</figcaption>
 
 </center>
-
-<center>
-  <iframe width="98%" height="550" align="left" src="https://www.youtube.com/embed/U-eiMsjUyIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-
 
 <center>
  <div style="width: 98%; height: 550; margin: 0px;">
   <iframe width="49%" height="550" align="left" src="https://www.youtube.com/embed/-axCvptGYzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="49%" height="550" align="right" src="https://www.youtube.com/embed/ofZhTsMJd7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </div>
+<figcaption>and some more milling media</figcaption>
 </center>
-
-
 
 <center>
 
 ![](../assets/images/MillingWorkflow/tahoeglory1.jpg){width="49%"}
 ![](../assets/images/MillingWorkflow/tahoeglory2.jpg){width="49%"}
+   <figcaption>... and the results</figcaption>
 
 </center>
 
-<!--- ### Flat-Pack Stools -->
+### Flat-Pack Stool
 
-
-<!--- ## Bantam Tools CNC Software
+<center>
+  <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53939dacd8c9526c3f3?mode=embed" width="98%" height="550" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+   <figcaption>Flat-Pack Stool model in Fusion 360</figcaption>
+</center>
 
 <center>
 
-![](../assets/images/MillingWorkflow/EagleBanner.png){width="100%"}
+![](../assets/images/MillingWorkflow/cncnostool.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/cncyesstool.jpg){width="49%"}
+   <figcaption>Milling in progress</figcaption>
 
 </center>
 
-### PCB Badge
+<center>
 
-Inkscape to Eagle -->
+![](../assets/images/MillingWorkflow/stool1.jpg){width="32%"}
+![](../assets/images/MillingWorkflow/stool2.jpg){width="32%"}
+![](../assets/images/MillingWorkflow/stool3.jpg){width="32%"}
+   <figcaption>... and the results</figcaption>
+
+</center>
 
 [^1]: https://www.cnccookbook.com/machining-carbon-fiber-composites-drilling-cnc-tools/
 [^2]: https://dragonplate.com/how-to-cut-carbon-fiber
