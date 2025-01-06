@@ -68,7 +68,7 @@ template: comments.html
 # Impetus
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt"><span class="year">| 2024-2025 </span>| <span class="readTime"><i class="far fa-clock"></i> X-X minutes</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt"><span class="year">| 2024-2025 </span>| <span class="readTime"><i class="far fa-clock"></i> 26-33 minutes</span></span></span></span>
 </div>
 
 ---
@@ -664,10 +664,6 @@ Future work should expand beyond fMRI to incorporate the full spectrum of physio
 ## Reinforcement Gymnasium
 
 ![Static Badge](https://img.shields.io/badge/Build-Pending_Completion-orange)
-
-!!! abstract "Github"
-
-    All the code and full replication instructions may be found in the Reinforcement Gymnasium repository: [https://github.com/Twarner491/Impetus](https://github.com/Twarner491/Impetus)<br><br>**Please note that this repo is in devolopment and may contain faulty code for the time being.* Feel free to reach out over [email](mailto:twarner491@gmail.com) or drop a comment at the bottom of this page and I'd be happy to assemble the last working repo for you. 
 
 [^1]: https://runwayml.com/research/introducing-general-world-models 
 [^2]: https://worldmodels.github.io/ 
