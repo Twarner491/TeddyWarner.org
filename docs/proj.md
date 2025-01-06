@@ -69,7 +69,7 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <div class="writparent">
+        <!--<div class="writparent">
           <a href="https://teddywarner.org/Projects/LearnedSpectrum/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/learnedspec/hero.png" alt="Learned Spectrum project hero image"></div>
             <p class="projtitle">Learned Spectrum</p>
@@ -81,7 +81,7 @@ search:
           </a>
         </div>
         <hr/>
-        <!--<div class="writparent">
+        <div class="writparent">
           <a target=”_blank” href="https://tawarner.webdev.iyaserver.com/acad276/VenueDB/docs/index.php">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/venuedb.png" alt="VenueDB project hero image"></div>
             <p class="projtitle">VenueDB</p>
