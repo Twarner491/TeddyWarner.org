@@ -69,18 +69,7 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <!--<div class="writparent">
-          <a href="https://teddywarner.org/Projects/LearnedSpectrum/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedspec/hero.png" alt="Learned Spectrum project hero image"></div>
-            <p class="projtitle">Learned Spectrum</p>
-            <p class="writeyear">Fall-Winter 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">23-29 mins</p>
-            </span>
-            <p class="projdescription">Towards temporal understanding in artifical intellegence through fMRI learning stage classification.</p>
-          </a>
-        </div>
-        <hr/>
+        <!--
         <div class="writparent">
           <a target=”_blank” href="https://tawarner.webdev.iyaserver.com/acad276/VenueDB/docs/index.php">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/venuedb.png" alt="VenueDB project hero image"></div>
