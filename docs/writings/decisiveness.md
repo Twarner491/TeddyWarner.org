@@ -23,7 +23,7 @@ template: comments.html
   <meta property="og:url" content="https://teddywarner.org/writings/decisiveness/">
   <meta property="og:title" content="Ex Nihilo Nihil Fit - Teddy Warner">
   <meta property="og:description" content="Nothing comes out of nothing. Some thoughts on decisiveness.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/force/force.png">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/decisiveness/decisiveness.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@ template: comments.html
   <meta property="twitter:url" content="https://teddywarner.org/writings/decisiveness/">
   <meta property="twitter:title" content="Ex Nihilo Nihil Fit - Teddy Warner">
   <meta property="twitter:description" content="Nothing comes out of nothing. Some thoughts on decisiveness.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/force/force.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/decisiveness/decisiveness.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>

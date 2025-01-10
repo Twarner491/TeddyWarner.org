@@ -69,6 +69,18 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
+        <div class="writparent">
+          <a href="https://teddywarner.org/Projects/Impetus">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedspec/hero.png" alt="Impetus project hero image"></div>
+            <p class="projtitle">Impetus</p>
+            <p class="writeyear">2024-2025</p>
+            <span class="mobileyear">
+            <p class="readtime">26-33 mins</p>
+            </span>
+            <p class="projdescription">Giving agents a temporal understanding through human physiological data.</p>
+          </a>
+        </div>
+        <hr/>
         <!--
         <div class="writparent">
           <a target=”_blank” href="https://tawarner.webdev.iyaserver.com/acad276/VenueDB/docs/index.php">
