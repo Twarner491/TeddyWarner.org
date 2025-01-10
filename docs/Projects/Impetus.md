@@ -148,12 +148,16 @@ So what would such a venture look like? Well, there are a few assumptions for us
 
 1. As our context window approaches the total size of the internet, the bottleneck will no longer be compute, but rather data. At the last [NeurIPS](https://neurips.cc/), [Ilya Sutskever](https://x.com/ilyasut) notes that data is "the fossil fuel of AI".
 
-    <center>
-    <br>
-    <span class="lighttweet"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yall heard it from the man himself <a href="https://t.co/Pie7QLCjA7">pic.twitter.com/Pie7QLCjA7</a></p>&mdash; Jason Wei (@_jasonwei) <a href="https://twitter.com/_jasonwei/status/1867696401830096970?ref_src=twsrc%5Etfw">December 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
-    <span class="darktweet"><blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Yall heard it from the man himself <a href="https://t.co/Pie7QLCjA7">pic.twitter.com/Pie7QLCjA7</a></p>&mdash; Jason Wei (@_jasonwei) <a href="https://twitter.com/_jasonwei/status/1867696401830096970?ref_src=twsrc%5Etfw">December 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
-    <br>
-    </center>
+<center>
+  <br>
+  <div class="tweet-container">
+    <div class="tweet-item single">
+      <span class="lighttweet"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yall heard it from the man himself <a href="https://t.co/Pie7QLCjA7">pic.twitter.com/Pie7QLCjA7</a></p>&mdash; Jason Wei (@_jasonwei) <a href="https://twitter.com/_jasonwei/status/1867696401830096970?ref_src=twsrc%5Etfw">December 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+      <span class="darktweet"><blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Yall heard it from the man himself <a href="https://t.co/Pie7QLCjA7">pic.twitter.com/Pie7QLCjA7</a></p>&mdash; Jason Wei (@_jasonwei) <a href="https://twitter.com/_jasonwei/status/1867696401830096970?ref_src=twsrc%5Etfw">December 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+    </div>
+  </div>
+  <br>
+</center>
 
 2. World models are expanding in prominence amongst academics and top research labs.
 

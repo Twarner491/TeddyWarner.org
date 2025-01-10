@@ -15,3 +15,47 @@
 .darktweet {
   display: var(--darkdisplaystyle);
 }
+
+.tweet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tweet-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  margin: 0 0.5%;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.tweet-item.single {
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tweet-item iframe {
+  border-radius: 13px !important;
+}
+
+[data-md-color-scheme="slate"] .tweet-item * {
+  background: none !important;
+}
+
+@media (max-width: 860px) {
+  .tweet-container {
+    white-space: normal;
+    padding: 0 20px;
+  }
+  
+  .tweet-item {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 20px auto;
+  }
+}
