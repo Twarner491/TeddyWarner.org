@@ -70,7 +70,7 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/Impetus">
+          <a href="https://teddywarner.org/Projects/Intempus">
             <div class="imgparent"><img class="writeimg" src="../assets/images/learnedspec/hero.png" alt="Impetus project hero image"></div>
             <p class="projtitle">Intempus</p>
             <p class="writeyear">2024-2025</p>
