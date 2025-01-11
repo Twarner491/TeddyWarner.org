@@ -72,7 +72,7 @@ search:
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/Impetus">
             <div class="imgparent"><img class="writeimg" src="../assets/images/learnedspec/hero.png" alt="Impetus project hero image"></div>
-            <p class="projtitle">Impetus</p>
+            <p class="projtitle">Intempus</p>
             <p class="writeyear">2024-2025</p>
             <span class="mobileyear">
             <p class="readtime">26-33 mins</p>
