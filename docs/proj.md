@@ -70,8 +70,8 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
-          <a href="https://teddywarner.org/Projects/Intempus">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedspec/hero.png" alt="Impetus project hero image"></div>
+          <a href="https://intempus.org/">
+            <div class="imgparent"><img class="writeimg" src="https://intempus.org/assets/images/hero.png" alt="Impetus project hero image"></div>
             <p class="projtitle">Intempus</p>
             <p class="writeyear">2024-2025</p>
             <span class="mobileyear">
@@ -257,7 +257,7 @@ search:
           </a>
         </div>
         <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
-          <p class="copyright">Copyright © 2024 Teddy Warner</p>
+          <p class="copyright">Copyright © 2025 Teddy Warner</p>
         </a>
     </section>
     <h1 style="display:none;">Project Portfolio - Digital Fabrication & Engineering Projects</h1>

@@ -160,7 +160,7 @@ search:
           </a>
         </div>
         <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
-          <p class="copyright">Copyright © 2024 Teddy Warner</p>
+          <p class="copyright">Copyright © 2025 Teddy Warner</p>
         </a>
     </section>
     <h1 style="display:none;">Writing Portfolio - Engineering Essays & Technical Documentation</h1>
