@@ -172,6 +172,9 @@ search:
     <section class="experience">
       <div class="content3">
         <h2>What I’ve Been Up To</h2>
+        <a target=”_blank” href="https://intempus.org">
+          <img class="companylogo" src="https://intempus.org/assets/images/favicon.png" alt="Intempus logo"><p class="company">Intempus</p></a><p class="role">Founder</p><p class="year"><span class="mobileyear">Sept 2024 - </span>Present</p>
+        <hr/>
         <a target=”_blank” href="https://www.midjourney.com/home">
           <img class="companylogo" src="assets/images/index/logos/mj.png" alt="Midjourney logo"><p class="company">Midjourney</p></a><p class="role">Hardware</p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Aug 2024</span></p>
         <hr/>
