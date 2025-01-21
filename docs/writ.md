@@ -70,6 +70,18 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/decisiveness">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/decisiveness/decisiveness.png" alt="Ex Nihilo Nihil Fit article cover image"></div>
+            <p class="projtitle">Ex Nihilo Nihil Fit</p>
+            <p class="writeyear">Jan 2025</p>
+            <span class="mobileyear">
+            <p class="readtime">X-X mins</p>
+            </span>
+            <p class="projdescription">Nothing comes out of nothing. Some thoughts on decisiveness.</p>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/efd">
             <div class="imgparent"><img class="writeimg" src="../assets/images/efd/efd.png" alt="The Emotion/Feeling Discontinuity article cover image"></div>
             <p class="projtitle">The Emotion/Feeling Discontinuity</p>
