@@ -196,9 +196,9 @@ search:
     <section class="about">
       <div class="content4">
         <h2>About</h2>
-        <p class="abt1">I’m an engineer & designer specialized in rapid prototyping and PCB dev. I’m currently based in LA, building in the applied AI space.</p>
-        <p class="abt2">I'm a student at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> studying engineering, design, and venture management, and a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
-        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:tawarner@usc.edu">tawarner@usc.edu</a>.</p>
+        <p class="abt1">I’m an engineer specialized in rapid prototyping and applied AI. I’m currently based in San Francisco, devoloping foundational <a target=”_blank” href="https://intempus.org">world models</a>.</p>
+        <p class="abt2">I studied at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> focused on engineering, design, and venture management, and I'm a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
+        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:teddy@intempus.org">teddy@intempus.org</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
