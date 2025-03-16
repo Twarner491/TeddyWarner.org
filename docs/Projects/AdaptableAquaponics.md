@@ -5,13 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - Software
-  - CAD
-  - Fusion 360
-  - Inkscape
-  - 3D Printing
-  - Laser Cutting
 ---
 
 <head>

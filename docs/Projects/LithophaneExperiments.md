@@ -5,9 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - CAD
-  - 3D Printing
 ---
 
 <head>

@@ -5,10 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - Electronics
-  - Computer
-  - Breadboard
 ---
 
 <head>

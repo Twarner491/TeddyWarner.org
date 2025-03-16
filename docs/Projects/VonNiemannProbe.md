@@ -5,20 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - Software
-  - CAD
-  - Fusion 360
-  - Inkscape
-  - Autodesk Eagle
-  - CNC
-  - 3D Printing
-  - PCB
-  - Laser Cutting
-  - Microcontroller
-  - Python
-  - C++
-  - Programming
 ---
 
 <head>

@@ -5,14 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - CAD
-  - CAM
-  - Software
-  - Fusion 360
-  - Aspire
-  - CNC
-  - Bantam
 ---
 
 <head>

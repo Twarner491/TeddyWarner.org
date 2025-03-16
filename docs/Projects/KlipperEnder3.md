@@ -5,11 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - Software
-  - Electronics
-  - 3D Printing
-  - Raspberry Pi
 ---
 
 <head>

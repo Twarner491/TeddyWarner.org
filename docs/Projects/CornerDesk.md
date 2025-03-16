@@ -5,10 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - CAD
-  - Fusion 360
-  - Hand Tools
 ---
 
 <head>

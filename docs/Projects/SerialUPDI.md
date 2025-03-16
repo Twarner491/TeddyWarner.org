@@ -5,13 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - Software
-  - CAD
-  - Autodesk Eagle
-  - PCB
-  - AVR
-  - Microcontroller
 ---
 
 <head>

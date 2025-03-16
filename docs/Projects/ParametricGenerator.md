@@ -5,11 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - CAD
-  - Fusion 360
-  - Parametric
-  - 3D Printing
 ---
 
 <head>

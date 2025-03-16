@@ -5,14 +5,6 @@ hide:
   - navigation
   - tags
 template: comments.html
-tags:
-  - Software
-  - HTML
-  - CSS
-  - Javascript
-  - Markdown
-  - GitHub Actions
-  - Git
 ---
 
 <head>
