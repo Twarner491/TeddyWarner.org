@@ -163,7 +163,7 @@ search:
         </div>
         <div class="socialpar">
           <a target=”_blank” href="https://x.com/WarnerTeddy">
-            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-x-twitter"></i>
           </a>
         </div>
         <div class="socialpar">

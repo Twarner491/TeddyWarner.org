@@ -69,9 +69,21 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
+        <!--<div class="writparent">
+          <a href="https://teddywarner.org/Projects/pi0/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/pi0/arms.png" alt="pi0 project hero image"></div>
+            <p class="projtitle">Zero-Shot Prompt to Action</p>
+            <p class="writeyear">Spring 2025</p>
+            <span class="mobileyear">
+            <p class="readtime">X-X mins</p>
+            </span>
+            <p class="projdescription">Zero-shot prompt to action on a $160 3D printed robotic arm with π₀.</p>
+          </a>
+        </div>
+        <hr/>-->
         <div class="writparent">
-          <a href="https://intempus.org/">
-            <div class="imgparent"><img class="writeimg" src="https://intempus.org/assets/images/hero.png" alt="Impetus project hero image"></div>
+          <a href="https://intempus.org/research">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedSpec/thumb.jpg" alt="Impetus project hero image"></div>
             <p class="projtitle">Intempus</p>
             <p class="writeyear">2024-2025</p>
             <span class="mobileyear">
@@ -81,19 +93,18 @@ search:
           </a>
         </div>
         <hr/>
-        <!--
-        <div class="writparent">
-          <a target=”_blank” href="https://tawarner.webdev.iyaserver.com/acad276/VenueDB/docs/index.php">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/venuedb.png" alt="VenueDB project hero image"></div>
-            <p class="projtitle">VenueDB</p>
-            <p class="writeyear">Fall 2024</p>
+          <div class="writparent">
+          <a href="https://teddywarner.org/Projects/LearnedSpectrum/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedSpec/fig2.png" alt="Learned Spectrum project hero image"></div>
+            <p class="projtitle">Learned Spectrum
+            <p class="writeyear">Fall-Winter 2025</p>
             <span class="mobileyear">
-            <p class="readtime">1-2 mins</p>
+            <p class="readtime">18–22 mins</p>
             </span>
-            <p class="projdescription">A collection of all the best venues I've come across in and around USC, filterable by event type and number of people.</p>
+            <p class="projdescription">Towards temporal understanding in AI through fMRI learning stage classification.</p>
           </a>
         </div>
-        <hr/>-->
+        <hr/>
         <div class="writparent">
           <a target=”_blank” href="https://tone.computer/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/index/toneSmall.png" alt="Tone project preview image"></div>
@@ -108,7 +119,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/VonNiemannProbe/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/VonNiemannProbe/vonNiemannHero.png" alt="Von Niemann Probe project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/VonNiemannProbe/thumb.jpg" alt="Von Niemann Probe project hero image"></div>
             <p class="projtitle">Von Niemann Probe</p>
             <p class="writeyear">Winter 2023</p>
             <span class="mobileyear">
@@ -120,13 +131,25 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/MillingWorflow/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/MillingWorkflow/hero.png" alt="CNC Milling Workflows project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/MillingWorkflow/thumb.jpg" alt="CNC Milling Workflows project hero image"></div>
             <p class="projtitle">CNC Milling Workflows</p>
             <p class="writeyear">2022-2023</p>
             <span class="mobileyear">
             <p class="readtime">12-15 mins</p>
             </span>
             <p class="projdescription">A guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with Autodesk Fusion 360 & Vetric Aspire, and milling workflows for Shopbot & Bantam Tools machines<span class="laphide"> - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals</span>.</p>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
+          <a href="https://teddywarner.org/Projects/PizzaPizza/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/pizza/thumb.png" alt="Pizza Pizza CNC Machine project hero image"></div>
+            <p class="projtitle">Pizza-Pizza CNC Machine</p>
+            <p class="writeyear">Winter 2022</p>
+            <span class="mobileyear">
+            <p class="readtime">38–48 mins</p>
+            </span>
+            <p class="projdescription">A pizza-preparing, tool-changing, 3-axis, 3D-printed CNC machine!</p>
           </a>
         </div>
         <hr/>
@@ -138,7 +161,7 @@ search:
             <span class="mobileyear">
             <p class="readtime">18-23 mins</p>
             </span>
-            <p class="projdescription">A Theoretical Confrontation to Contemporary Farming Challenges. Adaptive Aquaponics is the scaled successor to my Assistive Aquaponics Fish Tank & my entry into Autodesk Instructable's Make It Modular student design scholarship.</p>
+            <p class="projdescription">A theoretical confrontation to contemporary farming challenges. Adaptive Aquaponics is the scaled successor to my Assistive Aquaponics Fish Tank & my entry into Autodesk Instructable's Make It Modular student design scholarship.</p>
           </a>
         </div>
         <hr/>
@@ -180,19 +203,19 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/Octoprint/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/Octoprint/hero.png" alt="Octoprint Setup project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg" alt="Octoprint Setup project hero image"></div>
             <p class="projtitle">Octoprint Setup</p>
             <p class="writeyear">Fall 2021</p>
             <span class="mobileyear">
             <p class="readtime">9-11 mins</p>
             </span>
-            <p class="projdescription">Complete Octoprint Setup Documentation, including hardware setup, software installation, machine mounting, and a list of great plugins to expand Octoprint's capabilities.</p>
+            <p class="projdescription">Complete Octoprint setup documentation, including hardware setup, software installation, machine mounting, and a list of great plugins to expand Octoprint's capabilities.</p>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/AssistiveAquaponics/hero.png" alt="Assistive Aquaponics Fish Tank project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/AssistiveAquaponics/presentation.png" alt="Assistive Aquaponics Fish Tank project hero image"></div>
             <p class="projtitle">Assistive Aquaponics Fish Tank</p>
             <p class="writeyear">Winter-Spring 2021</p>
             <span class="mobileyear">
@@ -204,7 +227,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/KlipperEnder3/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/KlipperEnder3/hero.png" alt="Klipper Enabled Ender 3 project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/KlipperEnder3/thumb.png" alt="Klipper Enabled Ender 3 project hero image"></div>
             <p class="projtitle">Klipper Enabled Ender 3</p>
             <p class="writeyear">Spring-Summer 2021</p>
             <span class="mobileyear">
@@ -228,7 +251,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/CornerDesk/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/CornerDesk/hero.png" alt="Cable-managed Corner Desk project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="https://teddywarner.org/assets/images/CornerDesk/finishedwoodassembly.jpg" alt="Cable-managed Corner Desk project hero image"></div>
             <p class="projtitle">Cable-managed Corner Desk</p>
             <p class="writeyear">Spring 2020</p>
             <span class="mobileyear">
@@ -248,7 +271,7 @@ search:
         </div>
         <div class="socialpar">
           <a target=”_blank” href="https://x.com/WarnerTeddy">
-            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-x-twitter"></i>
           </a>
         </div>
         <div class="socialpar">

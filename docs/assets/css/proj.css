@@ -492,7 +492,7 @@
   flex-shrink: 0;
 }
 
-.fa-github, .fa-twitter, .fa-paper-plane {
+.fa-github, .fa-x-twitter, .fa-paper-plane {
   width: 15.5px;
   height: 16px;
   flex-shrink: 0;
@@ -501,7 +501,7 @@
   transition: all 0.3s ease;
 }
 
-.fa-github:hover, .fa-twitter:hover, .fa-paper-plane:hover {
+.fa-github:hover, .fa-x-twitter:hover, .fa-paper-plane:hover {
   scale: 0.92;
   opacity: 0.8;
 }

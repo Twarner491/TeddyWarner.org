@@ -23,7 +23,7 @@ template: comments.html
   <meta property="og:url" content="https://teddywarner.org/Projects/MillingWorflow/">
   <meta property="og:title" content="CNC Milling Workflows - Teddy Warner">
   <meta property="og:description" content="A relatively comprehensive guide for CNC milling.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/MillingWorkflow/hero.png">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/MillingWorkflow/thumb.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@ template: comments.html
   <meta property="twitter:url" content="https://teddywarner.org/Projects/MillingWorflow/">
   <meta property="twitter:title" content="CNC Milling Workflows - Teddy Warner">
   <meta property="twitter:description" content="A relatively comprehensive guide for CNC milling.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/MillingWorkflow/hero.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/MillingWorkflow/thumb.jpg">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
