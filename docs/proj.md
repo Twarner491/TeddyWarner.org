@@ -143,7 +143,7 @@ search:
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/PizzaPizza/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/pizza/thumb.png" alt="Pizza Pizza CNC Machine project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="https://teddywarner.org/assets/images/Pizza/thumb.png" alt="Pizza Pizza CNC Machine project hero image"></div>
             <p class="projtitle">Pizza-Pizza CNC Machine</p>
             <p class="writeyear">Winter 2022</p>
             <span class="mobileyear">
