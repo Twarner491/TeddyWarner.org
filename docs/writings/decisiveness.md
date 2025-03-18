@@ -83,11 +83,11 @@ template: comments.html
 *Ex nihilo nihil fit*. Nothing comes out of nothing.
 
 !!! quote "Buridan's Ass"
-    If you place a mule equidistant between two identical bales of hay, the mule would starve to death.
+      If you place a mule equidistant between two identical bales of hay, the mule will starve to death.
 
-Tech twitter frequently utlizes the mantra "you can just do things".
+Tech twitter frequently utilizes the mantra "You can just do things".
 
-For a while I thought of this as quite profound inspiration, until I read a tweet that said something along the lines of "Congrats Tech Bros! You've discovered agency!" Upon reading this saterization I promptly decided that the prase was a naive discription of a know concept. What this says about the maluability of my opnions is quite intresting, but for now lets stick to what comes after adequate/ample agency.
+For a while, I thought of this as quite profound inspiration, until I read a tweet that said something along the lines of "Congrats Tech Bros! You've discovered agency!" Upon reading this satirization I promptly decided that the phrase was a naive description of a known concept. What this says about the malleability of my opinions is quite interesting, but for now, let's stick to what comes after adequate/ample agency.
 
 <center>
   <br>
@@ -108,19 +108,12 @@ For a while I thought of this as quite profound inspiration, until I read a twee
   <br>
 </center>
 
-While considering Anaximanders beliefes on Astronomy, Aristotle (for whatever reason) says if a man were place at the center of a circle with food at various points of the circumference, he would starve to death for lack of reason to choose one portion of food over another. While this would clearly be a more apt scenario in a discussion of free will, not the heavinly bodies, Aristotles consideration nonethless extends the implications of Buridan's saterical ass to mankind.
+While considering Anaximander's beliefs on Astronomy, Aristotle (for whatever reason) says if a man were placed at the center of a circle with food at various points of the circumference, he would starve to death for lack of reason to choose one portion of food over another. While this would be a more apt scenario in a discussion of free will, not the heavenly bodies, Aristotle's consideration nonetheless extends the implications of Buridan's satirical ass to mankind.
 
-Having agency, or "just doing things" calls for timelyness in decision making, as almost always the things most worth doing come with a finite window of oppertunity. 
+Having agency or "just doing things" calls for timeliness in decision-making, as almost always, the things most worth doing come with a finite window of opportunity. 
 
-Both in the process of doing novel/intresting/worthwhile things, and in the wake of your actions, decisicivness is a virtue.
+Decisiveness is a virtue both in the process of doing novel/interesting/worthwhile things and in the aftermath of your actions.
 
-To decide on what you want to work on in the first place you must be decisicive.
+To decide on what you want to work on in the first place you must be decisive. To publish and share your work with the world you must be decisive. You must be decisive amongst opportunities that arise in the wake of your actions.
 
-To publish and share your work with the wold you must be decisive
-
-You must be decisive amongst oppertunities which arrise in the wake of your actions.
-
-The existance of all of these decisions individually may seem intuitive, yet when you look at all the decision poijts colelctivly, you may recgonise the need for decisivness.
-
-I've had this goal of sords for a few months: I wanted to become more opnionated.
-
+All of these decisions individually may seem intuitive, yet when you look at all the decision points collectively, you may recognize the need for decisiveness.
