@@ -75,7 +75,7 @@ search:
             <p class="projtitle">Ex Nihilo Nihil Fit</p>
             <p class="writeyear">Jan 2025</p>
             <span class="mobileyear">
-            <p class="readtime">X-X mins</p>
+            <p class="readtime">2–3 mins</p>
             </span>
             <p class="projdescription">Nothing comes out of nothing. Some thoughts on decisiveness.</p>
           </a>
