@@ -65,7 +65,7 @@ search:
     <section class="intro-section">
       <div class="content1">
         <div class="introabt">
-          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="https://pbs.twimg.com/profile_images/1794427673546035200/QnksLLBB_400x400.jpg" alt="Profile picture of Teddy Warner">Teddy</a>, <span id="typed"></span></h2>
+          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="https://pbs.twimg.com/profile_images/1794427673546035200/QnksLLBB_400x400.jpg">Teddy</a>, <span id="typed"></span></h2>
           <h3>I use digital fabrication techniques to<br>accelerate human centric design.</h3>
         </div>
       </div>
@@ -125,13 +125,11 @@ search:
                                       <rect x="804.5" y="624" width="226" height="272" rx="21" fill="var(--md-default-bg-color)" fill-opacity="0.4" />
                                       <rect x="843" y="645" width="149" height="31" rx="15.5" fill="var(--md-default-bg-color)" />
                                       <text x="917.5" y="665" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.55" font-family="JetBrains Mono" font-size="12" font-style="normal" font-weight="300" line-height="109.588%">What I'm Reading</text>
-                                      <text x="816" y="702" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">The</text>
-                                      <text x="816" y="722" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">History</text>
-                                      <text x="816" y="742" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">of Western</text>
-                                      <text x="816" y="762" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Philosophy</text>
-                                      <text x="817" y="782" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Lord Russell</text>
+                                      <text x="816" y="716" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Time and</text>
+                                      <text x="816" y="736" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Free Will</text>
+                                      <text x="817" y="754" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Henri Bergson</text>
                                   </g>
-                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1202878133i/2804722.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of The History of Western Philosophy" />
+                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677829188i/32783276.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of Time and Free Will" />
                               </g>
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
@@ -196,8 +194,8 @@ search:
     <section class="about">
       <div class="content4">
         <h2>About</h2>
-        <p class="abt1">I’m an engineer specialized in rapid prototyping and applied AI. I’m currently based in San Francisco, devoloping foundational <a target=”_blank” href="https://intempus.org">world models</a>.</p>
-        <p class="abt2">I studied at the <a target=”_blank” href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a> focused on engineering, design, and venture management, and I'm a graduate of the <a target=”_blank” href="https://fabacademy.org/">Fab Academy</a>.</p>
+        <p class="abt1">I’m an engineer specialized in rapid prototyping and applied AI. I’m currently based in SF, building <a target=”_blank” href="https://intempus.org">emotionally intellegent robots</a>.</p>
+        <p class="abt2">I'm a <a target=”_blank” style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target=”_blank” style="text-decoration: none;" href="https://fabacademy.org/">Fab Academy</a>. I previously studied design and engineering at the <a target=”_blank” style="text-decoration: none;" href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a>.</p>
         <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:teddy@intempus.org">teddy@intempus.org</a>.</p>
     </section>
     <section class="projects">
@@ -231,9 +229,9 @@ search:
               <p class="projdescription">Lost a cap? Make a new one.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
-          <a target=”_blank” href="https://tone.computer/"> <div class="grid-item">
-              <p class="projtitle">Tone</p>
-              <p class="projdescription">An AI-Pendant.</p>
+          <a target=”_blank” href="https://intempus.org/research/"> <div class="grid-item">
+              <p class="projtitle">Intempus</p>
+              <p class="projdescription">Expressive robots.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
         </div>
@@ -242,6 +240,18 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
+        <div class="writparent">
+          <a href="https://teddywarner.org/writings/decisiveness">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/decisiveness/decisiveness.png" alt="Ex Nihilo Nihil Fit article image"></div>
+            <p class="projtitle">Ex Nihilo Nihil Fit</p>
+            <p class="projdescription">Nothing comes out of nothing.</p>
+            <p class="writeyear">Jan 2025</p>
+            <span class="mobileyear">
+            <p class="readtime">2-3 mins</p>
+            </span>
+          </a>
+        </div>
+        <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/efd">
             <div class="imgparent"><img class="writeimg" src="assets/images/efd/efd.png" alt="To Drive with Downforce article image"></div>
@@ -253,28 +263,16 @@ search:
             </span>
           </a>
         </div>
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/downforce">
-            <div class="imgparent"><img class="writeimg" src="assets/images/force/force.png" alt="To Drive with Downforce article image"></div>
-            <p class="projtitle">To Drive with Downforce</p>
-            <p class="projdescription">Addressing the confidence bottleneck.</p>
-            <p class="writeyear">Nov 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">~2 mins</p>
-            </span>
-          </a>
-        </div>
         <span class="mobileyear">
         <hr/>
         <div class="writparent">
-          <a href="https://teddywarner.org/writings/juggling">
-            <div class="imgparent"><img class="writeimg" src="assets/images/juggle/juggle.png" alt="Learning to Juggle article image"></div>
-            <p class="projtitle">Learning to Juggle</p>
+          <a href="https://teddywarner.org/writings/downforce">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/force/force.png" alt="To Drive with Downforce article image"></div>
+            <p class="projtitle">To Drive with Downforce</p>
             <p class="projdescription">A journey to lessen doom-scrolling.</p>
-            <p class="writeyear">Oct 2024</p>
+            <p class="writeyear">Nov 2024</p>
             <span class="mobileyear">
-            <p class="readtime">5-7 mins</p>
+            <p class="readtime">~2 mins</p>
             </span>
           </a>
         </div>
@@ -284,7 +282,7 @@ search:
     <section class="press">
       <div class="content7">
         <h2>Press</h2>
-        <p class="pressentry"><a target=”_blank” href="https://blog.adafruit.com/2023/02/01/the-von-niemann-probe-aims-to-investigate-the-accusations-of-chess-cheating-wearablewednesday/">Adafruit</a>, <a target=”_blank” href="https://hackaday.com/2023/02/01/electronic-shoe-explores-alleged-chess-misbehavior/">Hackaday</a> (<a target=”_blank” href="https://hackaday.com/2022/12/26/turning-a-microchip-mplab-snap-into-a-udpi-avr-programmer/">x2</a>, <a target=”_blank” href="https://hackaday.com/2023/01/25/pizza-making-cnc-machine-is-the-only-tool-weve-ever-dreamed-of/">x3</a>), <a target=”_blank” href="https://www.hackster.io/news/pizza-pizza-cnc-machine-makes-pizzas-so-you-don-t-have-to-2abc96e2c411">Hackster.io</a> (<a target=”_blank” href="https://www.hackster.io/news/this-chess-cheating-wearable-aims-to-investigate-the-accusations-against-grandmaster-hans-neimann-90b63403b5d0">x2</a>), <a target=”_blank” href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Autodesk Learn Lab</a>, <a target=”_blank” href="https://www.chicagotribune.com/2016/01/04/st-francis-students-gain-skills-while-creating-underwater-robot/">Chicago Tribune</a>, <a target=”_blank” href="https://vimeo.com/950957571">Fab Academy</a> (<a target=”_blank” href="https://vimeo.com/563923609#t=4233s">x2</a>, <a target=”_blank” href="https://vimeo.com/510901917">x3</a>), <a target=”_blank” href="https://www.instagram.com/p/COdXD7fJ5Zl/?">CLS</a> <span class="hiddentext">testestestestestsetsettestestestsetset</span></p>
+        <p class="pressentry"><a target=”_blank” href="URL">Tech Crunch</a>, <a target=”_blank” href="URL">Business Wire</a>, <a target=”_blank” href="https://blog.adafruit.com/2023/02/01/the-von-niemann-probe-aims-to-investigate-the-accusations-of-chess-cheating-wearablewednesday/">Adafruit</a>, <a target=”_blank” href="https://hackaday.com/2023/02/01/electronic-shoe-explores-alleged-chess-misbehavior/">Hackaday</a> (<a target=”_blank” href="https://hackaday.com/2022/12/26/turning-a-microchip-mplab-snap-into-a-udpi-avr-programmer/">x2</a>, <a target=”_blank” href="https://hackaday.com/2023/01/25/pizza-making-cnc-machine-is-the-only-tool-weve-ever-dreamed-of/">x3</a>), <a target=”_blank” href="https://www.hackster.io/news/pizza-pizza-cnc-machine-makes-pizzas-so-you-don-t-have-to-2abc96e2c411">Hackster.io</a> (<a target=”_blank” href="https://www.hackster.io/news/this-chess-cheating-wearable-aims-to-investigate-the-accusations-against-grandmaster-hans-neimann-90b63403b5d0">x2</a>), <a target=”_blank” href="https://blogs.autodesk.com/learn-lab/2022/07/20/upskilling-for-the-future-with-instructables-student-design-challenges/">Autodesk Learn Lab</a>, <a target=”_blank” href="https://www.chicagotribune.com/2016/01/04/st-francis-students-gain-skills-while-creating-underwater-robot/">Chicago Tribune</a>  <span class="hiddentext">testestestestestsetsettestestestsetset</span></p>
     </section>
     <section class="footer">
       <div class="content8">
@@ -314,7 +312,7 @@ search:
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#typed', {
-      strings: ['a maker.', 'an engineer.', 'a designer.', 'a student.'],
+      strings: ['a maker.', 'an engineer.', 'a designer.'],
       startDelay: 700,
       typeSpeed: 60,
       backSpeed: 60,

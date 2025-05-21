@@ -96,7 +96,7 @@ search:
           <div class="writparent">
           <a href="https://teddywarner.org/Projects/LearnedSpectrum/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/learnedSpec/fig2.png" alt="Learned Spectrum project hero image"></div>
-            <p class="projtitle">Learned Spectrum
+            <p class="projtitle">Learned Spectrum</p>
             <p class="writeyear">Fall-Winter 2025</p>
             <span class="mobileyear">
             <p class="readtime">18–22 mins</p>
