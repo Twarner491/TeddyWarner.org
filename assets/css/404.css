@@ -1,0 +1,111 @@
+:root {
+  --duration: 1s;
+  --nav-duration: calc(var(--duration) / 4);
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.md-header {
+  background: none;
+  box-shadow: none;
+}
+
+.error-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+body {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+.error-content {
+  max-width: 600px;
+  animation: fadeIn 0.8s ease-out;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.error-content h1 {
+  font-family: "Crimson Pro";
+  font-size: 12vw;
+  margin: 0;
+  color: var(--md-default-fg-color);
+  line-height: 1;
+}
+
+.error-content h2 {
+  font-family: "Crimson Pro";
+  font-size: 3vw;
+  margin: 0.5em 0;
+  color: var(--md-default-fg-color);
+  font-weight: 400;
+}
+
+.error-content p {
+  font-family: "JetBrains Mono";
+  font-size: 1em;
+  margin: 1.5em 0;
+  color: var(--md-default-fg-color--light);
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.8em 1.6em;
+  font-family: "JetBrains Mono";
+  font-size: 0.9em;
+  color: var(--md-default-bg-color) !important;
+  background-color: var(--md-default-fg-color);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.home-button:hover {
+  transform: scale(0.97);
+  color: var(--md-default-bg-color) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .error-content h1 {
+    font-size: 20vw;
+  }
+  
+  .error-content h2 {
+    font-size: 6vw;
+  }
+  
+  .error-content p {
+    font-size: 0.9em;
+  }
+}
