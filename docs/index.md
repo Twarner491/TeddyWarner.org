@@ -65,7 +65,7 @@ search:
     <section class="intro-section">
       <div class="content1">
         <div class="introabt">
-          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="https://pbs.twimg.com/profile_images/1794427673546035200/QnksLLBB_400x400.jpg">Teddy</a>, <span id="typed"></span></h2>
+          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="assets/images/index/pfp.jpg">Teddy</a>, <span id="typed"></span></h2>
           <h3>I use digital fabrication techniques to<br>accelerate human centric design.</h3>
         </div>
       </div>
