@@ -86,13 +86,17 @@ template: comments.html
     <iframe width="100%" height="100" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/ygy8M-QhbSo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
+</center>
+
+<figure markdown="1">
+
 **An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!**
 
-</center>
+</figure>
 
 !!! tip "Project Sponsor"
     ![PCBWay](../assets/images/VonNiemannProbe/PCBWay.png){: align=right width="45%" alt="PCBWay logo"}
-    <center style="font-size:1.15em; width:55%;">**The development of the Von Niemann Probe was made possible by [PCBWay](https://www.pcbway.com/), who provided the fabrication of the probe's main board and nylon insole.** Be sure to check out [PCBWay.com](https://www.pcbway.com/) for all your PCB prototyping, assembly, design, CNC, and 3D printing needs! Thank you to the wonderful folks at [PCBWay](https://www.pcbway.com/) for sponsoring this project!</center>
+    <span style="font-size:1.15em; width:55%;">**The development of the Von Niemann Probe was made possible by [PCBWay](https://www.pcbway.com/), who provided the fabrication of the probe's main board and nylon insole.** Be sure to check out [PCBWay.com](https://www.pcbway.com/) for all your PCB prototyping, assembly, design, CNC, and 3D printing needs! Thank you to the wonderful folks at [PCBWay](https://www.pcbway.com/) for sponsoring this project!</span>
     
 On September 4, 2022, 19-year-old rising chess superstar, Grandmaster Hans Moke Niemann, shocked the chess world when he ended the 8-time World Champion, and arguably the greatest player in world history, Magnus Carlsen's unprecedented 53-game win streak at the Sinquefield Cup in St. Louis, Missouri. Niemann added insult to injury by accomplishing this as the lowest-ranked player in the tournament while playing with the black pieces, which possess a slight, but crucially important, disadvantage at the highest levels of competition. 
 
@@ -168,11 +172,11 @@ While this evidence against Niemann appears to be overwhelming, it's important t
 !!! note "Name Orgins"
     The Von Niemann Probe is named after a theoretical self-replicating space probe known as the Von Neumann Probe, named after legendary 20th century Hungarian-American mathematician *John Von Neumann*. The Von Neumann Probe is regarded as the optimal way to explore the cosmos, as it can mine asteroids and leverage the exponential growth of its progeny to more efficiently visit star systems. And, coincidentally, probes are also medical devices that can be used to explore one's bowels. Thus, we settled on naming our device the Von Niemann Probe.
 
-<center>
+<figure markdown="1">
 
   [Von Niemann Probe Repository :fontawesome-brands-github:](https://github.com/Twarner491/VonNiemannProbe){: align=right .md-button .md-button--primary }
 
-</center>
+</figure>
 
 ## Telegraph Design
 
@@ -182,19 +186,19 @@ At the heart of the Von Niemann Probe lies an AVR ATtiny 412-based Bluetooth tel
 
 The schematic includes headers for an HC-06, with serial connections to the ATTiny 412, and a shared power line with both the IC and Vibration Motor. This vibration motor is wired both to common GND on the PCB, as well as to *Digital Pin 2*, allowing the IC to pulse the motor to convey moves in morse code.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/VonNiemannProbe/VNPSchematic.jpg){width="100%"}
 
-</center>
+</figure>
 
 With this schematic done, I moved on to generating my final board file. The PCB is built around the rectangular nature of the HC-06 Bluetooth module - one of these modules is placed in the center of the PCB, allowing for an as-compact-as-possible footprint ideal for fitting in the VNP's discrete insole body (see Step 2). Just above the HC-06 module lies the ATtiny 412 circuit and UPDI programming pins, as well as a cutout and mounting points for the telegraph's vibration motor. The entire PCB is designed to be mounted inside the VNP insole with M3 screws and has been designed to maintain a large, shared surface area with the 3D-printed insole to ensure the transfer of vibration from the telegraph.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/VonNiemannProbe/VNPBoard.jpg){width="100%"}
 
-</center>
+</figure>
 
 <center>
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53962a650b709446403?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
@@ -204,7 +208,7 @@ With this schematic done, I moved on to generating my final board file. The PCB 
 
 To prove the feasibility of the accusations placed against Hans Niemann, the Von Niemann Probe (VNP) must be robust enough to see consistent use, while remaining discrete enough to not be detected. With this in mind, we selected to place our Bluetooth telegraph inside the body of a parametric shoe insole. The VNP was designed in Autodesk's Fusion 360, and makes heavy use of the software's Parametric Engine, allowing a custom insole to be generated for all foot sizes. Using the shoe size standards found in the table below, an insole may be generated to fit your exact foot dimensions. *Note - the sizes included in the table below are Mens, as that is the style of shoe both Jack and I wear - be sure to convert your shoe size accordingly.*
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/VonNiemannProbe/footdi.png){width="80%" alt="Diagram of foot dimensions for insole design"}
 
@@ -232,32 +236,32 @@ To prove the feasibility of the accusations placed against Hans Niemann, the Von
 
 ![](../assets/images/VonNiemannProbe/footgraph.png){width="80%"}
 
-</center>
+</figure>
 
 A custom insole will be generated after updating the model with your foot Length *(S~L~)* & Width *(S~MW~)* via Fusion's *Change Parameters* tool. Paste in your foot length *(S~L~)* in the *InsoleLegnth* expression input, and repeat with your foot width *(S~MW~)* and the *InsoleWidth* expression input.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/VonNiemannProbe/FusionParameters.png){width="100%"}
 
-</center>
+</figure>
 
 After establishing the model's parameters and extruding a basic shape, I drafted the insole's outer edge to allow the insole to fit the angled inner walls of shoes, before using Fusion 360's *Surface* workspace to ad a 3D profile to the top of the insole.
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/VonNiemannProbe/extrudeFusion.png){width="48.35%"}
-![](../assets/images/VonNiemannProbe/formedFusion.png){width="49%"}
+![](../assets/images/VonNiemannProbe/extrudeFusion.png){width="47.35%" align="left"}
+![](../assets/images/VonNiemannProbe/formedFusion.png){width="48%" align="right"}
 
-</center>
+</figure>
 
 The insole consists of two main parts, the body which is the bulk of the insole itself, and the lid, which screws to the bottom of the body, covering the electronics compartment. The body of the insole consists of mounting points for the main PCB, as well as a 1000mah LiPo battery, a USB-C LiPo charging board, a power switch, and a 3.3v to 5v boost converter. The lid not only hides the VNP's electronics system from sight but also redistributes the load placed upon the insole when a user is standing on it.  
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/VonNiemannProbe/electronicsVNP.png){width="100%"}
 
-</center>
+</figure>
 
 <center>
   <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH9285eQTcf875d3c53962a650b709446403?mode=embed" width="100%" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
@@ -962,12 +966,12 @@ I began the fabrication of the Von Niemann Probe through some prototype PCB mill
 
 Leveraging these machines would allow me to test early designs before ordering final boards from PCBWay, allowing me to ensure their functionality early on in the design process. This process also makes it considerably easier to make changes, as I can test multiple iterations within several hours of each other, including the time to solder each board!
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/VonNiemannProbe/mainboard.png){width="100%"}
   <figcaption>Von Niemann Probe Mainboard</figcaption>
 
-</center>
+</figure>
 
 Next up, 3D Printing ... and a lot of it. All prototype prints for the Von Niemann Probe were done on a [Prusa I3 MK3S+](https://www.prusa3d.com/category/original-prusa-i3-mk3s/) equipped with an 0.4mm [E3D Nozzle X](https://e3d-online.com/blogs/news/nozzle-x-the-one-nozzle-to-rule-them-all) from White PETG.
 
@@ -975,12 +979,12 @@ Next up, 3D Printing ... and a lot of it. All prototype prints for the Von Niema
 
 Similar to the PCB prototyping, I fabricated several prints while iterating on the insole's CAD, before ordering the final iteration from PCBWay. Each print required over 14 hours of print time and numerous hours to complete the necessary changes to the design. 
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/VonNiemannProbe/allprints.jpg){width="100%"}
   <figcaption>All Iterations of the Von Niemann Probe Insole</figcaption>
 
-</center>
+</figure>
 
 After finally arriving at a version of the insole that I was satisfied with, I was ready to assemble the device ...
 
@@ -990,13 +994,12 @@ After finally arriving at a version of the insole that I was satisfied with, I w
 
 Leaving me with the final product below! :smile:
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/VonNiemannProbe/FinalElectronics.jpg){width="49%"}
-![](../assets/images/VonNiemannProbe/bottomview.jpg){width="49.75%"}
-  <figcaption>Von Niemann Probe Electronics Enclosure & Cover</figcaption>
+![](../assets/images/VonNiemannProbe/FinalElectronics.jpg){width="47%" align="left"}
+![](../assets/images/VonNiemannProbe/bottomview.jpg){width="48%" align="right"}
 
-</center>
+</figure>
 
 [^1]:https://www.npr.org/2022/10/21/1130442319/hans-niemann-sues-magnus-carlsen-for-100-million-accusing-him-of-defamation
 [^2]:https://youtu.be/eg5G1A_mTFg

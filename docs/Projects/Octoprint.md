@@ -79,11 +79,11 @@ template: comments.html
 
 ---
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/Octoprint/Octoprint.png){width="100%" alt="Octoprint logo and interface overview"}
 
-</center>
+</figure>
 
 [Octoprint](https://octoprint.org/) takes 3D printing to new heights, creating a more concise workflow with more accessible machine control. The opensource [Octoprint project](https://github.com/OctoPrint/OctoPrint) was created and maintained by [Gina Häußge](https://octoprint.org/support-octoprint/). The software enables a machine with a web interface with full machine controls and a world of community plugins - all of which run on a Raspberry Pi made Server with an octoprint image. I use Octoprint on all of my personal printers, and a special CNC-focused fork of the software for my [MPCNC](https://www.v1engineering.com/). As mentioned above, web interfacing a machine creates a more concise workflow and thus is great for personal machines. However, an Octoprint setup shines even more in a print farm instance. During the winter months of my sophomore year (2020) I set up secure Octoprint instances on each of my lab's array of 20 FDM printers. Each of my setup instances can be read seen under the [My Octoprint Instances](https://teddywarner.org/Projects/Octoprint/#my-octoprint-instances) section of this page. 
 
@@ -93,11 +93,11 @@ template: comments.html
 
     You'll need a Raspberry Pi *(Recommended hardware: Raspberry Pi 3B, 3B+ or 4B)*, a sufficient power source for the Pi, as well as a micro SD card *(4GB or larger)* to flash the Octorpint image to.
 
-<center>
+<figure markdown="1">
 
 [Download the Latest Octopi Image :fontawesome-solid-download:](https://github.com/guysoft/OctoPi){ .md-button .md-button--primary }
 
-</center>
+</figure>
 
 First, download and flash the latest [Octoprint](https://octoprint.org/) image (linked above). This Pi image can be flashed as you would with any other Raspberry Pi project - I use [balenaEtcher](https://www.balena.io/etcher/) for flashing, its simple 3-step interface makes the process super straightforward. After a successful flash of this image on your Pi's SD card configure your WiFi information in the *octopi-wpa-supplicant.txt* located on the flashed SD card *(If you're using wired internet, you can skip this setup)*. To update the *octopi-wpa-supplicant.txt* file with your network, open the file in a code editor of your choice.
 
@@ -152,11 +152,11 @@ With an Octoprint instance up and running, the difficult part of the setup is co
 
 Beginning with the configuration of the interface itself, basic settings can be found in the web interface by clicking on the wrench icon on the right side of the navigation bar located at the top of the interface. Scrolling through these menus allows for total customization of the interface. A good starting place is under the *Octoprint* section in the *Appearance* menu. Here (as shown below) you can customize the interface title - displayed in the interface's navigation bar, as well as the default interface highlight color.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/Octoprint/AppearanceSettings.png){width="95%" alt="Octoprint appearance settings menu"}
 
-</center>
+</figure>
 
 ### Printer Setup
 
@@ -165,44 +165,45 @@ To enable Octoprint's main purpose, a machine must be connected to the hardware 
 !!! example "Personal Setup"
 
     In the case of my Prusa I3 MK3S+, I took advantage of this GPIO communication setup, to allow for the mounting of my Raspberry Pi directly under my printer's mainboard (via [this](https://www.prusaprinters.org/prints/24475-remix-of-raspberry-pi-4-case-3030-hanging-mount-fo) Raspberry Pi 4 Case) without a bulky USB cable connecting them ...
-    <center>
+    <figure markdown="1">
     ![](../assets/images/Octoprint/mountedelectronics.jpg){width="95%" alt="Raspberry Pi mounted under printer mainboard using 3030 mount"}
-    </center>
+    </figure>
 
 
-Your serial connection must be set up software side in the *Serial Connection* menu found under the *Printer* section of the interface settings. Octoprint can automatically detect your *Serial Port* and *Baudrate* when *AUTO* is selected in these dropdowns, however, you may also specify specifics for each field. 
+Your serial connection must be set up software side in the *Serial Connection* menu found under the *Printer* section of the interface settings. Octoprint can automatically detect your *Serial Port* and *Baudrate* when *AUTO* is selected in these dropdowns, however, you may also specify specifics for each field.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/Octoprint/serialconnection.png){width="95%" alt="Serial connection settings for printer configuration"}
 
-</center>
+</figure>
 
 Next, a machine profile must be created for your connected machine to ensure safe machine control with regard to hardware limits. A profile can be created in the *Printer Profiles* menu under the *Printer* section of the interface's settings. Create a new profile by clicking the *Add Profile...* button in the lower right corner of the menu, and fill out the profile with your machine's information.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/Octoprint/printerpofiles.png){width="95%" alt="Printer profiles configuration menu"}
 
-</center>
+</figure>
 
 One key feature of Octoprint is its webcam machine stream, allowing for remote supervision of your machine. Anything from USB webcams to Raspberry Pi ribbon cable cameras can be used for this stream & Octoprint will automatically find this attached webcam and will use it to stream your machine (some more exotic cameras or mounting styles may require an additional configuration - discussed below). 
 
 !!! example "Personal Setup"
 
     On my printer, I've mounted a Raspberry Pi camera to the X-Axis stepper of my machine (via [this](https://www.thingiverse.com/thing:3121052) Raspberry Pi camera mount), yielding a pretty nice side view of prints, shown below.
-    <center>
+    <figure markdown="1">
     ![](../assets/images/Octoprint/cameramount.png){width="95%" alt="Raspberry Pi camera mounted to X-axis stepper motor"}
+
     ![](../assets/images/Octoprint/CameraWindow.png){width="95%" alt="Octoprint webcam feed showing side view of print"}
-    </center>
+    </figure>
 
 Due to my printers camera mount, my Raspberry Pi camera is heald in an upsidedown orientation and thus needs to be compensated for on the software side. Luckily, in the *Webcam & Timelapse* menu under the *Features* section of the Octorprint interface settings, webcam orientation can be changed. In addition, more advanced webcam options can be found, allowing for the use of almost all cameras connected to the hardware running Octorpint.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/Octoprint/webcamsettings.png){width="95%" alt="Webcam and timelapse settings configuration"}
 
-</center>
+</figure>
 
 ### Plugins
 
@@ -212,90 +213,72 @@ One of the greatest features of Octorpint stems from its open-source nature ... 
 
     Some of these shown plugins are machine specific to my Prusa I3 MK3S+
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/Octoprint/pluginsettings.png){width="95%" alt="Plugin manager showing installed plugins"}
 
-</center>
+</figure>
 
  - Access Anywhere - The Spaghetti Detective[^1] - AI-powered failure detection & Remote Octoprint Access 
 
- <center>
+    <figure markdown="1">
+    ![](../assets/images/Octoprint/homescreen.jpg){width="45%" alt="The Spaghetti Detective home interface" align="left"}
+    ![](../assets/images/Octoprint/tsdapp.jpg){width="46.5%" alt="The Spaghetti Detective mobile app interface" align="left"}
 
-  ![](../assets/images/Octoprint/homescreen.jpg){width="46%" alt="The Spaghetti Detective home interface"}
-  ![](../assets/images/Octoprint/tsdapp.jpg){width="47.5%" alt="The Spaghetti Detective mobile app interface"}
-
-  ![](../assets/images/Octoprint/tsdcontrol.jpg){width="94%" alt="The Spaghetti Detective printer control interface"}
-
-  </center>
+    ![](../assets/images/Octoprint/tsdcontrol.jpg){width="94%" alt="The Spaghetti Detective printer control interface" align="left"}
+    </figure>
 
  - Bed Visualizer[^2] - Uses Plotly js library to render a 3D surface of the bed’s reported mesh 
  
- <center>
-
-  ![](../assets/images/Octoprint/bedlevlevisualizer.png){width="95%" alt="Bed visualizer showing mesh leveling data in 3D"}
-
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/bedlevlevisualizer.png){width="95%" alt="Bed visualizer showing mesh leveling data in 3D"}
+    </figure>
 
  - Custom Background[^3] - Change the background image on the temperature graph 
- <center>
 
-
-  ![](../assets/images/Octoprint/custombackground.png){width="95%" alt="Custom background image on temperature graph"}
-
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/custombackground.png){width="95%" alt="Custom background image on temperature graph"}
+    </figure>
 
  - Exclude Region[^4] - Adds the ability to prevent printing within rectangular or circular regions of the currently active gcode file 
 
- <center>
-
-  ![](../assets/images/Octoprint/excluderegions.png){width="95%" alt="Exclude region configuration menu"}
-
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/excluderegions.png){width="95%" alt="Exclude region configuration menu"}
+    </figure>
 
  - Floating Navbar[^5] - Make the navbar stick to the top of the page while scrolling
  - GcodeEditor[^6] - Edit gcode that's been uploaded to OctoPrint
 
- <center>
-
-  ![](../assets/images/Octoprint/edit_gcode.png){width="50%" alt="Gcode editor interface"}
-  ![](../assets/images/Octoprint/edit_gcode2.png){width="46%" alt="Gcode editor interface"}
-
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/edit_gcode.png){width="49%" alt="Gcode editor interface" align="left"}
+      ![](../assets/images/Octoprint/edit_gcode2.png){width="45%" alt="Gcode editor interface" align="right"}
+    </figure>
 
  - Heater Timeout[^7] - Automatically shut off heaters if no print has been started
  - Navbar Temp[^8] - Display temperatures on the navbar
 
- <center>
-
-  ![](../assets/images/Octoprint/navbar.png){width="60%" alt="Navbar temperature display"}
-
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/navbar.png){width="100%" alt="Navbar temperature display"}
+    </figure>
 
  - Octoprint Display ETA[^9] - Show finish time (ETA) for current print
 
- <center>
-
-  ![](../assets/images/Octoprint/eta.png){width="300" alt="Octoprint display ETA"}
-  
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/eta.png)
+    </figure>
 
  - PrettyGCode[^10] - adds a 3D GCode visualizer tab in Octoprint
 
- <center>
-
-  ![](../assets/images/Octoprint/PrettyGcode-Screen3.jpg){width="75%" alt="PrettyGCode 3D GCode visualizer tab"}
-
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/PrettyGcode-Screen3.jpg){width="75%" alt="PrettyGCode 3D GCode visualizer tab"}
+    </figure>
 
  - Themeify[^11] - Beautiful themes for octoprint
  - ipOnConnect[^12] - Display the ip address of the connected OctoPrint instance on the control panel *:warning: MK3S+ specific*
 
- <center>
-
-  ![](../assets/images/Octoprint/ipdisplay.jpg){width="95%" alt="IP address display on control panel"}
-
-  </center>
+    <figure markdown="1">
+      ![](../assets/images/Octoprint/ipdisplay.jpg){width="95%" alt="IP address display on control panel"}
+    </figure>
 
 ## Octoprint Interface Workflow
 
@@ -305,15 +288,13 @@ Although the Octoprint web interface is rather intuitive, the number of stock fe
 
 ## My Octoprint Instances
 
-<center>
-
+<figure markdown="1">
 ![](../assets/images/Octoprint/personaloctoprint.jpg){width="95%" alt="Personal Octoprint enabled Prusa I3 MK3S+"}
   <figcaption>My Personal Octoprint Enabled Prusa I3 MK3S+</figcaption>
 
 ![](../assets/images/Octoprint/laboctoprint.jpg){width="95%" alt="Lab's Octoprint enabled printer farm"}
   <figcaption>My Lab's Octoprint Enabled Printer Farm</figcaption>
-
-</center>
+</figure>
 
 [^1]: https://plugins.octoprint.org/plugins/thespaghettidetective/
 [^2]: https://plugins.octoprint.org/plugins/bedlevelvisualizer/

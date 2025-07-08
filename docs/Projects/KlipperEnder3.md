@@ -91,28 +91,29 @@ Due to uncertainty surrounding lab access during the Covid-19 pandemic, I receiv
 
  Before the installation of Klipper, here are all the hardware mods done to the machine. I upgraded the main bored from the original factory board to a [SKR Mini E3 V2](https://www.biqu.equipment/products/bigtreetech-skr-mini-e3-v2-0-32-bit-control-board-integrated-tmc2209-uart-for-ender-3), and the original factory screen I switched out to a [TFT35 Touchscreen](https://www.biqu.equipment/products/btt-tft35-e3-v3-0-display-touch-screen-two-working-modes?variant=31955093815394). Following that I added a [Bltouch](https://www.antclabs.com/bltouch) for auto bed leveling, and switched the machine from Bowen to direct drive, with this Thingiverse [design](https://www.thingiverse.com/thing:3856703). I spent some time adding some customization to the machine as well, giving the direct drive system a little nameplate.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/KlipperEnder3/directdrive.jpg){width="70%" alt="Direct drive system with custom nameplate on Ender 3"}
 
-</center>
+</figure>
 
 Finally, I moved all of the electronics of the machine to the rear of the machine using this Thingiverse [design](https://www.thingiverse.com/thing:3688967). This mod gave the space to add a raspberry pi and a means of power for it in addition to the mainboard, a perfect case for a Klipper-enabled machine.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/KlipperEnder3/electronicsenclouser.jpg){width="80%" alt="Electronics enclosure at the rear of the Ender 3"}
+
 ![](../assets/images/KlipperEnder3/installedelebox.jpg){width="80%" alt="Installed electronics box with Raspberry Pi and mainboard"}
 
-</center>
+</figure>
 
 I used this Thingiverse [design](https://www.thingiverse.com/thing:2886101) to mount a raspberry pi camera to my printer's x-axis as shown in one of the pictures below. All of these modifications were done with parts printed on my [Prusa I3 Mk3S+](https://shop.prusa3d.com/en/3d-printers/181-original-prusa-i3-mk3s-3d-printer.html), and electronics I had laying around, making these printer modifications only take around three days to complete, including the time it took to print the parts.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/KlipperEnder3/ender3cam.jpg){width="80%" alt="Raspberry Pi camera mounted on Ender 3's x-axis"}
 
-</center>
+</figure>
 
 ![](../assets/images/KlipperEnder3/wholeprinter.jpg){: align=right width="30%" alt="Full view of the modified Ender 3 printer"}
 
@@ -120,11 +121,11 @@ I used this Thingiverse [design](https://www.thingiverse.com/thing:2886101) to m
 
 As mentioned in the introduction paragraph of this page, I settled on using [FluiddPi](https://github.com/cadriel/FluiddPI) as the GUI for this Klipper setup. As opposed to a more broadly know GUI like Octoprint, FluiddPi offers some features that work directly with Klipper that make the entire experience pretty seamless. [FluiddPi](https://github.com/cadriel/FluiddPI) in addition to containing the servers GUI also packages Klipper & Moonraker into the software image, making the install of Klipper super straightforward. 
 
-<center>
+<figure markdown="1">
 
 [Download the Latest FluiddPi Image :fontawesome-solid-download:](https://github.com/cadriel/FluiddPI/releases/tag/v1.16.2){ .md-button .md-button--primary }
 
-</center>
+</figure>
 
 Beginning the installation of Klipper, the first step is to download and flash the latest [FluiddPi](https://github.com/cadriel/FluiddPI) image (linked above). This Pi image can be flashed as you would with any other Raspberry Pi project - I use [balenaEtcher](https://www.balena.io/etcher/) for flashing, its simple 3-step interface makes the process super straightforward. After a successful flash of this image on your Pi's SD card configure your WiFi information in the *fluiddpi-wpa-supplicant.txt* located on the flashed SD card *(If you're using wired internet, you can skip this setup)*. Then, you can install your flashed SD in your Pi and boot. 
 
@@ -145,12 +146,12 @@ sudo apt-get upgrade
 
     You have now successfully set up [FluiddPi](https://github.com/cadriel/FluiddPI) on your Raspberry Pi, and can now connect to its web server with the URL *http://fluiddpi.local* ( or if you changed your hostname, with the URL *http://YOURHOSTNAME.local*).
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/KlipperEnder3/fluiddinterface.png){width="95%" alt="FluiddPi web server interface for Klipper"}
   <figcaption>The FluiddPi Web Server Interface</figcaption>
 
-</center>
+</figure>
 
 
 Upon connection, the webserver will throw an error with a lack of a *printer.cfg* file. This file is your machine config file. Notably different from Marlin, Klipper does not require a machine to be specified before the flash but instead looks to this *printer.cfg* file for machine configuration. One of the benefits of using [FluiddPi](https://github.com/cadriel/FluiddPI) for Klipper is the ability to alter this *printer.cfg* file and reboot the firmware right from the server's GUI. The machine configuration for my Klipper Enabled Ender 3 is covered later on this page under the [Klipper Configuration](https://teddywarner.org/Projects/KlipperEnder3/#klipper-configuration) section, but for any other machines, preconfigured *printer.cfg* files can be found online.
@@ -194,20 +195,20 @@ making sure to paste in the reported serial port where it says *YOUR-SERIAL-PORT
 
 As mentioned prior, unlike the Marlin firmware, Klipper is not compiled for a specific machine. Instead, the firmware looks to a machine configuration file - *printer.cfg*. This file can be altered without the reflashing of the firmware, just a simple reboot, thus making machine tinkering and hardware swapping significantly simpler. This *printer.cfg* file can be altered in the [FluiddPi](https://github.com/cadriel/FluiddPI) web server interface, simplifying the configuration process even more. 
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/KlipperEnder3/fluiddconfig.png){width="95%" alt="FluiddPi configuration menu for printer.cfg file"}
   <figcaption>FluiddPi's Configuration Menu in Web Server Interface</figcaption>
 
-</center>
+</figure>
 
 As shown above, your *printer.cfg* file can be accessed in FluiddPi's configuration menu. Due to Klipper's ability to experiment with your machine config, my printer's configuration is always subject to change, but included below is the latest machine config running on my Klipper Enabled Ender 3.
 
-<center>
+<figure markdown="1">
 
 ### *printer.cfg*
 
-</center>
+</figure>
 
 <div style="height:660px; overflow:scroll;">
 
@@ -549,11 +550,11 @@ As shown above, your *printer.cfg* file can be accessed in FluiddPi's configurat
 
 Check out my Klipper Enabled Ender 3 machine profile page, linked below, for information regarding the slicer setup & config, as well as my profile download.
 
-<center>
+<figure markdown="1">
 
 [Klipper Enabled Ender 3 Profile](https://github.com/Twarner491/project-files/blob/main/PrusaSlicer%20Profiles/Klipper-Ender3-PrusaSlicer-Config.ini){ .md-button .md-button--primary }
 
-</center>
+</figure>
 
 [^1]: http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week02/
 [^2]: https://teddywarner.org/Projects/Octoprint/

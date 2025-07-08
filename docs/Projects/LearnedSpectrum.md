@@ -350,11 +350,11 @@ While exceeding random chance performance (25% for four classes), these metrics 
 
 The Cohen's Kappa score of 0.093 indicates performance above chance but demonstrates the substantial challenge in achieving consistent classification across all learning stages.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/learnedSpec/fig1.png){width="100%" alt="Training Results plots"}
 
-</center>
+</figure>
 
 *Figure 1: Comprehensive model performance analysis showing (A) Normalized confusion matrix demonstrating classification patterns across learning stages, (B) ROC curves indicating increasing reliability from early to mastery stages, (C) Per-class performance metrics highlighting strongest performance in mastery classification, and (D) Prediction confidence distributions revealing distinct patterns for each learning stage.*
 
@@ -376,11 +376,11 @@ The middle learning stage showed moderate classification success (precision = 0.
 
 Analysis of fMRI activation patterns, as exemplified in Figure 2, reveals characteristic spatial distributions associated with different learning stages. The sample brain slice visualization demonstrates the complex nature of the neural activation patterns the model must interpret, with varying intensity values representing normalized BOLD signal strength across different brain regions.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/learnedSpec/fig2.png){width="50%" alt="Example f MRI slice"}
 
-</center>
+</figure>
 
 *Figure 2: Representative brain slice visualization from early learning stage (z=15, t=118) demonstrating characteristic activation patterns. Intensity values represent normalized BOLD signal strength.*
 

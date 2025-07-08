@@ -105,14 +105,12 @@ The easiest way to eradicate temptation to doom-scroll is to follow the "out of 
 > - The calendar app has a blank space you fill with a meaningful real-life event — say a meeting with an old friend or a pub quiz.
 > - Your flashcard app helps you learn trivia that wins you first place in a pub quiz, impressing everyone, including a stranger, who despite your normal-sized thumbs, learns to love you for who you are.
 
-<br/>
-<center style="opacity:85%;">
+<figure markdown="1" style="opacity:85%;">
 
  ![](../assets/images/juggle/light.png#only-light){width="50%" alt="Healthy apps placed within thumb's reach on iPhone home screen in light theme"}
  ![](../assets/images/juggle/dark.png#only-dark){width="50%" alt="Healthy apps placed within thumb's reach on iPhone home screen in dark theme"}
 
-</center>
-<br/>
+</figure>
 
 Sometimes just tempting yourself with a healthy option isn't sufficient, however. If you have a truly toxic, doom-scrolling relationship with an app, delete it! I frequently try to dream up potential future use cases for apps that I don't want to delete. You can fight this by simply realizing that you can always reinstall the app as needed (yet usually once it's gone, the urge to scroll disappears).
 
@@ -157,12 +155,12 @@ To do so open settings and navigate to `Accessibility` -> `Display & Text Size`,
 2. Toggle on `Color Filters`
 3. Select `Greyscale`
 
-<center>
+<figure markdown="1">
 
- ![](../assets/images/juggle/color.png){width="30%" alt="iPhone screen showing normal color display"}
- ![](../assets/images/juggle/grey.png){width="30%" alt="iPhone screen showing greyscale color filter applied"}
+ ![](../assets/images/juggle/color.png){width="30%" alt="iPhone screen showing normal color display" align="left"}
+ ![](../assets/images/juggle/grey.png){width="30%" alt="iPhone screen showing greyscale color filter applied" align="left"}
 
-</center>
+</figure>
 
 <h4>Making a greyscale filter shortcut</h4>
 

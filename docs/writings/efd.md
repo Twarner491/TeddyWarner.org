@@ -111,16 +111,12 @@ The first two conditions are solved problems. Build autonomy by studying and cre
 
 Confidence however is a different beast. This third condition precedes the two prior, as it takes confidence to learn and confidence to meet and connect with others.
 
-<br>
-
-<center style="opacity:85%;">
+<figure markdown="1" style="opacity:85%;">
 
  ![](../assets/images/efd/sdtlight.png#only-light){width="50%" alt="Self-Determination Theory"}
  ![](../assets/images/efd/sdtdark.png#only-dark){width="50%" alt="Self-Determination Theory"}
 
-</center>
-
-<br>
+</figure>
 
 To foster confidence, one may take advantage of the Emotion/Feeling Discontinuity. Emotions precede decision-making. Humans 'feel' first and think second. Given emotions are objective physiological responses, the independent variable in confidence, the 'weight' for you to adjust is your interpretation of emotion: your feelings.
 
@@ -139,12 +135,12 @@ Feel ^^X^^ → Do ^^Y^^
 ^^X^^ = Signal of high stress and negative self-talk. <br>
 ^^Y^^ = Activity to release stress (Pound your fists down and exclaim "I'm Excited!).
 
-<center style="opacity:85%;">
+<figure markdown="1" style="opacity:85%;">
 
  ![](../assets/images/efd/stresslight.png#only-light){width="30%" alt="Stress Vs. Productivity"}
  ![](../assets/images/efd/stressdark.png#only-dark){width="30%" alt="Stress Vs. Productivity"}
 
-</center>
+</figure>
 
 A few other practices to improve self-talk: gratitude and optimism.
 
@@ -185,11 +181,11 @@ An addendum from [Calix](https://x.com/calixo888):
 
 "I usually see the confidence and this subject as the midwit meme"
 
-<center>
+<figure markdown="1">
 
  ![](../assets/images/efd/midlight.png){width="60%" alt="Midwit bell curve"}
 
-</center>
+</figure>
 
 "In the beginning when we're naive, we just do things. Then when we progress, we become self-aware judgmental, and scared, and we overthink things. In the end, we learn ourselves, and we just go back to doing things."
 

@@ -91,7 +91,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 <iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/videoseries?list=PLowKtXNTBypGqImE405J2565dvjafglHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-<center>
+<figure markdown="1">
 
 ## Bill of Materials
 
@@ -137,7 +137,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 |1   |22 AWG Solid Tinned-Copper Hook-Up Wire                                                                                                                                               ||$29.95|[link](https://www.adafruit.com/product/3174?gclid=Cj0KCQjww4OMBhCUARIsAILndv4TcRmMF-8TiYvh74DqYKzl6-iRXDQZRWgg_geBEG7LG3p2uWDhGiQaAlhYEALw_wcB)                                                                                                                                                                                                                                               |
 
 --- Total Cost - **$228.66** ---
-</center>
+</figure>
 
 ## Clock Module
 
@@ -151,26 +151,20 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 
 <iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/HKCb6LxuJ04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<center>
-
+<figure markdown="1">
 ![](../assets/images/8-bitComputer/555wave.jpg){ width="100%" alt="Oscilloscope display showing clock vs capacitor waveforms"}
   <figcaption>Clock vs Capacitor</figcaption>
+</figure>
 
-</center>
-
-<center>
-
+<figure markdown="1">
 ![](../assets/images/8-bitComputer/variableastable.jpg){ width="80%" alt="Variable astable multivibrator circuit setup"}
-
-</center>
+</figure>
 
 <iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/gXsm1pPk73Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<center>
-
+<figure markdown="1">
 ![](../assets/images/8-bitComputer/monostable.jpg){ width="80%" alt="Monostable multivibrator circuit setup"}
-
-</center>
+</figure>
 
 <iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/oZreQbS1mkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -186,11 +180,9 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 <iframe loading=lazy src="https://drive.google.com/file/d/1-R9MkHobL7_UnY4A5ClBVB-B3Wk5GqkO/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
 
-<center>
-
+<figure markdown="1">
 ![](../assets/images/8-bitComputer/clockmodule.jpg){ width="100%" alt="Completed clock module assembly"}
-
-</center>
+</figure>
 
 <iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/Hz7vxBx9ODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -204,11 +196,9 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 <iframe loading=lazy src="https://drive.google.com/file/d/1n3osGqqPa9fuIrJvKPaofTcG2bQKnvha/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
 
-<center>
-
+<figure markdown="1">
 ![](../assets/images/8-bitComputer/8-BitRegister.jpg){ width="100%" alt="8-bit register module assembly"}
-
-</center>
+</figure>
 
 <iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/2IVVtewC8cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -276,20 +266,15 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 <iframe loading=lazy width="100%" height="500" src="https://www.youtube.com/embed/1Jj-sJ78O6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-<center>
-
+<figure markdown="1">
 ![](../assets/images/8-bitComputer/Fibonaccisequencespiral.png){ width="60%" alt="Visual representation of Fibonacci sequence spiral"}
+</figure>
 
-</center>
-
-<center>
-
+<figure markdown="1">
 ![](../assets/images/8-bitComputer/FibonacciEquasion.png){ width="80%" alt="Mathematical equation for Fibonacci sequence"}
+</figure>
 
-</center>
-
-<center>
-
+<figure markdown="1">
 **First 12 Numberes in the Fibonacci Sequence**
 
 | n  | Fibonacci Number |
@@ -306,8 +291,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 | 9  | 34               |
 | 10 | 55               |
 | 11 | 89               |
-
-</center>
+</figure>
 
 [^1]: https://eater.net/8bit
 

@@ -79,7 +79,7 @@ template: comments.html
 
 ---
 
-<center>
+<figure markdown="1">
 
 **Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!**
 
@@ -89,17 +89,17 @@ template: comments.html
 
 [Parametric Bottle Cap Generator Files :fontawesome-brands-github:](https://github.com/Twarner491/ParametricBottleCapGenerator){: align=right .md-button .md-button--primary }
 
-</center>
+</figure>
 
 ## CAD & Testing
 
 This model was designed in Fusion 360 and uses 3 required input parameters and [standard Metric thread profile](https://amesweb.info/Screws/metric-thread-profile-form-formula.aspx) equations to generate a cap that will perfectly fit any of your threaded containers. Input Parameters can be found from an existing threaded connector following the documentation below and their values can be written in their corresponding Expression boxes in the Parameters spreadsheet of the attached Parametric Bottle Cap Fusion 360 file (shown below)
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/ParametricGenerator/capparameters.png){width="95%" alt="Fusion 360 parameters spreadsheet for cap generation"}
 
-</center>
+</figure>
 
 !!! abstract "Project Origins"
 
@@ -107,11 +107,11 @@ This model was designed in Fusion 360 and uses 3 required input parameters and [
 
 Following the standard Metric thread profile[^1] (displayed in the diagram below)...
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/ParametricGenerator/ISOThreadForm1.jpg){width="75%"}
+![](../assets/images/ParametricGenerator/ISOThreadForm1.jpg){width="100%"}
 
-</center>
+</figure>
 
 The model derives all necessary values from three required input parameters, all of which are fed into Fusion 360's coil tool, creating entirely parametrically generated threads. The calculations for user parameters derived from the three required input parameters are as followed ...
 
@@ -132,19 +132,19 @@ The implementation of these [standard Metric thread profile](https://amesweb.inf
 
 all of which are included, shown below, to generate the cap's threads.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/ParametricGenerator/ThreadCap.png){width="95%" alt="Fusion 360 coil tool settings for thread generation"}
 
-</center>
+</figure>
 
 Following the Generation of the caps thread, an inner contour is added defined by the ISO 965-1 standard[^2] - shown in the diagram below.
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/ParametricGenerator/ISOExternalThreadRootContour.jpg){width="50%"}
+![](../assets/images/ParametricGenerator/ISOExternalThreadRootContour.jpg){width="100%"}
 
-</center>
+</figure>
 
 This standard calls for radius value *ThreadPitch / 4*, and thus the following values are used in the inner contour ...
 
@@ -153,11 +153,11 @@ This standard calls for radius value *ThreadPitch / 4*, and thus the following v
 
 The contour is created with Fusion's Fillet tool and the prior mentioned values, shown below.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/ParametricGenerator/threadfillet.png){width="95%" alt="Fusion 360 fillet tool settings for thread contour"}
 
-</center>
+</figure>
 
 All this yields the successful basic generator, embedded below ...
 
@@ -186,33 +186,33 @@ There are three measurements required to generate your cap, all of which can be 
 
 1. [x] **Connector Diameter -**
 Measure the diameter (in MM) of your existing connector, from the very farthest point (i.e. the point of the thread) on either side. 
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/diametermeasurment.jpg){width="95%" alt="Measuring connector diameter with calipers"}
-</center>
+</figure>
 Then, update the Expression value in the ConnectDiameter row (the box highlighted yellow below) with this found value.
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/connectdiameter.png){width="95%" alt="ConnectDiameter parameter input in Fusion 360"}
-</center>
+</figure>
 
 2. [x] **Connector Length -**
 Measure the height (in MM) of your existing connector, from the top lip to underneath the threads.
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/legnthmeasurement.jpg){width="95%" alt="Measuring connector length with calipers"}
-</center>
+</figure>
 Then, update the Expression value in the ConnectLegnth row (the box highlighted yellow below) with this found value.
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/connectlegnth.png){width="95%" alt="ConnectLength parameter input in Fusion 360"}
-</center>
+</figure>
  
 3. [x] **Thread Pitch -**
 Measure the thread pitch of your existing connector, the distance in MM between the points of two sequential threads. 
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/pitchmeasurment.jpg){width="95%" alt="Measuring thread pitch with calipers"}
-</center>
+</figure>
 Then, update the Expression value in the ThreadPitch row (the box highlighted yellow below) with this found value.
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/threadpitch.png){width="95%" alt="ThreadPitch parameter input in Fusion 360"}
-</center>
+</figure>
 
 ### Optional Customization
 
@@ -220,15 +220,15 @@ To offer a bit more customization to each generated cap, there are a couple of d
 
 1. [ ] **Number of Grips -**
 The number of grips lining the edge of the cap can be changed in the Expression value of the NumofGrips row. I find values between 40 through 55 work best, but if your experimenting, going below 11 will stop the generation of grip chamfered.
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/numofgrips.png){width="95%" alt="NumofGrips parameter input in Fusion 360"}
-</center>
+</figure>
 
 2. [ ] **Grip Depth -**
 The depths of these grips can be altered, determining how grippy your grips are. I've found a value around 0.3 or 0.4 offers a good texture around the edge.
-<center>
+<figure markdown="1">
 ![](../assets/images/ParametricGenerator/gripdepth.png){width="95%" alt="GripDepth parameter input in Fusion 360"}
-</center>
+</figure>
 
 3. [ ] **Lid Style -**
 The lid style of your cap can be toggled between 4 presets in the Fusion Parametric Bottle Cap file by navigating to
@@ -240,21 +240,32 @@ Parametric-Bottle_Cap > Bodies > Styles
 in the Fusion browser. The lid styles can be toggled between via the eye icon to the left of each style. The four styles are included below, with each of the toggles highlighted.
 
 1. Plain -
-<center>
-![](../assets/images/ParametricGenerator/plain.png){width="95%" alt="Plain cap style selection in Fusion 360"}
-</center>
+
+    <figure markdown="1">
+    ![](../assets/images/ParametricGenerator/plain.png){width="95%" alt="Plain cap style selection in Fusion 360"}
+    </figure>
+
 2. Single Hole -
-<center>
-![](../assets/images/ParametricGenerator/singlehole.png){width="95%" alt="Single hole cap style selection in Fusion 360"}
-</center>
+
+    <figure markdown="1">
+    ![](../assets/images/ParametricGenerator/singlehole.png){width="95%" alt="Single hole cap style selection in Fusion 360"}
+    </figure>
+
 3. Salt Shaker -
-<center>
-![](../assets/images/ParametricGenerator/saltshaker.png){width="95%" alt="Salt shaker cap style selection in Fusion 360"}
-</center>
+
+    <figure markdown="1">
+    ![](../assets/images/ParametricGenerator/saltshaker.png){width="95%" alt="Salt shaker cap style selection in Fusion 360"}
+    </figure>
+
 4. Lanyard -
-<center>
-![](../assets/images/ParametricGenerator/lanyard.png){width="95%" alt="Lanyard cap style selection in Fusion 360"}
-</center>
+
+    <figure markdown="1">
+    ![](../assets/images/ParametricGenerator/lanyard.png){width="95%" alt="Lanyard cap style selection in Fusion 360"}
+    </figure>
+
+5. (Bonus) Community Remixes - 
+
+    Since I published this article, the community has developed a few additional styles! You can browse these on [printables](https://www.printables.com/model/76271-parametric-bottle-cap-generator/remixes).
 
 !!! success "Congrats!"
 

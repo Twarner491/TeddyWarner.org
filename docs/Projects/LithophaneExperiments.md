@@ -85,9 +85,13 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
     This page is not documentation on the lithophane making process, but more of a portfolio of some notable lithophanes I've printed since taking up this medium.
 
-<center>
+<figure markdown="1">
 
 [3dp.rocks's Lithophane Generator :fontawesome-solid-earth-americas:](https://3dp.rocks/lithophane/){ .md-button .md-button--primary }
+
+</figure>
+
+<center>
 
 <iframe width="90%" height="495" src="https://www.youtube.com/embed/ZNlbl6uhqbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -97,45 +101,42 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 ## People
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/LithophaneExperiments/friends.jpg){width="49.5%" alt="Original photo of friends group"}
-![](../assets/images/LithophaneExperiments/friendslithophane.jpg){width="46.6%" alt="Lithophane print of friends group photo"}
+![](../assets/images/LithophaneExperiments/friends.jpg){width="48.5%" alt="Original photo of friends group" align="left"}
+![](../assets/images/LithophaneExperiments/friendslithophane.jpg){width="45.6%" alt="Lithophane print of friends group photo" align="right"}
 
-![](../assets/images/LithophaneExperiments/fam.jpg){width="51.5%" alt="Original family photo"}
-![](../assets/images/LithophaneExperiments/famlithophane.jpg){width="45.7%" alt="Lithophane print of family photo"}
+![](../assets/images/LithophaneExperiments/fam.jpg){width="50.5%" alt="Original family photo" align="left"}
+![](../assets/images/LithophaneExperiments/famlithophane.jpg){width="44.7%" alt="Lithophane print of family photo" align="right"}
 
-![](../assets/images/LithophaneExperiments/MC.jpg){width="51.5%" alt="Original photo of MC"}
-![](../assets/images/LithophaneExperiments/MClithophane.jpg){width="46.3%" alt="Lithophane print of MC photo"}
+![](../assets/images/LithophaneExperiments/MC.jpg){width="50.5%" alt="Original photo of MC" align="left"}
+![](../assets/images/LithophaneExperiments/MClithophane.jpg){width="45.3%" alt="Lithophane print of MC photo" align="right"}
 
-![](../assets/images/LithophaneExperiments/nina.jpg){width="50%" alt="Original photo of Nina"}
-![](../assets/images/LithophaneExperiments/ninalithophane.jpg){width="46.4%" alt="Lithophane print of Nina photo"}
+![](../assets/images/LithophaneExperiments/nina.jpg){width="49%" alt="Original photo of Nina" align="left"}
+![](../assets/images/LithophaneExperiments/ninalithophane.jpg){width="45.4%" alt="Lithophane print of Nina photo" align="right"}
 
-![](../assets/images/LithophaneExperiments/zach.jpg){width="55.5%" alt="Original photo of Zach"}
-![](../assets/images/LithophaneExperiments/zachlithophane.jpg){width="43%" alt="Lithophane print of Zach photo"}
+![](../assets/images/LithophaneExperiments/maeko.jpg){width="46.2%" alt="Original photo of Maeko" align="left"}
+![](../assets/images/LithophaneExperiments/lithophanemakeo.jpg){width="48.1%" alt="Lithophane print of Maeko photo" align="right"}
 
-![](../assets/images/LithophaneExperiments/maeko.jpg){width="47.2%" alt="Original photo of Maeko"}
-![](../assets/images/LithophaneExperiments/lithophanemakeo.jpg){width="49.1%" alt="Lithophane print of Maeko photo"}
+![](../assets/images/LithophaneExperiments/alex.jpg){width="50.5%" alt="Original photo of Alex" align="left"}
+![](../assets/images/LithophaneExperiments/alexlithophane.jpg){width="43.5%" alt="Lithophane print of Alex photo" align="right"}
 
-![](../assets/images/LithophaneExperiments/alex.jpg){width="51.5%" alt="Original photo of Alex"}
-![](../assets/images/LithophaneExperiments/alexlithophane.jpg){width="44.5%" alt="Lithophane print of Alex photo"}
-
-</center>
+</figure>
 
 ## Art
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/LithophaneExperiments/keithharring.jpg){width="51%" alt="Original Keith Haring artwork"}
-![](../assets/images/LithophaneExperiments/keithharringlithophane.jpg){width="45%" alt="Lithophane print of Keith Haring artwork"}
+![](../assets/images/LithophaneExperiments/keithharring.jpg){width="50%" alt="Original Keith Haring artwork" align="left"}
+![](../assets/images/LithophaneExperiments/keithharringlithophane.jpg){width="44%" alt="Lithophane print of Keith Haring artwork" align="right"}
 
-![](../assets/images/LithophaneExperiments/painting.jpg){width="52%" alt="Original painting artwork"}
-![](../assets/images/LithophaneExperiments/paintinglithophane.jpg){width="46%" alt="Lithophane print of painting"}
+![](../assets/images/LithophaneExperiments/painting.jpg){width="51%" alt="Original painting artwork" align="left"}
+![](../assets/images/LithophaneExperiments/paintinglithophane.jpg){width="45%" alt="Lithophane print of painting" align="right"}
 
-![](../assets/images/LithophaneExperiments/gerogiaokeef.jpg){width="51.5%" alt="Original Georgia O'Keeffe artwork"}
-![](../assets/images/LithophaneExperiments/gerogiaokeeflithophane.jpg){width="44.6%" alt="Lithophane print of Georgia O'Keeffe artwork"}
+![](../assets/images/LithophaneExperiments/gerogiaokeef.jpg){width="50.5%" alt="Original Georgia O'Keeffe artwork" align="left"}
+![](../assets/images/LithophaneExperiments/gerogiaokeeflithophane.jpg){width="43.6%" alt="Lithophane print of Georgia O'Keeffe artwork" align="right"}
 
-</center>
+</figure>
 
 [^1]: https://en.wikipedia.org/wiki/Lithophane
 

@@ -84,25 +84,23 @@ template: comments.html
 
 Subtractive manufacturing is a process I've always found mesmerizing. Although additive processes such as 3D printing allow for the creation of something from seemingly nothing, I believe it's even cooler to watch the morphing of existing stock into a different object. Despite this interest, I feel as though I've barely scratched the surface of CNC - primarily focusing on PCB milling in my subtractive manufacturing projects. I made a first attempt to dive into more subtractive manufacturing work a couple of years ago now when I built [V1 Engineering's](https://www.v1engineering.com/) original [MPCNC](https://docs.v1engineering.com/mpcnc/burly/).
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/MillingWorkflow/MPCNC1.jpg){width="49%"}
-![](../assets/images/MillingWorkflow/MPCNC2.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/MPCNC1.jpg){width="48%" align="left"}
+![](../assets/images/MillingWorkflow/MPCNC2.jpg){width="48%" align="left"}
 
-  <figcaption>My Mostly Printed CNC Machine</figcaption>
-
-</center>
+</figure>
 
 I absolutely loved building this machine and recommend it to all interested in understanding the workings of CNC, yet I don't mill on mine all that often, I find more use in using the machine as a GCode dev platform for some of my other projects. 
 
 Since my initial attempted steps with the [MPCNC](https://docs.v1engineering.com/mpcnc/burly/), I've become more versed with CNC milling due to exposure during my Fab Academy [Week 7: Computer Controlled Machining](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week07/) assignment. For this assignment, I used the [CLS Fab Lab's](https://www.charlottelatin.org/academics/steam) [ShopBot PRSalpha](https://www.shopbottools.com/products/alpha) to mill the plywood fish tank housing for my Fab Academy [Final Project](https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Final%20Project/final-project/). I continued my milling work over the summer, running the ShopBot almost daily over July for [Young Engineers of Today's](https://www.youngengineersoftoday.com/) Summer Camps. Last fall, our lab picked up a [Bantam Tools Desktop CNC Milling Machine](https://store.bantamtools.com/collections/machines), Bantam's flagship machine, capable of super-rapid prototyping when partnered with their [Milling Machine Software](https://www.bantamtools.com/software-download). 
 
-<center>
+<figure markdown="1">
 
-[![](../assets/images/MillingWorkflow/BantamBanner.png){width="54%"}](https://www.bantamtools.com/)
-[![](../assets/images/MillingWorkflow/ShopbotBanner.png){width="43%"}](https://www.shopbottools.com/)
+[![](../assets/images/MillingWorkflow/BantamBanner.png){width="53%" align="left"}](https://www.bantamtools.com/)
+[![](../assets/images/MillingWorkflow/ShopbotBanner.png){width="42%" align="left"}](https://www.shopbottools.com/)
 
-</center>
+</figure>
 
 This article attempts to serve as a complete guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, CAM workflows with [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview) & [Vectric Aspire](https://www.vectric.com/products/aspire), and milling workflows for [Shopbot](https://www.shopbottools.com/) & [Bantam Tools](https://www.bantamtools.com/) machines - all through a collection of milling micro-projects ranging from a 1 to 1.9 Million scale mill of Mars's Gale Crater to brass wax seals :smile:. 
 
@@ -129,56 +127,56 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
     :   The diameter of the endmill. When Profile milling or Through Cutting stock, it is best to keep the ***Tool Diameter ≥ 1/6 Stock Thickness***, preserving the integrity of the endmill while allowing for full passes. Larger tool diameters yield shorter cut times when removing a lot of material, while smaller diameters allow for higher detail to be reached. It is typically best to utilize both larger and smaller diameter endmills, using the larger to clear the bulk of stock material, while finishing the mill with a smaller diameter tool to achieve the best detail. 
 
-        <center>
+        <figure markdown="1">
 
           ![](../assets/images/MillingWorkflow/darkdiameter.png#only-light){width="50%"}
           ![](../assets/images/MillingWorkflow/lightdiameter.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
     `Flute Count`
 
     :   The number of individual flutes an endmill has. Flutes are the upward running cutting edges on an endmill. Lower flute counts allow for better chip & heat clearance from the cutting edge, while higher flute counts provided a smoother finish to a part. Stock materials that require a high surface speed also require higher flute bits, and vice versa with lower surface speed requirements. One to Two flute bits will suffice for prototyping with soft plastics & waxes. Two or more flutes will typically be needed for harder plastics (such as HDPE), woods, and metals.
 
-        <center>
+        <figure markdown="1">
 
           ![](../assets/images/MillingWorkflow/darkflute.png#only-light){width="50%"}
           ![](../assets/images/MillingWorkflow/lightflute.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
     `Surface Speed`
 
     :   The speed at which the tool's cutting edge travels through the stock. Surface Speed is dependent on both the stock & endmill materials. Maximum surface speeds are typically published by your endmill's manufacturer and do not need to be derived experimentally. ***Staring jobs at ≤ 50% of the maximum provided value is the best practice to allow for ample time to ensure the successful operation of your machine***.
 
-        <center>
+        <figure markdown="1">
 
-          ![](../assets/images/MillingWorkflow/darksurface.png#only-light){width="40%"}
-          ![](../assets/images/MillingWorkflow/lightsurface.png#only-dark){width="40%"}
+          ![](../assets/images/MillingWorkflow/darksurface.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightsurface.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
     `Chip Load`
 
     :  The thickness of offcut 'chips' removed with each flute per revolution of the endmill. Maximum chip load is typically provided by the endmill's manufacturer, based upon the tool's characteristics. Finding a balance between chip load extremes is crucial for the safety of you and your machine. While larger chip loads yield shorter machine time, they also put greater forces on your endmill, potentially pushing the bit towards its point of rupture. On the other hand, smaller chip loads increase machine time, while expelling waste and heat from the tool at a slower pace, thus risking overheating and potential fire. Safe chip load values usually fall between <span class="in">*0.001"* & *0.010"*</span><span class="mm"><i>0.0254mm</i> & <i>0.254mm</i></span>.
 
-        <center>
+        <figure markdown="1">
 
-          ![](../assets/images/MillingWorkflow/darkchip.png#only-light){width="32%"}
-          ![](../assets/images/MillingWorkflow/lightchip.png#only-dark){width="32%"}
+          ![](../assets/images/MillingWorkflow/darkchip.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightchip.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
     `Spindle Speed`
 
     :   The number of revolutions made by the endmill in a unit of time (RPM is standard). A Lower RPM yields a higher quality surface finish & more cutting power, while a higher RPM decreases machine time. For optimal milling operations, use a higher RPM for roughing passes & a lower for finishing.
 
-        <center>
+        <figure markdown="1">
 
-          ![](../assets/images/MillingWorkflow/darkspindal.png#only-light){width="30%"}
-          ![](../assets/images/MillingWorkflow/lightspindal.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkspindal.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightspindal.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
         <div class="ftmin">
 
@@ -199,12 +197,12 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
     :   The speed at which the machine moves the tool through the stock. Finding the right feed rate is crucial for the safety of you and your machine. Excessively high feed rates cause excessive load on the cutter, leading to cataclysmic failure of the endmill, spindle, and machine. Feed rates that are too low produce unnecessary vibration on the machine, leading to poor surface finishes & potential cutter failure.
 
-        <center>
+        <figure markdown="1">
 
-          ![](../assets/images/MillingWorkflow/darkfeed.png#only-light){width="30%"}
-          ![](../assets/images/MillingWorkflow/lightfeed.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkfeed.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightfeed.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
         <div class="ftmin">
 
@@ -225,12 +223,12 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
     :   The speed at which the endmill is driven down into the stock. The vertically running flutes on an endmill allow the tool to cut horizontally, while vertical plunges are more demanding on the tool. Lower plunge rates prevent tool damage & maintain lower temperatures while boring holes. ***All plunging cuts should be ramped***, as gradual plunging while traveling across the stock will reduce tool stress.
         
-        <center>
+        <figure markdown="1">
 
-          ![](../assets/images/MillingWorkflow/darkplunge.png#only-light){width="45%"}
-          ![](../assets/images/MillingWorkflow/lightplunge.png#only-dark){width="45%"}
+          ![](../assets/images/MillingWorkflow/darkplunge.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightplunge.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
         <div class="ftmin">
 
@@ -251,12 +249,12 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
     :   The vertical depth of each pass of the tool into the stock. ***Best practice is to maintain a step down of ≤ 50% of the tool diameter***, however, may be increased while milling softer materials. The step down should **always** remain less than the tool diameter.
 
-        <center>
+        <figure markdown="1">
 
-          ![](../assets/images/MillingWorkflow/darkstepdown.png#only-light){width="30%"}
-          ![](../assets/images/MillingWorkflow/lightstepdown.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkstepdown.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightstepdown.png#only-dark){width="50%"}
 
-        </center>
+        </figure>
 
         <div class="ftmin">
 
@@ -277,12 +275,12 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
     :   The space between passes of the tool into the stock. While pocketing, a maximum stepover of 50% can be used, however lower stepover values will leave a better surface finish.
 
-        <center>
+        <figure markdown="1">
 
-          ![](../assets/images/MillingWorkflow/darkstepover.png#only-light){width="30%"}
-          ![](../assets/images/MillingWorkflow/lightstepover.png#only-dark){width="30%"}
+          ![](../assets/images/MillingWorkflow/darkstepover.png#only-light){width="50%"}
+          ![](../assets/images/MillingWorkflow/lightstepover.png#only-dark){width="50%"}
 
-        </center> 
+        </figure>
 
         <div class="ftmin">
 
@@ -303,7 +301,7 @@ Creating a successful subtractive manufacturing toolpath can be a bit more intim
 
 Feeds and speeds are equally dependent on material properties and the specific of your machine & tool. Below I've compiled a table of commonly milled stock materials, ranging from woods to plastics to metals. Each material offers a brief description of the stock, as well as average surface speed & chip loads. Chiploads are tool-dependent just as much as they are material-dependent, so be sure to select an adequate load for your tool's diameter. More conservative chip loads are given on the left, while aggressive loads are given on the right. Conservative values will extend the life of your tool, while the higher loads will catalyze your job time - select a chipload within the provided range based on your needs. As mentioned above, **This is by no means a universal key** and necessary precautions & alterations should be made to provide values to mesh with your manufacturing workflow. Often the manufacturer of your tool & your machine will provide generic feeds and speeds for your specific equipment. Operator input is required to achieve successful & safe cuts, often you'll be able to hear machine strain - a telltale sign of poor cutting.
 
-<center>
+<figure markdown="1">
 
 <table>
     <tr>
@@ -831,7 +829,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
 		</tr>
 </table>
 
-</center>
+</figure>
 
 ### Feeds & Speeds Calculator
 
@@ -941,43 +939,43 @@ In hopes of providing a slightly better "conclusion" to this piece, I've appende
    <figcaption>Milling on the Shopbot Desktop MAX</figcaption>
 </center>
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/MillingWorkflow/galeraw.jpg){width="98%"}
    <figcaption>... and the results</figcaption>
 
-</center>
+</figure>
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/MillingWorkflow/galeglory1.jpg){width="49%"}
-![](../assets/images/MillingWorkflow/galeglory2.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/galeglory1.jpg){width="48%" align="left"}
+![](../assets/images/MillingWorkflow/galeglory2.jpg){width="48%" align="right"}
    <figcaption>Final Gale Crater Mill after finishing</figcaption>
 
-</center>
+</figure>
 
 ### Topography Paper Weight
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/MillingWorkflow/Topographyselection.jpg){width="100%"}
   <figcaption>Using <a href="https://jthatch.com/Terrain2STL/">Terrain2STL</a> to generate the topography</figcaption>
 
-</center>
+</figure>
 
 <center>
   <iframe width="98%" height="550" align="left" src="https://www.youtube.com/embed/U-eiMsjUyIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    <figcaption>Milling on the Bantam Tools Desktop CNC Milling Machine</figcaption>
 </center>
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/MillingWorkflow/tahoestock.jpg){width="33%"}
-![](../assets/images/MillingWorkflow/tahoeroughingpass.jpg){width="33%"}
-![](../assets/images/MillingWorkflow/tahoefinishingpass.jpg){width="33%"}
+![](../assets/images/MillingWorkflow/tahoestock.jpg){width="31%" align="left"}
+![](../assets/images/MillingWorkflow/tahoeroughingpass.jpg){width="31%" align="left"}
+![](../assets/images/MillingWorkflow/tahoefinishingpass.jpg){width="31%" align="left"}
    <figcaption>Some more milling media</figcaption>
 
-</center>
+</figure>
 
 <center>
  <div style="width: 98%; height: 550; margin: 0px;">
@@ -986,13 +984,13 @@ In hopes of providing a slightly better "conclusion" to this piece, I've appende
 <figcaption>and some more milling media</figcaption>
 </center>
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/MillingWorkflow/tahoeglory1.jpg){width="49%"}
-![](../assets/images/MillingWorkflow/tahoeglory2.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/tahoeglory1.jpg){width="48%" align="left"}
+![](../assets/images/MillingWorkflow/tahoeglory2.jpg){width="48%" align="right"}
    <figcaption>... and the results</figcaption>
 
-</center>
+</figure>
 
 ### Flat-Pack Stool
 
@@ -1001,22 +999,22 @@ In hopes of providing a slightly better "conclusion" to this piece, I've appende
    <figcaption>Flat-Pack Stool model in Fusion 360</figcaption>
 </center>
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/MillingWorkflow/cncnostool.jpg){width="49%"}
-![](../assets/images/MillingWorkflow/cncyesstool.jpg){width="49%"}
+![](../assets/images/MillingWorkflow/cncnostool.jpg){width="48%" align="left"}
+![](../assets/images/MillingWorkflow/cncyesstool.jpg){width="48%" align="right"}
    <figcaption>Milling in progress</figcaption>
 
-</center>
+</figure>
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/MillingWorkflow/stool1.jpg){width="32%"}
-![](../assets/images/MillingWorkflow/stool2.jpg){width="32%"}
-![](../assets/images/MillingWorkflow/stool3.jpg){width="32%"}
+![](../assets/images/MillingWorkflow/stool1.jpg){width="31%" align="left"}
+![](../assets/images/MillingWorkflow/stool2.jpg){width="31%" align="left"}
+![](../assets/images/MillingWorkflow/stool3.jpg){width="31%" align="left"}
    <figcaption>... and the results</figcaption>
 
-</center>
+</figure>
 
 [^1]: https://www.cnccookbook.com/machining-carbon-fiber-composites-drilling-cnc-tools/
 [^2]: https://dragonplate.com/how-to-cut-carbon-fiber

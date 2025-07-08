@@ -107,24 +107,24 @@ When in balance, six steps create a successful aquaponics ecosystem, where all p
 
 With the workings of this system in mind, I began to sketch out a design for my aquaponics tank, where a garden box is located above a fish tank, to allow for optimal water paths. I planned on making this structure from plywood and then adding additional internal sections for both the fish and plants, connecting these two to the plywood structure, which will also house electronics. Below are some of these concept sketches, showing the brainstorming of the tank's plywood structure.
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/AssistiveAquaponics/Sketch1.png)
-![](../assets/images/AssistiveAquaponics/Sketch2.png)
+![](../assets/images/AssistiveAquaponics/Sketch1.png){align="left"}
+![](../assets/images/AssistiveAquaponics/Sketch2.png){align="right"}
 
   <figcaption>Some Notes and Sketches of the Aquaponics Fish Tank</figcaption>
 
-</center>
+</figure>
 
-<center>
+<figure markdown="1">
 
 ## Project License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
-</center>
+</figure>
 
-<center>
+<figure markdown="1">
 
 ## Bill of Materials
 
@@ -168,7 +168,7 @@ With the workings of this system in mind, I began to sketch out a design for my 
 
 Total Cost: $323.60
 
-</center>
+</figure>
 
 ## Downloads
 
@@ -229,7 +229,7 @@ Unfortunately, this first iteration of my final project board didn't work on the
 
 I kept iterating on this board, working towards the removal of the excess 0 ohms with better trace routing, an aspect of my board design that only improved over the iterations. On the sixth iteration of this board, shown in the schematic and board file images below, I had reduced the number of 0 ohms's on my board by a good bit, but also worked on the smoothing capacitors routing.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/FishBowlSchematicv4.png)
   <figcaption>Sixth Itteration Fish Bowl Board Schematic</figcaption>
@@ -237,7 +237,7 @@ I kept iterating on this board, working towards the removal of the excess 0 ohms
 ![](../assets/images/AssistiveAquaponics/FishBowlBoardv4.png)
   <figcaption>Sixth Itteration Fish Bowl Board File</figcaption>
 
-</center>
+</figure>
 
 Just like its prior iterations though, this sixth iteration was still unsuccessful, and so far I had been unable to get a version working. I began to make some larger strides on this board during my [week 13](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week13/) class and started another iteration of this board by working back through all systems in the board's schematic, familiarizing myself with the purpose of each system/component. From here, I started work on adding in a 12v to 5v voltage regulator on the fishbowl board, as my fish tank will be run on a 12v DC supply, and this regulator will allow for this 12v system. I took advantage of a 12v to 5v voltage regulator in this regulator system, opposed to a variable voltage regulator, as the components on my fishbowl board will always be 5v, and thus the voltage can be set by the regulator itself. Along with this regulator, I included two *10uf* capacitors between GND and VCC on the voltage regulators' input and output, reducing portion noise on my board.
 
@@ -316,11 +316,11 @@ To interface with my Fish Bowl mainboard, I'm planning on reading a temp/humidit
 
 A quick beginning note - here's the pH scale I referenced during the pH work of my tank. Goldfish, the fish that will be using in my ecosystem, thrive at a neutral pH, something between 7 & 8.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/ph-scale_orig.png){width="49%"}
 
-</center>
+</figure>
 
 I settled on using an Atlas Scientific [Gravity pH Probe](https://atlas-scientific.com/kits/gravity-analog-ph-kit/) in my tank. This sensor, in addition to coming from a reputable company, allows the probe to be underwater up to its connector indefinitely, an important aspect of any tank probe, as well as for a connection between the probe and its interfacing board constantly, without a need for the probe to be detached when not in use. Before beginning the work on my board to interface with this pH probe and board, I did a bit of research into the operating principle of the sensor, a subject well covered in the [Probe's Datasheet](https://atlas-scientific.com/files/consumer-grade-pH-probe.pdf), with some highlights covered below.
 
@@ -331,11 +331,11 @@ larger ions remain in the solution. The difference in the concentration of hydro
 (outside the probe vs. inside the probe) creates a VERY small current. This current
 is proportional to the concentration of hydrogen ions in the liquid being measured." ([Probe Datasheet](https://atlas-scientific.com/files/consumer-grade-pH-probe.pdf))
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/PHoperatingprincipal.png){width="49%"}
 
-</center>
+</figure>
 
 "A pH electrode is a passive device that detects a current generated from hydrogen ion
 activity. This current (which can be positive or negative) is very weak and cannot be
@@ -349,11 +349,11 @@ $$E = E^0 + \frac{RT}{F}\ln(\alpha_{H+}) = E^0 - \frac{2.303RT}{F}pH$$
  - T is the temperature in Kelvin
  - F is the Faraday constant
 
- <center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/PHtoV.jpg){width="49%"}
 
-</center>
+</figure>
 
 To calibrate the pH probe to work against these voltage reading thresholds, a calibration is required. Included along with the Atlas Scientific pH probe I ordered were three packs of pH calibration liquids, a *4*, *7*, and *10* level liquid. The concept of the calibration reflects measurements of the probe at each of these points, and the probe can be calibrated by being placed in each one of these liquids and then set to the liquid's corresponding pH value, leaving a scale like that shown below.
 
@@ -594,11 +594,11 @@ I began working from this interface in my [week 14](http://fabacademy.org/2021/l
 
 The bulk of this communication setup work is discussed on my [week 14](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week14/) page, but I'll touch on the highlights on this function here. As mentioned above, this LCD networking feature in my system uses the [software serial](https://www.arduino.cc/en/Reference/softwareSerial) library. This library allows serial communications on any of a microcontroller's digital pins, and allows me to configure two receiving and transmitting pins on my mainboard node, and communicate with bus addresses to my two input nodes. My first step while implementing this library was to set up two communication ports in my mainboard code, one for communication with my systems temperature and humidity input node, and another for the PH input node. Through this setup, I'm able to communicate across all three nodes, passing through these two set communication ports, and will be able to call on specific nodes with their defined addresses, *portDHT* and *portPH*.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/week14/ports.png)
 
-</center>
+</figure>
 
 I call upon each of these different nodes throughout my mainboard interface code. Each port is started with the line ...
 
@@ -920,14 +920,14 @@ I began by prepping my machine with the proper bit and mounted my stock to the m
 
 The assembly and post-processing work on this wooden tank structure is well documented on my [week 7](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week07/) computer-controlled machining class page, and that work will not be documented in-depth again on this page for space reasons, however, the final assembled and post-processed beauty shots are included below.
 
-<center>
+<figure markdown="1">
 
-![](../assets/images/AssistiveAquaponics/Final1.jpg)
-![](../assets/images/AssistiveAquaponics/Final2.jpg)
+![](../assets/images/AssistiveAquaponics/Final1.jpg){align="left"}
+![](../assets/images/AssistiveAquaponics/Final2.jpg){align="right"}
 
   <figcaption>Final Shots of Sanded Fish Tank Structure</figcaption>
 
-</center>
+</figure>
 
 After the completion of my tanks structure in my [week 7](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week07/) class, a couple of additions had to be made to allow for the mounting of a mains AC input, my front panel electronics, as well as a mount for my tanks grow lights. Beginning with the mount for my mains AC adapter, I used a paddle bit on my drill to take out some material in the shape of the adapter on the back of the tank, before finishing up the rectangle with a chisel, using the adapter as a reference until reaching a press-fit install. I also drilled two M4 mounting holes with this adapter as a reference, allowing for a secure attachment of the adapter to the frame.
 
@@ -1044,11 +1044,15 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d51722d9162f0667?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
-![](../assets/images/AssistiveAquaponics/BoardMountTop.jpg)
-![](../assets/images/AssistiveAquaponics/BoardMountSide.jpg)
+</center>
+
+<figure markdown="1">
+
+![](../assets/images/AssistiveAquaponics/BoardMountTop.jpg){align="left"}
+![](../assets/images/AssistiveAquaponics/BoardMountSide.jpg){align="right"}
   <figcaption>Board Prototype Fitted in Fish Bowl Board Mount</figcaption>
 
-</center>
+</figure>
 
 #### Jumper Cable Mounts
 
@@ -1056,10 +1060,14 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968aa89914e1b566910?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/CableClip.jpg)
   <figcaption>12x Jumper Mount On Jumper Cables</figcaption>
 
-</center>
+</figure>
 
 #### PSU Mounting Brackets
 
@@ -1067,13 +1075,21 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d355621962c0c91a?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/PSUMounts.jpg)
   <figcaption>Power Supply Mounting Brackets After Cleanup</figcaption>
+
+</figure>
+
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/PSUwMoutns.jpg)
   <figcaption>Power Supply Mounts Attached to PSU</figcaption>
 
-</center>
+</figure>
 
 #### Wire Grommet
 
@@ -1081,13 +1097,21 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968be6b7f066cc0cd5c?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/backgrommet.jpg)
   <figcaption>Back Wire Grommet After Cleanup</figcaption>
+
+</figure>
+
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/installedbackgrommet.jpg)
   <figcaption>Back Wire Grommet Fitted to Wire Passthrough Hole</figcaption>
 
-</center>
+</figure>
 
 #### PSU Terminal Cover
 
@@ -1095,13 +1119,21 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd9688419ecdc5dcb1d95?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/PSUcover.jpg)
   <figcaption>PSU Terminal Cover Plate After Cleanup</figcaption>
+
+</figure>
+
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/PSUonWood.jpg)
   <figcaption>PSU Terminal Cover Mounted to PSU Terminals</figcaption>
 
-</center>
+</figure>
 
 #### Power Breakout Board Mount
 
@@ -1109,11 +1141,16 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968a55c6ebcdb28958d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/powerbreakouttop.jpg)
+
 ![](../assets/images/AssistiveAquaponics/powerbreakoutside.jpg)
   <figcaption>Power Breakout Board Fitted in Board Mount</figcaption>
 
-</center>
+</figure>
 
 #### pH Boards Mounts
 
@@ -1121,10 +1158,14 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968eaf997ed577288df?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/pHboardmount.jpg)
   <figcaption>pH electrical Isolation Board Mounted on Board Mount</figcaption>
 
-</center>
+</figure>
 
 #### pH Probe Mount
 
@@ -1132,10 +1173,14 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968b18baf24f2649273?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/pHbracket.jpg)
   <figcaption>Assembled pH Probe Mount After Cleanup</figcaption>
 
-</center>
+</figure>
 
 #### Cable Bundle Mounting Clips
 
@@ -1143,120 +1188,126 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968feb24eaf5dc2f362?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
+</center>
+
+<figure markdown="1">
+
 ![](../assets/images/AssistiveAquaponics/cableclipmounted.jpg)
   <figcaption>Cable Bundle Clip Mounted to Back of Tank Structure</figcaption>
 
-</center>
+</figure>
 
 ## System Assembly & Testing
 
 Due to the countless design hours spent planning the assembly of my entire tank, this process had plenty of digital references, making the most time-consuming process of the assembly the one, not digitally planned aspect, cable management. I began the assembly process on this task, beginning with the connection of my power supply to mains via the inlaid AC adapter in my tank structure. Due to the dangerously high voltages in these terminals, I followed best practices for the connecting of these wires, using crimp-on connectors for each wire connected to these terminals, as well as grounding the whole system, and including an AC adapter with a 250v fuze.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/PSUwireing.jpg)
   <figcaption>Power Supply Terminal Wireing</figcaption>
 
-</center>
+</figure>
 
 As included above, these PSU terminals have a 3d printed terminal cover plate, to provide a little extra protection from any accidental bumps into the terminals. After completing the terminal wiring of the PSU, I installed this terminal cover plate, screwing it down to the wooden plate with M3 screws. I then, with the installed PSU as a reference, found the center of the remaining chunk of the electronics compartment and installed my printed fishbowl main board mount.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/mountinginprogress.jpg)
   <figcaption>Begining of System Integraiton - PSU and Main Board</figcaption>
 
-</center>
+</figure>
 
 Taking a break from cable management for a bit, It was time to begin the incorporation of my tank's subsystems into my plywood tank structure, beginning with my acrylic fish tank. The tank was designed to be an exact fit in this plywood structure, and after real-world fabrication, fit in the structure tight enough to stay put without adhesives of fasteners, even when upsidedown. For the installation of the acrylic tank into the plywood structure, I used four wood clamps long enough to span the width/length of both pieces, and then used the clamps to slowly and evenly press the tank into the structure so it sat flush on all four connecting walls. Following this, I then reattached the structure's laser-cut front panel with some brass furniture screws.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/installedtankback.jpg)
   <figcaption>Acrylic Fish Tank Installed in Plywood Structure</figcaption>
 
-</center>
+</figure>
 
 Next, I began preparing the next subsystem of my tank, the plant box. Due to the predesigned cable management features, the process of including the necessary components here was pretty straightforward. I first routed the tank light strips along their channel, using the zip tie cable mount and cable passthrough to route the cables out the back grommet hole of the plant box. From here I routed a wire that would later be connected to the tank's water pump and finally moved onto the inlaying of the fishbowl board. Behind this board inlay is a little channel meant for the jumpers to run through while attached to the backside of the board. I connected these jumpers to their pins on my fish board, super glued them in place, and took a picture for reference later, as the wires will next be completely hidden. Then, I pressed the board into its corresponding slot, followed by its press-fit laser cut acrylic cover, and sealed around any gaps with silicon. This left me, as shown below, with a mounted sensor board with only the sensor itself exposed.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/plantboxbottom.jpg)
   <figcaption>Bottom of Plant Box After Electronics & Cable Installation</figcaption>
 
-</center>
+</figure>
 
 I was then ready to press this plant box into place, with all of its mounted electronics. The plant box follows the same tight press fit mounting principle as the previous acrylic tank, however instead of using clamps, I slowly worked the assembled plant box back into position, until aligned with the acrylic fish tank and plywood structure, shown below.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/plantboxfront.jpg)
+
 ![](../assets/images/AssistiveAquaponics/plantboxback.jpg)
   <figcaption>Plant Box Installed in Tank Structure Above Acrylic Tank</figcaption>
 
-</center>
+</figure>
 
 While pressing the plant box into position, I was sure to route and keep the structures grow light wires in their cable passthrough on the side of the plant box, yielding some nice clean cable routing across the components of the whole system.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/plantboxgrowwires.jpg)
   <figcaption>Grow Light Cables Routed Through Plant Box Cable Passthrough</figcaption>
 
-</center>
+</figure>
 
 After the installation of all this, a test of the newly installed lights was in order, and I hooked up both my tank's grow & tank lights to a power supply set to 12v and turned them on.
-<center>
+
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/workinglights.jpg)
   <figcaption>System Grow & Tank Lights Testing</figcaption>
 
-</center>
+</figure>
 
 With the bulk of the structure assembly done, I next began the mounting and integration process, starting with the internal tank components like the pH probe. I attached both printed probe clamps to my pH probe and then used some silicone to stick it in the back left corner of my tank, where the probe cable routed up through the plant box, hidden away.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/pHmounted.jpg)
   <figcaption>pH Probe Mounted in Back Left Tank Corner</figcaption>
 
-</center>
+</figure>
 
 Following the pH probe, next up in the tank itself was the water pump. I first connected the pump to the plant box via both a bit of silicone tubing cut to length and then hose clamped and siliconed in place, as well as with connection between the pump's cable and the router pump wires installed previously. I then used the pump's two included mounts to stick the pump down to the tank floor with silicone.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/pumpinstalled.jpg)
   <figcaption>Water Pump Connected & Installed in Tank</figcaption>
 
-</center>
+</figure>
 
 Once all contents of the tank/plant box systems were embedded, I could move on routing their cables down to my structure's main electronics compartment. I used the 3D-printed cable clips printed earlier to route these cables down the back of my tank, between the two included wire grommets. I wrapped all of these cables with some cable wrap I had laying around from and Ender 3 mod I had done.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/routedbackcable.jpg)
   <figcaption>Cable Routing From Plant Box to Electronics Compartment</figcaption>
 
-</center>
+</figure>
 
 These routed cables run through the cable passthrough grommet on the backside of the tank and then slot through their cable route in the PSU terminal cover plate, until out the other side. From here the bulk of cable management began, starting with the power breakout system. I mounted the power breakout board on its 3D printed mount right below the fishbowl mainboard, and then connected the correct incoming and outgoing wires to their connected headers while referencing my eagle power breakout board file. Each of these cables was screwed into their terminal headers before the board was mounted down to the wooden base. From here I began the mounting of the 3 remaining pH boards, two of which sit to the left of my mainboard, and one just off-centered above. These three boards mount via press-fit mounts & their mounting holes, two boards with 3mm holes, and one with 4mm. I then connected the incoming pH probe cable to its terminal, and wired the three pH boards together, before moving onto the main data wiring. Using all of my testing media as a reference, I made the jumper connections for all of the lines in my electronics enclosure, coming from the pH board, temp/humidity sensor, LCD, and light switch, and with that had an integrated system.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/workingwunrouted.jpg)
   <figcaption>All Board Mounted Electronics Compartment</figcaption>
 
-</center>
+</figure>
 
 Although I had wired all of my connections with mounted boards in my electronics enclosure, I finished the system integration process with some additional cable management via jumper cable mounts.
 
-<center>
+<figure markdown="1">
 
 ![](../assets/images/AssistiveAquaponics/finalcablerouting.jpg)
   <figcaption>Final Cable Managed Electronics Compartment</figcaption>
 
-</center>
+</figure>
 
 ... and, with all this assembly & integration work done, it was time for final testing. Below is a successful demonstration of my tank's electronics system. Just a note, in this video, my tank's pump is disconnected, because it's never good to run a water pump outside of water. Instead of leaving this pump connected during the testing of the electronics system, I tested the voltage and current from the pump cables run under the plant box.
 

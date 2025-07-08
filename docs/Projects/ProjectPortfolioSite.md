@@ -228,19 +228,19 @@ The basic setup and customization of your static site are covered wonderfully on
 
 After working on *teddywarner.org* for a couple of months, I began to develop a project template page that accumulates different front-end HTML, CSS & Markdown aspects I use on my pages, which can be found via the button below. 
 
-<center>
+<figure markdown="1">
 
 [:fontawesome-brands-github: Project Page Template](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/PROJECT-TEMPLATE.md?plain=1){ .md-button .md-button--primary}
 
-</center>
+</figure>
 
 Here I've also compiled a bit of a mkdocs markdown cheat sheet with 10 sections for customization, formatting, or additional flair. Again, the [Mkdocs Material Theme Setup Documentation](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/) covers the theme-specific markdown at length and is a nice resource while setting up specific theme-specific bits. This section compiles theme-specific markdown with overall markdown features & all of the markdowns behind it can be found in the following sections, or on this page source - linked below.
 
-<center>
+<figure markdown="1">
 
 [:fontawesome-brands-github: Project Portfolio Site Source Code](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/ProjectPortfolioSite.md?plain=1){ .md-button .md-button--primary}
 
-</center>
+</figure>
 
 ### 1. Markdown Meta Data 
 
@@ -269,10 +269,10 @@ hide:
       ![alt text](imageURL.jpg){: align=right/left width="100%"}
         <figcaption>Caption</figcaption>
       ```
-      <center>
+      <figure markdown="1">
         ![alt text](https://picsum.photos/600/300){width="95%" alt="Terminal output showing successful mkdocs serve command"}
           <figcaption>Caption Example</figcaption>
-      </center>
+      </figure>
 
 === "Headings"
 
@@ -285,23 +285,23 @@ hide:
     ###### Heading 6
     ```
 
-    <center>
+    <figure markdown="1">
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
-    </center>
+    </figure>
 
 === "Hyperlink"
 
       ``` markdown
       [Hyperlink Example](URl)
       ```
-      <center>
+      <figure markdown="1">
       [Hyperlink Example](URl)
-      </center>
+      </figure>
 
 === "Blockquote"
 
@@ -345,12 +345,12 @@ markdown_extensions:
   [Outline Button](URL){ .md-button}
   ```
 
-<center>
+<figure markdown="1">
 
   [Solid Button :fontawesome-solid-download:](URL){ .md-button .md-button--primary}
   [Outline Button](URL){ .md-button}
 
-</center>
+</figure>
 
 ---
 ### 5. Different List Styles
@@ -566,7 +566,7 @@ markdown_extensions:
 | `DELETE`    | :material-close:     Delete resource |
 ```
 
-<center>
+<figure markdown="1">
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
@@ -574,7 +574,7 @@ markdown_extensions:
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
-</center>
+</figure>
 
 ---
 ### 9. Admonitions 
@@ -669,11 +669,11 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 ```
 
-<center>
+<figure markdown="1">
 
 [Icon & Emoji Search Engine :fontawesome-solid-earth-americas:](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search){ .md-button .md-button--primary}
 
-</center>
+</figure>
 
 ``` markdown
 :fontawesome-regular-laugh-wink:
