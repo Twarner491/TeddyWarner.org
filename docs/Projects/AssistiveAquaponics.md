@@ -186,7 +186,7 @@ Total Cost: $323.60
 
 ## Tank Render - Fusion 360
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd96816389cb590d41e3d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a4dfc1ae1ca47cd6d8?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 ## Electronics System
 
@@ -956,7 +956,7 @@ I then followed the same approach taken to remove material for my mains AC adapt
 
 To cover up this newly carved electronics clearance hole, and also complete the side symmetry of my plywood structure, my next step was to laser cut my tank structure's front plate. I began this plate in Fusion 360, as even in 2d design, I find myself most conferrable when using Fusion 360's constraints and sketch interface. I mocked this plate up to hold my system's LCD and a light power switch over the physical cut clearance hole and then added in some icons to the plate, including a *TW* logo, as well as a *light on* and *light off* icon.
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968c8a65966440fc191?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a412b692a4a61153da?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 I saved this Fusion 360 sketch as a *.dxf* and imported the file into CorelDRAW, where I could then, following the same process I took in [week 3](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week03/), could run this file on our lab's Fusion Pro 48 laser cutter. I ran this plate of a sheet of 1/4" plywood, a sheet with matching veneer to that of my plywood structure, allowing the front plate to blend in with the rest of the structure. I wanted to reduce as much laser residue and char on this piece as possible, so I weighted this piece down to the bed of the laser before focusing on the laser, and starting the job. To get a minimal amount of char took a couple of different attempts, but eventually, I was left with the product below ...
 
@@ -1022,7 +1022,7 @@ Following the acrylic fish tank, the *aqua* part of the aquaponics system, it wa
 
 With the manufacturing process in mind, I began work on the plant box's CAD in Fusion 360. The CAD for this part is pretty complex, including not just water routing from a connection port on the bottom of the part, but also a water directing reflow system, and cable management with board mounts incorporated in the design. The part is split into four separate sections, to allow for optimal print orientation on my printer's bed. These four pieces align with three mounting alignment holes for embedded M3 nuts and bolts, and these same alignment screws are used to secure the four sections together.
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968a4933548ed23ebbd?mode=embed" width="900" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a4c37a952529255412?mode=embed" width="900" height="650" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
   <figcaption>Final Plant Box Itteration in Fusion 360</figcaption>
 
@@ -1042,7 +1042,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d51722d9162f0667?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a46f90867f3530bc9d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1058,7 +1058,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968aa89914e1b566910?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a413785fae920f543f?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1073,7 +1073,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968d355621962c0c91a?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a47bc00797a75a3012?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1095,7 +1095,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968be6b7f066cc0cd5c?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a42aed3208bae14bf6?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1117,7 +1117,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd9688419ecdc5dcb1d95?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a448bc2484cc94a3fa?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1139,7 +1139,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968a55c6ebcdb28958d?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a4440684e0772e84b2?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1156,7 +1156,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968eaf997ed577288df?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a49fc0850090dedefb?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1171,7 +1171,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968b18baf24f2649273?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a4386a4a2819a7e7be?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
@@ -1186,7 +1186,7 @@ Following the plant box system of my assistive aquaponics fish tank, a plethora 
 
 <center>
 
-<iframe src="https://myhub.autodesk360.com/ue2cecd93/shares/public/SH56a43QTfd62c1cd968feb24eaf5dc2f362?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
+<iframe src="https://gmail5303747.autodesk360.com/shares/public/SH286ddQT78850c0d8a453d284a8f5c97b29?mode=embed" width="900" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" loading="lazy"></iframe>
 
 </center>
 
