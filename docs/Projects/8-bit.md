@@ -145,11 +145,9 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 <iframe loading=lazy src="https://drive.google.com/file/d/1-FyllkfmhpjOUVsky30Y7QNn7lpM8d4w/preview" width="100%" height="480" allow="autoplay"></iframe>
 </center>
 
-<center>
-
-![](../assets/images/8-bitComputer/setastable.jpg){ width="80%" alt="Setup of astable multivibrator circuit"}
-
-</center>
+<figure markdown="1">
+![](../assets/images/8-bitComputer/setastable.jpg){ width="80%" alt="Setup of astable  circuit"}
+</figure>
 
 <iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/HKCb6LxuJ04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
