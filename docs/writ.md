@@ -70,6 +70,18 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/on-turning-twenty">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/20/thumb.png" alt="On Turning Twenty article cover image"></div>
+            <p class="projtitle">On Turning Twenty</p>
+            <p class="writeyear">Aug 2025</p>
+            <span class="mobileyear">
+            <p class="readtime">9–11 mins</p>
+            </span>
+            <p class="projdescription">I turned twenty today.</p>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/decisiveness">
             <div class="imgparent"><img class="writeimg" src="../assets/images/decisiveness/decisiveness.png" alt="Ex Nihilo Nihil Fit article cover image"></div>
             <p class="projtitle">Ex Nihilo Nihil Fit</p>
