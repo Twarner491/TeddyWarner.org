@@ -52,9 +52,7 @@ class ImageCarousel {
       '31.jpg',
       '32.jpg',
       '33.jpg',
-      '34.jpg',
       '35.JPG',
-      '36.JPG',
       '37.jpg'
     ];
   }
