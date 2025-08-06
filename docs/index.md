@@ -241,13 +241,13 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
         <div class="writparent">
-          <a href="https://teddywarner.org/writings/decisiveness">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/decisiveness/decisiveness.png" alt="Ex Nihilo Nihil Fit article image"></div>
-            <p class="projtitle">Ex Nihilo Nihil Fit</p>
-            <p class="projdescription">Nothing comes out of nothing.</p>
-            <p class="writeyear">Jan 2025</p>
+          <a href="https://teddywarner.org/writings/on-turning-twenty">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/20/thumb.png" alt="On Turning Twenty article image"></div>
+            <p class="projtitle">On Turning Twenty</p>
+            <p class="projdescription">I turned twenty today.</p>
+            <p class="writeyear">Aug 2025</p>
             <span class="mobileyear">
-            <p class="readtime">2-3 mins</p>
+            <p class="readtime">9-11 mins</p>
             </span>
           </a>
         </div>
