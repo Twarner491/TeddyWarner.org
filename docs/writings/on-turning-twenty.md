@@ -33,7 +33,7 @@ template: comments.html
   <meta property="twitter:url" content="https://teddywarner.org/writings/on-turning-twenty/">
   <meta property="twitter:title" content="On Turning Twenty - Teddy Warner">
   <meta property="twitter:description" content="I turned twenty today.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/20/thumb.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/20/thumb.png?foo=bar">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -91,7 +91,7 @@ This certainly felt like a dilemma. Everyone I knew, and I always associated mys
 
 I wasn't quite sure where I'd end up or what I'd be doing, but this uncertainty never really bothered me much. In fact, for a few months, I thought I might become a YouTuber (and even made a banger video for one of my projects: [We Built the Alleged Hans Niemann Chess Cheating Device](https://www.youtube.com/watch?v=ygy8M-QhbSo&t)) as it felt like a good means of financially justifying my continued work on my projects.
 
-It was around this time in my life that one of my old friends/coworkers told me about this program he was in at USC: the [Iovine and Young Academy](https://iovine-young.usc.edu/). This program was pretty epic, and it looked to address my dilemma exceedingly well: the academy spans engineering, business, and design. I applied, got in, and moved to California. It was awesome.
+It was around this time in my life that one of my old friends/coworkers told me about this program he was in at USC: the [Iovine and Young Academy](https://iovine-young.usc.edu/). This program was pretty epic, and it looked to address my dilemma exceedingly well: the academy spans engineering, business, and design - a great balance for the aspiring maker. I applied, got in, and moved to California. It was awesome.
 
 I loved university, I loved the classes, I loved the people. I met some of my closest friends, worked on my [first venture](https://tone.computer), and then at eighteen landed an early position on the [Midjourney](https://www.midjourney.com/home) hardware team. A few months later, I found myself at a crossroads: I loved my work at Midjourney and got to work alongside the most incredible people, yet I had just turned nineteen and felt compelled to spend my next few years doing work of my own. Ultimately, I decided to return to USC.
 
