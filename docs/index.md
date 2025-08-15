@@ -66,7 +66,7 @@ search:
       <div class="content1">
         <div class="introabt">
           <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="assets/images/index/pfp.jpg">Teddy</a>, <span id="typed"></span></h2>
-          <h3>I use digital fabrication techniques to<br>accelerate human centric design.</h3>
+          <h3>I build robots and write essays <br>here's a bit of my work.</h3>
         </div>
       </div>
     </section>
@@ -125,11 +125,13 @@ search:
                                       <rect x="804.5" y="624" width="226" height="272" rx="21" fill="var(--md-default-bg-color)" fill-opacity="0.4" />
                                       <rect x="843" y="645" width="149" height="31" rx="15.5" fill="var(--md-default-bg-color)" />
                                       <text x="917.5" y="665" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.55" font-family="JetBrains Mono" font-size="12" font-style="normal" font-weight="300" line-height="109.588%">What I'm Reading</text>
-                                      <text x="816" y="716" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Time and</text>
-                                      <text x="816" y="736" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Free Will</text>
-                                      <text x="817" y="754" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Henri Bergson</text>
+                                      <text x="816" y="700" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">When</text>
+                                      <text x="816" y="720" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Einstein</text>
+                                      <text x="816" y="740" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Walked with</text>
+                                      <text x="816" y="760" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Gödel</text>
+                                      <text x="817" y="778" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Jim Holt</text>
                                   </g>
-                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677829188i/32783276.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of Time and Free Will" />
+                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1515964026i/36794489.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of When Einstein Walked with Gödel" />
                               </g>
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
@@ -202,6 +204,11 @@ search:
       <div class="content5">
         <a href="https://teddywarner.org/proj"><h2>Projects</h2></a>
         <div class="grid-container">
+          <a target=”_blank” href="https://intempus.org/research/"> <div class="grid-item">
+              <p class="projtitle">Intempus</p>
+              <p class="projdescription">Expressive robots.</p>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div> </a>
           <a href="https://teddywarner.org/Projects/SerialUPDI/"> <div class="grid-item">
               <p class="projtitle">UPDI Serial Programming</p>
               <p class="projdescription">$2.20 and 22x Faster.</p>
@@ -227,11 +234,6 @@ search:
           <a href="https://teddywarner.org/Projects/ParametricGenerator/"> <div class="grid-item">
               <p class="projtitle">Parametric Cap Generator</p>
               <p class="projdescription">Lost a cap? Make a new one.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a target=”_blank” href="https://intempus.org/research/"> <div class="grid-item">
-              <p class="projtitle">Intempus</p>
-              <p class="projdescription">Expressive robots.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
         </div>
@@ -312,7 +314,7 @@ search:
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#typed', {
-      strings: ['a maker.', 'an engineer.', 'a designer.'],
+      strings: ['a researcher.', 'an engineer.', 'a designer.'],
       startDelay: 700,
       typeSpeed: 60,
       backSpeed: 60,
