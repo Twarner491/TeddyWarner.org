@@ -243,6 +243,18 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/on-becoming-a-godfather/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/Godfather/thumb.png" alt="On Becoming a Godfather article image"></div>
+            <p class="projtitle">On Becoming a Godfather</p>
+            <p class="projdescription">This confers great benefits like, being able to speak in a rapsy voice.</p>
+            <p class="writeyear">Aug 2025</p>
+            <span class="mobileyear">
+            <p class="readtime">10–13 mins</p>
+            </span>
+          </a>
+        </div>
+        <hr>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/on-turning-twenty">
             <div class="imgparent"><img class="writeimg" src="../assets/images/20/thumb.png" alt="On Turning Twenty article image"></div>
             <p class="projtitle">On Turning Twenty</p>
@@ -253,6 +265,7 @@ search:
             </span>
           </a>
         </div>
+        <span class="mobileyear">
         <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/efd">
@@ -262,19 +275,6 @@ search:
             <p class="writeyear">Dec 2024</p>
             <span class="mobileyear">
             <p class="readtime">5-6 mins</p>
-            </span>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr/>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/downforce">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/force/force.png" alt="To Drive with Downforce article image"></div>
-            <p class="projtitle">To Drive with Downforce</p>
-            <p class="projdescription">A journey to lessen doom-scrolling.</p>
-            <p class="writeyear">Nov 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">~2 mins</p>
             </span>
           </a>
         </div>
