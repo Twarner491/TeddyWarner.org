@@ -1,6 +1,6 @@
 ---
 title: On Becoming a Godfather
-description: This confers great benefits like, being able to speak in a rapsy voice.
+description: This confers great benefits like, being able to speak in a raspy voice.
 hide:
   - navigation
   - tags
@@ -22,7 +22,7 @@ template: comments.html
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teddywarner.org/writings/on-becoming-a-godfather/">
   <meta property="og:title" content="On Becoming a Godfather - Teddy Warner">
-  <meta property="og:description" content="This confers great benefits like, being able to speak in a rapsy voice.">
+  <meta property="og:description" content="This confers great benefits like, being able to speak in a raspy voice.">
   <meta property="og:image" content="https://teddywarner.org/assets/images/Godfather/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@ template: comments.html
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://teddywarner.org/writings/on-becoming-a-godfather/">
   <meta property="twitter:title" content="On Becoming a Godfather - Teddy Warner">
-  <meta property="twitter:description" content="This confers great benefits like, being able to speak in a rapsy voice.">
+  <meta property="twitter:description" content="This confers great benefits like, being able to speak in a raspy voice.">
   <meta property="twitter:image" content="https://teddywarner.org/assets/images/Godfather/thumb.png">
 
   <!-- Existing resource links -->
@@ -92,7 +92,7 @@ template: comments.html
     
     <div class="message sender">
       <div class="message-bubble">
-        <div class="message-text">it confers great benefits like, being able to speak in a rapsy voice.</div>
+        <div class="message-text">it confers great benefits like, being able to speak in a raspy voice.</div>
         <div class="message-time">4:50 PM</div>
       </div>
       <div class="sender-name">Barrett</div>

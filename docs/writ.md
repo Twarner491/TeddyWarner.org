@@ -77,7 +77,7 @@ search:
             <span class="mobileyear">
             <p class="readtime">10–13 mins</p>
             </span>
-            <p class="projdescription">This confers great benefits like, being able to speak in a rapsy voice.</p>
+            <p class="projdescription">This confers great benefits like, being able to speak in a raspy voice.</p>
           </a>
         </div>
         <hr/>

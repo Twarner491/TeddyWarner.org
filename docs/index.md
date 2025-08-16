@@ -246,7 +246,7 @@ search:
           <a href="https://teddywarner.org/writings/on-becoming-a-godfather/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/Godfather/thumb.png" alt="On Becoming a Godfather article image"></div>
             <p class="projtitle">On Becoming a Godfather</p>
-            <p class="projdescription">This confers great benefits like, being able to speak in a rapsy voice.</p>
+            <p class="projdescription">This confers great benefits like, being able to speak in a raspy voice.</p>
             <p class="writeyear">Aug 2025</p>
             <span class="mobileyear">
             <p class="readtime">10–13 mins</p>
