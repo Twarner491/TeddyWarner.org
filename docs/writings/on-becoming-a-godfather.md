@@ -68,7 +68,7 @@ template: comments.html
 # On Becoming a Godfather
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Aug 2025 </span>| <span class="readTime"><i class="far fa-clock"></i> X-X mins</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Aug 2025 </span>| <span class="readTime"><i class="far fa-clock"></i> 10–13 mins</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/writings/on-becoming-a-godfather/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/writings/on-becoming-a-godfather/&text="><i class="fa-brands fa-x-twitter"></i></a>
