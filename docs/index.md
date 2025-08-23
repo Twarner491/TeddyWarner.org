@@ -198,7 +198,7 @@ search:
         <h2>About</h2>
         <p class="abt1">I’m an engineer specialized in rapid prototyping and applied AI. I’m currently based in SF, building <a target=”_blank” href="https://intempus.org">emotionally intellegent robots</a>.</p>
         <p class="abt2">I'm a <a target=”_blank” style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target=”_blank” style="text-decoration: none;" href="https://fabacademy.org/">Fab Academy</a>. I previously studied design and engineering at the <a target=”_blank” style="text-decoration: none;" href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a>.</p>
-        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> See more on my <a href="assets/misc/resume.pdf">resume</a> or contact me at <a href="mailto:teddy@intempus.org">teddy@intempus.org</a>.</p>
+        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> Contact me via twitter <a target=”_blank” href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a href="mailto:teddy@intempus.org">teddy@intempus.org</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
