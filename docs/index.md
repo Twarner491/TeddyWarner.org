@@ -299,7 +299,7 @@ search:
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#typed', {
-      strings: ['a life enthusiast.', 'a thiel fellow.', 'an engineer.'],
+      strings: ['a life enjoyer.', 'a thiel fellow.', 'an engineer.'],
       startDelay: 700,
       typeSpeed: 60,
       backSpeed: 60,

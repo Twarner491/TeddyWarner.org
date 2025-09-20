@@ -1387,7 +1387,7 @@ header {
     margin-left: 0px;
   }
   .content5 {
-    top: calc(var(--content1-height) + 10em + var(--content4-height));
+    top: calc(var(--content1-height) + 13em + var(--content4-height));
   }
   .fa-arrow-up-right-from-square {
     scale: 0.7;
@@ -1494,7 +1494,7 @@ header {
   }
   
   .content6 {
-    top: calc(var(--content1-height) + 21em + var(--content4-height) + var(--content5-height));
+    top: calc(var(--content1-height) + 24em + var(--content4-height) + var(--content5-height));
   }
   .content6 .projtitle {
     position: relative;
@@ -1507,10 +1507,10 @@ header {
     left: 1.2em;
   }
   .content7 {
-    top: calc(var(--content1-height) + 22em + var(--content4-height) + var(--content5-height) + var(--content6-height));
+    top: calc(var(--content1-height) + 24em + var(--content4-height) + var(--content5-height) + var(--content6-height));
   }
   .content8 {
-    top: calc(var(--content1-height) + 28em + var(--content4-height) + var(--content5-height) + var(--content6-height) + var(--content7-height));
+    top: calc(var(--content1-height) + 31em + var(--content4-height) + var(--content5-height) + var(--content6-height) + var(--content7-height));
   }
   .copyright {
     font-size: 0.6em;
