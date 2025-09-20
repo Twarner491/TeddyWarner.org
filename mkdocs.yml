@@ -50,7 +50,6 @@ theme:
   features:
    - navigation.instant
    - navigation.tracking
-   - navigation.top
    - navigation.tabs
    - navigation.expand
    - content.code.annotate

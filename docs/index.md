@@ -99,7 +99,7 @@ search:
                         <g id="title-group" class="title">
                             <rect x="141" y="143" width="224" height="49" rx="24.5" fill="var(--md-default-bg-color)" />
                             <rect x="141.5" y="143.5" width="223" height="48" rx="24" stroke="var(--md-default-fg-color--lighter)" />
-                            <text x="253" y="175" fill="var(--md-default-fg-color--light)" text-anchor="middle" font-family="Crimson Pro" font-size="23" font-style="normal" font-weight="300" line-height="109.588%">A Creative Curation</text>
+                            <text x="253" y="175" fill="var(--md-default-fg-color--light)" text-anchor="middle" font-family="Crimson Pro" font-size="23" font-style="normal" font-weight="300" line-height="109.588%">Some stuff I've done</text>
                         </g>
                         <a href="https://teddywarner.org/Projects/AssistiveAquaponics/">
                             <g id="image-card-1" class="project">
@@ -136,7 +136,7 @@ search:
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
                         </a>
-                        <a href="https://teddywarner.org/Projects/VonNiemannProbe/">
+                        <a target="_blank" href="https://intempus.org/research">
                             <g id="image-card-4" class="project">
                                 <g clip-path="url(#clip1_107_71)">
                                     <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
@@ -169,46 +169,17 @@ search:
             </div>
         </div>
     </section>
-    <section class="experience">
-      <div class="content3">
-        <h2>What I’ve Been Up To</h2>
-        <a target=”_blank” href="https://intempus.org">
-          <img class="companylogo" src="https://intempus.org/assets/images/favicon.png" alt="Intempus logo"><p class="company">Intempus</p></a><p class="role">Founder</p><p class="year"><span class="mobileyear">Sept 2024 - </span>Present</p>
-        <hr/>
-        <a target=”_blank” href="https://www.midjourney.com/home">
-          <img class="companylogo" src="assets/images/index/logos/mj.png" alt="Midjourney logo"><p class="company">Midjourney</p></a><p class="role">Hardware</p><p class="year"><span class="mobileyear">July </span>2024<span class="mobileyear"> - Aug 2024</span></p>
-        <hr/>
-        <a target=”_blank” href="https://www.autodesk.com/">
-          <img class="companylogo" src="assets/images/index/logos/autodesk.png" alt="Autodesk logo"><p class="company">Autodesk</p></a><p class="role"><span class="mobileyear">Author, </span>Community Manager</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - Aug 2024</span></p>
-        <hr/>
-        <a target=”_blank” href="https://tone.computer/">
-          <img class="companylogo" src="assets/images/index/logos/tone.png" alt="Tone logo"><p class="company">Tone</p></a><p class="role">Founder</p><p class="year"><span class="mobileyear">Oct 2023 - July </span>2024</p>
-        <hr/>
-        <a target=”_blank” href="https://rhythmlink.com/">
-          <img class="companylogo" src="assets/images/index/logos/ri.png" alt="Rhythmlink International logo"><p class="company">Rhythmlink</p></a><p class="role">Manufacturing<span class="mobileyear"> R&D</span><p class="year"><span class="mobileyear">Oct </span>2022 - <span class="mobileyear">May </span>2023</p>
-        <hr/>
-        <a target=”_blank” href="https://www.charlottelatin.org/academics/steam">
-          <img class="companylogo" src="assets/images/index/logos/fab.png" alt="Charlotte Latin Fab Lab logo"><p class="company"><span class="mobileyear">Charlotte Latin </span><span class="mobileshow">CLS </span>Fab Lab</p></a><p class="role">Manager, Machinist</span></p><p class="year"><span class="mobileyear">Oct </span>2020 - <span class="mobileyear">July </span>2023</p>
-        <hr/>
-        <a target=”_blank” href="https://www.youngengineersoftoday.com/">
-          <img class="companylogo" src="assets/images/index/logos/yeot.png" alt="Young Engineers of Today logo"><p class="company"><span class="mobileyear">Young Engineers of Today</span><span class="mobileshow">YEOT</span></p></a><p class="role">Instructor</p><p class="year"><span class="mobileyear">June </span>2019 - <span class="mobileyear">Aug </span>2023</p>
-    </section>
     <section class="about">
       <div class="content4">
         <h2>About</h2>
         <p class="abt1">I’m an engineer specialized in rapid prototyping and applied AI. I’m currently based in SF, building <a target=”_blank” href="https://intempus.org">emotionally intellegent robots</a>.</p>
-        <p class="abt2">I'm a <a target=”_blank” style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target=”_blank” style="text-decoration: none;" href="https://fabacademy.org/">Fab Academy</a>. I previously studied design and engineering at the <a target=”_blank” style="text-decoration: none;" href="https://iovine-young.usc.edu/">USC Iovine and Young Academy</a>.</p>
-        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> Contact me on X <a target=”_blank” href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a href="mailto:teddy@intempus.org">teddy@intempus.org</a>.</p>
+        <p class="abt2">I'm a <a target=”_blank” style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target=”_blank” style="text-decoration: none;" href="https://fabacademy.org/">Fab Academy</a>. I previously worked at <a target=”_blank” style="text-decoration: none;" href="https://iovine-young.usc.edu/">Midjourney</a> where I did research for the internal hardware effort.</p>
+        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> Reach out at <a target=”_blank” href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a  style="text-decoration: none;" href="mailto:teddy@intempus.org">teddy [at] intempus.org</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
-        <a href="https://teddywarner.org/proj"><h2>Projects</h2></a>
+        <a href="https://teddywarner.org/proj"><h2>Projects <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="grid-container">
-          <a target=”_blank” href="https://intempus.org/research/"> <div class="grid-item">
-              <p class="projtitle">Intempus</p>
-              <p class="projdescription">Expressive robots.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
           <a href="https://teddywarner.org/Projects/SerialUPDI/"> <div class="grid-item">
               <p class="projtitle">UPDI Serial Programming</p>
               <p class="projdescription">$2.20 and 22x Faster.</p>
@@ -222,6 +193,11 @@ search:
           <a href="https://teddywarner.org/Projects/VonNiemannProbe/"> <div class="grid-item">
               <p class="projtitle">Von Niemann Probe</p>
               <p class="projdescription">A Chess cheating device.</p>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div> </a>
+          <a target=”_blank” href="https://intempus.org/research/"> <div class="grid-item">
+              <p class="projtitle">Intempus</p>
+              <p class="projdescription">Expressive robots.</p>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div> </a>
           <span class="mobileyear">
@@ -241,41 +217,50 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <a href="https://teddywarner.org/writ"><h2>Writing</h2></a>
+        <a href="https://teddywarner.org/writ"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/on-becoming-a-godfather/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/Godfather/thumb.png" alt="On Becoming a Godfather article image"></div>
-            <p class="projtitle">On Becoming a Godfather</p>
-            <p class="projdescription">This confers great benefits like, being able to speak in a raspy voice.</p>
-            <p class="writeyear">Aug 2025</p>
-            <span class="mobileyear">
-            <p class="readtime">10–13 mins</p>
-            </span>
+            <div class="title-row">
+              <p class="projtitle">On Becoming a Godfather</p>
+              <p class="writeyear">Aug 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">This confers great benefits like, being able to speak in a raspy voice.</p>
+              <span class="mobileyear">
+              <p class="readtime">10–13 mins</p>
+              </span>
+            </div>
           </a>
         </div>
         <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/on-turning-twenty">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/20/thumb.png" alt="On Turning Twenty article image"></div>
-            <p class="projtitle">On Turning Twenty</p>
-            <p class="projdescription">I turned twenty today.</p>
-            <p class="writeyear">Aug 2025</p>
-            <span class="mobileyear">
-            <p class="readtime">9-11 mins</p>
-            </span>
+            <div class="title-row">
+              <p class="projtitle">On Turning Twenty</p>
+              <p class="writeyear">Aug 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">I turned twenty today.</p>
+              <span class="mobileyear">
+              <p class="readtime">9-11 mins</p>
+              </span>
+            </div>
           </a>
         </div>
         <span class="mobileyear">
         <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/efd">
-            <div class="imgparent"><img class="writeimg" src="assets/images/efd/efd.png" alt="To Drive with Downforce article image"></div>
-            <p class="projtitle">The Emotion/Feeling Discontinuity</p>
-            <p class="projdescription">How to convince yourself into greatness.</p>
-            <p class="writeyear">Dec 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">5-6 mins</p>
-            </span>
+            <div class="title-row">
+              <p class="projtitle">The Emotion/Feeling Discontinuity</p>
+              <p class="writeyear">Dec 2024</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">How to convince yourself into greatness.</p>
+              <span class="mobileyear">
+              <p class="readtime">5-6 mins</p>
+              </span>
+            </div>
           </a>
         </div>
         </span>
@@ -314,7 +299,7 @@ search:
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#typed', {
-      strings: ['a researcher.', 'an engineer.', 'a designer.'],
+      strings: ['a life enthusiast.', 'a thiel fellow.', 'an engineer.'],
       startDelay: 700,
       typeSpeed: 60,
       backSpeed: 60,

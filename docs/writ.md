@@ -42,7 +42,7 @@ search:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/proj.css">
+  <link rel="stylesheet" href="../assets/css/writ.css">
   <link rel="stylesheet" href="/assets/css/header.css">
 </head>
 
@@ -63,7 +63,7 @@ search:
       <div class="content1">
         <div class="introabt">
           <h2>My Writings</h2>
-          <h3>A conglomerate of thoughts and essays.</h3>
+          <h3>Some wonderful things I've<br>expierenced and thoughts I've had.</h3>
         </div>
       </div>
     </section>
@@ -71,109 +71,118 @@ search:
       <div class="content6" id="content6">
         <div class="writparent">
           <a href="https://teddywarner.org/writings/on-becoming-a-godfather/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/Godfather/thumb.png" alt="On Becoming a Godfather article cover image"></div>
-            <p class="projtitle">On Becoming a Godfather</p>
-            <p class="writeyear">Aug 2025</p>
-            <span class="mobileyear">
-            <p class="readtime">10–13 mins</p>
-            </span>
-            <p class="projdescription">This confers great benefits like, being able to speak in a raspy voice.</p>
+            <div class="title-row">
+              <p class="projtitle">On Becoming a Godfather</p>
+              <p class="writeyear">Aug 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">This confers great benefits like, being able to speak in a raspy voice.</p>
+              <p class="readtime">10–13 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/on-turning-twenty">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/20/thumb.png" alt="On Turning Twenty article cover image"></div>
-            <p class="projtitle">On Turning Twenty</p>
-            <p class="writeyear">Aug 2025</p>
-            <span class="mobileyear">
-            <p class="readtime">9–11 mins</p>
-            </span>
-            <p class="projdescription">I turned twenty today.</p>
+            <div class="title-row">
+              <p class="projtitle">On Turning Twenty</p>
+              <p class="writeyear">Aug 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">I turned twenty today.</p>
+              <p class="readtime">9–11 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/decisiveness">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/decisiveness/decisiveness.png" alt="Ex Nihilo Nihil Fit article cover image"></div>
-            <p class="projtitle">Ex Nihilo Nihil Fit</p>
-            <p class="writeyear">Jan 2025</p>
-            <span class="mobileyear">
-            <p class="readtime">2–3 mins</p>
-            </span>
-            <p class="projdescription">Nothing comes out of nothing. Some thoughts on decisiveness.</p>
+            <div class="title-row">
+              <p class="projtitle">Ex Nihilo Nihil Fit</p>
+              <p class="writeyear">Jan 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Nothing comes out of nothing. Some thoughts on decisiveness.</p>
+              <p class="readtime">2–3 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/efd">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/efd/efd.png" alt="The Emotion/Feeling Discontinuity article cover image"></div>
-            <p class="projtitle">The Emotion/Feeling Discontinuity</p>
-            <p class="writeyear">Dec 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">5-6 mins</p>
-            </span>
-            <p class="projdescription">How to convince yourself into greatness.</p>
+            <div class="title-row">
+              <p class="projtitle">The Emotion/Feeling Discontinuity</p>
+              <p class="writeyear">Dec 2024</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">How to convince yourself into greatness.</p>
+              <p class="readtime">5-6 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/downforce">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/force/force.png" alt="To Drive with Downforce article cover image"></div>
-            <p class="projtitle">To Drive with Downforce</p>
-            <p class="writeyear">Nov 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">~2 mins</p>
-            </span>
-            <p class="projdescription">Addressing the confidence bottleneck.</p>
+            <div class="title-row">
+              <p class="projtitle">To Drive with Downforce</p>
+              <p class="writeyear">Nov 2024</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Addressing the confidence bottleneck.</p>
+              <p class="readtime">~2 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/juggling">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/juggle/juggle.png" alt="Learning to Juggle article cover image"></div>
-            <p class="projtitle">Learning to Juggle</p>
-            <p class="writeyear">Oct 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">5-7 mins</p>
-            </span>
-            <p class="projdescription">A journey to lessen doom-scrolling.</p>
+            <div class="title-row">
+              <p class="projtitle">Learning to Juggle</p>
+              <p class="writeyear">Oct 2024</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">A journey to lessen doom-scrolling.</p>
+              <p class="readtime">5-7 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/a-mutual-meaning">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/orange.png" alt="A Mutual Meaning article cover image"></div>
-            <p class="projtitle">A Mutual Meaning</p>
-            <p class="writeyear">Oct 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">7-11 mins</p>
-            </span>
-            <p class="projdescription">Discovering Eastern philosophy.</p>
+            <div class="title-row">
+              <p class="projtitle">A Mutual Meaning</p>
+              <p class="writeyear">Oct 2024</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Discovering Eastern philosophy.</p>
+              <p class="readtime">7-11 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/otherness-and-belonging/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/onb.png" alt="Otherness and Belonging article cover image"></div>
-            <p class="projtitle">Otherness and Belonging</p>
-            <p class="writeyear">Aug 2024</p>
-            <span class="mobileyear">
-            <p class="readtime">4-6 mins</p>
-            </span>
-            <p class="projdescription">Some notes on neuroscience.</p>
+            <div class="title-row">
+              <p class="projtitle">Otherness and Belonging</p>
+              <p class="writeyear">Aug 2024</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Some notes on neuroscience.</p>
+              <p class="readtime">4-6 mins</p>
+            </div>
           </a>
         </div>
         <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/torpediniformes">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/index/snake.png" alt="Torpediniformes article cover image"></div>
-            <p class="projtitle">Torpediniformes</p>
-            <p class="writeyear">May 2022</p>
-            <span class="mobileyear">
-            <p class="readtime">3-5 mins</p>
-            </span>
-            <p class="projdescription">An analysis of The Meno.</p>
+            <div class="title-row">
+              <p class="projtitle">Torpediniformes</p>
+              <p class="writeyear">May 2022</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">An analysis of The Meno.</p>
+              <p class="readtime">3-5 mins</p>
+            </div>
           </a>
         </div>
       </div>
