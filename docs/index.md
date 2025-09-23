@@ -219,6 +219,21 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/kitchenchronicles/">
+            <div class="title-row">
+              <p class="projtitle">Kitchen Chronicles</p>
+              <p class="writeyear">Sep 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">My time in the kitchen.</p>
+              <span class="mobileyear">
+              <p class="readtime">5–6 mins</p>
+              <span>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/on-becoming-a-godfather/">
             <div class="title-row">
               <p class="projtitle">On Becoming a Godfather</p>
@@ -232,6 +247,7 @@ search:
             </div>
           </a>
         </div>
+        <span class="mobileyear">
         <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/on-turning-twenty">
@@ -243,22 +259,6 @@ search:
               <p class="projdescription">I turned twenty today.</p>
               <span class="mobileyear">
               <p class="readtime">9-11 mins</p>
-              </span>
-            </div>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/efd">
-            <div class="title-row">
-              <p class="projtitle">The Emotion/Feeling Discontinuity</p>
-              <p class="writeyear">Dec 2024</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">How to convince yourself into greatness.</p>
-              <span class="mobileyear">
-              <p class="readtime">5-6 mins</p>
               </span>
             </div>
           </a>

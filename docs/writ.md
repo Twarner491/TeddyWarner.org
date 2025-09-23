@@ -70,6 +70,19 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/kitchenchronicles/">
+            <div class="title-row">
+              <p class="projtitle">Kitchen Chronicles</p>
+              <p class="writeyear">Sep 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">My time in the kitchen.</p>
+              <p class="readtime">5–6 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/on-becoming-a-godfather/">
             <div class="title-row">
               <p class="projtitle">On Becoming a Godfather</p>

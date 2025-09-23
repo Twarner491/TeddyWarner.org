@@ -14,7 +14,7 @@ template: comments.html
   <!-- Primary Meta Tags -->
   <meta name="title" content="Ex Nihilo Nihil Fit - Teddy Warner">
   <meta name="description" content="Nothing comes out of nothing. Some thoughts on decisiveness.">
-  <meta name="keywords" content="INSERT TAGS">
+  <meta name="keywords" content="decisiveness, decision-making, agency, philosophy, Buridan's ass, Aristotle, Anaximander, free will, tech twitter, productivity, motivation, opportunity, timeliness, virtue, philosophy of action, existentialism, choice theory, decision paralysis, action bias, tech culture, personal development">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
   
