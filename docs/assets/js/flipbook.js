@@ -64,6 +64,83 @@ class FlipbookViewer {
     `;
     
     this.updateControls();
+    this.setupResizeHandler();
+    this.loadPDFPages();
+  }
+  
+  setupResizeHandler() {
+    // Re-render flipbook on window resize/orientation change to update PDF zoom levels
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        this.render();
+      }, 250);
+    });
+  }
+  
+  async loadPDFPages() {
+    try {
+      // Load PDF document
+      const pdf = await pdfjsLib.getDocument(this.pdfUrl).promise;
+      
+      // Get all canvas elements
+      const canvases = this.container.querySelectorAll('.pdf-page-canvas');
+      
+      for (const canvas of canvases) {
+        const pageNum = parseInt(canvas.dataset.page);
+        if (pageNum <= pdf.numPages) {
+          await this.renderPDFPageToCanvas(pdf, pageNum, canvas);
+        }
+      }
+    } catch (error) {
+      console.error('Error loading PDF:', error);
+    }
+  }
+  
+  async renderPDFPageToCanvas(pdf, pageNum, canvas) {
+    try {
+      const page = await pdf.getPage(pageNum);
+      const context = canvas.getContext('2d');
+      
+      // Get the container dimensions
+      const container = canvas.parentElement;
+      const containerRect = container.getBoundingClientRect();
+      
+      // Calculate scale to fit the page exactly in the container
+      const viewport = page.getViewport({ scale: 1 });
+      const scaleX = containerRect.width / viewport.width;
+      const scaleY = containerRect.height / viewport.height;
+      const baseScale = Math.min(scaleX, scaleY);
+      
+      // Use higher resolution for crisp rendering, especially on mobile
+      const devicePixelRatio = window.devicePixelRatio || 1;
+      const highResScale = baseScale * devicePixelRatio * 2; // 2x for extra crispness
+      
+      const scaledViewport = page.getViewport({ scale: highResScale });
+      
+      // Set canvas dimensions at high resolution
+      canvas.width = scaledViewport.width;
+      canvas.height = scaledViewport.height;
+      
+      // Scale down the canvas display size to fit container
+      canvas.style.width = `${scaledViewport.width / (devicePixelRatio * 2)}px`;
+      canvas.style.height = `${scaledViewport.height / (devicePixelRatio * 2)}px`;
+      canvas.style.objectFit = 'contain';
+      
+      // Scale the drawing context to match the high resolution
+      context.scale(1, 1);
+      
+      // Render the page at high resolution
+      const renderContext = {
+        canvasContext: context,
+        viewport: scaledViewport,
+      };
+      
+      await page.render(renderContext).promise;
+    } catch (error) {
+      console.error(`Error rendering PDF page ${pageNum}:`, error);
+    }
   }
   
   renderPages() {
@@ -99,15 +176,11 @@ class FlipbookViewer {
       `;
     }
     
-      return `
-        <div class="pdf-page-container">
-          <iframe 
-            src="${this.pdfUrl}#page=${pageNum}&zoom=100&toolbar=0&navpanes=0&scrollbar=0"
-            class="pdf-page-iframe"
-            title="PDF Page ${pageNum}">
-          </iframe>
-        </div>
-      `;
+    return `
+      <div class="pdf-page-container">
+        <canvas class="pdf-page-canvas" data-page="${pageNum}"></canvas>
+      </div>
+    `;
   }
   
   handlePageClick(pageId, event) {
