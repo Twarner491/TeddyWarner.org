@@ -1,0 +1,6 @@
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: hsla(228, 7%, 14%, 1);
+    --md-footer-bg-color--dark: hsla(228, 8%, 7%, 0.58);
+    --md-footer-bg-color: hsla(220, 7%, 7%, 1);
+    --md-code-bg-color: hsla(228, 7%, 12%, 1);
+ }
