@@ -283,7 +283,7 @@ search:
             <i class="fa-brands fa-x-twitter"></i>
           </a>
         </div>
-        <div class="socialpar">
+        <div class="socialpar"> 
           <a target=”_blank” href="mailto:tawarner@usc.edu">
             <i class="fa-solid fa-paper-plane"></i>
           </a>

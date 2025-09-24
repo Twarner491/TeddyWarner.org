@@ -1,4 +1,9 @@
 // JavaScript for 2D Book Viewer
+// Configure PDF.js worker to prevent deprecated API warnings
+if (typeof pdfjsLib !== 'undefined') {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+}
+
 class FlipbookViewer {
   constructor(containerId, pdfUrl, totalPages = 10) {
     this.container = document.getElementById(containerId);
@@ -28,7 +33,7 @@ class FlipbookViewer {
     });
     
     // Generate spreads for remaining pages
-    for (let i = 3; i <= this.totalPages; i += 2) {
+    for (let i = 3; i < this.totalPages; i += 2) {
       this.bookPages.push({
         id: this.bookPages.length,
         frontPageNum: i,
@@ -71,15 +76,28 @@ class FlipbookViewer {
   setupResizeHandler() {
     // Re-render flipbook on window resize/orientation change to update PDF zoom levels
     let resizeTimeout;
+    let lastWidth = window.innerWidth;
+    
     window.addEventListener('resize', () => {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(() => {
-        this.render();
-      }, 250);
+      // Only re-render if width actually changed (avoid constant mobile refreshes)
+      if (Math.abs(window.innerWidth - lastWidth) > 50) {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          lastWidth = window.innerWidth;
+          this.loadPDFPages(); // Only reload PDF pages, not full render
+        }, 500); // Longer delay to prevent excessive calls
+      }
     });
   }
   
+  
   async loadPDFPages() {
+    // Prevent multiple simultaneous PDF loads
+    if (this.isLoadingPDF) {
+      return;
+    }
+    this.isLoadingPDF = true;
+    
     try {
       // Load PDF document
       const pdf = await pdfjsLib.getDocument(this.pdfUrl).promise;
@@ -95,6 +113,8 @@ class FlipbookViewer {
       }
     } catch (error) {
       console.error('Error loading PDF:', error);
+    } finally {
+      this.isLoadingPDF = false;
     }
   }
   
@@ -263,7 +283,7 @@ class FlipbookViewer {
 // Initialize flipbook when DOM is loaded
 let flipbook;
 
-function initializeFlipbook() {
+async function initializeFlipbook() {
   // Check if the flipbook container exists on the page
   const container = document.getElementById('flipbook-viewer');
   if (container) {
@@ -271,11 +291,24 @@ function initializeFlipbook() {
     // Path to the PDF file - adjust based on current page location
     // For pages in /writings/ subdirectory, we need to go up one level
     const pdfUrl = '../../assets/misc/flipbook.pdf';
-    flipbook = new FlipbookViewer('flipbook-viewer', pdfUrl, 28); // Set to actual PDF length
     
-    // Make flipbook globally accessible for onclick handlers
-    window.flipbook = flipbook;
-    console.log('Flipbook initialized successfully');
+    try {
+      // Load PDF to get actual page count
+      const pdf = await pdfjsLib.getDocument(pdfUrl).promise;
+      const totalPages = pdf.numPages;
+      console.log(`PDF loaded with ${totalPages} pages`);
+      
+      flipbook = new FlipbookViewer('flipbook-viewer', pdfUrl, totalPages);
+      
+      // Make flipbook globally accessible for onclick handlers
+      window.flipbook = flipbook;
+      console.log('Flipbook initialized successfully');
+    } catch (error) {
+      console.error('Error loading PDF for page count:', error);
+      // Fallback to previous behavior if PDF loading fails
+      flipbook = new FlipbookViewer('flipbook-viewer', pdfUrl, 28);
+      window.flipbook = flipbook;
+    }
   } else {
     console.log('Flipbook container not found on this page');
   }
