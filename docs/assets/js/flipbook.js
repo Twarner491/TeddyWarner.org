@@ -33,13 +33,14 @@ class FlipbookViewer {
     });
     
     // Generate spreads for remaining pages
-    for (let i = 3; i < this.totalPages; i += 2) {
+    for (let i = 3; i <= this.totalPages; i += 2) {
       this.bookPages.push({
         id: this.bookPages.length,
         frontPageNum: i,
         backPageNum: i + 1 <= this.totalPages ? i + 1 : null
       });
     }
+    
   }
   
   render() {
@@ -287,30 +288,15 @@ async function initializeFlipbook() {
   // Check if the flipbook container exists on the page
   const container = document.getElementById('flipbook-viewer');
   if (container) {
-    console.log('Flipbook container found, initializing...');
     // Path to the PDF file - adjust based on current page location
     // For pages in /writings/ subdirectory, we need to go up one level
     const pdfUrl = '../../assets/misc/flipbook.pdf';
     
-    try {
-      // Load PDF to get actual page count
-      const pdf = await pdfjsLib.getDocument(pdfUrl).promise;
-      const totalPages = pdf.numPages;
-      console.log(`PDF loaded with ${totalPages} pages`);
-      
-      flipbook = new FlipbookViewer('flipbook-viewer', pdfUrl, totalPages);
-      
-      // Make flipbook globally accessible for onclick handlers
-      window.flipbook = flipbook;
-      console.log('Flipbook initialized successfully');
-    } catch (error) {
-      console.error('Error loading PDF for page count:', error);
-      // Fallback to previous behavior if PDF loading fails
-      flipbook = new FlipbookViewer('flipbook-viewer', pdfUrl, 28);
-      window.flipbook = flipbook;
-    }
-  } else {
-    console.log('Flipbook container not found on this page');
+    // Hardcoded to 49 pages as requested
+    flipbook = new FlipbookViewer('flipbook-viewer', pdfUrl, 49);
+    
+    // Make flipbook globally accessible for onclick handlers
+    window.flipbook = flipbook;
   }
 }
 
