@@ -69,27 +69,33 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <!--<div class="writparent">
-          <a href="https://teddywarner.org/Projects/pi0/">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/pi0/arms.png" alt="pi0 project hero image"></div>
-            <p class="projtitle">Zero-Shot Prompt to Action</p>
-            <p class="writeyear">Spring 2025</p>
-            <span class="mobileyear">
-            <p class="readtime">X-X mins</p>
-            </span>
-            <p class="projdescription">Zero-shot prompt to action on a $160 3D printed robotic arm with π₀.</p>
+        <div class="writparent">
+          <a href="https://teddywarner.org/Projects/Quotes/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/quotes/thumb.png" alt="Quotes project hero image"></div>
+            <div class="textcontent">
+              <p class="projtitle">Quote Receipts</p>
+              <p class="projdescription">"Did I really say that?" Why yes, you did.</p>
+            </div>
           </a>
         </div>
-        <hr/>-->
         <div class="writparent">
           <a href="https://intempus.org/research">
-            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedSpec/thumb.jpg" alt="Impetus project hero image"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/learnedSpec/thumb.jpg" alt="Intempus project hero image"></div>
             <div class="textcontent">
               <p class="projtitle">Intempus</p>
               <p class="projdescription">Giving agents a temporal understanding through human physiological data.</p>
             </div>
           </a>
         </div>
+        <!---<div class="writparent">
+          <a href="https://teddywarner.org/Projects/pi0/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/pi0/arms.png" alt="pi0 project hero image"></div>
+            <div class="textcontent">
+              <p class="projtitle">Zero-Shot Prompt to Action</p>
+              <p class="projdescription">Zero-shot prompt to action on a $160 3D printed robotic arm with π₀.</p>
+            </div>
+          </a>
+        </div>-->
           <div class="writparent">
           <a href="https://teddywarner.org/Projects/LearnedSpectrum/">
             <div class="imgparent"><img class="writeimg" src="../assets/images/learnedSpec/fig2.png" alt="Learned Spectrum project hero image"></div>
@@ -126,6 +132,15 @@ search:
             </div>
           </a>
         </div>
+        <!---<div class="writparent">
+          <a href="https://teddywarner.org/Projects/8-bit/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/8-bitComputer/8-BitRegister.jpg" alt="8 Bit project hero image"></div>
+            <div class="textcontent">
+              <p class="projtitle">8-bit Breadboard Computer</p>
+              <p class="projdescription">A dive into computer logic, and processor workings.</p>
+            </div>
+          </a>
+        </div>-->
         <div class="writparent">
           <a href="https://teddywarner.org/Projects/PizzaPizza/">
             <div class="imgparent"><img class="writeimg" src="https://teddywarner.org/assets/images/Pizza/thumb.png" alt="Pizza Pizza CNC Machine project hero image"></div>
