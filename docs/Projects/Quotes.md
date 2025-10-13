@@ -770,8 +770,8 @@ I printed this new base on my Prusa I3 MK3S+, cleaned it up, and then prepared t
 
 <figure markdown="1">
 
-![](../assets/images/quotes/finishedprint.JPG){width="48.2%" align="left"}
-![](../assets/images/quotes/cutpegs.JPG){width="48.2%" align="right"}
+![](../assets/images/quotes/finishedprint.JPG){width="48%" align="left"}
+![](../assets/images/quotes/cutpegs.JPG){width="48%" align="right"}
 
 </figure>
 
@@ -779,8 +779,8 @@ Then I started mounting components to the 3D printed baseplate, first the raspbe
 
 <figure markdown="1">
 
-![](../assets/images/quotes/mountedPi.JPG){width="48.2%" align="left"}
-![](../assets/images/quotes/mountedBuck.JPG){width="48.2%" align="right"}
+![](../assets/images/quotes/mountedPi.JPG){width="48%" align="left"}
+![](../assets/images/quotes/mountedBuck.JPG){width="48%" align="right"}
 
 </figure>
 
@@ -788,8 +788,8 @@ Before continuing with the mainboard mounting, I wired the - IN terminal of the 
 
 <figure markdown="1">
 
-![](../assets/images/quotes/solderedBuck.JPG){width="48.2%" align="left"}
-![](../assets/images/quotes/buckTuning.JPG){width="48.2%" align="right"}
+![](../assets/images/quotes/solderedBuck.JPG){width="48%" align="left"}
+![](../assets/images/quotes/buckTuning.JPG){width="48%" align="right"}
 
 </figure>
 
