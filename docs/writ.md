@@ -70,6 +70,19 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/benevolentfreedom/">
+            <div class="title-row">
+              <p class="projtitle">A Case for the Philosopher King(s)</p>
+              <p class="writeyear">Oct 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Why we should *probably* constrain the voter base.</p>
+              <p class="readtime">X-X mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/pinkhat/">
             <div class="title-row">
               <p class="projtitle">A Pink Hat</p>
@@ -234,6 +247,19 @@ search:
             <div class="description-row">
               <p class="projdescription">An analysis of The Meno.</p>
               <p class="readtime">3-5 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
+          <a href="https://teddywarner.org/writings/foj">
+            <div class="title-row">
+              <p class="projtitle">The Fallacy of Justice</p>
+              <p class="writeyear">Dec 2022</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">A Platonic Dialogue.</p>
+              <p class="readtime">8–10 mins</p>
             </div>
           </a>
         </div>
