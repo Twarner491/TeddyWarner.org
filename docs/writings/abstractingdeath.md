@@ -14,7 +14,7 @@ template: comments.html
   <!-- Primary Meta Tags -->
   <meta name="title" content="Abstracting Death - Teddy Warner">
   <meta name="description" content="Death as infinite abstraction.">
-  <meta name="keywords" content="INSERT">
+  <meta name="keywords" content="death, philosophy, abstraction, mortality, existence, life experience, Western philosophy, Eastern philosophy, linear time, cyclical time, consciousness, metaphysics, life and death, philosophical essay">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
   

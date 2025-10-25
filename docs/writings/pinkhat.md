@@ -14,7 +14,7 @@ template: comments.html
   <!-- Primary Meta Tags -->
   <meta name="title" content="A Pink Hat - Teddy Warner">
   <meta name="description" content="A welcoming thing.">
-  <meta name="keywords" content="INSERT">
+  <meta name="keywords" content="pink hat, welcoming, kindness, community, hospitality, genuine connection, personable, belonging, inclusivity, warmth, human connection, social grace, approachability, friendliness, club culture, personal essay, positive psychology, social bonds, authentic relationships, simple pleasures">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
   

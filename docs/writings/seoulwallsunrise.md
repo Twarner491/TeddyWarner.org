@@ -14,7 +14,7 @@ template: comments.html
   <!-- Primary Meta Tags -->
   <meta name="title" content="A Seoul Wall Sunrise - Teddy Warner">
   <meta name="description" content="Some blissfully ignorant thoughts.">
-  <meta name="keywords" content="INSERT">
+  <meta name="keywords" content="philosophy, consciousness, self-awareness, meta-cognition, flow state, mindfulness, introspection, thinking, meditation, Seoul, sunrise, Csikszentmihalyi, contemplation, perception, cognitive state">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
   
