@@ -70,6 +70,45 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/pinkhat/">
+            <div class="title-row">
+              <p class="projtitle">A Pink Hat</p>
+              <p class="writeyear">Oct 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">A welcoming thing.</p>
+              <p class="readtime">~1 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
+          <a href="https://teddywarner.org/writings/seoulwallsunrise/">
+            <div class="title-row">
+              <p class="projtitle">A Seoul Wall Sunrise</p>
+              <p class="writeyear">Oct 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Some blissfully ignorant thoughts.</p>
+              <p class="readtime">2–3 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
+          <a href="https://teddywarner.org/writings/abstractingdeath/">
+            <div class="title-row">
+              <p class="projtitle">Abstracting Death</p>
+              <p class="writeyear">Oct 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Death as infinite abstraction.</p>
+              <p class="readtime">~2 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/kitchenchronicles/">
             <div class="title-row">
               <p class="projtitle">Kitchen Chronicles</p>
