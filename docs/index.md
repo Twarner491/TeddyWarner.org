@@ -219,6 +219,37 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/benevolentfreedom/">
+            <div class="title-row">
+              <p class="projtitle">A Case for the Philosopher King(s)</p>
+              <p class="writeyear">Oct 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Why we should *probably* constrain the voter base.</p>
+              <span class="mobileyear">
+              <p class="readtime">10–12 mins</p>
+              <span>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div class="writparent">
+          <a href="https://teddywarner.org/writings/seoulwallsunrise/">
+            <div class="title-row">
+              <p class="projtitle">A Seoul Wall Sunrise</p>
+              <p class="writeyear">Oct 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Some blissfully ignorant thoughts.</p>
+              <span class="mobileyear">
+              <p class="readtime">2-3 mins</p>
+              <span>
+            </div>
+          </a>
+        </div>
+        <span class="mobileyear">
+        <hr>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/kitchenchronicles/">
             <div class="title-row">
               <p class="projtitle">Kitchen Chronicles</p>
@@ -229,37 +260,6 @@ search:
               <span class="mobileyear">
               <p class="readtime">5–6 mins</p>
               <span>
-            </div>
-          </a>
-        </div>
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/on-becoming-a-godfather/">
-            <div class="title-row">
-              <p class="projtitle">On Becoming a Godfather</p>
-              <p class="writeyear">Aug 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">This confers great benefits like, being able to speak in a raspy voice.</p>
-              <span class="mobileyear">
-              <p class="readtime">10–13 mins</p>
-              </span>
-            </div>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/on-turning-twenty">
-            <div class="title-row">
-              <p class="projtitle">On Turning Twenty</p>
-              <p class="writeyear">Aug 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">I turned twenty today.</p>
-              <span class="mobileyear">
-              <p class="readtime">9-11 mins</p>
-              </span>
             </div>
           </a>
         </div>

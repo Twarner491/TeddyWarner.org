@@ -69,7 +69,7 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <!--<div class="writparent">
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/benevolentfreedom/">
             <div class="title-row">
               <p class="projtitle">A Case for the Philosopher King(s)</p>
@@ -77,11 +77,11 @@ search:
             </div>
             <div class="description-row">
               <p class="projdescription">Why we should *probably* constrain the voter base.</p>
-              <p class="readtime">X-X mins</p>
+              <p class="readtime">10–12 mins</p>
             </div>
           </a>
         </div>
-        <hr/>-->
+        <hr/>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/pinkhat/">
             <div class="title-row">

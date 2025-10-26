@@ -80,7 +80,7 @@ template: comments.html
 
 ---
 
-Socrates and O'Brien from George Orwell's *1984* discuss to whom justice is most beneficial. Although O'Brien is a fictional character first conceived when Orwell published *1984* in 1949, this dialogue has been constructed as such where O'Brien has been placed in Socrates' reality, and each man holds a chronically correct conception of events up to ~400 B.C.E. The dialogue begins with a private conversation between Socrates and O'Brien somewhere in classical Athens after the two had exchanged formalities.
+*Socrates and O'Brien from George Orwell's *1984* discuss to whom justice is most beneficial. Although O'Brien is a fictional character first conceived when Orwell published *1984* in 1949, this dialogue has been constructed as such where O'Brien has been placed in Socrates' reality, and each man holds a chronically correct conception of events up to ~400 B.C.E. The dialogue begins with a private conversation between Socrates and O'Brien somewhere in classical Athens after the two had exchanged formalities.*
 
 ---
 
