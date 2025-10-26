@@ -137,7 +137,7 @@ search:
             <div class="imgparent"><img class="writeimg" src="../assets/images/MillingWorkflow/thumb.jpg" alt="CNC Milling Workflows project hero image"></div>
             <div class="textcontent">
               <p class="projtitle">CNC Milling Workflows</p>
-              <p class="projdescription">A guide for CNC milling, covering machinist jargon, material standards, feeds and speeds, and CAM workflows.</p>
+              <p class="projdescription">A guide for CNC milling, covering machinist jargon, material standards, and feeds and speeds.</p>
             </div>
           </a>
         </div>
@@ -173,7 +173,7 @@ search:
             <div class="imgparent"><img class="writeimg" src="../assets/images/SerialUPDI/updiHero.png" alt="UPDI Programming project hero image"></div>
             <div class="textcontent">
               <p class="projtitle">UPDI Programming</p>
-              <p class="projdescription">Enabling your IDE for serial UPDI programming and monitoring via a portable python implementation.</p>
+              <p class="projdescription">Enabling your IDE for serial UPDI programming and monitoring.</p>
             </div>
           </a>
         </div>
@@ -182,7 +182,7 @@ search:
             <div class="imgparent"><img class="writeimg" src="../assets/images/ParametricGenerator/hero.png" alt="Parametric Bottle Cap Generator project hero image"></div>
             <div class="textcontent">
               <p class="projtitle">Parametric Bottle Cap Generator</p>
-              <p class="projdescription">Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!</p>
+              <p class="projdescription">Generate your own cap, compatible with any existing threads!</p>
             </div>
           </a>
         </div>
@@ -200,7 +200,7 @@ search:
             <div class="imgparent"><img class="writeimg" src="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg" alt="Octoprint Setup project hero image"></div>
             <div class="textcontent">
               <p class="projtitle">Octoprint Setup</p>
-              <p class="projdescription">Complete Octoprint setup documentation, and a list of great plugins to expand Octoprint's capabilities.</p>
+              <p class="projdescription">Complete Octoprint setup documentation.</p>
             </div>
           </a>
         </div>
@@ -209,7 +209,7 @@ search:
             <div class="imgparent"><img class="writeimg" src="../assets/images/AssistiveAquaponics/presentation.png" alt="Assistive Aquaponics Fish Tank project hero image"></div>
             <div class="textcontent">
               <p class="projtitle">Assistive Aquaponics Fish Tank</p>
-              <p class="projdescription">A monitored aquaponics ecosystem, expanding the accessibility of successful & thriving aquaponics ecosystems.</p>
+              <p class="projdescription">A beautiful, monitored aquaponics ecosystem.</p>
             </div>
           </a>
         </div>
@@ -227,7 +227,7 @@ search:
             <div class="imgparent"><img class="writeimg" src="../assets/images/PortfolioSite/portfolioSiteHero.png" alt="Project Portfolio Site hero image"></div>
             <div class="textcontent">
               <p class="projtitle">Project Portfolio Site</p>
-              <p class="projdescription">The behind the scenes of the site you are on right now - Static site generation and hosting via GitHub Pages.</p>
+              <p class="projdescription">The behind the scenes of the site you are on right now.</p>
             </div>
           </a>
         </div>

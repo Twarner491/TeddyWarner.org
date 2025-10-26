@@ -594,12 +594,6 @@ I began working from this interface in my [week 14](http://fabacademy.org/2021/l
 
 The bulk of this communication setup work is discussed on my [week 14](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week14/) page, but I'll touch on the highlights on this function here. As mentioned above, this LCD networking feature in my system uses the [software serial](https://www.arduino.cc/en/Reference/softwareSerial) library. This library allows serial communications on any of a microcontroller's digital pins, and allows me to configure two receiving and transmitting pins on my mainboard node, and communicate with bus addresses to my two input nodes. My first step while implementing this library was to set up two communication ports in my mainboard code, one for communication with my systems temperature and humidity input node, and another for the PH input node. Through this setup, I'm able to communicate across all three nodes, passing through these two set communication ports, and will be able to call on specific nodes with their defined addresses, *portDHT* and *portPH*.
 
-<figure markdown="1">
-
-![](../assets/images/AssistiveAquaponics/week14/ports.png)
-
-</figure>
-
 I call upon each of these different nodes throughout my mainboard interface code. Each port is started with the line ...
 
 ```

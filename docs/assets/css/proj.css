@@ -363,11 +363,13 @@
   font-weight: 300;
   top: -0.3em;
   left: 1em;
+  max-width: 35em;
 }
 
 .projdescription {
   position: relative;
   width: 45%;
+  max-width: 35em;
   color: var(--md-default-fg-color);
   opacity: 0.55;
   font-family: "JetBrains Mono";
@@ -607,30 +609,45 @@
   
 }
 
-@media screen and (min-width: 2000px) { /* Desktop */
-  :root {
-    --font-size: 1em;
-  }
-  .introabt h2 {
-    font-size: 2.5em;
-  }
-  .introabt h3 {
-    font-size: 0.98em;
-  }
+@media screen and (min-width: 1440px) { /* Wide Desktop - Lock font sizes */
   .projtitle {
-    font-size: 1em;
+    font-size: 1em !important;
   }
   .projdescription {
-    font-size: 0.9em;
+    font-size: 0.85em !important;
   }
   .writeyear {
-    font-size: 0.85em;
+    font-size: 0.75em !important;
   }
   .readtime {
+    font-size: 0.75em !important;
+  }
+}
+
+@media screen and (min-width: 2000px) { /* Desktop */
+  :root {
+    --font-size: 0.75em;
+  }
+  .introabt h2 {
+    font-size: 2em;
+  }
+  .introabt h3 {
     font-size: 0.85em;
   }
+  .projtitle {
+    font-size: 0.75em;
+  }
+  .projdescription {
+    font-size: 0.625em;
+  }
+  .writeyear {
+    font-size: 0.625em;
+  }
+  .readtime {
+    font-size: 0.625em;
+  }
   .copyright {
-    font-size: 0.8em;
+    font-size: 0.65em;
   }
   .laphide {
     display: none;
