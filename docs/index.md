@@ -225,7 +225,7 @@ search:
               <p class="writeyear">Oct 2025</p>
             </div>
             <div class="description-row">
-              <p class="projdescription">Why we should *probably* constrain the voter base.</p>
+              <p class="projdescription">Where do we draw the line with virtue based voter constraints?</p>
               <span class="mobileyear">
               <p class="readtime">10–12 mins</p>
               <span>

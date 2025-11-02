@@ -1,6 +1,6 @@
 ---
 title: A Case for the Philosopher King(s)
-description: Why we should *probably* constrain the voter base.
+description: Where do we draw the line with virtue based voter constraints?
 hide:
   - navigation
   - tags
@@ -13,7 +13,7 @@ template: comments.html
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="A Case for the Philosopher King(s) - Teddy Warner">
-  <meta name="description" content="Why we should *probably* constrain the voter base.">
+  <meta name="description" content="Where do we draw the line with virtue based voter constraints?">
   <meta name="keywords" content="political philosophy, democracy, philosopher king, Plato, governance, constrained voting, epistocracy, Peter Thiel, freedom and democracy, voting rights, benevolent leadership, civic virtue, representative government, political theory, founding fathers, natural rights">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
@@ -22,7 +22,7 @@ template: comments.html
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teddywarner.org/writings/benevolentfreedom/">
   <meta property="og:title" content="A Case for the Philosopher King(s) - Teddy Warner">
-  <meta property="og:description" content="Why we should *probably* constrain the voter base.">
+  <meta property="og:description" content="Where do we draw the line with virtue based voter constraints?">
   <meta property="og:image" content="https://teddywarner.org/assets/images/benevolentfreedom/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@ template: comments.html
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://teddywarner.org/writings/benevolentfreedom/">
   <meta property="twitter:title" content="A Case for the Philosopher King(s) - Teddy Warner">
-  <meta property="twitter:description" content="Why we should *probably* constrain the voter base.">
+  <meta property="twitter:description" content="Where do we draw the line with virtue based voter constraints?">
   <meta property="twitter:image" content="https://teddywarner.org/assets/images/benevolentfreedom/thumb.png">
 
   <!-- Existing resource links -->
