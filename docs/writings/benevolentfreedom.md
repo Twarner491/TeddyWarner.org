@@ -68,7 +68,7 @@ template: comments.html
 # A Case for the Philosopher King(s)
 
 <div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Oct 2025 </span>| <span class="readTime"><i class="far fa-clock"></i> 10–12 mins</span></span></span></span>
+  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Oct 2025 </span>| <span class="readTime"><i class="far fa-clock"></i> 12–16 mins</span></span></span></span>
   <span class="share" style=" color: inherit;">
   <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/writings/benevolentfreedom/"><i class="fa-brands fa-facebook"></i></a>
   <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/writings/benevolentfreedom/&text="><i class="fa-brands fa-x-twitter"></i></a>
@@ -93,7 +93,7 @@ A constrained voter pool is naturally quite an efficient form of democracy - eff
 
 I don't think it's particularly hard for me to argue that efficiency is a good thing. The concern with a constrained voter pool is what they choose to use that efficiency to achieve. If malicious actors attain positions of influence, this becomes particularly problematic. This, in its logical extreme, is what we call a dictatorship.
 
-## The Spectrum of Governance
+### The Spectrum of Governance
 
 The prerequisite in our Western definition of "dictator" is malice. This directly implies an inverse: some benevolent being capable of executing absolute freedom for all individuals under their governance. This is essentially Plato's Philosopher King - the ideal form of a benevolent government.[^3]
 
@@ -121,7 +121,7 @@ Fortunately, there exist certain traits viewed as benevolent good that span all 
 
 A true philosopher king must certainly embody all of these divine traits, and while no individual human holds all of these, we can use them as a filter search to begin to find the most benevolent voters.
 
-## The Current Trajectory
+### The Current Trajectory
 
 Plato argued in his Seventh Letter that states will suffer until either philosophers become rulers or rulers become true philosophers.[^4] Our society will continuously progress toward disorder, dysfunction, and lack of freedoms by the sole fact that enacting our will to establish freedoms has become - and will continue to become - more convoluted.
 
@@ -142,6 +142,24 @@ The "active" and "self-helping" character types become much stronger when we sta
 So can freedom and democracy exist alongside each other? Certainly! We've been running a trial by fire of this experiment for 250 years now. Yet a true popular democracy cannot indefinitely maintain freedom. At best, it is an inefficient means to make adequate progress toward the continuous goal of freedom, and at worst, it empowers malicious actors who hinder our pursuit.
 
 The question before us is not whether all humans deserve their natural liberties - they do, universally. Rather, it is whether all humans are equally positioned to protect those rights through voting. If we want to continue our Western pursuit of freedom and natural liberties, we would find it best to be prudent with our voter pool: careful not to empower malice, yet instead promote benevolence.
+
+### Postscript
+
+I wrote the first draft of this piece while sitting in a courtyard of Gyeongbokgung Palace in Seoul. I (like many others) find it very easy to critique America from oversees, somewhat removed from the confines of our great experiment. Since returning to the states and publishing this piece I've had quite a few wonderful conversations that have meaningfully shifted my thinking. As I admitted in [my exchange with Aidan in the comments](https://github.com/Twarner491/TeddyWarner.org/discussions/22#discussioncomment-14786375), I'm now perhaps 2/3 confident in my original analysis - down from where I started. I thought I could outmaneuver the Meno, but no avail on this front lol (yet).
+
+That said, I remain convinced there's notable tension between unconstrained democracy and individual freedom. What I'm less convinced of is that further constraining the voter pool is the right resolution. A more compelling alternative emerged from conversations with [Aditya](https://x.com/dityprathap): rather than constraining *who* can vote, we should constrain *what* people can vote on, a neo-federalism of sorts.
+
+The core insight is that voter incompetence becomes dangerous when it can't be tested against reality. By directing political attention toward what is most personal - the local and state level - incentives align between voter and representative, and greatly reduce barrier to be an informed participant. The voter has to vote well because the stakes are higher and more visible, and the representative has to honor the voter to avoid being tarred and feathered (literally or metaphorically). This addresses both voter incompetence and representative incompetence structurally, without requiring us to define and enforce "virtue" at the ballot box.
+
+This approach is more defensible, more aligned with American tradition, and more implementable than my original proposal. It sidesteps the virtue trap entirely while still addressing the efficiency concerns I raised. The question shifts from "who is benevolent enough to vote?" to "what scope of governance allows feedback loops to punish bad policy regardless of who votes?"
+
+Peter Thiel, in [a recent interview](https://www.thefp.com/p/peter-thiel-capitalism-isnt-working-for-young-people?open=false), offered an interesting inversion of my original thesis:
+
+> "It would be healthy if we had elections in which fewer people voted. I think the turnout was pretty high in New York. I think it would be healthier if people didn't care, if it didn't matter who was mayor, and people just didn't vote."
+
+This suggests the goal isn't more virtuous voters, but *less consequential* federal elections - which aligns more closely with the neo-federalist framework than my original proposal. If local governance mattered more and federal governance mattered less, low turnout wouldn't be a crisis but a feature.
+
+The American experiment may have succeeded not because the founders perfectly constrained the voter pool, but because they perfectly constrained what any government - regardless of who voted - could do to individual liberty.
 
 [^1]: Thiel, Peter. "The Education of a Libertarian." *Cato Unbound*, April 13, 2009. https://www.cato-unbound.org/2009/04/13/peter-thiel/education-libertarian/
 [^2]: "Who Voted in Early America?" Colonial Williamsburg Foundation. Most states required property ownership or taxpaying qualifications for voting until the early 19th century https://www.colonialwilliamsburg.org/discover/civics/who-voted-in-early-america/

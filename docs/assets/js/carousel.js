@@ -1,10 +1,11 @@
 // Image Carousel JavaScript
 class ImageCarousel {
-  constructor(containerId, imageFolder) {
+  constructor(containerId, imageFolder, customImages = null) {
     this.container = document.getElementById(containerId);
     this.imageFolder = imageFolder;
     this.currentIndex = 0;
     this.images = [];
+    this.customImages = customImages;
     this.autoPlayInterval = null;
     this.autoPlayDelay = 4000; // 4 seconds
     
@@ -19,42 +20,48 @@ class ImageCarousel {
   }
 
   async loadImages() {
-    this.images = [
-      '1.JPG',
-      '2.jpg',
-      '3.JPG',
-      '5.jpg',
-      '6.jpg',
-      '7.jpg',
-      '8.jpg',
-      '9.jpg',
-      '10.jpg',
-      '11.JPG',
-      '12.JPG',
-      '13.jpg',
-      '14.jpg',
-      '15.JPG',
-      '16.JPG',
-      '17.JPG',
-      '18.JPG',
-      '19.JPG',
-      '20.JPG',
-      '21.jpg',
-      '22.JPG',
-      '23.JPG',
-      '24.jpg',
-      '25.jpg',
-      '26.jpg',
-      '27.jpeg',
-      '28.jpg',
-      '29.jpg',
-      '30.jpg',
-      '31.jpg',
-      '32.jpg',
-      '33.jpg',
-      '35.JPG',
-      '37.jpg'
-    ];
+    // If custom images are provided, use them; otherwise use default
+    if (this.customImages) {
+      this.images = this.customImages;
+    } else {
+      // Default images for the "20/favs" folder
+      this.images = [
+        '1.JPG',
+        '2.jpg',
+        '3.JPG',
+        '5.jpg',
+        '6.jpg',
+        '7.jpg',
+        '8.jpg',
+        '9.jpg',
+        '10.jpg',
+        '11.JPG',
+        '12.JPG',
+        '13.jpg',
+        '14.jpg',
+        '15.JPG',
+        '16.JPG',
+        '17.JPG',
+        '18.JPG',
+        '19.JPG',
+        '20.JPG',
+        '21.jpg',
+        '22.JPG',
+        '23.JPG',
+        '24.jpg',
+        '25.jpg',
+        '26.jpg',
+        '27.jpeg',
+        '28.jpg',
+        '29.jpg',
+        '30.jpg',
+        '31.jpg',
+        '32.jpg',
+        '33.jpg',
+        '35.JPG',
+        '37.jpg'
+      ];
+    }
   }
 
   createCarousel() {

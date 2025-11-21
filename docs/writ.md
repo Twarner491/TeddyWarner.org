@@ -70,6 +70,19 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/centuryinjapan/">
+            <div class="title-row">
+              <p class="projtitle">A Century in Japan</p>
+              <p class="writeyear">Nov 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">439.59 miles, 21,165 ft of elev. gained, ~39.21 hrs of peddling.</p>
+              <p class="readtime">9–11 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/benevolentfreedom/">
             <div class="title-row">
               <p class="projtitle">A Case for the Philosopher King(s)</p>
@@ -77,7 +90,7 @@ search:
             </div>
             <div class="description-row">
               <p class="projdescription">Where do we draw the line with virtue based voter constraints?</p>
-              <p class="readtime">10–12 mins</p>
+              <p class="readtime">12–16 mins</p>
             </div>
           </a>
         </div>

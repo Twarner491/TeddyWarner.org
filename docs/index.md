@@ -65,7 +65,7 @@ search:
     <section class="intro-section">
       <div class="content1">
         <div class="introabt">
-          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy"><img class="pfp" src="assets/images/index/pfp.jpg">Teddy</a>, <span id="typed"></span></h2>
+          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy">Teddy</a>, <span id="typed"></span></h2>
           <h3>I build robots and write essays <br>here's a bit of my work.</h3>
         </div>
       </div>
@@ -109,11 +109,11 @@ search:
                                 <rect x="1065.5" y="307.5" width="224" height="388" rx="112" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
-                        <a href="https://teddywarner.org/writ">
+                        <a target="_blank" href="https://onethreenine.net/about">
                           <g id="image-card-2" class="project">
                               <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
                               <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                              <image x="277.5" y="527" width="492" height="328" href="assets/images/index/flowers.jpg" clip-path="url(#clipImage2)" preserveAspectRatio="xMidYMid slice" alt="Flowers project image" />
+                              <image x="277.5" y="527" width="492" height="328" href="assets/images/index/cork.png" clip-path="url(#clipImage2)" preserveAspectRatio="xMidYMid slice" alt="Corkboard project image" />
                               <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
                         </a>
@@ -125,13 +125,15 @@ search:
                                       <rect x="804.5" y="624" width="226" height="272" rx="21" fill="var(--md-default-bg-color)" fill-opacity="0.4" />
                                       <rect x="843" y="645" width="149" height="31" rx="15.5" fill="var(--md-default-bg-color)" />
                                       <text x="917.5" y="665" text-anchor="middle" fill="var(--md-default-fg-color)" fill-opacity="0.55" font-family="JetBrains Mono" font-size="12" font-style="normal" font-weight="300" line-height="109.588%">What I'm Reading</text>
-                                      <text x="816" y="700" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">When</text>
-                                      <text x="816" y="720" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Einstein</text>
-                                      <text x="816" y="740" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Walked with</text>
-                                      <text x="816" y="760" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="16" font-style="normal" font-weight="500" line-height="109.588%">Gödel</text>
-                                      <text x="817" y="778" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Jim Holt</text>
+                                      <text x="816" y="700" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="14" font-style="normal" font-weight="500" line-height="109.588%">The Orgin</text>
+                                      <text x="816" y="720" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="14" font-style="normal" font-weight="500" line-height="109.588%">of Consciousness</text>
+                                      <text x="816" y="740" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="14" font-style="normal" font-weight="500" line-height="109.588%">in the Break</text>
+                                      <text x="816" y="760" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="14" font-style="normal" font-weight="500" line-height="109.588%">Down of the</text>
+                                      <text x="816" y="780" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="14" font-style="normal" font-weight="500" line-height="109.588%">Bicameral</text>
+                                      <text x="816" y="800" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="14" font-style="normal" font-weight="500" line-height="109.588%">Mind</text>
+                                      <text x="817" y="818" text-anchor="left" fill="var(--md-default-fg-color)" fill-opacity="0.75" font-family="JetBrains Mono" font-size="11" font-style="normal" font-weight="400" line-height="109.588%">Julian Jaynes</text>
                                   </g>
-                                  <image x="930.473" y="713" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1515964026i/36794489.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of When Einstein Walked with Gödel" />
+                                  <image x="930.473" y="730" width="144.272" height="230.193" transform="rotate(10 930.473 713)" href="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1388305401i/22478.jpg" preserveAspectRatio="xMidYMid slice" alt="Book cover of The Orgin of Consciousness in the Break Down of the Bicameral Mind" />
                               </g>
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
@@ -219,6 +221,21 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/centuryinjapan/">
+            <div class="title-row">
+              <p class="projtitle">A Century in Japan</p>
+              <p class="writeyear">Nov 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">439.59 miles, 21,165 ft of elev. gained, ~39.21 hrs of peddling.</p>
+              <span class="mobileyear">
+              <p class="readtime">9–11 mins</p>
+              <span>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/benevolentfreedom/">
             <div class="title-row">
               <p class="projtitle">A Case for the Philosopher King(s)</p>
@@ -227,11 +244,12 @@ search:
             <div class="description-row">
               <p class="projdescription">Where do we draw the line with virtue based voter constraints?</p>
               <span class="mobileyear">
-              <p class="readtime">10–12 mins</p>
+              <p class="readtime">12–16 mins</p>
               <span>
             </div>
           </a>
         </div>
+        <span class="mobileyear">
         <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/seoulwallsunrise/">
@@ -243,22 +261,6 @@ search:
               <p class="projdescription">Some blissfully ignorant thoughts.</p>
               <span class="mobileyear">
               <p class="readtime">2-3 mins</p>
-              <span>
-            </div>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/kitchenchronicles/">
-            <div class="title-row">
-              <p class="projtitle">Kitchen Chronicles</p>
-              <p class="writeyear">Sep 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">My time in the kitchen.</p>
-              <span class="mobileyear">
-              <p class="readtime">5–6 mins</p>
               <span>
             </div>
           </a>
@@ -299,7 +301,7 @@ search:
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#typed', {
-      strings: ['a life enjoyer.', 'a thiel fellow.', 'an engineer.'],
+      strings: ['a life enjoyer.', 'a roboticist', 'a writer.'],
       startDelay: 700,
       typeSpeed: 60,
       backSpeed: 60,
