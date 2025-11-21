@@ -1,0 +1,244 @@
+/* CSS for 2D Book Viewer */
+
+.flipbook-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 580px;
+  margin: 20px 0;
+  perspective: 1200px;
+  perspective-origin: center center;
+}
+
+.book-viewer-wrapper {
+  perspective: 1200px;
+  perspective-origin: center center;
+  transition: all 0.8s ease-out;
+}
+
+.book-viewer-wrapper.opened {
+  transform: translateX(150px);
+}
+
+.book {
+  position: relative;
+  width: 384px;
+  height: 540px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Book spine/binding */
+.book-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background: #e5e7eb;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+/* Dark mode spine */
+@media (prefers-color-scheme: dark) {
+  .book-spine {
+    background: #374151;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.page-front,
+.page-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  background: white;
+  overflow: hidden;
+}
+
+/* Dark mode pages */
+@media (prefers-color-scheme: dark) {
+  .page-front,
+  .page-back {
+    border: 1px solid #374151;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    background: #1f2937;
+  }
+}
+
+.page-back {
+  transform: rotateY(180deg);
+  border-radius: 8px 0 0 8px;
+}
+
+.page.flipped {
+  transform: rotateY(-180deg);
+}
+
+.page:hover {
+  transform: rotateY(-5deg);
+}
+
+.page.flipped:hover {
+  transform: rotateY(-175deg);
+}
+
+/* PDF rendering styles */
+.pdf-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+}
+
+.pdf-page-canvas {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.empty-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  items-center: center;
+  justify-content: center;
+  background: #f9fafb;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Book back cover - now displays PDF page */
+.book-back-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0 8px 8px 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Dark mode back cover */
+@media (prefers-color-scheme: dark) {
+  .book-back-cover {
+    background: #1f2937;
+    border: 1px solid #374151;
+  }
+}
+
+/* Canvas automatically scales with container - no mobile-specific adjustments needed */
+
+/* Controls removed - page flipping is now click-only */
+
+/* Loading state */
+.flipbook-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #374151;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .book {
+    width: 180px;
+    height: 253px;
+  }
+  
+  .book-spine {
+    width: 6px;
+  }
+  
+  .book-viewer-wrapper.opened {
+    transform: translateX(70px);
+  }
+  
+  .flipbook-container {
+    min-height: 280px;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .book {
+    width: 150px;
+    height: 211px;
+  }
+  
+  .book-spine {
+    width: 5px;
+  }
+  
+  .book-viewer-wrapper.opened {
+    transform: translateX(60px);
+  }
+  
+  .flipbook-container {
+    margin: 10px 0;
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 360px) {
+  .book {
+    width: 128px;
+    height: 180px;
+  }
+  
+  .book-spine {
+    width: 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .book-viewer-wrapper.opened {
+    transform: translateX(50px);
+  }
+  
+  .flipbook-container {
+    margin: 8px 0;
+    min-height: 200px;
+  }
+}
