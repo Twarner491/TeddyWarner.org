@@ -962,3 +962,42 @@
     font-size: 0.6em;
   }
 }
+
+/* Minimal fade-in animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.intro-section,
+.writing,
+.footer,
+.writparent {
+  opacity: 0;
+  transition: none;
+}
+
+.intro-section.visible,
+.writing.visible,
+.footer.visible {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.writparent.visible {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-section,
+  .writing,
+  .footer,
+  .writparent {
+    opacity: 1 !important;
+  }
+  .intro-section.visible,
+  .writing.visible,
+  .footer.visible,
+  .writparent.visible {
+    animation: none !important;
+  }
+}

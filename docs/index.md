@@ -371,6 +371,47 @@ search:
       observer.observe(content6);
     });
   </script>
+  <script>
+    // Instant staggered animations on scroll
+    (function() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      
+      let writparentCounter = 0;
+      let gridItemCounter = 0;
+      const staggerDelay = 50; // 0.05s between items
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            let delay = 0;
+            
+            if (el.classList.contains('writparent')) {
+              delay = writparentCounter++ * staggerDelay;
+            } else if (el.classList.contains('grid-item')) {
+              delay = gridItemCounter++ * staggerDelay;
+            }
+            
+            requestAnimationFrame(() => {
+              setTimeout(() => {
+                el.style.animationDelay = delay + 'ms';
+                el.classList.add('visible');
+              }, 0);
+            });
+            
+            observer.unobserve(el);
+          }
+        });
+      }, { 
+        threshold: 0.01,
+        rootMargin: '50px'
+      });
+      
+      document.querySelectorAll('.intro-section, .featured-projects, .about, .projects, .writing, .press, .footer, .writing .writparent, .projects .grid-item').forEach(el => {
+        observer.observe(el);
+      });
+    })();
+  </script>
   <script src="/assets/js/index.js"></script>
   <script src="/assets/js/header.js"></script>
 </body>

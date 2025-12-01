@@ -1522,3 +1522,62 @@ header {
     display: none;
   }
 }
+
+/* Minimal fade-in animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.intro-section,
+.featured-projects,
+.about,
+.projects,
+.writing,
+.press,
+.footer,
+.writing .writparent,
+.projects .grid-item {
+  opacity: 0;
+  transition: none;
+}
+
+.intro-section.visible,
+.featured-projects.visible,
+.about.visible,
+.projects.visible,
+.writing.visible,
+.press.visible,
+.footer.visible {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.writing .writparent.visible,
+.projects .grid-item.visible {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-section,
+  .featured-projects,
+  .about,
+  .projects,
+  .writing,
+  .press,
+  .footer,
+  .writing .writparent,
+  .projects .grid-item {
+    opacity: 1 !important;
+  }
+  .intro-section.visible,
+  .featured-projects.visible,
+  .about.visible,
+  .projects.visible,
+  .writing.visible,
+  .press.visible,
+  .footer.visible,
+  .writing .writparent.visible,
+  .projects .grid-item.visible {
+    animation: none !important;
+  }
+}

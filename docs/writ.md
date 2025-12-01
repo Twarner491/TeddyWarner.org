@@ -318,6 +318,40 @@ search:
       });
     });
   </script>
+  <script>
+    // Instant staggered animations on scroll
+    (function() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      
+      let itemCounter = 0;
+      const staggerDelay = 50; // 0.05s between items
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const delay = el.classList.contains('writparent') ? itemCounter++ * staggerDelay : 0;
+            
+            requestAnimationFrame(() => {
+              setTimeout(() => {
+                el.style.animationDelay = delay + 'ms';
+                el.classList.add('visible');
+              }, 0);
+            });
+            
+            observer.unobserve(el);
+          }
+        });
+      }, { 
+        threshold: 0.01,
+        rootMargin: '50px'
+      });
+      
+      document.querySelectorAll('.intro-section, .writing, .footer, .writparent').forEach(el => {
+        observer.observe(el);
+      });
+    })();
+  </script>
   <script src="/assets/js/proj.js"></script>
   <script src="/assets/js/header.js"></script>
 </body>
