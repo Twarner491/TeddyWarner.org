@@ -44,6 +44,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Pizza-Pizza CNC Machine",
+    "description": "A Pizza-Preparing, Tool-Changing, 3-Axis, 3D-printed CNC Machine!",
+    "image": "https://teddywarner.org/assets/images/Pizza/thumb.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2022-12-20T00:00:00Z",
+    "dateModified": "2023-07-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/PizzaPizza/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
@@ -336,7 +358,7 @@ I began to move on to testing both the electronics system and firmware. Visually
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/Jc3l15KAwwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/Jc3l15KAwwE" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 
@@ -346,7 +368,7 @@ One of the coolest aspects of running Marlin on our CNC is its easy LCD interfac
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/4IKbeooSaIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/4IKbeooSaIM" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 
@@ -523,7 +545,7 @@ This process left me with generated gcode of a single circle, that I could later
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/azvfDjM_h1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/azvfDjM_h1E" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 
@@ -549,7 +571,7 @@ After the servo control gcode was flattened out, Charles began the work of writi
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/MYHNym9zk10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/MYHNym9zk10" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 
@@ -573,7 +595,7 @@ Of course, after all this work on a pizza-preparing machine, the only logical te
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/Tk6OREM7gic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/Tk6OREM7gic" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 

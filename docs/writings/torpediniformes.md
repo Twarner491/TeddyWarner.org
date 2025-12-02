@@ -43,6 +43,28 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Torpediniformes",
+    "description": "An analysis of The Meno.",
+    "image": "https://teddywarner.org/assets/images/index/snake.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2022-05-01T00:00:00Z",
+    "dateModified": "2022-05-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/writings/torpediniformes/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

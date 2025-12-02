@@ -43,6 +43,28 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "8-bit Breadboard Computer",
+    "description": "A dive into computer logic, and processor workings.",
+    "image": "https://teddywarner.org/assets/images/thumb.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2022-01-01T00:00:00Z",
+    "dateModified": "2022-01-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/8-bit/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
@@ -88,7 +110,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
     This page is a bit different than my other project pages, as it is a build log for my take on this [8-bit Breadboard Computer](https://eater.net/8bit). Instead of outlining project development (as Mr. Eaters' videos do an amazing job with that), this page will be a collection of media behind each of my computer modules, as well as some final programs ran on the computer.
 
 <center>
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/videoseries?list=PLowKtXNTBypGqImE405J2565dvjafglHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/videoseries?list=PLowKtXNTBypGqImE405J2565dvjafglHU" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
 <figure markdown="1">
@@ -149,7 +171,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 ![](../assets/images/8-bitComputer/setastable.jpg){ width="80%" alt="Setup of astable  circuit"}
 </figure>
 
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/HKCb6LxuJ04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/HKCb6LxuJ04" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <figure markdown="1">
 ![](../assets/images/8-bitComputer/555wave.jpg){ width="100%" alt="Oscilloscope display showing clock vs capacitor waveforms"}
@@ -160,13 +182,13 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 ![](../assets/images/8-bitComputer/variableastable.jpg){ width="80%" alt="Variable astable multivibrator circuit setup"}
 </figure>
 
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/gXsm1pPk73Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/gXsm1pPk73Y" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <figure markdown="1">
 ![](../assets/images/8-bitComputer/monostable.jpg){ width="80%" alt="Monostable multivibrator circuit setup"}
 </figure>
 
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/oZreQbS1mkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/oZreQbS1mkw" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <center>
 <iframe loading=lazy src="https://drive.google.com/file/d/1Oac8LGzgeLtf9SuPbXrGJICCNPeRC6Yi/preview" width="100%" height="480" allow="autoplay"></iframe>
@@ -184,7 +206,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 ![](../assets/images/8-bitComputer/clockmodule.jpg){ width="100%" alt="Completed clock module assembly"}
 </figure>
 
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/Hz7vxBx9ODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/Hz7vxBx9ODE" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Registers
 
@@ -200,9 +222,9 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 ![](../assets/images/8-bitComputer/8-BitRegister.jpg){ width="100%" alt="8-bit register module assembly"}
 </figure>
 
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/2IVVtewC8cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/2IVVtewC8cs" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/qDIzbADgvDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="450" src="https://www.youtube.com/embed/qDIzbADgvDE" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Arithmetic Logic Unit (ALU)
 
@@ -263,7 +285,7 @@ I've used microcontrollers in most of my past projects. IC data sheets are super
 ### Fibonacci Sequence
 
 <center>
-<iframe loading=lazy width="100%" height="500" src="https://www.youtube.com/embed/1Jj-sJ78O6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading=lazy width="100%" height="500" src="https://www.youtube.com/embed/1Jj-sJ78O6M" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
 <figure markdown="1">

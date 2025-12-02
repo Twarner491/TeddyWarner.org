@@ -2,6 +2,46 @@
 
 {% block announce %}{% endblock %}
 
+{% block scripts %}
+  <!-- Error suppressor must load BEFORE everything else -->
+  <script src="{{ 'assets/js/error-suppressor.js' | url }}"></script>
+  {{ super() }}
+  
+  <!-- Service Worker Registration for Cache Control -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registered:', registration.scope);
+            
+            // Check for updates
+            registration.addEventListener('updatefound', function() {
+              const newWorker = registration.installing;
+              newWorker.addEventListener('statechange', function() {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New service worker available, prompt user to refresh
+                  if (confirm('A new version is available. Refresh to update?')) {
+                    newWorker.postMessage({ type: 'SKIP_WAITING' });
+                    window.location.reload();
+                  }
+                }
+              });
+            });
+          })
+          .catch(function(err) {
+            console.log('ServiceWorker registration failed:', err);
+          });
+      });
+
+      // Reload when new service worker takes control
+      navigator.serviceWorker.addEventListener('controllerchange', function() {
+        window.location.reload();
+      });
+    }
+  </script>
+{% endblock %}
+
 {% block header %}
 <!-- Determine base classes -->
 {% set class = "md-header" %}

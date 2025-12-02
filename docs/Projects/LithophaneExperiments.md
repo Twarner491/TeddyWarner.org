@@ -43,6 +43,28 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Lithophane Experiments",
+    "description": "A gallery of lithophanes.",
+    "image": "https://teddywarner.org/assets/images/LithophaneExperiments/hero.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2019-01-01T00:00:00Z",
+    "dateModified": "2022-12-31T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/LithophaneExperiments/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
@@ -93,7 +115,7 @@ A Lithophane is a piece of art made out of a thin translucent material designed 
 
 <center>
 
-<iframe width="90%" height="495" src="https://www.youtube.com/embed/ZNlbl6uhqbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="90%" height="495" src="https://www.youtube.com/embed/ZNlbl6uhqbI" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 

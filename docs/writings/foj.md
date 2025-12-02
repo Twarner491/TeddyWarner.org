@@ -44,6 +44,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The Fallacy of Justice",
+    "description": "A Platonic Dialogue",
+    "image": "https://teddywarner.org/assets/images/foj/thumb.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2022-12-01T00:00:00Z",
+    "dateModified": "2022-12-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/writings/foj/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

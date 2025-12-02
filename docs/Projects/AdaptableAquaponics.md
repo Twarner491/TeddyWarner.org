@@ -43,6 +43,28 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Adaptable Aquaponics",
+    "description": "A Theoretical Confrontation to Contemporary Farming Challenges.",
+    "image": "https://teddywarner.org/assets/images/AdaptableAquaponics/hero.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2022-06-01T00:00:00Z",
+    "dateModified": "2022-06-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/AdaptableAquaponics/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
@@ -83,7 +105,7 @@ template: comments.html
 <center>
 
 <div style="position:relative;padding-bottom:56.25%;">
-  <iframe width="100%" height="100" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/hvQVoDwjI9o" title="Adaptable Aquaponics | USC Iovine and Young Academy Pitch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="100%" height="100" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/hvQVoDwjI9o" title="Adaptable Aquaponics | USC Iovine and Young Academy Pitch" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 </center>
@@ -284,7 +306,7 @@ PETG is my go-to generic 3D printing material, however, it really shines when fa
 
 <center>
 
-<iframe width="98%" height="560" src="https://www.youtube.com/embed/-e6EYHS1u_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="98%" height="560" src="https://www.youtube.com/embed/-e6EYHS1u_c" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 
@@ -296,7 +318,7 @@ PETG is my go-to generic 3D printing material, however, it really shines when fa
 
 I was lucky enough to stumble across some gloss black acrylic in the scrap bin [@makerspaceCharlotte](https://www.instagram.com/makerspacecharlotte/), which I used to create Adaptable Aquaponic's solar panels. This was my first time using the lasers [@makerspaceCharlotte](https://www.instagram.com/makerspacecharlotte/), and the machine that I was on ran a different wattage than the lasers at the [Charlotte Latin Fab Lab](https://www.instagram.com/clsfablab/) (my school's lab & my workplace) so I began with a bit of research into optimal cut settings. After altering the laser focus to achieve the desired (slightly thickened beam) effect, I began batch cutting the model solar panels.
 
-<iframe width="98%" height="560" src="https://www.youtube.com/embed/jXAlMzxqgno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="98%" height="560" src="https://www.youtube.com/embed/jXAlMzxqgno" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 *Note the other test cuts on the stock material above. Though for the sake of focusing on Adaptable Aquaponics and not the prototyping process I've chosen to not mention much of the prototyping behind this physical model. I usually include ample prototyping content in my articles, so it felt necessary to call attention to the test cuts here :)*
 
@@ -311,7 +333,7 @@ I cleaned up the final cut parts with some soap and water, before continuing to 
 
 <center>
 
-<iframe width="99%" height="560" src="https://www.youtube.com/embed/RmUPD9cld18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="99%" height="560" src="https://www.youtube.com/embed/RmUPD9cld18" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 
@@ -327,7 +349,7 @@ The glue up of these shelves was a bit finicky, as my fingers just seem to be a 
 
 <center>
 
-<iframe width="97.5%" height="560" src="https://www.youtube.com/embed/_TvLxb7OKS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="97.5%" height="560" src="https://www.youtube.com/embed/_TvLxb7OKS4" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 
@@ -343,7 +365,7 @@ As a finishing touch, I used a [Cricut Explore Air 2](https://cricut.com/en-us/c
 
 <center>
 
-<iframe width="98%" height="560" src="https://www.youtube.com/embed/bYOHFo1ECQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="98%" height="560" src="https://www.youtube.com/embed/bYOHFo1ECQ4" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </center>
 

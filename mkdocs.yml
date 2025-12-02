@@ -39,6 +39,9 @@ theme:
   font:
     text: Fira Sans
     code: Ubuntu Mono
+  
+  # Add font-display configuration
+  font_display: swap
 
   logo: assets/images/TeddyWarner.svg
 
@@ -104,10 +107,16 @@ markdown_extensions:
 extra_css:
   - assets/css/extra.css
 
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+
 extra_javascript:
+  - assets/js/error-suppressor.js
   - assets/js/index.js 
   - assets/js/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?defer
 
 nav:
   - Home : https://teddywarner.org

@@ -2,12 +2,20 @@ document.addEventListener("DOMContentLoaded", function() {
   let lastScrollTop = 0;
   let ticking = false;
 
+  // Batch all DOM measurements together to avoid forced reflows
   var contentSections = document.querySelectorAll('.content-container > section');
-  var previousHeight = 0;
-
+  var heights = [];
+  
+  // Read all heights first (batched reads)
   contentSections.forEach(function(section) {
+    heights.push(section.offsetHeight);
+  });
+  
+  // Then apply all position changes (batched writes)
+  var previousHeight = 0;
+  contentSections.forEach(function(section, index) {
     section.style.top = previousHeight + 'px';
-    previousHeight += section.offsetHeight;
+    previousHeight += heights[index];
   });
 
   // Add staggered animations for experience items
@@ -48,25 +56,41 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const scrollThreshold = 100; // Adjust this value to control when the header shrinks
 
+  // Use requestAnimationFrame to batch scroll updates
   window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (scrollTop > scrollThreshold) {
-      document.body.classList.add('scrolled');
-    } else {
-      document.body.classList.remove('scrolled');
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > scrollThreshold) {
+          document.body.classList.add('scrolled');
+        } else {
+          document.body.classList.remove('scrolled');
+        }
+        
+        lastScrollTop = scrollTop;
+        ticking = false;
+      });
+      
+      ticking = true;
     }
-    
-    lastScrollTop = scrollTop;
   });
 
+  // Combine scroll handlers and use requestAnimationFrame
   document.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
-    const blurOverlay = document.querySelector('.blur-overlay');
-    
-    if (blurOverlay) {
-      const opacity = Math.min(scrollPosition / 100, 1);
-      blurOverlay.style.opacity = opacity;
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        const scrollPosition = window.scrollY;
+        const blurOverlay = document.querySelector('.blur-overlay');
+        
+        if (blurOverlay) {
+          const opacity = Math.min(scrollPosition / 100, 1);
+          blurOverlay.style.opacity = opacity;
+        }
+        ticking = false;
+      });
+      
+      ticking = true;
     }
   });
 });
@@ -85,15 +109,25 @@ function togglemenu() {
 
 function leftrevon() {
   var element = document.querySelector('.circleGroup');
-  element.style.setProperty('--rotation-direction', 'normal');
+  if (element) {
+    element.style.setProperty('--rotation-direction', 'normal');
+  }
 }
 
 function leftrevoff() {
   var element = document.querySelector('.circleGroup');
-  element.style.setProperty('--rotation-direction', 'reverse');
+  if (element) {
+    element.style.setProperty('--rotation-direction', 'reverse');
+  }
 }
 
-leftrevon();
+// Only run these if the elements exist on the page
+if (document.querySelector('.circleGroup')) {
+  leftrevon();
+}
 
-document.querySelector('.abtbtn').addEventListener('mouseenter', leftrevoff);
-document.querySelector('.abtbtn').addEventListener('mouseleave', leftrevon);
+var abtBtn = document.querySelector('.abtbtn');
+if (abtBtn) {
+  abtBtn.addEventListener('mouseenter', leftrevoff);
+  abtBtn.addEventListener('mouseleave', leftrevon);
+}

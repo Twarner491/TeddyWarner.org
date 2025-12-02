@@ -43,6 +43,28 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Project Portfolio Site",
+    "description": "Static site generation with Mkdocs, and hosting via GitHub Pages.",
+    "image": "https://teddywarner.org/assets/images/PortfolioSite/portfolioSiteHero.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2021-07-01T00:00:00Z",
+    "dateModified": "2024-06-06T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/ProjectPortfolioSite/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

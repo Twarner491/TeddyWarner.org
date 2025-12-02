@@ -45,6 +45,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
   <link rel="stylesheet" href="../../assets/css/carousel.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "A Century in Japan",
+    "description": "439.59 miles, 21,165 ft of elev. gained, ~39.21 hrs of peddling.",
+    "image": "https://teddywarner.org/assets/images/centuryinjapan/thumb.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2025-11-01T00:00:00Z",
+    "dateModified": "2025-11-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/writings/centuryinjapan/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

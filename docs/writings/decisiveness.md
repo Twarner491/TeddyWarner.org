@@ -44,6 +44,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Ex Nihilo Nihil Fit",
+    "description": "Nothing comes out of nothing. Some thoughts on decisiveness.",
+    "image": "https://teddywarner.org/assets/images/decisiveness/decisiveness.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2025-01-01T00:00:00Z",
+    "dateModified": "2025-01-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/writings/decisiveness/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

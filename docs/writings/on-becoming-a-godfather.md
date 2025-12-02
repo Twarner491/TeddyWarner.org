@@ -44,6 +44,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
   <link rel="stylesheet" href="../../assets/css/messages.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "On Becoming a Godfather",
+    "description": "This confers great benefits like, being able to speak in a raspy voice.",
+    "image": "https://teddywarner.org/assets/images/Godfather/thumb.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2025-08-01T00:00:00Z",
+    "dateModified": "2025-08-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/writings/on-becoming-a-godfather/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

@@ -43,6 +43,28 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Assistive Aquaponics Fish Tank",
+    "description": "Expanding the accessibility of successful & thriving aquaponics ecosystems.",
+    "image": "https://teddywarner.org/assets/images/AssistiveAquaponics/presentation.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2021-06-01T00:00:00Z",
+    "dateModified": "2021-06-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/AssistiveAquaponics/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
@@ -81,7 +103,7 @@ template: comments.html
 
 <center>
 
-<iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="Assistive Aquaponics Fish Tank Project Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="100%" height="550" src="https://www.youtube.com/embed/YuM9sASTiBI" title="Assistive Aquaponics Fish Tank Project Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 </center>
 
@@ -458,7 +480,7 @@ I uploaded this code to my analog pH interfacing board, and connected the board'
 
 Following the calibration steps discussed a bit above, I completed the pH probe's first calibration starting with the *7* mid calibration liquid. I placed the end of the probe in the liquid, and set the command *CAL,7* via serial to my analog pH interfacing board. After this, I repeated this step with the *4* low calibration liquid with the line *CAL,4*, and for a final time with the *10* high calibration liquid, and the line *CAL,10*.
 
-<iframe width="900" height="600" src="https://www.youtube.com/embed/aHC4-tacAKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/aHC4-tacAKg" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 #### Temp/Humidity Sensor
 
@@ -872,7 +894,7 @@ To test this sketch and board, however, I didn't want to wait the 12-hour altern
 
 I uploaded this test code to my power breakout board, connected it to a voltage input, and probed the output terminal block ports with a multimeter, yielding the 5 seconds on 5 seconds off results shown below.
 
-<iframe width="900" height="600" src="https://www.youtube.com/embed/BrxtLnOwK7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/BrxtLnOwK7k" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 After this successful test, I uploaded the final 12-hour iteration of the code and was then ready to test the breakout in my system, the step where everything when wrong. Although the timing circuit of my power breakout board worked great, the board itself did not. Unfortunately during the design process, I forgot to consider my usage of an inductive load, my water pump. Upon the first bootup of my system with this power breakout board, the circuit worked great, however, after cutting power to the system, my inductive water pump sent a current back into my breakout, destroying the timing circuit of the board. This board design left me facing the problem of always off grow lights after powering the water pump since when power is cut to a motor, like my water pump, the motion doesn't stop, and the excess current generated needs to go somewhere, in my case, my timing circuit. The fix for this use of an inductive load revolves around the use of a flyback diode, a feature I'm familiar with from use on 3D Printers. 
  
@@ -891,7 +913,7 @@ Again, I fabricated this power breakout board, and uploaded my timing sketch to 
 
 I then implemented the power board in my tank's electronics system and booted up the PSU, yielding the results in the video below. All aspects of the electronics system are powered from the breakout, and bootup after multiple power cuts.
 
-<iframe width="900" height="600" src="https://www.youtube.com/embed/PK6Xp42kFps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/PK6Xp42kFps" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 ## Tank Structure - CNC Milling & Laser Cutting
 
@@ -978,7 +1000,7 @@ Being the real centerpiece of my Aquaponics Fish Tank project, the fish tank its
 
 I exported this Inkscape design as an SVG file, and then opened the file into CorelDRAW, and following the workflow for laser cutting I used in my [week 3](http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/assignments/week03/) class, I ran this tank file on a sheet of 1/4" clear acrylic on our lab's Fusion Pro 48 laser cutter.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/jMZu8fX5GOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/jMZu8fX5GOA" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 This job left me with the 5 panels of my tank, ready to assemble
 
@@ -1305,7 +1327,7 @@ Although I had wired all of my connections with mounted boards in my electronics
 
 ... and, with all this assembly & integration work done, it was time for final testing. Below is a successful demonstration of my tank's electronics system. Just a note, in this video, my tank's pump is disconnected, because it's never good to run a water pump outside of water. Instead of leaving this pump connected during the testing of the electronics system, I tested the voltage and current from the pump cables run under the plant box.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/aCb7Cp4qs18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/aCb7Cp4qs18" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 Finally, came the water test. Despite the number of water tests I had done with the subsystems before, and the proof of their watertight features, this test was damn stressful leading up to it, due to the inclusion of all my electronics in my system on this test. I prepared a spot outside where I could test my tank, and then began preparing the tank, first by filling the plant box with my LECA grow medium ...
 
@@ -1313,11 +1335,11 @@ Finally, came the water test. Despite the number of water tests I had done with 
 
 ... and next, by filling the tank itself. I did this with the help of a couple of my fab groupmates and was able to use a spare water pump and some excess silicone tubing to pump water into my fish tank, without concern of spilling around the base of the tank, where its electronics are located.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/_RH-z7r-aJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/_RH-z7r-aJA" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 Unsurprisingly, but to my relief, the filling of the tank went smoothly, and there was absolutely no spillage/leakes anywhere in the whole system, leaving me with the last remaining tank ... turning it on.
 
-<iframe width="900" height="650" src="https://www.youtube.com/embed/k-yAUQGVHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<iframe width="900" height="650" src="https://www.youtube.com/embed/k-yAUQGVHbw" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
 it worked!, upon bootup, water begins flowing through the system, and draining out through the plant boxes draining feature, at the same time as the electronics system is taking measurements from the system and displaying it all of the tanks embedded front LCD. 
 

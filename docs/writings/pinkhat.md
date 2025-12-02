@@ -44,6 +44,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "A Pink Hat",
+    "description": "A welcoming thing.",
+    "image": "https://teddywarner.org/assets/images/pinkhat/hat.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2025-10-01T00:00:00Z",
+    "dateModified": "2025-10-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/writings/pinkhat/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

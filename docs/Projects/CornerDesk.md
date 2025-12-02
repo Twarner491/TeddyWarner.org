@@ -43,6 +43,28 @@ template: comments.html
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cable Managed Corner Desk",
+    "description": "A clean modern corner desk.",
+    "image": "https://teddywarner.org/assets/images/CornerDesk/finishedwoodassembly.jpg",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2020-03-15T00:00:00Z",
+    "dateModified": "2020-03-15T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/CornerDesk/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
@@ -124,9 +146,9 @@ A couple of days after getting the wood, I finally started assembling the desk, 
 
 I spent the next two days painting the frame with three coats of white paint and staining the cedar with Provincial. 
 
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/Ur2js0Qi-xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/Ur2js0Qi-xc" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/ipKd49bhELs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/ipKd49bhELs" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <figure markdown="1">
 

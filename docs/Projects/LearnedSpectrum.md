@@ -44,6 +44,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Learned Spectrum",
+    "description": "Towards temporal understanding in AI through fMRI learning stage classification.",
+    "image": "https://teddywarner.org/assets/images/learnedSpec/hero.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2024-05-01T00:00:00Z",
+    "dateModified": "2024-05-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/LearnedSpectrum/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

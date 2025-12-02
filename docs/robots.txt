@@ -1,20 +1,12 @@
-User-agent: Googlebot
+User-agent: *
 Allow: /
 
-User-agent: Googlebot-Image
-Allow: /
+# Sitemap location
+Sitemap: https://teddywarner.org/sitemap.xml
 
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: *
 Allow: /

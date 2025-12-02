@@ -45,6 +45,28 @@ template: comments.html
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/projects/receipts.css">
   <link rel="stylesheet" href="../../assets/css/header.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Quote Receipts",
+    "description": "Did I really say that? Why yes, you did.",
+    "image": "https://teddywarner.org/assets/images/quotes/thumb.png",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2025-09-01T00:00:00Z",
+    "dateModified": "2025-09-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.org/Projects/Quotes/"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
@@ -133,7 +155,7 @@ And boom, I now knew how I would be spending my Saturday morning.
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/F5_00bj8dHo" title="Quote Receipt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/F5_00bj8dHo" title="Quote Receipt" frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </center>
 
@@ -743,7 +765,7 @@ As a final step to prep for step 2: Printer Hacking, we'll set up this app to au
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/sNBxLepgpb0" title="First Quote Receipt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/sNBxLepgpb0" title="First Quote Receipt" frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <figcaption>Here's the first print with the Quote Printer</figcaption>
 
 </center>
@@ -813,7 +835,7 @@ I then reattached the printer mainboard wires,
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/b8bMIGniOwY" title="First Quote Receipt Printer Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/b8bMIGniOwY" title="First Quote Receipt Printer Test" frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </center>
 
@@ -891,7 +913,7 @@ Also, thermal printers are really wonderful pieces of technology. I was astonish
 
 <center>
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/d4OV7coOji8" title="Bee Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/d4OV7coOji8" title="Bee Movie" frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </center>
 

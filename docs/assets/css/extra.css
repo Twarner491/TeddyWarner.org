@@ -3,4 +3,40 @@
     --md-footer-bg-color--dark: hsla(228, 8%, 7%, 0.58);
     --md-footer-bg-color: hsla(220, 7%, 7%, 1);
     --md-code-bg-color: hsla(228, 7%, 12%, 1);
- }
+}
+
+/* Font display optimization for all fonts */
+@font-face {
+  font-family: 'Fira Sans';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Regular';
+  font-display: swap;
+}
