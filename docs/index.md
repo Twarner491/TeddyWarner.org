@@ -46,6 +46,31 @@ search:
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/assets/css/index.css">
   <link rel="stylesheet" href="/assets/css/header.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://teddywarner.org/#person",
+    "name": "Teddy Warner",
+    "alternateName": ["@WarnerTeddy", "Theodore Ames Warner"],
+    "url": "https://teddywarner.org",
+    "image": "https://teddywarner.org/assets/images/thumb.png",
+    "description": "Founder of Intempus. Thiel Fellow.",
+    "jobTitle": "Chief Executive Officer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Intempus",
+      "url": "https://intempus.org"
+    },
+    "award": "Thiel Fellowship",
+    "sameAs": [
+      "https://x.com/WarnerTeddy",
+      "https://www.linkedin.com/in/teddywarner/",
+      "https://github.com/Twarner491"
+    ]
+  }
+  </script>
 </head>
 
 <body>

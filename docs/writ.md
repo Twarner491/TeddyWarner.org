@@ -44,6 +44,20 @@ search:
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/writ.css">
   <link rel="stylesheet" href="/assets/css/header.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Writings - Teddy Warner",
+    "description": "A conglomerate of my thoughts and essays.",
+    "url": "https://teddywarner.org/writ/",
+    "author": {
+      "@type": "Person",
+      "@id": "https://teddywarner.org/#person"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">

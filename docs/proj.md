@@ -44,6 +44,20 @@ search:
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/proj.css">
   <link rel="stylesheet" href="/assets/css/header.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Projects - Teddy Warner",
+    "description": "Some of the Open-Source shenanigans I've been up to.",
+    "url": "https://teddywarner.org/proj/",
+    "author": {
+      "@type": "Person",
+      "@id": "https://teddywarner.org/#person"
+    }
+  }
+  </script>
 </head>
 
   <nav class="main-navigation">
