@@ -56,7 +56,7 @@ self.addEventListener('fetch', event => {
   // Different strategies for different content types
   
   // 1. HTML - Network first, fallback to cache
-  if (request.headers.get('accept').includes('text/html')) {
+  if (request.headers.get('accept')?.includes('text/html') || false) {
     event.respondWith(
       fetch(request)
         .then(response => {
