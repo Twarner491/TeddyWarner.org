@@ -1,11 +1,8 @@
 // Service Worker for GitHub Pages Cache Control
 // This provides client-side caching since GitHub Pages doesn't allow server-side cache headers
 
-const CACHE_NAME = 'teddywarner-v2';
-const CACHE_VERSION = '2.0.0';
-
-// Cache duration: 1 year for static assets (as recommended by PageSpeed Insights)
-const CACHE_MAX_AGE = 365 * 24 * 60 * 60 * 1000; // 1 year in milliseconds
+const CACHE_NAME = 'teddywarner-v1';
+const CACHE_VERSION = '1.0.0';
 
 // Assets to cache immediately on install
 const PRECACHE_URLS = [
@@ -73,7 +70,6 @@ self.addEventListener('fetch', event => {
   }
 
   // 2. Static assets (CSS, JS, images) - Cache first, fallback to network
-  // These are immutable assets that can be cached for 1 year
   if (
     request.url.includes('/assets/') ||
     request.url.includes('/stylesheets/') ||
@@ -83,33 +79,13 @@ self.addEventListener('fetch', event => {
       caches.match(request)
         .then(response => {
           if (response) {
-            // Check if cached response is still fresh (within 1 year)
-            const cachedDate = new Date(response.headers.get('date') || new Date());
-            const now = new Date();
-            const age = now - cachedDate;
-            
-            // If cache is still fresh, return it
-            if (age < CACHE_MAX_AGE) {
-              return response;
-            }
+            return response;
           }
-          
-          // Fetch from network and cache
           return fetch(request).then(response => {
-            // Cache successful responses with custom headers
+            // Cache successful responses
             if (response.status === 200) {
               const responseClone = response.clone();
-              const headers = new Headers(response.headers);
-              headers.set('Cache-Control', 'public, max-age=31536000, immutable');
-              headers.set('date', new Date().toUTCString());
-              
-              const cachedResponse = new Response(responseClone.body, {
-                status: response.status,
-                statusText: response.statusText,
-                headers: headers
-              });
-              
-              caches.open(CACHE_NAME).then(cache => cache.put(request, cachedResponse));
+              caches.open(CACHE_NAME).then(cache => cache.put(request, responseClone));
             }
             return response;
           });

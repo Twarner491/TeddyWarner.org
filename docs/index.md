@@ -49,16 +49,11 @@ search:
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://m.media-amazon.com">
   
-  <!-- Fonts with optimized loading using preload -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous" async></script>
+  <!-- Fonts and styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous" defer></script>
   
-  <!-- Critical CSS inline -->
-  <link rel="preload" as="style" href="/assets/css/index.css">
-  <link rel="preload" as="style" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/index.css">
   <link rel="stylesheet" href="/assets/css/header.css">
   
