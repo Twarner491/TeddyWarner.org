@@ -84,6 +84,19 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/downsideprotection/">
+            <div class="title-row">
+              <p class="projtitle">Why 10x Better Robots Scale 10x Worse</p>
+              <p class="writeyear">Dec 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Novel hardware adoption is implicitly limited by downside tolerance, not upside potential.</p>
+              <p class="readtime">5-6 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/centuryinjapan/">
             <div class="title-row">
               <p class="projtitle">A Century in Japan</p>

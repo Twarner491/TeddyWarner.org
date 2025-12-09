@@ -256,6 +256,21 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/downsideprotection/">
+            <div class="title-row">
+              <p class="projtitle">Why 10x Better Robots Scale 10x Worse</p>
+              <p class="writeyear">Dec 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Novel hardware adoption is implicitly limited by downside tolerance, not upside potential.</p>
+              <span class="mobileyear">
+              <p class="readtime">5-6 mins</p>
+              <span>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/centuryinjapan/">
             <div class="title-row">
               <p class="projtitle">A Century in Japan</p>
@@ -269,6 +284,7 @@ search:
             </div>
           </a>
         </div>
+        <span class="mobileyear">
         <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/benevolentfreedom/">
@@ -280,22 +296,6 @@ search:
               <p class="projdescription">Where do we draw the line with virtue based voter constraints?</p>
               <span class="mobileyear">
               <p class="readtime">12–16 mins</p>
-              <span>
-            </div>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/seoulwallsunrise/">
-            <div class="title-row">
-              <p class="projtitle">A Seoul Wall Sunrise</p>
-              <p class="writeyear">Oct 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">Some blissfully ignorant thoughts.</p>
-              <span class="mobileyear">
-              <p class="readtime">2-3 mins</p>
               <span>
             </div>
           </a>
