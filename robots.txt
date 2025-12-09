@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://teddywarner.org/sitemap.xml
+Sitemap: https://teddywarner.org/sitemap.xml.gz
+
+# Social media crawlers - explicit allows
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Search engines - explicit allows
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
