@@ -84,6 +84,19 @@ search:
     <section class="writing">
       <div class="content6" id="content6">
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/immortalitytrap/">
+            <div class="title-row">
+              <p class="projtitle">The Immortality Trap</p>
+              <p class="writeyear">Dec 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Why living to 1000 might mean we accomplish less than living to 80.</p>
+              <p class="readtime">12–15 mins</p>
+            </div>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/downsideprotection/">
             <div class="title-row">
               <p class="projtitle">Why 10x Better Robots Scale 10x Worse</p>

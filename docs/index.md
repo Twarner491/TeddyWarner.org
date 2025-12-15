@@ -256,6 +256,21 @@ search:
       <div class="content6" id="content6">
         <a href="https://teddywarner.org/writ"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="writparent">
+          <a href="https://teddywarner.org/writings/immortalitytrap/">
+            <div class="title-row">
+              <p class="projtitle">The Immortality Trap</p>
+              <p class="writeyear">Dec 2025</p>
+            </div>
+            <div class="description-row">
+              <p class="projdescription">Why living to 1000 might mean we accomplish less than living to 80.</p>
+              <span class="mobileyear">
+              <p class="readtime">12-15 mins</p>
+              <span>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div class="writparent">
           <a href="https://teddywarner.org/writings/downsideprotection/">
             <div class="title-row">
               <p class="projtitle">Why 10x Better Robots Scale 10x Worse</p>
@@ -269,6 +284,7 @@ search:
             </div>
           </a>
         </div>
+        <span class="mobileyear">
         <hr>
         <div class="writparent">
           <a href="https://teddywarner.org/writings/centuryinjapan/">
@@ -280,22 +296,6 @@ search:
               <p class="projdescription">439.59 miles, 21,165 ft of elev. gained, ~39.21 hrs of peddling.</p>
               <span class="mobileyear">
               <p class="readtime">9–11 mins</p>
-              <span>
-            </div>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/benevolentfreedom/">
-            <div class="title-row">
-              <p class="projtitle">A Case for the Philosopher King(s)</p>
-              <p class="writeyear">Oct 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">Where do we draw the line with virtue based voter constraints?</p>
-              <span class="mobileyear">
-              <p class="readtime">12–16 mins</p>
               <span>
             </div>
           </a>
