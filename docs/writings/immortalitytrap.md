@@ -23,7 +23,7 @@ template: comments.html
   <meta property="og:url" content="https://teddywarner.org/writings/immortalitytrap/">
   <meta property="og:title" content="The Immortality Trap - Teddy Warner">
   <meta property="og:description" content="Why living to 1000 might mean we accomplish less than living to 80.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/immortalitytrap/thumb.png">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/immortalitytrap/colorOtime.webp">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@ template: comments.html
   <meta property="twitter:url" content="https://teddywarner.org/writings/immortalitytrap/">
   <meta property="twitter:title" content="The Immortality Trap - Teddy Warner">
   <meta property="twitter:description" content="Why living to 1000 might mean we accomplish less than living to 80.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/immortalitytrap/thumb.png">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/immortalitytrap/colorOtime.webp">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -51,7 +51,7 @@ template: comments.html
     "@type": "BlogPosting",
     "headline": "The Immortality Trap",
     "description": "Why living to 1000 might mean we accomplish less than living to 80.",
-    "image": "https://teddywarner.org/assets/images/immortalitytrap/thumb.png",
+    "image": "https://teddywarner.org/assets/images/immortalitytrap/colorOtime.webp",
     "author": {
       "@id": "https://teddywarner.org/#person"
     },
