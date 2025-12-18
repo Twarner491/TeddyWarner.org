@@ -144,14 +144,16 @@ search:
                                 <rect x="1065.5" y="307.5" width="224" height="388" rx="112" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
-                        <a target="_blank" href="https://onethreenine.net/about" aria-label="Corkboard Project">
-                          <g id="image-card-2" class="project">
-                              <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
-                              <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                              <image x="277.5" y="527" width="492" height="328" href="assets/images/index/cork.png" clip-path="url(#clipImage2)" preserveAspectRatio="xMidYMid slice" alt="Corkboard project image" loading="eager" fetchpriority="high" />
-                              <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                          </g>
-                        </a>
+                       <a target="_blank" href="https://onethreenine.net/about" aria-label="Corkboard Project"
+                          onmouseenter="this.querySelector('image').setAttribute('style', 'transform:rotate(1deg); transition:transform 0.25s cubic-bezier(0.4,0,0.2,1); transform-origin:523.5px 691px;')"
+                          onmouseleave="this.querySelector('image').setAttribute('style', 'transform:none; transition:transform 0.25s cubic-bezier(0.4,0,0.2,1); transform-origin:523.5px 691px;')">
+                         <g id="image-card-2" class="project">
+                             <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
+                             <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                             <image x="277.5" y="527" width="492" height="328" href="assets/images/index/cork.png" clip-path="url(#clipImage2)" preserveAspectRatio="xMidYMid slice" alt="Corkboard project image" loading="eager" fetchpriority="high" />
+                             <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                         </g>
+                       </a>
                         <a target="_blank" href="https://www.goodreads.com/review/list/179003175?shelf=%23ALL%23&view=covers" aria-label="Reading List on Goodreads">
                           <g id="reading-card" class="project">
                               <rect x="796.5" y="616" width="242" height="288" rx="27" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -338,7 +340,7 @@ search:
     // Wait for typed.js to load
     window.addEventListener('load', function() {
       var typed = new Typed('#typed', {
-        strings: ['a life enjoyer.', 'a roboticist', 'a writer.'],
+        strings: [ 'a roboticist', 'a writer.', 'a life enjoyer.'],
         startDelay: 700,
         typeSpeed: 60,
         backSpeed: 60,

@@ -85,7 +85,7 @@ search:
       <div class="content6" id="content6">
         <div class="writparent">
           <a target=”_blank” href="https://onethreenine.net/about">
-            <div class="imgparent"><img class="writeimg" src="https://onethreenine.net/assets/images/thumb.png" alt="onethreenine.net"></div>
+            <div class="imgparent"><img class="writeimg" src="../assets/images/index/cork.png" alt="onethreenine.net"></div>
             <div class="textcontent">
               <p class="projtitle">onethreenine.net</p>
               <p class="projdescription">A web accessable corkboard for my apartment.</p>
