@@ -340,7 +340,7 @@ search:
     // Wait for typed.js to load
     window.addEventListener('load', function() {
       var typed = new Typed('#typed', {
-        strings: [ 'a roboticist', 'a writer.', 'a life enjoyer.'],
+        strings: [ 'a roboticist.', 'a writer.', 'a life enjoyer.'],
         startDelay: 700,
         typeSpeed: 60,
         backSpeed: 60,
