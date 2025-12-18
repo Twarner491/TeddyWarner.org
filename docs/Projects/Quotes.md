@@ -264,395 +264,24 @@ Plug in USB thermal printer, run `lsusb` to get vendor/product ID.
 
   *Note your values:* Vendor ID: `0x0483`, Product ID: `0x5720`, OUT Endpoint: `0x03`, IN Endpoint: `0x81`
 
-Then we'll create a very minimal project structure - I'm keeping this build to two files: a frontend HTML template and a simple Python backend.
+Then we'll create a very minimal project structure - I'm keeping this build to two files: a frontend HTML template and a simple Python backend. Clone the project repository:
 
   ```bash
-  # Create project directory
-  mkdir -p ~/receipt-printer/templates
-  cd ~/receipt-printer
-
-  # Create app.py
-  nano app.py
-
+  git clone https://github.com/Twarner491/quotes.git ~/quotes
+  cd ~/quotes
+  sudo pip3 install -r requirements.txt --break-system-packages
   ```
 
-  Paste this content into the new `app.py` file *(update with YOUR vendor/product/endpoint IDs):*
+  Update [`src/app.py`](https://github.com/Twarner491/quotes/blob/main/src/app.py) with your printer's vendor/product/endpoint IDs:
 
-  <div style="height:660px; overflow:scroll;">
-
-    ```python
-    from flask import Flask, render_template, request, jsonify
-    from escpos.printer import Usb
-    from datetime import datetime
-    import textwrap
-
-    app = Flask(__name__)
-
-    # UPDATE THESE WITH YOUR PRINTER'S VALUES
-    VENDOR_ID = 0x0483      # Your vendor ID
-    PRODUCT_ID = 0x5720     # Your product ID
-    OUT_EP = 0x03           # Your OUT endpoint
-    IN_EP = 0x81            # Your IN endpoint
-
-    def print_quote(quote, author="Anonymous"):
-        try:
-            # Initialize printer with correct endpoints
-            p = Usb(VENDOR_ID, PRODUCT_ID, out_ep=OUT_EP, in_ep=IN_EP)
-
-            # Header
-            p.set(align='center', bold=True, width=2, height=2)
-            p.text("QUOTE RECEIPT\n")
-            p.set(align='center', bold=False, width=1, height=1)
-            p.text("=" * 32 + "\n")
-            p.text(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            p.text("=" * 32 + "\n\n")
-
-            # Quote body
-            p.set(align='left', bold=False)
-            wrapped = textwrap.fill(f'"{quote}"', width=32)
-            p.text(wrapped + "\n\n")
-
-            # Attribution
-            p.set(align='right', bold=False)
-            p.text(f"-- {author}\n\n")
-
-            # Footer
-            p.set(align='center', underline=1)
-            p.text("CERTIFIED STUPID\n")
-            p.set(underline=0)
-            p.text("No refunds. No context.\n")
-            p.text("Memories printed. Dignity sold.\n\n")
-
-            # QR code (optional)
-            p.qr("https://receipt.local", size=6, center=True)
-            p.text("\n")
-
-            # Cut
-            p.cut()
-            p.close()
-
-            return True
-
-        except Exception as e:
-            print(f"Print error: {e}")
-            return False
-
-    @app.route('/')
-    def index():
-        return render_template('index.html')
-
-    @app.route('/print', methods=['POST'])
-    def print_receipt():
-        data = request.json
-        quote = data.get('quote', '').strip()
-        author = data.get('author', 'Anonymous').strip()
-
-        if not quote:
-            return jsonify({'success': False, 'error': 'Quote cannot be empty'}), 400
-
-        success = print_quote(quote, author)
-
-        if success:
-            return jsonify({'success': True, 'message': 'Receipt printed!'})
-        else:
-            return jsonify({'success': False, 'error': 'Printer error'}), 500
-
-    if __name__ == '__main__':
-        app.run(host='0.0.0.0', port=80, debug=False)
-
-    ```
-
-  </div>
-
-  Save: `Ctrl+O`, `Enter`, `Ctrl+X`
-
-  ```bash
-  # Create frontend
-  nano templates/index.html
-
+  ```python
+  VENDOR_ID = 0x0483      # Your vendor ID
+  PRODUCT_ID = 0x5720     # Your product ID
+  OUT_EP = 0x03           # Your OUT endpoint
+  IN_EP = 0x81            # Your IN endpoint
   ```
 
-  Paste this:
-
-  <div style="height:660px; overflow:scroll;">
-
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quote Receipt Printer</title>
-        <style>
-            * { 
-                margin: 0; 
-                padding: 0; 
-                box-sizing: border-box; 
-            }
-
-            body {
-                font-family: 'Courier New', 'Courier', monospace;
-                background: #ffffff;
-                min-height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-            }
-
-            .receipt {
-                background: #fafafa;
-                border: 1px dashed #999;
-                padding: 30px 20px;
-                max-width: 380px;
-                width: 100%;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            }
-
-            .header {
-                text-align: center;
-                font-size: 1.8em;
-                font-weight: bold;
-                letter-spacing: 2px;
-                margin-bottom: 15px;
-            }
-
-            .separator {
-                text-align: center;
-                margin: 10px 0;
-                color: #666;
-            }
-
-            .timestamp {
-                text-align: center;
-                font-size: 0.9em;
-                color: #666;
-                margin: 10px 0;
-            }
-
-            .quote-section {
-                margin: 20px 0;
-            }
-
-
-            textarea {
-                width: 100%;
-                padding: 10px;
-                border: none;
-                border-bottom: 1px solid #999;
-                background: transparent;
-                font-family: inherit;
-                font-size: 1em;
-                resize: none;
-                min-height: 80px;
-                outline: none;
-            }
-
-            textarea::placeholder {
-                color: #aaa;
-            }
-
-            .author-section {
-                text-align: right;
-                margin: 15px 0;
-            }
-
-            input {
-                width: 200px;
-                padding: 8px;
-                border: none;
-                border-bottom: 1px solid #999;
-                background: transparent;
-                font-family: inherit;
-                font-size: 0.95em;
-                text-align: right;
-                outline: none;
-            }
-
-            input::placeholder {
-                color: #aaa;
-            }
-
-            .footer {
-                text-align: center;
-                margin-top: 20px;
-                padding-top: 15px;
-                border-top: 1px dashed #999;
-            }
-
-            .footer-title {
-                text-decoration: underline;
-                font-weight: bold;
-                margin-bottom: 8px;
-            }
-
-            .footer-text {
-                font-size: 0.85em;
-                color: #666;
-                line-height: 1.4;
-            }
-
-            button {
-                width: 100%;
-                padding: 15px;
-                margin-top: 20px;
-                background: #000;
-                color: #fff;
-                border: none;
-                font-family: inherit;
-                font-size: 1em;
-                font-weight: bold;
-                cursor: pointer;
-                letter-spacing: 1px;
-                transition: background 0.2s;
-            }
-
-            button:hover {
-                background: #333;
-            }
-
-            button:active {
-                background: #555;
-            }
-
-            button:disabled {
-                background: #999;
-                cursor: not-allowed;
-            }
-
-            .message {
-                margin-top: 15px;
-                padding: 12px;
-                text-align: center;
-                font-size: 0.9em;
-                border-radius: 3px;
-            }
-
-            .success {
-                background: #d4edda;
-                color: #155724;
-                border: 1px solid #c3e6cb;
-            }
-
-            .error {
-                background: #f8d7da;
-                color: #721c24;
-                border: 1px solid #f5c6cb;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="receipt">
-            <div class="header">QUOTE RECEIPT</div>
-            <div class="separator">================================</div>
-            <div class="timestamp" id="timestamp"></div>
-            <div class="separator">================================</div>
-
-            <form id="quoteForm">
-                <div class="quote-section">
-                    <textarea 
-                        id="quote" 
-                        placeholder='"Enter quote here..."'
-                        required
-                    ></textarea>
-                </div>
-
-                <div class="author-section">
-                    <input 
-                        type="text" 
-                        id="author" 
-                        placeholder="-- Anonymous"
-                    >
-                </div>
-
-                <div class="footer">
-                    <div class="footer-title">CERTIFIED STUPID</div>
-                    <div class="footer-text">
-                        No refunds. No context.<br>
-                        Memories printed. Dignity sold.
-                    </div>
-                </div>
-
-                <button type="submit" id="submitBtn">
-                    PRINT RECEIPT
-                </button>
-            </form>
-
-            <div id="message"></div>
-        </div>
-
-        <script>
-            // Update timestamp every second
-            function updateTimestamp() {
-                const now = new Date();
-                const formatted = now.getFullYear() + '-' + 
-                    String(now.getMonth() + 1).padStart(2, '0') + '-' + 
-                    String(now.getDate()).padStart(2, '0') + ' ' +
-                    String(now.getHours()).padStart(2, '0') + ':' + 
-                    String(now.getMinutes()).padStart(2, '0') + ':' + 
-                    String(now.getSeconds()).padStart(2, '0');
-                document.getElementById('timestamp').textContent = formatted;
-            }
-            updateTimestamp();
-            setInterval(updateTimestamp, 1000);
-
-            const form = document.getElementById('quoteForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const messageDiv = document.getElementById('message');
-
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-
-                const quote = document.getElementById('quote').value.trim();
-                const authorInput = document.getElementById('author').value.trim();
-                const author = authorInput || 'Anonymous';
-
-                if (!quote) {
-                    showMessage('Quote cannot be empty', 'error');
-                    return;
-                }
-
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'PRINTING...';
-
-                try {
-                    const response = await fetch('/print', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ quote, author })
-                    });
-
-                    const data = await response.json();
-
-                    if (data.success) {
-                        showMessage('Receipt printed successfully', 'success');
-                        form.reset();
-                    } else {
-                        showMessage(data.error || 'Printing failed', 'error');
-                    }
-                } catch (error) {
-                    showMessage('Network error', 'error');
-                } finally {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'PRINT RECEIPT';
-                }
-            });
-
-            function showMessage(text, type) {
-                messageDiv.textContent = text;
-                messageDiv.className = `message ${type}`;
-                setTimeout(() => {
-                    messageDiv.textContent = '';
-                    messageDiv.className = '';
-                }, 3000);
-            }
-        </script>
-    </body>
-    </html>
-    ```
-  </div>
-
-  Save: `Ctrl+O`, `Enter`, `Ctrl+X`
+  The frontend template lives in [`src/templates/index.html`](https://github.com/Twarner491/quotes/blob/main/src/templates/index.html).
 
   I'm super happy with how the squedomorphic design came out here - Thermal Printers are somewhat limited in their output (due to binary color option) and as such I was pretty constrined when designing how I wanted the output reciept to look. Once i had a boilerplate from the backend, making this frontend match was easy.
 
@@ -662,19 +291,15 @@ Then we'll create a very minimal project structure - I'm keeping this build to t
 
 </figure>
 
-To get our RPI app up and running with the printer, we need to set some permissions:
+To get our RPI app up and running with the printer, we need to set some permissions. The udev rules are included in the repo:
 
   ```bash
-  # Add user to printer groups (replace 'pi' with your username if different)
-  sudo usermod -a -G lp,dialout $USER
-
-  # Create udev rule (UPDATE with YOUR vendor/product IDs)
-  echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="5720", MODE="0666"' | \
-  sudo tee /etc/udev/rules.d/99-thermal-printer.rules
-
-  # Reload udev
+  sudo cp ~/quotes/system-config/99-thermal-printer.rules /etc/udev/rules.d/
   sudo udevadm control --reload-rules
   sudo udevadm trigger
+
+  # Add user to printer groups
+  sudo usermod -a -G lp,dialout $USER
 
   # Reboot for permissions to take effect
   sudo reboot
@@ -683,76 +308,28 @@ To get our RPI app up and running with the printer, we need to set some permissi
 ... and then we can test! Just be sure the printer is plugged into power, 80mm Thermal paper is loaded (I used [MPRT 5 Rolls 3-1/8" x 230](https://www.amazon.com/dp/B0D14DYMHQ?ref=ppx_pop_mob_ap_share)), and the printer is wired to the RPI via USB.
 
   ```bash
-  # Reconnect after reboot
   ssh pi@receipt.local
-
-  # Navigate to project
-  cd ~/receipt-printer
-
-  # Test printer with YOUR endpoint values
-  python3 << 'EOF'
-  from escpos.printer import Usb
-  try:
-      p = Usb(0x0483, 0x5720, out_ep=0x03, in_ep=0x81)
-      p.text('Test Print\n')
-      p.cut()
-      print("✓ Printer working!")
-  except Exception as e:
-      print(f"Error: {e}")
-  EOF
-  ```
-
-Then we can bring the whole thing together and test the web server.
-
-  ```bash
-  sudo python3 app.py
+  cd ~/quotes
+  sudo python3 src/app.py
   ```
 
   You should see:
 
   ```
   * Running on all addresses (0.0.0.0)
-  * Running on http://127.0.0.1:80
+  * Running on http://127.0.0.1:5000
   ```
 
-  Test from browser: `http://receipt.local`
+  Test from browser: `http://receipt.local:5000`
 
   Press `Ctrl+C` to stop when done testing.
 
-As a final step to prep for step 2: Printer Hacking, we'll set up this app to auto run upon boot.
+As a final step to prep for step 2: Printer Hacking, we'll set up this app to auto run upon boot. The systemd service file is included in the repo at [`system-config/receipt-printer-flask.service`](https://github.com/Twarner491/quotes/blob/main/system-config/receipt-printer-flask.service):
 
   ```bash
-  # Create systemd service (UPDATE 'User=' with your actual username)
-  sudo nano /etc/systemd/system/receipt-printer.service
-  ```
-
-  Paste *(update username in User= and WorkingDirectory= lines)*:
-
-  ```ini
-  [Unit]
-  Description=Quote Receipt Printer
-  After=network-online.target avahi-daemon.service
-  Wants=network-online.target
-
-  [Service]
-  Type=simple
-  User=pi
-  WorkingDirectory=/home/pi/receipt-printer
-  ExecStart=/usr/bin/python3 /home/pi/receipt-printer/app.py
-  Restart=always
-  RestartSec=5
-
-  [Install]
-  WantedBy=multi-user.target
-  ```
-
-  Save: `Ctrl+O`, `Enter`, `Ctrl+X`
-
-  ```bash
-  # Enable and start service
+  sudo cp ~/quotes/system-config/receipt-printer-flask.service /etc/systemd/system/receipt-printer.service
   sudo systemctl daemon-reload
-  sudo systemctl enable receipt-printer.service
-  sudo systemctl start receipt-printer.service
+  sudo systemctl enable --now receipt-printer.service
 
   # Check status
   sudo systemctl status receipt-printer.service
@@ -761,7 +338,7 @@ As a final step to prep for step 2: Printer Hacking, we'll set up this app to au
   sudo reboot
   ```
 
-  After reboot, http://receipt.local should be live automatically!
+  After reboot, http://receipt.local:5000 should be live automatically!
 
 <center>
 
@@ -769,6 +346,57 @@ As a final step to prep for step 2: Printer Hacking, we'll set up this app to au
 <figcaption>Here's the first print with the Quote Printer</figcaption>
 
 </center>
+
+As mentioned at the start of the article, my roommate and I have been going all in on the apartment projects. My roommate Andrew set up a [Home Assistant Yellow](https://www.home-assistant.io/yellow/) the other week which we use alongside a few local MQTT servers to host all of our IOT devices and projects locally - way better than a ton of apps / interfaces on my phone. I wanted our quote printer to be accessible from anywhere and populate in our Home Assistant admin panel, so I've appended an optional MQTT integration to the project.
+
+???+ example "Home Assistant Integration (Optional)"
+
+    The setup is straightforward: a webhook automation in Home Assistant receives print requests from the frontend, publishes them to an MQTT topic, and an MQTT subscriber script on the Pi listens for messages and triggers the printer. This allows the frontend to be hosted publicly (I'm using GitHub Pages) while the printer itself remains on the local network, bridged through Home Assistant.
+
+    The relevant files are [`src/mqtt_print_subscriber.py`](https://github.com/Twarner491/quotes/blob/main/src/mqtt_print_subscriber.py) for the Pi-side MQTT listener and [`system-config/receipt-printer-mqtt.service`](https://github.com/Twarner491/quotes/blob/main/system-config/receipt-printer-mqtt.service) for the systemd service.
+
+    **Home Assistant Automation**
+
+    Add to `automations.yaml`:
+
+    ```yaml
+    alias: "Quote Receipt Print"
+    trigger:
+      - platform: webhook
+        webhook_id: quote_receipt_print
+        allowed_methods: [POST]
+        local_only: false
+    action:
+      - service: mqtt.publish
+        data:
+          topic: "home/receipt_printer/print"
+          payload_template: >
+            {"quote": "{{ trigger.json.quote }}", "author": "{{ trigger.json.author | default('Anonymous') }}"}
+    ```
+
+    **Enable CORS**
+
+    Add to `configuration.yaml`:
+
+    ```yaml
+    http:
+      cors_allowed_origins:
+        - https://your-frontend-domain.com
+    ```
+
+    **Pi MQTT Setup**
+
+    Edit `src/mqtt_print_subscriber.py` with your MQTT broker IP and printer IDs, then:
+
+    ```bash
+    sudo cp system-config/receipt-printer-mqtt.service /etc/systemd/system/receipt-printer.service
+    sudo systemctl daemon-reload
+    sudo systemctl enable --now receipt-printer.service
+    ```
+
+    **Frontend**
+
+    Edit `src/templates/index.html` and set `HA_WEBHOOK_URL`, then host via GitHub Pages or use `build_static.py`.
 
 #### Printer Hacking
 
@@ -841,7 +469,7 @@ I then reattached the printer mainboard wires,
 
 #### BOM
 
-Building a quote receipt printer of your own is easy enough. Here's all you need:
+Building a quote receipt printer of your own is easy enough. The full project repo is at [github.com/Twarner491/quotes](https://github.com/Twarner491/quotes). Here's all you need:
 
 | Qty |  Description    |  Price  |           Link           | Notes  |
 |-----|-----------------|---------|--------------------------|--------|
