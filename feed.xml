@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sat, 20 Dec 2025 00:15:46 -0000</pubDate>
-    <lastBuildDate>Sat, 20 Dec 2025 00:15:46 -0000</lastBuildDate>
+    <pubDate>Sat, 20 Dec 2025 00:24:19 -0000</pubDate>
+    <lastBuildDate>Sat, 20 Dec 2025 00:24:19 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,25 @@
     
 
     
+    
+    <item>
+      <title>The Immortality Trap</title>
+      
+      
+      
+      
+        
+      
+      <description>Why living to 1000 might mean we accomplish less than living to 80.</description>
+      <link>https://teddywarner.org/writings/immortalitytrap/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/immortalitytrap/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/immortalitytrap/colorOtime.webp" type="image/webp" length="126094" />
+      
+    </item>
     
     <item>
       <title>Why 10x Better Robots Scale 10x Worse</title>
@@ -104,25 +123,6 @@
       <guid isPermaLink="true">https://teddywarner.org/writings/benevolentfreedom/</guid>
       
       <enclosure url="https://teddywarner.org/assets/images/benevolentfreedom/thumb.png" type="image/png" length="34675" />
-      
-    </item>
-    
-    <item>
-      <title>The Immortality Trap</title>
-      
-      
-      
-      
-        
-      
-      <description>Why living to 1000 might mean we accomplish less than living to 80.</description>
-      <link>https://teddywarner.org/writings/immortalitytrap/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <source url="https://teddywarner.org/feed.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://teddywarner.org/writings/immortalitytrap/</guid>
-      
-      <enclosure url="https://teddywarner.org/assets/images/immortalitytrap/colorOtime.webp" type="image/webp" length="126094" />
       
     </item>
     
