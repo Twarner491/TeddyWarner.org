@@ -41,7 +41,6 @@ def on_page_markdown(markdown: str, page, config, files):
             # Extract dates
             date_published = json_ld.get("datePublished")
             date_modified = json_ld.get("dateModified")
-            image = json_ld.get("image")
             
             # Add dates to meta for RSS plugin
             if date_published:
@@ -58,10 +57,6 @@ def on_page_markdown(markdown: str, page, config, files):
                     page.meta['date_modified'] = dt
                 except ValueError:
                     pass
-            
-            # Add image for RSS enclosure
-            if image and 'image' not in page.meta:
-                page.meta['image'] = image
                 
         except json.JSONDecodeError:
             pass

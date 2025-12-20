@@ -75,6 +75,7 @@ plugins:
       feeds_filenames:
         rss_created: feed.xml
       json_feed_enabled: false
+      use_material_social_cards: false
       feed_ttl: 1440
       image: https://teddywarner.org/assets/images/favicon.png
       abstract_chars_count: 200
