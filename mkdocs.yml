@@ -74,15 +74,12 @@ plugins:
         - tags
       feeds_filenames:
         rss_created: feed.xml
-        rss_updated: false
-        json_created: false
-        json_updated: false
+      json_feed_enabled: false
       feed_ttl: 1440
       image: https://teddywarner.org/assets/images/favicon.png
       abstract_chars_count: 200
       pretty_print: true
       length: 100
-      enabled: true
 
 hooks:
   - hooks/rss_dates.py
