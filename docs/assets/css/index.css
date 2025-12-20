@@ -184,9 +184,8 @@ header {
 }
 
 .circleGroup {
-  --rotation-direction: normal;
   transform-origin: 1137px 797px;
-  animation: rotate 7s linear infinite var(--rotation-direction);
+  /* Animation handled by JavaScript for smooth direction reversal */
 }
 
 .circleLink {

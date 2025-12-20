@@ -107,27 +107,38 @@ function togglemenu() {
   element.classList.add("scrollUp");
 }
 
-function leftrevon() {
-  var element = document.querySelector('.circleGroup');
-  if (element) {
-    element.style.setProperty('--rotation-direction', 'normal');
+// Circle text rotation - smooth reverse on hover
+(function() {
+  var circleGroup = document.querySelector('.circleGroup');
+  if (!circleGroup) return;
+
+  var currentAngle = 0;
+  var animationSpeed = 360 / 7; // degrees per second (matches 7s full rotation)
+  var direction = 1; // 1 = normal, -1 = reverse
+  var lastTime = null;
+  var animationId = null;
+
+  function animate(timestamp) {
+    if (lastTime === null) lastTime = timestamp;
+    var delta = (timestamp - lastTime) / 1000; // seconds
+    lastTime = timestamp;
+
+    currentAngle += animationSpeed * delta * direction;
+    // Keep angle within 0-360 for cleanliness
+    currentAngle = ((currentAngle % 360) + 360) % 360;
+
+    circleGroup.style.transform = 'rotate(' + currentAngle + 'deg)';
+    animationId = requestAnimationFrame(animate);
   }
-}
 
-function leftrevoff() {
-  var element = document.querySelector('.circleGroup');
-  if (element) {
-    element.style.setProperty('--rotation-direction', 'reverse');
-  }
-}
+  // Start animation
+  animationId = requestAnimationFrame(animate);
 
-// Only run these if the elements exist on the page
-if (document.querySelector('.circleGroup')) {
-  leftrevon();
-}
+  window.leftrevoff = function() {
+    direction = -1;
+  };
 
-var abtBtn = document.querySelector('.abtbtn');
-if (abtBtn) {
-  abtBtn.addEventListener('mouseenter', leftrevoff);
-  abtBtn.addEventListener('mouseleave', leftrevon);
-}
+  window.leftrevon = function() {
+    direction = 1;
+  };
+})();
