@@ -11,20 +11,30 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - uses: actions/cache@v3
+      
+      - name: Cache dependencies
+        uses: actions/cache@v4
         with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install pillow cairosvg urllib3==v1.26.6 mkdocs-rss-plugin
-      - uses: afritzler/mkdocs-gh-pages-action@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REQUIREMENTS: .github/requirements.txt
-          CUSTOM_DOMAIN: teddywarner.org
+          key: mkdocs-${{ hashFiles('.github/requirements.txt') }}
+          path: ~/.cache/pip
+      
+      - name: Install dependencies
+        run: |
+          pip install -r .github/requirements.txt
+          pip install pillow cairosvg
+      
+      - name: Build and deploy
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdocs gh-deploy --force
       
       - name: Purge Cloudflare Cache
         run: |
