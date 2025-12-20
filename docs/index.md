@@ -56,6 +56,8 @@ search:
   
   <link rel="stylesheet" href="/assets/css/index.css">
   <link rel="stylesheet" href="/assets/css/header.css">
+
+  <link href="https://github.com/Twarner491" rel="me">
   
   <script type="application/ld+json">
   {
@@ -213,7 +215,7 @@ search:
         <h2>About</h2>
         <p class="abt1">I’m an engineer specialized in rapid prototyping and applied AI. I’m currently based in SF, building <a target=”_blank” href="https://intempus.org">emotionally intellegent robots</a>.</p>
         <p class="abt2">I'm a <a target=”_blank” style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target=”_blank” style="text-decoration: none;" href="https://fabacademy.org/">Fab Academy</a>. I previously worked at <a target=”_blank” style="text-decoration: none;" href="https://iovine-young.usc.edu/">Midjourney</a> where I did research for the internal hardware effort.</p>
-        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> Reach out at <a target=”_blank” href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a  style="text-decoration: none;" href="mailto:teddy@intempus.org" rel="me">teddy [at] intempus [dot] org</a>.</p>
+        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> Reach out at <a target=”_blank” href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a  style="text-decoration: none;" href="mailto:teddy@intempus.org">teddy [at] intempus [dot] org</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
