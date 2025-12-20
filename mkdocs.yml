@@ -64,6 +64,24 @@ theme:
 plugins:
   - material/search
   - tags
+  - rss:
+      match_path: "(Projects|writings)/.*"
+      date_from_meta:
+        as_creation: date
+        as_update: date_modified
+        default_timezone: America/New_York
+      categories:
+        - tags
+      feeds_filenames:
+        rss_created: feed.xml
+      feed_ttl: 1440
+      image: https://teddywarner.org/assets/images/favicon.png
+      abstract_chars_count: 200
+      pretty_print: true
+      length: 100
+
+hooks:
+  - hooks/rss_dates.py
 
 markdown_extensions:
   - pymdownx.emoji:

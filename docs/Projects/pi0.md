@@ -1,6 +1,7 @@
 ---
 title: Zero-Shot Prompt to Action
 description: Zero-shot prompt to action on a $160 3D printed robotic arm with π₀.
+draft: true
 hide:
   - navigation
   - tags

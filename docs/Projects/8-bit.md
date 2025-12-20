@@ -1,6 +1,7 @@
 ---
 title: 8-bit Breadboard Computer
 description: A dive into computer logic, and processor workings.
+draft: true
 hide:
   - navigation
   - tags

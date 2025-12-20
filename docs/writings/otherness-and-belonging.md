@@ -1,6 +1,7 @@
 ---
 title: Otherness and Belonging
 description: Discovering Eastern philosophy.
+draft: true
 hide:
   - navigation
   - tags
