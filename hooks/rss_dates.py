@@ -23,6 +23,10 @@ def on_page_markdown(markdown: str, page, config, files):
     if not hasattr(page, 'meta') or page.meta is None:
         page.meta = {}
     
+    # Disable image enclosures for RSS to prevent length="None" errors
+    # This prevents the RSS plugin from extracting images from content
+    page.meta['image'] = ""
+    
     # Check for draft flag - exclude from RSS feed
     # The 'draft' key comes from YAML frontmatter
     if page.meta.get('draft', False):
