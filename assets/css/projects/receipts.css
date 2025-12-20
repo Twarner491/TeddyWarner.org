@@ -1,0 +1,192 @@
+/* Receipt Carousel Styles - Minimal & Analog */
+.receipt-carousel-container {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  background: rgba(var(--md-default-fg-color--rgb), 0.01);
+}
+
+.receipt-carousel {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+  overflow-x: scroll;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  /* Ensure items don't wrap and create scrollable content */
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.receipt-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.receipt-carousel.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.receipt-item {
+  flex: 0 0 auto;
+  width: auto;
+  min-width: unset;
+  max-width: 280px;
+  height: auto;
+  background: var(--md-default-bg-color);
+  border: 1px solid rgba(var(--md-default-fg-color--rgb), 0.12);
+  border-radius: 2px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.06);
+  scroll-snap-align: center;
+  position: relative;
+  user-select: none;
+  transition: transform 0.2s ease-out;
+  transform-origin: center;
+  overflow: hidden;
+  display: flex;
+  line-height: 0;
+  font-size: 0;
+}
+
+/* Random rotations applied via JavaScript */
+.receipt-item:nth-child(1) { transform: rotate(-0.8deg); }
+.receipt-item:nth-child(2) { transform: rotate(1.2deg); }
+.receipt-item:nth-child(3) { transform: rotate(-0.5deg); }
+.receipt-item:nth-child(4) { transform: rotate(0.9deg); }
+.receipt-item:nth-child(5) { transform: rotate(-1.1deg); }
+.receipt-item:nth-child(6) { transform: rotate(0.7deg); }
+.receipt-item:nth-child(7) { transform: rotate(-0.3deg); }
+.receipt-item:nth-child(8) { transform: rotate(0.6deg); }
+
+.receipt-item:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.08);
+  border-color: rgba(var(--md-default-fg-color--rgb), 0.18);
+}
+
+.receipt-header {
+  text-align: center;
+  border-bottom: 1px dashed rgba(var(--md-default-fg-color--rgb), 0.2);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.receipt-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--md-default-fg-color);
+  margin-bottom: 0.5rem;
+}
+
+.receipt-date {
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+
+.receipt-content {
+  margin: 1rem 0;
+  line-height: 1.5;
+  color: var(--md-default-fg-color);
+}
+
+.receipt-quote {
+  font-style: italic;
+  font-size: 0.95em;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: rgba(var(--md-default-fg-color--rgb), 0.02);
+  border-left: 2px solid rgba(var(--md-default-fg-color--rgb), 0.1);
+  border-radius: 0 2px 2px 0;
+}
+
+.receipt-footer {
+  border-top: 1px solid rgba(var(--md-default-fg-color--rgb), 0.15);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 0.9em;
+  color: var(--md-default-fg-color--light);
+}
+
+.receipt-signature {
+  font-weight: bold;
+  color: var(--md-default-fg-color);
+}
+
+/* Receipt Image Styles */
+.receipt-image {
+  width: auto;
+  height: auto;
+  max-width: 280px;
+  max-height: 450px;
+  display: block;
+  border-radius: 2px;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Physics animation - subtle scroll effects only */
+.receipt-item.scroll-physics {
+  transition: transform 0.3s ease-out;
+}
+
+.receipt-item.scroll-left {
+  transform: rotate(-0.5deg) translateX(-2px);
+}
+
+.receipt-item.scroll-right {
+  transform: rotate(0.5deg) translateX(2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .receipt-item {
+    max-width: 240px;
+  }
+  
+  .receipt-image {
+    max-width: 240px;
+    max-height: 400px;
+  }
+  
+  .receipt-carousel {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .receipt-carousel-container {
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .receipt-item {
+    max-width: 200px;
+  }
+  
+  .receipt-image {
+    max-width: 200px;
+    max-height: 350px;
+  }
+}

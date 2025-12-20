@@ -1,0 +1,357 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Teddy Warner",
+    "home_page_url": "https://teddywarner.org/",
+    "feed_url": "https://teddywarner.org/feed_json_updated.json",
+    "description": "causa sui. // @WarnerTeddy",
+    "icon": "https://teddywarner.org/assets/images/favicon.png",
+    "authors": [
+        {
+            "name": "Teddy Warner"
+        }
+    ],
+    "language": "en",
+    "items": [
+        {
+            "id": "https://teddywarner.org/writings/downsideprotection/",
+            "url": "https://teddywarner.org/writings/downsideprotection/",
+            "title": "Why 10x Better Robots Scale 10x Worse",
+            "content_html": "Novel hardware adoption is implicitly limited by downside tolerance, not upside potential.",
+            "image": "https://teddywarner.org/assets/images/downsideprotection/thumb.png",
+            "date_modified": "2025-12-08T00:00:00+00:00",
+            "date_published": "2025-12-08T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/centuryinjapan/",
+            "url": "https://teddywarner.org/writings/centuryinjapan/",
+            "title": "A Century in Japan",
+            "content_html": "439.59 miles, 21,165 ft of elev. gained, ~39.21 hrs of peddling.",
+            "image": "https://teddywarner.org/assets/images/centuryinjapan/thumb.png",
+            "date_modified": "2025-11-01T00:00:00+00:00",
+            "date_published": "2025-11-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/abstractingdeath/",
+            "url": "https://teddywarner.org/writings/abstractingdeath/",
+            "title": "Abstracting Death",
+            "content_html": "Death as infinite abstraction.",
+            "image": "https://teddywarner.org/assets/images/abstractingdeath/ad.png",
+            "date_modified": "2025-10-01T00:00:00+00:00",
+            "date_published": "2025-10-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/benevolentfreedom/",
+            "url": "https://teddywarner.org/writings/benevolentfreedom/",
+            "title": "A Case for the Philosopher King(s)",
+            "content_html": "Where do we draw the line with virtue based voter constraints?",
+            "image": "https://teddywarner.org/assets/images/benevolentfreedom/thumb.png",
+            "date_modified": "2025-10-01T00:00:00+00:00",
+            "date_published": "2025-10-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/immortalitytrap/",
+            "url": "https://teddywarner.org/writings/immortalitytrap/",
+            "title": "The Immortality Trap",
+            "content_html": "Why living to 1000 might mean we accomplish less than living to 80.",
+            "image": "https://teddywarner.org/assets/images/immortalitytrap/colorOtime.webp",
+            "date_modified": "2025-10-01T00:00:00+00:00",
+            "date_published": "2025-10-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/pinkhat/",
+            "url": "https://teddywarner.org/writings/pinkhat/",
+            "title": "A Pink Hat",
+            "content_html": "A welcoming thing.",
+            "image": "https://teddywarner.org/assets/images/pinkhat/hat.png",
+            "date_modified": "2025-10-01T00:00:00+00:00",
+            "date_published": "2025-10-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/seoulwallsunrise/",
+            "url": "https://teddywarner.org/writings/seoulwallsunrise/",
+            "title": "A Seoul Wall Sunrise",
+            "content_html": "Some blissfully ignorant thoughts.",
+            "image": "https://teddywarner.org/assets/images/seoulwallsunrise/thumb.png",
+            "date_modified": "2025-10-01T00:00:00+00:00",
+            "date_published": "2025-10-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/Quotes/",
+            "url": "https://teddywarner.org/Projects/Quotes/",
+            "title": "Quote Receipts",
+            "content_html": "Did I really say that? Why yes, you did.",
+            "image": "https://teddywarner.org/assets/images/quotes/thumb.png",
+            "date_modified": "2025-09-01T00:00:00+00:00",
+            "date_published": "2025-09-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/kitchenchronicles/",
+            "url": "https://teddywarner.org/writings/kitchenchronicles/",
+            "title": "Kitchen Chronicles",
+            "content_html": "My time in the kitchen.",
+            "image": "https://teddywarner.org/assets/images/kitchenchronicles/kitchenchronicles.gif",
+            "date_modified": "2025-09-01T00:00:00+00:00",
+            "date_published": "2025-09-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/on-becoming-a-godfather/",
+            "url": "https://teddywarner.org/writings/on-becoming-a-godfather/",
+            "title": "On Becoming a Godfather",
+            "content_html": "This confers great benefits like, being able to speak in a raspy voice.",
+            "image": "https://teddywarner.org/assets/images/Godfather/thumb.png",
+            "date_modified": "2025-08-01T00:00:00+00:00",
+            "date_published": "2025-08-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/on-turning-twenty/",
+            "url": "https://teddywarner.org/writings/on-turning-twenty/",
+            "title": "On Turning Twenty",
+            "content_html": "I turned twenty today.",
+            "image": "https://teddywarner.org/assets/images/20/thumb.png",
+            "date_modified": "2025-08-01T00:00:00+00:00",
+            "date_published": "2025-08-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/decisiveness/",
+            "url": "https://teddywarner.org/writings/decisiveness/",
+            "title": "Ex Nihilo Nihil Fit",
+            "content_html": "Nothing comes out of nothing. Some thoughts on decisiveness.",
+            "image": "https://teddywarner.org/assets/images/decisiveness/decisiveness.png",
+            "date_modified": "2025-01-01T00:00:00+00:00",
+            "date_published": "2025-01-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/efd/",
+            "url": "https://teddywarner.org/writings/efd/",
+            "title": "The Emotion/Feeling Discontinuity",
+            "content_html": "How to convince yourself into greatness.",
+            "image": "https://teddywarner.org/assets/images/efd/efd.png",
+            "date_modified": "2024-12-01T00:00:00+00:00",
+            "date_published": "2024-12-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/downforce/",
+            "url": "https://teddywarner.org/writings/downforce/",
+            "title": "To Drive with Downforce",
+            "content_html": "Addressing the confidence bottleneck.",
+            "image": "https://teddywarner.org/assets/images/force/force.png",
+            "date_modified": "2024-11-01T00:00:00+00:00",
+            "date_published": "2024-11-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/a-mutual-meaning/",
+            "url": "https://teddywarner.org/writings/a-mutual-meaning/",
+            "title": "A Mutual Meaning",
+            "content_html": "Discovering Eastern philosophy.",
+            "image": "https://teddywarner.org/assets/images/index/orange.png",
+            "date_modified": "2024-10-01T00:00:00+00:00",
+            "date_published": "2024-10-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/juggling/",
+            "url": "https://teddywarner.org/writings/juggling/",
+            "title": "Learning to Juggle",
+            "content_html": "A journey to lessen doom-scrolling.",
+            "image": "https://teddywarner.org/assets/images/juggle/juggle.png",
+            "date_modified": "2024-10-01T00:00:00+00:00",
+            "date_published": "2024-10-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/VonNiemannProbe/",
+            "url": "https://teddywarner.org/Projects/VonNiemannProbe/",
+            "title": "Von Niemann Probe",
+            "content_html": "An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!",
+            "image": "https://teddywarner.org/assets/images/VonNiemannProbe/thumb.jpg",
+            "date_modified": "2024-06-09T00:00:00+00:00",
+            "date_published": "2023-12-15T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/SerialUPDI/",
+            "url": "https://teddywarner.org/Projects/SerialUPDI/",
+            "title": "UPDI Serial Programming",
+            "content_html": "Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.",
+            "image": "https://teddywarner.org/assets/images/SerialUPDI/updiHero.png",
+            "date_modified": "2024-06-07T00:00:00+00:00",
+            "date_published": "2021-08-15T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/ProjectPortfolioSite/",
+            "url": "https://teddywarner.org/Projects/ProjectPortfolioSite/",
+            "title": "Project Portfolio Site",
+            "content_html": "Static site generation with Mkdocs, and hosting via GitHub Pages.",
+            "image": "https://teddywarner.org/assets/images/PortfolioSite/portfolioSiteHero.png",
+            "date_modified": "2024-06-06T00:00:00+00:00",
+            "date_published": "2021-07-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/LearnedSpectrum/",
+            "url": "https://teddywarner.org/Projects/LearnedSpectrum/",
+            "title": "Learned Spectrum",
+            "content_html": "Towards temporal understanding in AI through fMRI learning stage classification.",
+            "image": "https://teddywarner.org/assets/images/learnedSpec/hero.png",
+            "date_modified": "2024-05-01T00:00:00+00:00",
+            "date_published": "2024-05-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/Octoprint/",
+            "url": "https://teddywarner.org/Projects/Octoprint/",
+            "title": "Octoprint Setup",
+            "content_html": "A complete Octoprint setup documentation.",
+            "image": "https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg",
+            "date_modified": "2023-11-15T00:00:00+00:00",
+            "date_published": "2021-09-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/PizzaPizza/",
+            "url": "https://teddywarner.org/Projects/PizzaPizza/",
+            "title": "Pizza-Pizza CNC Machine",
+            "content_html": "A Pizza-Preparing, Tool-Changing, 3-Axis, 3D-printed CNC Machine!",
+            "image": "https://teddywarner.org/assets/images/Pizza/thumb.png",
+            "date_modified": "2023-07-01T00:00:00+00:00",
+            "date_published": "2022-12-20T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/MillingWorflow/",
+            "url": "https://teddywarner.org/Projects/MillingWorflow/",
+            "title": "CNC Milling Workflows",
+            "content_html": "A relatively comprehensive guide for CNC milling.",
+            "image": "https://teddywarner.org/assets/images/MillingWorkflow/thumb.jpg",
+            "date_modified": "2023-02-01T00:00:00+00:00",
+            "date_published": "2022-12-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/LithophaneExperiments/",
+            "url": "https://teddywarner.org/Projects/LithophaneExperiments/",
+            "title": "Lithophane Experiments",
+            "content_html": "A gallery of lithophanes.",
+            "image": "https://teddywarner.org/assets/images/LithophaneExperiments/hero.png",
+            "date_modified": "2022-12-31T00:00:00+00:00",
+            "date_published": "2019-01-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/foj/",
+            "url": "https://teddywarner.org/writings/foj/",
+            "title": "The Fallacy of Justice",
+            "content_html": "A Platonic Dialogue",
+            "image": "https://teddywarner.org/assets/images/foj/thumb.png",
+            "date_modified": "2022-12-01T00:00:00+00:00",
+            "date_published": "2022-12-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/AdaptableAquaponics/",
+            "url": "https://teddywarner.org/Projects/AdaptableAquaponics/",
+            "title": "Adaptable Aquaponics",
+            "content_html": "A Theoretical Confrontation to Contemporary Farming Challenges.",
+            "image": "https://teddywarner.org/assets/images/AdaptableAquaponics/hero.png",
+            "date_modified": "2022-06-01T00:00:00+00:00",
+            "date_published": "2022-06-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/writings/torpediniformes/",
+            "url": "https://teddywarner.org/writings/torpediniformes/",
+            "title": "Torpediniformes",
+            "content_html": "An analysis of The Meno.",
+            "image": "https://teddywarner.org/assets/images/index/snake.png",
+            "date_modified": "2022-05-01T00:00:00+00:00",
+            "date_published": "2022-05-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/ParametricGenerator/",
+            "url": "https://teddywarner.org/Projects/ParametricGenerator/",
+            "title": "Parametric Bottle Cap Generator",
+            "content_html": "Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!",
+            "image": "https://teddywarner.org/assets/images/ParametricGenerator/hero.png",
+            "date_modified": "2021-11-01T00:00:00+00:00",
+            "date_published": "2021-11-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/KlipperEnder3/",
+            "url": "https://teddywarner.org/Projects/KlipperEnder3/",
+            "title": "Klipper Enabled Ender 3",
+            "content_html": "As the name suggests, an Ender 3 with Klipper firmware.",
+            "image": "https://teddywarner.org/assets/images/KlipperEnder3/hero.png",
+            "date_modified": "2021-09-01T00:00:00+00:00",
+            "date_published": "2021-05-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/AssistiveAquaponics/",
+            "url": "https://teddywarner.org/Projects/AssistiveAquaponics/",
+            "title": "Assistive Aquaponics Fish Tank",
+            "content_html": "Expanding the accessibility of successful & thriving aquaponics ecosystems.",
+            "image": "https://teddywarner.org/assets/images/AssistiveAquaponics/presentation.png",
+            "date_modified": "2021-06-01T00:00:00+00:00",
+            "date_published": "2021-06-01T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://teddywarner.org/Projects/CornerDesk/",
+            "url": "https://teddywarner.org/Projects/CornerDesk/",
+            "title": "Cable Managed Corner Desk",
+            "content_html": "A clean modern corner desk.",
+            "image": "https://teddywarner.org/assets/images/CornerDesk/finishedwoodassembly.jpg",
+            "date_modified": "2020-03-15T00:00:00+00:00",
+            "date_published": "2020-03-15T00:00:00+00:00",
+            "authors": [],
+            "tags": []
+        }
+    ]
+}

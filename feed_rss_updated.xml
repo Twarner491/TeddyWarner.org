@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Teddy Warner</title>
+    <description>causa sui. // @WarnerTeddy</description>
+    <link>https://teddywarner.org/</link>
+    <atom:link href="https://teddywarner.org/feed_rss_updated.xml" rel="self" type="application/rss+xml" />
+
+    
+    <managingEditor>Teddy Warner</managingEditor>
+    <docs>https://github.com/Twarner491/TeddyWarner.org</docs>
+    <language>en</language>
+
+    
+    <pubDate>Sat, 20 Dec 2025 00:05:19 -0000</pubDate>
+    <lastBuildDate>Sat, 20 Dec 2025 00:05:19 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.17.7</generator>
+
+    
+    
+    <image>
+      <url>https://teddywarner.org/assets/images/favicon.png</url>
+      <title>Teddy Warner</title>
+      <link>https://teddywarner.org/</link>
+    </image>
+    
+
+    
+    
+    <item>
+      <title>Why 10x Better Robots Scale 10x Worse</title>
+      
+      
+      
+      
+        
+      
+      <description>Novel hardware adoption is implicitly limited by downside tolerance, not upside potential.</description>
+      <link>https://teddywarner.org/writings/downsideprotection/</link>
+      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/downsideprotection/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/downsideprotection/thumb.png" type="image/png" length="1273130" />
+      
+    </item>
+    
+    <item>
+      <title>A Century in Japan</title>
+      
+      
+      
+      
+        
+      
+      <description>439.59 miles, 21,165 ft of elev. gained, ~39.21 hrs of peddling.</description>
+      <link>https://teddywarner.org/writings/centuryinjapan/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/centuryinjapan/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/centuryinjapan/thumb.png" type="image/png" length="None" />
+      
+    </item>
+    
+    <item>
+      <title>Abstracting Death</title>
+      
+      
+      
+      
+        
+      
+      <description>Death as infinite abstraction.</description>
+      <link>https://teddywarner.org/writings/abstractingdeath/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/abstractingdeath/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/abstractingdeath/ad.png" type="image/png" length="None" />
+      
+    </item>
+    
+    <item>
+      <title>A Case for the Philosopher King(s)</title>
+      
+      
+      
+      
+        
+      
+      <description>Where do we draw the line with virtue based voter constraints?</description>
+      <link>https://teddywarner.org/writings/benevolentfreedom/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/benevolentfreedom/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/benevolentfreedom/thumb.png" type="image/png" length="34675" />
+      
+    </item>
+    
+    <item>
+      <title>The Immortality Trap</title>
+      
+      
+      
+      
+        
+      
+      <description>Why living to 1000 might mean we accomplish less than living to 80.</description>
+      <link>https://teddywarner.org/writings/immortalitytrap/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/immortalitytrap/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/immortalitytrap/colorOtime.webp" type="image/webp" length="126094" />
+      
+    </item>
+    
+    <item>
+      <title>A Pink Hat</title>
+      
+      
+      
+      
+        
+      
+      <description>A welcoming thing.</description>
+      <link>https://teddywarner.org/writings/pinkhat/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/pinkhat/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/pinkhat/hat.png" type="image/png" length="116453" />
+      
+    </item>
+    
+    <item>
+      <title>A Seoul Wall Sunrise</title>
+      
+      
+      
+      
+        
+      
+      <description>Some blissfully ignorant thoughts.</description>
+      <link>https://teddywarner.org/writings/seoulwallsunrise/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/seoulwallsunrise/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/seoulwallsunrise/thumb.png" type="image/png" length="None" />
+      
+    </item>
+    
+    <item>
+      <title>Quote Receipts</title>
+      
+      
+      
+      
+        
+      
+      <description>Did I really say that? Why yes, you did.</description>
+      <link>https://teddywarner.org/Projects/Quotes/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/Quotes/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/quotes/thumb.png" type="image/png" length="81918" />
+      
+    </item>
+    
+    <item>
+      <title>Kitchen Chronicles</title>
+      
+      
+      
+      
+        
+      
+      <description>My time in the kitchen.</description>
+      <link>https://teddywarner.org/writings/kitchenchronicles/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/kitchenchronicles/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/kitchenchronicles/kitchenchronicles.gif" type="image/gif" length="32421024" />
+      
+    </item>
+    
+    <item>
+      <title>On Becoming a Godfather</title>
+      
+      
+      
+      
+        
+      
+      <description>This confers great benefits like, being able to speak in a raspy voice.</description>
+      <link>https://teddywarner.org/writings/on-becoming-a-godfather/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/on-becoming-a-godfather/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/Godfather/thumb.png" type="image/png" length="None" />
+      
+    </item>
+    
+    <item>
+      <title>On Turning Twenty</title>
+      
+      
+      
+      
+        
+      
+      <description>I turned twenty today.</description>
+      <link>https://teddywarner.org/writings/on-turning-twenty/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/on-turning-twenty/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/20/thumb.png" type="image/png" length="8474977" />
+      
+    </item>
+    
+    <item>
+      <title>Ex Nihilo Nihil Fit</title>
+      
+      
+      
+      
+        
+      
+      <description>Nothing comes out of nothing. Some thoughts on decisiveness.</description>
+      <link>https://teddywarner.org/writings/decisiveness/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/decisiveness/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/decisiveness/decisiveness.png" type="image/png" length="606230" />
+      
+    </item>
+    
+    <item>
+      <title>The Emotion/Feeling Discontinuity</title>
+      
+      
+      
+      
+        
+      
+      <description>How to convince yourself into greatness.</description>
+      <link>https://teddywarner.org/writings/efd/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/efd/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/efd/efd.png" type="image/png" length="428725" />
+      
+    </item>
+    
+    <item>
+      <title>To Drive with Downforce</title>
+      
+      
+      
+      
+        
+      
+      <description>Addressing the confidence bottleneck.</description>
+      <link>https://teddywarner.org/writings/downforce/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/downforce/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/force/force.png" type="image/png" length="726526" />
+      
+    </item>
+    
+    <item>
+      <title>A Mutual Meaning</title>
+      
+      
+      
+      
+        
+      
+      <description>Discovering Eastern philosophy.</description>
+      <link>https://teddywarner.org/writings/a-mutual-meaning/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/a-mutual-meaning/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/index/orange.png" type="image/png" length="809024" />
+      
+    </item>
+    
+    <item>
+      <title>Learning to Juggle</title>
+      
+      
+      
+      
+        
+      
+      <description>A journey to lessen doom-scrolling.</description>
+      <link>https://teddywarner.org/writings/juggling/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/juggling/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/juggle/juggle.png" type="image/png" length="456759" />
+      
+    </item>
+    
+    <item>
+      <title>Von Niemann Probe</title>
+      
+      
+      
+      
+        
+      
+      <description>An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!</description>
+      <link>https://teddywarner.org/Projects/VonNiemannProbe/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/VonNiemannProbe/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/VonNiemannProbe/thumb.jpg" type="image/jpeg" length="130652" />
+      
+    </item>
+    
+    <item>
+      <title>UPDI Serial Programming</title>
+      
+      
+      
+      
+        
+      
+      <description>Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.</description>
+      <link>https://teddywarner.org/Projects/SerialUPDI/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/SerialUPDI/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/SerialUPDI/updiHero.png" type="image/png" length="880084" />
+      
+    </item>
+    
+    <item>
+      <title>Project Portfolio Site</title>
+      
+      
+      
+      
+        
+      
+      <description>Static site generation with Mkdocs, and hosting via GitHub Pages.</description>
+      <link>https://teddywarner.org/Projects/ProjectPortfolioSite/</link>
+      <pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/ProjectPortfolioSite/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/PortfolioSite/portfolioSiteHero.png" type="image/png" length="1564931" />
+      
+    </item>
+    
+    <item>
+      <title>Learned Spectrum</title>
+      
+      
+      
+      
+        
+      
+      <description>Towards temporal understanding in AI through fMRI learning stage classification.</description>
+      <link>https://teddywarner.org/Projects/LearnedSpectrum/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/LearnedSpectrum/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/learnedSpec/hero.png" type="image/png" length="None" />
+      
+    </item>
+    
+    <item>
+      <title>Octoprint Setup</title>
+      
+      
+      
+      
+        
+      
+      <description>A complete Octoprint setup documentation.</description>
+      <link>https://teddywarner.org/Projects/Octoprint/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/Octoprint/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg" type="image/jpeg" length="58229" />
+      
+    </item>
+    
+    <item>
+      <title>Pizza-Pizza CNC Machine</title>
+      
+      
+      
+      
+        
+      
+      <description>A Pizza-Preparing, Tool-Changing, 3-Axis, 3D-printed CNC Machine!</description>
+      <link>https://teddywarner.org/Projects/PizzaPizza/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/PizzaPizza/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/Pizza/thumb.png" type="image/png" length="1151018" />
+      
+    </item>
+    
+    <item>
+      <title>CNC Milling Workflows</title>
+      
+      
+      
+      
+        
+      
+      <description>A relatively comprehensive guide for CNC milling.</description>
+      <link>https://teddywarner.org/Projects/MillingWorflow/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/MillingWorflow/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/MillingWorkflow/thumb.jpg" type="image/jpeg" length="1250569" />
+      
+    </item>
+    
+    <item>
+      <title>Lithophane Experiments</title>
+      
+      
+      
+      
+        
+      
+      <description>A gallery of lithophanes.</description>
+      <link>https://teddywarner.org/Projects/LithophaneExperiments/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/LithophaneExperiments/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/LithophaneExperiments/hero.png" type="image/png" length="573847" />
+      
+    </item>
+    
+    <item>
+      <title>The Fallacy of Justice</title>
+      
+      
+      
+      
+        
+      
+      <description>A Platonic Dialogue</description>
+      <link>https://teddywarner.org/writings/foj/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/foj/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/foj/thumb.png" type="image/png" length="None" />
+      
+    </item>
+    
+    <item>
+      <title>Adaptable Aquaponics</title>
+      
+      
+      
+      
+        
+      
+      <description>A Theoretical Confrontation to Contemporary Farming Challenges.</description>
+      <link>https://teddywarner.org/Projects/AdaptableAquaponics/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/AdaptableAquaponics/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/AdaptableAquaponics/hero.png" type="image/png" length="1092037" />
+      
+    </item>
+    
+    <item>
+      <title>Torpediniformes</title>
+      
+      
+      
+      
+        
+      
+      <description>An analysis of The Meno.</description>
+      <link>https://teddywarner.org/writings/torpediniformes/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/writings/torpediniformes/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/index/snake.png" type="image/png" length="904835" />
+      
+    </item>
+    
+    <item>
+      <title>Parametric Bottle Cap Generator</title>
+      
+      
+      
+      
+        
+      
+      <description>Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!</description>
+      <link>https://teddywarner.org/Projects/ParametricGenerator/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/ParametricGenerator/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/ParametricGenerator/hero.png" type="image/png" length="884524" />
+      
+    </item>
+    
+    <item>
+      <title>Klipper Enabled Ender 3</title>
+      
+      
+      
+      
+        
+      
+      <description>As the name suggests, an Ender 3 with Klipper firmware.</description>
+      <link>https://teddywarner.org/Projects/KlipperEnder3/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/KlipperEnder3/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/KlipperEnder3/hero.png" type="image/png" length="2058450" />
+      
+    </item>
+    
+    <item>
+      <title>Assistive Aquaponics Fish Tank</title>
+      
+      
+      
+      
+        
+      
+      <description>Expanding the accessibility of successful &amp; thriving aquaponics ecosystems.</description>
+      <link>https://teddywarner.org/Projects/AssistiveAquaponics/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/AssistiveAquaponics/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/AssistiveAquaponics/presentation.png" type="image/png" length="422717" />
+      
+    </item>
+    
+    <item>
+      <title>Cable Managed Corner Desk</title>
+      
+      
+      
+      
+        
+      
+      <description>A clean modern corner desk.</description>
+      <link>https://teddywarner.org/Projects/CornerDesk/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      <source url="https://teddywarner.org/feed_rss_updated.xml">Teddy Warner</source>
+      
+      <guid isPermaLink="true">https://teddywarner.org/Projects/CornerDesk/</guid>
+      
+      <enclosure url="https://teddywarner.org/assets/images/CornerDesk/finishedwoodassembly.jpg" type="image/jpeg" length="90079" />
+      
+    </item>
+    
+  </channel>
+</rss>
