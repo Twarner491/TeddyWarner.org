@@ -323,7 +323,7 @@ search:
           </a>
         </div>
         <div class="socialpar"> 
-          <a target="_blank" href="mailto:tawarner@usc.edu" aria-label="Send Email">
+          <a target="_blank" href="mailto:teddy@intempus.org" aria-label="Send Email">
             <i class="fa-solid fa-paper-plane"></i>
           </a>
         </div>

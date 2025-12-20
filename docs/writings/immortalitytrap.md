@@ -58,8 +58,8 @@ template: comments.html
     "publisher": {
       "@id": "https://teddywarner.org/#person"
     },
-    "datePublished": "2025-10-01T00:00:00Z",
-    "dateModified": "2025-10-01T00:00:00Z",
+    "datePublished": "2025-12-16T00:00:00Z",
+    "dateModified": "2025-12-16T00:00:00Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://teddywarner.org/writings/immortalitytrap/"
