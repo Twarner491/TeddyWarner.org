@@ -19,11 +19,11 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install pillow cairosvg urllib3==v1.26.6
+      - run: pip install pillow cairosvg urllib3==v1.26.6 mkdocs-rss-plugin
       - uses: afritzler/mkdocs-gh-pages-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REQUIREMENTS: ../../requirements.txt
+          REQUIREMENTS: .github/requirements.txt
           CUSTOM_DOMAIN: teddywarner.org
       
       - name: Purge Cloudflare Cache
