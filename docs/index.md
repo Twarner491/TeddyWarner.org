@@ -156,7 +156,7 @@ search:
                              <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                          </g>
                        </a>
-                        <a href="https://teddywarner.org/books" aria-label="My Bookshelf">
+                        <a href="https://teddywarner.org/books/#recent" aria-label="My Bookshelf">
                           <g id="reading-card" class="project">
                               <rect x="796.5" y="616" width="242" height="288" rx="27" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                               <g clip-path="url(#clip0_107_71)">
