@@ -45,7 +45,7 @@ theme:
 
   logo: assets/images/TeddyWarner.svg
 
-  favicon: assets/images/favicon.png
+  favicon: assets/images/favicon.gif
 
   icon:
     repo: fontawesome/brands/git-alt
@@ -77,7 +77,7 @@ plugins:
       json_feed_enabled: false
       use_material_social_cards: false
       feed_ttl: 1440
-      image: https://teddywarner.org/assets/images/favicon.png
+      image: https://teddywarner.org/assets/images/favicon.gif
       abstract_chars_count: 200
       pretty_print: true
       length: 100
