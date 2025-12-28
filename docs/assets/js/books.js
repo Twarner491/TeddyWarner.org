@@ -147,7 +147,15 @@ document.addEventListener("DOMContentLoaded", function() {
   // Parse URL hash on load
   function parseUrlHash() {
     const hash = window.location.hash.slice(1);
-    if (!hash) return;
+    if (!hash) {
+      // Default to recent (date descending)
+      currentSort = 'date-desc';
+      dateDescending = true;
+      updateButtonStates();
+      sortBooks(currentSort);
+      updateUrlHash();
+      return;
+    }
     
     const parts = hash.split('+');
     parts.forEach(part => {
