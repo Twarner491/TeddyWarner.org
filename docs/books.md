@@ -104,6 +104,18 @@ search:
               <p class="book-date">Currently Reading</p>
             </a>
           </div>
+
+          <div class="book-item" data-type="article" data-title="A General Theory of Bangers" data-date="2025-12-29" data-favorite="false" data-reading="false">
+            <a href="https://www.maximevidal.com/ai-sound-house" target="_blank">
+              <div class="book-cover-wrapper">
+                <img class="book-cover" src="/assets/images/books/articles/bangers.png" alt="A General Theory of Bangers">
+                <span class="favorite-indicator"></span>
+              </div>
+              <p class="book-title">A General Theory of Bangers</p>
+              <p class="book-author">Maxime Vidal</p>
+              <p class="book-date">December 2025</p>
+            </a>
+          </div>
           
           <!-- READ BOOKS - Sorted by Date Read (most recent first) -->
           
@@ -1164,6 +1176,18 @@ search:
               </div>
               <p class="book-title">You should probably post more</p>
               <p class="book-author">Aadil Pickle</p>
+              <p class="book-date">Read: Dec 2025</p>
+            </a>
+          </div>
+          
+          <div class="book-item article" data-type="article" data-title="This life gives you nothing" data-date="2025-12-29" data-favorite="false">
+            <a href="https://www.blackbirdspyplane.com/p/this-life-gives-you-nothing" target="_blank">
+              <div class="book-cover-wrapper">
+                <img class="book-cover" src="/assets/images/books/articles/givesunothing.png" alt="This life gives you nothing">
+                <span class="favorite-indicator"></span>
+              </div>
+              <p class="book-title">This life gives you nothing</p>
+              <p class="book-author">Blackbird Spyplane</p>
               <p class="book-date">Read: Dec 2025</p>
             </a>
           </div>
