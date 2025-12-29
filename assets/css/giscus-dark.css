@@ -1,0 +1,112 @@
+/*
+ * Custom Giscus Dark Theme for teddywarner.org
+ * Gray palette: #212226, #42444c, #636672
+ */
+
+main {
+  --color-prettylights-syntax-comment: #636672;
+  --color-prettylights-syntax-constant: #9aa0ac;
+  --color-prettylights-syntax-entity: #b0b5c0;
+  --color-prettylights-syntax-storage-modifier-import: #c0c4cc;
+  --color-prettylights-syntax-entity-tag: #8a9a8a;
+  --color-prettylights-syntax-keyword: #c08080;
+  --color-prettylights-syntax-string: #a0b0c0;
+  --color-prettylights-syntax-variable: #c0a080;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #c08080;
+  --color-prettylights-syntax-invalid-illegal-text: #e0e4ec;
+  --color-prettylights-syntax-invalid-illegal-bg: #802020;
+  --color-prettylights-syntax-carriage-return-text: #e0e4ec;
+  --color-prettylights-syntax-carriage-return-bg: #802020;
+  --color-prettylights-syntax-string-regexp: #8a9a8a;
+  --color-prettylights-syntax-markup-list: #c0a080;
+  --color-prettylights-syntax-markup-heading: #9aa0ac;
+  --color-prettylights-syntax-markup-italic: #c0c4cc;
+  --color-prettylights-syntax-markup-bold: #c0c4cc;
+  --color-prettylights-syntax-markup-deleted-text: #e0a0a0;
+  --color-prettylights-syntax-markup-deleted-bg: #402020;
+  --color-prettylights-syntax-markup-inserted-text: #a0c0a0;
+  --color-prettylights-syntax-markup-inserted-bg: #204020;
+  --color-prettylights-syntax-markup-changed-text: #e0c0a0;
+  --color-prettylights-syntax-markup-changed-bg: #402810;
+  --color-prettylights-syntax-markup-ignored-text: #c0c4cc;
+  --color-prettylights-syntax-markup-ignored-bg: #42444c;
+  --color-prettylights-syntax-meta-diff-range: #b0b5c0;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #42444c;
+  
+  /* Buttons */
+  --color-btn-text: #b0b4bc;
+  --color-btn-bg: #2a2b30;
+  --color-btn-border: #42444c;
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: #35363c;
+  --color-btn-hover-border: #52545c;
+  --color-btn-active-bg: #3a3b42;
+  --color-btn-active-border: #52545c;
+  --color-btn-selected-bg: #2a2b30;
+  
+  /* Primary buttons */
+  --color-btn-primary-text: #d0d4dc;
+  --color-btn-primary-bg: #42444c;
+  --color-btn-primary-border: #52545c;
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: #52545c;
+  --color-btn-primary-hover-border: #636672;
+  --color-btn-primary-selected-bg: #52545c;
+  --color-btn-primary-disabled-text: rgba(208, 212, 220, 0.5);
+  --color-btn-primary-disabled-bg: #2a2b30;
+  --color-btn-primary-disabled-border: #42444c;
+  
+  /* Actions */
+  --color-action-list-item-default-hover-bg: rgba(99, 102, 114, 0.15);
+  --color-segmented-control-bg: #2a2b30;
+  --color-segmented-control-button-bg: #212226;
+  --color-segmented-control-button-selected-border: #636672;
+  
+  /* Foreground */
+  --color-fg-default: #c0c4cc;
+  --color-fg-muted: #8a8e96;
+  --color-fg-subtle: #636672;
+  
+  /* Canvas - your grays */
+  --color-canvas-default: #212226;
+  --color-canvas-overlay: #2a2b30;
+  --color-canvas-inset: #1a1b1f;
+  --color-canvas-subtle: #2a2b30;
+  
+  /* Borders */
+  --color-border-default: #42444c;
+  --color-border-muted: #35363c;
+  
+  /* Neutral */
+  --color-neutral-muted: rgba(99, 102, 114, 0.3);
+  
+  /* Accent */
+  --color-accent-fg: #9a9ea6;
+  --color-accent-emphasis: #9a9ea6;
+  --color-accent-muted: rgba(99, 102, 114, 0.4);
+  --color-accent-subtle: rgba(99, 102, 114, 0.15);
+  
+  /* Status colors - muted grays */
+  --color-success-fg: #7a9a7a;
+  --color-attention-fg: #b09850;
+  --color-attention-muted: rgba(176, 152, 80, 0.3);
+  --color-attention-subtle: rgba(176, 152, 80, 0.1);
+  --color-danger-fg: #b07070;
+  --color-danger-muted: rgba(176, 112, 112, 0.3);
+  --color-danger-subtle: rgba(176, 112, 112, 0.1);
+  
+  /* Misc */
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-7: #42444c;
+  --color-scale-blue-8: #1a1b1f;
+  
+  color: #c0c4cc;
+  background-color: #212226;
+}
+
+/* Hide powered by giscus */
+.gsc-footer {
+  display: none !important;
+}
