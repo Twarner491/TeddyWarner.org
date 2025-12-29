@@ -636,3 +636,124 @@
   text-decoration: underline;
   color: inherit;
 }
+
+/* ===== Email Subscription Form ===== */
+.subscribe-section {
+  margin: 4em 0 0.5em 0;
+  padding: 2.5em 0 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.subscribe-inner {
+  max-width: 620px;
+}
+
+.subscribe-section p {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78em;
+  font-weight: 300;
+  color: var(--md-default-fg-color);
+  opacity: 0.9;
+  margin: 0 0 1.2em 0;
+  line-height: 1.6;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 0.6em;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.7em 0.9em;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: var(--md-default-fg-color);
+  background: transparent;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+  color: var(--md-default-fg-color--light);
+}
+
+.subscribe-form input[type="email"]:focus {
+  border-color: var(--md-default-fg-color--light);
+}
+
+.subscribe-form button {
+  padding: 0.7em 1.5em;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: var(--md-default-fg-color);
+  background: transparent;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.subscribe-form button:hover {
+  border-color: var(--md-default-fg-color--light);
+}
+
+.subscribe-form button:active {
+  opacity: 0.8;
+}
+
+.subscribe-note {
+  margin-top: 0.9em;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65em;
+  color: var(--md-default-fg-color--light);
+}
+
+.subscribe-note a {
+  color: var(--md-default-fg-color--light);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.subscribe-note a:hover {
+  color: var(--md-default-fg-color);
+}
+
+@media (max-width: 480px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+  
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;
+  }
+}
+
+/* ===== Giscus Comments Styling ===== */
+/* Comments heading */
+#__comments {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: var(--md-default-fg-color);
+  opacity: 0.9;
+}
+
+/* Giscus container */
+.giscus {
+  margin-top: 1em;
+}
+
+.giscus-frame {
+  width: 100%;
+  border: none;
+}

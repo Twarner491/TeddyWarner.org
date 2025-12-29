@@ -116,6 +116,30 @@
 {% block content %}
   {{ super() }}
 
+  <!-- Email Subscription -->
+  <section class="subscribe-section">
+    <div class="subscribe-inner">
+      <p>Enter your email to receive the occasional update.</p>
+      <form 
+        class="subscribe-form"
+        action="https://buttondown.com/api/emails/embed-subscribe/teddywarner"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.com/teddywarner', 'popupwindow')"
+      >
+        <input 
+          type="email" 
+          name="email" 
+          id="bd-email"
+          placeholder="your@email.com" 
+          required
+          autocomplete="email"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Giscus -->
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <script src="https://giscus.app/client.js"
@@ -141,7 +165,7 @@
     if (palette && typeof palette.color === "object")
       if (palette.color.scheme === "slate") {
         var giscus = document.querySelector("script[src*=giscus]")
-        giscus.setAttribute("data-theme", "dark") 
+        giscus.setAttribute("data-theme", "transparent_dark") 
       }
 
     /* Register event handlers after documented loaded */
@@ -150,7 +174,7 @@
       ref.addEventListener("change", function() {
         var palette = __md_get("__palette")
         if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+          var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
 
           /* Instruct Giscus to change theme */
           var frame = document.querySelector(".giscus-frame")
@@ -178,7 +202,7 @@
       </a>
     </div>
     <div class="socialpar">
-      <a target=”_blank” href="mailto:teddy@intempus.org">
+      <a target=”_blank” href="mailto:teddy@warner.net">
         <i class="fa-solid fa-paper-plane"></i>
       </a>
     </div>

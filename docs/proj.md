@@ -269,7 +269,7 @@ search:
           </a>
         </div>
         <div class="socialpar">
-          <a target=”_blank” href="mailto:teddy@intempus.org">
+          <a target=”_blank” href="mailto:teddy@warner.net">
             <i class="fa-solid fa-paper-plane"></i>
           </a>
         </div>
