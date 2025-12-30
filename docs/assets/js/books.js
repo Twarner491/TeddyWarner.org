@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const items = Array.from(bookItems);
     
     items.sort((a, b) => {
+      // Currently reading items always come first
+      const aReading = a.dataset.reading === 'true';
+      const bReading = b.dataset.reading === 'true';
+      if (aReading && !bReading) return -1;
+      if (!aReading && bReading) return 1;
+      
       if (sortType === 'abc') {
         const titleA = a.dataset.title.toLowerCase();
         const titleB = b.dataset.title.toLowerCase();
