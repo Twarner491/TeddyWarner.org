@@ -725,14 +725,44 @@
   color: var(--md-default-fg-color);
 }
 
-@media (max-width: 480px) {
-  .subscribe-form {
-    flex-direction: column;
+@media (max-width: 600px) {
+  .subscribe-section {
+    margin: 3em 0 0.5em 0;
+    padding: 2em 0 0;
   }
   
-  .subscribe-form input[type="email"],
+  .subscribe-section p {
+    font-size: 0.75em;
+    margin-bottom: 1em;
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .subscribe-form input[type="email"] {
+    width: 100%;
+    min-width: unset;
+    padding: 0.75em 1em;
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--md-default-fg-color--lighter);
+  }
+  
   .subscribe-form button {
     width: 100%;
+    padding: 0.6em 1.2em;
+    font-size: 0.8em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--md-default-fg-color--lighter);
+  }
+  
+  .subscribe-note {
+    font-size: 0.6em;
+    margin-top: 0.8em;
   }
 }
 
