@@ -1237,7 +1237,7 @@ search:
           </a>
         </div>
         <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
-          <p class="copyright">Copyright © 2025 Teddy Warner</p>
+          <p class="copyright">Copyright © 2026 Teddy Warner</p>
         </a>
     </section>
     <h1 style="display:none;">Bookshelf - Books, Articles & Papers</h1>
