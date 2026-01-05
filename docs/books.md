@@ -105,6 +105,18 @@ search:
             </a>
           </div>
 
+          <div class="book-item article" data-type="article" data-title="Fake thinking and real thinking" data-date="2026-01-04" data-favorite="false" data-reading="false">
+            <a href="https://joecarlsmith.com/2025/01/28/fake-thinking-and-real-thinking" target="_blank">
+              <div class="book-cover-wrapper">
+                <img class="book-cover" src="/assets/images/books/articles/fake.png" alt="Fake thinking and real thinking">
+                <span class="favorite-indicator"></span>
+              </div>
+              <p class="book-title">Fake thinking and real thinking</p>
+              <p class="book-author">Joe Carlsmith</p>
+              <p class="book-date">January 2026</p>
+            </a>
+          </div>
+
           <div class="book-item article" data-type="article" data-title="A General Theory of Bangers" data-date="2025-12-29" data-favorite="false" data-reading="false">
             <a href="https://www.maximevidal.com/ai-sound-house" target="_blank">
               <div class="book-cover-wrapper">
