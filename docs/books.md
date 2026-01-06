@@ -105,6 +105,18 @@ search:
             </a>
           </div>
 
+          <div class="book-item article" data-type="article" data-title="Biases, Weights" data-date="2026-01-06" data-favorite="false" data-reading="false">
+            <a href="https://eumycetes.substack.com/p/biases-weights" target="_blank">
+              <div class="book-cover-wrapper">
+                <img class="book-cover" src="/assets/images/books/articles/gym.png" alt="Biases, Weights">
+                <span class="favorite-indicator"></span>
+              </div>
+              <p class="book-title">Biases, Weights</p>
+              <p class="book-author">Aidan Smith</p>
+              <p class="book-date">January 2026</p>
+            </a>
+          </div>
+
           <div class="book-item article" data-type="article" data-title="Fake thinking and real thinking" data-date="2026-01-04" data-favorite="false" data-reading="false">
             <a href="https://joecarlsmith.com/2025/01/28/fake-thinking-and-real-thinking" target="_blank">
               <div class="book-cover-wrapper">
