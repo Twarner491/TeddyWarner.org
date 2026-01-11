@@ -1,0 +1,39 @@
+# Teddy Warner
+
+> Thiel Fellow and founder of Intempus, building emotionally intelligent robots. Engineer specializing in rapid prototyping and applied AI, based in San Francisco.
+
+Teddy Warner is the CEO and Founder of Intempus, a company developing expressive, emotionally intelligent robots. He is a 2025 Thiel Fellow and a graduate of the Fab Academy.
+
+Previously, Teddy worked at Midjourney conducting research for their internal hardware effort. His expertise spans mechatronics engineering, PCB development, CAD design, physical computing, and rapid prototyping.
+
+His technical work includes the Von Niemann Probe (a chess cheating investigation device), Assistive Aquaponics (automated ecosystem monitoring), UPDI Serial Programers, and other fun, more whimsical projects. He writes essays exploring technology, robotics adoption, and philosophy.
+
+## Key Facts
+- Role: CEO & Founder of Intempus
+- Recognition: 2025 Thiel Fellow
+- Education: Fab Academy graduate
+- Previous: Midjourney (hardware research)
+- Location: San Francisco, CA
+- Specialties: Robotics, rapid prototyping, applied AI, digital fabrication
+
+## Links
+- [teddywarner.org](https://teddywarner.org): Portfolio, projects, and writings
+- [Intempus](https://intempus.org): Company building emotionally intelligent robots
+- [Projects](https://teddywarner.org/proj): Engineering and fabrication work
+- [Writing](https://teddywarner.org/writ): Essays on technology and philosophy
+- [Books](https://teddywarner.org/books): Reading list and recommendations
+
+## Contact
+- [X/Twitter](https://x.com/WarnerTeddy): @WarnerTeddy
+- [LinkedIn](https://www.linkedin.com/in/teddywarner/)
+- [GitHub](https://github.com/Twarner491)
+- Email: teddy [at] warner [dot] net
+
+## Notable Projects
+- [Intempus Research](https://intempus.org/research): Expressive robotics research
+- [Von Niemann Probe](https://teddywarner.org/Projects/VonNiemannProbe): Chess cheating investigation device
+- [Assistive Aquaponics](https://teddywarner.org/Projects/AssistiveAquaponics): Automated ecosystem monitoring system
+- [UPDI Serial Programming](https://teddywarner.org/Projects/SerialUPDI): Low-cost, high-speed AVR programming
+
+## Press Coverage
+- TechCrunch, Inc. Magazine, Business Wire, Hackaday, Adafruit, Hackster.io, Chicago Tribune

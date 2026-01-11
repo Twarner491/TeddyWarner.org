@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /llms.txt
+
+# Draft pages (update manually when sharing new drafts)
+Disallow: /writings/otherness-and-belonging/
+Disallow: /Projects/8-bit/
+Disallow: /Projects/pi0/
 
 # Sitemap location
 Sitemap: https://teddywarner.org/sitemap.xml
