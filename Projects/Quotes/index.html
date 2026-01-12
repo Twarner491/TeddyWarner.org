@@ -784,9 +784,16 @@
 </code></pre></div>
 <p>The frontend template lives in <a href="https://github.com/Twarner491/quotes/blob/main/src/templates/index.html"><code>src/templates/index.html</code></a>.</p>
 <p>I&rsquo;m super happy with how the squedomorphic design came out here - Thermal Printers are somewhat limited in their output (due to binary color option) and as such I was pretty constrined when designing how I wanted the output reciept to look. Once i had a boilerplate from the backend, making this frontend match was easy.</p>
-<figure>
-<p><img alt="" src="../../assets/images/quotes/thumb.png" width="100%" /></p>
-</figure>
+<center>
+  <iframe
+    class="plotter-iframe"
+    src="https://receipt.onethreenine.net/"
+    frameborder="0"
+    width="100%"
+    height="700"
+  ></iframe>
+</center>
+
 <p>To get our RPI app up and running with the printer, we need to set some permissions. The udev rules are included in the repo:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>~/quotes/system-config/99-thermal-printer.rules<span class="w"> </span>/etc/udev/rules.d/
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>udevadm<span class="w"> </span>control<span class="w"> </span>--reload-rules
@@ -846,7 +853,7 @@
 <a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="nt">data</span><span class="p">:</span>
 <a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">      </span><span class="nt">topic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;home/receipt_printer/print&quot;</span>
 <a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">      </span><span class="nt">payload_template</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;</span>
-<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">        </span><span class="no">{&quot;quote&quot;: &quot;{{ trigger.json.quote }}&quot;, &quot;author&quot;: &quot;{{ trigger.json.author | default(&#39;Anonymous&#39;) }}&quot;}</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">        </span><span class="no">{&quot;quote&quot;: &quot;{{ trigger.json.quote }}&quot;, &quot;author&quot;: &quot;{{ trigger.json.author | default(&#39;Anonymous&#39;) }}&quot;, &quot;image&quot;: &quot;{{ trigger.json.image | default(&#39;&#39;) }}&quot;}</span>
 </code></pre></div>
 <p><strong>Enable CORS</strong></p>
 <p>Add to <code>configuration.yaml</code>:</p>
@@ -861,7 +868,11 @@
 <a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>receipt-printer.service
 </code></pre></div>
 <p><strong>Frontend</strong></p>
-<p>Edit <code>src/templates/index.html</code> and set <code>HA_WEBHOOK_URL</code>, then host via GitHub Pages or use <code>build_static.py</code>.</p>
+<p>For public hosting with GitHub Pages, add your HA webhook URL as a GitHub Secret:</p>
+<ul>
+<li>Go to Settings → Secrets and variables → Actions</li>
+<li>Add secret: <code>HA_WEBHOOK_URL</code> = <code>https://your-ha.com/api/webhook/quote_receipt_print</code></li>
+</ul>
 </details>
 <h4 id="printer-hacking">Printer Hacking<a class="headerlink" href="#printer-hacking" title="Permanent link">&para;</a></h4>
 <p>What fun is a whimsical apartment project if it doesn&rsquo;t look inconspicuous! To start, I removed the bottom of my <a href="https://www.amazon.com/dp/B0DFB82NPF?ref=ppx_pop_mob_ap_share">miemieyo Thermal Receipt Printer</a> to get a better sense of the space we have to work with by removing the two screws under the printer, as well as the two within the paper tray.</p>
