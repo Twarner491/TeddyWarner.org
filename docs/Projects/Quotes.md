@@ -285,11 +285,15 @@ Then we'll create a very minimal project structure - I'm keeping this build to t
 
   I'm super happy with how the squedomorphic design came out here - Thermal Printers are somewhat limited in their output (due to binary color option) and as such I was pretty constrined when designing how I wanted the output reciept to look. Once i had a boilerplate from the backend, making this frontend match was easy.
 
-<figure markdown="1">
-
-![](../assets/images/quotes/thumb.png){width="100%"}
-
-</figure>
+<center>
+  <iframe
+    class="plotter-iframe"
+    src="https://receipt.onethreenine.net/"
+    frameborder="0"
+    width="100%"
+    height="700"
+  ></iframe>
+</center>
 
 To get our RPI app up and running with the printer, we need to set some permissions. The udev rules are included in the repo:
 
@@ -371,7 +375,7 @@ As mentioned at the start of the article, my roommate and I have been going all 
         data:
           topic: "home/receipt_printer/print"
           payload_template: >
-            {"quote": "{{ trigger.json.quote }}", "author": "{{ trigger.json.author | default('Anonymous') }}"}
+            {"quote": "{{ trigger.json.quote }}", "author": "{{ trigger.json.author | default('Anonymous') }}", "image": "{{ trigger.json.image | default('') }}"}
     ```
 
     **Enable CORS**
@@ -396,7 +400,10 @@ As mentioned at the start of the article, my roommate and I have been going all 
 
     **Frontend**
 
-    Edit `src/templates/index.html` and set `HA_WEBHOOK_URL`, then host via GitHub Pages or use `build_static.py`.
+    For public hosting with GitHub Pages, add your HA webhook URL as a GitHub Secret:
+
+       - Go to Settings → Secrets and variables → Actions
+       - Add secret: `HA_WEBHOOK_URL` = `https://your-ha.com/api/webhook/quote_receipt_print`
 
 #### Printer Hacking
 
