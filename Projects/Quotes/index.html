@@ -868,10 +868,10 @@
 <a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>receipt-printer.service
 </code></pre></div>
 <p><strong>Frontend</strong></p>
-<p>For public hosting with GitHub Pages, add your HA webhook URL as a GitHub Secret:</p>
+<p>To enable remote access on your fork, add your HA webhook URL as a GitHub Secret:</p>
 <ul>
 <li>Go to Settings → Secrets and variables → Actions</li>
-<li>Add secret: <code>HA_WEBHOOK_URL</code> = <code>https://your-ha.com/api/webhook/quote_receipt_print</code></li>
+<li>Add secret: <code>HA_WEBHOOK_URL</code> = Your Home Assistant webhook URL (e.g., <code>https://your-ha.com/api/webhook/quote_receipt_print</code>)</li>
 </ul>
 </details>
 <h4 id="printer-hacking">Printer Hacking<a class="headerlink" href="#printer-hacking" title="Permanent link">&para;</a></h4>
