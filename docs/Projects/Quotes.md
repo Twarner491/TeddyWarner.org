@@ -400,10 +400,10 @@ As mentioned at the start of the article, my roommate and I have been going all 
 
     **Frontend**
 
-    For public hosting with GitHub Pages, add your HA webhook URL as a GitHub Secret:
-
-       - Go to Settings → Secrets and variables → Actions
-       - Add secret: `HA_WEBHOOK_URL` = `https://your-ha.com/api/webhook/quote_receipt_print`
+    To enable remote access on your fork, add your HA webhook URL as a GitHub Secret:
+    
+     - Go to Settings → Secrets and variables → Actions
+     - Add secret: `HA_WEBHOOK_URL` = Your Home Assistant webhook URL (e.g., `https://your-ha.com/api/webhook/quote_receipt_print`)
 
 #### Printer Hacking
 
