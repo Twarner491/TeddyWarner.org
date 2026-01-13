@@ -142,3 +142,100 @@ function togglemenu() {
     direction = 1;
   };
 })();
+
+// Reading card book animation - smooth reverse on hover with interruption handling
+(function() {
+  var readingCard = document.getElementById('reading-card');
+  if (!readingCard) return;
+  
+  var bookImage = readingCard.querySelector('image');
+  if (!bookImage) return;
+
+  // Animation state
+  var progress = 0; // 0 = start (rotated), 1 = end (flat/translated)
+  var targetProgress = 0; // 0 = not hovered, 1 = hovered
+  var animationId = null;
+  var lastTime = null;
+  var animationDuration = 300; // ms - matches the original CSS transition
+
+  // Transform values
+  // Start: rotate(10deg) around point (930.473, 713) - original SVG transform
+  // End: rotate(0deg) translate(-5.9%, -6.4%) relative to element
+  var startRotation = 10;
+  var endRotation = 0;
+  var startTranslateX = 0;
+  var startTranslateY = 0;
+  var endTranslateX = -5.9; // percentage
+  var endTranslateY = -6.4; // percentage
+
+  function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  }
+
+  function lerp(start, end, t) {
+    return start + (end - start) * t;
+  }
+
+  function updateTransform() {
+    var easedProgress = easeInOutCubic(progress);
+    var rotation = lerp(startRotation, endRotation, easedProgress);
+    var translateX = lerp(startTranslateX, endTranslateX, easedProgress);
+    var translateY = lerp(startTranslateY, endTranslateY, easedProgress);
+    
+    // Apply transform: translate first (in percentages), then rotate around the pivot
+    // The original SVG has transform="rotate(10 930.473 713)" which rotates around that point
+    // We need to replicate this behavior with CSS transforms
+    bookImage.style.transform = 
+      'translate(' + translateX + '%, ' + translateY + '%) ' +
+      'rotate(' + rotation + 'deg)';
+    bookImage.style.transformOrigin = '930.473px 713px';
+  }
+
+  function animate(timestamp) {
+    if (lastTime === null) lastTime = timestamp;
+    var delta = timestamp - lastTime;
+    lastTime = timestamp;
+
+    // Calculate progress change based on time
+    var progressDelta = delta / animationDuration;
+    
+    if (progress < targetProgress) {
+      progress = Math.min(progress + progressDelta, targetProgress);
+    } else if (progress > targetProgress) {
+      progress = Math.max(progress - progressDelta, targetProgress);
+    }
+
+    updateTransform();
+
+    // Continue animation if not at target
+    if (progress !== targetProgress) {
+      animationId = requestAnimationFrame(animate);
+    } else {
+      animationId = null;
+      lastTime = null;
+    }
+  }
+
+  function startAnimation() {
+    if (animationId === null) {
+      lastTime = null;
+      animationId = requestAnimationFrame(animate);
+    }
+  }
+
+  // Remove the inline SVG transform attribute since we're handling it with JS
+  bookImage.removeAttribute('transform');
+  
+  // Set initial state
+  updateTransform();
+
+  readingCard.addEventListener('mouseenter', function() {
+    targetProgress = 1;
+    startAnimation();
+  });
+
+  readingCard.addEventListener('mouseleave', function() {
+    targetProgress = 0;
+    startAnimation();
+  });
+})();

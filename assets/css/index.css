@@ -432,12 +432,8 @@ header {
 }
 
 #reading-card image {
-  transition: transform 0.3s ease;
-}
-
-#reading-card:hover image {
-  transform: rotate(0deg) translate(-5.9%, -6.4%);
-  filter: none;
+  /* Animation handled by JavaScript for smooth interruption handling */
+  will-change: transform;
 }
 
 #reading-card:hover .reading-content {
