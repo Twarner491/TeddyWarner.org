@@ -13,8 +13,6 @@
   --toggledformhover: hsla(0, 0%, 100%, 0.3);
   --avatar: url("../../assets/images/index/avatardark.svg");
   --articlebg: hsla(0, 0%, 0%, 0.04);
-  --tone-url-light: "assets/images/index/tonelight.png";
-  --tone-url-slate: "assets/images/index/tonedark.png";
   /* Consistent section spacing - simplified flexbox approach */
   --section-gap: 5rem;
   --section-padding-x: 7em;
@@ -1552,12 +1550,14 @@ header {
 .footer {
   opacity: 0;
   transition: none;
+  will-change: opacity;
 }
 
 .writing .writparent,
 .projects .grid-item {
   opacity: 0;
   transition: transform 0.3s ease;
+  will-change: opacity, transform;
 }
 
 .intro-section.visible,
