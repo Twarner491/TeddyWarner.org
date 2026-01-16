@@ -150,6 +150,6 @@ extra_javascript:
   - assets/js/index.js
 
 nav:
-  - Home : https://theodore.net
-  - Projects:  https://theodore.net/projects/
-  - Writings:  https://theodore.net/writings/
+  - Home : /
+  - Projects: /projects/
+  - Writings: /writings/
