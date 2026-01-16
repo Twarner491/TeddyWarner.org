@@ -11,7 +11,7 @@ external_projects:
 
   - title: Intempus
     description: Giving agents a temporal understanding through human physiological data.
-    url: https://intempus.org/research
+    url: https://intempus.org
     thumbnail: /assets/images/learnedSpec/thumb.jpg
     date: 2025-01-15
     external: true

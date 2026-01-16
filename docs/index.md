@@ -174,7 +174,7 @@ search:
                               <rect x="805" y="624.5" width="225" height="271" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                           </g>
                         </a>
-                        <a target="_blank" href="https://intempus.org/research" aria-label="Von Niemann Probe Project">
+                        <a target="_blank" href="https://intempus.org" aria-label="Von Niemann Probe Project">
                             <g id="image-card-4" class="project">
                                 <g clip-path="url(#clip1_107_71)">
                                     <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
