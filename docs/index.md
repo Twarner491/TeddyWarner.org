@@ -17,7 +17,7 @@ search:
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="Teddy Warner">
-  <meta name="description" content="I use digital fabrication techniques to accelerate human centric design. // @WarnerTeddy">
+  <meta name="description" content="i make machines. // @WarnerTeddy">
   <meta name="keywords" content="Digital fabrication, PCB development, Mechatronics engineering, Thiel Fellow, Robotics, Intempus, USC Iovine and Young Academy, Engineering design, Fab Academy, Hardware engineering, Rapid prototyping, CAD design, Physical computing, Electronics design, IoT development, Wearable technology, Engineering portfolio">
   <meta name="author" content="Teddy Warner">
   <meta name="robots" content="index, follow">
@@ -26,7 +26,7 @@ search:
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teddywarner.org/">
   <meta property="og:title" content="Teddy Warner">
-  <meta property="og:description" content="I use digital fabrication techniques to accelerate human centric design. // @WarnerTeddy">
+  <meta property="og:description" content="i make machines. // @WarnerTeddy">
   <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -36,7 +36,7 @@ search:
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://teddywarner.org/">
   <meta property="twitter:title" content="Teddy Warner">
-  <meta property="twitter:description" content="I use digital fabrication techniques to accelerate human centric design. // @WarnerTeddy">
+  <meta property="twitter:description" content="i make machines. // @WarnerTeddy">
   <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
 
   <!-- Preconnect to external domains for performance -->
