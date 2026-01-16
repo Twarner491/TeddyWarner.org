@@ -902,8 +902,7 @@ header {
 }
 
 .pressentry {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   width: 100%;
 }
 
