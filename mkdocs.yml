@@ -150,6 +150,6 @@ extra_javascript:
   - assets/js/index.js
 
 nav:
-  - Home : /
-  - Projects: /projects/
-  - Writings: /writings/
+  - Home: https://teddywarner.com
+  - Projects: projects.md
+  - Writings: writings.md
