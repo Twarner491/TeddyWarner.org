@@ -239,3 +239,36 @@ function togglemenu() {
     startAnimation();
   });
 })();
+
+// Scroll to top on instant navigation
+(function() {
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+  
+  // Wait for document$ to be available (MkDocs Material instant navigation)
+  function setupScrollReset() {
+    if (typeof document$ !== 'undefined' && document$.subscribe) {
+      document$.subscribe(function() {
+        // Scroll to top after navigation
+        scrollToTop();
+      });
+      return true;
+    }
+    return false;
+  }
+  
+  // Poll for document$ availability
+  function waitForDocumentObservable() {
+    if (!setupScrollReset()) {
+      setTimeout(waitForDocumentObservable, 100);
+    }
+  }
+  
+  // Start polling after DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', waitForDocumentObservable);
+  } else {
+    waitForDocumentObservable();
+  }
+})();
