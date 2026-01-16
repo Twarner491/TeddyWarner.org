@@ -62,9 +62,9 @@ search:
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/projects/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writings/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="https://theodore.net"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="/projects"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="/writings"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
   
