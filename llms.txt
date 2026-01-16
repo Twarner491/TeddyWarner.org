@@ -17,11 +17,11 @@ His technical work includes the Von Niemann Probe (a chess cheating investigatio
 - Specialties: Robotics, rapid prototyping, applied AI, digital fabrication
 
 ## Links
-- [teddywarner.org](https://teddywarner.org): Portfolio, projects, and writings
+- [theodore.net](https://theodore.net): Portfolio, projects, and writings
 - [Intempus](https://intempus.org): Company building emotionally intelligent robots
-- [Projects](https://teddywarner.org/projects): Engineering and fabrication work
-- [Writing](https://teddywarner.org/writings): Essays on technology and philosophy
-- [Books](https://teddywarner.org/books): Reading list and recommendations
+- [Projects](https://theodore.net/projects): Engineering and fabrication work
+- [Writing](https://theodore.net/writings): Essays on technology and philosophy
+- [Books](https://theodore.net/books): Reading list and recommendations
 
 ## Contact
 - [X/Twitter](https://x.com/WarnerTeddy): @WarnerTeddy
@@ -31,9 +31,9 @@ His technical work includes the Von Niemann Probe (a chess cheating investigatio
 
 ## Notable Projects
 - [Intempus Research](https://intempus.org/research): Expressive robotics research
-- [Von Niemann Probe](https://teddywarner.org/Projects/VonNiemannProbe): Chess cheating investigation device
-- [Assistive Aquaponics](https://teddywarner.org/Projects/AssistiveAquaponics): Automated ecosystem monitoring system
-- [UPDI Serial Programming](https://teddywarner.org/Projects/SerialUPDI): Low-cost, high-speed AVR programming
+- [Von Niemann Probe](https://theodore.net/projects/VonNiemannProbe): Chess cheating investigation device
+- [Assistive Aquaponics](https://theodore.net/projects/AssistiveAquaponics): Automated ecosystem monitoring system
+- [UPDI Serial Programming](https://theodore.net/projects/SerialUPDI): Low-cost, high-speed AVR programming
 
 ## Press Coverage
 - TechCrunch, Inc. Magazine, Business Wire, Hackaday, Adafruit, Hackster.io, Chicago Tribune

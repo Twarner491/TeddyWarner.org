@@ -8,8 +8,8 @@ Disallow: /Projects/8-bit/
 Disallow: /Projects/pi0/
 
 # Sitemap location
-Sitemap: https://teddywarner.org/sitemap.xml
-Sitemap: https://teddywarner.org/sitemap.xml.gz
+Sitemap: https://theodore.net/sitemap.xml
+Sitemap: https://theodore.net/sitemap.xml.gz
 
 # Social media crawlers - explicit allows
 User-agent: Twitterbot
