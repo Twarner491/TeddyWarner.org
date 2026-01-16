@@ -203,13 +203,21 @@ class ReceiptCarousel {
   }
 }
 
-// Initialize carousel when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
+// Initialize carousel - supports instant navigation
+function initReceiptCarousel() {
   const carouselContainer = document.querySelector('.receipt-carousel-container');
-  if (carouselContainer) {
+  if (carouselContainer && !carouselContainer.dataset.initialized) {
+    carouselContainer.dataset.initialized = 'true';
     new ReceiptCarousel(carouselContainer);
   }
-});
+}
+
+// Support instant navigation (MkDocs Material)
+if (typeof document$ !== 'undefined') {
+  document$.subscribe(initReceiptCarousel);
+} else {
+  document.addEventListener('DOMContentLoaded', initReceiptCarousel);
+}
 
 // Export for potential external use
 if (typeof module !== 'undefined' && module.exports) {

@@ -72,6 +72,63 @@
 
     
     
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Octoprint Setup - Teddy Warner">
+  <meta name="description" content="A complete Octoprint setup documentation.">
+  <meta name="keywords" content="Octoprint, 3D Printing, Raspberry Pi, Print server, Remote printing, Print monitoring, Web interface, Print farm, Printer control, Plugin configuration, Network printing">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://teddywarner.orgProjects/Octoprint/">
+  <meta property="og:title" content="Octoprint Setup - Teddy Warner">
+  <meta property="og:description" content="A complete Octoprint setup documentation.">
+  <meta property="og:image" content="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teddywarner.orgProjects/Octoprint/">
+  <meta property="twitter:title" content="Octoprint Setup - Teddy Warner">
+  <meta property="twitter:description" content="A complete Octoprint setup documentation.">
+  <meta property="twitter:image" content="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="https://teddywarner.org/assets/css/projects/project.css">
+  <link rel="stylesheet" href="https://teddywarner.org/assets/css/header.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Octoprint Setup",
+    "description": "A complete Octoprint setup documentation.",
+    "image": "https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "2021-09-01T00:00:00Z",
+    "dateModified": "2023-11-15T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://teddywarner.orgProjects/Octoprint/"
+    }
+  }
+  </script>
+
   </head>
   
   
@@ -91,7 +148,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#octoprint-setup-documentation" class="md-skip">
+        <a href="#octoprint-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -286,7 +343,6 @@
   </nav>
 </header>
 
-
     <div class="md-container" data-md-component="container">
       
       
@@ -322,7 +378,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://teddywarner.org/proj/" class="md-tabs__link">
+      <a href="https://teddywarner.org/projects/" class="md-tabs__link">
         
   
   
@@ -341,7 +397,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://teddywarner.org/writ/" class="md-tabs__link">
+      <a href="https://teddywarner.org/writings/" class="md-tabs__link">
         
   
   
@@ -457,8 +513,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -562,118 +616,57 @@
               
               <article class="md-content__inner md-typeset">
                 
-  
-                  <!-- Tags -->
-
-  
-  
-
-
-
-
-<!-- Actions -->
-
-  
-  
-
-
-<!--
-  Hack: check whether the content contains a h1 headline. If it doesn't, the
-  page title (or respectively site name) is used as the main headline.
--->
-
-
-<!-- Page content -->
-<p><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
-<!-- Primary Meta Tags -->
-<p><meta name="title" content="Octoprint Setup - Teddy Warner">
-  <meta name="description" content="Comprehensive setup guide for Octoprint on Raspberry Pi, detailing installation, configuration, and optimization for enhanced 3D printing control and monitoring.">
-  <meta name="keywords" content="Octoprint, 3D Printing, Raspberry Pi, Print server, Remote printing, Print monitoring, Web interface, Print farm, Printer control, Plugin configuration, Network printing">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow"></p>
-<!-- Open Graph / Facebook -->
-<p><meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/Projects/Octoprint/">
-  <meta property="og:title" content="Octoprint Setup - Teddy Warner">
-  <meta property="og:description" content="A complete Octoprint setup documentation.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630"></p>
-<!-- Twitter -->
-<p><meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/Projects/Octoprint/">
-  <meta property="twitter:title" content="Octoprint Setup - Teddy Warner">
-  <meta property="twitter:description" content="A complete Octoprint setup documentation.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg"></p>
-<!-- Existing resource links -->
-<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-<p><link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
-  <link rel="stylesheet" href="../../assets/css/header.css"></p>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Octoprint Setup",
-    "description": "A complete Octoprint setup documentation.",
-    "image": "https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2021-09-01T00:00:00Z",
-    "dateModified": "2023-11-15T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/Projects/Octoprint/"
-    }
-  }
-  </script>
-<p></head></p>
-<nav class="main-navigation">
+  <!-- Navigation Menu -->
+  <nav class="main-navigation">
     <ul>
       <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="proj" href="https://teddywarner.com/projects/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.com/writings/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
+  
+  <div class="blur-overlay"></div>
 
-<div class="blur-overlay"></div>
+  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+  <script src="https://teddywarner.org/assets/js/header.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeHeader();
+    });
+  </script>
 
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
+  <!-- Return to feed link -->
+  
+  <div class="return2feed"><a href="https://teddywarner.org/projects"><i class="fa-solid fa-arrow-left-long"></i> Projects Feed</a></div>
+  
 
-<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
+  <!-- Article Header with Author Info and Share Buttons -->
+  <h1 class="article-title">Octoprint Setup</h1>
+  
+  <div class="article-meta" style="margin-top: -0.8em;">
+    <span class="abtlinks">
+      <a href="https://x.com/WarnerTeddy">
+        <img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic">
+        <span class="abt" id="name"> Teddy Warner</span>
+      </a>
+      <span class="abt" style="font-weight: 300; padding-left: 6px;">
+        <span class="year">| Sep 2021 </span>
+        | <span class="readTime"><i class="far fa-clock"></i> 9-11 minutes</span>
+      </span>
+    </span>
+    <span class="share" style="color: inherit;">
+      <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.orgProjects/Octoprint/"><i class="fa-brands fa-facebook"></i></a>
+      <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.orgProjects/Octoprint/&text=Octoprint%20Setup"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.orgProjects/Octoprint/&media=https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg&description=A%20complete%20Octoprint%20setup%20documentation."><i class="fa-brands fa-pinterest"></i></a>
+      <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.orgProjects/Octoprint/"><i class="fab fa-linkedin"></i></a>
+      <a class="email" title="Share via Email" href="mailto:?subject=Octoprint%20Setup&body=https://teddywarner.orgProjects/Octoprint/"><i class="fa-solid fa-paper-plane"></i></a>
+    </span>
+  </div>
 
-<h1 id="octoprint-setup-documentation">Octoprint Setup Documentation<a class="headerlink" href="#octoprint-setup-documentation" title="Permanent link">&para;</a></h1>
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Fall, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 9-11 minutes</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Octoprint/"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Octoprint/&text=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With"><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Octoprint/&media=&description=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fa-brands fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Octoprint/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fa-solid fa-paper-plane"></i></a>
-  </span>
-</div>
+  <hr class="article-divider">
 
-<hr />
-<figure>
-<p><img alt="Octoprint logo and interface overview" src="../../assets/images/Octoprint/Octoprint.png" width="100%" /></p>
-</figure>
-<p><a href="https://octoprint.org/">Octoprint</a> takes 3D printing to new heights, creating a more concise workflow with more accessible machine control. The opensource <a href="https://github.com/OctoPrint/OctoPrint">Octoprint project</a> was created and maintained by <a href="https://octoprint.org/support-octoprint/">Gina Häußge</a>. The software enables a machine with a web interface with full machine controls and a world of community plugins - all of which run on a Raspberry Pi made Server with an octoprint image. I use Octoprint on all of my personal printers, and a special <abbr title="Computerized Numerical Control">CNC</abbr>-focused fork of the software for my <a href="https://www.v1engineering.com/"><abbr title="Mostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/">MPCNC</abbr></a>. As mentioned above, web interfacing a machine creates a more concise workflow and thus is great for personal machines. However, an Octoprint setup shines even more in a print farm instance. During the winter months of my sophomore year (2020) I set up secure Octoprint instances on each of my lab&rsquo;s array of 20 <abbr title="Fused Deposition Modeling">FDM</abbr> printers. Each of my setup instances can be read seen under the <a href="https://teddywarner.org/Projects/Octoprint/#my-octoprint-instances">My Octoprint Instances</a> section of this page. </p>
+  <!-- Page Content -->
+  <p><a href="https://octoprint.org/">Octoprint</a> takes 3D printing to new heights, creating a more concise workflow with more accessible machine control. The opensource <a href="https://github.com/OctoPrint/OctoPrint">Octoprint project</a> was created and maintained by <a href="https://octoprint.org/support-octoprint/">Gina Häußge</a>. The software enables a machine with a web interface with full machine controls and a world of community plugins - all of which run on a Raspberry Pi made Server with an octoprint image. I use Octoprint on all of my personal printers, and a special <abbr title="Computerized Numerical Control">CNC</abbr>-focused fork of the software for my <a href="https://www.v1engineering.com/"><abbr title="Mostly Printed Computerized Numerical Control - https://docs.v1engineering.com/mpcnc/intro/">MPCNC</abbr></a>. As mentioned above, web interfacing a machine creates a more concise workflow and thus is great for personal machines. However, an Octoprint setup shines even more in a print farm instance. During the winter months of my sophomore year (2020) I set up secure Octoprint instances on each of my lab&rsquo;s array of 20 <abbr title="Fused Deposition Modeling">FDM</abbr> printers. Each of my setup instances can be read seen under the <a href="https://teddywarner.org/Projects/Octoprint/#my-octoprint-instances">My Octoprint Instances</a> section of this page. </p>
 <h2 id="octoprint-installation">Octoprint Installation<a class="headerlink" href="#octoprint-installation" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title"><a href="https://octoprint.org/">Octoprint</a> Installation Requirements</p>
@@ -884,22 +877,6 @@
 </ol>
 </div>
 
-<!-- Source file information -->
-
-
-<!-- Was this page helpful? -->
-
-  
-
-
-  
-
-
-
-<!-- Comment system -->
-
-                
-
   <!-- Email Subscription -->
   <section class="subscribe-section">
     <div class="subscribe-inner">
@@ -924,7 +901,7 @@
     </div>
   </section>
 
-  <!-- Giscus -->
+  <!-- Giscus Comments -->
   <h2 id="__comments">Comments</h2>
   <script src="https://giscus.app/client.js"
   data-cfasync="false"
@@ -985,22 +962,22 @@
 <section class="footer">
   <div class="socials">
     <div class="socialpar">
-      <a target=”_blank” href="https://github.com/Twarner491">
+      <a target="_blank" href="https://github.com/Twarner491">
         <i class="fa-brands fa-github"></i>
       </a>
     </div>
     <div class="socialpar">
-      <a target=”_blank” href="https://x.com/WarnerTeddy">
+      <a target="_blank" href="https://x.com/WarnerTeddy">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
     </div>
     <div class="socialpar">
-      <a target=”_blank” href="mailto:teddy@warner.net">
+      <a target="_blank" href="mailto:teddy@warner.net">
         <i class="fa-solid fa-paper-plane"></i>
       </a>
     </div>
   </div>
-    <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+    <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
       <p class="copyright">Copyright © 2026 Teddy Warner</p>
     </a>
 </section>
@@ -1014,7 +991,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "content.code.annotate", "search.share", "search.suggest", "content.tabs.link", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "content.code.annotate", "search.share", "search.suggest", "search.highlight", "content.tabs.link", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
@@ -1025,7 +1002,7 @@
       
         <script src="../../assets/js/mathjax.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?defer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
