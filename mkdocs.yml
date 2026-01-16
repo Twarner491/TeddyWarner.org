@@ -147,9 +147,7 @@ extra:
 
 extra_javascript:
   - assets/js/error-suppressor.js
-  - assets/js/index.js 
-  - assets/js/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/index.js
 
 nav:
   - Home : https://teddywarner.org
