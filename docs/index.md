@@ -231,7 +231,7 @@ search:
     <section class="press"> 
       <div class="content7">
         <h2>Friends</h2>
-        <p class="pressentry"><a target="_blank" href="https://andrew.net/">Andrew</a>, <a target="_blank" href="https://aidanjs.com/">Aidan</a>, <a target="_blank" href="https://www.harrysanders.xyz/">Harry</a>, <a target="_blank" href="https://spikeadams.com/">Tom</a><span class="hiddentext">set</span></p>
+        <p class="pressentry"><a target="_blank" href="https://andrew.net/">Andrew</a>,  <a target="_blank" href="https://aidanjs.com/">Aidan</a>,  <a target="_blank" href="https://www.harrysanders.xyz/">Harry</a>,  <a target="_blank" href="https://spikeadams.com/">Tom</a></p>
     </section>
     <section class="footer">
       <div class="content8">
