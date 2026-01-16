@@ -1,104 +1,14 @@
 ---
 title: Parametric Bottle Cap Generator
 description: Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!
+keywords: Parametric design, Bottle caps, 3D printing, Fusion 360, Custom threads, CAD modeling, Thread profiles, Customizable caps, 3D printed lids, Parametric generator
+thumbnail: /assets/images/ParametricGenerator/hero.png
+readtime: "6-7 minutes"
+date: 2021-11-01
 hide:
   - navigation
   - tags
 template: comments.html
----
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Parametric Bottle Cap Generator - Teddy Warner">
-  <meta name="description" content="Create custom bottle caps with the Parametric Bottle Cap Generator, featuring adjustable parameters for perfect fit and functionality, designed for 3D printing enthusiasts.">
-  <meta name="keywords" content="Parametric design, Bottle caps, 3D printing, Fusion 360, Custom threads, CAD modeling, Thread profiles, Customizable caps, 3D printed lids, Parametric generator">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/Projects/ParametricGenerator/">
-  <meta property="og:title" content="Parametric Bottle Cap Generator - Teddy Warner">
-  <meta property="og:description" content="Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/ParametricGenerator/hero.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/Projects/ParametricGenerator/">
-  <meta property="twitter:title" content="Parametric Bottle Cap Generator - Teddy Warner">
-  <meta property="twitter:description" content="Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/ParametricGenerator/hero.png">
-
-  <!-- Existing resource links -->
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
-  <link rel="stylesheet" href="../../assets/css/header.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Parametric Bottle Cap Generator",
-    "description": "Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!",
-    "image": "https://teddywarner.org/assets/images/ParametricGenerator/hero.png",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2021-11-01T00:00:00Z",
-    "dateModified": "2021-11-01T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/Projects/ParametricGenerator/"
-    }
-  }
-  </script>
-</head>
-
-  <nav class="main-navigation">
-    <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
-    </ul>
-  </nav>
-  
-  <div class="blur-overlay"></div>
-
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
-  
-<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
-
-# Parametric Bottle Cap Generator
-
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Fall, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 6-7 minutes</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/ParametricGenerator/"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/ParametricGenerator/&text=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on"><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/ParametricGenerator/&media=&description=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on%20https://teddywarner.org/Projects/ParametricGenerator/%20!"><i class="fa-brands fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/ParametricGenerator/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20the%20Parametric%20Bottle%20Cap%20Generator%20on%20https://teddywarner.org/Projects/ParametricGenerator/"><i class="fa-solid fa-paper-plane"></i></a>
-  </span>
-</div>
-
 ---
 
 <figure markdown="1">

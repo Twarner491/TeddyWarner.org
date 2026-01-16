@@ -58,18 +58,22 @@ theme:
    - content.code.annotate
    - search.share
    - search.suggest
+   - search.highlight
    - content.tabs.link
    - announce.dismiss
 
 plugins:
-  - material/search
+  - material/search:
+      separator: '[\s\-\.\,\:\;\!\?\(\)\[\]\{\}\/]+'
   - tags
   - rss:
+      enabled: !ENV [CI, false]
       match_path: "(Projects|writings)/.*"
       date_from_meta:
         as_creation: date
         as_update: date_modified
         default_timezone: America/New_York
+        default_time: "00:00"
       categories:
         - tags
       feeds_filenames:
@@ -84,6 +88,15 @@ plugins:
 
 hooks:
   - hooks/rss_dates.py
+  - hooks/content_lists.py
+  - hooks/case_redirects.py
+
+watch:
+  - docs
+  - overrides
+  - hooks
+  - docs/assets/css
+  - docs/assets/js
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -136,9 +149,9 @@ extra_javascript:
   - assets/js/error-suppressor.js
   - assets/js/index.js 
   - assets/js/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?defer
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - Home : https://teddywarner.org
-  - Projects:  https://teddywarner.org/proj/
-  - Writings:  https://teddywarner.org/writ/
+  - Projects:  https://teddywarner.org/projects/
+  - Writings:  https://teddywarner.org/writings/

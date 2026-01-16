@@ -1,111 +1,16 @@
 ---
 title: Octoprint Setup
 description: A complete Octoprint setup documentation.
+keywords: Octoprint, 3D Printing, Raspberry Pi, Print server, Remote printing, Print monitoring, Web interface, Print farm, Printer control, Plugin configuration, Network printing
+thumbnail: /assets/images/Octoprint/laboctoprint.jpg
+readtime: "9-11 minutes"
+date: 2021-09-01
+date_modified: 2023-11-15
 hide:
   - navigation
   - tags
 template: comments.html
 ---
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Octoprint Setup - Teddy Warner">
-  <meta name="description" content="Comprehensive setup guide for Octoprint on Raspberry Pi, detailing installation, configuration, and optimization for enhanced 3D printing control and monitoring.">
-  <meta name="keywords" content="Octoprint, 3D Printing, Raspberry Pi, Print server, Remote printing, Print monitoring, Web interface, Print farm, Printer control, Plugin configuration, Network printing">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/Projects/Octoprint/">
-  <meta property="og:title" content="Octoprint Setup - Teddy Warner">
-  <meta property="og:description" content="A complete Octoprint setup documentation.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/Projects/Octoprint/">
-  <meta property="twitter:title" content="Octoprint Setup - Teddy Warner">
-  <meta property="twitter:description" content="A complete Octoprint setup documentation.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg">
-
-  <!-- Existing resource links -->
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
-  <link rel="stylesheet" href="../../assets/css/header.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Octoprint Setup",
-    "description": "A complete Octoprint setup documentation.",
-    "image": "https://teddywarner.org/assets/images/Octoprint/laboctoprint.jpg",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2021-09-01T00:00:00Z",
-    "dateModified": "2023-11-15T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/Projects/Octoprint/"
-    }
-  }
-  </script>
-</head>
-
-  <nav class="main-navigation">
-    <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
-    </ul>
-  </nav>
-  
-  <div class="blur-overlay"></div>
-
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
-  
-<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
-
-# Octoprint Setup Documentation 
-
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Fall, 2021 </span>| <span class="readTime"><i class="far fa-clock"></i> 9-11 minutes</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Octoprint/"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Octoprint/&text=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With"><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Octoprint/&media=&description=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fa-brands fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Octoprint/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Setup%20an%20Instance%20of%20Octoprint%20for%20Your%20Machine%20With%20https://teddywarner.org/Projects/Octoprint/"><i class="fa-solid fa-paper-plane"></i></a>
-  </span>
-</div>
-
----
-
-<figure markdown="1">
-
-![](../assets/images/Octoprint/Octoprint.png){width="100%" alt="Octoprint logo and interface overview"}
-
-</figure>
 
 [Octoprint](https://octoprint.org/) takes 3D printing to new heights, creating a more concise workflow with more accessible machine control. The opensource [Octoprint project](https://github.com/OctoPrint/OctoPrint) was created and maintained by [Gina Häußge](https://octoprint.org/support-octoprint/). The software enables a machine with a web interface with full machine controls and a world of community plugins - all of which run on a Raspberry Pi made Server with an octoprint image. I use Octoprint on all of my personal printers, and a special CNC-focused fork of the software for my [MPCNC](https://www.v1engineering.com/). As mentioned above, web interfacing a machine creates a more concise workflow and thus is great for personal machines. However, an Octoprint setup shines even more in a print farm instance. During the winter months of my sophomore year (2020) I set up secure Octoprint instances on each of my lab's array of 20 FDM printers. Each of my setup instances can be read seen under the [My Octoprint Instances](https://teddywarner.org/Projects/Octoprint/#my-octoprint-instances) section of this page. 
 

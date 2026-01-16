@@ -1,107 +1,18 @@
 ---
 title: Quote Receipts
 description: Did I really say that? Why yes, you did.
+keywords: quote receipt printer, thermal printer project, raspberry pi, flask web server, DIY printer, quote collection, thermal receipt, python project, home automation, apartment project, raspberry pi 5, quote printer, receipt printer hack, thermal printing, local web server, skeuomorphic design
+thumbnail: /assets/images/quotes/thumb.png
+readtime: "19–24 minutes"
+date: 2025-09-01
 hide:
   - navigation
   - tags
 template: comments.html
 ---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Quote Receipts - Teddy Warner">
-  <meta name="description" content="Did I really say that? Why yes, you did.">
-  <meta name="keywords" content="quote receipt printer, thermal printer project, raspberry pi, flask web server, DIY printer, quote collection, thermal receipt, python project, home automation, apartment project, raspberry pi 5, quote printer, receipt printer hack, thermal printing, local web server, skeuomorphic design">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/Projects/Quotes/">
-  <meta property="og:title" content="Quote Receipts - Teddy Warner">
-  <meta property="og:description" content="Did I really say that? Why yes, you did.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/quotes/thumb.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/Projects/Quotes/">
-  <meta property="twitter:title" content="Quote Receipts - Teddy Warner">
-  <meta property="twitter:description" content="Did I really say that? Why yes, you did.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/quotes/thumb.png">
-
-  <!-- Existing resource links -->
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
   <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
   <link rel="stylesheet" href="../../assets/css/projects/receipts.css">
-  <link rel="stylesheet" href="../../assets/css/header.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Quote Receipts",
-    "description": "Did I really say that? Why yes, you did.",
-    "image": "https://teddywarner.org/assets/images/quotes/thumb.png",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2025-09-01T00:00:00Z",
-    "dateModified": "2025-09-01T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/Projects/Quotes/"
-    }
-  }
-  </script>
-</head>
-
-  <nav class="main-navigation">
-    <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
-    </ul>
-  </nav>
-
-  <div class="blur-overlay"></div>
-
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
-
-<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
-
-# Quote Receipts
-
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Fall, 2025 </span>| <span class="readTime"><i class="far fa-clock"></i> 19–24 minutes</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/Quotes"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/Quotes&text="><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/Quotes&media=&description="><i class="fa-brands fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/Quotes"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/Quotes%0A"><i class="fa-solid fa-paper-plane"></i></a>
-  </span>
-</div>
-
----
 
 <div style="
   width: 100%;
@@ -292,6 +203,9 @@ Then we'll create a very minimal project structure - I'm keeping this build to t
     frameborder="0"
     width="100%"
     height="700"
+    sandbox="allow-scripts allow-same-origin allow-forms"
+    loading="lazy"
+    tabindex="-1"
   ></iframe>
 </center>
 

@@ -11,37 +11,53 @@
   <script src="{{ 'assets/js/error-suppressor.js' | url }}"></script>
   {{ super() }}
   
-  <!-- Service Worker Registration for Cache Control -->
+  <!-- Service Worker Registration for Cache Control (disabled on localhost) -->
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function(registration) {
-            console.log('ServiceWorker registered:', registration.scope);
-            
-            // Check for updates
-            registration.addEventListener('updatefound', function() {
-              const newWorker = registration.installing;
-              newWorker.addEventListener('statechange', function() {
-                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                  // New service worker available, prompt user to refresh
-                  if (confirm('A new version is available. Refresh to update?')) {
-                    newWorker.postMessage({ type: 'SKIP_WAITING' });
-                    window.location.reload();
+      // Skip service worker on localhost for development
+      const isLocalhost = window.location.hostname === 'localhost' || 
+                          window.location.hostname === '127.0.0.1' ||
+                          window.location.hostname.startsWith('192.168.');
+      
+      if (isLocalhost) {
+        // Unregister any existing service workers on localhost
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+            console.log('ServiceWorker unregistered for development');
+          }
+        });
+      } else {
+        // Production: register service worker
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('ServiceWorker registered:', registration.scope);
+              
+              // Check for updates
+              registration.addEventListener('updatefound', function() {
+                const newWorker = registration.installing;
+                newWorker.addEventListener('statechange', function() {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    // New service worker available, prompt user to refresh
+                    if (confirm('A new version is available. Refresh to update?')) {
+                      newWorker.postMessage({ type: 'SKIP_WAITING' });
+                      window.location.reload();
+                    }
                   }
-                }
+                });
               });
+            })
+            .catch(function(err) {
+              console.log('ServiceWorker registration failed:', err);
             });
-          })
-          .catch(function(err) {
-            console.log('ServiceWorker registration failed:', err);
-          });
-      });
+        });
 
-      // Reload when new service worker takes control
-      navigator.serviceWorker.addEventListener('controllerchange', function() {
-        window.location.reload();
-      });
+        // Reload when new service worker takes control
+        navigator.serviceWorker.addEventListener('controllerchange', function() {
+          window.location.reload();
+        });
+      }
     }
   </script>
 {% endblock %}

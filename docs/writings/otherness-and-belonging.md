@@ -1,105 +1,15 @@
 ---
 title: Otherness and Belonging
 description: Discovering Eastern philosophy.
+date: 2024-08-01
 draft: true
+keywords: Neuroscience, Belonging, Social psychology, Mirror neurons, Theory of Mind, Emotions, Decision making, Moral foundations, Social pain, Altruistic behavior
+thumbnail: /assets/images/index/onb.png
+readtime: "4-6 mins"
 hide:
   - navigation
   - tags
 template: comments.html
----
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Otherness and Belonging - Teddy Warner">
-  <meta name="description" content="Explore the intricate concepts of otherness and belonging through the lens of Eastern philosophy, neuroscience, and social psychology, uncovering the emotional and cognitive dimensions of human connection.">
-  <meta name="keywords" content="Neuroscience, Belonging, Social psychology, Mirror neurons, Theory of Mind, Emotions, Decision making, Moral foundations, Social pain, Altruistic behavior">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/writings/otherness-and-belonging/">
-  <meta property="og:title" content="Otherness and Belonging - Teddy Warner">
-  <meta property="og:description" content="Discovering Eastern philosophy.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/index/onb.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/writings/otherness-and-belonging/">
-  <meta property="twitter:title" content="Otherness and Belonging - Teddy Warner">
-  <meta property="twitter:description" content="Discovering Eastern philosophy.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/index/onb.png">
-
-  <!-- Existing resource links -->
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
-  <link rel="stylesheet" href="../../assets/css/header.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Otherness and Belonging",
-    "description": "Discovering Eastern philosophy.",
-    "image": "https://teddywarner.org/assets/images/index/onb.png",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2024-08-01T00:00:00Z",
-    "dateModified": "2024-08-01T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/writings/otherness-and-belonging/"
-    }
-  }
-  </script>
-</head>
-
-  <nav class="main-navigation">
-    <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
-    </ul>
-  </nav>
-  
-  <div class="blur-overlay"></div>
-
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
-  
-<div class="return2feed"><a href="https://teddywarner.org/writ"><i class="fa-solid fa-arrow-left-long"></i> Writing Feed</a></div>
-
-# Otherness and Belonging
-
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Aug 2024 </span>| <span class="readTime"><i class="far fa-clock"></i> 4-6 mins</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/writings/otherness-and-belonging/"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/writings/otherness-and-belonging/&text="><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/writings/otherness-and-belonging/&media=&description="><i class="fa-brands fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/writings/otherness-and-belonging/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/writings/otherness-and-belonging/%0A"><i class="fa-solid fa-paper-plane"></i></a>
-  </span>
-</div>
-
 ---
 
 Ive been thinking alot about the neuroscience of otherness and belonging. *Here are my notes, I'll write a nice piece on this at some point.*

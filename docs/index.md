@@ -90,8 +90,8 @@ search:
   <nav class="main-navigation">
     <ul>
       <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="proj" href="https://teddywarner.com/projects/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.com/writings/"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
   
@@ -102,7 +102,7 @@ search:
     <section class="intro-section">
       <div class="content1">
         <div class="introabt">
-          <h2>Hey! I’m <a id="twittername" target=”_blank” href="https://x.com/WarnerTeddy">Teddy</a>, <span id="typed"></span></h2>
+          <h2>Hey! I'm <a id="twittername" target="_blank" href="https://x.com/WarnerTeddy">Teddy</a>, <span id="typed"></span></h2>
           <h3>I build robots and write essays <br>here's a bit of my work.</h3>
         </div>
       </div>
@@ -191,7 +191,7 @@ search:
                                 <path d="M847.468 115H819.532H658.601H649.2C645.28 115 643.319 115 641.822 115.763C640.505 116.434 639.434 117.505 638.763 118.822C638 120.319 638 122.28 638 126.2V135.343V470.823V480.8C638 484.72 638 486.681 638.763 488.178C639.434 489.495 640.505 490.566 641.822 491.237C643.319 492 645.28 492.165 649.2 492.165H659.601H749.535H759.685C760.842 492.165 761.42 492.165 761.909 492.176C784.891 492.699 803.397 511.205 803.92 534.187C803.931 534.676 803.931 535.254 803.931 536.411V565.657V575.731C803.931 579.651 804 581.681 804.763 583.178C805.434 584.495 806.505 585.566 807.822 586.237C809.319 587 811.28 587 815.2 587L825.463 586.931L1007.4 587H1017.8C1021.72 587 1023.68 587 1025.18 586.237C1026.5 585.566 1027.57 584.495 1028.24 583.178C1029 581.681 1029 579.72 1029 575.8V565.657V136.343V126.2C1029 122.28 1029 120.319 1028.24 118.822C1027.57 117.505 1026.5 116.434 1025.18 115.763C1023.68 115 1021.72 115 1017.8 115H1007.4H847.468Z" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
-                        <a class="circleLink" href="https://teddywarner.org/proj">
+                        <a class="circleLink" href="https://teddywarner.org/projects">
                             <g class="circleGroup" id="circleGroup">
                                 <circle class="abtbtn" stroke="none" fill="var(--md-default-bg-color)" cx="1137" cy="797" r="50" onmouseenter="leftrevoff()" onmouseleave="leftrevon()" />
                                 <path id="circlePath" d="M 1137 797 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="none" />
@@ -210,104 +210,28 @@ search:
     <section class="about">
       <div class="content4">
         <h2>About</h2>
-        <p class="abt1">I’m an engineer specialized in rapid prototyping and applied AI. I’m currently based in SF, building <a target=”_blank” href="https://intempus.org">emotionally intellegent robots</a>.</p>
-        <p class="abt2">I'm a <a target=”_blank” style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target=”_blank” style="text-decoration: none;" href="https://fabacademy.org/">Fab Academy</a>. I previously worked at <a target=”_blank” style="text-decoration: none;" href="https://www.midjourney.com/home">Midjourney</a> where I did research for the internal hardware effort.</p>
-        <p class="abt3">This site holds my <a href="https://teddywarner.org/proj">work</a> and <a href="https://teddywarner.org/writ">writings</a>.<span class="mobileyear"></br></br></span> Reach out at <a target=”_blank” href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a  style="text-decoration: none;" href="mailto:teddy@warner.net">teddy [at] warner [dot] net</a>.</p>
+        <p class="abt1">I'm an engineer specialized in rapid prototyping and applied AI. I'm currently based in SF, building <a target="_blank" href="https://intempus.org">emotionally intellegent robots</a>.</p>
+        <p class="abt2">I'm a <a target="_blank" style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target="_blank" style="text-decoration: none;" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy</a>. I previously worked at <a target="_blank" style="text-decoration: none;" href="https://www.midjourney.com/home">Midjourney</a> where I did research for the internal hardware effort.</p>
+        <p class="abt3">This site holds my <a href="https://teddywarner.org/projects">work</a> and <a href="https://teddywarner.org/writings">writings</a>.<span class="mobileyear"></br></br></span> Reach out at <a target="_blank" href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a  style="text-decoration: none;" href="mailto:teddy@warner.net">teddy [at] warner [dot] net</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
-        <a href="https://teddywarner.org/proj"><h2>Projects <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
+        <a href="https://teddywarner.org/projects"><h2>Projects <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="grid-container">
-          <a href="https://teddywarner.org/Projects/SerialUPDI/"> <div class="grid-item">
-              <p class="projtitle">UPDI Serial Programming</p>
-              <p class="projdescription">$2.20 and 22x Faster.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a href="https://teddywarner.org/Projects/AssistiveAquaponics/"> <div class="grid-item">
-              <p class="projtitle">Assistive Aquaponics</p>
-              <p class="projdescription">Automated ecosystem monitoring.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a href="https://teddywarner.org/Projects/VonNiemannProbe/"> <div class="grid-item">
-              <p class="projtitle">Von Niemann Probe</p>
-              <p class="projdescription">A Chess cheating device.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a target=”_blank” href="https://intempus.org/research/"> <div class="grid-item">
-              <p class="projtitle">Intempus</p>
-              <p class="projdescription">Expressive robots.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <span class="mobileyear">
-          <a href="https://teddywarner.org/Projects/MillingWorflow/"> <div class="grid-item">
-              <p class="projtitle">CNC Milling Workflows</p>
-              <p class="projdescription">Jargon, Feeds & Speeds, etc.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          </span>
-          <a href="https://teddywarner.org/Projects/ParametricGenerator/"> <div class="grid-item">
-              <p class="projtitle">Parametric Cap Generator</p>
-              <p class="projdescription">Lost a cap? Make a new one.</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
+<!-- PROJECTS_GRID_6 -->
         </div>
       </div>
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <a href="https://teddywarner.org/writ"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/immortalitytrap/">
-            <div class="title-row">
-              <p class="projtitle">The Immortality Trap</p>
-              <p class="writeyear">Dec 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">Why living to 1000 might mean we accomplish less than living to 80.</p>
-              <span class="mobileyear">
-              <p class="readtime">12-15 mins</p>
-              <span>
-            </div>
-          </a>
-        </div>
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/downsideprotection/">
-            <div class="title-row">
-              <p class="projtitle">Why 10x Better Robots Scale 10x Worse</p>
-              <p class="writeyear">Dec 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">Novel hardware adoption is implicitly limited by downside tolerance, not upside potential.</p>
-              <span class="mobileyear">
-              <p class="readtime">5-6 mins</p>
-              <span>
-            </div>
-          </a>
-        </div>
-        <span class="mobileyear">
-        <hr>
-        <div class="writparent">
-          <a href="https://teddywarner.org/writings/centuryinjapan/">
-            <div class="title-row">
-              <p class="projtitle">A Century in Japan</p>
-              <p class="writeyear">Nov 2025</p>
-            </div>
-            <div class="description-row">
-              <p class="projdescription">439.59 miles, 21,165 ft of elev. gained, ~39.21 hrs of peddling.</p>
-              <span class="mobileyear">
-              <p class="readtime">9–11 mins</p>
-              <span>
-            </div>
-          </a>
-        </div>
-        </span>
+        <a href="https://teddywarner.org/writings"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
+<!-- WRITINGS_LIST_3 -->
       </div>
     </section>
     <section class="press"> 
       <div class="content7">
-        <h2>Press</h2>
-        <p class="pressentry"><a target=”_blank” href="https://techcrunch.com/2025/05/25/why-intempus-thinks-robots-should-have-a-human-physiological-state/">TechCrunch</a>, <a target=”_blank” href="https://www.inc.com/chloe-aiello/why-this-19-year-old-founder-wants-to-give-robots-emotional-intelligence/91195706">Inc. Magazine</a>, <a target=”_blank” href="https://www.youtube.com/live/JY0RL1jr22o?t=9656s">TBPN</a>, <a target=”_blank” href="https://businesswire.com/news/home/20250522267532/en/Thiel-Foundation-Announces-2025-Class-of-Thiel-Fellows">Business Wire</a>, <a target=”_blank” href="https://blog.adafruit.com/2023/02/01/the-von-niemann-probe-aims-to-investigate-the-accusations-of-chess-cheating-wearablewednesday/">Adafruit</a>, <a target=”_blank” href="https://hackaday.com/2023/02/01/electronic-shoe-explores-alleged-chess-misbehavior/">Hackaday</a> (<a target=”_blank” href="https://hackaday.com/2022/12/26/turning-a-microchip-mplab-snap-into-a-udpi-avr-programmer/">x2</a>, <a target=”_blank” href="https://hackaday.com/2023/01/25/pizza-making-cnc-machine-is-the-only-tool-weve-ever-dreamed-of/">x3</a>, <a target=”_blank” href="https://hackaday.com/2026/01/03/quote-printer-keeps-receipts/">x4</a>), <a target=”_blank” href="https://www.hackster.io/news/pizza-pizza-cnc-machine-makes-pizzas-so-you-don-t-have-to-2abc96e2c411">Hackster.io</a> (<a target=”_blank” href="https://www.hackster.io/news/this-chess-cheating-wearable-aims-to-investigate-the-accusations-against-grandmaster-hans-neimann-90b63403b5d0">x2</a>), <a target=”_blank” href="https://www.chicagotribune.com/2016/01/04/st-francis-students-gain-skills-while-creating-underwater-robot/">Chicago Tribune</a>  <span class="hiddentext">testestestestestsetsettestestestsetset</span></p>
+        <h2>Friends</h2>
+        <p class="pressentry"><a target="_blank" href="https://andrew.net/">Andrew</a>, <a target="_blank" href="https://aidanjs.com/">Aidan</a>, <a target="_blank" href="https://www.harrysanders.xyz/">Harry</a>, <a target="_blank" href="https://spikeadams.com/">Tom</a><span class="hiddentext">set</span></p>
     </section>
     <section class="footer">
       <div class="content8">
@@ -326,7 +250,7 @@ search:
             <i class="fa-solid fa-paper-plane"></i>
           </a>
         </div>
-        <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+        <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
           <p class="copyright">Copyright © 2026 Teddy Warner</p>
         </a>
     </section>
@@ -337,6 +261,7 @@ search:
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
   <script defer>
     // Wait for typed.js to load
+    // Typed.js initialization
     window.addEventListener('load', function() {
       var typed = new Typed('#typed', {
         strings: [ 'a roboticist.', 'a writer.', 'a life enjoyer.'],
@@ -347,16 +272,7 @@ search:
         loop: true
       });
     });
-    document.addEventListener("DOMContentLoaded", function() {
-      var content2 = document.getElementById('content2');
-      var observer = new ResizeObserver(entries => {
-        for (let entry of entries) {
-          var content2Height = entry.contentRect.height;
-          document.documentElement.style.setProperty('--content2-height', content2Height + 'px');
-        }
-      });
-      observer.observe(content2);
-    });
+    // Theme switching for tone image
     document.addEventListener("DOMContentLoaded", function() {
       const toneImage = document.querySelector('.project .toneimg');
       const root = document.documentElement;
@@ -369,67 +285,80 @@ search:
           } else {
               toneUrl = getComputedStyle(root).getPropertyValue('--tone-url-light').trim().replace(/^"(.*)"$/, '$1');
           }
-          toneImage.setAttributeNS('http://www.w3.org/1999/xlink', 'href', toneUrl);
+          if (toneImage) {
+            toneImage.setAttributeNS('http://www.w3.org/1999/xlink', 'href', toneUrl);
+          }
       }
-        function saveTheme() {
-          const selectedOption = document.querySelector('input[name="__palette"]:checked');
-          if (selectedOption) {
-            const currentTheme = selectedOption.getAttribute('data-md-color-scheme');
-            localStorage.setItem('theme', currentTheme);
+      function saveTheme() {
+        const selectedOption = document.querySelector('input[name="__palette"]:checked');
+        if (selectedOption) {
+          const currentTheme = selectedOption.getAttribute('data-md-color-scheme');
+          localStorage.setItem('theme', currentTheme);
+        }
+      }
+      function applySavedTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          const themeOption = document.querySelector(`input[name="__palette"][data-md-color-scheme="${savedTheme}"]`);
+          if (themeOption) {
+            themeOption.checked = true;
+            root.setAttribute('data-md-color-scheme', savedTheme);
+            colortheme();
           }
         }
-        function applySavedTheme() {
-          const savedTheme = localStorage.getItem('theme');
-          if (savedTheme) {
-            const themeOption = document.querySelector(`input[name="__palette"][data-md-color-scheme="${savedTheme}"]`);
-            if (themeOption) {
-              themeOption.checked = true;
-              root.setAttribute('data-md-color-scheme', savedTheme);
+      }
+      applySavedTheme();
+      colortheme(); 
+      document.querySelectorAll('input[name="__palette"]').forEach((input) => {
+          input.addEventListener('change', () => {
               colortheme();
-            }
-          }
-        }
-        applySavedTheme();
-        colortheme(); 
-        document.querySelectorAll('input[name="__palette"]').forEach((input) => {
-            input.addEventListener('change', () => {
-                colortheme();
-                saveTheme();
-            });
-        });
-        window.colortheme = colortheme;
+              saveTheme();
+          });
       });
-    document.addEventListener("DOMContentLoaded", function() {
-      var content6 = document.getElementById('content6');
-      var observer = new ResizeObserver(entries => {
-        for (let entry of entries) {
-          var content6Height = entry.contentRect.height;
-          document.documentElement.style.setProperty('--content6-height', content6Height + 'px');
-        }
-      });
-      observer.observe(content6);
+      window.colortheme = colortheme;
     });
   </script>
   <script>
     // Instant staggered animations on scroll
     (function() {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const allElements = '.intro-section, .featured-projects, .about, .projects, .writing, .press, .footer, .writing .writparent, .projects .grid-item';
+      
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll(allElements).forEach(el => {
+          el.classList.add('visible');
+        });
+        return;
+      }
       
       let writparentCounter = 0;
       let gridItemCounter = 0;
-      const staggerDelay = 50; // 0.05s between items
+      const staggerDelay = 50;
+      const viewportHeight = window.innerHeight;
+      
+      function isInOrAboveViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.bottom >= 0 && rect.top <= viewportHeight + 100;
+      }
+      
+      function isAboveViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.bottom < 0;
+      }
+      
+      function getDelay(el) {
+        if (el.classList.contains('writparent')) {
+          return writparentCounter++ * staggerDelay;
+        } else if (el.classList.contains('grid-item')) {
+          return gridItemCounter++ * staggerDelay;
+        }
+        return 0;
+      }
       
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const el = entry.target;
-            let delay = 0;
-            
-            if (el.classList.contains('writparent')) {
-              delay = writparentCounter++ * staggerDelay;
-            } else if (el.classList.contains('grid-item')) {
-              delay = gridItemCounter++ * staggerDelay;
-            }
+            const delay = getDelay(el);
             
             requestAnimationFrame(() => {
               setTimeout(() => {
@@ -446,8 +375,23 @@ search:
         rootMargin: '50px'
       });
       
-      document.querySelectorAll('.intro-section, .featured-projects, .about, .projects, .writing, .press, .footer, .writing .writparent, .projects .grid-item').forEach(el => {
-        observer.observe(el);
+      document.querySelectorAll(allElements).forEach(el => {
+        // Immediately show elements already above viewport
+        if (isAboveViewport(el)) {
+          el.classList.add('visible');
+        } 
+        // Animate elements currently in viewport with stagger
+        else if (isInOrAboveViewport(el)) {
+          const delay = getDelay(el);
+          setTimeout(() => {
+            el.style.animationDelay = delay + 'ms';
+            el.classList.add('visible');
+          }, 10);
+        } 
+        // Observe elements below viewport
+        else {
+          observer.observe(el);
+        }
       });
     })();
   </script>

@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+// Initialize layout on both initial load and instant navigation
+function initProjLayout() {
   var contentSections = document.querySelectorAll('.content-container > section');
   var previousHeight = 0;
 
@@ -24,7 +25,30 @@ document.addEventListener("DOMContentLoaded", function() {
   if (copyright) {
     copyright.style.animationDelay = `${(projects.length * 0.15) + 0.3}s`;
   }
-});
+  
+  // Re-setup ResizeObserver for dynamic height calculation
+  const elements = ['content1', 'content6'];
+  const observer = new ResizeObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      const height = entry.contentRect.height;
+      document.documentElement.style.setProperty(`--${id}-height`, `${height}px`);
+    });
+  });
+  elements.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) observer.observe(element);
+  });
+}
+
+// Support instant navigation (MkDocs Material)
+if (typeof document$ !== 'undefined') {
+  document$.subscribe(function() {
+    initProjLayout();
+  });
+} else {
+  document.addEventListener("DOMContentLoaded", initProjLayout);
+}
 
 var supportsCssVars = function() {
   var e, t = document.createElement("style");

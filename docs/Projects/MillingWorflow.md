@@ -1,108 +1,21 @@
 ---
 title: CNC Milling Workflows
 description: A relatively comprehensive guide for CNC milling.
+keywords: CNC milling, CAM, Feeds and speeds, ShopBot, Bantam Tools, Fusion 360, Vectric Aspire, Machining, Subtractive manufacturing, Tool paths, CNC programming
+thumbnail: /assets/images/MillingWorkflow/thumb.jpg
+readtime: "12-15 minutes"
+date: 2022-12-01
+date_modified: 2023-02-01
 hide:
   - navigation
   - tags
 template: comments.html
 ---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="CNC Milling Workflows - Teddy Warner">
-  <meta name="description" content="A comprehensive guide to CNC milling workflows, covering essential techniques, tools, and projects for mastering subtractive manufacturing with detailed insights and resources.">
-  <meta name="keywords" content="CNC milling, CAM, Feeds and speeds, ShopBot, Bantam Tools, Fusion 360, Vectric Aspire, Machining, Subtractive manufacturing, Tool paths, CNC programming">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/Projects/MillingWorflow/">
-  <meta property="og:title" content="CNC Milling Workflows - Teddy Warner">
-  <meta property="og:description" content="A relatively comprehensive guide for CNC milling.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/MillingWorkflow/thumb.jpg">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../assets/js/milling.js"></script> 
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/Projects/MillingWorflow/">
-  <meta property="twitter:title" content="CNC Milling Workflows - Teddy Warner">
-  <meta property="twitter:description" content="A relatively comprehensive guide for CNC milling.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/MillingWorkflow/thumb.jpg">
-
-  <!-- Existing resource links -->
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../../assets/js/milling.js"></script> 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
-  <link rel="stylesheet" href="../../assets/css/projects/milling.css">
-  <link rel="stylesheet" href="../../assets/css/header.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "CNC Milling Workflows",
-    "description": "A relatively comprehensive guide for CNC milling.",
-    "image": "https://teddywarner.org/assets/images/MillingWorkflow/thumb.jpg",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2022-12-01T00:00:00Z",
-    "dateModified": "2023-02-01T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/Projects/MillingWorflow/"
-    }
-  }
-  </script>
-</head>
-
-  <nav class="main-navigation">
-    <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
-    </ul>
-  </nav>
-  
-  <div class="blur-overlay"></div>
-
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
-  
-<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
-
-# CNC Milling Workflows
-
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Profile Picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2022-2023 </span>| <span class="readTime"><i class="far fa-clock"></i> 12-15 minutes</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/MillingWorflow/"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/MillingWorflow/&text=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/MillingWorflow/&media=&description=Check%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fa-brands fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/MillingWorflow/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/MillingWorflow/%0ACheck%20out%20the%20CNC%20Milling%20Workflows%20article%20on%20teddywarner.org!"><i class="fa-solid fa-paper-plane"></i></a>
-  </span>
-</div>
-
----
+<link rel="stylesheet" href="../../assets/css/projects/milling.css">
 
 Subtractive manufacturing is a process I've always found mesmerizing. Although additive processes such as 3D printing allow for the creation of something from seemingly nothing, I believe it's even cooler to watch the morphing of existing stock into a different object. Despite this interest, I feel as though I've barely scratched the surface of CNC - primarily focusing on PCB milling in my subtractive manufacturing projects. I made a first attempt to dive into more subtractive manufacturing work a couple of years ago now when I built [V1 Engineering's](https://www.v1engineering.com/) original [MPCNC](https://docs.v1engineering.com/mpcnc/burly/).
 
@@ -132,7 +45,7 @@ This article attempts to serve as a complete guide for CNC milling, covering mac
 
 ## Feeds & Speeds
 
-<div class="toggleswitch">
+<div class="section-toggle">
   <label class="cl-switch">
     <span class="label">Imperial</span>
     <input type="checkbox" id="units" onclick="unit()">
@@ -855,78 +768,101 @@ Feeds and speeds are equally dependent on material properties and the specific o
 
 ### Feeds & Speeds Calculator
 
-<div class="toggleswitch">
-  <label class="cl-switch">
-    <span class="label">No Coolant</span>
-    <input type="checkbox" id="coolant" onchange="matChange();">
-    <span class="switcher"></span>
-    <span class="label">Coolant</span>
-  </label>
+<div class="calc-title-row">
+  <div class="calc-toggles">
+    <label class="cl-switch">
+      <span class="label">No Coolant</span>
+      <input type="checkbox" id="coolant" onchange="matChange();">
+      <span class="switcher"></span>
+      <span class="label">Coolant</span>
+    </label>
+  </div>
 </div>
 
 ??? note "Instructions for Use"
     Work through the calcuator from top to bottom. First select your coolant prefrence, then input tool diamater and flute count. *You may pull reccomended material settings from the table above via the "Material Library" dropdown, or you may under your own.* Please note the prior warnings on calcuator dependence: **This is by no means a universal key** and necessary precautions & alterations should be made to provide values to mesh with your manufacturing workflow. Often the manufacturer of your tool & your machine will provide generic feeds and speeds for your specific equipment. Operator input is required to achieve successful & safe cuts, often you'll be able to hear machine strain - a telltale sign of poor cutting.
 
-<hr></hr>
-
-<div id="diameterparent" class="outlined-input"><input type="text" class="calcinput" id="diameter" name="diameter" placeholder=" "><label for="diameter">Tool Diameter (<span class="in">in</span><span class="mm">mm</span>)</label></div>
-
-<div class="FluteCountParent"><div class="quantity"><label style="font-size:0.7em;" for="flutes">Flute #:</label><input type="number" class="calcinput" id="flutes" min="1" max="12" step="1" value="1"></div></div>
-
-<div style="height:0.5em; position:relative;"></div>
-<hr></hr>
-
-<select id="matlib" onchange="matChange();">
-  <option value="Mlib">Material Library</option>
-  <option value="Wax">Wax</option>
-  <option value="SWood">Soft Wood</option>
-  <option value="HWood">Hard Wood</option>
-  <option value="MDF">MDF</option>
-  <option value="OSB">OSB</option>
-  <option value="HDPE">HDPE</option>
-  <option value="PEEK">PEEK</option>
-  <option value="PEI">PEI</option>
-  <option value="PVC">PVC</option>
-  <option value="POM">POM</option>
-  <option value="ABS">ABS</option>
-  <option value="PC">PC</option>
-  <option value="Nylon">Nylon</option>
-  <option value="Acrylic">Acrylic</option>
-  <option value="CFiber">Carbon Fiber</option>
-  <option value="Aluminium">Aluminium</option>
-  <option value="Brass">Brass</option>
-  <option value="Copper">Copper</option>
-  <option value="Steel">Steel</option>
-  <option value="IFoam">Insulation Foam</option>
-</select>
-   
-<div id="surfacepar" class="outlined-input"><input type="text" class="calcinput" id="surface" name="surface" placeholder=" "><label for="surface">Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</label></div>
-  <br><br>
-<div id="chippar" class="outlined-input"><input type="text" class="calcinput" id="chips" name="chips" placeholder=" "><label for="chips">Chip Load (<span class="in">in</span><span class="mm">mm</span>)</label></div>
-
-<hr></hr>
-
-<div id="outputval">
-  <div style="height:1em; position:relative;"></div>
-  <div class="outlined-input" style="position:relative; left: 1em;"><input type="text" class="calcinput" id="speed" name="speed" placeholder=" " disabled><label for="speed">Spindle Speed (RPM)</label></div>
-    <br><br>
-  <div class="outlined-input" style="position:relative; top:-5.2em; left: 14em;"><input type="text" class="calcinput" id="feed" name="feed" placeholder=" " disabled><label for="feed">Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
-    <br><br>
-  <div class="outlined-input" style="position:relative; top:-10.3em; left: 27em;"><input type="text" class="calcinput" id="plunge" name="plunge" placeholder=" " disabled><label for="plunge">Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label></div>
-    <br><br>
-  <div class="outlined-input" style="position:relative; top:-12em; left:1em;"><input type="text" class="calcinput" id="down" name="down" placeholder=" " disabled><label for="down">Stepdown (<span class="in">in</span><span class="mm">mm</span>)</label></div>
-    <br><br>
-  <div class="outlined-input" style="position:relative; top:-17.2em; left:14em;"><input type="text" class="calcinput" id="over" name="over" placeholder=" " disabled><label for="diameter">Stepover (<span class="in">in</span><span class="mm">mm</span>)</label></div>
-  <div style="position:relative; top:-16.5em;">
-    <hr></hr>
+<div class="feeds-speeds-calc">
+  <div class="calc-inputs">
+    <div class="calc-input-group">
+      <label for="diameter">Tool Diameter (<span class="in">in</span><span class="mm">mm</span>)</label>
+      <input type="text" id="diameter" name="diameter" placeholder="0.25" onchange="matChange();">
+    </div>
+    
+    <div class="calc-input-group">
+      <label for="flutes">Flute Count</label>
+      <div class="flute-counter">
+        <button type="button" class="flute-btn" onclick="document.getElementById('flutes').stepDown(); matChange();">−</button>
+        <input type="number" id="flutes" min="1" max="12" step="1" value="1">
+        <button type="button" class="flute-btn" onclick="document.getElementById('flutes').stepUp(); matChange();">+</button>
+      </div>
+    </div>
+    
+    <div class="calc-input-group full-width">
+      <label for="matlib">Material Library</label>
+      <select id="matlib" onchange="matChange();">
+        <option value="Mlib">Select Material...</option>
+        <option value="Wax">Wax</option>
+        <option value="SWood">Soft Wood</option>
+        <option value="HWood">Hard Wood</option>
+        <option value="MDF">MDF</option>
+        <option value="OSB">OSB</option>
+        <option value="HDPE">HDPE</option>
+        <option value="PEEK">PEEK</option>
+        <option value="PEI">PEI</option>
+        <option value="PVC">PVC</option>
+        <option value="POM">POM</option>
+        <option value="ABS">ABS</option>
+        <option value="PC">PC</option>
+        <option value="Nylon">Nylon</option>
+        <option value="Acrylic">Acrylic</option>
+        <option value="CFiber">Carbon Fiber</option>
+        <option value="Aluminium">Aluminium</option>
+        <option value="Brass">Brass</option>
+        <option value="Copper">Copper</option>
+        <option value="Steel">Steel</option>
+        <option value="IFoam">Insulation Foam</option>
+      </select>
+    </div>
+    
+    <div class="calc-input-group">
+      <label for="surface">Surface Speed (<span class="ftmin">ft/min</span><span class="mmin">M/min</span>)</label>
+      <input type="text" id="surface" name="surface" placeholder="—">
+    </div>
+    
+    <div class="calc-input-group">
+      <label for="chips">Chip Load (<span class="in">in</span><span class="mm">mm</span>)</label>
+      <input type="text" id="chips" name="chips" placeholder="—">
+    </div>
   </div>
-</div>
 
-<div id="cock" style="height:auto;">
-  <button class="calcbutton" onclick="calculate()"> Calculate </button>
-  <button class="calcbutton" onclick="myFunction()"> Clear </button>
+  <div class="calc-actions">
+    <button type="button" class="calc-btn primary" onclick="calculateNew()">Calculate</button>
+    <button type="button" class="calc-btn" onclick="clearCalc()">Clear</button>
+  </div>
 
-  <hr></hr>
+  <div class="calc-outputs hidden" id="outputval">
+    <div class="calc-output-group">
+      <label>Spindle Speed</label>
+      <span class="output-value" id="speed-display"></span>
+    </div>
+    <div class="calc-output-group">
+      <label>Feed Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label>
+      <span class="output-value" id="feed-display"></span>
+    </div>
+    <div class="calc-output-group">
+      <label>Plunge Rate (<span class="inmin">in/min</span><span class="mmmin">mm/min</span>)</label>
+      <span class="output-value" id="plunge-display"></span>
+    </div>
+    <div class="calc-output-group">
+      <label>Stepdown (<span class="in">in</span><span class="mm">mm</span>)</label>
+      <span class="output-value" id="down-display"></span>
+    </div>
+    <div class="calc-output-group">
+      <label>Stepover (<span class="in">in</span><span class="mm">mm</span>)</label>
+      <span class="output-value" id="over-display"></span>
+    </div>
+  </div>
 </div>
 
 ## Microprojects

@@ -19,8 +19,8 @@ His technical work includes the Von Niemann Probe (a chess cheating investigatio
 ## Links
 - [teddywarner.org](https://teddywarner.org): Portfolio, projects, and writings
 - [Intempus](https://intempus.org): Company building emotionally intelligent robots
-- [Projects](https://teddywarner.org/proj): Engineering and fabrication work
-- [Writing](https://teddywarner.org/writ): Essays on technology and philosophy
+- [Projects](https://teddywarner.org/projects): Engineering and fabrication work
+- [Writing](https://teddywarner.org/writings): Essays on technology and philosophy
 - [Books](https://teddywarner.org/books): Reading list and recommendations
 
 ## Contact

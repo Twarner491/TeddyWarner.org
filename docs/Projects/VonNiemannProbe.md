@@ -1,107 +1,18 @@
 ---
 title: Von Niemann Probe
 description: An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!
+keywords: Chess cheating, Hans Niemann, Bluetooth telegraph, AVR microcontroller, Shoe insole, Parametric design, PCB design, Morse code, Chess scandal, Magnus Carlsen, Electronics project
+thumbnail: /assets/images/VonNiemannProbe/thumb.jpg
+readtime: "46–58 minutes"
+date: 2023-12-15
+date_modified: 2024-06-09
 hide:
   - navigation
   - tags
 template: comments.html
 ---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Von Niemann Probe - Teddy Warner">
-  <meta name="description" content="Explore the innovative Von Niemann Probe, an AVR-based Bluetooth telegraphing shoe insole designed to enhance chess gameplay, featuring detailed insights into its design, development, and functionality.">
-  <meta name="keywords" content="Chess cheating, Hans Niemann, Bluetooth telegraph, AVR microcontroller, Shoe insole, Parametric design, PCB design, Morse code, Chess scandal, Magnus Carlsen, Electronics project">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
-  <meta property="og:title" content="Von Niemann Probe - Teddy Warner">
-  <meta property="og:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/VonNiemannProbe/thumb.jpg">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/Projects/VonNiemannProbe/">
-  <meta property="twitter:title" content="Von Niemann Probe - Teddy Warner">
-  <meta property="twitter:description" content="An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/VonNiemannProbe/thumb.jpg">
-
-  <!-- Existing resource links -->
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
-  <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
-  <link rel="stylesheet" href="../../assets/css/header.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Von Niemann Probe",
-    "description": "An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!",
-    "image": "https://teddywarner.org/assets/images/VonNiemannProbe/thumb.jpg",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2023-12-15T00:00:00Z",
-    "dateModified": "2024-06-09T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/Projects/VonNiemannProbe/"
-    }
-  }
-  </script>
-</head>
-
-  <nav class="main-navigation">
-    <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
-    </ul>
-  </nav>
-  
-  <div class="blur-overlay"></div>
-
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
-  
-<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
-
-# Von Niemann Probe
-
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span style="font-weight: 300; padding-right: 5px;"><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| Winter, 2023 </span>| <span class="readTime"><i class="far fa-clock"></i> 46–58 minutes</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/VonNiemannProbe/&text=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/VonNiemannProbe/&media=&description=Check%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-brands fa-pinterest"></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/VonNiemannProbe/"><i class="fab fa-linkedin"></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://teddywarner.org/Projects/VonNiemannProbe/%0ACheck%20out%20the%20Von%20Niemann%20Probe%20on%20teddywarner.org!"><i class="fa-solid fa-paper-plane"></i></a>
-  </span>
-</div>
-
----
+<link rel="stylesheet" href="/assets/css/projects/vnp.css">
 
 <center>
   <div style="position:relative;padding-bottom:56.25%;">

@@ -1,6 +1,75 @@
 {% extends "base.html" %}
 
-<script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+{# Extract metadata from page.meta with defaults #}
+{% set page_title = page.meta.title | default(page.title) %}
+{% set page_description = page.meta.description | default("") %}
+{% set page_keywords = page.meta.keywords | default("Teddy Warner, engineering, robotics, digital fabrication") %}
+{% set page_thumbnail = page.meta.thumbnail | default("/assets/images/thumb.png") %}
+{% set page_readtime = page.meta.readtime | default("") %}
+{% set page_date = page.meta.date | default("") %}
+{% set page_date_display = page.meta.date_display | default("") %}
+{% set page_type = "writings" if "writings" in page.url else "Projects" %}
+{% set page_full_url = "https://teddywarner.org" ~ page.url %}
+{% set page_full_thumbnail = "https://teddywarner.org" ~ page_thumbnail %}
+
+{% block extrahead %}
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="{{ page_title }} - Teddy Warner">
+  <meta name="description" content="{{ page_description }}">
+  <meta name="keywords" content="{{ page_keywords }}">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page_full_url }}">
+  <meta property="og:title" content="{{ page_title }} - Teddy Warner">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:image" content="{{ page_full_thumbnail }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ page_full_url }}">
+  <meta property="twitter:title" content="{{ page_title }} - Teddy Warner">
+  <meta property="twitter:description" content="{{ page_description }}">
+  <meta property="twitter:image" content="{{ page_full_thumbnail }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="{{ config.site_url }}assets/css/projects/project.css">
+  <link rel="stylesheet" href="{{ config.site_url }}assets/css/header.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page_title }}",
+    "description": "{{ page_description }}",
+    "image": "{{ page_full_thumbnail }}",
+    "author": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "publisher": {
+      "@id": "https://teddywarner.org/#person"
+    },
+    "datePublished": "{{ page.meta.datePublished | default('2025-01-01T00:00:00Z') }}",
+    "dateModified": "{{ page.meta.dateModified | default(page.meta.datePublished) | default('2025-01-01T00:00:00Z') }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page_full_url }}"
+    }
+  }
+  </script>
+{% endblock %}
 
 {% block announce %}{% endblock %}
 
@@ -110,11 +179,62 @@
 
   </nav>
 </header>
-
 {% endblock %}
 
 {% block content %}
-  {{ super() }}
+  <!-- Navigation Menu -->
+  <nav class="main-navigation">
+    <ul>
+      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="https://teddywarner.com/projects/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="https://teddywarner.com/writings/"><span class="navnum">03</span> Writing</a></li>
+    </ul>
+  </nav>
+  
+  <div class="blur-overlay"></div>
+
+  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+  <script src="{{ config.site_url }}assets/js/header.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeHeader();
+    });
+  </script>
+
+  <!-- Return to feed link -->
+  {% if page_type == "writings" %}
+  <div class="return2feed"><a href="https://teddywarner.org/writings"><i class="fa-solid fa-arrow-left-long"></i> Writing Feed</a></div>
+  {% else %}
+  <div class="return2feed"><a href="https://teddywarner.org/projects"><i class="fa-solid fa-arrow-left-long"></i> Projects Feed</a></div>
+  {% endif %}
+
+  <!-- Article Header with Author Info and Share Buttons -->
+  <h1 class="article-title">{{ page_title }}</h1>
+  
+  <div class="article-meta" style="margin-top: -0.8em;">
+    <span class="abtlinks">
+      <a href="https://x.com/WarnerTeddy">
+        <img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic">
+        <span class="abt" id="name"> Teddy Warner</span>
+      </a>
+      <span class="abt" style="font-weight: 300; padding-left: 6px;">
+        {% if page_date_display %}<span class="year">| {{ page_date_display }} </span>{% endif %}
+        {% if page_readtime %}| <span class="readTime"><i class="far fa-clock"></i> {{ page_readtime }}</span>{% endif %}
+      </span>
+    </span>
+    <span class="share" style="color: inherit;">
+      <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page_full_url }}"><i class="fa-brands fa-facebook"></i></a>
+      <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url={{ page_full_url }}&text={{ page_title | urlencode }}"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url={{ page_full_url }}&media={{ page_full_thumbnail }}&description={{ page_description | urlencode }}"><i class="fa-brands fa-pinterest"></i></a>
+      <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page_full_url }}"><i class="fab fa-linkedin"></i></a>
+      <a class="email" title="Share via Email" href="mailto:?subject={{ page_title | urlencode }}&body={{ page_full_url }}"><i class="fa-solid fa-paper-plane"></i></a>
+    </span>
+  </div>
+
+  <hr class="article-divider">
+
+  <!-- Page Content -->
+  {{ page.content }}
 
   <!-- Email Subscription -->
   <section class="subscribe-section">
@@ -140,7 +260,7 @@
     </div>
   </section>
 
-  <!-- Giscus -->
+  <!-- Giscus Comments -->
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <script src="https://giscus.app/client.js"
   data-cfasync="false"
@@ -192,23 +312,23 @@
 <section class="footer">
   <div class="socials">
     <div class="socialpar">
-      <a target=”_blank” href="https://github.com/Twarner491">
+      <a target="_blank" href="https://github.com/Twarner491">
         <i class="fa-brands fa-github"></i>
       </a>
     </div>
     <div class="socialpar">
-      <a target=”_blank” href="https://x.com/WarnerTeddy">
+      <a target="_blank" href="https://x.com/WarnerTeddy">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
     </div>
     <div class="socialpar">
-      <a target=”_blank” href="mailto:teddy@warner.net">
+      <a target="_blank" href="mailto:teddy@warner.net">
         <i class="fa-solid fa-paper-plane"></i>
       </a>
     </div>
   </div>
-    <a target=”_blank” href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
-      <p class="copyright">Copyright © 2026 Teddy Warner</p>
+    <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+      <p class="copyright">Copyright © {{ current_year }} Teddy Warner</p>
     </a>
 </section>
 {% endblock %}

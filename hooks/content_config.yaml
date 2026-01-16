@@ -1,0 +1,40 @@
+# External projects that don't have their own markdown files
+# These will be merged with auto-discovered projects from /Projects folder
+
+external_projects:
+  - title: onethreenine.net
+    description: A web accessible corkboard for my apartment.
+    url: https://onethreenine.net/about
+    thumbnail: /assets/images/index/cork.png
+    date: 2025-06-01
+    external: true
+
+  - title: Intempus
+    description: Giving agents a temporal understanding through human physiological data.
+    url: https://intempus.org/research
+    thumbnail: /assets/images/learnedSpec/thumb.jpg
+    date: 2025-01-15
+    external: true
+
+  - title: Tone
+    description: A digital extension of yourself, in the form of a necklace.
+    url: https://tone.computer/
+    thumbnail: /assets/images/index/toneSmall.png
+    date: 2024-02-01
+    external: true
+
+  - title: How to Make (Almost) Anything
+    description: 22 weeks of rapid prototyping.
+    url: https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/student-bootcamp/
+    thumbnail: https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/charlotte/students/theodore-warner/-/raw/master/docs/images/wallpaper.jpg?ref_type=heads
+    date: 2021-04-28
+    external: true
+
+# Settings for content list generation
+settings:
+  # Number of items to show on index page
+  index_projects_count: 6
+  index_writings_count: 3
+  
+  # Date format for display
+  date_format: "%b %Y"  # e.g., "Dec 2025"

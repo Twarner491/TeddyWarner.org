@@ -3,13 +3,113 @@ function unit() {
     element.classList.toggle("metric");
   }
   
-  window.onload = function() {
-    document.getElementById("outputval").style.display = "none"; 
-    var unit = document.getElementById('units');
-      if (unit.checked) {
-        var element = document.body;
-        element.classList.toggle("metric");
+  function initMillingPage() {
+    var unitCheckbox = document.getElementById('units');
+    if (unitCheckbox && unitCheckbox.checked) {
+      var element = document.body;
+      if (!element.classList.contains("metric")) {
+        element.classList.add("metric");
       }
+    }
+  }
+  
+  // Support instant navigation (MkDocs Material)
+  if (typeof document$ !== 'undefined') {
+    document$.subscribe(initMillingPage);
+  } else {
+    window.onload = initMillingPage;
+  }
+
+  // New calculator functions for updated UI
+  function calculateNew() {
+    var unit = document.getElementById('units');
+    var pi = Math.PI;
+    var d = parseFloat(document.getElementById('diameter').value);
+    var f = parseFloat(document.getElementById('flutes').value);
+    var s = parseFloat(document.getElementById('surface').value);
+    var c = parseFloat(document.getElementById('chips').value);
+
+    if (isNaN(d) || isNaN(f) || isNaN(s) || isNaN(c) || d === 0) {
+      return; // Don't calculate with invalid inputs
+    }
+
+    var SpindalSpeed, FeedRate, PlungeRate, Stepdown, Stepover;
+
+    if (unit && unit.checked) {
+      // Metric mode
+      var dimp = d / 25.4;
+      var simp = s / 0.3048;
+      var cimp = c / 25.4;
+      SpindalSpeed = simp / (pi * (1/12) * dimp);
+      
+      var FeedRateimp = SpindalSpeed * f * cimp;
+      FeedRate = FeedRateimp * 25.4;
+      
+      var PlungeRateimp = FeedRateimp * (1/2);
+      PlungeRate = PlungeRateimp * 25.4;
+      
+      var Stepdownimp = (1/2) * dimp;
+      Stepdown = Stepdownimp * 25.4;
+      
+      var Stepoverimp = (9.2/20) * dimp;
+      Stepover = Stepoverimp * 25.4;
+    } else {
+      // Imperial mode
+      SpindalSpeed = s / (pi * (1/12) * d);
+      FeedRate = SpindalSpeed * f * c;
+      PlungeRate = FeedRate * (1/2);
+      Stepdown = (1/2) * d;
+      Stepover = (9.2/20) * d;
+    }
+
+    // Show output section
+    var outputVal = document.getElementById('outputval');
+    if (outputVal) outputVal.classList.remove('hidden');
+
+    // Update display spans
+    var speedDisplay = document.getElementById('speed-display');
+    var feedDisplay = document.getElementById('feed-display');
+    var plungeDisplay = document.getElementById('plunge-display');
+    var downDisplay = document.getElementById('down-display');
+    var overDisplay = document.getElementById('over-display');
+
+    if (speedDisplay) speedDisplay.textContent = parseFloat(SpindalSpeed.toFixed(0)).toLocaleString() + ' RPM';
+    if (feedDisplay) feedDisplay.textContent = parseFloat(FeedRate.toFixed(2));
+    if (plungeDisplay) plungeDisplay.textContent = parseFloat(PlungeRate.toFixed(2));
+    if (downDisplay) downDisplay.textContent = parseFloat(Stepdown.toFixed(4));
+    if (overDisplay) overDisplay.textContent = parseFloat(Stepover.toFixed(4));
+  }
+
+  function clearCalc() {
+    // Clear inputs
+    var diameter = document.getElementById('diameter');
+    var flutes = document.getElementById('flutes');
+    var surface = document.getElementById('surface');
+    var chips = document.getElementById('chips');
+    var matlib = document.getElementById('matlib');
+
+    if (diameter) diameter.value = "";
+    if (flutes) flutes.value = "1";
+    if (surface) surface.value = "";
+    if (chips) chips.value = "";
+    if (matlib) matlib.value = "Mlib";
+
+    // Hide output section
+    var outputVal = document.getElementById('outputval');
+    if (outputVal) outputVal.classList.add('hidden');
+
+    // Clear display spans
+    var speedDisplay = document.getElementById('speed-display');
+    var feedDisplay = document.getElementById('feed-display');
+    var plungeDisplay = document.getElementById('plunge-display');
+    var downDisplay = document.getElementById('down-display');
+    var overDisplay = document.getElementById('over-display');
+
+    if (speedDisplay) speedDisplay.textContent = '';
+    if (feedDisplay) feedDisplay.textContent = '';
+    if (plungeDisplay) plungeDisplay.textContent = '';
+    if (downDisplay) downDisplay.textContent = '';
+    if (overDisplay) overDisplay.textContent = '';
   }
   
   function calculate() {
@@ -96,7 +196,12 @@ function unit() {
       $("#" + row).toggle();
   }
   
-  $(document).ready(function () {
+  function initQuantitySpinners() {
+    if (typeof jQuery === 'undefined') return;
+    
+    // Only initialize if not already initialized
+    if (jQuery('.quantity .quantity-nav').length > 0) return;
+    
     jQuery('<div class="quantity-nav"><button class="quantity-button quantity-up">&#xf106;</button><button class="quantity-button quantity-down">&#xf107</button></div>').insertAfter('.quantity input');
     jQuery('.quantity').each(function () {
       var spinner = jQuery(this),
@@ -129,17 +234,24 @@ function unit() {
       });
   
     });
-  });
+  }
+  
+  // Support instant navigation for jQuery initialization
+  if (typeof document$ !== 'undefined') {
+    document$.subscribe(initQuantitySpinners);
+  } else {
+    $(document).ready(initQuantitySpinners);
+  }
 
   function matChange() {
     var mat = document.getElementById('matlib');
     var value = mat.options[mat.selectedIndex].value;
     var unit = document.getElementById('units');
-    var d = document.getElementById('diameter').value;
+    var d = parseFloat(document.getElementById('diameter').value);
 
     const cool = document.querySelector('#coolant');
 
-    if (cool.checked) {
+    if (cool && cool.checked) {
       var Acr = 500;
       var Alu = 600;
       var Ste = 200;
@@ -149,188 +261,64 @@ function unit() {
       var Ste = 50;
     }
 
-    if (d == 0.125 && unit.checked == false) {
-      var WaxC = 0.007;
-      var SWoodC = 0.005;
-      var HWoodC = 0.004;
-      var MDFC = 0.0055;
-      var OSBC = 0.005;
-      var HDPEC = 0.0045;
-      var PEEKC = 0.003;
-      var PEIC = 0.003;
-      var PVCC = 0.003;
-      var POMC = 0.003;
-      var ABSC = 0.003;
-      var PCC = 0.003;
-      var NylonC = 0.003;
-      var AcyrlicC = 0.004;
-      var CFiberC = 0.0045;
-      var AluminiumC = 0.0035;
-      var BrassC = 0.0007;
-      var CopperC = 0.0007;
-      var SteelC = 0.0006;
-      var IFoamC = 0.005;
-    }
+    // Chip load values based on diameter ranges
+    var WaxC, SWoodC, HWoodC, MDFC, OSBC, HDPEC, PEEKC, PEIC, PVCC, POMC;
+    var ABSC, PCC, NylonC, AcyrlicC, CFiberC, AluminiumC, BrassC, CopperC, SteelC, IFoamC;
 
-    if (d == 0.25 && unit.checked == false) {
-      var WaxC = 0.0125;
-      var SWoodC = 0.012;
-      var HWoodC = 0.01;
-      var MDFC = 0.0145;
-      var OSBC = 0.012;
-      var HDPEC = 0.0085;
-      var PEEKC = 0.0075;
-      var PEIC = 0.0075;
-      var PVCC = 0.0075;
-      var POMC = 0.0075;
-      var ABSC = 0.0075;
-      var PCC = 0.0075;
-      var NylonC = 0.0075;
-      var AcyrlicC = 0.009;
-      var CFiberC = 0.0105;
-      var AluminiumC = 0.006;
-      var BrassC = 0.00125;
-      var CopperC = 0.00125;
-      var SteelC = 0.0009;
-      var IFoamC = 0.012;
-    }
-
-    if (d == 0.375 && unit.checked == false) {
-      var WaxC = 0.0175;
-      var SWoodC = 0.0185;
-      var HWoodC = 0.017;
-      var MDFC = 0.0215;
-      var OSBC = 0.0185;
-      var HDPEC = 0.011;
-      var PEEKC = 0.009;
-      var PEIC = 0.009;
-      var PVCC = 0.009;
-      var POMC = 0.009;
-      var ABSC = 0.009;
-      var PCC = 0.009;
-      var NylonC = 0.009;
-      var AcyrlicC = 0.011;
-      var CFiberC = 0.017;
-      var AluminiumC = 0.007;
-      var BrassC = 0.002;
-      var CopperC = 0.002;
-      var SteelC = 0.00135;
-      var IFoamC = 0.0185;
-    }
-
-    if (d >= 0.5 && unit.checked == false) {
-      var WaxC = 0.029;
-      var SWoodC = 0.022;
-      var HWoodC = 0.02;
-      var MDFC = 0.026;
-      var OSBC = 0.022;
-      var HDPEC = 0.014;
-      var PEEKC = 0.011;
-      var PEIC = 0.011;
-      var PVCC = 0.011;
-      var POMC = 0.011;
-      var ABSC = 0.011;
-      var PCC = 0.011;
-      var NylonC = 0.011;
-      var AcyrlicC = 0.0135;
-      var CFiberC = 0.022;
-      var AluminiumC = 0.009;
-      var BrassC = 0.0035;
-      var CopperC = 0.0035;
-      var SteelC = 0.002;
-      var IFoamC = 0.022;
-    }
-
-    if (d == 3.175 && unit.checked == true) {
-      var WaxC = 0.17653;
-      var SWoodC = 0.127;
-      var HWoodC = 0.1016;
-      var MDFC = 0.1905;
-      var OSBC = 0.127;
-      var HDPEC = 0.1143;
-      var PEEKC = 0.0762;
-      var PEIC = 0.0762;
-      var PVCC = 0.0762;
-      var POMC = 0.0762;
-      var ABSC = 0.0762;
-      var PCC = 0.0762;
-      var NylonC = 0.0762;
-      var AcyrlicC = 0.1016;
-      var CFiberC = 0.1143;
-      var AluminiumC = 0.0889;
-      var BrassC = 0.01778;
-      var CopperC = 0.01778;
-      var SteelC = 0.01524;
-      var IFoamC = 0.127;
-    }
-
-    if (d == 6.35 && unit.checked == true) {
-      var WaxC = 0.3175;
-      var SWoodC = 0.3048;
-      var HWoodC = 0.254;
-      var MDFC = 0.3683;
-      var OSBC = 0.3048;
-      var HDPEC = 0.2159;
-      var PEEKC = 0.1905;
-      var PEIC = 0.1905;
-      var PVCC = 0.1905;
-      var POMC = 0.1905;
-      var ABSC = 0.1905;
-      var PCC = 0.1905;
-      var NylonC = 0.1905;
-      var AcyrlicC = 0.2286;
-      var CFiberC = 0.2667;
-      var AluminiumC = 0.1524;
-      var BrassC = 0.03175;
-      var CopperC = 0.03175;
-      var SteelC = 0.02286;
-      var IFoamC =0.3048;
-    }
-
-    if (d == 9.525 && unit.checked == true) {
-      var WaxC = 0.4445;
-      var SWoodC = 0.4699;
-      var HWoodC = 0.4318;
-      var MDFC = 0.5461;
-      var OSBC = 0.4699;
-      var HDPEC = 0.2794;
-      var PEEKC = 0.2286;
-      var PEIC = 0.2286;
-      var PVCC = 0.2286;
-      var POMC = 0.2286;
-      var ABSC = 0.2286;
-      var PCC = 0.2286;
-      var NylonC = 0.2286;
-      var AcyrlicC = 0.2794;
-      var CFiberC = 0.4318;
-      var AluminiumC = 0.1178;
-      var BrassC = 0.04445;
-      var CopperC = 0.04445;
-      var SteelC = 0.03429;
-      var IFoamC = 0.4699;
-    }
-
-    if (d >= 12.7 && unit.checked == true) {
-      var WaxC = 0.7366;
-      var SWoodC = 0.5588;
-      var HWoodC = 0.508;
-      var MDFC = 0.6604;
-      var OSBC = 0.5588;
-      var HDPEC = 0.2794;
-      var PEEKC = 0.2286;
-      var PEIC = 0.2286;
-      var PVCC = 0.2286;
-      var POMC = 0.2286;
-      var ABSC = 0.2286;
-      var PCC = 0.2286;
-      var NylonC = 0.2286;
-      var AcyrlicC = 0.3429;
-      var CFiberC = 0.6096;
-      var AluminiumC = 0.2286;
-      var BrassC = 0.0889;
-      var CopperC = 0.0889;
-      var SteelC = 0.0508;
-      var IFoamC = 0.5588;
+    // Imperial mode - use ranges instead of exact values
+    if (!unit || !unit.checked) {
+      if (d > 0 && d < 0.1875) {
+        // 1/8" and smaller
+        WaxC = 0.007; SWoodC = 0.005; HWoodC = 0.004; MDFC = 0.0055; OSBC = 0.005;
+        HDPEC = 0.0045; PEEKC = 0.003; PEIC = 0.003; PVCC = 0.003; POMC = 0.003;
+        ABSC = 0.003; PCC = 0.003; NylonC = 0.003; AcyrlicC = 0.004; CFiberC = 0.0045;
+        AluminiumC = 0.0035; BrassC = 0.0007; CopperC = 0.0007; SteelC = 0.0006; IFoamC = 0.005;
+      } else if (d >= 0.1875 && d < 0.3125) {
+        // 1/4" range (0.1875 to 0.3125)
+        WaxC = 0.0125; SWoodC = 0.012; HWoodC = 0.01; MDFC = 0.0145; OSBC = 0.012;
+        HDPEC = 0.0085; PEEKC = 0.0075; PEIC = 0.0075; PVCC = 0.0075; POMC = 0.0075;
+        ABSC = 0.0075; PCC = 0.0075; NylonC = 0.0075; AcyrlicC = 0.009; CFiberC = 0.0105;
+        AluminiumC = 0.006; BrassC = 0.00125; CopperC = 0.00125; SteelC = 0.0009; IFoamC = 0.012;
+      } else if (d >= 0.3125 && d < 0.4375) {
+        // 3/8" range (0.3125 to 0.4375)
+        WaxC = 0.0175; SWoodC = 0.0185; HWoodC = 0.017; MDFC = 0.0215; OSBC = 0.0185;
+        HDPEC = 0.011; PEEKC = 0.009; PEIC = 0.009; PVCC = 0.009; POMC = 0.009;
+        ABSC = 0.009; PCC = 0.009; NylonC = 0.009; AcyrlicC = 0.011; CFiberC = 0.017;
+        AluminiumC = 0.007; BrassC = 0.002; CopperC = 0.002; SteelC = 0.00135; IFoamC = 0.0185;
+      } else if (d >= 0.4375) {
+        // 1/2" and larger
+        WaxC = 0.029; SWoodC = 0.022; HWoodC = 0.02; MDFC = 0.026; OSBC = 0.022;
+        HDPEC = 0.014; PEEKC = 0.011; PEIC = 0.011; PVCC = 0.011; POMC = 0.011;
+        ABSC = 0.011; PCC = 0.011; NylonC = 0.011; AcyrlicC = 0.0135; CFiberC = 0.022;
+        AluminiumC = 0.009; BrassC = 0.0035; CopperC = 0.0035; SteelC = 0.002; IFoamC = 0.022;
+      }
+    } else {
+      // Metric mode - use ranges
+      if (d > 0 && d < 4.76) {
+        // 3.175mm and smaller
+        WaxC = 0.17653; SWoodC = 0.127; HWoodC = 0.1016; MDFC = 0.1905; OSBC = 0.127;
+        HDPEC = 0.1143; PEEKC = 0.0762; PEIC = 0.0762; PVCC = 0.0762; POMC = 0.0762;
+        ABSC = 0.0762; PCC = 0.0762; NylonC = 0.0762; AcyrlicC = 0.1016; CFiberC = 0.1143;
+        AluminiumC = 0.0889; BrassC = 0.01778; CopperC = 0.01778; SteelC = 0.01524; IFoamC = 0.127;
+      } else if (d >= 4.76 && d < 7.94) {
+        // 6.35mm range
+        WaxC = 0.3175; SWoodC = 0.3048; HWoodC = 0.254; MDFC = 0.3683; OSBC = 0.3048;
+        HDPEC = 0.2159; PEEKC = 0.1905; PEIC = 0.1905; PVCC = 0.1905; POMC = 0.1905;
+        ABSC = 0.1905; PCC = 0.1905; NylonC = 0.1905; AcyrlicC = 0.2286; CFiberC = 0.2667;
+        AluminiumC = 0.1524; BrassC = 0.03175; CopperC = 0.03175; SteelC = 0.02286; IFoamC = 0.3048;
+      } else if (d >= 7.94 && d < 11.11) {
+        // 9.525mm range
+        WaxC = 0.4445; SWoodC = 0.4699; HWoodC = 0.4318; MDFC = 0.5461; OSBC = 0.4699;
+        HDPEC = 0.2794; PEEKC = 0.2286; PEIC = 0.2286; PVCC = 0.2286; POMC = 0.2286;
+        ABSC = 0.2286; PCC = 0.2286; NylonC = 0.2286; AcyrlicC = 0.2794; CFiberC = 0.4318;
+        AluminiumC = 0.1178; BrassC = 0.04445; CopperC = 0.04445; SteelC = 0.03429; IFoamC = 0.4699;
+      } else if (d >= 11.11) {
+        // 12.7mm and larger
+        WaxC = 0.7366; SWoodC = 0.5588; HWoodC = 0.508; MDFC = 0.6604; OSBC = 0.5588;
+        HDPEC = 0.2794; PEEKC = 0.2286; PEIC = 0.2286; PVCC = 0.2286; POMC = 0.2286;
+        ABSC = 0.2286; PCC = 0.2286; NylonC = 0.2286; AcyrlicC = 0.3429; CFiberC = 0.6096;
+        AluminiumC = 0.2286; BrassC = 0.0889; CopperC = 0.0889; SteelC = 0.0508; IFoamC = 0.5588;
+      }
     }
 
     if (value == "Mlib") {

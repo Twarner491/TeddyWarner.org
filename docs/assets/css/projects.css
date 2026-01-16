@@ -441,6 +441,11 @@
   margin-bottom: 0.5em;
   font-size: 0.9em;
   flex-shrink: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .writparent .writeyear {
@@ -728,6 +733,7 @@
     left: 0;
     width: 100%;
     margin-bottom: 0.5em;
+    -webkit-line-clamp: 2;
   }
   .content6 {
     top: calc(var(--content1-height) + 16em + 20px);

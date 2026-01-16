@@ -1,104 +1,15 @@
 ---
 title: Lithophane Experiments
 description: A gallery of lithophanes.
+keywords: Lithophane, 3D Printing, Photography, Art, 3dp.rocks, Image processing, Light art, Custom prints, Photo printing, 3D art, DIY lithophanes
+thumbnail: /assets/images/LithophaneExperiments/hero.png
+readtime: "1-2 minutes"
+date: 2019-01-01
+date_modified: 2022-12-31
 hide:
   - navigation
   - tags
 template: comments.html
----
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Lithophane Experiments - Teddy Warner">
-  <meta name="description" content="Explore a captivating gallery of lithophanes, showcasing unique 3D printed art pieces created with innovative techniques and tools for stunning light effects.">
-  <meta name="keywords" content="Lithophane, 3D Printing, Photography, Art, 3dp.rocks, Image processing, Light art, Custom prints, Photo printing, 3D art, DIY lithophanes">
-  <meta name="author" content="Teddy Warner">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/Projects/LithophaneExperiments/">
-  <meta property="og:title" content="Lithophane Experiments - Teddy Warner">
-  <meta property="og:description" content="A gallery of lithophanes.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/LithophaneExperiments/hero.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/Projects/LithophaneExperiments/">
-  <meta property="twitter:title" content="Lithophane Experiments - Teddy Warner">
-  <meta property="twitter:description" content="A gallery of lithophanes.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/LithophaneExperiments/hero.png">
-
-  <!-- Existing resource links -->
-  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/projects/project.css">
-  <link rel="stylesheet" href="../../assets/css/header.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Lithophane Experiments",
-    "description": "A gallery of lithophanes.",
-    "image": "https://teddywarner.org/assets/images/LithophaneExperiments/hero.png",
-    "author": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "publisher": {
-      "@id": "https://teddywarner.org/#person"
-    },
-    "datePublished": "2019-01-01T00:00:00Z",
-    "dateModified": "2022-12-31T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teddywarner.org/Projects/LithophaneExperiments/"
-    }
-  }
-  </script>
-</head>
-
-  <nav class="main-navigation">
-    <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writ/"><span class="navnum">03</span> Writing</a></li>
-    </ul>
-  </nav>
-  
-  <div class="blur-overlay"></div>
-
-<script src="../../assets/js/header.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initializeHeader();
-  });
-</script>
-  
-<div class="return2feed"><a href="https://teddywarner.org/proj"><i class="fa-solid fa-arrow-left-long"></i> Project Feed</a></div>
-
-# Lithophane Experiments
-
-<div style="margin-top: -0.8em;">
-  <span class="abtlinks"><a href="https://x.com/WarnerTeddy"><img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic"><span class="abt" id="name"> Teddy Warner</a><span class="abt" style="font-weight: 300; padding-left: 6px;"><span class="year">| 2019-2022 </span>| <span class="readTime"><i class="far fa-clock"></i> 1-2 minutes</span></span></span></span>
-  <span class="share" style=" color: inherit;">
-  <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fa-brands fa-facebook"></i></a>
-  <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://teddywarner.org/Projects/LithophaneExperiments/&text=Check%20Out%20this%20compilation%20of%20Litophanes%20on"><i class="fa-brands fa-x-twitter"></i></a>
-  <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://teddywarner.org/Projects/LithophaneExperiments/&media=&description=Check%20Out%20this%20compilation%20of%20Litophanes%20on%20https://teddywarner.org/Projects/LithophaneExperiments/%20!"><i class="fa-brands fa-pinterest"></i></i></a>
-  <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fab fa-linkedin"></i></i></a>
-  <a class="email" title="Share via Email" href="mailto:info@example.com?&subject=&cc=&bcc=&body=Check%20Out%20this%20compilation%20of%20Litophanes%20on%20https://teddywarner.org/Projects/LithophaneExperiments/"><i class="fa-solid fa-paper-plane"></i></i></i></a>
-  </span>
-</div>
-
 ---
 
 A Lithophane is a piece of art made out of a thin translucent material designed to show an image in a "grisaille" color format when held up to light.[^1] 3D printers can be utilized to create some nice-looking lithophanes, a practice made easy with *3dp.rocks* lithophane generator, linked below. Due to their easy creation, I find lithophanes to be a nice medium to test slicer changes with, allowing for your time to be spent with the slicer settings, and not the file prep. 
