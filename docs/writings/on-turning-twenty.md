@@ -75,7 +75,7 @@ Spontaneous should be fostered (to the highest extent that it can be). Hands dow
 
 You're in a perpetual rivalry between what you imagine you can do and what you can achieve. 
 
-Why not imagine the best possible version of yourself? As I wrote in [The Emotion/Feeling Discontinuity](https://teddywarner.org/writings/efd/):
+Why not imagine the best possible version of yourself? As I wrote in [The Emotion/Feeling Discontinuity](https://theodore.net/writings/efd/):
 
  > To foster confidence, one may take advantage of the Emotion/Feeling Discontinuity. Emotions precede decision-making. Humans feel first and think second. Given emotions are objective physiological responses, the independent variable in confidence, the 'weight' for you to adjust, is your interpretation of emotion: your feelings.
 

@@ -24,20 +24,20 @@ search:
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/">
+  <meta property="og:url" content="https://theodore.net/">
   <meta property="og:title" content="Teddy Warner">
   <meta property="og:description" content="i make machines. // @WarnerTeddy">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="og:image" content="https://theodore.net/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/">
+  <meta property="twitter:url" content="https://theodore.net/">
   <meta property="twitter:title" content="Teddy Warner">
   <meta property="twitter:description" content="i make machines. // @WarnerTeddy">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://theodore.net/assets/images/thumb.png">
 
   <!-- Preconnect to external domains for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,11 +66,11 @@ search:
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://teddywarner.org/#person",
+    "@id": "https://theodore.net/#person",
     "name": "Teddy Warner",
     "alternateName": "Theodore Warner",
-    "url": "https://teddywarner.org",
-    "image": "https://teddywarner.org/assets/images/thumb.png",
+    "url": "https://theodore.net",
+    "image": "https://theodore.net/assets/images/thumb.png",
     "description": "Founder of Intempus. Thiel Fellow.",
     "jobTitle": "Chief Executive Officer",
     "worksFor": {
@@ -92,9 +92,9 @@ search:
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/projects/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writings/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="/"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="/projects"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="/writings"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
   
@@ -141,7 +141,7 @@ search:
                             <rect x="141.5" y="143.5" width="223" height="48" rx="24" stroke="var(--md-default-fg-color--lighter)" />
                             <text x="253" y="175" fill="var(--md-default-fg-color--light)" text-anchor="middle" font-family="Crimson Pro" font-size="23" font-style="normal" font-weight="300" line-height="109.588%">Some stuff I've done</text>
                         </g>
-                        <a href="https://teddywarner.org/Projects/AssistiveAquaponics/" aria-label="Assistive Aquaponics Project">
+                        <a href="https://theodore.net/Projects/AssistiveAquaponics/" aria-label="Assistive Aquaponics Project">
                             <g id="image-card-1" class="project">
                                 <rect x="1057" y="299" width="240" height="405" rx="120" fill="var(--md-default-fg-color--lightest)" />
                                 <rect x="1057.5" y="299.5" width="239" height="404" rx="119.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -159,7 +159,7 @@ search:
                              <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                          </g>
                        </a>
-                        <a href="https://teddywarner.org/books/#recent" aria-label="My Bookshelf">
+                        <a href="https://theodore.net/books/#recent" aria-label="My Bookshelf">
                           <g id="reading-card" class="project">
                               <rect x="796.5" y="616" width="242" height="288" rx="27" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                               <g clip-path="url(#clip0_107_71)">
@@ -187,14 +187,14 @@ search:
                                 <rect x="143.5" y="212.5" width="466" height="287" rx="24.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
-                        <a href="https://teddywarner.org/writings" aria-label="My Writings">
+                        <a href="https://theodore.net/writings" aria-label="My Writings">
                             <g id="image-card-3" class="project">
                                 <path d="M848.04 107H818.96H652.485C644.615 107 640.679 107 637.673 108.503C635.029 109.825 632.879 111.935 631.532 114.53C630 117.48 630 121.342 630 129.066V477.986C630 485.71 630 489.572 631.532 492.522C632.879 495.117 635.029 497.227 637.673 498.549C640.679 500.052 644.615 500.052 652.485 500.052H750.262H760.035C780.16 500.052 796.475 516.367 796.475 536.493V572.934C796.475 580.658 796.475 584.52 798.007 587.47C799.354 590.065 801.504 592.175 804.149 593.497C807.155 595 811.09 595 818.96 595H818.96H1014.52H1014.52C1022.39 595 1026.32 595 1029.33 593.497C1031.97 592.175 1034.12 590.065 1035.47 587.47C1037 584.52 1037 580.658 1037 572.934V129.066V129.066C1037 121.342 1037 117.48 1035.47 114.53C1034.12 111.935 1031.97 109.825 1029.33 108.503C1026.32 107 1022.39 107 1014.52 107H848.04Z" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                                 <image x="638" y="107" width="390" height="488" clip-path="url(#clipImageTone)" preserveAspectRatio="xMidYMid slice" alt="Writings" loading="eager" fetchpriority="high" href="/assets/images/index/flowers.jpg" />
                                 <path d="M847.468 115H819.532H658.601H649.2C645.28 115 643.319 115 641.822 115.763C640.505 116.434 639.434 117.505 638.763 118.822C638 120.319 638 122.28 638 126.2V135.343V470.823V480.8C638 484.72 638 486.681 638.763 488.178C639.434 489.495 640.505 490.566 641.822 491.237C643.319 492 645.28 492.165 649.2 492.165H659.601H749.535H759.685C760.842 492.165 761.42 492.165 761.909 492.176C784.891 492.699 803.397 511.205 803.92 534.187C803.931 534.676 803.931 535.254 803.931 536.411V565.657V575.731C803.931 579.651 804 581.681 804.763 583.178C805.434 584.495 806.505 585.566 807.822 586.237C809.319 587 811.28 587 815.2 587L825.463 586.931L1007.4 587H1017.8C1021.72 587 1023.68 587 1025.18 586.237C1026.5 585.566 1027.57 584.495 1028.24 583.178C1029 581.681 1029 579.72 1029 575.8V565.657V136.343V126.2C1029 122.28 1029 120.319 1028.24 118.822C1027.57 117.505 1026.5 116.434 1025.18 115.763C1023.68 115 1021.72 115 1017.8 115H1007.4H847.468Z" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
-                        <a class="circleLink" href="https://teddywarner.org/projects">
+                        <a class="circleLink" href="https://theodore.net/projects">
                             <g class="circleGroup" id="circleGroup">
                                 <circle class="abtbtn" stroke="none" fill="var(--md-default-bg-color)" cx="1137" cy="797" r="50" onmouseenter="leftrevoff()" onmouseleave="leftrevon()" />
                                 <path id="circlePath" d="M 1137 797 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="none" />
@@ -215,11 +215,11 @@ search:
         <h2>About</h2>
         <p class="abt1">I'm an engineer specialized in rapid prototyping and applied AI. I'm currently based in SF, building <a target="_blank" href="https://intempus.org">emotionally intellegent robots</a>.</p>
         <p class="abt2">I'm a <a target="_blank" style="text-decoration: none;" href="https://thielfellowship.org/">Thiel Fellow</a> and a graduate of the <a target="_blank" style="text-decoration: none;" href="https://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy</a>. I previously worked at <a target="_blank" style="text-decoration: none;" href="https://www.midjourney.com/home">Midjourney</a> where I did research for the internal hardware effort.</p>
-        <p class="abt3">This site holds my <a href="https://teddywarner.org/projects">work</a> and <a href="https://teddywarner.org/writings">writings</a>.<span class="mobileyear"></br></br></span> Reach out at <a target="_blank" href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a  style="text-decoration: none;" href="mailto:teddy@warner.net">teddy [at] warner [dot] net</a>.</p>
+        <p class="abt3">This site holds my <a href="https://theodore.net/projects">work</a> and <a href="https://theodore.net/writings">writings</a>.<span class="mobileyear"></br></br></span> Reach out at <a target="_blank" href="https://x.com/WarnerTeddy">@WarnerTeddy</a> or at <a  style="text-decoration: none;" href="mailto:teddy@warner.net">teddy [at] warner [dot] net</a>.</p>
     </section>
     <section class="projects">
       <div class="content5">
-        <a href="https://teddywarner.org/projects"><h2>Projects <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
+        <a href="https://theodore.net/projects"><h2>Projects <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
         <div class="grid-container">
 <!-- PROJECTS_GRID_6 -->
         </div>
@@ -227,7 +227,7 @@ search:
     </section>
     <section class="writing">
       <div class="content6" id="content6">
-        <a href="https://teddywarner.org/writings"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
+        <a href="https://theodore.net/writings"><h2>Writing <i class="fa-solid fa-arrow-right" style="float: right;"></i></h2></a>
 <!-- WRITINGS_LIST_3 -->
       </div>
     </section>
@@ -253,7 +253,7 @@ search:
             <i class="fa-solid fa-paper-plane"></i>
           </a>
         </div>
-        <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+        <a target="_blank" href="https://github.com/Twarner491/theodore.net/blob/main/LICENSE">
           <p class="copyright">Copyright © 2026 Teddy Warner</p>
         </a>
     </section>

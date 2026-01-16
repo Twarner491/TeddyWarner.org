@@ -1,15 +1,15 @@
 site_name: Teddy Warner
 site_author: Teddy Warner
 site_description: >-
-    causa sui. // @WarnerTeddy
+    i make machines. // @WarnerTeddy
 
-site_url: https://teddywarner.org/
+site_url: https://theodore.net/
 
-repo_url: https://github.com/Twarner491/TeddyWarner.org
-repo_name: Twarner491/TeddyWarner.org
+repo_url: https://github.com/Twarner491/theodore.net
+repo_name: Twarner491/theodore.net
 
 copyright: >
-  Copyright &copy; 2025 Teddy Warner
+  Copyright &copy; 2026 Teddy Warner
 
 extra:
   analytics:
@@ -81,7 +81,7 @@ plugins:
       json_feed_enabled: false
       use_material_social_cards: false
       feed_ttl: 1440
-      image: https://teddywarner.org/assets/images/favicon.gif
+      image: https://theodore.net/assets/images/favicon.gif
       abstract_chars_count: 200
       pretty_print: true
       length: 100
@@ -150,6 +150,6 @@ extra_javascript:
   - assets/js/index.js
 
 nav:
-  - Home : https://teddywarner.org
-  - Projects:  https://teddywarner.org/projects/
-  - Writings:  https://teddywarner.org/writings/
+  - Home : https://theodore.net
+  - Projects:  https://theodore.net/projects/
+  - Writings:  https://theodore.net/writings/

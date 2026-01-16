@@ -43,7 +43,7 @@ This article attempts to serve as a complete guide for CNC milling, covering mac
 
 !!! example "Milling Micro-Projects"
 
-    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://teddywarner.org/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](https://teddywarner.org/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator](https://teddywarner.org/Projects/MillingWorflow/#feeds-speeds-calculator). That being said, be sure to stay tuned for future updates!
+    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://theodore.net/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](https://theodore.net/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator](https://theodore.net/Projects/MillingWorflow/#feeds-speeds-calculator). That being said, be sure to stay tuned for future updates!
 
 ## Feeds & Speeds
 
@@ -251,7 +251,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row1" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/wax.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/wax.png">
 			</td>
       <td>
         <ul>
@@ -279,7 +279,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row20" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/softwood.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/softwood.png">
 			</td>
       <td>
         <ul>
@@ -304,7 +304,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row2" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/wood.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/wood.png">
 			</td>
       <td>
         <ul>
@@ -328,7 +328,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row3" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/mdf.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/mdf.png">
 			</td>
       <td>
         <p>⚠️ <b>Strong Dust Collection Required</b>, as the fused nature of the material creates extremely fine dust.</p>
@@ -371,7 +371,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/obs.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/obs.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row5');">
@@ -380,7 +380,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row5" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/hdpe.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/hdpe.png">
 			</td>
       <td>
         <ul>
@@ -427,7 +427,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/peek.png" align="left">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/peek.png" align="left">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row7');">
@@ -452,7 +452,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pei.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/pei.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row8');">
@@ -461,7 +461,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row8" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pvc.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/pvc.png">
 			</td>
       <td>
         <ul>
@@ -487,7 +487,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row9" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pom.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/pom.png">
 			</td>
       <td>
         <ul>
@@ -513,7 +513,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row10" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/abs.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/abs.png">
 			</td>
       <td>
         <ul>
@@ -556,7 +556,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/pc.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/pc.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row12');">
@@ -565,7 +565,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row12" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/nylon.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/nylon.png">
 			</td>
       <td>
         <ul>
@@ -591,7 +591,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row13" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/acrylic.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/acrylic.png">
 			</td>
       <td>
       <p>⚠️ Acrylic is prone to stress cracks & fractures during milling & post-processing.</p>
@@ -633,7 +633,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/cf.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/cf.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row14');">
@@ -642,7 +642,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row14" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/aluminum.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/aluminum.png">
 			</td>
       <td>
         <ul>
@@ -685,7 +685,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/brass.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/brass.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row16');">
@@ -694,7 +694,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row16" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/copper.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/copper.png">
 			</td>
       <td>
         <ul>
@@ -735,7 +735,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
           </p>
 			</td>
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/steel.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/steel.png">
 			</td>
 		</tr>
     <tr class="tablehover" onclick="showHideRow('hidden_row18');">
@@ -744,7 +744,7 @@ Feeds and speeds are equally dependent on material properties and the specific o
     </tr>
     <tr id="hidden_row18" style="display: none;">
 			<td>
-        <img width="200px" src="https://teddywarner.org/assets/images/MillingWorkflow/materials/foam.png">
+        <img width="200px" src="https://theodore.net/assets/images/MillingWorkflow/materials/foam.png">
 			</td>
       <td>
         <ul>

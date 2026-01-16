@@ -87,7 +87,7 @@ sudo apt-get upgrade
 </figure>
 
 
-Upon connection, the webserver will throw an error with a lack of a *printer.cfg* file. This file is your machine config file. Notably different from Marlin, Klipper does not require a machine to be specified before the flash but instead looks to this *printer.cfg* file for machine configuration. One of the benefits of using [FluiddPi](https://github.com/cadriel/FluiddPI) for Klipper is the ability to alter this *printer.cfg* file and reboot the firmware right from the server's GUI. The machine configuration for my Klipper Enabled Ender 3 is covered later on this page under the [Klipper Configuration](https://teddywarner.org/Projects/KlipperEnder3/#klipper-configuration) section, but for any other machines, preconfigured *printer.cfg* files can be found online.
+Upon connection, the webserver will throw an error with a lack of a *printer.cfg* file. This file is your machine config file. Notably different from Marlin, Klipper does not require a machine to be specified before the flash but instead looks to this *printer.cfg* file for machine configuration. One of the benefits of using [FluiddPi](https://github.com/cadriel/FluiddPI) for Klipper is the ability to alter this *printer.cfg* file and reboot the firmware right from the server's GUI. The machine configuration for my Klipper Enabled Ender 3 is covered later on this page under the [Klipper Configuration](https://theodore.net/Projects/KlipperEnder3/#klipper-configuration) section, but for any other machines, preconfigured *printer.cfg* files can be found online.
 
 Next up, building Klipper to for machines mainboard. SSH back into your Raspberry Pi (making sure to change your IP to match your altered hostname if you changed it) and run the commands ...
 
@@ -490,7 +490,7 @@ Check out my Klipper Enabled Ender 3 machine profile page, linked below, for inf
 </figure>
 
 [^1]: http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/Assignments/week02/
-[^2]: https://teddywarner.org/Projects/Octoprint/
+[^2]: https://theodore.net/Projects/Octoprint/
 
 *[FDM]: Fused Deposition Modeling
 *[CNC]: Computerized Numerical Control

@@ -36,8 +36,8 @@ This distinction may be distilled into objective (emotion) and subjective (feeli
 There are three integral conditions needed to alter your mental weight and mold the worldview you desire:
 
 1. Autonomy - your abilities.
-2. [Belonging](https://teddywarner.org/writings/otherness-and-belonging) - your interpersonal connections.
-3. [Confidence](https://teddywarner.org/writings/downforce) - your self-belief.
+2. [Belonging](https://theodore.net/writings/otherness-and-belonging) - your interpersonal connections.
+3. [Confidence](https://theodore.net/writings/downforce) - your self-belief.
 
 The first two conditions are solved problems. Build autonomy by studying and creating. Build belonging by genuinely putting yourself out there and devoting time to fostering your connections.
 

@@ -9,8 +9,8 @@
 {% set page_date = page.meta.date | default("") %}
 {% set page_date_display = page.meta.date_display | default("") %}
 {% set page_type = "writings" if "writings" in page.url else "Projects" %}
-{% set page_full_url = "https://teddywarner.org" ~ page.url %}
-{% set page_full_thumbnail = "https://teddywarner.org" ~ page_thumbnail %}
+{% set page_full_url = "https://theodore.net" ~ page.url %}
+{% set page_full_thumbnail = "https://theodore.net" ~ page_thumbnail %}
 
 {% block extrahead %}
   <!-- Primary Meta Tags -->
@@ -61,10 +61,10 @@
     "description": "{{ page_description }}",
     "image": "{{ page_full_thumbnail }}",
     "author": {
-      "@id": "https://teddywarner.org/#person"
+      "@id": "https://theodore.net/#person"
     },
     "publisher": {
-      "@id": "https://teddywarner.org/#person"
+      "@id": "https://theodore.net/#person"
     },
     "datePublished": "{{ page.meta.datePublished | default('2025-01-01T00:00:00Z') }}",
     "dateModified": "{{ page.meta.dateModified | default(page.meta.datePublished) | default('2025-01-01T00:00:00Z') }}",
@@ -86,7 +86,7 @@
   >
 
   <a
-  href="https://teddywarner.com/"
+  href="/"
   title="{{ config.site_name | e }}"
   class="md-header__rectangle"
   aria-label="{{ config.site_name }}"
@@ -190,9 +190,9 @@
   <!-- Navigation Menu -->
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/projects/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writings/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="/"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="/projects"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="/writings"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
   
@@ -208,9 +208,9 @@
 
   <!-- Return to feed link -->
   {% if page_type == "writings" %}
-  <div class="return2feed"><a href="https://teddywarner.org/writings"><i class="fa-solid fa-arrow-left-long"></i> Writing Feed</a></div>
+  <div class="return2feed"><a href="https://theodore.net/writings"><i class="fa-solid fa-arrow-left-long"></i> Writing Feed</a></div>
   {% else %}
-  <div class="return2feed"><a href="https://teddywarner.org/projects"><i class="fa-solid fa-arrow-left-long"></i> Projects Feed</a></div>
+  <div class="return2feed"><a href="https://theodore.net/projects"><i class="fa-solid fa-arrow-left-long"></i> Projects Feed</a></div>
   {% endif %}
 
   <!-- Article Header with Author Info and Share Buttons -->
@@ -269,7 +269,7 @@
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <script src="https://giscus.app/client.js"
   data-cfasync="false"
-  data-repo="Twarner491/TeddyWarner.org"
+  data-repo="Twarner491/theodore.net"
   data-repo-id="MDEwOlJlcG9zaXRvcnkzNzgyODU0MTk="
   data-category="General"
   data-category-id="DIC_kwDOFowta84CA5IA"
@@ -332,7 +332,7 @@
       </a>
     </div>
   </div>
-    <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+    <a target="_blank" href="https://github.com/Twarner491/theodore.net/blob/main/LICENSE">
       <p class="copyright">Copyright © {{ current_year }} Teddy Warner</p>
     </a>
 </section>

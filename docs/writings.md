@@ -21,20 +21,20 @@ search:
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/writings/">
+  <meta property="og:url" content="https://theodore.net/writings/">
   <meta property="og:title" content="Writings - Teddy Warner">
   <meta property="og:description" content="A conglomerate of my thoughts and essays.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="og:image" content="https://theodore.net/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/writings/">
+  <meta property="twitter:url" content="https://theodore.net/writings/">
   <meta property="twitter:title" content="Writings - Teddy Warner">
   <meta property="twitter:description" content="A conglomerate of my thoughts and essays.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://theodore.net/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -51,10 +51,10 @@ search:
     "@type": "CollectionPage",
     "name": "Writings - Teddy Warner",
     "description": "A conglomerate of my thoughts and essays.",
-    "url": "https://teddywarner.org/writings/",
+    "url": "https://theodore.net/writings/",
     "author": {
       "@type": "Person",
-      "@id": "https://teddywarner.org/#person"
+      "@id": "https://theodore.net/#person"
     }
   }
   </script>
@@ -62,9 +62,9 @@ search:
 
   <nav class="main-navigation">
     <ul>
-      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="https://teddywarner.com/projects/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="writ" href="https://teddywarner.com/writings/"><span class="navnum">03</span> Writing</a></li>
+      <li><a class="home" href="/"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="/projects"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="/writings"><span class="navnum">03</span> Writing</a></li>
     </ul>
   </nav>
   
@@ -103,7 +103,7 @@ search:
             <i class="fa-solid fa-paper-plane"></i>
           </a>
         </div>
-        <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+        <a target="_blank" href="https://github.com/Twarner491/theodore.net/blob/main/LICENSE">
           <p class="copyright">Copyright © 2026 Teddy Warner</p>
         </a>
     </section>

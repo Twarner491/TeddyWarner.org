@@ -18,7 +18,7 @@ I moved into a new apartment a few months ago. It's got a pretty bangin' kitchen
 
 I've always loved cooking. I'm roughly two-thirds certain that the dexterity developed in the kitchen catalyzes hardware development and vice versa (most of the best machinists I've met are great cooks). So, seemingly working on your chef skills is a productive means of improving your work (if in the kitchen) and, additionally, you get some tasty rewards for doing so, win-win!
 
-Whether people admit it or not, I'm certain everyone has some objective downtime (no matter how brief) throughout their day. Presumably, people spend this on their phones? or through some unproductive leisure (see [Learning to Juggle](https://teddywarner.org/writings/juggling/))? I actually feel somewhat naive about what people do all day. Regardless, there's some downtime, and one of the most delightful ways to spend these brief segments of leisure is cooking! 
+Whether people admit it or not, I'm certain everyone has some objective downtime (no matter how brief) throughout their day. Presumably, people spend this on their phones? or through some unproductive leisure (see [Learning to Juggle](https://theodore.net/writings/juggling/))? I actually feel somewhat naive about what people do all day. Regardless, there's some downtime, and one of the most delightful ways to spend these brief segments of leisure is cooking! 
 
 By pivoting into kitchen tasks with your downtime, you can take on some pretty in-depth meals, namely because you can afford to prep "all day". I wake up in the mornings and often prep for dinner a bit. Get back from the office and prep a bit more. Get back from the gym and Boom! It takes me all of 15 minutes to finish cooking. Pretty awesome.
 

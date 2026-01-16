@@ -21,20 +21,20 @@ search:
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://teddywarner.org/books/">
+  <meta property="og:url" content="https://theodore.net/books/">
   <meta property="og:title" content="Bookshelf - Teddy Warner">
   <meta property="og:description" content="Some reads that I find worthy of thought.">
-  <meta property="og:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="og:image" content="https://theodore.net/assets/images/thumb.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://teddywarner.org/books/">
+  <meta property="twitter:url" content="https://theodore.net/books/">
   <meta property="twitter:title" content="Bookshelf - Teddy Warner">
   <meta property="twitter:description" content="Some reads that I find worthy of thought.">
-  <meta property="twitter:image" content="https://teddywarner.org/assets/images/thumb.png">
+  <meta property="twitter:image" content="https://theodore.net/assets/images/thumb.png">
 
   <!-- Existing resource links -->
   <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
@@ -51,10 +51,10 @@ search:
     "@type": "CollectionPage",
     "name": "Bookshelf - Teddy Warner",
     "description": "Some reads that I find worthy of thought.",
-    "url": "https://teddywarner.org/books/",
+    "url": "https://theodore.net/books/",
     "author": {
       "@type": "Person",
-      "@id": "https://teddywarner.org/#person"
+      "@id": "https://theodore.net/#person"
     }
   }
   </script>
@@ -1272,7 +1272,7 @@ search:
             <i class="fa-solid fa-paper-plane"></i>
           </a>
         </div>
-        <a target="_blank" href="https://github.com/Twarner491/TeddyWarner.org/blob/main/LICENSE">
+        <a target="_blank" href="https://github.com/Twarner491/theodore.net/blob/main/LICENSE">
           <p class="copyright">Copyright © 2026 Teddy Warner</p>
         </a>
     </section>

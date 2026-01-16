@@ -120,8 +120,8 @@ def _scan_folder(docs_dir, folder_name):
             if not thumbnail and json_ld.get('image'):
                 # Convert absolute URL to relative path
                 img_url = json_ld.get('image', '')
-                if img_url.startswith('https://teddywarner.org'):
-                    thumbnail = img_url.replace('https://teddywarner.org', '')
+                if img_url.startswith('https://theodore.net'):
+                    thumbnail = img_url.replace('https://theodore.net', '')
             
             # Get date from frontmatter (YAML may parse as date object)
             date_val = frontmatter.get('date')

@@ -30,7 +30,7 @@ To drive with downforce requires the confidence to continue where you can no lon
 
 Thus the bottleneck is confidence. You must believe you can continue to accelerate where your basic tools fall short and only confidence can keep you grounded.
 
-You must seek the [Torpediniformes](https://teddywarner.org/writings/torpediniformes/) and novel experiences, and new challenges beyond the skills and abilities you currently hold.
+You must seek the [Torpediniformes](https://theodore.net/writings/torpediniformes/) and novel experiences, and new challenges beyond the skills and abilities you currently hold.
 
 You must endure challenges where confidence is your only tether.
 
