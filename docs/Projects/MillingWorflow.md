@@ -17,7 +17,7 @@ template: comments.html
 <script src="/assets/js/mathjax.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
-<link rel="stylesheet" href="../../assets/css/Projects/milling.css">
+<link rel="stylesheet" href="../../assets/css/projects/milling.css">
 
 Subtractive manufacturing is a process I've always found mesmerizing. Although additive processes such as 3D printing allow for the creation of something from seemingly nothing, I believe it's even cooler to watch the morphing of existing stock into a different object. Despite this interest, I feel as though I've barely scratched the surface of CNC - primarily focusing on PCB milling in my subtractive manufacturing projects. I made a first attempt to dive into more subtractive manufacturing work a couple of years ago now when I built [V1 Engineering's](https://www.v1engineering.com/) original [MPCNC](https://docs.v1engineering.com/mpcnc/burly/).
 
@@ -43,7 +43,7 @@ This article attempts to serve as a complete guide for CNC milling, covering mac
 
 !!! example "Milling Micro-Projects"
 
-    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://theodore.net/Projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](https://theodore.net/Projects/MillingWorflow/#material-reference) & a [feeds and speed calculator](https://theodore.net/Projects/MillingWorflow/#feeds-speeds-calculator). That being said, be sure to stay tuned for future updates!
+    This page strays from my normal single-project documentation style, opting to cover different CAM & milling workflows via a collection of micro-projects. In a similar approach to the "Constantly Updating" status of my [Lithophane Experiments](https://theodore.net/projects/LithophaneExperiments/) article, I plan to continually expand the content of this article with any additional milling micro-project I complete. Initally, the page will just host [material reference](https://theodore.net/projects/MillingWorflow/#material-reference) & a [feeds and speed calculator](https://theodore.net/projects/MillingWorflow/#feeds-speeds-calculator). That being said, be sure to stay tuned for future updates!
 
 ## Feeds & Speeds
 

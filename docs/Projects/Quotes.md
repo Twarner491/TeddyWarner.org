@@ -11,8 +11,8 @@ hide:
 template: comments.html
 ---
 
-  <link rel="stylesheet" href="../../assets/css/Projects/vnp.css">
-  <link rel="stylesheet" href="../../assets/css/Projects/receipts.css">
+  <link rel="stylesheet" href="../../assets/css/projects/vnp.css">
+  <link rel="stylesheet" href="../../assets/css/projects/receipts.css">
 
 <div style="
   width: 100%;

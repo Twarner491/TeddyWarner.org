@@ -9,7 +9,7 @@ from pathlib import Path
 
 # Define the case mappings: alternate_case -> canonical_case
 CASE_MAPPINGS = {
-    'projects': 'Projects',  # /projects/X -> /Projects/X
+    'Projects': 'projects',  # /Projects/X -> /projects/X
     'Writings': 'writings',  # /Writings/X -> /writings/X
 }
 
