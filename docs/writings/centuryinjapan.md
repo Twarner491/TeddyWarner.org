@@ -11,7 +11,7 @@ hide:
 template: comments.html
 ---
 
-<link rel="stylesheet" href="../../assets/css/projects/vnp.css">
+<link rel="stylesheet" href="../../assets/css/Projects/vnp.css">
 <link rel="stylesheet" href="../../assets/css/carousel.css">
 
 <script src="../../assets/js/carousel.js"></script>

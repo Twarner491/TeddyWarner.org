@@ -167,7 +167,7 @@ def _get_projects(docs_dir):
         return _projects_cache
     
     # Scan local projects
-    projects = _scan_folder(docs_dir, "projects")
+    projects = _scan_folder(docs_dir, "Projects")
     
     # Add external projects from config
     config = _get_config(docs_dir)

@@ -12,7 +12,7 @@ hide:
 template: comments.html
 ---
 
-<link rel="stylesheet" href="/assets/css/projects/vnp.css">
+<link rel="stylesheet" href="/assets/css/Projects/vnp.css">
 
 <center>
   <div style="position:relative;padding-bottom:56.25%;">

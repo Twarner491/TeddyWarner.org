@@ -163,7 +163,7 @@ After working on *teddywarner.org* for a couple of months, I began to develop a 
 
 <figure markdown="1">
 
-[:fontawesome-brands-github: Project Page Template](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/projects/PROJECT-TEMPLATE.md?plain=1){ .md-button .md-button--primary}
+[:fontawesome-brands-github: Project Page Template](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/PROJECT-TEMPLATE.md?plain=1){ .md-button .md-button--primary}
 
 </figure>
 
@@ -171,7 +171,7 @@ Here I've also compiled a bit of a mkdocs markdown cheat sheet with 10 sections 
 
 <figure markdown="1">
 
-[:fontawesome-brands-github: Project Portfolio Site Source Code](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/projects/ProjectPortfolioSite.md?plain=1){ .md-button .md-button--primary}
+[:fontawesome-brands-github: Project Portfolio Site Source Code](https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/ProjectPortfolioSite.md?plain=1){ .md-button .md-button--primary}
 
 </figure>
 

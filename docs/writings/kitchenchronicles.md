@@ -11,7 +11,7 @@ hide:
 template: comments.html
 ---
 
-<link rel="stylesheet" href="/assets/css/projects/flipbook.css">
+<link rel="stylesheet" href="/assets/css/Projects/flipbook.css">
 <script src="/assets/js/flipbook.js" defer></script>
 
 I moved into a new apartment a few months ago. It's got a pretty bangin' kitchen.

@@ -21,7 +21,7 @@ search:
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://theodore.net/projects/">
+  <meta property="og:url" content="https://theodore.net/Projects/">
   <meta property="og:title" content="Projects - Teddy Warner">
   <meta property="og:description" content="Some of the Open-Source shenanigans I've been up to.">
   <meta property="og:image" content="https://theodore.net/assets/images/thumb.png">
@@ -31,7 +31,7 @@ search:
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://theodore.net/projects/">
+  <meta property="twitter:url" content="https://theodore.net/Projects/">
   <meta property="twitter:title" content="Projects - Teddy Warner">
   <meta property="twitter:description" content="Some of the Open-Source shenanigans I've been up to.">
   <meta property="twitter:image" content="https://theodore.net/assets/images/thumb.png">
@@ -51,7 +51,7 @@ search:
     "@type": "CollectionPage",
     "name": "Projects - Teddy Warner",
     "description": "Some of the Open-Source shenanigans I've been up to.",
-    "url": "https://theodore.net/projects/",
+    "url": "https://theodore.net/Projects/",
     "author": {
       "@type": "Person",
       "@id": "https://theodore.net/#person"

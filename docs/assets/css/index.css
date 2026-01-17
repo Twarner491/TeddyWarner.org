@@ -19,12 +19,6 @@
   --content-max-width: 1350px;
 }
 
-/* Prevent horizontal overflow on mobile */
-html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
-}
-
 [data-md-color-scheme="slate"] {
   --inputicon: white;
   --toggledinputicon: hsla(0, 0%, 0%, 0.87);
@@ -128,6 +122,9 @@ html, body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 4;
   height: 192px;
   padding-top: 10em;
   padding-left: 4em;

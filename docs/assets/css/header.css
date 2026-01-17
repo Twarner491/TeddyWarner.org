@@ -3,6 +3,9 @@
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
     height: 192px;
     padding-top: 10em;
     padding-left: 4em;
