@@ -196,18 +196,11 @@ Then we'll create a very minimal project structure - I'm keeping this build to t
 
   I'm super happy with how the squedomorphic design came out here - Thermal Printers are somewhat limited in their output (due to binary color option) and as such I was pretty constrined when designing how I wanted the output reciept to look. Once i had a boilerplate from the backend, making this frontend match was easy.
 
-<center>
-  <iframe
-    class="plotter-iframe"
-    src="https://receipt.onethreenine.net/"
-    frameborder="0"
-    width="100%"
-    height="700"
-    sandbox="allow-scripts allow-same-origin allow-forms"
-    loading="lazy"
-    tabindex="-1"
-  ></iframe>
-</center>
+<figure markdown="1">
+
+![](../assets/images/quotes/thumb.png)
+
+</figure>
 
 To get our RPI app up and running with the printer, we need to set some permissions. The udev rules are included in the repo:
 
@@ -511,3 +504,25 @@ p.s. This "i before e except after c" shenanigans really throws me off. Apologie
 </div>
 
 <script src="../../assets/js/reciepts.js"></script>
+
+<script>
+// Simple deferred iframe loading - no scroll lock
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const iframe = entry.target;
+        const src = iframe.dataset.src;
+        if (src && !iframe.src) {
+          iframe.src = src;
+        }
+        observer.unobserve(iframe);
+      }
+    });
+  }, { rootMargin: '200px' });
+  
+  document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+    observer.observe(iframe);
+  });
+})();
+</script>
