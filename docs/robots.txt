@@ -4,8 +4,8 @@ Disallow: /llms.txt
 
 # Draft pages (update manually when sharing new drafts)
 Disallow: /writings/otherness-and-belonging/
-Disallow: /Projects/8-bit/
-Disallow: /Projects/pi0/
+Disallow: /projects/8-bit/
+Disallow: /projects/pi0/
 
 # Sitemap location
 Sitemap: https://theodore.net/sitemap.xml

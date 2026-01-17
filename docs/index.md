@@ -141,7 +141,7 @@ search:
                             <rect x="141.5" y="143.5" width="223" height="48" rx="24" stroke="var(--md-default-fg-color--lighter)" />
                             <text x="253" y="175" fill="var(--md-default-fg-color--light)" text-anchor="middle" font-family="Crimson Pro" font-size="23" font-style="normal" font-weight="300" line-height="109.588%">Some stuff I've done</text>
                         </g>
-                        <a href="https://theodore.net/Projects/AssistiveAquaponics/" aria-label="Assistive Aquaponics Project">
+                        <a href="https://theodore.net/projects/AssistiveAquaponics/" aria-label="Assistive Aquaponics Project">
                             <g id="image-card-1" class="project">
                                 <rect x="1057" y="299" width="240" height="405" rx="120" fill="var(--md-default-fg-color--lightest)" />
                                 <rect x="1057.5" y="299.5" width="239" height="404" rx="119.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
