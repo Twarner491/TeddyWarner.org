@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  let lastScrollTop = 0;
   let ticking = false;
 
   // Batch all DOM measurements together to avoid forced reflows
@@ -54,29 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(el);
   });
 
-  const scrollThreshold = 100; // Adjust this value to control when the header shrinks
-
-  // Use requestAnimationFrame to batch scroll updates
-  window.addEventListener('scroll', function() {
-    if (!ticking) {
-      window.requestAnimationFrame(function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollTop > scrollThreshold) {
-          document.body.classList.add('scrolled');
-        } else {
-          document.body.classList.remove('scrolled');
-        }
-        
-        lastScrollTop = scrollTop;
-        ticking = false;
-      });
-      
-      ticking = true;
-    }
-  });
-
-  // Combine scroll handlers and use requestAnimationFrame
+  // Blur overlay opacity on scroll
   document.addEventListener('scroll', function() {
     if (!ticking) {
       window.requestAnimationFrame(function() {
