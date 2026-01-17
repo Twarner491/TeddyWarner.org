@@ -398,7 +398,7 @@ search:
       });
     })();
   </script>
-  <script src="/assets/js/index.js" defer></script>
-  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/header.js"></script>
 </body>
 </html>
