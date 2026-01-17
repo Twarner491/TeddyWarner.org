@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sat, 17 Jan 2026 04:56:45 -0000</pubDate>
-    <lastBuildDate>Sat, 17 Jan 2026 04:56:45 -0000</lastBuildDate>
+    <pubDate>Sat, 17 Jan 2026 05:03:20 -0000</pubDate>
+    <lastBuildDate>Sat, 17 Jan 2026 05:03:20 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -147,23 +147,6 @@
       <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
       
       <guid isPermaLink="true">https://theodore.net/writings/seoulwallsunrise/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Quote Receipts</title>
-      
-      
-      
-      
-        
-      
-      <description>Did I really say that? Why yes, you did.</description>
-      <link>https://theodore.net/Projects/Quotes/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/Quotes/</guid>
       
     </item>
     
@@ -304,142 +287,6 @@
     </item>
     
     <item>
-      <title>Von Niemann Probe</title>
-      
-      
-      
-      
-        
-      
-      <description>An AVR-based Bluetooth telegraphing shoe insole that lets you play chess in the way Hans Niemann has been accused!</description>
-      <link>https://theodore.net/Projects/VonNiemannProbe/</link>
-      <pubDate>Sun, 09 Jun 2024 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/VonNiemannProbe/</guid>
-      
-    </item>
-    
-    <item>
-      <title>UPDI Serial Programming</title>
-      
-      
-      
-      
-        
-      
-      <description>Enabling your IDE for serial UPDI programming via a portable python implementation and designated hardware.</description>
-      <link>https://theodore.net/Projects/SerialUPDI/</link>
-      <pubDate>Fri, 07 Jun 2024 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/SerialUPDI/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Project Portfolio Site</title>
-      
-      
-      
-      
-        
-      
-      <description>Static site generation with Mkdocs, and hosting via GitHub Pages.</description>
-      <link>https://theodore.net/Projects/ProjectPortfolioSite/</link>
-      <pubDate>Thu, 06 Jun 2024 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/ProjectPortfolioSite/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Learned Spectrum</title>
-      
-      
-      
-      
-        
-      
-      <description>Towards temporal understanding in AI through fMRI learning stage classification.</description>
-      <link>https://theodore.net/Projects/LearnedSpectrum/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/LearnedSpectrum/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Octoprint Setup</title>
-      
-      
-      
-      
-        
-      
-      <description>A complete Octoprint setup documentation.</description>
-      <link>https://theodore.net/Projects/Octoprint/</link>
-      <pubDate>Wed, 15 Nov 2023 00:00:00 -0500</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/Octoprint/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Pizza-Pizza CNC Machine</title>
-      
-      
-      
-      
-        
-      
-      <description>A Pizza-Preparing, Tool-Changing, 3-Axis, 3D-printed CNC Machine!</description>
-      <link>https://theodore.net/Projects/PizzaPizza/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/PizzaPizza/</guid>
-      
-    </item>
-    
-    <item>
-      <title>CNC Milling Workflows</title>
-      
-      
-      
-      
-        
-      
-      <description>A relatively comprehensive guide for CNC milling.</description>
-      <link>https://theodore.net/Projects/MillingWorflow/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 -0500</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/MillingWorflow/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Lithophane Experiments</title>
-      
-      
-      
-      
-        
-      
-      <description>A gallery of lithophanes.</description>
-      <link>https://theodore.net/Projects/LithophaneExperiments/</link>
-      <pubDate>Sat, 31 Dec 2022 00:00:00 -0500</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/LithophaneExperiments/</guid>
-      
-    </item>
-    
-    <item>
       <title>The Fallacy of Justice</title>
       
       
@@ -457,23 +304,6 @@
     </item>
     
     <item>
-      <title>Adaptable Aquaponics</title>
-      
-      
-      
-      
-        
-      
-      <description>A Theoretical Confrontation to Contemporary Farming Challenges.</description>
-      <link>https://theodore.net/Projects/AdaptableAquaponics/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/AdaptableAquaponics/</guid>
-      
-    </item>
-    
-    <item>
       <title>Torpediniformes</title>
       
       
@@ -487,74 +317,6 @@
       <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
       
       <guid isPermaLink="true">https://theodore.net/writings/torpediniformes/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Parametric Bottle Cap Generator</title>
-      
-      
-      
-      
-        
-      
-      <description>Lost a lid or just want a more functional cap? Generate and print your own, compatible with any existing threads!</description>
-      <link>https://theodore.net/Projects/ParametricGenerator/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/ParametricGenerator/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Klipper Enabled Ender 3</title>
-      
-      
-      
-      
-        
-      
-      <description>As the name suggests, an Ender 3 with Klipper firmware.</description>
-      <link>https://theodore.net/Projects/KlipperEnder3/</link>
-      <pubDate>Wed, 01 Sep 2021 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/KlipperEnder3/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Assistive Aquaponics Fish Tank</title>
-      
-      
-      
-      
-        
-      
-      <description>Expanding the accessibility of successful &amp; thriving aquaponics ecosystems.</description>
-      <link>https://theodore.net/Projects/AssistiveAquaponics/</link>
-      <pubDate>Tue, 01 Jun 2021 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/AssistiveAquaponics/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Cable Managed Corner Desk</title>
-      
-      
-      
-      
-        
-      
-      <description>A clean modern corner desk.</description>
-      <link>https://theodore.net/Projects/CornerDesk/</link>
-      <pubDate>Sun, 15 Mar 2020 00:00:00 -0400</pubDate>
-      <source url="https://theodore.net/feed_rss_updated.xml">Teddy Warner</source>
-      
-      <guid isPermaLink="true">https://theodore.net/Projects/CornerDesk/</guid>
       
     </item>
     

@@ -1,0 +1,1456 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Towards temporal understanding in AI through fMRI learning stage classification.">
+      
+      
+        <meta name="author" content="Teddy Warner">
+      
+      
+        <link rel="canonical" href="https://theodore.net/projects/LearnedSpectrum/">
+      
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/images/favicon.gif">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Learned Spectrum - Teddy Warner</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-DRNQ5C2ZP2"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-DRNQ5C2ZP2",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-DRNQ5C2ZP2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Learned Spectrum - Teddy Warner">
+  <meta name="description" content="Towards temporal understanding in AI through fMRI learning stage classification.">
+  <meta name="keywords" content="fMRI, AI, Temporal Understanding">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://theodore.netprojects/LearnedSpectrum/">
+  <meta property="og:title" content="Learned Spectrum - Teddy Warner">
+  <meta property="og:description" content="Towards temporal understanding in AI through fMRI learning stage classification.">
+  <meta property="og:image" content="https://theodore.net/assets/images/learnedSpec/fig2.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://theodore.netprojects/LearnedSpectrum/">
+  <meta property="twitter:title" content="Learned Spectrum - Teddy Warner">
+  <meta property="twitter:description" content="Towards temporal understanding in AI through fMRI learning stage classification.">
+  <meta property="twitter:image" content="https://theodore.net/assets/images/learnedSpec/fig2.png">
+
+  <!-- Preconnect hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+  <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
+  <link rel="preconnect" href="https://api.github.com">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="https://theodore.net/assets/css/projects/project.css">
+  <link rel="stylesheet" href="https://theodore.net/assets/css/header.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Learned Spectrum",
+    "description": "Towards temporal understanding in AI through fMRI learning stage classification.",
+    "image": "https://theodore.net/assets/images/learnedSpec/fig2.png",
+    "author": {
+      "@id": "https://theodore.net/#person"
+    },
+    "publisher": {
+      "@id": "https://theodore.net/#person"
+    },
+    "datePublished": "2025-01-01T00:00:00Z",
+    "dateModified": "2025-01-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://theodore.netprojects/LearnedSpectrum/"
+    }
+  }
+  </script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#abstract" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="header.title"
+  >
+
+  <a
+  href="https://teddywarner.com"
+  title="Teddy Warner"
+  class="md-header__rectangle"
+  aria-label="Teddy Warner"
+  data-md-component="logo"
+  >
+  <img class="logo" src="/assets/images/index/avatardark.svg" alt="Teddy Warner" fetchpriority="high"/>
+  </a>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title"></div>
+
+    <!-- Color palette -->
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input
+            class="md-option"
+            data-md-color-media=""
+            data-md-color-scheme="default"
+            data-md-color-accent="black"
+            
+              aria-label="Switch to dark mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_1"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              onclick="colortheme()"
+              title="Switch to dark mode"
+              for="__palette_2"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+            </label>
+          
+        
+          
+          
+          <input
+            class="md-option"
+            data-md-color-media=""
+            data-md-color-scheme="slate"
+            data-md-color-accent="white"
+            
+              aria-label="Switch to light mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_2"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              onclick="colortheme()"
+              title="Switch to light mode"
+              for="__palette_1"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <!-- Search interface -->
+<div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+
+      <!-- Search input -->
+      <input
+        type="text"
+        class="md-search__input"
+        name="query"
+        aria-label="Search"
+        placeholder="Search"
+        autocapitalize="off"
+        autocorrect="off"
+        autocomplete="off"
+        spellcheck="false"
+        data-md-component="search-query"
+        required
+      />
+
+      <!-- Button to open search -->
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+
+      <!-- Search options -->
+      <nav
+        class="md-search__options"
+        aria-label="Search"
+      >
+
+        <!-- Button to share search -->
+        
+          <a
+            href="javascript:void(0)"
+            class="md-search__icon md-icon"
+            title="Share"
+            aria-label="Share"
+            data-clipboard
+            data-clipboard-text=""
+            data-md-component="search-share"
+            tabindex="-1"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+
+        <!-- Button to reset search -->
+        <button
+          type="reset"
+          class="md-search__icon md-icon"
+          title="Clear"
+          aria-label="Clear"
+          tabindex="-1"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+
+      <!-- Search suggestions -->
+      
+        <div
+          class="md-search__suggest"
+          data-md-component="search-suggest"
+        ></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+
+        <!-- Search results -->
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <label class="md-header__button md-icon" id="parent" onclick="togglemenu()">
+     <span class="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+     </span>
+     <span class="close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+     </span>
+    </label>
+
+  </nav>
+</header>
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://teddywarner.com" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../writings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Writings
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="nav.title"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="../.."
+      title="Teddy Warner"
+      class="md-header__rectangle"
+      aria-label="Teddy Warner"
+      data-md-component="logo"
+    >
+      <img src="../../assets/images/TeddyWarner.svg" alt="home"/>
+    </a>
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Twarner491/theodore.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Twarner491/theodore.net
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+
+    
+      
+      
+      
+
+
+
+
+    
+      
+      
+      
+
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abstract
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theoretical-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theoretical Framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neural-bases-of-learning-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neural Bases of Learning Stages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-collection-and-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Collection and Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preprocessing-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preprocessing Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preprocessing Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dimension-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimension Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spatial-resizing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spatial Resizing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intensity-normalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intensity Normalization&lt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-augmentation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Augmentation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Augmentation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temporal-masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporal Masking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spatial-masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spatial Masking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elastic-deformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elastic Deformation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#channel-reduction-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Channel Reduction Network
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporal-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporal Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progressive-dropout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progressive Dropout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training Protocol
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Training Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mixed-precision-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed Precision Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-rate-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Rate Schedule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regularization-and-early-stopping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regularization and Early Stopping
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overall-model-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overall Model Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-specific-classification-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage-Specific Classification Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neural-activation-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neural Activation Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classification-reliability-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification Reliability Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discussion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  <!-- Navigation Menu -->
+  <nav class="main-navigation">
+    <ul>
+      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="/projects"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="/writings"><span class="navnum">03</span> Writing</a></li>
+    </ul>
+  </nav>
+  
+  <div class="blur-overlay"></div>
+
+  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+  <script src="https://theodore.net/assets/js/header.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeHeader();
+    });
+    
+    // Load stylesheets embedded in content after instant navigation
+    (function() {
+      const loadedStylesheets = new Set();
+      document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+        loadedStylesheets.add(link.href);
+      });
+
+      function loadContentStylesheets() {
+        const content = document.querySelector('.md-content');
+        if (!content) return;
+        
+        content.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+          const href = link.href;
+          if (!loadedStylesheets.has(href)) {
+            loadedStylesheets.add(href);
+            const newLink = document.createElement('link');
+            newLink.rel = 'stylesheet';
+            newLink.href = href;
+            document.head.appendChild(newLink);
+          }
+        });
+      }
+
+      loadContentStylesheets();
+
+      if (typeof document$ !== 'undefined') {
+        document$.subscribe(function() {
+          loadContentStylesheets();
+        });
+      }
+    })();
+  </script>
+
+  <!-- Return to feed link -->
+  
+  <div class="return2feed"><a href="https://theodore.net/projects"><i class="fa-solid fa-arrow-left-long"></i> Projects Feed</a></div>
+  
+
+  <!-- Article Header with Author Info and Share Buttons -->
+  <h1 class="article-title">Learned Spectrum</h1>
+  
+  <div class="article-meta" style="margin-top: -0.8em;">
+    <span class="abtlinks">
+      <a href="https://x.com/WarnerTeddy">
+        <img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic">
+        <span class="abt" id="name"> Teddy Warner</span>
+      </a>
+      <span class="abt" style="font-weight: 300; padding-left: 6px;">
+        
+        | <span class="readTime"><i class="far fa-clock"></i> 18–22 minutes</span>
+      </span>
+    </span>
+    <span class="share" style="color: inherit;">
+      <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://theodore.netprojects/LearnedSpectrum/"><i class="fa-brands fa-facebook"></i></a>
+      <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://theodore.netprojects/LearnedSpectrum/&text=Learned%20Spectrum"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://theodore.netprojects/LearnedSpectrum/&media=https://theodore.net/assets/images/learnedSpec/fig2.png&description=Towards%20temporal%20understanding%20in%20AI%20through%20fMRI%20learning%20stage%20classification."><i class="fa-brands fa-pinterest"></i></a>
+      <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://theodore.netprojects/LearnedSpectrum/"><i class="fab fa-linkedin"></i></a>
+      <a class="email" title="Share via Email" href="mailto:?subject=Learned%20Spectrum&body=https://theodore.netprojects/LearnedSpectrum/"><i class="fa-solid fa-paper-plane"></i></a>
+    </span>
+  </div>
+
+  <hr class="article-divider">
+
+  <!-- Page Content -->
+  <script src="/assets/js/mathjax.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<p><em>Towards temporal understanding in AI through <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> learning stage classification.</em></p>
+<p>Learned Spectrum was the first research step I took when starting my venture, <a href="https://intempus.org">Intempus</a>. The full preprint may be accessed <a href="../../assets/misc/Learned_Spectrum.pdf">here</a>.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Intempus&rsquo;s Thesis</p>
+<p>World models cannot truly gain a comprehensive temporal understanding based solely on data collected from robots or purely external observations. </p>
+<p><em>Temporal understanding cannot be trained from data that goes from A -&gt; C. World models must be trained on data that goes from A -&gt; B -&gt; C.</em></p>
+<p>The collection of physiological state data may provide insight into man&rsquo;s temporal understanding, and thus how to train a neural network to understand cause and effect.</p>
+<p>Current efforts in world model development often rely heavily on data collected from robotic systems or external observations that we humans can describe (i.e. see chair thrown -&gt; move backward). These observations forgo the subconscious response integral to a human&rsquo;s actions (i.e. see chair thrown -&gt; physiological state change -&gt; move backward).</p>
+<p>If we acknowledge that current AI systems lack a subjective understanding of time, why do we primarily use data from these systems to try to instill temporal understanding?</p>
+<p>Data collected from human subjects could provide a window into how humans subjectively experience time, potentially leading to more sophisticated and human-like temporal reasoning in AI systems.</p>
+</div>
+<h2 id="abstract">Abstract<a class="headerlink" href="#abstract" title="Permanent link">&para;</a></h2>
+<p>This research presents a novel approach to understanding temporal cognition through the application of Vision Transformers to functional Magnetic Resonance Imaging (<abbr title="functional Magnetic Resonance Imaging">fMRI</abbr>) data analysis. While current artificial intelligence approaches to world modeling rely heavily on absolute temporal markers and timestamps, human perception of time operates as a fundamentally subjective experience that adapts with cognitive state and learning progress. We demonstrate that neural activation patterns captured during learning through <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> contain rich temporal information that can inform more nuanced approaches to temporal processing in AI systems. </p>
+<p>Our implementation achieves significant accuracy in learning stage classification through three key technical innovations: </p>
+<ol>
+<li>A systematic channel reduction network that efficiently processes high-dimensional <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data while preserving critical spatial and temporal patterns.</li>
+<li>Specialized temporal processing networks that incorporate hemodynamic response characteristics and causal attention mechanisms.</li>
+<li>Progressive dropout strategies that maintain signal fidelity while encouraging robust feature learning. </li>
+</ol>
+<p>By analyzing these temporal patterns across multiple learning stages and tasks, we demonstrate the feasibility of developing AI systems capable of processing time as a relative rather than absolute construct. This work represents an important step toward artificial intelligence systems that can reason about time in ways that more closely mirror human cognitive processes.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The development of artificial intelligence world models faces a fundamental constraint in temporal processing. While current systems effectively handle timestamp data and sequential predictions, they lack the ability to process time as a subjective, relative construct - a core component of human cognition and learning.</p>
+<p>Training world models exclusively on robot-collected data proves insufficient for developing true temporal understanding. We propose that biometric data, specifically neural activation patterns from <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr>, provides essential insights into subjective time perception during learning processes.</p>
+<p>This work implements a Vision Transformer architecture optimized for learning stage classification from <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data. While <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> presents known limitations in its reliance on blood-oxygen-level-dependent (<abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr>) signals, deep learning architectures can extract temporal patterns that traditional analysis methods miss.</p>
+<h2 id="theoretical-framework">Theoretical Framework<a class="headerlink" href="#theoretical-framework" title="Permanent link">&para;</a></h2>
+<p>Our implementation builds on three foundational principles that bridge neuroscience and artificial intelligence:</p>
+<ul>
+<li>Time perception functions as an inherently subjective experience that varies with cognitive state and learning progress</li>
+<li>Effective world models must incorporate mechanisms for understanding and adapting to subjective temporal experiences</li>
+<li>Biometric data, particularly <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr>, provides a unique window into how biological systems process temporal information</li>
+</ul>
+<p>Traditional approaches to AI world models process time as a simple progression of timestamped events. However, human cognition demonstrates that temporal perception is deeply integrated with learning states, emotional conditions, and physiological factors. This integration proves essential for causal reasoning and adaptive learning. Our architecture incorporates these principles through specialized temporal processing networks and attention mechanisms that can adapt their temporal processing based on context.</p>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>As we&rsquo;ve discussed, current artificial intelligence approaches to world modeling rely heavily on absolute temporal markers and timestamps, human perception of time operates as a fundamentally subjective experience that adapts with cognitive state and learning progress. We&rsquo;ve utlized publically avalible <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data to demonstrate that neural activation patterns contain rich temporal information that can inform more nuanced approaches to temporal processing in AI systems. </p>
+<p>This work implements a Vision Transformer architecture <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup> optimized for learning stage classification from <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data. While <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> presents known limitations in its reliance on blood-oxygen-level-dependent (<abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr>) signals <sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup>, deep learning architectures may be able to extract temporal patterns that traditional analysis methods miss.</p>
+<h3 id="neural-bases-of-learning-stages">Neural Bases of Learning Stages<a class="headerlink" href="#neural-bases-of-learning-stages" title="Permanent link">&para;</a></h3>
+<p>Human learning progresses through distinct stages characterized by shifting patterns of neural activation <sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup>. These transitions are particularly evident in the striatum and medial temporal lobe regions <sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup>. Our architecture&rsquo;s design mirrors these biological principles through its progressive processing stages and attention mechanisms.</p>
+<p><abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> captures these learning stages through blood-oxygen-level-dependent (<abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr>) signals, providing an indirect but reliable measure of neural activity <sup id="fnref2:15"><a class="footnote-ref" href="#fn:15">15</a></sup>. While this indirect measurement presents certain limitations, research has demonstrated correlations between <abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr> signal temporal patterns and learning progression <sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup>. The robust test-retest reliability of <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> in classification learning tasks <sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> provides a stable foundation for extracting temporal patterns relevant to learning stages.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<p>Our implementation addresses two core challenges: extracting meaningful patterns from complex <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data <sup id="fnref2:16"><a class="footnote-ref" href="#fn:16">16</a></sup> and developing architectures capable of learning from these patterns <sup id="fnref2:10"><a class="footnote-ref" href="#fn:10">10</a></sup>. This section outlines our approach in three parts: data preprocessing implementation, <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr>-specific augmentation strategies, and temporal-aware transformer architecture design <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref2:14"><a class="footnote-ref" href="#fn:14">14</a></sup>.</p>
+<h3 id="data-collection-and-processing">Data Collection and Processing<a class="headerlink" href="#data-collection-and-processing" title="Permanent link">&para;</a></h3>
+<p>The implementation utilizes four complementary classification learning datasets from OpenFMRI. Each dataset provides specific insights into temporal learning aspects <sup id="fnref2:11"><a class="footnote-ref" href="#fn:11">11</a></sup>. The primary dataset (ds000002) contains data from 17 right-handed subjects performing probabilistic and deterministic classification tasks <sup id="fnref2:12"><a class="footnote-ref" href="#fn:12">12</a></sup>. Task structure includes:</p>
+<ul>
+<li>Pure blocks: 10 cycles of 5 classification trials followed by 3 baseline trials</li>
+<li>Mixed blocks: 100 stimuli split equally between probabilistic and deterministic trials</li>
+</ul>
+<p>Data acquisition specifications:</p>
+<ul>
+<li>Scanner: <abbr title="3 Tesla (magnetic field strength)">3T</abbr> Siemens Allegra MRI</li>
+<li>Parameters: <abbr title="Repetition Time">TR</abbr> = 2s, 180 functional <abbr title="Type 2 MRI weighting">T2</abbr>*-weighted echoplanar images per session</li>
+<li>Resolution: 2mm slice thickness, 2x2mm in-plane resolution</li>
+<li>Enhancement: Multiband acceleration factor of 4</li>
+</ul>
+<p>Three additional datasets complement the primary collection:</p>
+<ul>
+<li>ds000011: 14 subjects, single/dual-task classification for attention-modulated learning analysis <sup id="fnref3:12"><a class="footnote-ref" href="#fn:12">12</a></sup></li>
+<li>ds000017: 8 subjects, classification with stop-signal tasks for inhibitory control examination <sup id="fnref4:10"><a class="footnote-ref" href="#fn:10">10</a></sup></li>
+<li>ds000052: Classification with reward contingency reversal for adaptive learning mechanism investigation <sup id="fnref3:11"><a class="footnote-ref" href="#fn:11">11</a></sup></li>
+</ul>
+<h3 id="preprocessing-pipeline">Preprocessing Pipeline<a class="headerlink" href="#preprocessing-pipeline" title="Permanent link">&para;</a></h3>
+<p>Our implementation uses a three-stage preprocessing approach based on established neuroimaging practices <sup id="fnref3:16"><a class="footnote-ref" href="#fn:16">16</a></sup> with optimizations for temporal pattern preservation. The pipeline integrates spatial normalization and temporal alignment to maintain both anatomical accuracy and temporal fidelity. The complete preprocessing pipeline follows:</p>
+<div class="arithmatex">\[\begin{equation}
+    x_{\text{processed}} = \mathcal{N}(\mathcal{R}(\mathcal{V}(x)))
+\end{equation}\]</div>
+<p>Where <span class="arithmatex">\(\mathcal{V}\)</span> performs dimension validation, <span class="arithmatex">\(\mathcal{R}\)</span> applies spatial resizing, and <span class="arithmatex">\(\mathcal{N}\)</span> implements intensity normalization.</p>
+<h4 id="dimension-validation">Dimension Validation<a class="headerlink" href="#dimension-validation" title="Permanent link">&para;</a></h4>
+<p><abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> acquisitions vary in dimensionality <sup id="fnref4:16"><a class="footnote-ref" href="#fn:16">16</a></sup>. Our validation ensures consistent dimensionality while preserving temporal information:</p>
+<div class="arithmatex">\[\begin{equation}
+    \mathcal{V}(x) = \begin{cases}
+        x &amp; \text{if } x \in \mathbb{R}^{H \times W \times D \times T} \\
+        x[..., \text{newaxis}] &amp; \text{if } x \in \mathbb{R}^{H \times W \times D} \\
+        \text{undefined} &amp; \text{otherwise}
+    \end{cases}
+\end{equation}\]</div>
+<p>This validation maintains spatial integrity while ensuring proper temporal dimension handling <sup id="fnref3:15"><a class="footnote-ref" href="#fn:15">15</a></sup>. Single-volume inputs receive an added temporal dimension for consistent processing.</p>
+<h4 id="spatial-resizing">Spatial Resizing<a class="headerlink" href="#spatial-resizing" title="Permanent link">&para;</a></h4>
+<p>The implementation standardizes spatial dimensions while maintaining anatomical proportions <sup id="fnref5:16"><a class="footnote-ref" href="#fn:16">16</a></sup> through trilinear interpolation:</p>
+<div class="arithmatex">\[\begin{equation}
+    \mathcal{R}(x) = \text{zoom}(x, [\frac{H_t}{H}, \frac{W_t}{W}, \frac{D_t}{D}, 1])
+\end{equation}\]</div>
+<p>Target dimensions <span class="arithmatex">\((H_t, W_t, D_t) = (64, 64, 30)\)</span> balance spatial resolution and computational efficiency <sup id="fnref3:10"><a class="footnote-ref" href="#fn:10">10</a></sup>. The temporal dimension scaling factor of 1 preserves original temporal resolution.</p>
+<h4 id="intensity-normalization">Intensity Normalization&lt;<a class="headerlink" href="#intensity-normalization" title="Permanent link">&para;</a></h4>
+<p>Following <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> preprocessing protocols <sup id="fnref6:16"><a class="footnote-ref" href="#fn:16">16</a></sup>, we implement temporal-aware normalization accounting for <abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr> signal dynamics:</p>
+<div class="arithmatex">\[\begin{equation}
+    \mathcal{N}(x_t) = \frac{x_t - \mu_t}{\sigma_t + \epsilon} \;\; \forall t \in T
+\end{equation}\]</div>
+<p>Where <span class="arithmatex">\(\mu_t\)</span> and <span class="arithmatex">\(\sigma_t\)</span> represent mean and standard deviation at timepoint <span class="arithmatex">\(t\)</span> and <span class="arithmatex">\(\epsilon = 1e\text{-}6\)</span> prevents division by zero.</p>
+<p>This normalization preserves temporal dynamics while standardizing signal intensity across sessions and subjects <sup id="fnref4:15"><a class="footnote-ref" href="#fn:15">15</a></sup>. Independent timepoint normalization maintains relative temporal patterns crucial for learning stage classification.</p>
+<h3 id="data-augmentation-strategies">Data Augmentation Strategies<a class="headerlink" href="#data-augmentation-strategies" title="Permanent link">&para;</a></h3>
+<p>Our implementation includes a comprehensive suite of domain-specific augmentation techniques designed to enhance model robustness while respecting the unique characteristics of <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data. These techniques are validated through neuroimaging research and carefully adapted for deep learning applications:</p>
+<h4 id="temporal-masking">Temporal Masking<a class="headerlink" href="#temporal-masking" title="Permanent link">&para;</a></h4>
+<p>We implement an adaptive temporal dropout mechanism that helps the model learn robust temporal features despite potential signal interruptions or artifacts. The masking strategy:</p>
+<ul>
+<li>Applies random-length masks (1-5 timepoints) to simulate temporal dropouts</li>
+<li>Maintains temporal coherence through continuous masking windows</li>
+<li>Varies mask duration to ensure robustness to different types of signal interruptions</li>
+</ul>
+<h4 id="spatial-masking">Spatial Masking<a class="headerlink" href="#spatial-masking" title="Permanent link">&para;</a></h4>
+<p>The implementation incorporates structured dropout in the spatial domain to handle regional signal variations and encourage learning from distributed patterns. Key features include:</p>
+<ul>
+<li>Probability-based masking with empirically optimized threshold values</li>
+<li>Preservation of anatomical structure through contiguous region masking</li>
+<li>Balance between feature preservation and augmentation strength</li>
+</ul>
+<h4 id="elastic-deformation">Elastic Deformation<a class="headerlink" href="#elastic-deformation" title="Permanent link">&para;</a></h4>
+<p>To account for natural variations in brain structure and registration, we apply anatomically-constrained elastic deformations that:</p>
+<ul>
+<li>Preserve biological plausibility through controlled deformation magnitude</li>
+<li>Maintain spatial relationships while introducing realistic variability</li>
+<li>Apply smooth transformations through Gaussian filtering</li>
+</ul>
+<h3 id="model-architecture">Model Architecture<a class="headerlink" href="#model-architecture" title="Permanent link">&para;</a></h3>
+<p>Our architecture combines Vision Transformer principles with specific adaptations for <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data processing. The implementation consists of three primary components, each optimized for the unique characteristics of neuroimaging data:</p>
+<h4 id="channel-reduction-network">Channel Reduction Network<a class="headerlink" href="#channel-reduction-network" title="Permanent link">&para;</a></h4>
+<p>The channel reduction component efficiently processes high-dimensional <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> input through a dual-stage approach:</p>
+<ul>
+<li>Initial dimensionality reduction from 30 to 16 channels</li>
+<li>Batch normalization and <abbr title="Gaussian Error Linear Unit">GELU</abbr> activation for stable training</li>
+<li>Progressive dropout for regularization</li>
+<li>Careful preservation of spatial relationships</li>
+</ul>
+<h4 id="temporal-processing">Temporal Processing<a class="headerlink" href="#temporal-processing" title="Permanent link">&para;</a></h4>
+<p>Our temporal processing incorporates hemodynamic response function (<abbr title="Hemodynamic Response Function">HRF</abbr>) characteristics <sup id="fnref5:15"><a class="footnote-ref" href="#fn:15">15</a></sup> through causal attention masking:</p>
+<div class="arithmatex">\[\begin{equation}
+    M_{ij} = \begin{cases}
+        -\infty &amp; \text{if } j &lt; i + 3 \\
+        0 &amp; \text{otherwise}
+    \end{cases}
+\end{equation}\]</div>
+<p>This enforces a 6-second <abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr> delay constraint, reflecting established <abbr title="Hemodynamic Response Function">HRF</abbr> parameters <sup id="fnref7:16"><a class="footnote-ref" href="#fn:16">16</a></sup> while maintaining temporal causality in <abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr> response learning.</p>
+<h4 id="progressive-dropout">Progressive Dropout<a class="headerlink" href="#progressive-dropout" title="Permanent link">&para;</a></h4>
+<p>We implement a depth-dependent dropout strategy that provides stronger regularization in deeper layers while maintaining high information flow in early layers.</p>
+<div class="arithmatex">\[\begin{equation}
+    p_i = 0.1 \cdot \frac{i + 1}{12} \;\; \text{for layer } i
+\end{equation}\]</div>
+<p>This strategy increases dropout probability with network depth, maintains high information flow in early layers, and improves generalization while preserving low-level features.</p>
+<h3 id="training-protocol">Training Protocol<a class="headerlink" href="#training-protocol" title="Permanent link">&para;</a></h3>
+<h4 id="mixed-precision-training">Mixed Precision Training<a class="headerlink" href="#mixed-precision-training" title="Permanent link">&para;</a></h4>
+<p>We implement dynamic loss scaling for numerical stability:</p>
+<div class="arithmatex">\[\begin{equation}
+    \text{scale}_t = \begin{cases}
+        2 \cdot \text{scale}_{t-1} &amp; \text{if no overflow for } 2000 \text{ steps}\\
+        \frac{\text{scale}_{t-1}}{2} &amp; \text{if overflow detected}
+    \end{cases}
+\end{equation}\]</div>
+<p>This adaptive scaling ensures stable training while maintaining computational efficiency.</p>
+<h4 id="optimization-strategy">Optimization Strategy<a class="headerlink" href="#optimization-strategy" title="Permanent link">&para;</a></h4>
+<p>The implementation uses <abbr title="Adam with Weight Decay">AdamW</abbr> optimizer with <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr>-validated parameters <sup id="fnref3:14"><a class="footnote-ref" href="#fn:14">14</a></sup>:</p>
+<ul>
+<li>Learning rate: <span class="arithmatex">\(1e\text{-}4\)</span></li>
+<li>Weight decay: 0.05</li>
+<li>Beta parameters: <span class="arithmatex">\(\beta_1 = 0.9\)</span>, <span class="arithmatex">\(\beta_2 = 0.999\)</span></li>
+</ul>
+<h4 id="learning-rate-schedule">Learning Rate Schedule<a class="headerlink" href="#learning-rate-schedule" title="Permanent link">&para;</a></h4>
+<p>We implement a custom warmup-decay schedule optimized for <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data processing:</p>
+<div class="arithmatex">\[\begin{equation}
+    \eta_t = \begin{cases}
+        \eta_{\text{base}} \cdot \frac{t}{t_w} &amp; \text{if } t &lt; t_w\\
+        \eta_{\text{min}} + \frac{\eta_{\text{base}}-\eta_{\text{min}}}{2}(1 + \cos(\pi\frac{t-t_w}{T-t_w})) &amp; \text{otherwise}
+    \end{cases}
+\end{equation}\]</div>
+<p>Schedule parameters:</p>
+<ul>
+<li>Base learning rate <span class="arithmatex">\(\eta_{\text{base}} = 1e\text{-}4\)</span></li>
+<li>Minimum learning rate <span class="arithmatex">\(\eta_{\text{min}} = 1e\text{-}6\)</span></li>
+<li>Warmup period <span class="arithmatex">\(t_w = 0.1T\)</span></li>
+</ul>
+<p>This provides stable initial training followed by gradual learning rate decay for optimal parameter convergence.</p>
+<h4 id="regularization-and-early-stopping">Regularization and Early Stopping<a class="headerlink" href="#regularization-and-early-stopping" title="Permanent link">&para;</a></h4>
+<p>We implement comprehensive regularization following established practices <sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
+<ul>
+<li>Label smoothing: <span class="arithmatex">\(\alpha = 0.1\)</span></li>
+<li>L2 regularization: <span class="arithmatex">\(\lambda = 1e\text{-}4\)</span></li>
+<li>Gradient clipping: norm 5.0</li>
+</ul>
+<p>Early stopping criteria definition:</p>
+<div class="arithmatex">\[\begin{equation}
+    \text{stop} = \begin{cases}
+        \text{True} &amp; \text{if } \text{val\_loss}_t &gt; \text{best\_loss} - \delta \text{ for } p \text{ epochs}\\
+        \text{False} &amp; \text{otherwise}
+    \end{cases}
+\end{equation}\]</div>
+<p>Parameters:</p>
+<ul>
+<li>Improvement threshold <span class="arithmatex">\(\delta = 1e\text{-}4\)</span></li>
+<li>Patience period <span class="arithmatex">\(p = 7\)</span></li>
+</ul>
+<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
+<p>Our implementation demonstrated patterns in learning stage classification from <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data, with performance characteristics varying significantly across learning stages. The complete analysis reveals both potential capabilities and areas requiring further refinement.</p>
+<h3 id="overall-model-performance">Overall Model Performance<a class="headerlink" href="#overall-model-performance" title="Permanent link">&para;</a></h3>
+<p>The model achieved an overall accuracy of 35.6% across four learning stages, with a balanced accuracy of 42.8% and a macro <abbr title="F1 Score - Harmonic mean of precision and recall">F1</abbr> score of 0.407. </p>
+<p>While exceeding random chance performance (25% for four classes), these metrics highlight the inherent complexity of learning stage classification from neuroimaging data.</p>
+<p>The Cohen&rsquo;s Kappa score of 0.093 indicates performance above chance but demonstrates the substantial challenge in achieving consistent classification across all learning stages.</p>
+<figure>
+<p><img alt="Training Results plots" src="../../assets/images/learnedSpec/fig1.png" width="100%" /></p>
+</figure>
+<p><em>Figure 1: Comprehensive model performance analysis showing (A) Normalized confusion matrix demonstrating classification patterns across learning stages, (B) <abbr title="Receiver Operating Characteristic">ROC</abbr> curves indicating increasing reliability from early to mastery stages, (C) Per-class performance metrics highlighting strongest performance in mastery classification, and (D) Prediction confidence distributions revealing distinct patterns for each learning stage.</em></p>
+<h3 id="stage-specific-classification-performance">Stage-Specific Classification Performance<a class="headerlink" href="#stage-specific-classification-performance" title="Permanent link">&para;</a></h3>
+<p>Performance varied substantially across learning stages, revealing distinct patterns in the model&rsquo;s classification capabilities. The model demonstrated strongest performance in identifying the mastery stage, achieving a precision of 0.600 and recall of 0.750 (<abbr title="F1 Score - Harmonic mean of precision and recall">F1</abbr> = 0.667). The <abbr title="Receiver Operating Characteristic">ROC</abbr> curve for mastery classification shows an impressive <abbr title="Area Under the Curve">AUC</abbr> of 0.945, suggesting highly distinctive neural activation patterns associated with mastery-level learning.</p>
+<p>The middle learning stage showed moderate classification success (precision = 0.353, recall = 0.429, <abbr title="F1 Score - Harmonic mean of precision and recall">F1</abbr> = 0.387), while early and late stages proved more challenging to classify (<abbr title="F1 Score - Harmonic mean of precision and recall">F1</abbr> scores of 0.258 and 0.316 respectively). The confusion matrix reveals a tendency to misclassify early learning stages as middle stages (47.1% of cases), suggesting a gradual transition in neural activation patterns during learning progression.</p>
+<table>
+<thead>
+<tr>
+<th>Learning Stage</th>
+<th>Precision</th>
+<th>Recall</th>
+<th><abbr title="F1 Score - Harmonic mean of precision and recall">F1</abbr></th>
+<th>Support</th>
+<th><abbr title="Receiver Operating Characteristic">ROC</abbr> <abbr title="Area Under the Curve">AUC</abbr></th>
+<th>Mean Conf.</th>
+<th>Error Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early</td>
+<td>0.286</td>
+<td>0.235</td>
+<td>0.258</td>
+<td>17</td>
+<td>0.368</td>
+<td>0.437</td>
+<td>0.765</td>
+</tr>
+<tr>
+<td>Middle</td>
+<td>0.353</td>
+<td>0.429</td>
+<td>0.387</td>
+<td>14</td>
+<td>0.556</td>
+<td>0.412</td>
+<td>0.571</td>
+</tr>
+<tr>
+<td>Late</td>
+<td>0.333</td>
+<td>0.300</td>
+<td>0.316</td>
+<td>10</td>
+<td>0.740</td>
+<td>0.389</td>
+<td>0.700</td>
+</tr>
+<tr>
+<td>Mastery</td>
+<td>0.600</td>
+<td>0.750</td>
+<td>0.667</td>
+<td>4</td>
+<td>0.945</td>
+<td>0.528</td>
+<td>0.250</td>
+</tr>
+<tr>
+<td><strong>Overall</strong></td>
+<td>0.407</td>
+<td>0.428</td>
+<td>0.347</td>
+<td>45</td>
+<td>0.652</td>
+<td>0.437</td>
+<td>0.644</td>
+</tr>
+</tbody>
+</table>
+<h3 id="neural-activation-patterns">Neural Activation Patterns<a class="headerlink" href="#neural-activation-patterns" title="Permanent link">&para;</a></h3>
+<p>Analysis of <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> activation patterns, as exemplified in Figure 2, reveals characteristic spatial distributions associated with different learning stages. The sample brain slice visualization demonstrates the complex nature of the neural activation patterns the model must interpret, with varying intensity values representing normalized <abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr> signal strength across different brain regions.</p>
+<figure>
+<p><img alt="Example f MRI slice" src="../../assets/images/learnedSpec/fig2.png" width="50%" /></p>
+</figure>
+<p><em>Figure 2: Representative brain slice visualization from early learning stage (z=15, t=118) demonstrating characteristic activation patterns. Intensity values represent normalized <abbr title="Blood-Oxygen-Level-Dependent">BOLD</abbr> signal strength.</em></p>
+<h3 id="classification-reliability-analysis">Classification Reliability Analysis<a class="headerlink" href="#classification-reliability-analysis" title="Permanent link">&para;</a></h3>
+<p>The model&rsquo;s reliability metrics provide crucial insight into its decision-making characteristics. The mean confidence of 0.437 with an overconfidence measure of 0.088 indicates relatively calibrated predictions, though the expected calibration error of 0.491 suggests room for improvement in uncertainty estimation. As shown in Figure 1, the confidence distribution shows distinct patterns for each learning stage, with mastery predictions showing a broader, right-skewed distribution compared to the more concentrated distributions of earlier stages.</p>
+<p>The <abbr title="Receiver Operating Characteristic">ROC</abbr> curves reveal a clear progression in classification reliability across learning stages: early (<abbr title="Area Under the Curve">AUC</abbr> = 0.368), middle (<abbr title="Area Under the Curve">AUC</abbr> = 0.556), late (<abbr title="Area Under the Curve">AUC</abbr> = 0.740), and mastery (<abbr title="Area Under the Curve">AUC</abbr> = 0.945). This progression suggests that distinctive neural patterns become increasingly detectable as learning progresses, with mastery showing particularly clear neural signatures.</p>
+<p>The mean loss of 1.082 (±0.257) suggests stable model training despite the classification challenges, with the relatively small standard deviation indicating consistent performance across validation folds. These results demonstrate both the promise and limitations of our approach, suggesting that while neural activation patterns contain meaningful information about learning stages, additional architectural innovations may be needed to fully capture the complexity of temporal learning progression in <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data.</p>
+<h2 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h2>
+<p><abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> data from varaying datasets/test conditions is quite volatile to work with, and reliance on publically avaliable data sources without standerized test conditions certaily dosen&rsquo;t help. Nonethless the above guessing odds results suggests a correlation worth exploring, suggesting that integrating physiological state data into world model training provides essential insights into biological temporal information processing.</p>
+<p>Future work should expand beyond <abbr title="functional Magnetic Resonance Imaging">fMRI</abbr> to incorporate the full spectrum of physiological state signals identified in our introduction (facial EMG, heart rate variability, electrodermal activity). This multi-modal physiological state approach, combined with advanced transformer architectures, could enable world models to develop temporal understanding that more closely mirrors human cognitive processes, particularly in causal reasoning and state transitions. </p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>https://arxiv.org/abs/1706.03762&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>https://openreview.net/pdf?id=BZ5a1r-kVsf&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>https://pmc.ncbi.nlm.nih.gov/articles/PMC6904682/&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>https://www.nber.org/system/files/working_papers/w29587/w29587.pdf&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>https://pmc.ncbi.nlm.nih.gov/articles/PMC9824521/&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>https://www.biorxiv.org/content/10.1101/2022.02.28.482337v2.full&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>https://www.pnas.org/doi/10.1073/pnas.1016823108&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>https://pmc.ncbi.nlm.nih.gov/articles/PMC10960227/&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>https://arxiv.org/abs/2302.10035&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>https://pubmed.ncbi.nlm.nih.gov/16139527/&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:10" title="Jump back to footnote 10 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:10" title="Jump back to footnote 10 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p>https://www.jstor.org/stable/2891421&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:11" title="Jump back to footnote 11 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p>https://www.nature.com/articles/35107080&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:12" title="Jump back to footnote 12 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p>https://arxiv.org/abs/1803.10122&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p>https://arxiv.org/abs/2010.11929&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:14" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>https://www.nature.com/articles/nature06976&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:15" title="Jump back to footnote 15 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:15" title="Jump back to footnote 15 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:15" title="Jump back to footnote 15 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:16">
+<p>https://doi.org/10.1017/CBO9780511895029&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 16 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:16" title="Jump back to footnote 16 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:16" title="Jump back to footnote 16 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:16" title="Jump back to footnote 16 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:16" title="Jump back to footnote 16 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:16" title="Jump back to footnote 16 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:16" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+  <!-- Email Subscription -->
+  <section class="subscribe-section">
+    <div class="subscribe-inner">
+      <p>Enter your email to receive the occasional update.</p>
+      <form 
+        class="subscribe-form"
+        action="https://buttondown.com/api/emails/embed-subscribe/teddywarner"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.com/teddywarner', 'popupwindow')"
+      >
+        <input 
+          type="email" 
+          name="email" 
+          id="bd-email"
+          placeholder="your@email.com" 
+          required
+          autocomplete="email"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Giscus Comments -->
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+  data-cfasync="false"
+  data-repo="Twarner491/theodore.net"
+  data-repo-id="MDEwOlJlcG9zaXRvcnkzNzgyODU0MTk="
+  data-category="General"
+  data-category-id="DIC_kwDOFowta84CA5IA"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="light"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Reload on palette change -->
+  <script>
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object")
+      if (palette.color.scheme === "slate") {
+        var giscus = document.querySelector("script[src*=giscus]")
+        giscus.setAttribute("data-theme", "transparent_dark") 
+      }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+<section class="footer">
+  <div class="socials">
+    <div class="socialpar">
+      <a target="_blank" href="https://github.com/Twarner491">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <div class="socialpar">
+      <a target="_blank" href="https://x.com/WarnerTeddy">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+    <div class="socialpar">
+      <a target="_blank" href="mailto:teddy@warner.net">
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+    </div>
+  </div>
+    <a target="_blank" href="https://github.com/Twarner491/theodore.net/blob/main/LICENSE">
+      <p class="copyright">Copyright © 2026 Teddy Warner</p>
+    </a>
+</section>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "content.code.annotate", "search.share", "search.suggest", "search.highlight", "content.tabs.link", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../assets/js/error-suppressor.js"></script>
+      
+        <script src="../../assets/js/index.js"></script>
+      
+    
+  </body>
+</html>

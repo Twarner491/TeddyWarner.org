@@ -1,0 +1,1611 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Static site generation with Mkdocs, and hosting via GitHub Pages.">
+      
+      
+        <meta name="author" content="Teddy Warner">
+      
+      
+        <link rel="canonical" href="https://theodore.net/projects/ProjectPortfolioSite/">
+      
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/images/favicon.gif">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Project Portfolio Site - Teddy Warner</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-DRNQ5C2ZP2"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-DRNQ5C2ZP2",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-DRNQ5C2ZP2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Project Portfolio Site - Teddy Warner">
+  <meta name="description" content="Static site generation with Mkdocs, and hosting via GitHub Pages.">
+  <meta name="keywords" content="MkDocs, Static site generator, GitHub Pages, Documentation site, Web development, Material theme, Python, Markdown, Site customization, Portfolio website, Technical documentation">
+  <meta name="author" content="Teddy Warner">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://theodore.netprojects/ProjectPortfolioSite/">
+  <meta property="og:title" content="Project Portfolio Site - Teddy Warner">
+  <meta property="og:description" content="Static site generation with Mkdocs, and hosting via GitHub Pages.">
+  <meta property="og:image" content="https://theodore.net/assets/images/PortfolioSite/portfolioSiteHero.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://theodore.netprojects/ProjectPortfolioSite/">
+  <meta property="twitter:title" content="Project Portfolio Site - Teddy Warner">
+  <meta property="twitter:description" content="Static site generation with Mkdocs, and hosting via GitHub Pages.">
+  <meta property="twitter:image" content="https://theodore.net/assets/images/PortfolioSite/portfolioSiteHero.png">
+
+  <!-- Preconnect hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+  <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
+  <link rel="preconnect" href="https://api.github.com">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="https://theodore.net/assets/css/projects/project.css">
+  <link rel="stylesheet" href="https://theodore.net/assets/css/header.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Project Portfolio Site",
+    "description": "Static site generation with Mkdocs, and hosting via GitHub Pages.",
+    "image": "https://theodore.net/assets/images/PortfolioSite/portfolioSiteHero.png",
+    "author": {
+      "@id": "https://theodore.net/#person"
+    },
+    "publisher": {
+      "@id": "https://theodore.net/#person"
+    },
+    "datePublished": "2025-01-01T00:00:00Z",
+    "dateModified": "2025-01-01T00:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://theodore.netprojects/ProjectPortfolioSite/"
+    }
+  }
+  </script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#repo-setup-and-cloning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="header.title"
+  >
+
+  <a
+  href="https://teddywarner.com"
+  title="Teddy Warner"
+  class="md-header__rectangle"
+  aria-label="Teddy Warner"
+  data-md-component="logo"
+  >
+  <img class="logo" src="/assets/images/index/avatardark.svg" alt="Teddy Warner" fetchpriority="high"/>
+  </a>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title"></div>
+
+    <!-- Color palette -->
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input
+            class="md-option"
+            data-md-color-media=""
+            data-md-color-scheme="default"
+            data-md-color-accent="black"
+            
+              aria-label="Switch to dark mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_1"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              onclick="colortheme()"
+              title="Switch to dark mode"
+              for="__palette_2"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+            </label>
+          
+        
+          
+          
+          <input
+            class="md-option"
+            data-md-color-media=""
+            data-md-color-scheme="slate"
+            data-md-color-accent="white"
+            
+              aria-label="Switch to light mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_2"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              onclick="colortheme()"
+              title="Switch to light mode"
+              for="__palette_1"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <!-- Search interface -->
+<div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+
+      <!-- Search input -->
+      <input
+        type="text"
+        class="md-search__input"
+        name="query"
+        aria-label="Search"
+        placeholder="Search"
+        autocapitalize="off"
+        autocorrect="off"
+        autocomplete="off"
+        spellcheck="false"
+        data-md-component="search-query"
+        required
+      />
+
+      <!-- Button to open search -->
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+
+      <!-- Search options -->
+      <nav
+        class="md-search__options"
+        aria-label="Search"
+      >
+
+        <!-- Button to share search -->
+        
+          <a
+            href="javascript:void(0)"
+            class="md-search__icon md-icon"
+            title="Share"
+            aria-label="Share"
+            data-clipboard
+            data-clipboard-text=""
+            data-md-component="search-share"
+            tabindex="-1"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+
+        <!-- Button to reset search -->
+        <button
+          type="reset"
+          class="md-search__icon md-icon"
+          title="Clear"
+          aria-label="Clear"
+          tabindex="-1"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+
+      <!-- Search suggestions -->
+      
+        <div
+          class="md-search__suggest"
+          data-md-component="search-suggest"
+        ></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+
+        <!-- Search results -->
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <label class="md-header__button md-icon" id="parent" onclick="togglemenu()">
+     <span class="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+     </span>
+     <span class="close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+     </span>
+    </label>
+
+  </nav>
+</header>
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://teddywarner.com" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../writings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Writings
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="nav.title"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="../.."
+      title="Teddy Warner"
+      class="md-header__rectangle"
+      aria-label="Teddy Warner"
+      data-md-component="logo"
+    >
+      <img src="../../assets/images/TeddyWarner.svg" alt="home"/>
+    </a>
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Twarner491/theodore.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Twarner491/theodore.net
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+
+    
+      
+      
+      
+
+
+
+
+    
+      
+      
+      
+
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#repo-setup-and-cloning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repo Setup and Cloning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Repo Setup and Cloning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSH setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-material-install-site-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mkdocs Material Install &amp; Site Building
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mkdocs Material Install &amp; Site Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-site-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Site Building
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-customisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Customisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Site Customisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-markdown-meta-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Markdown Meta Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Basic Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-text-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Text Formatting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-different-list-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Different List Styles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-content-tabs-code-styling-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Content Tabs, Code Styling &amp; Annotations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Footnotes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-formatted-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Formatted Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-admonitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Admonitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-icons-emojis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Icons &amp; Emojis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-publishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Publishing
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  <!-- Navigation Menu -->
+  <nav class="main-navigation">
+    <ul>
+      <li><a class="home" href="https://teddywarner.com"><span class="navnum">01</span> Home</a></li>
+      <li><a class="proj" href="/projects"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="writ" href="/writings"><span class="navnum">03</span> Writing</a></li>
+    </ul>
+  </nav>
+  
+  <div class="blur-overlay"></div>
+
+  <script src="https://kit.fontawesome.com/79ff35ecec.js" crossorigin="anonymous"></script>
+  <script src="https://theodore.net/assets/js/header.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeHeader();
+    });
+    
+    // Load stylesheets embedded in content after instant navigation
+    (function() {
+      const loadedStylesheets = new Set();
+      document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+        loadedStylesheets.add(link.href);
+      });
+
+      function loadContentStylesheets() {
+        const content = document.querySelector('.md-content');
+        if (!content) return;
+        
+        content.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+          const href = link.href;
+          if (!loadedStylesheets.has(href)) {
+            loadedStylesheets.add(href);
+            const newLink = document.createElement('link');
+            newLink.rel = 'stylesheet';
+            newLink.href = href;
+            document.head.appendChild(newLink);
+          }
+        });
+      }
+
+      loadContentStylesheets();
+
+      if (typeof document$ !== 'undefined') {
+        document$.subscribe(function() {
+          loadContentStylesheets();
+        });
+      }
+    })();
+  </script>
+
+  <!-- Return to feed link -->
+  
+  <div class="return2feed"><a href="https://theodore.net/projects"><i class="fa-solid fa-arrow-left-long"></i> Projects Feed</a></div>
+  
+
+  <!-- Article Header with Author Info and Share Buttons -->
+  <h1 class="article-title">Project Portfolio Site</h1>
+  
+  <div class="article-meta" style="margin-top: -0.8em;">
+    <span class="abtlinks">
+      <a href="https://x.com/WarnerTeddy">
+        <img src="https://avatars.githubusercontent.com/u/48384497" alt="Teddy Warner's GitHub profile picture" class="profilepic">
+        <span class="abt" id="name"> Teddy Warner</span>
+      </a>
+      <span class="abt" style="font-weight: 300; padding-left: 6px;">
+        
+        | <span class="readTime"><i class="far fa-clock"></i> 6-7 minutes</span>
+      </span>
+    </span>
+    <span class="share" style="color: inherit;">
+      <a class="fb" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://theodore.netprojects/ProjectPortfolioSite/"><i class="fa-brands fa-facebook"></i></a>
+      <a class="twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://theodore.netprojects/ProjectPortfolioSite/&text=Project%20Portfolio%20Site"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="pin" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/?url=https://theodore.netprojects/ProjectPortfolioSite/&media=https://theodore.net/assets/images/PortfolioSite/portfolioSiteHero.png&description=Static%20site%20generation%20with%20Mkdocs%2C%20and%20hosting%20via%20GitHub%20Pages."><i class="fa-brands fa-pinterest"></i></a>
+      <a class="ln" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://theodore.netprojects/ProjectPortfolioSite/"><i class="fab fa-linkedin"></i></a>
+      <a class="email" title="Share via Email" href="mailto:?subject=Project%20Portfolio%20Site&body=https://theodore.netprojects/ProjectPortfolioSite/"><i class="fa-solid fa-paper-plane"></i></a>
+    </span>
+  </div>
+
+  <hr class="article-divider">
+
+  <!-- Page Content -->
+  <p><strong>The behind the scenes of the site you are on right now :)</strong></p>
+<p>This site relies on <a href="https://www.mkdocs.org/">MKdocs</a>, a static site generator is written in python to create the content of the site, as well as the <a href="https://squidfunk.github.io/mkdocs-material/">MKdocs Material Theme</a> for customization. I used this same static site generator to create my <a href="http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy Documentation Site</a>, however, that site runs strictly on the <a href="https://squidfunk.github.io/mkdocs-material/">MKdocs Material Theme</a> without custom alterations. This site relies on the same structure as the prior <a href="http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy Documentation Site</a> but includes experiments with entirely custom components, and an altered <a href="https://squidfunk.github.io/mkdocs-material/">MKdocs Material Theme</a>. In addition to all that, it&rsquo;s also built and hosted through my personal <a href="https://pages.github.com/">GitHub Pages</a> repo, under my personal domain. </p>
+<h2 id="repo-setup-and-cloning">Repo Setup and Cloning<a class="headerlink" href="#repo-setup-and-cloning" title="Permanent link">&para;</a></h2>
+<p>To start the site I created a new <a href="https://pages.github.com/">GitHub Pages</a> repo on my <a href="https://github.com/Twarner491">GitHub</a> and cloned in some of my site files from my prior <a href="http://fabacademy.org/2021/labs/charlotte/students/theodore-warner/">Fab Academy Documentation Site</a> (the cloned files were just so site setup files, as well as a bit of content on my Fab Academy final project to be displayed on this site). I then pulled this repo to my local system folder with the command</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="l l-Scalar l-Scalar-Plain">git clone REPO-HERE</span><span class="w"> </span><span class="c1"># (1)</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Replace the text <code>REPO-HERE</code> with your site repo&rsquo;s <em>Clone with <abbr title="Secure Shell">SSH</abbr></em> link. This can be found under the <em>Clone</em> button in most Git web interfaces (i.e. Gitlab, Github, etc.).</li>
+</ol>
+<details class="question">
+<summary>Do I Need to Clone my Repo Locally?</summary>
+<p>Modern Hosting Platforms such as GitHub or GitLab allow for Repo editing to take place directly in the browser, and thus technically speaking, one does not need to pull their site Repo locally. However, browser editing eliminates the possibility of locally hosting, and thus one cannot view changes before pushing publically. Despite this, If you&rsquo;d still like to work in a Browser-based editor, you may skip the <em><abbr title="Secure Shell">SSH</abbr> Setup</em> and <em>Site Publishing</em> sections, and follow an editing and pushing workflow for your specific browser-based editor.</p>
+</details>
+<h3 id="ssh-setup"><abbr title="Secure Shell">SSH</abbr> setup<a class="headerlink" href="#ssh-setup" title="Permanent link">&para;</a></h3>
+<p>To clone a Git repository locally, an <abbr title="Secure Shell">SSH</abbr> key must be generated on your computer and then attached to your GitHub account. GitHub has really good documentation on <a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">creating a new <abbr title="Secure Shell">SSH</abbr> key</a> and attaching it to your Git Web Interface (Github, Gitlab, etc.). </p>
+<p>The process for generating and attaching a new <abbr title="Secure Shell">SSH</abbr> key to your Git Web Interface is relatively pain-free when following this documentation and using the command written above. My process involved running these commands &hellip;</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="l l-Scalar l-Scalar-Plain">ssh-keygen -t ed25519 -C &quot;&lt;Your-SSH-Name-Here&gt;&quot;</span><span class="w"> </span><span class="c1"># (1)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="l l-Scalar l-Scalar-Plain">Generating public/private ed25519 key pair.</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="l l-Scalar l-Scalar-Plain">Enter file in which to save the key (/home/user/.ssh/id_ed25519)</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="c1"># (2)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nt">Enter passphrase (empty for no passphrase)</span><span class="p">:</span><span class="w"> </span><span class="c1"># (3)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nt">Enter the same passphrase again</span><span class="p">:</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="l l-Scalar l-Scalar-Plain">cat ~/.ssh/id_ed25519.pub | clip</span><span class="w"> </span><span class="c1"># (4)</span>
+</code></pre></div>
+<ol>
+<li>
+<p>This generates a new <abbr title="Secure Shell">SSH</abbr> key on your computer.</p>
+</li>
+<li>
+<p>Click enter to confirm location.</p>
+</li>
+<li>
+<p>Enter a passphrase for your <abbr title="Secure Shell">SSH</abbr> key, you will need this password whenever you attempt to push your site.</p>
+</li>
+<li>
+<p>This copies your new <abbr title="Secure Shell">SSH</abbr> key to clipboard. Replace <code>id_ed25519.pub</code> with your filename. For example, use <code>id_rsa.pub</code> for RSA.</p>
+</li>
+</ol>
+<p>Once copied to the clipboard, you can paste the newly generated <abbr title="Secure Shell">SSH</abbr> key in your <abbr title="Secure Shell">SSH</abbr> key settings in your Git Web Interface, to link your computer and your Git Web Interface. Now you can finally clone your site Repository locally as discussed above.</p>
+<h2 id="mkdocs-material-install-site-building">Mkdocs Material Install &amp; Site Building<a class="headerlink" href="#mkdocs-material-install-site-building" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Requirements</p>
+<ul>
+<li>Latest Version of <a href="https://www.python.org/downloads/">Python</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /> <strong>Be Sure Your Python Installation is Installed to PATH in the setup wizard</strong></li>
+<li>Latest Version of <a href="https://git-scm.com/downloads">Git</a></li>
+</ul>
+</div>
+<p>Open your cloned GitHub Pages repo in your code editor of choice, my personal favorite source-code editor is <a href="https://code.visualstudio.com/">Visual Studio Code</a>, so naturally, I used it. In a new terminal in the clone site folder, run the command</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>pip install mkdocs-material
+</code></pre></div></td></tr></table></div>
+This will install all dependencies needed to run a static site with <a href="https://www.mkdocs.org/">MKdocs</a>, as well as the <a href="https://squidfunk.github.io/mkdocs-material/">MKdocs Material Theme</a>.</p>
+<details class="warning" open="open">
+<summary>Note for Fab Academy Students</summary>
+<p>The <em>MKdocs Material</em> theme is paired with the <em>mkdocs-git-revision-date-localized-plugin</em> by default in your Fab Academy student repo. This plugin enables displaying the date of the last git modification of a page at the bottom of each page. To build your static site, this plugin must be installed in your local site folder with the line below &hellip;</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="l l-Scalar l-Scalar-Plain">pip3 install mkdocs-git-revision-date-localized-plugin</span>
+</code></pre></div></td></tr></table></div>
+<p>However, one may opt to not use it via the removal of the line </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git-revision-date-localized</span>
+</code></pre></div>
+<p>found under the <code>plugins</code> section of your sites <em>mkdocs.yml</em> file.</p>
+</details>
+<p>Following this setup, I build my static site locally with the command in my site folders terminal</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>mkdocs serve
+</code></pre></div></td></tr></table></div>
+<p>and followed the link given in my computer&rsquo;s web browser. You should get an output like this after the <em>mkdocs serve</em> command &hellip;</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>INFO     -  Documentation built in X.XX seconds
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>INFO     -  [XX:XX:XX] Serving on http://YOUR-LOCAL-SITE/
+</code></pre></div>
+<h3 id="auto-site-building">Auto Site Building<a class="headerlink" href="#auto-site-building" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">GitHub Actions</p>
+<p>The easiest way for your static site to be built in GitHub pages upon a push is through <a href="https://github.com/features/actions">GitHub Actions</a> allowing for an automated workflow to run to build and pipeline your static site publicly. </p>
+</div>
+<p>At the root of your repository, create a new GitHub Actions
+workflow, e.g. <code>.github/workflows/ci.yml</code>, and copy and paste the following
+contents:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span>
+<span class="normal"><a href="#__codelineno-7-14">14</a></span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"> </span><span class="c1"># (1)</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">     </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="c1"># (2)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">- main</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="w">         </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"> </span><span class="c1"># (3)</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>
+<p>You can change the name to your liking.</p>
+</li>
+<li>
+<p>At some point, GitHub renamed <code>master</code> to <code>main</code>. If your default branch is named <code>master</code>, you can safely remove <code>main</code>, vice versa.</p>
+</li>
+<li>
+<p>This is the place to install further MkDocs plugins or Markdown extensions with <code>pip</code> to be used during the build.</p>
+</li>
+</ol>
+<p>For my site setup, I added the line &hellip;</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-16" name="__codelineno-8-16"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-git-revision-date-localized-plugin</span>
+</code></pre></div></td></tr></table></div>
+<p>&hellip; to install the Git Revision date plugin to my site, allowing for the date each page was updated to be displayed under all of the contents of the page.</p>
+<h2 id="site-customisation">Site Customisation<a class="headerlink" href="#site-customisation" title="Permanent link">&para;</a></h2>
+<p>The basic setup and customization of your static site are covered wonderfully on the <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/">Mkdocs Material Theme Setup Documentation</a>. However, following this basic theme setup, your site can be altered farther by extending the <a href="https://squidfunk.github.io/mkdocs-material/">Material Theme</a> -  Witch can be read about <a href="https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme">here</a>. All of my overrides can be found in <a href="https://github.com/Twarner491/Project-Documentation-Site/">this site&rsquo;s GitHub repo</a>.</p>
+<details class="abstract" open="open">
+<summary>Git Pull</summary>
+<p>When working with other developers in a Git Repo, the Git Pull command is necessary to keep your local branch up to date with others&rsquo; work. Running the line &hellip;</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="l l-Scalar l-Scalar-Plain">git pull</span>
+</code></pre></div></td></tr></table></div>
+<p>will pull in any pushed changes to your repository, allowing you to merge work/changes with work from other branches.</p>
+</details>
+<p>After working on <em>teddywarner.org</em> for a couple of months, I began to develop a project template page that accumulates different front-end HTML, CSS &amp; Markdown aspects I use on my pages, which can be found via the button below. </p>
+<figure>
+<p><a class="md-button md-button--primary" href="https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/PROJECT-TEMPLATE.md?plain=1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg></span> Project Page Template</a></p>
+</figure>
+<p>Here I&rsquo;ve also compiled a bit of a mkdocs markdown cheat sheet with 10 sections for customization, formatting, or additional flair. Again, the <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/">Mkdocs Material Theme Setup Documentation</a> covers the theme-specific markdown at length and is a nice resource while setting up specific theme-specific bits. This section compiles theme-specific markdown with overall markdown features &amp; all of the markdowns behind it can be found in the following sections, or on this page source - linked below.</p>
+<figure>
+<p><a class="md-button md-button--primary" href="https://github.com/Twarner491/Project-Documentation-Site/blob/main/docs/Projects/ProjectPortfolioSite.md?plain=1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg></span> Project Portfolio Site Source Code</a></p>
+</figure>
+<h3 id="1-markdown-meta-data">1. Markdown Meta Data<a class="headerlink" href="#1-markdown-meta-data" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span>
+</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span>
+<span class="normal"><a href="#__codelineno-11-6">6</a></span>
+<span class="normal"><a href="#__codelineno-11-7">7</a></span>
+<span class="normal"><a href="#__codelineno-11-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="nn">---</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PROJECT-TITLE</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Nullam urna elit, malesuada eget finibus ut, ac tortor.</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">custom.html</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="nt">hide</span><span class="p">:</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="nn">---</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h3 id="2-basic-syntax">2. Basic Syntax<a class="headerlink" href="#2-basic-syntax" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Image &amp; Caption</label><label for="__tabbed_1_2">Headings</label><label for="__tabbed_1_3">Hyperlink</label><label for="__tabbed_1_4">Blockquote</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>![<span class="nt">alt text</span>](<span class="na">imageURL.jpg</span>){: align=right/left width=&quot;100%&quot;}
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  &lt;figcaption&gt;Caption&lt;/figcaption&gt;
+</code></pre></div>
+  <figure markdown="1">
+    <img alt="Terminal output showing successful mkdocs serve command" src="https://picsum.photos/600/300" width="95%" />
+      <figcaption>Caption Example</figcaption>
+  </figure></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="gh"># Heading 1</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="gu">## Heading 2</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="gu">### Heading 3</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="gu">#### Heading 4</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="gu">##### Heading 5</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="gu">###### Heading 6</span>
+</code></pre></div>
+<p><figure markdown="1">
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>[<span class="nt">Hyperlink Example</span>](<span class="na">URl</span>)
+</code></pre></div>
+  <figure markdown="1">
+  <a href="URl">Hyperlink Example</a>
+  </figure></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">&gt; </span><span class="ge">blockquote</span>
+</code></pre></div>
+<blockquote>
+<p>Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis nulla. Vivamus a pharetra leo.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<hr />
+<h3 id="3-text-formatting">3. Text Formatting<a class="headerlink" href="#3-text-formatting" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.caret</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.keys</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span>
+</code></pre></div>
+<ul>
+<li>
+<p><strong>Bold Text</strong> - <code>**bold text**</code></p>
+</li>
+<li>
+<p><em>Italicized Text</em> - <code>*italicized text*</code></p>
+</li>
+<li>
+<p><del>Strikethrough</del> - <code>~~Strikethrough~~</code></p>
+</li>
+<li>
+<p>Subscript - H<sub>2</sub>O - <code>H~2~O</code></p>
+</li>
+<li>
+<p>Superscript - X<sup>2</sup> - <code>X^2^</code></p>
+</li>
+</ul>
+<hr />
+<h3 id="4-buttons">4. Buttons<a class="headerlink" href="#4-buttons" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">attr_list</span>
+</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>[<span class="nt">Solid Button :fontawesome-solid-download:</span>](<span class="na">URL</span>){ .md-button .md-button--primary}
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>[<span class="nt">Outline Button</span>](<span class="na">URL</span>){ .md-button}
+</code></pre></div></td></tr></table></div>
+<figure>
+<p><a class="md-button md-button--primary" href="URL">Solid Button <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v210.7l-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7zM64 320c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64h-46.9l-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48"/></svg></span></a>
+  <a class="md-button" href="URL">Outline Button</a></p>
+</figure>
+<hr />
+<h3 id="5-different-list-styles">5. Different List Styles<a class="headerlink" href="#5-different-list-styles" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">def_list</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tasklist</span><span class="p">:</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">      </span><span class="nt">custom_checkbox</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Unordered List</label><label for="__tabbed_2_2">Ordered List</label><label for="__tabbed_2_3">Task List</label><label for="__tabbed_2_4">Definition List</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>&ldquo;Unordered lists can be written by prefixing a line with a <code>-</code>, <code>*</code> or <code>+</code> list marker, all of which can be used interchangeably. Furthermore, all flavors of lists can be nested inside each other:&rdquo; <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span>
+<span class="normal"><a href="#__codelineno-20-5">5</a></span>
+<span class="normal"><a href="#__codelineno-20-6">6</a></span>
+<span class="normal"><a href="#__codelineno-20-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="k">-</span><span class="w"> </span>Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>Nullam dignissim ultrices urna non auctor.
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="k">-</span><span class="w"> </span>Nam vulputate tincidunt fringilla.
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>Nam vulputate tincidunt fringilla.
+<a id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>Nullam dignissim ultrices urna non auctor.
+<a id="__codelineno-20-6" name="__codelineno-20-6"></a><span class="k">-</span><span class="w"> </span>Nullam dignissim ultrices urna non auctor.
+<a id="__codelineno-20-7" name="__codelineno-20-7"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+</code></pre></div></td></tr></table></div>
+<p><strong>Result -</strong></p>
+<ul>
+<li>Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.<ul>
+<li>Nullam dignissim ultrices urna non auctor.</li>
+</ul>
+</li>
+<li>Nam vulputate tincidunt fringilla.<ul>
+<li>Nam vulputate tincidunt fringilla.</li>
+<li>Nullam dignissim ultrices urna non auctor.</li>
+</ul>
+</li>
+<li>Nullam dignissim ultrices urna non auctor.<ul>
+<li>Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>&ldquo;Ordered lists must start with a number immediately followed by a dot. The numbers do not need to be consecutive and can be all set to <code>1.</code>, as they will be re-numbered when rendered:&rdquo; <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-21-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-21-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-21-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-21-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-21-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-21-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-21-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-21-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-21-10">10</a></span>
+<span class="normal"><a href="#__codelineno-21-11">11</a></span>
+<span class="normal"><a href="#__codelineno-21-12">12</a></span>
+<span class="normal"><a href="#__codelineno-21-13">13</a></span>
+<span class="normal"><a href="#__codelineno-21-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="w">  </span><span class="k">1.</span>  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a>      sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a>      nulla. Vivamus a pharetra leo.
+<a id="__codelineno-21-4" name="__codelineno-21-4"></a>
+<a id="__codelineno-21-5" name="__codelineno-21-5"></a><span class="w">      </span><span class="k">1.</span>  Vivamus venenatis porttitor tortor sit amet rutrum. Pellentesque aliquet
+<a id="__codelineno-21-6" name="__codelineno-21-6"></a>          quam enim, eu volutpat urna rutrum a. Nam vehicula nunc mauris, a
+<a id="__codelineno-21-7" name="__codelineno-21-7"></a>          ultricies libero efficitur sed.
+<a id="__codelineno-21-8" name="__codelineno-21-8"></a>
+<a id="__codelineno-21-9" name="__codelineno-21-9"></a><span class="w">      </span><span class="k">2.</span>  Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+<a id="__codelineno-21-10" name="__codelineno-21-10"></a>          rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a.
+<a id="__codelineno-21-11" name="__codelineno-21-11"></a>
+<a id="__codelineno-21-12" name="__codelineno-21-12"></a><span class="w">          </span><span class="k">1.</span>  Mauris dictum mi lacus
+<a id="__codelineno-21-13" name="__codelineno-21-13"></a><span class="w">          </span><span class="k">2.</span>  Ut sit amet placerat ante
+<a id="__codelineno-21-14" name="__codelineno-21-14"></a><span class="w">          </span><span class="k">3.</span>  Suspendisse ac eros arcu
+</code></pre></div></td></tr></table></div>
+<p><strong>Result -</strong></p>
+<ol>
+<li>
+<p>Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
+      sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
+      nulla. Vivamus a pharetra leo.</p>
+<ol>
+<li>
+<p>Vivamus venenatis porttitor tortor sit amet rutrum. Pellentesque aliquet
+      quam enim, eu volutpat urna rutrum a. Nam vehicula nunc mauris, a
+      ultricies libero efficitur sed.</p>
+</li>
+<li>
+<p>Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+      rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a.</p>
+<ol>
+<li>Mauris dictum mi lacus</li>
+<li>Ut sit amet placerat ante</li>
+<li>Suspendisse ac eros arcu</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span>
+<span class="normal"><a href="#__codelineno-22-4">4</a></span>
+<span class="normal"><a href="#__codelineno-22-5">5</a></span>
+<span class="normal"><a href="#__codelineno-22-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="k">- [x]</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="k">- [ ]</span> Vestibulum convallis sit amet nisi a tincidunt
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="w">    </span><span class="k">* [x]</span> In hac habitasse platea dictumst
+<a id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="w">    </span><span class="k">* [x]</span> In scelerisque nibh non dolor mollis congue sed et metus
+<a id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="w">    </span><span class="k">* [ ]</span> Praesent sed risus massa
+<a id="__codelineno-22-6" name="__codelineno-22-6"></a><span class="k">- [ ]</span> Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+</code></pre></div></td></tr></table></div>
+<p><strong>Result -</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vestibulum convallis sit amet nisi a tincidunt<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In hac habitasse platea dictumst</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In scelerisque nibh non dolor mollis congue sed et metus</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Praesent sed risus massa</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-23-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-23-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-23-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-23-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-23-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-23-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-23-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-23-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-23-10">10</a></span>
+<span class="normal"><a href="#__codelineno-23-11">11</a></span>
+<span class="normal"><a href="#__codelineno-23-12">12</a></span>
+<span class="normal"><a href="#__codelineno-23-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="sb">`Lorem ipsum dolor sit amet`</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a>
+<a id="__codelineno-23-3" name="__codelineno-23-3"></a>:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+<a id="__codelineno-23-4" name="__codelineno-23-4"></a>    tellus non sem sollicitudin, quis rutrum leo facilisis.
+<a id="__codelineno-23-5" name="__codelineno-23-5"></a>
+<a id="__codelineno-23-6" name="__codelineno-23-6"></a><span class="sb">`Cras arcu libero`</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7"></a>
+<a id="__codelineno-23-8" name="__codelineno-23-8"></a>:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+<a id="__codelineno-23-9" name="__codelineno-23-9"></a>    ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+<a id="__codelineno-23-10" name="__codelineno-23-10"></a>
+<a id="__codelineno-23-11" name="__codelineno-23-11"></a>    Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+<a id="__codelineno-23-12" name="__codelineno-23-12"></a>    Nam vulputate tincidunt fringilla.
+<a id="__codelineno-23-13" name="__codelineno-23-13"></a>    Nullam dignissim ultrices urna non auctor.
+</code></pre></div></td></tr></table></div>
+<p><strong>Result -</strong></p>
+<dl>
+<dt><code>Lorem ipsum dolor sit amet</code></dt>
+<dd>
+<p>Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+tellus non sem sollicitudin, quis rutrum leo facilisis.</p>
+</dd>
+<dt><code>Cras arcu libero</code></dt>
+<dd>
+<p>Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+ut eros sed sapien ullamcorper consequat. Nunc ligula ante.</p>
+<p>Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+Nam vulputate tincidunt fringilla.
+Nullam dignissim ultrices urna non auctor.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<hr />
+<h3 id="6-content-tabs-code-styling-annotations">6. Content Tabs, Code Styling &amp; Annotations<a class="headerlink" href="#6-content-tabs-code-styling-annotations" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">attr_list</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">md_in_html</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">      </span><span class="nt">anchor_linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.snippets</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tabbed</span><span class="p">:</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="w">      </span><span class="nt">alternate_style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span><span class="w"> </span>
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">YAML</label><label for="__tabbed_3_2">C++</label><label for="__tabbed_3_3">Python</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML EXAMPLE</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span><span class="w"> </span><span class="c1"># (1)</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> I&rsquo;m a code annotation! I can contain <code>code</code>, <strong>formatted
+    text</strong>, assets/images, &hellip; basically anything that can be expressed in Markdown.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">C++ EXAMPLE</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-27-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-27-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-27-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-27-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-27-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-27-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-27-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-27-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-27-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="p">}</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4"></a>
+<a id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-27-7" name="__codelineno-27-7"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-27-9" name="__codelineno-27-9"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-27-10" name="__codelineno-27-10"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">PYTHON EXAMPLE</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<hr />
+<h3 id="7-footnotes">7. Footnotes<a class="headerlink" href="#7-footnotes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">footnotes</span>
+</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span>
+<span class="normal"><a href="#__codelineno-30-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a>Here&#39;s a sentence with a footnote. [^3]
+<a id="__codelineno-30-2" name="__codelineno-30-2"></a>
+<a id="__codelineno-30-3" name="__codelineno-30-3"></a>[<span class="nl">^3</span>]: <span class="na">This is the footnote. </span>
+</code></pre></div></td></tr></table></div>
+<p>Here&rsquo;s a sentence with a footnote. <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<hr />
+<h3 id="8-formatted-tables">8. Formatted Tables<a class="headerlink" href="#8-formatted-tables" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tables</span>
+</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span>
+<span class="normal"><a href="#__codelineno-32-4">4</a></span>
+<span class="normal"><a href="#__codelineno-32-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a>| Method      | Description                          |
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a>| ----------- | ------------------------------------ |
+<a id="__codelineno-32-3" name="__codelineno-32-3"></a>| <span class="sb">`GET`</span>       | :material-check:     Fetch resource  |
+<a id="__codelineno-32-4" name="__codelineno-32-4"></a>| <span class="sb">`PUT`</span>       | :material-check-all: Update resource |
+<a id="__codelineno-32-5" name="__codelineno-32-5"></a>| <span class="sb">`DELETE`</span>    | :material-close:     Delete resource |
+</code></pre></div></td></tr></table></div>
+<figure>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span>     Fetch resource</td>
+</tr>
+<tr>
+<td><code>PUT</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41z"/></svg></span> Update resource</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span>     Delete resource</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<hr />
+<h3 id="9-admonitions">9. Admonitions<a class="headerlink" href="#9-admonitions" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+</code></pre></div>
+<div class="admonition note inline">
+<p class="admonition-title">NOTE EXAMPLE</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition info inline end">
+<p class="admonition-title">INFO EXAMPLE</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">ABSTRACT EXAMPLE</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<details class="tip">
+<summary>TIP EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="success">
+<summary>SUCCESS EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="question">
+<summary>QUESTION EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="warning">
+<summary>WARNING EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="failure">
+<summary>FAILURE EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="danger">
+<summary>DANGER EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="bug">
+<summary>BUG EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="example">
+<summary>EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<details class="quote">
+<summary>QUOTE EXAMPLE</summary>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</details>
+<hr />
+<h3 id="10-icons-emojis">10. Icons &amp; Emojis<a class="headerlink" href="#10-icons-emojis" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.emoji</span><span class="p">:</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">      </span><span class="nt">emoji_index</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:materialx.emoji.twemoji</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="w">      </span><span class="nt">emoji_generator</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:materialx.emoji.to_svg</span>
+</code></pre></div>
+<figure>
+<p><a class="md-button md-button--primary" href="https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search">Icon &amp; Emoji Search Engine <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="m55.7 199.7 30.9 30.9c6 6 14.1 9.4 22.6 9.4h21.5c8.5 0 16.6 3.4 22.6 9.4l29.3 29.3c6 6 9.4 14.1 9.4 22.6v37.5c0 8.5 3.4 16.6 9.4 22.6l13.3 13.3c6 6 9.4 14.1 9.4 22.6V416c0 17.7 14.3 32 32 32s32-14.3 32-32v-2.7c0-8.5 3.4-16.6 9.4-22.6l45.3-45.3c6-6 9.4-14.1 9.4-22.6v-34.7c0-17.7-14.3-32-32-32h-82.7c-8.5 0-16.6-3.4-22.6-9.4l-16-16c-4.2-4.2-6.6-10-6.6-16 0-12.5 10.1-22.6 22.6-22.6h34.7c12.5 0 22.6-10.1 22.6-22.6 0-6-2.4-11.8-6.6-16l-19.7-19.7c-3.9-3.8-5.9-8.7-5.9-13.8s2-10 5.7-13.7L263 89c5.8-5.8 9.1-13.7 9.1-21.9 0-7.2-2.4-13.7-6.4-18.9-3.2-.1-6.4-.2-9.6-.2-95.4 0-175.7 64.2-200.3 151.7zM464 256c0-34.6-8.4-67.2-23.4-95.8-6.4.9-12.7 3.9-17.9 9.1l-13.4 13.4c-6 6-9.4 14.1-9.4 22.6V240c0 17.7 14.3 32 32 32H456c2.5 0 5-.3 7.3-.8.4-5 .5-10.1.5-15.2zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0"/></svg></span></a></p>
+</figure>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>:fontawesome-regular-laugh-wink:
+</code></pre></div>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M464 256a208 208 0 1 0-416 0 208 208 0 1 0 416 0M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0m118.3 58.2c-4.2-13.7 7.1-26.2 21.4-26.2h232.6c14.3 0 25.6 12.5 21.4 26.2C375.7 373.1 320.8 416 256 416s-119.7-42.9-137.7-101.8M144 192a32 32 0 1 1 64 0 32 32 0 1 1-64 0m164 8c0 11-9 20-20 20s-20-9-20-20c0-33.1 26.9-60 60-60h16c33.1 0 60 26.9 60 60 0 11-9 20-20 20s-20-9-20-20-9-20-20-20h-16c-11 0-20 9-20 20"/></svg></span></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>:smile: 
+</code></pre></div>
+<img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f604.svg" title=":smile:" /> </p>
+<hr />
+<h2 id="site-publishing">Site Publishing<a class="headerlink" href="#site-publishing" title="Permanent link">&para;</a></h2>
+<p>Finally, after any changes are made to your site, you can merge your local changes back to your <a href="https://pages.github.com/">GitHub Pages</a> repo to be built and published with the commands &hellip;</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="l l-Scalar l-Scalar-Plain">git add .</span><span class="w"> </span><span class="c1"># (1)</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="l l-Scalar l-Scalar-Plain">git commit -m &quot;Updated Site&quot;</span><span class="w"> </span><span class="c1"># (2)</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="l l-Scalar l-Scalar-Plain">git push</span><span class="w"> </span><span class="c1"># (3)</span>
+</code></pre></div>
+<ol>
+<li>
+<p>Stages all new changes made to your site.</p>
+</li>
+<li>
+<p>Gives your push a title that will be visible on GitHub</p>
+</li>
+<li>
+<p>Pushes changes to your GitHub - when prompted, enter your <abbr title="Secure Shell">SSH</abbr> password.</p>
+</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">Congrats!</p>
+<p>You now have built your very own static site with <a href="https://www.mkdocs.org/">MKdocs</a> and its <a href="https://squidfunk.github.io/mkdocs-material/">Material Theme</a>.</p>
+</div>
+<p><strong>Wooo <img alt="🥳" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f973.svg" title=":partying_face:" /> <img alt="🥳" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f973.svg" title=":partying_face:" /></strong> as of 12/01/2021, <em>teddywarner.org</em> is now <strong>100 Commits</strong> old!!
+<img alt="" src="../../assets/images/PortfolioSite/100commit.jpg" width="100%" /></p>
+<p><strong>200 Commits <img alt="🙌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f64c.svg" title=":raised_hands:" /></strong> - 05/02/2022!
+<img alt="" src="../../assets/images/PortfolioSite/200commit.jpg" width="100%" /></p>
+<p><strong>&hellip; and 300 Commits! <img alt="🤯" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f92f.svg" title=":exploding_head:" /></strong> - 06/28/2023!
+<img alt="" src="../../assets/images/PortfolioSite/300commit.png" width="100%" /></p>
+<p><strong>400 Commits <img alt="⁉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2049.svg" title=":interrobang:" /></strong> - 09/18/2024!
+<img alt="" src="../../assets/images/PortfolioSite/400commit.png" width="100%" /></p>
+<p><strong>500 Commits <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f603.svg" title=":smiley:" /></strong> - 11/20/2025!
+<img alt="" src="../../assets/images/PortfolioSite/500commit.png" width="100%" /></p>
+<p><em>as of 1/16/2026, teddywarner.org is now theodore.net!!!</em></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>https://squidfunk.github.io/mkdocs-material/reference/lists/#configuration&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>This is the footnote.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+  <!-- Email Subscription -->
+  <section class="subscribe-section">
+    <div class="subscribe-inner">
+      <p>Enter your email to receive the occasional update.</p>
+      <form 
+        class="subscribe-form"
+        action="https://buttondown.com/api/emails/embed-subscribe/teddywarner"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.com/teddywarner', 'popupwindow')"
+      >
+        <input 
+          type="email" 
+          name="email" 
+          id="bd-email"
+          placeholder="your@email.com" 
+          required
+          autocomplete="email"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Giscus Comments -->
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+  data-cfasync="false"
+  data-repo="Twarner491/theodore.net"
+  data-repo-id="MDEwOlJlcG9zaXRvcnkzNzgyODU0MTk="
+  data-category="General"
+  data-category-id="DIC_kwDOFowta84CA5IA"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="light"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Reload on palette change -->
+  <script>
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object")
+      if (palette.color.scheme === "slate") {
+        var giscus = document.querySelector("script[src*=giscus]")
+        giscus.setAttribute("data-theme", "transparent_dark") 
+      }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+<section class="footer">
+  <div class="socials">
+    <div class="socialpar">
+      <a target="_blank" href="https://github.com/Twarner491">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <div class="socialpar">
+      <a target="_blank" href="https://x.com/WarnerTeddy">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+    <div class="socialpar">
+      <a target="_blank" href="mailto:teddy@warner.net">
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+    </div>
+  </div>
+    <a target="_blank" href="https://github.com/Twarner491/theodore.net/blob/main/LICENSE">
+      <p class="copyright">Copyright © 2026 Teddy Warner</p>
+    </a>
+</section>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "content.code.annotate", "search.share", "search.suggest", "search.highlight", "content.tabs.link", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../assets/js/error-suppressor.js"></script>
+      
+        <script src="../../assets/js/index.js"></script>
+      
+    
+  </body>
+</html>
