@@ -22,6 +22,52 @@
   <script src="{{ 'assets/js/error-suppressor.js' | url }}"></script>
   {{ super() }}
   
+  <!-- Load stylesheets embedded in content after instant navigation -->
+  <script>
+    // Track loaded stylesheets to avoid duplicates
+    const loadedStylesheets = new Set();
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+      loadedStylesheets.add(link.href);
+    });
+
+    // Function to load stylesheets from content
+    function loadContentStylesheets() {
+      const content = document.querySelector('.md-content');
+      if (!content) return;
+      
+      content.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+        const href = link.href;
+        if (!loadedStylesheets.has(href)) {
+          loadedStylesheets.add(href);
+          // Create a new link element in the head
+          const newLink = document.createElement('link');
+          newLink.rel = 'stylesheet';
+          newLink.href = href;
+          document.head.appendChild(newLink);
+        }
+      });
+    }
+
+    // Run on initial load
+    loadContentStylesheets();
+
+    // Hook into MkDocs Material instant navigation
+    if (typeof document$ !== 'undefined') {
+      document$.subscribe(function() {
+        loadContentStylesheets();
+      });
+    } else {
+      // Fallback: use MutationObserver to detect content changes
+      const observer = new MutationObserver(function(mutations) {
+        loadContentStylesheets();
+      });
+      const target = document.querySelector('.md-content');
+      if (target) {
+        observer.observe(target, { childList: true, subtree: true });
+      }
+    }
+  </script>
+  
   <!-- Service Worker Registration for Cache Control (disabled on localhost) -->
   <script>
     if ('serviceWorker' in navigator) {
