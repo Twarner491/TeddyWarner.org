@@ -3,6 +3,11 @@
 {% block extrahead %}
   <link rel="alternate" type="application/rss+xml" title="Teddy Warner - RSS Feed" href="https://theodore.net/feed.xml">
   
+  <!-- Favicon for iOS and other platforms that don't support GIF -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/images/favicon.png' | url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/images/favicon.png' | url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/images/favicon.png' | url }}">
+  
   <!-- Preconnect hints for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

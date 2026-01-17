@@ -10,7 +10,7 @@ from pathlib import Path
 # Define the case mappings: alternate_case -> canonical_case
 CASE_MAPPINGS = {
     'projects': 'Projects',  # /projects/X -> /Projects/X
-    'writings': 'Writings',  # /writings/X -> /Writings/X
+    'Writings': 'writings',  # /Writings/X -> /writings/X
 }
 
 def is_case_sensitive_fs(path):
