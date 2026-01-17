@@ -108,7 +108,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   
   <!-- Page Styles -->
-  <link rel="stylesheet" href="https://theodore.net/assets/css/Projects/project.css">
+  <link rel="stylesheet" href="https://theodore.net/assets/css/projects/project.css">
   <link rel="stylesheet" href="https://theodore.net/assets/css/header.css">
 
   <!-- JSON-LD Structured Data -->
@@ -749,6 +749,38 @@
     document.addEventListener('DOMContentLoaded', function() {
       initializeHeader();
     });
+    
+    // Load stylesheets embedded in content after instant navigation
+    (function() {
+      const loadedStylesheets = new Set();
+      document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+        loadedStylesheets.add(link.href);
+      });
+
+      function loadContentStylesheets() {
+        const content = document.querySelector('.md-content');
+        if (!content) return;
+        
+        content.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+          const href = link.href;
+          if (!loadedStylesheets.has(href)) {
+            loadedStylesheets.add(href);
+            const newLink = document.createElement('link');
+            newLink.rel = 'stylesheet';
+            newLink.href = href;
+            document.head.appendChild(newLink);
+          }
+        });
+      }
+
+      loadContentStylesheets();
+
+      if (typeof document$ !== 'undefined') {
+        document$.subscribe(function() {
+          loadContentStylesheets();
+        });
+      }
+    })();
   </script>
 
   <!-- Return to feed link -->
